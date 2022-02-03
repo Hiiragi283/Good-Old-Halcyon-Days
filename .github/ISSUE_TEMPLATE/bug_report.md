@@ -1,38 +1,26 @@
 ---
-name: Bug report
-about: Create a report to help us improve
-title: ''
-labels: ''
-assignees: ''
+name: issue report (ja_JP)
+about: 問題の報告
 
 ---
 
-**Describe the bug**
-A clear and concise description of what the bug is.
+## 環境に関する情報
 
-**To Reproduce**
-Steps to reproduce the behavior:
-1. Go to '...'
-2. Click on '....'
-3. Scroll down to '....'
-4. See error
+- Modpackのバージョンを記載
+  - 例. [v1.0.0a]
 
-**Expected behavior**
-A clear and concise description of what you expected to happen.
+## 問題の内容
 
-**Screenshots**
-If applicable, add screenshots to help explain your problem.
+- 問題の内容について簡潔に記載
 
-**Desktop (please complete the following information):**
- - OS: [e.g. iOS]
- - Browser [e.g. chrome, safari]
- - Version [e.g. 22]
+## 問題の手順
 
-**Smartphone (please complete the following information):**
- - Device: [e.g. iPhone6]
- - OS: [e.g. iOS8.1]
- - Browser [e.g. stock browser, safari]
- - Version [e.g. 22]
+- 問題を再現する手順を**箇条書き**で**正確に**記載
 
-**Additional context**
-Add any other context about the problem here.
+## crash report欄
+
+- **crash reportはpastebin等の外部サイトに上げ、ここにはそのリンクを貼り付ける**
+
+## その他
+
+- スクショ等を掲載
