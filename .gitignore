@@ -24,6 +24,8 @@ config/gregtech/terminal/guide/*/zh_cn/
 minecraftinstance.json
 options.txt
 optionsof.txt
+optionsshaders.txt
 
 config/AppliedEnergistics2/items.csv
 config/jei/itemBlacklist.cfg
+config/vanillafix/methods-stable_39.csv
