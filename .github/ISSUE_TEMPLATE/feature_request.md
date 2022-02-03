@@ -1,20 +1,26 @@
 ---
-name: Feature request
-about: Suggest an idea for this project
-title: ''
-labels: ''
-assignees: ''
+name: Feature request (ja_JP)
+about: 当プロジェクトへの要望の提案
 
 ---
 
-**Is your feature request related to a problem? Please describe.**
-A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
+## 環境に関する情報
 
-**Describe the solution you'd like**
-A clear and concise description of what you want to happen.
+- Modpackのバージョンを記載
+  - 例. [v1.0.0a]
 
-**Describe alternatives you've considered**
-A clear and concise description of any alternative solutions or features you've considered.
+## 提案の内容
 
-**Additional context**
-Add any other context or screenshots about the feature request here.
+- 提案の内容について簡潔に記載
+
+## 提案前の状態
+
+- 提案前の状態について記載
+
+## 提案後の影響
+
+- 提案後に起こりうる影響について記載
+
+## その他
+
+- スクショ等を掲載
