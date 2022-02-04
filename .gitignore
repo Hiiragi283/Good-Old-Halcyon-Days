@@ -8,15 +8,19 @@
 asm/
 crash-reports/
 caches/
+docs/
 download/
 journeymap/
 logs/
 mods/
 resourepack/
 saves/
+screenshots/
+shaderpacks/
 
 #特定のフォルダ
 
+config/AppliedEnergistics2/
 config/gregtech/terminal/guide/*/zh_cn/
 
 #特定のファイル
@@ -25,7 +29,13 @@ minecraftinstance.json
 options.txt
 optionsof.txt
 optionsshaders.txt
+usercache.json
+usernamecache.json
 
-config/AppliedEnergistics2/items.csv
+config/splash.properties
+
 config/jei/itemBlacklist.cfg
+config/jei/jei.cfg
+config/jei/bookmarks.ini
+config/thaumicjei_itemstack_aspects.json
 config/vanillafix/methods-stable_39.csv
