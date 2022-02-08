@@ -1,0 +1,158 @@
+{
+    "entries": [
+        {
+            "key": "ESSENCE_SALT",
+            "name": "research_name.thaumadditions:essence_salt",
+            "icons": [ "thaumadditions:textures/items/salt_essence.png" ],
+            "category": "ALCHEMY", "location": [ -6,2 ],
+            "parents": [ "HEDGEALCHEMY" ],
+            "stages": [
+                {
+                    "text": "research_stage.thaumadditions:essence_salt.1",
+                    "required_knowledge": [ "OBSERVATION;THAUMADDS;1" ]
+                },
+                {
+                    "text": "research_stage.thaumadditions:essence_salt.2"
+                },
+                {
+                    "text": "research_stage.thaumadditions:essence_salt.3"
+                }
+            ]
+        },
+        {
+            "key": "CRYSTAL_CRUSHER",
+            "name": "research_name.thaumadditions:crystal_crusher",
+            "icons": [ "thaumadditions:crystal_crusher;1;0" ],
+            "category": "ALCHEMY", "location": [ -8,4 ],
+            "parents": [ "ESSENCE_SALT" ],
+            "stages": [
+                {
+                    "text": "research_stage.thaumadditions:crystal_crusher.1",
+                    "required_item": [ "thaumcraft:mechanism_simple;1;0" ],
+                    "required_craft": [ "thaumcraft:mechanism_complex" ],
+                    "required_knowledge": [ "OBSERVATION;R_THAUMADDS;1" ]
+                }
+            ],
+            "reward_item": [ "oredict:plateBlass;3", "oredict:plateIron;2" ],
+            "recipes": [ "thaumadditions:crystal_crusher" ]
+        },
+        {
+            "key": "AURA_DISPERSER",
+            "name": "research_name.thaumadditions:aura_disperser",
+            "icons": [ "thaumadditions:aura_disperser;1;0" ],
+            "category": "ALCHEMY", "location": [ -6,4 ],
+            "parents": [ "ESSENCE_SALT" ], "siblings": [ "BASEAUROMANCY" ],
+            "stages": [
+                {
+                    "text": "research_stage.thaumadditions:aura_disperser.1",
+                    "required_item": [ "thaumadditions:salt_essence;1;0" ],
+                    "required_knowledge": [ "OBSERVATION;THAUMADDS;1","THEORY;ALCHEMY;1" ]
+                },
+                {
+                    "text": "research_stage.thaumadditions:aura_disperser.2",
+                    "recipes": [ "thaumadditions:aura_disperser" ]
+                }
+            ]
+        },
+        {
+            "key": "ESSENTIA_PISTOL",
+            "name": "research_name.thaumadditions:essentia_pistol",
+            "icons": [ "thaumadditions:essentia_pistol;1;0" ],
+            "category": "ALCHEMY", "location": [ -6,6 ],
+            "parents": [ "AURA_DISPERSER" ],
+            "stages": [
+                {
+                    "text": "research_stage.thaumadditions:essentia_pistol.1",
+                    "required_item": [ "minecraft:bow;1" ],
+                    "required_knowledge": [ "OBSERVATION;THAUMADDS;1","THEORY;ALCHEMY;1" ]
+                },
+                {
+                    "text": "research_stage.thaumadditions:essentia_pistol.2",
+                    "recipes": [ "thaumadditions:essentia_pistol" ]
+                }
+            ]
+        },
+        {
+            "key": "TOME_OF_SAHRING",
+            "name": "research_name.thaumadditions:knowledge_tome",
+            "icons": [ "thaumadditions:knowledge_tome;1;0" ],
+            "category": "BASICS", "location": [ -2,1 ],
+            "parents": [ "~FIRSTSTEPS" ],
+            "meta": [ "ROUND", "HIDDEN" ],
+            "stages": [
+                {
+                    "text": "research_stage.thaumadditions:knowledge_tome.1",
+                    "required_item": [ "thaumcraft:thaumonomicon;1" ],
+                    "required_knowledge": [ "OBSERVATION;THAUMADDS;1" ]
+                },
+                {
+                    "text": "research_stage.thaumadditionsknowledge_tome.2",
+                    "recipes": [ "thaumadditions:knowledge_tome" ]
+                }
+            ]
+        },
+        {
+            "key": "CHESTER",
+            "name": "research_name.thaumadditions:chester",
+            "icons": [ "thaumadditions:chester;1;0" ],
+            "category": "GOLEMANCY", "location": [ 5,2 ],
+            "parents": [ "HUNGRYCHEST" ],
+            "meta": [ "SPIKY" ],
+            "stages": [
+                {
+                    "text": "research_stage.thaumadditions:chester.1",
+                    "required_item": [ "thaumcraft:log_greatwood;1" ],
+                    "required_craft": [ "thaumcraft:golem_bell" ],
+                    "required_knowledge": [ "OBSERVATION;GOLEMANCY;1" ]
+                },
+                {
+                    "text": "research_stage.thaumadditionschester.2",
+                    "recipes": [ "thaumadditions:chester" ]
+                }
+            ]
+        },
+        {
+            "key": "CRYSTAL_WATER",
+            "name": "research_name.thaumadditions:crystal_water",
+            "icons": [ "forge:bucketfilled;1;0{FluidName:'crystal_water', Amount: 1000}" ],
+            "category": "ALCHEMY", "location": [ 0,2 ],
+            "parents": [ "BASEALCHEMY" ],
+            "stages": [
+                {
+                    "text": "research_stage.thaumadditions:crystal_water.1",
+                    "required_item": [ "thaumcraft:crystal_essence;1", "minecraft:water_bucket" ],
+                    "required_knowledge": [ "OBSERVATION;ALCHEMY;1" ]
+                },
+                {
+                    "text": "research_stage.thaumadditionschester.2",
+                    "recipes": [ "thaumadditions:crystal_water", "thaumadditions:mb.crystal_acceleration" ]
+                }
+            ]
+        },
+        {
+            "key": "CRYSTAL_BLOCK",
+            "name": "research_name.thaumadditions:crystal_block",
+            "icons": [ "minecraft:golden_apple;1;1" ],
+            "category": "BASICS", "location": [ -3,1 ],
+            "parents": [ "~BASEINFUSION" ],
+            "stages": [
+                {
+                    "text": "research_stage.thaumadditions:crystal_block.1",
+                    "required_item": [
+                        "thaumcraft:crystal_essence;1;0;{Aspects:[{amount:1,key:'aer'}]}",
+                        "thaumcraft:crystal_essence;1;0;{Aspects:[{amount:1,key:'terra'}]}",
+                        "thaumcraft:crystal_essence;1;0;{Aspects:[{amount:1,key:'ignis'}]}",
+                        "thaumcraft:crystal_essence;1;0;{Aspects:[{amount:1,key:'aqua'}]}",
+                        "thaumcraft:crystal_essence;1;0;{Aspects:[{amount:1,key:'ordo'}]}",
+                        "thaumcraft:crystal_essence;1;0;{Aspects:[{amount:1,key:'perditio'}]}"
+                        ],
+                    "required_knowledge": [ "OBSERVATION;ARTIFICE;1" ]
+                },
+                {
+                    "text": "research_stage.thaumadditionschester.2",
+                    "recipes": [ "thaumadditions:crystal_block_recipes_all" ]
+                }
+            ]
+        }
+    ]
+}

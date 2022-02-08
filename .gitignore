@@ -3,6 +3,7 @@
 *.curseclient
 *.log
 *.jar
+*.lnk
 
 .mixin.out/
 asm/
@@ -32,10 +33,12 @@ optionsshaders.txt
 usercache.json
 usernamecache.json
 
+config/InvTweaks.cfg
+config/thaumicjei_itemstack_aspects.json
 config/splash.properties
 
 config/jei/itemBlacklist.cfg
 config/jei/jei.cfg
+config/jei/worldSettings.cfg
 config/jei/bookmarks.ini
-config/thaumicjei_itemstack_aspects.json
 config/vanillafix/methods-stable_39.csv
