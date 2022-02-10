@@ -4,7 +4,7 @@
             "key": "ESSENCE_SALT",
             "name": "research_name.thaumadditions:essence_salt",
             "icons": [ "thaumadditions:textures/items/salt_essence.png" ],
-            "category": "ALCHEMY", "location": [ -6,2 ],
+            "category": "ALCHEMY", "location": [ -4,-2 ],
             "parents": [ "HEDGEALCHEMY" ],
             "stages": [
                 {
@@ -17,30 +17,20 @@
                 {
                     "text": "research_stage.thaumadditions:essence_salt.3"
                 }
-            ]
-        },
-        {
-            "key": "CRYSTAL_CRUSHER",
-            "name": "research_name.thaumadditions:crystal_crusher",
-            "icons": [ "thaumadditions:crystal_crusher;1;0" ],
-            "category": "ALCHEMY", "location": [ -8,4 ],
-            "parents": [ "ESSENCE_SALT" ],
-            "stages": [
-                {
-                    "text": "research_stage.thaumadditions:crystal_crusher.1",
-                    "required_item": [ "thaumcraft:mechanism_simple;1;0" ],
-                    "required_craft": [ "thaumcraft:mechanism_complex" ],
-                    "required_knowledge": [ "OBSERVATION;R_THAUMADDS;1" ]
-                }
             ],
-            "reward_item": [ "oredict:plateBlass;3", "oredict:plateIron;2" ],
-            "recipes": [ "thaumadditions:crystal_crusher" ]
+            "addenda": [
+                {
+                    "text": "research_stage.thaumadditions:crystal_crusher.2",
+                    "recipes": [ "thaumadditions:crystal_crusher" ],
+                    "required_research": [ "BASEARTIFICE" ]
+                }
+            ]
         },
         {
             "key": "AURA_DISPERSER",
             "name": "research_name.thaumadditions:aura_disperser",
             "icons": [ "thaumadditions:aura_disperser;1;0" ],
-            "category": "ALCHEMY", "location": [ -6,4 ],
+            "category": "ALCHEMY", "location": [ -4,-4 ],
             "parents": [ "ESSENCE_SALT" ], "siblings": [ "BASEAUROMANCY" ],
             "stages": [
                 {
@@ -58,7 +48,7 @@
             "key": "ESSENTIA_PISTOL",
             "name": "research_name.thaumadditions:essentia_pistol",
             "icons": [ "thaumadditions:essentia_pistol;1;0" ],
-            "category": "ALCHEMY", "location": [ -6,6 ],
+            "category": "ALCHEMY", "location": [ -2,-4 ],
             "parents": [ "AURA_DISPERSER" ],
             "stages": [
                 {
@@ -114,7 +104,7 @@
         {
             "key": "CRYSTAL_WATER",
             "name": "research_name.thaumadditions:crystal_water",
-            "icons": [ "forge:bucketfilled;1;0{FluidName:'crystal_water', Amount: 1000}" ],
+            "icons": [ "forge:bucketfilled;1;0;{FluidName:'crystal_water', Amount: 1000}" ],
             "category": "ALCHEMY", "location": [ 0,2 ],
             "parents": [ "BASEALCHEMY" ],
             "stages": [
@@ -132,9 +122,10 @@
         {
             "key": "CRYSTAL_BLOCK",
             "name": "research_name.thaumadditions:crystal_block",
-            "icons": [ "minecraft:golden_apple;1;1" ],
-            "category": "BASICS", "location": [ -3,1 ],
-            "parents": [ "~BASEINFUSION" ],
+            "icons": [ "thaumadditions:crystal_block;1;0;{Aspect:'aer'}" ],
+            "category": "BASICS", "location": [ -4,2 ],
+            "parents": [ "CRYSTALFARMER" ],
+            "meta": [ "ROUND","HIDDEN" ],
             "stages": [
                 {
                     "text": "research_stage.thaumadditions:crystal_block.1",
@@ -149,8 +140,283 @@
                     "required_knowledge": [ "OBSERVATION;ARTIFICE;1" ]
                 },
                 {
-                    "text": "research_stage.thaumadditionschester.2",
+                    "text": "research_stage.thaumadditions:crystal_block.2",
                     "recipes": [ "thaumadditions:crystal_block_recipes_all" ]
+                }
+            ]
+        },
+        {
+            "key": "GROWTH_CHAMBER",
+            "name": "research_name.thaumadditions:growth_chamber",
+            "icons": [ "thaumadditions:growth_chamber;1;0" ],
+            "category": "ALCHEMY", "location": [ 0,4 ],
+            "parents": [ "~ESSENTIASMELTER", "CRYSTAL_WATER" ],
+            "stages": [
+                {
+                    "text": "research_stage.thaumadditions:growth_chamber.1",
+                    "required_item": [ "thaumcraft:crystal_essence;1;0;{Aspects:[{amount:1,key:'herba'}]}" ],
+                    "required_knowledge": [ "THEORY;THAUMADDS;1" ]
+                },
+                {
+                    "text": "research_stage.thaumadditions:growth_chamber.2",
+                    "recipes": [ "thaumadditions:growth_chamber" ]
+                }
+            ]
+        },
+        {
+            "key": "FRAGNANT_PENDANT",
+            "name": "research_name.thaumadditions:fragnant_pendant",
+            "icons": [ "thaumadditions:fragnant_pendant;1;0" ],
+            "category": "TAINTOLOGY", "location": [ 2,4 ],
+            "parents": [ "BATHSALTS", "BASEELDRITCH" ],
+            "stages": [
+                {
+                    "text": "research_stage.thaumadditions:fragnant_pendant.1",
+                    "required_item": [ "thaumcraft:bath_salts;1;0", "thaumcraft:baubles;1;4" ],
+                    "required_knowledge": [ "THEORY;ALCHEMY;1", "OBSERVATION;ELDRITCH;1" ]
+                },
+                {
+                    "text": "research_stage.thaumadditions:fragnant_pendant.2",
+                    "recipes": [ "thaumadditions:odour_powder", "thaumadditions:fragnant_pendant" ]
+                }
+            ]
+        },
+        {
+            "key": "VIS_SEEDS",
+            "name": "research_name.thaumadditions:vis_seeds",
+            "icons": [ "thaumadditions:vis_seeds;1;0;{Aspect:'draco'}" ],
+            "category": "BASICS", "location": [ -6,2 ],
+            "parents": [ "~BASEALCHEMY", "CRYSTALFARMER" ],
+            "meta": [ "ROUND","HIDDEN" ],
+            "stages": [
+                {
+                    "text": "research_stage.thaumadditions:vis_seeds.1",
+                    "required_item": [ "minecraft:wheat_seeds;1;0" ],
+                    "required_knowledge": [ "THEORY;ALCHEMY;1", "THEORY;THAUMADDS;1" ]
+                },
+                {
+                    "text": "research_stage.thaumadditions:vis_seeds.2",
+                    "recipes": [ "thaumadditions:vis_seeds_recipes_all" ]
+                }
+            ]
+        },
+        {
+            "key": "CRYSTAL_BAG",
+            "name": "research_name.thaumadditions:crystal_bag",
+            "icons": [ "thaumadditions:crystal_bag;1;0" ],
+            "category": "ALCHEMY", "location": [ 0,-2 ],
+            "parents": [ "~FOCUSPOUCH", "BASEALCHEMY" ],
+            "meta": [ "HIDDEN" ],
+            "stages": [
+                {
+                    "text": "research_stage.thaumadditions:crystal_bag.1",
+                    "required_item": [ "thaumcraft:focus_pouch;1;0" ],
+                    "required_knowledge": [ "THEORY;ALCHEMY;1", "THEORY;THAUMADDS;1" ]
+                },
+                {
+                    "text": "research_stage.thaumadditions:crystal_bag.2",
+                    "recipes": [ "thaumadditions:crystal_bag" ]
+                }
+            ]
+        },
+        {
+            "key": "TRAVELLER_BELT",
+            "name": "research_name.thaumadditions:traveller_belt",
+            "icons": [ "thaumadditions:traveller_belt;1;0" ],
+            "category": "INFUSION", "location": [ -8,2 ],
+            "parents": [ "BOOTSTRAVELLER" ],
+            "meta": [ "HIDDEN" ],
+            "stages": [
+                {
+                    "text": "research_stage.thaumadditions:traveller_belt.1",
+                    "required_craft": [ "thaumcraft:traveller_boots;1;0" ],
+                    "required_knowledge": [ "OBSERVATION;THAUMADDS;1" ]
+                },
+                {
+                    "text": "research_stage.thaumadditions:traveller_belt.2",
+                    "recipes": [ "thaumadditions:traveller_belt" ]
+                }
+            ]
+        },
+        {
+            "key": "STRIDING_BELT",
+            "name": "research_name.thaumadditions:striding_belt",
+            "icons": [ "thaumadditions:striding_belt;1;0" ],
+            "category": "INFUSION", "location": [ -8,0 ],
+            "parents": [ "TRAVELLER_BELT" ],
+            "meta": [ "HIDDEN" ],
+            "stages": [
+                {
+                    "text": "research_stage.thaumadditions:striding_belt.1",
+                    "required_craft": [ "thaumadditions:traveller_belt" ],
+                    "required_knowledge": [ "OBSERVATION;THAUMADDS;2", "THEORY;ARTIFICE;1" ]
+                },
+                {
+                    "text": "research_stage.thaumadditions:striding_belt.2",
+                    "recipes": [ "thaumadditions:striding_belt" ]
+                }
+            ]
+        },
+        {
+            "key": "METEOR_BELT",
+            "name": "research_name.thaumadditions:meteor_belt",
+            "icons": [ "thaumadditions:meteor_belt;1;0" ],
+            "category": "INFUSION", "location": [ -8,-2 ],
+            "parents": [ "STRIDING_BELT" ],
+            "meta": [ "HIDDEN" ],
+            "stages": [
+                {
+                    "text": "research_stage.thaumadditions:meteor_belt.1",
+                    "required_craft": [ "thaumadditions:striding_belt" ],
+                    "required_knowledge": [ "OBSERVATION;THAUMADDS;3", "THEORY;ARTIFICE;2", "THEORY;INFUSION;1" ]
+                },
+                {
+                    "text": "research_stage.thaumadditions:meteor_belt.2",
+                    "recipes": [ "thaumadditions:meteor_belt" ],
+                    "warp": "3"
+                }
+            ]
+        },
+        {
+            "key": "BRASS_JAR",
+            "name": "research_name.thaumadditions:brass_jar",
+            "icons": [ "thaumadditions:jar_brass;1;0" ],
+            "category": "ALCHEMY", "location": [ 5,3 ],
+            "parents": [ "WARDEDJARS" ],
+            "meta": [ "HIDDEN" ],
+            "stages": [
+                {
+                    "text": "research_stage.thaumadditions:brass_jar.1",
+                    "required_craft": [ "thaumcraft:jar_normal" ],
+                    "required_knowledge": [ "OBSERVATION;ALCHEMY;1" ]
+                },
+                {
+                    "text": "research_stage.thaumadditions:brass_jar.2",
+                    "recipes": [ "thaumadditions:brass_jar" ]
+                }
+            ]
+        },
+        {
+            "key": "THAUMIUM_JAR",
+            "name": "research_name.thaumadditions:thaumium_jar",
+            "icons": [ "thaumadditions:jar_thaumium;1;0" ],
+            "category": "ALCHEMY", "location": [ 7,3 ],
+            "parents": [ "BRASS_JAR" ],
+            "meta": [ "HIDDEN" ],
+            "stages": [
+                {
+                    "text": "research_stage.thaumadditions:thaumium_jar.1",
+                    "required_craft": [ "thaumadditions:jar_brass" ],
+                    "required_knowledge": [ "OBSERVATION;ALCHEMY;1" ]
+                },
+                {
+                    "text": "research_stage.thaumadditions:thaumium_jar.2",
+                    "recipes": [ "thaumadditions:thaumium_jar" ]
+                }
+            ]
+        },
+        {
+            "key": "VOID_JAR",
+            "name": "research_name.thaumadditions:eldritch_jar",
+            "icons": [ "thaumadditions:jar_eldritch;1;0" ],
+            "category": "ALCHEMY", "location": [ 9,3 ],
+            "parents": [ "THAUMIUM_JAR" ],
+            "meta": [ "HIDDEN" ],
+            "stages": [
+                {
+                    "text": "research_stage.thaumadditions:eldritch_jar.1",
+                    "required_craft": [ "thaumadditions:jar_eldritch" ],
+                    "required_knowledge": [ "OBSERVATION;ALCHEMY;1" ]
+                },
+                {
+                    "text": "research_stage.thaumadditions:eldritch_jar.2",
+                    "recipes": [ "thaumadditions:eldritch_jar" ]
+                }
+            ]
+        },
+        {
+            "key": "MOB_SUMMONING",
+            "name": "research_name.thaumadditions:mob_summoning",
+            "icons": [ "thaumadditions:entity_summoner;1;0" ],
+            "category": "SOULOMANCY", "location": [ 0,-2 ],
+            "parents": [ "BASESOULOMANCY" ],
+            "stages": [
+                {
+                    "text": "research_stage.thaumadditions:mob_summoning.1",
+                    "required_item": [ 
+                        "thaumcraft:crystal_essence;1;0;{Aspects:[{amount:10,key:'victus'}]}",
+                        "thaumcraft:crystal_essence;1;0;{Aspects:[{amount:10,key:'mortuus'}]}"
+                    ],
+                    "required_knowledge": [ "THEORY;INFUSION;1" ]
+                },
+                {
+                    "text": "research_stage.thaumadditions:mob_summoning.2",
+                    "required_craft": [ "thaumadditions:dna_sample" ],
+                    "recipes": [ "thaumadditions:dna_sample" ]
+                },
+                {
+                    "text": "research_stage.thaumadditions:mob_summoning.3",
+                    "recipes": [ "thaumadditions:dna_sample", "thaumadditions:mob_summoner" ]
+                }
+            ]
+        },
+        {
+            "key": "SHADOW_ENCHANTER",
+            "name": "research_name.thaumadditions:shadow_enchanter",
+            "icons": [ "thaumadditions:shadow_enchanter;1;0" ],
+            "category": "INFUSION", "location": [ -2,0 ],
+            "parents": [ "BASEINFUSION" ],
+            "meta": [ "HIDDEN" ],
+            "stages": [
+                {
+                    "text": "research_stage.thaumadditions:shadow_enchanter.1",
+                    "required_item": [ 
+                        "minecraft:enchanting_table;1;0",
+                        "thaumadditions:mithrillium_plate;1;0"
+                    ],
+                    "required_knowledge": [ "THEORY;INFUSION;1" ]
+                },
+                {
+                    "text": "research_stage.thaumadditions:shadow_enchanter.2",
+                    "recipes": [ "thaumadditions:shadow_enchanter" ]
+                }
+            ]
+        },
+        {
+            "key": "SHADOW_BEAM_STAFF",
+            "name": "research_name.thaumadditions:shadow_beam_staff",
+            "icons": [ "thaumadditions:shadow_beam_staff;1;0" ],
+            "category": "AUROMANCY", "location": [ 1,-3 ],
+            "parents": [ "BASEAUROMANCY" ],
+            "meta": [ "HIDDEN" ],
+            "stages": [
+                {
+                    "text": "research_stage.thaumadditions:shadow_beam_staff.1",
+                    "required_item": [ "thaumcraft:vis_resonator;1;0" ],
+                    "required_knowledge": [ "THEORY;THAUMADDS;2" ]
+                },
+                {
+                    "text": "research_stage.thaumadditions:shadow_beam_staff.2",
+                    "recipes": [ "thaumadditions:shadow_beam_staff" ]
+                }
+            ]
+        },
+        {
+            "key": "BEHEADER",
+            "name": "research_name.thaumadditions:the_beheader",
+            "icons": [ "thaumadditions:the_beheader;1;0" ],
+            "category": "INFUSION", "location": [ -4,5 ],
+            "parents": [ "ELEMENTALTOOLS" ],
+            "meta": [ "SPIKY", "ROUND", "HIDDEN" ],
+            "stages": [
+                {
+                    "text": "research_stage.thaumadditions:the_beheader.1",
+                    "required_item": [ "minecraft:skull;1;0" ],
+                    "required_knowledge": [ "THEORY;THAUMADDS;2" ]
+                },
+                {
+                    "text": "research_stage.thaumadditions:the_beheader.2",
+                    "recipes": [ "thaumadditions:the_beheader" ]
                 }
             ]
         }

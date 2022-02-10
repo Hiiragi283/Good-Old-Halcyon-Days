@@ -1,0 +1,16 @@
+[
+    {
+        "key": "TAINTOLOGY",
+        "requirement": "FIRSTSTEPS",
+        "icon": "thaumcraft:textures/aspects/vitium.png",
+        "background": "thaumcraft:textures/gui/gui_research_back_6.jpg",
+        "backgroundOverlay": "thaumcraft:textures/gui/gui_research_back_over.png"
+    },
+    {
+        "key": "SOULOMANCY",
+        "requirement": "UNLOCKSOULOMANCY",
+        "icon": "thaumcraft:textures/items/brain.png",
+        "background": "thaumcraft:textures/gui/gui_research_back_7.jpg",
+        "backgroundOverlay": "thaumcraft:textures/gui/gui_research_back_over.png"
+    }
+]

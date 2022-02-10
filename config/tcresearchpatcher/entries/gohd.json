@@ -1,0 +1,45 @@
+{
+    "entries": [
+        {
+            "key": "BASETAINTOLOGY",
+            "name": "gohd.research.base_taintology.name",
+            "icons": [ "thaumcraft:textures/aspects/vitium.png" ], 
+            "category": "TAINTOLOGY", "location": [ 0,0 ],
+            "stages": [
+                {
+                "text": "gohd.reseatch.base_taintology.stage.1"
+                }
+            ]
+        },
+        {
+            "key": "UNLOCKSOULOMANCY",
+            "name": "gohd.research.unlock_soulomancy.name",
+            "icons": [ "thaumcraft:brain;1;0" ], 
+            "category": "BASICS", "location": [ 0,8 ],
+            "parents": [ "UNLOCKGOLEMANCY" ],
+            "siblings": [ "BASESOULOMANCY" ],
+            "meta": [ "ROUND","SPIKY","REVERSE" ],
+            "stages": [
+                {
+                    "text": "gohd.reseatch.unlock_soulomancy.stage.1",
+                    "required_item": [ "thaumcraft:brain;16;0" ],
+                    "required_knowledge":["OBSERVATION;GOLEMANCY;1","OBSERVATION;BASICS;1"]
+                },
+                {
+                    "text": "gohd.reseatch.unlock_soulomancy.stage.2"
+                }
+            ]
+        },
+        {
+            "key": "BASESOULOMANCY",
+            "name": "gohd.research.base_soulomancy.name",
+            "icons": [ "thaumcraft:brain;1;0" ], 
+            "category": "SOULOMANCY", "location": [ 0,0 ],
+            "stages": [
+                {
+                "text": "gohd.reseatch.base_soulomancy.stage.1"
+                }
+            ]
+        }
+    ]
+}

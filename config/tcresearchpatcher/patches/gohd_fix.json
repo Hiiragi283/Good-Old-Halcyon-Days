@@ -27,5 +27,205 @@
                 "value": "FIRSTSTEPS@2"
             }
         ]
+    },
+    {
+        "key": "POTIONSPRAYER",
+        "ops": [
+            {
+                "op": "replace",
+                "path": "location/0",
+                "value": -2
+            }
+        ]
+    },
+    {
+        "key": "BOTTLETAINT",
+        "ops": [
+            {
+                "op": "replace",
+                "path": "location/0",
+                "value": "-4"
+            },
+            {
+                "op": "replace",
+                "path": "location/1",
+                "value": "0"
+            },
+            {
+                "op": "replace",
+                "path": "parents/0",
+                "value": "FLUX"
+            },
+            {
+                "op": "replace",
+                "path": "category",
+                "value": "TAINTOLOGY"
+            }
+        ]
+    },
+    {
+        "key": "WARP",
+        "ops": [
+            {
+                "op": "replace",
+                "path": "location/0",
+                "value": "2"
+            },
+            {
+                "op": "replace",
+                "path": "location/1",
+                "value": "0"
+            },
+            {
+                "op": "replace",
+                "path": "category",
+                "value": "TAINTOLOGY"
+            }
+        ]
+    },
+    {
+        "key": "FLUX",
+        "ops": [
+            {
+                "op": "replace",
+                "path": "location/0",
+                "value": "-2"
+            },
+            {
+                "op": "replace",
+                "path": "location/1",
+                "value": "0"
+            },
+            {
+                "op": "replace",
+                "path": "category",
+                "value": "TAINTOLOGY"
+            }
+        ]
+    },
+    {
+        "key": "FLUXCLEANUP",
+        "ops": [
+            {
+                "op": "replace",
+                "path": "location/0",
+                "value": "-2"
+            },
+            {
+                "op": "replace",
+                "path": "location/1",
+                "value": "2"
+            },
+            {
+                "op": "replace",
+                "path": "category",
+                "value": "TAINTOLOGY"
+            }
+        ]
+    },
+    {
+        "key": "FLUXRIFT",
+        "ops": [
+            {
+                "op": "replace",
+                "path": "location/0",
+                "value": "-2"
+            },
+            {
+                "op": "replace",
+                "path": "location/1",
+                "value": "-2"
+            },
+            {
+                "op": "replace",
+                "path": "category",
+                "value": "TAINTOLOGY"
+            }
+        ]
+    },
+    {
+        "key": "RIFTCLOSER",
+        "ops": [
+            {
+                "op": "replace",
+                "path": "location/0",
+                "value": "-4"
+            },
+            {
+                "op": "replace",
+                "path": "location/1",
+                "value": "-2"
+            },
+            {
+                "op": "replace",
+                "path": "category",
+                "value": "TAINTOLOGY"
+            }
+        ]
+    },
+    {
+        "key": "BATHSALTS",
+        "ops": [
+            {
+                "op": "replace",
+                "path": "location/0",
+                "value": "2"
+            },
+            {
+                "op": "replace",
+                "path": "location/1",
+                "value": "2"
+            },
+            {
+                "op": "replace",
+                "path": "category",
+                "value": "TAINTOLOGY"
+            },
+            {
+                "op": "replace",
+                "path": "parents/0",
+                "value": "WARP"
+            }
+        ]
+    },
+    {
+        "key": "SANESOAP",
+        "ops": [
+            {
+                "op": "replace",
+                "path": "location/0",
+                "value": "4"
+            },
+            {
+                "op": "replace",
+                "path": "location/1",
+                "value": "4"
+            },
+            {
+                "op": "replace",
+                "path": "category",
+                "value": "TAINTOLOGY"
+            }
+        ]
+    },
+    {
+        "key": "ARCANESPA",
+        "ops": [
+            {
+                "op": "replace",
+                "path": "location/0",
+                "value": "6"
+            },
+            {
+                "op": "replace",
+                "path": "location/1",
+                "value": "4"
+            },
+            {
+                "op": "replace",
+                "path": "category",
+                "value": "TAINTOLOGY"
+            }
+        ]
     }
 ]

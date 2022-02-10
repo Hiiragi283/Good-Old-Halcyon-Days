@@ -520,7 +520,7 @@
 			{
 				"op": "replace",
 				"path": "meta",
-				"value": [REVERSE]
+				"value": ["REVERSE"]
 			}
         ]
 	},
@@ -570,7 +570,7 @@
 			{
 				"op": "replace",
 				"path": "meta",
-				"value": [REVERSE]
+				"value": ["REVERSE"]
 			}
         ]
 	},
@@ -600,7 +600,7 @@
 			{
 				"op": "replace",
 				"path": "meta",
-				"value": [REVERSE]
+				"value": ["REVERSE"]
 			}
         ]
 	}
