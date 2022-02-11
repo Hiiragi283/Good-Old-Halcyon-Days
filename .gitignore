@@ -12,8 +12,10 @@ caches/
 docs/
 download/
 journeymap/
+local/
 logs/
 mods/
+resources/
 resourepack/
 saves/
 screenshots/
@@ -22,6 +24,7 @@ shaderpacks/
 #特定のフォルダ
 
 config/AppliedEnergistics2/
+config/ftbquests/
 config/gregtech/terminal/guide/*/zh_cn/
 
 #特定のファイル
@@ -34,6 +37,7 @@ usercache.json
 usernamecache.json
 
 config/InvTweaks.cfg
+config/tinker_ore_dict_melting_cache.dat
 config/thaumicjei_itemstack_aspects.json
 config/splash.properties
 
