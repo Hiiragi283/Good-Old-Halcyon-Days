@@ -1,3 +1,67 @@
+
+# FTBQuests Title
+
+## Primitive Age
+
+gohd.quest.primitive_age.category=Primitive Age
+gohd.quest.primitive_age.subtitle1=A little too short?
+
+gohd.quest.welcome.title=Welcome to Good Old Halcyon Days!
+gohd.quest.welcome.subtitle="Gohd" in short
+gohd.quest.welcome.text=
+gohd.quest.welcome.task1=Dive into the world!
+
+gohd.quest.punch_log.title=Punch Log!
+
+gohd.quest.tinker_preparation.title=Familiar Sight
+
+gohd.quest.tool_chest.title=Not so Familiar Sight
+
+gohd.quest.tinker_tools.title=Tinker's Tools
+gohd.quest.tinker_tools.subtitle=Better Than Greg's Tools
+gohd.quest.tinker_tools.text.material_any=You can achieve this quest no matter what material you use to make tools.
+
+gohd.quest.mattock.title=Mattock
+gohd.quest.mattock.text1=Mattock is a tool which can be used as axe and shovel.
+
+gohd.quest.longsword.title=Longsword
+gohd.quest.longsword.text1=Right-clicking Longsword, you can jump forward. But damage are less than Broadsword.
+
+gohd.quest.rapier.title=Rapier
+gohd.quest.rapier.text1=Right-clicking Rapier, you can jump backward. But damage are much less than Broadsword.
+gohd.quest.rapier.text2=Attack speed is faster than Broadsword and Longsword.
+
+gohd.quest.battlesign.title=BattleSign
+gohd.quest.battlesign.text1=Battlesign can reflect projectiles when right-clicking.
+
+gohd.quest.grout.title=Clastics, Assemble!
+
+gohd.quest.primitive_furnace.title=How to make clay furnace
+gohd.quest.primitive_furnace.text1=
+
+gohd.quest.clay_bucket.title=Clay Bucket
+
+gohd.quest.seared_bricks.title=Seared Bricks
+
+gohd.quest.seared_furnace.title=Seared furnace
+
+gohd.quest.tinker_tank.title=Tinker Tank
+gohd.quest.tinker_tank.text1=Tinker tank is a multiblock tank that can contains §ldifferent types of fluids.§r
+gohd.quest.tinker_tank.text2=You can assemble this in §lany size !
+
+gohd.quest.melter.title=Melter
+
+gohd.quest.seared_tile.title=§lDon't use Seared Bricks for decolations!
+gohd.quest.seared_tile.text1=Seared bricks looks good for decorations at first glance...
+gohd.quest.seared_tile.text2=But they are "Tile Entities", which can cause serious lag if placed in large numbers
+
+gohd.quest.iron_ore.title=Iron Ores
+
+## Bronze Age
+
+gohd.quest.bronze_age.category=Bronze Age
+gohd.quest.bronze_age.subtitle=Magical Steam Evolution
+
 # thaumcraft research
 
 gohd.research.base_taintology.name=Basic Taintology
@@ -8,3 +72,16 @@ gohd.reseatch.unlock_soulomancy.stage.1=
 gohd.reseatch.unlock_soulomancy.stage.2=
 
 gohd.research.base_soulomancy.name=Basic Soulomancy
+
+# item tooltip
+
+gohd.tooltip.hided.name=§6Hide from JEI§r but §aavailable§r
+gohd.tooltip.removed.name=§4Recipe Removed!§r
+
+gohd.tooltip.wooden_pattern.name=§9Wooden pattern can be recycled by crafting§r
+gohd.tooltip.dont_use_for_decoration1=Part of the Smeltery,
+gohd.tooltip.dont_use_for_decoration2=Cannot store liquids.
+gohd.tooltip.dont_use_for_decoration3=but §4NOT Safe for decoration!!§r
+gohd.tooltip.dont_use_for_decoration4=Part of the high oven,
+gohd.tooltip.smeltery_controller.name=§4Disabled§r
+gohd.tooltip.cast_chisel.name=§9You can change part type with chisel§r
