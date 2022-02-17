@@ -7,10 +7,12 @@
 
 .mixin.out/
 asm/
+crafttweaker_dump/
 crash-reports/
 caches/
 docs/
 download/
+generated/
 journeymap/
 local/
 logs/
@@ -24,6 +26,8 @@ shaderpacks/
 #特定のフォルダ
 
 config/AppliedEnergistics2/
+config/enderio/recipes/examples/
+config/enderio/recipes/*.pdf
 config/ftbquests/
 config/gregtech/terminal/guide/*/zh_cn/
 
@@ -33,6 +37,7 @@ minecraftinstance.json
 options.txt
 optionsof.txt
 optionsshaders.txt
+patchouli_data.json
 usercache.json
 usernamecache.json
 
@@ -46,3 +51,5 @@ config/jei/jei.cfg
 config/jei/worldSettings.cfg
 config/jei/bookmarks.ini
 config/vanillafix/methods-stable_39.csv
+
+scripts.classes.txt
