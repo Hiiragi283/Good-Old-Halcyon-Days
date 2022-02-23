@@ -17,6 +17,7 @@ journeymap/
 local/
 logs/
 mods/
+profileImage/
 resources/
 resourepack/
 saves/
@@ -30,6 +31,7 @@ config/enderio/recipes/examples/
 config/enderio/recipes/*.pdf
 config/ftbquests/
 config/gregtech/terminal/guide/*/zh_cn/
+config/tellme/
 
 #特定のファイル
 
@@ -41,6 +43,7 @@ patchouli_data.json
 usercache.json
 usernamecache.json
 
+config/gregtech/terminal/config/RECIPE_CHART.nbt
 config/InvTweaks.cfg
 config/tinker_ore_dict_melting_cache.dat
 config/thaumicjei_itemstack_aspects.json
