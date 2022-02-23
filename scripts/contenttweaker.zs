@@ -1,5 +1,5 @@
 #priority 100
-#loader contenttweaker
+#loader contenttweaker reloadableevents
 
 import mods.contenttweaker.VanillaFactory;
 
@@ -16,3 +16,7 @@ for i in items {
 
 //Register custom items
 
+val flintSaw = mods.contenttweaker.VanillaFactory.createItem("saw_flint");
+flintSaw.maxDamage = 16;
+flintSaw.maxStackSize = 1;
+flintSaw.register();

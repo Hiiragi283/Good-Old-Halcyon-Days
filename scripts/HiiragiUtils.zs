@@ -1,5 +1,7 @@
 #priority 99
 
+//Some scripts are partially referred to GrassUtils : https://github.com/friendlyhj/GrassUtils
+
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 import crafttweaker.liquid.ILiquidStack;
@@ -65,7 +67,7 @@ function recipePattern (shapeless as bool, pattern as string[], map as IIngredie
 
 static recipeID as int = 0;
 
-function addCrafting (shapeless as bool, output as IItemStack, input as IIngredient[][], remove as bool) {
+function addCrafting (shapeless as bool, remove as bool, output as IItemStack, input as IIngredient[][]) {
     var recipeName as string = getNameItem(output) ~ "_" ~ recipeID;
     if (remove) {
         recipes.remove(output, true);
