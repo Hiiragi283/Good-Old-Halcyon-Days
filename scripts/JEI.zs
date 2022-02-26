@@ -1,7 +1,16 @@
+#======================================================================
+# name : jei.zs
+# auther : Hiiragi Russell Tsubasa;URL -> https://github.com/Hiiragi283
+# info : scripts for JEI
+#======================================================================
+
 #priority 0
 
+//crafttweakerからclassをimport
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
+
+//各種modからclassをimport
 import mods.jei.JEI.addItem;
 import mods.jei.JEI.addDescription;
 import mods.jei.JEI.hide;
@@ -9,10 +18,17 @@ import mods.jei.JEI.hideCategory;
 import mods.jei.JEI.removeAndHide;
 import mods.zenutils.I18n;
 
+//scriptのimport
 import scripts.HiiragiUtils;
 
-// Hide items from JEI
+//このscriptの読み込みの開始をログに出力
+print("Start loading jei.zs ...");
 
+//変数の定義
+
+//レシピの編集
+
+//JEIからアイテムを隠す
 val toHide as IItemStack[] = [
     <minecraft:spawn_egg:*>,
 //  <minecraft:splash_potion:*>,
@@ -27,14 +43,13 @@ val toHide as IItemStack[] = [
     <appliedenergistics2:charged_quartz_ore>,
     <appliedenergistics2:facade:*>
 ];
-
 for i in toHide {
     HiiragiUtils.hideFromJEI(i);
 }
 
-// Remove items from JEI
+//JEIからアイテムを隠しレシピを削除する
 
-// Add tooltip
+//JEI上のアイテムにTooltipを追加する
 
 /*val dontUseForDecoration as IItemStack[] = [
     <tcomplement:scorched_block:*>,
@@ -45,3 +60,6 @@ for i in toHide {
     <tconstruct:seared_slab:*>,
     <tconstruct:seared_slab2:*>
 ];*/
+
+//このscriptの読み込みの完了をログに出力
+print("jei.zs loaded!");

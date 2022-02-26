@@ -1,19 +1,32 @@
+#======================================================================
+# name : HiiragiUtils.zs
+# auther : Hiiragi Russell Tsubasa;URL -> https://github.com/Hiiragi283
+# info : Registry useful functions
+#        Some scripts are partially referred to GrassUtils
+#        -> https://github.com/friendlyhj/GrassUtils
+#======================================================================
+
 #priority 99
 
-//Some scripts are partially referred to GrassUtils : https://github.com/friendlyhj/GrassUtils
-
+//crafttweakerからclassをimport
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 import crafttweaker.liquid.ILiquidStack;
 import crafttweaker.oredict.IOreDictEntry;
 
-//import mods.ctintegration.util.RecipePattern;
+//各種modからclassをimport
 import mods.jei.JEI.hide;
 import mods.jei.JEI.removeAndHide;
 import mods.zenutils.I18n;
 
-//Get name from the passed item
+//このscriptの読み込みの開始をログに出力
+print("Start loading HiiragiUtils.zs ...");
 
+//変数の定義
+
+//レシピの編集
+
+//代入されたIItemStackから名前を生成する
 function getNameItem (item as IItemStack) as string {
     var owner as string = item.definition.owner;
     var id as string = item.definition.id.split(":")[1];
@@ -21,15 +34,13 @@ function getNameItem (item as IItemStack) as string {
     return (owner ~ "_" ~ id ~ "_" ~ meta);
 } 
 
-//Get name from the passed liquid
-
+//代入されたILiquidStackから名前を生成する
 function getNameLiquid (fluid as ILiquidStack) as string {
     var name as string = fluid.name;
     return ("liquid_" ~ name);
 } 
 
-//Detect oredict automaticaly from the passed item and remove oredict
-
+//代入されたIItemStackに紐づけされた鉱石辞書を取得し、それを削除する
 function removeOreDict (item as IItemStack) {
     if (!isNull(item.ores)) {
         var oredict = item.ores;
@@ -39,15 +50,13 @@ function removeOreDict (item as IItemStack) {
     }
 }
 
-//Hide the passed item from JEI
-
+//代入されたIItemStackをJEIから隠す
 function hideFromJEI (item as IItemStack) {
     mods.jei.JEI.hide(item);
     item.addTooltip(I18n.format("gohd.tooltip.hided.name"));
 }
 
-//Hide the passed item from JEI and remove its recipe
-
+//代入されたIItemStackをJEIから隠し、レシピを削除する
 function removeFromJEI (item as IItemStack) {
     mods.jei.JEI.removeAndHide(item);
     item.addTooltip(I18n.format("gohd.tooltip.removed.name"));
@@ -63,10 +72,9 @@ function recipePattern (shapeless as bool, pattern as string[], map as IIngredie
     }
 }
 */
-//Make recipe with auto-generated name
 
+//レシピ名を自動的に生成しつつレシピを登録する
 static recipeID as int = 0;
-
 function addCrafting (shapeless as bool, remove as bool, output as IItemStack, input as IIngredient[][]) {
     var recipeName as string = getNameItem(output) ~ "_" ~ recipeID;
     if (remove) {
@@ -79,3 +87,6 @@ function addCrafting (shapeless as bool, remove as bool, output as IItemStack, i
     }
     recipeID += 1;
 }
+
+//このscriptの読み込みの完了をログに出力
+print("HiiragiUtils.zs loaded!");
