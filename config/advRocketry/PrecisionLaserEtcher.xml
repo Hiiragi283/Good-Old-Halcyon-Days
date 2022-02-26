@@ -32,31 +32,26 @@
 	The "useDefault" attribute will prevent loading of recipes if set to "false"
 <!-->
 <Recipes useDefault="false">
-	<Recipe timeRequired="40" power ="20">
+	<Recipe timeRequired="1200" power ="600">
 		<input>
-			<itemStack>advancedrocketry:carbonscrubbercartridge;1;32766</itemStack>
+			<itemStack>advancedrocketry:lens</itemStack>
+			<itemStack>libvulpes:productplate;1;2</itemStack>
+			<itemStack>minecraft:redstone_block</itemStack>
+			<itemStack>advancedrocketry:wafer;4</itemStack>
 		</input>
 		<output>
-			<itemStack>advancedrocketry:carbonscrubbercartridge</itemStack>
-			<itemStack>minecraft:coal;1;1</itemStack>
+			<itemStack>advancedrocketry:itemcircuitplate;2;1</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="100" power ="10">
+	<Recipe timeRequired="1200" power ="400">
 		<input>
-			<fluidStack>oxygen;10</fluidStack>
-			<fluidStack>hydrogen;10</fluidStack>
+			<itemStack>advancedrocketry:lens</itemStack>
+			<itemStack>libvulpes:productplate;1;2</itemStack>
+			<itemStack>minecraft:redstone</itemStack>
+			<itemStack>advancedrocketry:wafer;4</itemStack>
 		</input>
 		<output>
-			<fluidStack>rocketfuel;20</fluidStack>
-		</output>
-	</Recipe>
-	<Recipe timeRequired="100" power ="1">
-		<input>
-			<itemStack>minecraft:bone</itemStack>
-			<fluidStack>nitrogen;10</fluidStack>
-		</input>
-		<output>
-			<itemStack>minecraft:dye;8;15</itemStack>
+			<itemStack>advancedrocketry:itemcircuitplate;2</itemStack>
 		</output>
 	</Recipe>
 </Recipes>
