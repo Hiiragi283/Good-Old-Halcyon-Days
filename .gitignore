@@ -4,6 +4,7 @@
 *.log
 *.jar
 *.lnk
+*.zsrc
 
 .mixin.out/
 asm/
