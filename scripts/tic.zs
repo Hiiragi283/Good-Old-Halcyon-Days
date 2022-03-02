@@ -22,10 +22,8 @@ import scripts.HiiragiUtils;
 print("Start loading tic.zs ...");
 
 //変数の定義
-val pattern as IItemStack = <tconstruct:pattern>;
-val woodenForm as IItemStack = <gregtech:meta_item_1:347>;
-val castChiselHead as IItemStack = <tconstruct:cast>.withTag({PartType:"tcomplement:chisel_head"});
-val castClayChiselHead as IItemStack = <tconstruct:clay_cast>.withTag({PartType:"tcomplement:chisel_head"});
+//val castChiselHead as IItemStack = <tconstruct:cast>.withTag({PartType:"tcomplement:chisel_head"});
+//val castClayChiselHead as IItemStack = <tconstruct:clay_cast>.withTag({PartType:"tcomplement:chisel_head"});
 
 //JEIからアイテムを隠す
 val toHide as IItemStack[] = [];
@@ -48,17 +46,13 @@ for i in toRemove {
 //レシピの編集
 recipes.remove(<tconstruct:smeltery_controller>);
 
-HiiragiUtils.addCrafting(true, true, pattern*4, [[<contenttweaker:saw_flint>.anyDamage().transformDamage(1), <ore:slabWood>]]);
-HiiragiUtils.addCrafting(true, false, pattern, [[pattern]]);
-HiiragiUtils.addCrafting(true, false, pattern, [[woodenForm]]);
-//HiiragiUtils.addCrafting(true, false, woodenForm, [[pattern]]);
 HiiragiUtils.addCrafting(false, true, <tcomplement:melter:0>, RecipePattern.init(["AAA", "ABA", "CCC"]).map({A:<ore:blockGlass>, B:<tconstruct:seared_tank:*>, C:<tconstruct:materials:0>}).ingredients);
 
 recipes.replaceAllOccurences(<minecraft:furnace>, null, <tconstruct:seared_furnace_controller>);
 
 //アイテムにtooltipsを追加する
 
-pattern.addTooltip(I18n.format("gohd.tooltip.wooden_pattern.name"));
+<tconstruct:pattern>.addTooltip(I18n.format("gohd.tooltip.wooden_pattern.name"));
 <gregtech:meta_item_1:347>.addTooltip(I18n.format("gohd.tooltip.wooden_form.name"));
 <tconstruct:cast>.addTooltip(I18n.format("gohd.tooltip.cast_chisel.name"));
 <tconstruct:smeltery_controller>.addTooltip(I18n.format("gohd.tooltip.smeltery_controller.name"));
@@ -68,7 +62,7 @@ pattern.addTooltip(I18n.format("gohd.tooltip.wooden_pattern.name"));
 //Brass CastおよびClay Castの改変
 chisel.addGroup("cast");
 chisel.addVariation("cast", <tconstruct:cast>);
-chisel.addVariation("cast", castChiselHead);
+chisel.addVariation("cast", HiiragiUtils.castBrass("chisel_head"));
 
 val castPattern as string[] = [
     "pick_head",
@@ -101,6 +95,7 @@ val castPattern as string[] = [
     "tough_binding"
 ];
 
+/*
 for i in castPattern {
     //Clay Castの無効化
     var CastPatternName as string = "tconstruct:" + i;
@@ -111,16 +106,28 @@ for i in castPattern {
     var castBrass as IItemStack = <tconstruct:cast>.withTag({PartType: CastPatternName});
     casting.removeTableRecipe(castBrass);
     chisel.addVariation("cast", castBrass);
-}
+} */
 for i in 0 to 5 {
     var castBrass as IItemStack = <tconstruct:cast_custom>.definition.makeStack(i);
     castBrass.addTooltip(I18n.format("gohd.tooltip.cast_chisel.name"));
     casting.removeTableRecipe(castBrass);
     chisel.addVariation("cast", castBrass);
 }
-casting.removeTableRecipe(castChiselHead);
-casting.removeTableRecipe(castClayChiselHead);
-HiiragiUtils.removeFromJEI(castClayChiselHead);
+
+
+for i in castPattern {
+    //Clay Castの無効化
+    HiiragiUtils.removeFromJEI(HiiragiUtils.castClay(i));
+    casting.removeTableRecipe(HiiragiUtils.castClay(i));
+
+    //Brass Castを全てchiselから作るように改変
+    casting.removeTableRecipe(HiiragiUtils.castBrass(i));
+    chisel.addVariation("cast", HiiragiUtils.castBrass(i));
+}
+
+casting.removeTableRecipe(HiiragiUtils.castBrass("chisel_head"));
+casting.removeTableRecipe(HiiragiUtils.castClay("chisel_head"));
+HiiragiUtils.removeFromJEI(HiiragiUtils.castClay("chisel_head"));
 
 //各種建材をchiselでのみ加工できるようにする
 

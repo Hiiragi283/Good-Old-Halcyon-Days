@@ -12,6 +12,7 @@ import crafttweaker.item.IIngredient;
 
 //各種modからclassをimport
 import mods.ctintegration.util.RecipePattern;
+import mods.gregtech.recipe.RecipeMap;
 
 //scriptのimport
 import scripts.HiiragiUtils;
@@ -28,12 +29,35 @@ function gregItem (i as int) as IItemStack {
 }
 
 //レシピの編集
+//全般
 
 recipes.remove(gregItem(350));
+HiiragiUtils.addCrafting(true, false, <contenttweaker:grout_dust>*4, [[<ore:GT.tool.mortar>, <tconstruct:soil:0>]]);
 
-HiiragiUtils.addCrafting(false, false, <ore:blockGrout>.firstItem, RecipePattern.init(["AAA", "AAA", "AAA"]).map({A:<ore:dustGrout>}).ingredients);
-HiiragiUtils.addCrafting(true, false, <ore:dustGrout>.firstItem * 9, [[<ore:blockGrout>]]);
-HiiragiUtils.addCrafting(true, false, <contenttweaker:unfired_seared_brick>*4, [[gregItem(348).reuse(), <ore:blockGrout>]]);
+//Bronze Age
+
+<recipemap:alloy_smelter>.recipeBuilder()
+    .inputs([<ore:dustGrout>, <ore:dustBrick>])
+    .outputs(<tcomplement:materials:1>*2)
+    .duration(4*20)
+    .EUt(4)
+    .buildAndRegister();
+
+//LV Age
+
+//MV Age
+
+//HV Age
+
+//EV Age
+
+//IV Age
+
+//LuV Age
+
+//ZPM Age
+
+//UV-UHV Age
 
 //このscriptの読み込みの完了をログに出力
 print("gregtech.zs loaded!");
