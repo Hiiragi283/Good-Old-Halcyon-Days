@@ -88,5 +88,46 @@ function addCrafting (shapeless as bool, remove as bool, output as IItemStack, i
     recipeID += 1;
 }
 
+//自動的に古いレシピを削除する機能を備えた関数
+
+function addFurnace (remove as bool, output as IItemStack, input as IIngredient) {
+    if (remove) {
+        furnace.remove(output);
+    }
+    furnace.addRecipe(output, input);
+}
+
+//代入した文字列から特定の鋳型を返す
+
+function castClay (pattern as string) as IItemStack {
+    if (isNull(pattern)) {
+        return <tconstruct:clay_cast>;
+    } else if (pattern == "chisel_head") {
+        return <tconstruct:clay_cast>.withTag({PartType:"tcomplement:chisel_head"});
+    } else
+        var patternName = "tconstruct:" + pattern;
+        return <tconstruct:clay_cast>.withTag({PartType:patternName});
+}
+
+function castBrass (pattern as string) as IItemStack {
+    if (isNull(pattern)) {
+        return <tconstruct:cast>;
+    } else if (pattern == "chisel_head") {
+        return <tconstruct:cast>.withTag({PartType:"tcomplement:chisel_head"});
+    } else if (pattern == "ingot") {
+        return <tconstruct:cast_custom:0>;
+    } else if (pattern == "nugget") {
+        return <tconstruct:cast_custom:1>;
+    } else if (pattern == "gem") {
+        return <tconstruct:cast_custom:2>;
+    } else if (pattern == "plate") {
+        return <tconstruct:cast_custom:3>;
+    } else if (pattern == "gear") {
+        return <tconstruct:cast_custom:4>;
+    } else
+        var patternName = "tconstruct:" + pattern;
+        return <tconstruct:cast>.withTag({PartType:patternName});
+}
+
 //このscriptの読み込みの完了をログに出力
 print("HiiragiUtils.zs loaded!");

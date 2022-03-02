@@ -24,11 +24,13 @@ print("Start loading materials.zs ...");
 //レシピの編集
 
 //素材の登録
+/*
 val grout = MaterialBuilder(32000, "grout")
     .dust()
-    .color(0x878b92).iconSet("DULL")
+    .color(0x878b92).iconSet("ROUGH")
     .flags(["mortar_grindable"])
     .build();
+*/
 
 //登録済みの素材の編集
 

@@ -1,13 +1,29 @@
 
 # FTBQuests Title
+## Category
 
-## Primitive Age
-
+gohd.quest.gohd.category=Good Old Halcyon Days
 gohd.quest.primitive_age.category=Primitive Age
+
+gohd.quest.gregtech.category=GregTech
+gohd.quest.gregtech.machine.category=GT Machines
+gohd.quest.gregtech.generator.category=GT Generator
+
+gohd.quest.advrocketry.category=Advanced Rocktery
+
+gohd.quest.twilight_forest.category=Twilight Forest
+gohd.qust.thaumcraft.category=Thaumcraft
+gohd.qust.botania.category=Botania
+gohd.qust.bloodmagic.category=Bloodmagic
+gohd.qust.evilcraft.category=Evilcraft
+gohd.qust.astralsorcery.category=Astral sorcery
+
+## GOHD main
+
 gohd.quest.welcome.title=Welcome to Good Old Halcyon Days!
 gohd.quest.welcome.subtitle="GOHD" in short
 gohd.quest.welcome.text=
-gohd.quest.welcome.task1=Dive into the world!
+#gohd.quest.welcome.task1=Dive into the world!
 gohd.quest.jei.title=JEI is your best friend!
 gohd.quest.jei.task1=Say Hello to JEI
 gohd.quest.jei.text1=Just Enough Items, or JEI, is the most friendly mod for modded players, and they can tell us almost all recipes, usages and information.
@@ -17,6 +33,20 @@ gohd.quest.tutorial1.title=This is start quest
 gohd.quest.tutorial2.title=This is normal quest
 gohd.quest.tutorial3.title=This is optional quest
 gohd.quest.tutorial4.title=This is end quest
+gohd.quest.tutorial5.title=This is info quest
+gohd.quest.twilight_boss1.title=Forest Mediator
+gohd.quest.twilight_boss2.title=Swamp Adventurer
+gohd.quest.twilight_boss3.title=Illuminate The Darkness
+gohd.quest.twilight_boss4.title=Frost Walker
+gohd.quest.steam_evolution.title=Steam Evolution
+gohd.quest.semiconductor.title=Semiconductor Industry
+gohd.quest.petrochemistry.title=Petrochemistry
+gohd.quest.visit_moon.title=Fly me to the moon
+
+gohd.quest.minecraft.title=Escape to "Minecraft"
+
+### Primitive Age
+
 gohd.quest.punch_log.title=Punch Log!
 gohd.quest.tinker_preparation.title=Familiar Sight
 gohd.quest.tool_chest.title=Not so Familiar Sight
@@ -47,11 +77,16 @@ gohd.quest.seared_tile.text1=Seared bricks looks good for decorations at first g
 gohd.quest.seared_tile.text2=But they are "Tile Entities", which can cause serious lag if placed in large numbers
 gohd.quest.iron_ore.title=Iron Ores
 
-## Gregtech
+### Bronze Age
 
+gohd.quest.coke_brick.title=Coke Bricks
+gohd.quest.high_oven.title=High Oven
+gohd.quest.crushed_ore.title=Crushed Ore
+gohd.quest.impure_dust.title=Impure Dust
+
+## Gregtech
 ### Main tab
 
-gohd.quest.gregtech.category=GregTech
 gohd.quest.gregtech.title=the road to GregTech is paved with quest line.
 gohd.quest.bronze_age.title=Bronze Age
 gohd.quest.lv_age.title=LV Age
@@ -81,14 +116,8 @@ gohd.quest.naquadah_coil.title=Naquadah Coil
 gohd.quest.trinium_coil.title=Trinium Coil
 gohd.quest.tritanium_coil.title=Tritanium Coil
 
-### Bronze Age
-
-gohd.quest.coke_brick.title=Coke Bricks
-gohd.quest.high_oven.title=High Oven
-
 ### Machine Tab
 
-gohd.quest.gregtech.machine.category=GT Machines
 gohd.quest.gregtech.machine.task1=Let's make ALL GT machines!
 gohd.quest.item_only.title=Item Only
 gohd.quest.item_only.text1=Dependants of this quest show machines that process only items
@@ -101,7 +130,10 @@ gohd.quest.liquid_only.text1=Dependants of this quest show machines that process
 
 ## Advanced Rocktery
 
-gohd.quest.advrocketry.category=Advanced Rocktery
+## Twilight Forest
+
+gohd.quest.phantom_armor=Phantom Armor
+gohd.quest.arctic_armor=Arctic Armor
 
 # thaumcraft research
 

@@ -22,5 +22,16 @@ print("Start loading preinit.zs ...");
 
 //レシピの編集
 
+//代入されたIItemStackに紐づけされた鉱石辞書を取得し、それを削除する
+//異なるloaderを利用するファイル間ではimportができないため、こちらでも定義する必要があった
+function removeOreDict (item as IItemStack) {
+    if (!isNull(item.ores)) {
+        var oredict = item.ores;
+        for i in oredict {
+            i.remove(item);
+        }
+    }
+}
+
 //このscriptの読み込みの完了をログに出力
 print("preinit.zs loaded!");
