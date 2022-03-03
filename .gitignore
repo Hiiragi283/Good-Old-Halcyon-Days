@@ -37,6 +37,7 @@ config/tellme/
 
 #特定のファイル
 
+BotaniaVars.dat
 minecraftinstance.json
 options.txt
 optionsof.txt
@@ -45,6 +46,7 @@ patchouli_data.json
 usercache.json
 usernamecache.json
 
+astralsorcery/gatewayFilter/worldFilter.dat
 config/gregtech/terminal/config/RECIPE_CHART.nbt
 config/InvTweaks.cfg
 config/tinker_ore_dict_melting_cache.dat
