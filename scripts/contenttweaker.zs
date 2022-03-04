@@ -58,7 +58,7 @@ flintSaw.maxDamage = 16;
 flintSaw.maxStackSize = 1;
 flintSaw.register();
 
-val record_minecraft = mods.contenttweaker.VanillaFactory.createItem("record_minecarft");
+val record_minecraft = mods.contenttweaker.VanillaFactory.createItem("record_minecraft");
 record_minecraft.maxStackSize = 1;
 record_minecraft.rarity = "EPIC";
 record_minecraft.register();

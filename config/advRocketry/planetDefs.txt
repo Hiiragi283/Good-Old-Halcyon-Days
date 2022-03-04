@@ -80,6 +80,44 @@
             <artifact>minecarft:nether_star</artifact>
         </planet>
     </star>
+    <star name="mythologia" temp="100" x="10" y="10" numPlanets="4" numGasGiants="2">
+        <planet name="Atuum" DIMID="201" dimMapping="" customIcon="gasgiantbrown">
+            <isKnown>true</isKnown>
+            <fogColor>1,1,1</fogColor>
+            <skyColor>0,0,1</skyColor>
+            <atmosphereDensity>100</atmosphereDensity>
+            <gravitationalMultiplier>100</gravitationalMultiplier>
+            <orbitalDistance>80</orbitalDistance>
+            <rotationalPeriod>24000</rotationalPeriod>
+        </planet>
+        <planet name="Erebeth" DIMID="202" dimMapping="" customIcon="waterworld">
+            <isKnown>true</isKnown>
+            <fogColor>1,1,1</fogColor>
+            <skyColor>0,0,1</skyColor>
+            <atmosphereDensity>100</atmosphereDensity>
+            <gravitationalMultiplier>100</gravitationalMultiplier>
+            <orbitalDistance>90</orbitalDistance>
+            <rotationalPeriod>24000</rotationalPeriod>
+        </planet>
+        <planet name="Toho" DIMID="203" dimMapping="" customIcon="gasgiantbrown">
+            <isKnown>true</isKnown>
+            <fogColor>1,1,1</fogColor>
+            <skyColor>0,0,1</skyColor>
+            <atmosphereDensity>100</atmosphereDensity>
+            <gravitationalMultiplier>100</gravitationalMultiplier>
+            <orbitalDistance>80</orbitalDistance>
+            <rotationalPeriod>24000</rotationalPeriod>
+        </planet>
+        <planet name="Ethernalia" DIMID="204" dimMapping="" customIcon="gasgiantbrown">
+            <isKnown>true</isKnown>
+            <fogColor>1,1,1</fogColor>
+            <skyColor>0,0,1</skyColor>
+            <atmosphereDensity>100</atmosphereDensity>
+            <gravitationalMultiplier>100</gravitationalMultiplier>
+            <orbitalDistance>80</orbitalDistance>
+            <rotationalPeriod>24000</rotationalPeriod>
+        </planet>
+    </star>
     <star name="mojang" temp="100" x="2011" y="1118" numPlanets="1" numgasGiants="0">
         <planet name="minecraft" DIMID="2011" customIcon="earthlike">
             <isKnown>true</isKnown>
