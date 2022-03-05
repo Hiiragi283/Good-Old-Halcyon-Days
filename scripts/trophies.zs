@@ -21,6 +21,8 @@ print("Start loading trophies.zs ...");
 
 //変数の定義
 
+val headMinecraft as IItemStack = <minecraft:skull:3>.withTag({SkullOwner: {Id: "fe02ba7c-6fb4-458d-af7d-85a72a7e8163",Properties: {textures: [{Value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzQ5YzYzYmM1MDg3MjMzMjhhMTllNTk3ZjQwODYyZDI3YWQ1YzFkNTQ1NjYzYWMyNDQ2NjU4MmY1NjhkOSJ9fX0="}]}}});
+
 //レシピの編集
 
 //Simple Trophiesのトロフィーを自動的に作成
@@ -76,18 +78,7 @@ function addTrophies (name as string, variant as string, color as int[], showToo
 //トロフィーの作成
 
 var trophy0 as IItemStack =
-    addTrophies("Escape from Minecroft","classic",[65, 52, 205],1,
-    <minecraft:skull:3>.withTag({
-        SkullOwner: {
-            Id: "fe02ba7c-6fb4-458d-af7d-85a72a7e8163",
-            Properties: {
-                textures: [
-                    {Value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzQ5YzYzYmM1MDg3MjMzMjhhMTllNTk3ZjQwODYyZDI3YWQ1YzFkNTQ1NjYzYWMyNDQ2NjU4MmY1NjhkOSJ9fX0="}
-                ]
-            }
-        }
-    })
-    );
+    addTrophies("Escape from Minecroft","classic",[65, 205, 52],1, headMinecraft);
 
 //トロフィーをJEIに登録
 

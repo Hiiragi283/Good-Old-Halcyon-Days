@@ -3,7 +3,7 @@
         <planet name="Earth" DIMID="0" dimMapping="" customIcon="earthlike">
             <isKnown>true</isKnown>
             <fogColor>1,1,1</fogColor>
-            <skyColor>0,0,1</skyColor>
+            <skyColor>1,1,1</skyColor>
             <atmosphereDensity>100</atmosphereDensity>
             <gravitationalMultiplier>100</gravitationalMultiplier>
             <orbitalDistance>100</orbitalDistance>
@@ -80,11 +80,11 @@
             <artifact>minecarft:nether_star</artifact>
         </planet>
     </star>
-    <star name="mojang" temp="100" x="2011" y="1118" numPlanets="1" numgasGiants="0">
-        <planet name="minecraft" DIMID="2011" customIcon="earthlike">
+    <star name="Mojang" temp="100" x="2011" y="1118" numPlanets="1" numgasGiants="0">
+        <planet name="Minecraft" DIMID="2011" customIcon="earthlike">
             <isKnown>true</isKnown>
             <fogColor>1,1,1</fogColor>
-            <skyColor>0,0,1</skyColor>
+            <skyColor>1,1,1</skyColor>
             <atmosphereDensity>100</atmosphereDensity>
             <gravitationalMultiplier>100</gravitationalMultiplier>
             <orbitalDistance>100</orbitalDistance>
