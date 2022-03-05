@@ -23,15 +23,10 @@ print("Start loading gregtech.zs ...");
 //変数の登録
 val metaItem as IItemStack = <gregtech:meta_item_1>;
 
-//メタデータから自動的にIItemStackを返す関数 (毎回"meta_item_1"って打つのだるい)
-function gregItem (i as int) as IItemStack {
-    return <gregtech:meta_item_1>.definition.makeStack(i);
-}
-
 //レシピの編集
 //全般
 
-recipes.remove(gregItem(350));
+recipes.remove(HiiragiUtils.gregItem(350));
 HiiragiUtils.addCrafting(true, false, <contenttweaker:grout_dust>*4, [[<ore:GT.tool.mortar>, <tconstruct:soil:0>]]);
 
 //Bronze Age

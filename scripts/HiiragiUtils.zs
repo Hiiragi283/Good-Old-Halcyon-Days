@@ -97,6 +97,11 @@ function addFurnace (remove as bool, output as IItemStack, input as IIngredient)
     furnace.addRecipe(output, input);
 }
 
+//メタデータから自動的にIItemStackを返す関数 (毎回"meta_item_1"って打つのだるい)
+function gregItem (i as int) as IItemStack {
+    return <gregtech:meta_item_1>.definition.makeStack(i);
+}
+
 //代入した文字列から特定の鋳型を返す
 
 function castClay (pattern as string) as IItemStack {
