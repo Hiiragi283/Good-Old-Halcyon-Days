@@ -1,0 +1,11 @@
+{
+    "input": {
+        "item": "tconstruct:casting",
+        "data": 0
+    },
+    "output": {
+        "item": "tcomplement:scorched_casting",
+        "data": 0
+    },
+    "duration": 600
+}
