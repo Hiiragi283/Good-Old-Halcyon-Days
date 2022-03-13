@@ -1,5 +1,7 @@
 
 #item
 
-item.contenttweaker.grout_dust.name=Grout Dust
-item.contenttweaker.grout_ingot.name=Grout Ingot
+item.contenttweaker.unfired_seared_channel.name=Unfired Seared Channel
+item.contenttweaker.unfired_casting_table.name=Unfired Casting Table
+item.contenttweaker.unfired_casting_basin.name=Unfired Casting Basin
+item.contenttweaker.grout_ingot.name=Unfired Seared Brick

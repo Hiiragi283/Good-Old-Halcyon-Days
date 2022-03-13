@@ -8,25 +8,22 @@
 
 #priority 99
 
-//crafttweakerからclassをimport
+#crafttweakerからclassをimport
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 import crafttweaker.liquid.ILiquidStack;
 import crafttweaker.oredict.IOreDictEntry;
 
-//各種modからclassをimport
+#各種modからclassをimport
 import mods.jei.JEI.hide;
 import mods.jei.JEI.removeAndHide;
+import mods.zenutils.HexHelper;
 import mods.zenutils.I18n;
 
-//このscriptの読み込みの開始をログに出力
+#このscriptの読み込みの開始をログに出力
 print("Start loading HiiragiUtils.zs ...");
 
-//変数の定義
-
-//レシピの編集
-
-//代入されたIItemStackから名前を生成する
+#代入されたIItemStackから名前を生成する関数
 function getNameItem (item as IItemStack) as string {
     var owner as string = item.definition.owner;
     var id as string = item.definition.id.split(":")[1];
@@ -34,13 +31,13 @@ function getNameItem (item as IItemStack) as string {
     return (owner ~ "_" ~ id ~ "_" ~ meta);
 } 
 
-//代入されたILiquidStackから名前を生成する
+#代入されたILiquidStackから名前を生成する関数
 function getNameLiquid (fluid as ILiquidStack) as string {
     var name as string = fluid.name;
     return ("liquid_" ~ name);
-} 
+}
 
-//代入されたIItemStackに紐づけされた鉱石辞書を取得し、それを削除する
+#代入されたIItemStackに紐づけされた鉱石辞書を取得し、それを削除する関数
 function removeOreDict (item as IItemStack) {
     if (!isNull(item.ores)) {
         var oredict = item.ores;
@@ -50,30 +47,19 @@ function removeOreDict (item as IItemStack) {
     }
 }
 
-//代入されたIItemStackをJEIから隠す
+#代入されたIItemStackをJEIから隠す関数
 function hideFromJEI (item as IItemStack) {
     mods.jei.JEI.hide(item);
     item.addTooltip(I18n.format("gohd.tooltip.hided.name"));
 }
 
-//代入されたIItemStackをJEIから隠し、レシピを削除する
+#代入されたIItemStackをJEIから隠し、レシピを削除する関数
 function removeFromJEI (item as IItemStack) {
     mods.jei.JEI.removeAndHide(item);
     item.addTooltip(I18n.format("gohd.tooltip.removed.name"));
 }
 
-//Make crafting recipe pattern
-/*
-function recipePattern (shapeless as bool, pattern as string[], map as IIngredient[string]) as IIngredient[][] {
-    if (!shapeless) {
-        return RecipePattern.init(pattern).map(map).ingredients;
-    } else {
-        return RecipePattern.init(pattern).map(map).shapelessIngredients;
-    }
-}
-*/
-
-//レシピ名を自動的に生成しつつレシピを登録する
+#レシピ名を自動的に生成しつつレシピを登録する関数
 static recipeID as int = 0;
 function addCrafting (shapeless as bool, remove as bool, output as IItemStack, input as IIngredient[][]) {
     var recipeName as string = getNameItem(output) ~ "_" ~ recipeID;
@@ -87,23 +73,35 @@ function addCrafting (shapeless as bool, remove as bool, output as IItemStack, i
     }
     recipeID += 1;
 }
+function removeCrafting (output as IItemStack) {
+    recipes.remove(output, true);
+}
 
-//自動的に古いレシピを削除する機能を備えた関数
+#アイテムの等価交換を実装するレシピ
+function addCraftingConv (item1 as IItemStack, item2 as IItemStack) {
+    var recipeName1 as string = getNameItem(item1) ~ "_" ~ recipeID;
+    var recipeName2 as string = getNameItem(item2) ~ "_" ~ recipeID;
+    recipes.addShapeless(recipeName1, item1, [item2]);
+    recipes.addShapeless(recipeName2, item2, [item1]);
+}
 
+#自動的に古いレシピを削除する機能を備えた関数
 function addFurnace (remove as bool, output as IItemStack, input as IIngredient) {
     if (remove) {
         furnace.remove(output);
     }
     furnace.addRecipe(output, input);
 }
+function removeFurnace (output as IItemStack) {
+    furnace.remove(output);
+}
 
-//メタデータから自動的にIItemStackを返す関数 (毎回"meta_item_1"って打つのだるい)
+#メタデータから自動的にIItemStackを返す関数 (毎回"meta_item_1"って打つのだるい)
 function gregItem (i as int) as IItemStack {
     return <gregtech:meta_item_1>.definition.makeStack(i);
 }
 
-//代入した文字列から特定の鋳型を返す
-
+#代入した文字列から特定の鋳型を返す関数
 function castClay (pattern as string) as IItemStack {
     if (isNull(pattern)) {
         return <tconstruct:clay_cast>;
@@ -134,5 +132,5 @@ function castBrass (pattern as string) as IItemStack {
         return <tconstruct:cast>.withTag({PartType:patternName});
 }
 
-//このscriptの読み込みの完了をログに出力
+#このscriptの読み込みの完了をログに出力
 print("HiiragiUtils.zs loaded!");

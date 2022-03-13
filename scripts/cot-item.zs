@@ -9,34 +9,31 @@
 #priority 100
 #loader contenttweaker reloadableevents
 
-//crafttweakerからclassをimport
+#crafttweakerからclassをimport
 
-//各種modからclassをimport
+#各種modからclassをimport
 import mods.contenttweaker.Color;
 import mods.contenttweaker.IItemColorSupplier;
 import mods.contenttweaker.ResourceLocation;
 import mods.contenttweaker.VanillaFactory;
+import mods.zenutils.HexHelper;
 
-//このscriptの読み込みの開始をログに出力
+#このscriptの読み込みの開始をログに出力
 print("Start loading contenttweaker.zs ...");
 
-//変数の定義
-
-//レシピの編集
-
-//単純なアイテムを登録
-val items as string[] = [];/*
+#単純なアイテムを登録
+val items as string[] = [
+    "unfired_seared_channel",
+    "unfired_casting_table",
+    "unfired_casting_basin"
+];
 for i in items {
     var itemRegistry = mods.contenttweaker.VanillaFactory.createItem(i);
     itemRegistry.register();
-}*/
+}
 
-//色付きアイテムを登録
-
+#色付きアイテムを登録
 val map as string[string][string]= {
-    "grout_dust":{
-        "878b92":"gregtech:items/material_sets/rough/dust"
-    },
     "grout_ingot":{
         "878b92":"gregtech:items/material_sets/rough/ingot"
     }
@@ -52,15 +49,19 @@ for id, textureMap in map {
     }
 }
 
-//特殊なアイテムを登録
-val flintSaw = mods.contenttweaker.VanillaFactory.createItem("saw_flint");
-flintSaw.maxDamage = 16;
-flintSaw.maxStackSize = 1;
-flintSaw.register();
-
+#特殊なアイテムを登録
 val record_minecraft = mods.contenttweaker.VanillaFactory.createItem("record_minecraft");
 record_minecraft.maxStackSize = 1;
 record_minecraft.rarity = "EPIC";
 record_minecraft.register();
 //このscriptの読み込みの完了をログに出力
 print("contenttweaker.zs loaded!");
+
+/*
+53 55 57
+61 34 26
+
+114 89 93
+
+57 44 46
+*/

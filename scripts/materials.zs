@@ -7,23 +7,21 @@
 #priority 1000
 #loader gregtech
 
-//crafttweakerからclassをimport
+#crafttweakerからclassをimport
 
-//各種modからclassをimport
+#各種modからclassをimport
 import mods.gregtech.material.Material;
 import mods.gregtech.material.MaterialBuilder;
 import mods.gregtech.material.MaterialRegistry;
 
-//scriptのimport
+#scriptのimport
 
-//このscriptの読み込みの開始をログに出力
+#このscriptの読み込みの開始をログに出力
 print("Start loading materials.zs ...");
 
-//変数の定義
+#変数の定義
 
-//レシピの編集
-
-//素材の登録
+#素材の登録
 /*
 val grout = MaterialBuilder(32000, "grout")
     .dust()
@@ -32,7 +30,7 @@ val grout = MaterialBuilder(32000, "grout")
     .build();
 */
 
-//登録済みの素材の編集
+#登録済みの素材の編集
 
-//このscriptの読み込みの完了をログに出力
+#このscriptの読み込みの完了をログに出力
 print("materials.zs loaded!");
