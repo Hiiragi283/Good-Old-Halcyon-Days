@@ -1,0 +1,9 @@
+{
+    "input": {
+        "item": "tconstruct:channel"
+    },
+    "output": {
+        "item": "tcomplement:scorched_channel"
+    },
+    "duration": 600
+}

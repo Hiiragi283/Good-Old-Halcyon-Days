@@ -6,11 +6,11 @@
 
 #priority 0
 
-//crafttweakerからclassをimport
+#crafttweakerからclassをimport
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 
-//各種modからclassをimport
+#各種modからclassをimport
 import mods.jei.JEI.addItem;
 import mods.jei.JEI.addDescription;
 import mods.jei.JEI.hide;
@@ -18,27 +18,16 @@ import mods.jei.JEI.hideCategory;
 import mods.jei.JEI.removeAndHide;
 import mods.zenutils.I18n;
 
-//scriptのimport
+#scriptのimport
 import scripts.HiiragiUtils;
 
-//このscriptの読み込みの開始をログに出力
+#このscriptの読み込みの開始をログに出力
 print("Start loading jei.zs ...");
 
-//変数の定義
+#変数の定義
 
-//レシピの編集
-
-//JEIからアイテムを隠す
+#JEIからアイテムを隠す
 val toHide as IItemStack[] = [
-    <minecraft:spawn_egg:*>,
-//  <minecraft:splash_potion:*>,
-//  <minecraft:tipped_arrow:*>,
-//  <minecraft:lingering_potion:*>,
-    <minecraft:mob_spawner>,
-    <minecraft:structure_void>,
-    <minecraft:structure_block>,
-//  <minecraft:filled_map>,
-    <minecraft:command_block_minecart>,
     <appliedenergistics2:quartz_ore>,
     <appliedenergistics2:charged_quartz_ore>,
     <appliedenergistics2:facade:*>
@@ -47,19 +36,19 @@ for i in toHide {
     HiiragiUtils.hideFromJEI(i);
 }
 
-//JEIからアイテムを隠しレシピを削除する
+#JEIからアイテムを隠しレシピを削除する
+val toRemove as IItemStack[] = [
+    <tcomplement:materials:10>,
+    <tcomplement:materials:20>,
+    <tcomplement:melter:8>,
+    <tcomplement:storage:*>,
+    <tconstruct:ore:0>
+];
+for i in toRemove {
+    HiiragiUtils.removeFromJEI(i);
+}
 
-//JEI上のアイテムにTooltipを追加する
+#JEI上のアイテムにTooltipを追加する
 
-/*val dontUseForDecoration as IItemStack[] = [
-    <tcomplement:scorched_block:*>,
-    <tcomplement:scorched_slab:*>,
-    <tcomplement:scorched_slab2:*>,
-    <tconstruct:seared:*>,
-    <tconstruct:seared_glass:*>,
-    <tconstruct:seared_slab:*>,
-    <tconstruct:seared_slab2:*>
-];*/
-
-//このscriptの読み込みの完了をログに出力
+#このscriptの読み込みの完了をログに出力
 print("jei.zs loaded!");

@@ -1,0 +1,11 @@
+{
+    "input": {
+        "item": "tconstruct:seared",
+        "data": 3
+    },
+    "output": {
+        "item": "tcomplement:scorched_block",
+        "data": 3
+    },
+    "duration": 600
+}

@@ -1,58 +1,66 @@
 #======================================================================
 # name : gregtech.zs
 # auther : Hiiragi Russell Tsubasa;URL -> https://github.com/Hiiragi283
-# info : Write about this script file
+# info : Scripts for GregTech Community Ediiton Unofficial
 #======================================================================
 
 #priority 0
 
-//crafttweakerからclassをimport
+#crafttweakerからclassをimport
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 
-//各種modからclassをimport
+#各種modからclassをimport
+import mods.artisanworktables.builder.RecipeBuilder;
 import mods.ctintegration.util.RecipePattern;
 import mods.gregtech.recipe.RecipeMap;
 
-//scriptのimport
+#scriptのimport
 import scripts.HiiragiUtils;
 
-//このscriptの読み込みの開始をログに出力
+#このscriptの読み込みの開始をログに出力
 print("Start loading gregtech.zs ...");
 
-//変数の登録
-val metaItem as IItemStack = <gregtech:meta_item_1>;
+#変数の登録
 
-//レシピの編集
-//全般
+#作業台レシピの編集
+##削除
+val removeCrafting as IItemStack[] = [
+    HiiragiUtils.gregItem(350),
+    <gregtech:metal_casing:1>,
+    <gregtech:metal_casing:8>
+];
+for i in removeCrafting {
+    HiiragiUtils.removeCrafting(i);
+}
+##上書き
+HiiragiUtils.addCrafting(true, true, HiiragiUtils.gregItem(347), [[<ore:slabWood>, <ore:GT.tool.saw>]]);
+HiiragiUtils.addCrafting(true, false, HiiragiUtils.gregItem(347), [[<ore:slabWood>, <artisanworktables:artisans_handsaw_flint>.anyDamage().transformDamage()]]);
+##新規
+HiiragiUtils.addCraftingConv(<tconstruct:pattern>, HiiragiUtils.gregItem(347));
 
-recipes.remove(HiiragiUtils.gregItem(350));
-HiiragiUtils.addCrafting(true, false, <contenttweaker:grout_dust>*4, [[<ore:GT.tool.mortar>, <tconstruct:soil:0>]]);
+#かまどレシピの編集
+##削除
+val removeFurnace as IItemStack[] = [
+    HiiragiUtils.gregItem(350)
+];
+for i in removeFurnace {
+    HiiragiUtils.removeFurnace(i);
+}
+##新規
+val addFurnace as IIngredient[IItemStack] = {};
+for output, input in addFurnace {
+    HiiragiUtils.addFurnace(false, output, input);
+}
 
-//Bronze Age
+#AWレシピの編集
+##import
+##新規
 
-<recipemap:alloy_smelter>.recipeBuilder()
-    .inputs([<ore:dustGrout>, <ore:dustBrick>])
-    .outputs(<tcomplement:materials:1>*2)
-    .duration(4*20)
-    .EUt(4)
-    .buildAndRegister();
+#GTレシピの編集
+##削除
+##上書き
+##新規
 
-//LV Age
-
-//MV Age
-
-//HV Age
-
-//EV Age
-
-//IV Age
-
-//LuV Age
-
-//ZPM Age
-
-//UV-UHV Age
-
-//このscriptの読み込みの完了をログに出力
+#このscriptの読み込みの完了をログに出力
 print("gregtech.zs loaded!");

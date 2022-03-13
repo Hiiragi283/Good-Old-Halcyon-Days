@@ -1,0 +1,11 @@
+{
+    "input": {
+        "item": "tconstruct:materials",
+        "data": 0
+    },
+    "output": {
+        "item": "tcomplement:materials",
+        "data": 1
+    },
+    "duration": 600
+}

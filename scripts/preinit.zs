@@ -7,23 +7,23 @@
 #priority 10000
 #loader preinit
 
-//crafttweakerからclassをimport
+#crafttweakerからclassをimport
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 
-//各種modからclassをimport
+#各種modからclassをimport
 
-//scriptのimport
+#scriptのimport
 
-//このscriptの読み込みの開始をログに出力
+#このscriptの読み込みの開始をログに出力
 print("Start loading preinit.zs ...");
 
-//変数の定義
+#変数の定義
 
-//レシピの編集
+#レシピの編集
 
-//代入されたIItemStackに紐づけされた鉱石辞書を取得し、それを削除する
-//異なるloaderを利用するファイル間ではimportができないため、こちらでも定義する必要があった
+#代入されたIItemStackに紐づけされた鉱石辞書を取得し、それを削除する
+#異なるloaderを利用するファイル間ではimportができないため、こちらでも定義する必要があった
 function removeOreDict (item as IItemStack) {
     if (!isNull(item.ores)) {
         var oredict = item.ores;
@@ -33,5 +33,5 @@ function removeOreDict (item as IItemStack) {
     }
 }
 
-//このscriptの読み込みの完了をログに出力
+#このscriptの読み込みの完了をログに出力
 print("preinit.zs loaded!");
