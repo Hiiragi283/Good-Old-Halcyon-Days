@@ -1,0 +1,12 @@
+{
+	"output": {
+		"item": "botania:manaresource",
+        "data": 6
+	},
+	"input": {
+		"item": "twilightforest:liveroot"
+	},
+    "fluid": "evilcraftblood",
+    "consume": true,
+    "bubbling": true
+}

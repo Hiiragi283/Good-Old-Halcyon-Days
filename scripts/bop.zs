@@ -1,7 +1,7 @@
 #======================================================================
-# name : _TEMPLATE.zs
+# name : bop.zs
 # auther : Hiiragi Russell Tsubasa;URL -> https://github.com/Hiiragi283
-# info : Write about this script file
+# info : Script for Biomes O' Plenty
 #======================================================================
 
 #priority 0
@@ -19,7 +19,7 @@ import mods.gregtech.recipe.RecipeMap;
 import scripts.HiiragiUtils;
 
 //このscriptの読み込みの開始をログに出力
-print("Start loading _TEMPLATE.zs ...");
+print("Start loading bop.zs ...");
 
 //変数の定義
 
@@ -62,5 +62,11 @@ print("Start loading _TEMPLATE.zs ...");
         .buildAndRegister();
     */
 
+//Orechid TerrestrisによるBOP鉱石の生成
+    val orechid_terrestris = mods.morechids.Registry.getFlower("orechid_terrestris");
+    for i in 1 to 7 {
+        orechid_terrestris.addRecipe(<ore:stone>, <biomesoplenty:gem_ore>.definition.makeStack(i), 1);
+    }
+
 //このscriptの読み込みの完了をログに出力
-print("_TEMPLATE.zs loaded!");
+print("bop.zs loaded!");

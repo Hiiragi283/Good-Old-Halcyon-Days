@@ -1,0 +1,12 @@
+{
+	"output": {
+		"item": "botania:manaresource",
+        "data": 1
+	},
+	"input": {
+		"item": "minecraft:ender_pearl"
+	},
+    "required": 5,
+    "consume": true,
+	"bubbling": true
+}

@@ -68,9 +68,62 @@ print("Start loading materials.zs ...");
             .components([<material:silicon>*1])
             .build();
 
+    //Manasteel:マナスチール
+        val manasteel = MaterialBuilder(32100, "manasteel")
+            .ingot().fluid()
+            .color(0x0073ff).iconSet("SHINY")
+            .fluidTemp(1200).cableProperties(128, 1, 0)
+            .toolStats(1.2, 6.0, 300, 20)
+            .flags(["disable_decomposition",
+                    "generate_plate",
+                    "generate_rod",
+                    "generate_gear",
+                    "generate_ring"])
+            .build();
+    /*
+    //Mana Pearl:マナパール
+        val mana_pearl = MaterialBuilder(32101, "mana_pearl")
+            .dust()
+            .color(0x0073ff)
+            .cableProperties(128, 1, 0)
+            .flags(["disable_decomposition",
+                    "generate_plate",
+                    "generate_rod",
+                    "generate_gear",
+                    "generate_ring"])
+            .build();
+    */
+    //Mana Diamond:マナダイヤモンド
+        val mana_diamodn = MaterialBuilder(32102, "mana_diamond")
+            .gem()
+            .color(0xb4faff).iconSet("DIAMOND")
+            .flags(["disable_decomposition",
+                    "generate_plate"])
+            .build();
+    //Terrasteel:テラスチール
+        val terrasteel = MaterialBuilder(32103, "terrasteel")
+            .ingot().fluid()
+            .color(0xa8fd55).iconSet("SHINY")
+            .fluidTemp(1200).cableProperties(512, 1, 0)
+            .toolStats(1.2, 7.0, 2300, 26)
+            .flags(["disable_decomposition",
+                    "generate_plate"])
+            .build();
+    //Elementium:エレメンチウム
+        val elementium = MaterialBuilder(32104, "elven_elementium")
+            .ingot().fluid()
+            .color(0xef5cd0).iconSet("SHINY")
+            .fluidTemp(1200).cableProperties(8192, 1, 0)
+            .toolStats(1.2, 6.0, 720, 20)
+            .flags(["disable_decomposition",
+                    "generate_plate"])
+            .build();
+
 //登録済みの素材の編集
     //アルミナ溶液の化学式を変更
         MaterialRegistry.get("alumina_solution").setFormula("Na[Al(OH)4]");
+
+//鉱石辞書の調整
 
 //このscriptの読み込みの完了をログに出力
 print("materials.zs loaded!");

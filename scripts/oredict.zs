@@ -25,6 +25,33 @@ print("Start loading oredict.zs ...");
 //鉱石辞書の削除
 
 //鉱石辞書の追加
+    <ore:gemManaPearl>.add(<botania:manaresource:1>);
+    <ore:gemManaDiamond>.add(<botania:manaresource:2>);
+    <ore:gemDragonStone>.add(<botania:manaresource:9>);
+
+    <ore:blockManasteel>.add(<botania:storage:0>);
+    <ore:blockTerrasteel>.add(<botania:storage:1>);
+    <ore:blockElvenElementium>.add(<botania:storage:2>);
+    <ore:blockManaDiamond>.add(<botania:storage:3>);
+    <ore:blockDragonStone>.add(<botania:storage:4>);
+
+//GTCEuの素材一覧から登録を外す
+val toRemove as IItemStack[] = [
+    <metaitem:ingotManasteel>,
+    <metaitem:nuggetManasteel>,
+    <metaitem:blockManasteel>,
+    <metaitem:ingotTerrasteel>,
+    <metaitem:nuggetTerrasteel>,
+    <metaitem:blockTerrasteel>,
+    <metaitem:ingotElvenElementium>,
+    <metaitem:nuggetElvenElementium>,
+    <metaitem:blockElvenElementium>
+];
+
+for i in toRemove {
+    HiiragiUtils.removeOreDict(i);
+    HiiragiUtils.removeFromJEI(i);
+}
 
 //GTCEu製のツール類に鉱石辞書を割り振りなおす
     val toolOredict as IItemStack[][IOreDictEntry] = {

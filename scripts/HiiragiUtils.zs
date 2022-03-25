@@ -9,16 +9,20 @@
 #priority 99
 
 //crafttweakerからclassをimport
+import crafttweaker.data.IData;
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 import crafttweaker.liquid.ILiquidStack;
 import crafttweaker.oredict.IOreDictEntry;
+import crafttweaker.recipes.IRecipeFunction;
 
 //各種modからclassをimport
 import mods.jei.JEI.hide;
 import mods.jei.JEI.removeAndHide;
+import mods.thaumcraft.ArcaneWorkbench;
 import mods.zenutils.HexHelper;
 import mods.zenutils.I18n;
+import thaumcraft.aspect.CTAspectStack;
 
 //このscriptの読み込みの開始をログに出力
 print("Start loading HiiragiUtils.zs ...");
@@ -77,6 +81,19 @@ print("Start loading HiiragiUtils.zs ...");
         recipes.remove(output, true);
     }
 
+    function addCraftingArcane (shapeless as bool, remove as bool, research as string, vis as int, aspects as CTAspectStack[], output as IItemStack, input as IIngredient[][]) {
+        var recipeNameArcane as string = getNameItem(output) ~ "_" ~ recipeID;
+        if (remove) {
+            mods.thaumcraft.ArcaneWorkbench.removeRecipe(output);
+        }
+        if (!shapeless) {
+            mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe(recipeNameArcane, research, vis, aspects, output, input);
+        } else {
+            mods.thaumcraft.ArcaneWorkbench.registerShapelessRecipe(recipeNameArcane, research, vis, aspects, output, input[0]);
+        }
+        recipeID += 1;
+    }
+
 //アイテムの等価交換を実装するレシピ
     function addCraftingConv (item1 as IItemStack, item2 as IItemStack) {
         var recipeName1 as string = getNameItem(item1) ~ "_" ~ recipeID;
@@ -126,6 +143,18 @@ print("Start loading HiiragiUtils.zs ...");
             var patternName = "tconstruct:" + pattern;
             return <tconstruct:cast>.withTag({PartType:patternName});
     }
+
+//アイテムに付与されたNBTタグを継承する
+function inheritStatus(armorUpgrade as IItemStack) as IRecipeFunction {
+    return function(out, ins, cInfo){
+        if(!ins.armor.hasTag) {
+            return armorUpgrade;
+        } else {
+            var nbt as IData = ins.armor.tag;
+            return armorUpgrade.withTag(nbt);
+        }
+    };
+}
 
 //このscriptの読み込みの完了をログに出力
 print("HiiragiUtils.zs loaded!");

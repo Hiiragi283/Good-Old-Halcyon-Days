@@ -14,3 +14,5 @@ GregTech and Thaumcraft based Minecraft modpack
   - [GrassUtils](https://github.com/friendlyhj/GrassUtils)
 
   - [MorphoDays_old](https://github.com/delta-nos/MorphoDays_old)
+
+  - [Nomifactory](https://github.com/Nomifactory/Nomifactory)

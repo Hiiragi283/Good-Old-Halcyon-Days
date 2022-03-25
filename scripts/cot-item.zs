@@ -33,7 +33,9 @@ print("Start loading cot-item.zs ...");
         "circuit_board_advanced",
         "circuit_board_elite",
         "plate_livingwood",
-        "plate_livingrock"
+        "plate_livingrock",
+        "elven_pearl",
+        "ephemerald"
     ];
     for i in items {
         var itemRegistry = mods.contenttweaker.VanillaFactory.createItem(i);

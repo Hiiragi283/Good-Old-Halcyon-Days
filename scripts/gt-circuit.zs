@@ -320,14 +320,14 @@ for i in hideFromJEI {
         <recipemap:circuit_assembler>.findRecipe(120, [<metaitem:circuit_board.plastic>, <metaitem:plate.simple_system_on_chip>, <metaitem:boltRedAlloy> * 2, <metaitem:wireFineTin> * 2], [<liquid:soldering_alloy> * 72]).remove();
         //Molten Tin
             <recipemap:circuit_assembler>.recipeBuilder()
-                .inputs([<ore:plateTin>, <ore:wireFineRedAlloy>*4, <ore:wireFineLead>])
+                .inputs([<ore:plateTin>, <ore:wireFineRedAlloy>*4, <ore:wireFineLead>*2])
                 .fluidInputs([<liquid:tin>*72])
                 .outputs([<metaitem:circuit.nand_chip>*2])
                 .duration(2*20)
                 .EUt(7)
                 .buildAndRegister();
             <recipemap:circuit_assembler>.recipeBuilder()
-                .inputs([<ore:plateTin>, <metaitem:plate.nand_memory_chip>, <ore:wireFineLead>])
+                .inputs([<ore:plateTin>, <metaitem:plate.nand_memory_chip>, <ore:wireFineLead>*2])
                 .fluidInputs([<liquid:tin>*72])
                 .outputs([<metaitem:circuit.nand_chip>*8])
                 .duration(2*20)
@@ -335,14 +335,14 @@ for i in hideFromJEI {
                 .buildAndRegister();
         //Molten Soldering Alloy
             <recipemap:circuit_assembler>.recipeBuilder()
-                .inputs([<ore:plateTin>, <ore:wireFineRedAlloy>*4, <ore:wireFineLead>])
+                .inputs([<ore:plateTin>, <ore:wireFineRedAlloy>*4, <ore:wireFineLead>*2])
                 .fluidInputs([<liquid:soldering_alloy>*36])
                 .outputs([<metaitem:circuit.nand_chip>*2])
                 .duration(2*20)
                 .EUt(7)
                 .buildAndRegister();
             <recipemap:circuit_assembler>.recipeBuilder()
-                .inputs([<ore:plateTin>, <metaitem:plate.nand_memory_chip>, <ore:wireFineLead>])
+                .inputs([<ore:plateTin>, <metaitem:plate.nand_memory_chip>, <ore:wireFineLead>*2])
                 .fluidInputs([<liquid:soldering_alloy>*36])
                 .outputs([<metaitem:circuit.nand_chip>*8])
                 .duration(2*20)

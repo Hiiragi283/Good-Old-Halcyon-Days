@@ -1,0 +1,12 @@
+{
+	"output": {
+		"item": "botania:manaresource",
+        "data": 2
+	},
+	"input": {
+		"item": "minecraft:diamond"
+	},
+    "required": 5,
+    "consume": true,
+	"bubbling": true
+}
