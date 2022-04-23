@@ -1,0 +1,11 @@
+{
+	"output": {
+		"item": "botania:fertilizer"
+	},
+	"input": {
+		"item": "minecraft:dye",
+		"data": 15
+	},
+	"duration": 100,
+	"bubbling": true
+}

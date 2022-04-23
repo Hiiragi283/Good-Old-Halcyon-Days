@@ -1,0 +1,12 @@
+{
+	"output": {
+		"item": "botania:manareglass"
+	},
+	"input": {
+		"type": "forge:ore_dict",
+		"ore": "blockGlass"
+	},
+    "required": 5,
+    "consume": true,
+	"bubbling": true
+}

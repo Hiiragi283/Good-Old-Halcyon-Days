@@ -9,19 +9,63 @@
 #priority 99
 
 //crafttweakerからclassをimport
+import crafttweaker.data.IData;
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 import crafttweaker.liquid.ILiquidStack;
 import crafttweaker.oredict.IOreDictEntry;
+import crafttweaker.recipes.IRecipeAction;
+import crafttweaker.recipes.IRecipeFunction;
 
 //各種modからclassをimport
+import mods.astralsorcery.Altar;
 import mods.jei.JEI.hide;
 import mods.jei.JEI.removeAndHide;
+import mods.thaumcraft.ArcaneWorkbench;
 import mods.zenutils.HexHelper;
 import mods.zenutils.I18n;
+import thaumcraft.aspect.CTAspectStack;
 
 //このscriptの読み込みの開始をログに出力
 print("Start loading HiiragiUtils.zs ...");
+
+//定数の定義
+    static dyeList as IOreDictEntry[] = [
+        <ore:dyeBlack>,
+        <ore:dyeRed>,
+        <ore:dyeGreen>,
+        <ore:dyeBrown>,
+        <ore:dyeBlue>,
+        <ore:dyePurple>,
+        <ore:dyeCyan>,
+        <ore:dyeLightGray>,
+        <ore:dyeGray>,
+        <ore:dyePink>,
+        <ore:dyeLime>,
+        <ore:dyeYellow>,
+        <ore:dyeLightBlue>,
+        <ore:dyeMagenta>,
+        <ore:dyeOrange>,
+        <ore:dyeWhite>,
+    ];
+    static dyeLiquid as ILiquidStack[] = [
+        <liquid:dye_black>,
+        <liquid:dye_red>,
+        <liquid:dye_green>,
+        <liquid:dye_brown>,
+        <liquid:dye_blue>,
+        <liquid:dye_purple>,
+        <liquid:dye_cyan>,
+        <liquid:dye_light_gray>,
+        <liquid:dye_gray>,
+        <liquid:dye_pink>,
+        <liquid:dye_lime>,
+        <liquid:dye_yellow>,
+        <liquid:dye_light_blue>,
+        <liquid:dye_magenta>,
+        <liquid:dye_orange>,
+        <liquid:dye_white>,
+    ];
 
 //代入されたIItemStackから名前を生成する関数
     function getNameItem (item as IItemStack) as string {
@@ -77,6 +121,19 @@ print("Start loading HiiragiUtils.zs ...");
         recipes.remove(output, true);
     }
 
+    function addCraftingAdv (shapeless as bool, remove as bool, output as IItemStack, input as IIngredient[][], recipeFunction as IRecipeFunction, recipeAction as IRecipeAction) {
+        var recipeName as string = getNameItem(output) ~ "_" ~ recipeID;
+        if (remove) {
+            recipes.remove(output, true);
+        }
+        if (!shapeless) {
+            recipes.addShaped(recipeName, output, input, recipeFunction, recipeAction);
+        } else {
+            recipes.addShapeless(recipeName, output, input[0], recipeFunction, recipeAction);
+        }
+        recipeID += 1;
+    }
+
 //アイテムの等価交換を実装するレシピ
     function addCraftingConv (item1 as IItemStack, item2 as IItemStack) {
         var recipeName1 as string = getNameItem(item1) ~ "_" ~ recipeID;
@@ -94,6 +151,11 @@ print("Start loading HiiragiUtils.zs ...");
     }
     function removeFurnace (output as IItemStack) {
         furnace.remove(output);
+    }
+
+//道具の耐久値を消費するレシピ用
+    function toolInput(tool as IItemStack, damage as int) as IIngredient {
+        return tool.anyDamage().transformDamage(damage);
     }
 
 //代入した文字列から特定の鋳型を返す関数
@@ -125,6 +187,62 @@ print("Start loading HiiragiUtils.zs ...");
         } else
             var patternName = "tconstruct:" + pattern;
             return <tconstruct:cast>.withTag({PartType:patternName});
+    }
+
+//アイテムに付与されたNBTタグを継承する
+function inheritStatus(itemBase as IItemStack) as IRecipeFunction {
+    return function(out, ins, cInfo){
+        if(!ins.inherit.hasTag) {
+            return itemBase;
+        } else {
+            var nbt as IData = ins.inherit.tag;
+            return itemBase.withTag(nbt);
+        }
+    };
+}
+
+//Astral Sorcery関連の関数
+    function addAltarAS1 (output as IItemStack, starlight as int, time as int, inputs as IIngredient[][]) {
+        var recipeNameAS1 as string = getNameItem(output) ~ "_" ~ recipeID;
+        mods.astralsorcery.Altar.addDiscoveryAltarRecipe(recipeNameAS1, output, starlight, time, inputs[0]);
+    }
+
+    function addAltarAS2 (output as IItemStack, starlight as int, time as int, inputs as IIngredient[][]) {
+        var recipeNameAS2 as string = getNameItem(output) ~ "_" ~ recipeID;
+        mods.astralsorcery.Altar.addAttunementAltarRecipe(recipeNameAS2, output, starlight, time, inputs[0]);
+    }
+
+//Bloodmagic関連の関数
+    static orbTier as string[] = [
+        "bloodmagic:weak",
+        "bloodmagic:apprentice",
+        "bloodmagic:magician",
+        "bloodmagic:master",
+        "bloodmagic:archmage",
+    ];
+
+    function orbBlood (tier as int) as IItemStack {
+        var num as int = tier - 1;
+        return <bloodmagic:blood_orb>.withTag({orb: orbTier[num]}).reuse();
+    }
+
+//Thaumcraft関連の関数
+    function addCraftingArcane (shapeless as bool, remove as bool, research as string, vis as int, aspects as CTAspectStack[], output as IItemStack, input as IIngredient[][]) {
+        var recipeNameArcane as string = getNameItem(output) ~ "_" ~ recipeID;
+        if (remove) {
+            mods.thaumcraft.ArcaneWorkbench.removeRecipe(output);
+        }
+        if (!shapeless) {
+            mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe(recipeNameArcane, research, vis, aspects, output, input);
+        } else {
+            mods.thaumcraft.ArcaneWorkbench.registerShapelessRecipe(recipeNameArcane, research, vis, aspects, output, input[0]);
+        }
+        recipeID += 1;
+    }
+
+    function addCrucibleArcane (research as string, output as IItemStack, input as IIngredient, aspects as CTAspectStack[]) {
+        var recipeNameCrucible as string = getNameItem(output) ~ "_" ~ recipeID;
+        mods.thaumcraft.Crucible.registerRecipe(recipeNameCrucible, research, output, input, aspects);
     }
 
 //このscriptの読み込みの完了をログに出力

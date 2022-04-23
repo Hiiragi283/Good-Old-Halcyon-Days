@@ -33,5 +33,7 @@ print("Start loading preinit.zs ...");
         }
     }
 
+//鉱石辞書を編集
+
 //このscriptの読み込みの完了をログに出力
 print("preinit.zs loaded!");

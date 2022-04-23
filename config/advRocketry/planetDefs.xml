@@ -90,7 +90,7 @@
             <orbitalDistance>100</orbitalDistance>
             <rotationalPeriod>24000</rotationalPeriod>
             <biomeIds>biomesoplenty:origin_island,minecraft:ocean</biomeIds>
-            <artifact>contenttweaker:record_minecraft</artifact>
+            <artifact>biomesoplenty:earth</artifact>
         </planet>
     </star>
 </galaxy>
