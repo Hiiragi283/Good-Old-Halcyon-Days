@@ -1,0 +1,12 @@
+{
+    "dimensions": [
+        {
+            "dim": -2,
+            "dimensiontype": {
+                "id": -2,
+                "name": "Satellite orbit",
+                "suffix": "_dim-2"
+            }
+        }
+    ]
+}

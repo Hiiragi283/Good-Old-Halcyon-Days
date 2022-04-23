@@ -1,0 +1,10 @@
+{
+    "input": {
+        "type": "forge:ore_dict",
+        "ore": "blockMarbleAstral"
+    },
+    "output": {
+        "item": "astralsorcery:blockblackmarble",
+        "data": 0
+    }
+}

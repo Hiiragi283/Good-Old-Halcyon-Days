@@ -1,0 +1,11 @@
+{
+	"output": {
+		"item": "astralsorcery:itemusabledust",
+        "data": 0
+	},
+	"input": {
+		"item": "minecraft:glowstone_dust"
+	},
+	"fluid": "astralsorcery.liquidstarlight",
+	"instant": true
+}

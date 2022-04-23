@@ -1,10 +1,10 @@
 {
 	"output": {
-		"item": "botania:manaresource",
-        "data": 2
+		"item": "botania:manareglass"
 	},
 	"input": {
-		"item": "minecraft:diamond"
+		"type": "forge:ore_dict",
+		"ore": "blockGlass"
 	},
     "required": 5,
     "consume": true,
