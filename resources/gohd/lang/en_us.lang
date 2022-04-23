@@ -20,7 +20,7 @@ gohd.quest.basic_gt.category=Basic GT
 gohd.quest.advanced_gt.category=Advanced GT
 gohd.quest.elite_gt.category=Elite GT
 
-gohd.quest.advrocketry.category=Advanced Rocktery
+gohd.quest.advrocketry.category=Advanced Rocketry
 
 gohd.quest.twilight_forest.category=Twilight Forest
 gohd.quest.wizardry.category=Wizardry
@@ -234,11 +234,18 @@ gohd.quest.new_machines.title2=New Processing Machines
 
 ### Advanced GT
 
-gohd.quest.smd.title=SMD
+gohd.quest.tungstate_mineral.title=Tungstate Mineral Dust
 
 ### Elite GT
 
 ## Advanced Rocktery
+
+gohd.quest.rocket_assembling.title=Ride ON your rocket!
+gohd.quest.space_suits.title=Space Suits
+gohd.quest.oxygen_tank.title=Oxygen Tank
+gohd.quest.build_henshin.title=§oARE YOU READY?§r
+gohd.quest.build_henshin.task=§oI'm ready.§r
+gohd.quest.satellite_orbit.title=Onboard Satellite Orbit
 
 ## Twilight Forest
 gohd.quest.better_ram.title=§oBetter Questing Ram§r
@@ -296,6 +303,7 @@ gohd.quest.duplicate_terrasteel.text5=But you must create new Agglomeration Alta
 gohd.quest.more_agglomeration.title=More Aggromelations!!!
 gohd.quest.more_agglomeration.task=Let's agglomeration!
 
+gohd.quest.rune_castle.title=Antient Runes
 gohd.quest.dreaming.title=We are dreaming!
 gohd.qust.rune1.title=Rune of Elements
 gohd.qust.rune2.title=Rune of Seasons
@@ -305,6 +313,57 @@ gohd.quest.elemental_dust.title=Elemental Dusts
 gohd.quest.elementium_armor.title=Elementium Armor
 gohd.quest.shimmer.title=We are shimmering!
 
+## Bloodmagic
+gohd.reward.sentient.title=Sentient Reward
+gohd.quest.another_will_crystals.title=Attributed Will Crystals
+
+## Evilcraft
+gohd.quest.evilcraft.subtitle=Origins of Darkness and tooltips tell you what you want to know
+gohd.quest.blood_evil.title=Safer Blood Collection
+gohd.quest.blood_pearl.subtitle=Reusable Ender Pearl with blood
+gohd.quest.blood_infusion_core.subtitle=Bloody Star
+gohd.quest.blood_infused_materials.title=Power of Blood
+gohd.quest.pulifier.subtitle=Extracts enchantment from items, or potion effect from mobs
+gohd.quest.undead_tree.subtitle=§oLiving but Undead
+gohd.quest.promise_of_efficiency.title=Promise of Efficiency
+gohd.quest.blood_drop.subtitle=Soul Network -> Evilcraft
+gohd.quest.entangled_chalice.subtitle=§oNon-Ender Ender Tank
+gohd.quest.spirit_reanimator.subtitle=§oWisdom Reanimated
+gohd.quest.piercing_focus.subtitle=§oGhost Busters!
+gohd.quest.werewolf.subtitle=§oCannibalism
+gohd.quest.rejuvenated_flesh=§oThe Flesh of Grisaia
+gohd.quest.broom.subtitle=§oWitch's Delivery Service
+gohd.quest.environmental_accumulator=§oDestroyer of biomes
+
+#Astral Sorcery
+gohd.quest.astralsorcery.subtitle=Astral Tome tells you a lot of information but it will be difficult to read easily...
+gohd.quest.astral_marble.subtitle=Not just a marble but it's magical
+gohd.quest.resonating_wands.title=Attuned Resonating Wands
+gohd.quest.fosic_resonator.subtitle=Tells you a place with strong starlight
+gohd.quest.illumation.subtitle=Place light source at the face where you clicked
+gohd.quest.cave_illuminator.subtitle=Automatically place light source below itself
+gohd.quest.looking_glass.subtitle=§oAmethyst not used.
+gohd.quest.telescope.subtitle=§oHey, Look! Hey, Look! Hey, Look! Hey, Look! Hey, Look! Hey, Look! Hey, Look! Hey, Look!
+gohd.quest.chalice.text=When Chalices filled with different liquids are placed close together, the liquids react with each other
+gohd.quest.rock_crystal_tools.title=Rock Crystal Tool
+gohd.quest.rock_crystal_tools.subtitle=Can be repaied in liquid starlight and shapen by Grindstone
+gohd.quest.infused_crystal_tools.title=§oCharging, GO!
+gohd.quest.shifting_star.text=Resets progress of the park tree and §cPERK POINTS!
+gohd.quest.irradiant_star.title=§oBetter than Shifting Star
+gohd.quest.irradiant_star.text=Not only resets the progress, but also restores perk points and restarts attuned constellation!
+gohd.quest.celestial_gateway.subtitle=Warp between gateways with NO COST!
+gohd.quest.astral_builders_wands.title=Astral Builder's Wands
+gohd.quest.ritual_anchor.subtitle=Move linked Ritual effect
+gohd.quest.starlight_lens.subtitle=Concentrates starlight on single block to change it
+gohd.quest.resplendent_prism.subtitle=Upgrades your enchantments randomly
+gohd.quest.resplendent_prism.text=You can change the effect by alternative recipe!
+gohd.quest.stellar_enchanter.subtitle=Enchanting or brewing with the power of constellations
+gohd.quest.tree_beacon.subtitle=Generates logs or sapling from hologram trees
+gohd.quest.mantle_of_stars.subtitle=§oPower of STAR
+gohd.quest.evershifting_fountain.subtitle=Starlight Quarry
+gohd.quest.evershifting_fountain.text=§6Only placed under Evershifting Fountain
+gohd.quest.neromantic_prime.subtitle=Environmental destructing pump
+gohd.quest.pysallidic_prime.subtitle=Starlight Attractor Obelisk
 
 # thaumcraft research
 gohd.research.base_taintology.name=Basic Taintology
@@ -346,4 +405,4 @@ gohd.tooltip.wooden_form.name=§aCompatible with Pattern§r
 gohd.tooltip.smeltery_controller.name=§4Disabled§r
 gohd.tooltip.cast_chisel.name=§aYou can change part type with chisel§r
 
-gohd.tooltip.dreaming_daisy.name=§7§oWhat dream do you want to see?§r
+//gohd.tooltip.dreaming_daisy.name=§7§oWhat dream do you want to see?§r
