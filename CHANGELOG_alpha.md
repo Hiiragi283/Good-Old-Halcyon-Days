@@ -1,10 +1,10 @@
 # Changelog
 
-## Alpha version
+## For Alpha version
 
-### v0.0.3a
+### **v0.0.3a**
 
-* modの追加
+* **modの追加**
   * BotanicAdditions-1.12.2-12.2.6
   * CoFHCore-1.12.2-4.6.6.1-universal
   * CoFHWorld-1.12.2-1.4.0.1-universal
@@ -12,7 +12,7 @@
   * morechids-1.3.0
   * ThermalFoundation-1.12.2-2.6.7.1-universal
 
-* configの編集
+* **configの編集**
   * gregtech.cfg
     * hardToolArmorRecipesをtrueに変更
   * morechids.json
@@ -107,7 +107,7 @@
 * oredict.zs
   * material.zsで追加した素材を調整
 
-### v0.0.2a
+### **v0.0.2a**
 
 * CHANGELOG.mdを作成
 
