@@ -31,7 +31,10 @@ print("Start loading minecraft.zs ...");
             HiiragiUtils.removeCrafting(i);
         }
     //上書き
+        HiiragiUtils.addCrafting(false, true, <minecraft:slime>, RecipePattern.init(["AAA", "AAA", "AAA"]).map({A:<minecraft:slime_ball>}).ingredients);
         HiiragiUtils.addCrafting(false, true, <minecraft:furnace>, RecipePattern.init(["AAA", "ABA", "AAA"]).map({A:<ore:cobblestone>, B:<ore:nitor>}).ingredients);
+        HiiragiUtils.addCrafting(false, true, <minecraft:wooden_pressure_plate>, RecipePattern.init(["AA"]).map({A:<minecraft:planks:0>}).ingredients);
+        HiiragiUtils.addCrafting(false, true, <minecraft:trapdoor>, RecipePattern.init(["AAA", "AAA"]).map({A:<minecraft:planks:0>}).ingredients);
 
         for i in 0 to 15 {
             HiiragiUtils.addCrafting(false, true, <minecraft:bed>.definition.makeStack(i), RecipePattern.init(["ABB", "CCC", "DED"]).map({A:<minecraft:wool>, B:<minecraft:carpet>.definition.makeStack(i), C:<ore:slabWood>, D:<ore:fenceWood>, E:<ore:GT.tool.hammer.soft>}).ingredients);
@@ -40,7 +43,9 @@ print("Start loading minecraft.zs ...");
 
 //かまどレシピの編集
     //削除
-        val removeFurnace as IItemStack[] = [];
+        val removeFurnace as IItemStack[] = [
+            <minecraft:coal:1>
+        ];
         for i in removeFurnace {
             HiiragiUtils.removeFurnace(i);
         }

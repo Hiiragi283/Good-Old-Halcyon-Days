@@ -67,6 +67,7 @@ print("Start loading bop.zs ...");
     for i in 1 to 7 {
         orechid_terrestris.addRecipe(<ore:stone>, <biomesoplenty:gem_ore>.definition.makeStack(i), 1);
     }
+//    orechid_terrestris.addRecipe(<ore:stone>, <thaumcraft:ore_amber>, 1);
 
 //このscriptの読み込みの完了をログに出力
 print("bop.zs loaded!");

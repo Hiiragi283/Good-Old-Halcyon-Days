@@ -4,7 +4,7 @@
 # infot : scripts for chisel mod
 #======================================================================
 
-#priority 0
+#priority 95
 
 //crafttweakerからclassをimport
 import crafttweaker.item.IItemStack;

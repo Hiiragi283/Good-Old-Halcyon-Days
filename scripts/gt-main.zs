@@ -33,7 +33,7 @@ print("Start loading gregtech.zs ...");
         }
     //上書き
         HiiragiUtils.addCrafting(true, true, <metaitem:wooden_form.empty>, [[<ore:slabWood>, <ore:GT.tool.saw>]]);
-        HiiragiUtils.addCrafting(true, false, <metaitem:wooden_form.empty>, [[<ore:slabWood>, <artisanworktables:artisans_handsaw_flint>.anyDamage().transformDamage()]]);
+        HiiragiUtils.addCrafting(true, false, <metaitem:wooden_form.empty>, [[<ore:slabWood>, HiiragiUtils.toolInput(<artisanworktables:artisans_handsaw_flint>, 1)]]);
 
     //新規
     HiiragiUtils.addCraftingConv(<tconstruct:pattern>, <metaitem:wooden_form.empty>);

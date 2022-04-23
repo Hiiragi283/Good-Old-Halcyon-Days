@@ -32,8 +32,8 @@ print("Start loading cot-item.zs ...");
         "circuit_board_basic",
         "circuit_board_advanced",
         "circuit_board_elite",
-        "plate_livingwood",
-        "plate_livingrock",
+        //"plate_livingwood",
+        //"plate_livingrock",
         "elven_pearl",
         "ephemerald"
     ];
@@ -60,10 +60,10 @@ print("Start loading cot-item.zs ...");
     }
 
 //特殊なアイテムを登録
-    val record_minecraft = mods.contenttweaker.VanillaFactory.createItem("record_minecraft");
+    /*val record_minecraft = mods.contenttweaker.VanillaFactory.createItem("record_minecraft");
     record_minecraft.maxStackSize = 1;
     record_minecraft.rarity = "EPIC";
-    record_minecraft.register();
+    record_minecraft.register();*/
 
 //このscriptの読み込みの完了をログに出力
 print("cot-item.zs loaded!");

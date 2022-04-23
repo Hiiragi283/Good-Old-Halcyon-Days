@@ -6,7 +6,7 @@
 #        -> https://github.com/Nomifactory/Nomifactory/
 #======================================================================
 
-#priority 0
+#priority 90
 
 //crafttweakerからclassをimport
 import crafttweaker.data.IData;
@@ -220,7 +220,7 @@ for tier, items in armorTier {
     
     RecipeBuilder.get("basic")
         .setShaped(RecipePattern.init(["AAA", "A A"]).map({A:<ore:ringWroughtIron>}).ingredients)
-        .setSecondaryIngredients([<minecraft:leather_helmet>.marked("armor")])
+        .setSecondaryIngredients([<minecraft:leather_helmet>.marked("inherit")])
         .addTool(<ore:GT.tool.hammer.hard>, 10)
         .addTool(<ore:GT.tool.wirecutter>, 10)
         .addOutput(<minecraft:chainmail_helmet>)
@@ -228,7 +228,7 @@ for tier, items in armorTier {
         .create();
     RecipeBuilder.get("basic")
         .setShaped(RecipePattern.init(["A A", "AAA", "AAA"]).map({A:<ore:ringWroughtIron>}).ingredients)
-        .setSecondaryIngredients([<minecraft:leather_chestplate>.marked("armor")])
+        .setSecondaryIngredients([<minecraft:leather_chestplate>.marked("inherit")])
         .addTool(<ore:GT.tool.hammer.hard>, 10)
         .addTool(<ore:GT.tool.wirecutter>, 10)
         .addOutput(<minecraft:chainmail_chestplate>)
@@ -236,7 +236,7 @@ for tier, items in armorTier {
         .create();
     RecipeBuilder.get("basic")
         .setShaped(RecipePattern.init(["AAA", "A A", "A A"]).map({A:<ore:ringWroughtIron>}).ingredients)
-        .setSecondaryIngredients([<minecraft:leather_leggings>.marked("armor")])
+        .setSecondaryIngredients([<minecraft:leather_leggings>.marked("inherit")])
         .addTool(<ore:GT.tool.hammer.hard>, 10)
         .addTool(<ore:GT.tool.wirecutter>, 10)
         .addOutput(<minecraft:chainmail_leggings>)
@@ -244,7 +244,7 @@ for tier, items in armorTier {
         .create();
     RecipeBuilder.get("basic")
         .setShaped(RecipePattern.init(["A A", "A A"]).map({A:<ore:ringWroughtIron>}).ingredients)
-        .setSecondaryIngredients([<minecraft:leather_boots>.marked("armor")])
+        .setSecondaryIngredients([<minecraft:leather_boots>.marked("inherit")])
         .addTool(<ore:GT.tool.hammer.hard>, 10)
         .addTool(<ore:GT.tool.wirecutter>, 10)
         .addOutput(<minecraft:chainmail_boots>)
@@ -255,7 +255,7 @@ for tier, items in armorTier {
 //Iron Armor (vanilla)
     RecipeBuilder.get("basic")
         .setShaped(RecipePattern.init(["AAA", "A A"]).map({A:<ore:plateWroughtIron>}).ingredients)
-        .setSecondaryIngredients([<minecraft:leather_helmet>.marked("armor")])
+        .setSecondaryIngredients([<minecraft:leather_helmet>.marked("inherit")])
         .addTool(<ore:GT.tool.hammer.hard>, 20)
         .addTool(<ore:GT.tool.wirecutter>, 20)
         .addOutput(<minecraft:iron_helmet>)
@@ -263,7 +263,7 @@ for tier, items in armorTier {
         .create();
     RecipeBuilder.get("basic")
         .setShaped(RecipePattern.init(["A A", "AAA", "AAA"]).map({A:<ore:plateWroughtIron>}).ingredients)
-        .setSecondaryIngredients([<minecraft:leather_chestplate>.marked("armor")])
+        .setSecondaryIngredients([<minecraft:leather_chestplate>.marked("inherit")])
         .addTool(<ore:GT.tool.hammer.hard>, 20)
         .addTool(<ore:GT.tool.wirecutter>, 20)
         .addOutput(<minecraft:iron_chestplate>)
@@ -271,7 +271,7 @@ for tier, items in armorTier {
         .create();
     RecipeBuilder.get("basic")
         .setShaped(RecipePattern.init(["AAA", "A A", "A A"]).map({A:<ore:plateWroughtIron>}).ingredients)
-        .setSecondaryIngredients([<minecraft:leather_leggings>.marked("armor")])
+        .setSecondaryIngredients([<minecraft:leather_leggings>.marked("inherit")])
         .addTool(<ore:GT.tool.hammer.hard>, 20)
         .addTool(<ore:GT.tool.wirecutter>, 20)
         .addOutput(<minecraft:iron_leggings>)
@@ -279,7 +279,7 @@ for tier, items in armorTier {
         .create();
     RecipeBuilder.get("basic")
         .setShaped(RecipePattern.init(["A A", "A A"]).map({A:<ore:plateWroughtIron>}).ingredients)
-        .setSecondaryIngredients([<minecraft:leather_boots>.marked("armor")])
+        .setSecondaryIngredients([<minecraft:leather_boots>.marked("inherit")])
         .addTool(<ore:GT.tool.hammer.hard>, 20)
         .addTool(<ore:GT.tool.wirecutter>, 20)
         .addOutput(<minecraft:iron_boots>)
@@ -289,7 +289,7 @@ for tier, items in armorTier {
 //Diamond Armor (vanilla)
     RecipeBuilder.get("basic")
         .setShaped(RecipePattern.init(["AAA", "A A"]).map({A:<ore:plateDiamond>}).ingredients)
-        .setSecondaryIngredients([<minecraft:iron_helmet>.marked("armor")])
+        .setSecondaryIngredients([<minecraft:iron_helmet>.marked("inherit")])
         .addTool(<ore:GT.tool.hammer.hard>, 40)
         .addTool(<ore:GT.tool.wirecutter>, 40)
         .addOutput(<minecraft:diamond_helmet>)
@@ -297,7 +297,7 @@ for tier, items in armorTier {
         .create();
     RecipeBuilder.get("basic")
         .setShaped(RecipePattern.init(["A A", "AAA", "AAA"]).map({A:<ore:plateDiamond>}).ingredients)
-        .setSecondaryIngredients([<minecraft:iron_chestplate>.marked("armor")])
+        .setSecondaryIngredients([<minecraft:iron_chestplate>.marked("inherit")])
         .addTool(<ore:GT.tool.hammer.hard>, 40)
         .addTool(<ore:GT.tool.wirecutter>, 40)
         .addOutput(<minecraft:diamond_chestplate>)
@@ -305,7 +305,7 @@ for tier, items in armorTier {
         .create();
     RecipeBuilder.get("basic")
         .setShaped(RecipePattern.init(["AAA", "A A", "A A"]).map({A:<ore:plateDiamond>}).ingredients)
-        .setSecondaryIngredients([<minecraft:iron_leggings>.marked("armor")])
+        .setSecondaryIngredients([<minecraft:iron_leggings>.marked("inherit")])
         .addTool(<ore:GT.tool.hammer.hard>, 40)
         .addTool(<ore:GT.tool.wirecutter>, 40)
         .addOutput(<minecraft:diamond_leggings>)
@@ -313,7 +313,7 @@ for tier, items in armorTier {
         .create();
     RecipeBuilder.get("basic")
         .setShaped(RecipePattern.init(["A A", "A A"]).map({A:<ore:plateDiamond>}).ingredients)
-        .setSecondaryIngredients([<minecraft:iron_boots>.marked("armor")])
+        .setSecondaryIngredients([<minecraft:iron_boots>.marked("inherit")])
         .addTool(<ore:GT.tool.hammer.hard>, 40)
         .addTool(<ore:GT.tool.wirecutter>, 40)
         .addOutput(<minecraft:diamond_boots>)
@@ -323,7 +323,7 @@ for tier, items in armorTier {
 //Gold Armor (Vanilla)
     RecipeBuilder.get("basic")
         .setShaped(RecipePattern.init(["AAA", "A A"]).map({A:<ore:plateGold>}).ingredients)
-        .setSecondaryIngredients([<minecraft:leather_helmet>.marked("armor")])
+        .setSecondaryIngredients([<minecraft:leather_helmet>.marked("inherit")])
         .addTool(<ore:GT.tool.hammer.hard>, 10)
         .addTool(<ore:GT.tool.wirecutter>, 10)
         .addOutput(<minecraft:golden_helmet>)
@@ -331,7 +331,7 @@ for tier, items in armorTier {
         .create();
     RecipeBuilder.get("basic")
         .setShaped(RecipePattern.init(["A A", "AAA", "AAA"]).map({A:<ore:plateGold>}).ingredients)
-        .setSecondaryIngredients([<minecraft:leather_chestplate>.marked("armor")])
+        .setSecondaryIngredients([<minecraft:leather_chestplate>.marked("inherit")])
         .addTool(<ore:GT.tool.hammer.hard>, 10)
         .addTool(<ore:GT.tool.wirecutter>, 10)
         .addOutput(<minecraft:golden_chestplate>)
@@ -339,7 +339,7 @@ for tier, items in armorTier {
         .create();
     RecipeBuilder.get("basic")
         .setShaped(RecipePattern.init(["AAA", "A A", "A A"]).map({A:<ore:plateGold>}).ingredients)
-        .setSecondaryIngredients([<minecraft:leather_leggings>.marked("armor")])
+        .setSecondaryIngredients([<minecraft:leather_leggings>.marked("inherit")])
         .addTool(<ore:GT.tool.hammer.hard>, 10)
         .addTool(<ore:GT.tool.wirecutter>, 10)
         .addOutput(<minecraft:golden_leggings>)
@@ -347,7 +347,7 @@ for tier, items in armorTier {
         .create();
     RecipeBuilder.get("basic")
         .setShaped(RecipePattern.init(["A A", "A A"]).map({A:<ore:plateGold>}).ingredients)
-        .setSecondaryIngredients([<minecraft:leather_boots>.marked("armor")])
+        .setSecondaryIngredients([<minecraft:leather_boots>.marked("inherit")])
         .addTool(<ore:GT.tool.hammer.hard>, 10)
         .addTool(<ore:GT.tool.wirecutter>, 10)
         .addOutput(<minecraft:golden_boots>)
@@ -357,7 +357,7 @@ for tier, items in armorTier {
 //Manasteel Armor (Botania)
     RecipeBuilder.get("basic")
         .setShaped(RecipePattern.init(["AAA", "ABA"]).map({A:<ore:plateManasteel>, B:<botania:manaresource:22>}).ingredients)
-        .setSecondaryIngredients([<minecraft:leather_helmet>.marked("armor")])
+        .setSecondaryIngredients([<minecraft:leather_helmet>.marked("inherit")])
         .addTool(<ore:GT.tool.hammer.hard>, 40)
         .addTool(<ore:GT.tool.wirecutter>, 40)
         .addOutput(<botania:manasteelhelm>)
@@ -365,7 +365,7 @@ for tier, items in armorTier {
         .create();
     RecipeBuilder.get("basic")
         .setShaped(RecipePattern.init(["ABA", "AAA", "AAA"]).map({A:<ore:plateManasteel>, B:<botania:manaresource:22>}).ingredients)
-        .setSecondaryIngredients([<minecraft:leather_chestplate>.marked("armor")])
+        .setSecondaryIngredients([<minecraft:leather_chestplate>.marked("inherit")])
         .addTool(<ore:GT.tool.hammer.hard>, 40)
         .addTool(<ore:GT.tool.wirecutter>, 40)
         .addOutput(<botania:manasteelchest>)
@@ -373,7 +373,7 @@ for tier, items in armorTier {
         .create();
     RecipeBuilder.get("basic")
         .setShaped(RecipePattern.init(["AAA", "ABA", "A A"]).map({A:<ore:plateManasteel>, B:<botania:manaresource:22>}).ingredients)
-        .setSecondaryIngredients([<minecraft:leather_leggings>.marked("armor")])
+        .setSecondaryIngredients([<minecraft:leather_leggings>.marked("inherit")])
         .addTool(<ore:GT.tool.hammer.hard>, 40)
         .addTool(<ore:GT.tool.wirecutter>, 40)
         .addOutput(<botania:manasteellegs>)
@@ -381,7 +381,7 @@ for tier, items in armorTier {
         .create();
     RecipeBuilder.get("basic")
         .setShaped(RecipePattern.init(["ABA", "A A"]).map({A:<ore:plateManasteel>, B:<botania:manaresource:22>}).ingredients)
-        .setSecondaryIngredients([<minecraft:leather_boots>.marked("armor")])
+        .setSecondaryIngredients([<minecraft:leather_boots>.marked("inherit")])
         .addTool(<ore:GT.tool.hammer.hard>, 40)
         .addTool(<ore:GT.tool.wirecutter>, 40)
         .addOutput(<botania:manasteelboots>)
@@ -390,32 +390,32 @@ for tier, items in armorTier {
 
 //Terrasteel Armor (Botania)
     RecipeBuilder.get("basic")
-        .setShaped(RecipePattern.init(["A A", "BCB", "BDB"]).map({A:<botania:manaresource:3>, B:<ore:plateTerrasteel>, C:<ore:plateDoubleTerrasteel>, D:<ore:runeSpringB>}).ingredients)
-        .setSecondaryIngredients([<botania:manasteelhelm>.marked("armor")])
+        .setShaped(RecipePattern.init(["A A", "BCB", "BDB"]).map({A:<botania:manaresource:3>, B:<metaitem:plateTerrasteel>, C:<ore:plateDoubleTerrasteel>, D:<ore:runeSpringB>}).ingredients)
+        .setSecondaryIngredients([<botania:manasteelhelm>.marked("inherit")])
         .addTool(<ore:GT.tool.hammer.hard>, 80)
         .addTool(<ore:GT.tool.wirecutter>, 80)
         .addOutput(<botania:terrasteelhelm>)
         .setRecipeFunction(HiiragiUtils.inheritStatus(<botania:terrasteelhelm>))
         .create();
     RecipeBuilder.get("basic")
-        .setShaped(RecipePattern.init(["A A", "BCB", "BDB"]).map({A:<botania:manaresource:3>, B:<ore:plateTerrasteel>, C:<ore:plateDoubleTerrasteel>, D:<ore:runeSpringB>}).ingredients)
-        .setSecondaryIngredients([<botania:manasteelhelmreveal>.marked("armor")])
+        .setShaped(RecipePattern.init(["A A", "BCB", "BDB"]).map({A:<botania:manaresource:3>, B:<metaitem:plateTerrasteel>, C:<ore:plateDoubleTerrasteel>, D:<ore:runeSpringB>}).ingredients)
+        .setSecondaryIngredients([<botania:manasteelhelmreveal>.marked("inherit")])
         .addTool(<ore:GT.tool.hammer.hard>, 80)
         .addTool(<ore:GT.tool.wirecutter>, 80)
         .addOutput(<botania:terrasteelhelmreveal>)
         .setRecipeFunction(HiiragiUtils.inheritStatus(<botania:terrasteelhelmreveal>))
         .create();
     RecipeBuilder.get("basic")
-        .setShaped(RecipePattern.init(["AA AA", "BBCBB", "ABBBA", "D   D"]).map({A:<botania:manaresource:3>, B:<ore:plateDoubleTerrasteel>, C:<ore:runeSummerB>, D:<ore:plateTerrasteel>}).ingredients)
-        .setSecondaryIngredients([<botania:manasteelchest>.marked("armor")])
+        .setShaped(RecipePattern.init(["AA AA", "BBCBB", "ABBBA", "D   D"]).map({A:<botania:manaresource:3>, B:<ore:plateDoubleTerrasteel>, C:<ore:runeSummerB>, D:<metaitem:plateTerrasteel>}).ingredients)
+        .setSecondaryIngredients([<botania:manasteelchest>.marked("inherit")])
         .addTool(<ore:GT.tool.hammer.hard>, 80)
         .addTool(<ore:GT.tool.wirecutter>, 80)
         .addOutput(<botania:terrasteelchest>)
         .setRecipeFunction(HiiragiUtils.inheritStatus(<botania:terrasteelchest>))
         .create();
     RecipeBuilder.get("basic")
-        .setShaped(RecipePattern.init(["ABA", "CDC"]).map({A:<ore:plateDoubleTerrasteel>, B:<ore:runeAutumnB>, C:<ore:plateTerrasteel>, D:<contenttweaker:plate_livingwood>}).ingredients)
-        .setSecondaryIngredients([<botania:manasteellegs>.marked("armor")])
+        .setShaped(RecipePattern.init(["ABA", "CDC"]).map({A:<ore:plateDoubleTerrasteel>, B:<ore:runeAutumnB>, C:<metaitem:plateTerrasteel>, D:<metaitem:plateLivingwood>}).ingredients)
+        .setSecondaryIngredients([<botania:manasteellegs>.marked("inherit")])
         .addTool(<ore:GT.tool.hammer.hard>, 80)
         .addTool(<ore:GT.tool.wirecutter>, 80)
         .addOutput(<botania:terrasteellegs>)
@@ -423,7 +423,7 @@ for tier, items in armorTier {
         .create();
     RecipeBuilder.get("basic")
         .setShaped(RecipePattern.init(["AB BA", "AC CA"]).map({A:<botania:manaresource:3>, B:<ore:woolGreen>, C:<ore:plateDoubleTerrasteel>}).ingredients)
-        .setSecondaryIngredients([<botania:manasteelboots>.marked("armor"), <ore:runeWinterB>])
+        .setSecondaryIngredients([<botania:manasteelboots>.marked("inherit"), <ore:runeWinterB>])
         .addTool(<ore:GT.tool.hammer.hard>, 80)
         .addTool(<ore:GT.tool.wirecutter>, 80)
         .addOutput(<botania:terrasteelboots>)
@@ -433,7 +433,7 @@ for tier, items in armorTier {
 //Elementium Armor (Botania)
     RecipeBuilder.get("basic")
         .setShaped(RecipePattern.init(["A A", "BCB", "B B"]).map({A:<botania:manaresource:8>, B:<ore:plateElvenElementium>, C:<ore:plateDoubleElvenElementium>}).ingredients)
-        .setSecondaryIngredients([<botania:manasteelhelm>.marked("armor"), <ore:dustCryotheum>*4])
+        .setSecondaryIngredients([<botania:manasteelhelm>.marked("inherit"), <ore:dustCryotheum>*4])
         .addTool(<ore:GT.tool.hammer.hard>, 80)
         .addTool(<ore:GT.tool.wirecutter>, 80)
         .addOutput(<botania:elementiumhelm>)
@@ -441,7 +441,7 @@ for tier, items in armorTier {
         .create();
     RecipeBuilder.get("basic")
         .setShaped(RecipePattern.init(["A A", "BCB", "B B"]).map({A:<botania:manaresource:8>, B:<ore:plateElvenElementium>, C:<ore:plateDoubleElvenElementium>}).ingredients)
-        .setSecondaryIngredients([<botania:manasteelhelmreveal>.marked("armor"), <ore:dustCryotheum>*4])
+        .setSecondaryIngredients([<botania:manasteelhelmreveal>.marked("inherit"), <ore:dustCryotheum>*4])
         .addTool(<ore:GT.tool.hammer.hard>, 80)
         .addTool(<ore:GT.tool.wirecutter>, 80)
         .addOutput(<botania:elementiumhelmreveal>)
@@ -449,15 +449,15 @@ for tier, items in armorTier {
         .create();
     RecipeBuilder.get("basic")
         .setShaped(RecipePattern.init(["A   A", "BB BB", "CBBBC", "C   C"]).map({A:<botania:manaresource:8>, B:<ore:plateDoubleElvenElementium>, C:<ore:plateElvenElementium>}).ingredients)
-        .setSecondaryIngredients([<botania:manasteelchest>.marked("armor"), <ore:dustPyrotheum>*4])
+        .setSecondaryIngredients([<botania:manasteelchest>.marked("inherit"), <ore:dustPyrotheum>*4])
         .addTool(<ore:GT.tool.hammer.hard>, 80)
         .addTool(<ore:GT.tool.wirecutter>, 80)
         .addOutput(<botania:elementiumchest>)
         .setRecipeFunction(HiiragiUtils.inheritStatus(<botania:elementiumchest>))
         .create();
     RecipeBuilder.get("basic")
-        .setShaped(RecipePattern.init(["ABA", "CBC"]).map({A:<ore:plateDoubleElvenElementium>, B:<ore:plateSilver>, C:<ore:plateElvenElementium>, D:<contenttweaker:plate_livingwood>}).ingredients)
-        .setSecondaryIngredients([<botania:manasteellegs>.marked("armor"), <ore:dustPetrotheum>*4])
+        .setShaped(RecipePattern.init(["ABA", "CBC"]).map({A:<ore:plateDoubleElvenElementium>, B:<ore:plateSilver>, C:<ore:plateElvenElementium>, D:<metaitem:plateLivingwood>}).ingredients)
+        .setSecondaryIngredients([<botania:manasteellegs>.marked("inherit"), <ore:dustPetrotheum>*4])
         .addTool(<ore:GT.tool.hammer.hard>, 80)
         .addTool(<ore:GT.tool.wirecutter>, 80)
         .addOutput(<botania:elementiumlegs>)
@@ -465,7 +465,7 @@ for tier, items in armorTier {
         .create();
     RecipeBuilder.get("basic")
         .setShaped(RecipePattern.init(["A A", "B B"]).map({A:<botania:manaresource:8>, B:<ore:plateElvenElementium>}).ingredients)
-        .setSecondaryIngredients([<botania:manasteelboots>.marked("armor"), <ore:dustAerotheum>*4])
+        .setSecondaryIngredients([<botania:manasteelboots>.marked("inherit"), <ore:dustAerotheum>*4])
         .addTool(<ore:GT.tool.hammer.hard>, 80)
         .addTool(<ore:GT.tool.wirecutter>, 80)
         .addOutput(<botania:elementiumboots>)

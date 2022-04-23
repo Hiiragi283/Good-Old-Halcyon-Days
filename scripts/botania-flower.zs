@@ -86,7 +86,7 @@ print("Start loading botania-flower.zs ...");
             .create();
     //Dreaming Daisy
             ElvenTrade.addRecipe([<botania:specialflower>.withTag({type: "dreaming_daisy"})], [<botania:specialflower>.withTag({type: "puredaisy"})]);
-            <botania:specialflower>.withTag({type: "dreaming_daisy"}).addTooltip(I18n.format("gohd.tooltip.dreaming_daisy.name"));
+            //<botania:specialflower>.withTag({type: "dreaming_daisy"}).addTooltip(I18n.format("gohd.tooltip.dreaming_daisy.name"));
 
     //Orechid
         HiiragiUtils.addCraftingArcane(false, false, "", 100, [], <botania:specialflower>.withTag({type: "orechid"}), [

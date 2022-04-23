@@ -34,7 +34,7 @@ for i in toRemove {
     HiiragiUtils.removeCrafting(i);
 }
 
-val hideFromJEI as IItemStack[] = [
+val removeFromJEI as IItemStack[] = [
     <metaitem:board.coated>,
     <metaitem:board.phenolic>,
     <metaitem:board.plastic>,
@@ -50,19 +50,26 @@ val hideFromJEI as IItemStack[] = [
     <metaitem:circuit_board.elite>,
     <metaitem:circuit_board.wetware>,
     <metaitem:component.transistor>,
-    //<metaitem:component.resistor>,
     <metaitem:component.capacitor>,
-    //<metaitem:component.diode>,
     <metaitem:component.inductor>,
     <metaitem:circuit.basic_integrated>,
     <metaitem:circuit.good_integrated>,
-    <metaitem:circuit.microprocessor>,
     <metaitem:circuit.assembly>,
-    <metaitem:circuit.workstation>
+    <metaitem:circuit.mainframe>,
+    <metaitem:circuit.nano_processor>,
+    <metaitem:circuit.nano_assembly>,
+    <metaitem:circuit.nano_computer>,
+    <metaitem:circuit.nano_mainframe>,
+    <metaitem:circuit.quantum_assembly>,
+    <metaitem:circuit.quantum_computer>,
+    <metaitem:circuit.quantum_mainframe>,
+    <metaitem:circuit.crystal_assembly>,
+    <metaitem:circuit.crystal_computer>,
+    <metaitem:circuit.crystal_mainframe>
 ];
-for i in hideFromJEI {
-    HiiragiUtils.removeFromJEI(i);
-    HiiragiUtils.removeOreDict(i);
+for i in removeFromJEI {
+    //HiiragiUtils.removeFromJEI(i);
+    //HiiragiUtils.removeOreDict(i);
 }
 
 /*
@@ -78,12 +85,12 @@ for i in hideFromJEI {
     //Transistor
         <recipemap:assembler>.findRecipe(120, [<metaitem:plateSilicon>, <metaitem:wireFineTin> * 6], [<liquid:plastic> * 144]).remove();
     //Capacitor
-    <recipemap:assembler>.findRecipe(120, [<metaitem:foilPlastic>, <metaitem:foilAluminium> * 2], [<liquid:plastic> * 144]).remove();
+        <recipemap:assembler>.findRecipe(120, [<metaitem:foilPlastic>, <metaitem:foilAluminium> * 2], [<liquid:plastic> * 144]).remove();
     //Inductor
-        <recipemap:assembler>.findRecipe(30, [<metaitem:ringSteel>, <metaitem:wireFineCopper> * 2], [<liquid:plastic> * 36]).remove();
-        <recipemap:assembler>.findRecipe(30, [<metaitem:ringNickelZincFerrite>, <metaitem:wireFineAnnealedCopper> * 2], [<liquid:plastic> * 36]).remove();
-        <recipemap:assembler>.findRecipe(30, [<metaitem:ringSteel>, <metaitem:wireFineAnnealedCopper> * 2], [<liquid:plastic> * 36]).remove();
-        <recipemap:assembler>.findRecipe(30, [<metaitem:ringNickelZincFerrite>, <metaitem:wireFineCopper> * 2], [<liquid:plastic> * 36]).remove();
+        <recipemap:assembler>.findRecipe(120, [<metaitem:ringSteel>, <metaitem:wireFineCopper> * 2], [<liquid:plastic> * 36]).remove();
+        <recipemap:assembler>.findRecipe(120, [<metaitem:ringNickelZincFerrite>, <metaitem:wireFineAnnealedCopper> * 2], [<liquid:plastic> * 36]).remove();
+        <recipemap:assembler>.findRecipe(120, [<metaitem:ringSteel>, <metaitem:wireFineAnnealedCopper> * 2], [<liquid:plastic> * 36]).remove();
+        <recipemap:assembler>.findRecipe(120, [<metaitem:ringNickelZincFerrite>, <metaitem:wireFineCopper> * 2], [<liquid:plastic> * 36]).remove();
 
     //Etched Basic Wiring
         //Copper
@@ -130,6 +137,7 @@ for i in hideFromJEI {
                 .duration(10*20)
                 .EUt(120)
                 .buildAndRegister();
+
     //etched Advanced Wiring
         <recipemap:chemical_reactor>.recipeBuilder()
             .inputs([<ore:foilGold>])
@@ -152,27 +160,100 @@ for i in hideFromJEI {
             .duration(10*20)
             .EUt(480)
             .buildAndRegister();
+
     //Etched Elite Wiring
         <recipemap:chemical_reactor>.recipeBuilder()
             .inputs([<ore:foilPlatinum>])
             .fluidInputs([<liquid:iron_iii_chloride>*1000])
             .outputs([<contenttweaker:wiring_elite>])
             .duration(5*20)
-            .EUt(1920)
+            .EUt(480)
             .buildAndRegister();
         <recipemap:chemical_reactor>.recipeBuilder()
             .inputs([<ore:foilPlatinum>])
             .fluidInputs([<liquid:sodium_persulfate>*2000])
             .outputs([<contenttweaker:wiring_elite>])
             .duration(5*20)
-            .EUt(1920)
+            .EUt(480)
             .buildAndRegister();
         <recipemap:laser_engraver>.recipeBuilder()
             .inputs([<ore:foilPlatinum>])
             .notConsumable([<ore:craftingLensWhite>])
             .outputs([<contenttweaker:wiring_elite>])
             .duration(10*20)
-            .EUt(7680)
+            .EUt(1920)
+            .buildAndRegister();
+
+    //NOR Chip
+        <recipemap:circuit_assembler>.findRecipe(600, [<metaitem:circuit_board.plastic>, <metaitem:plate.system_on_chip>, <metaitem:wireFineCopper> * 2, <metaitem:boltTin> * 2], [<liquid:tin> * 144]).remove();
+        <recipemap:circuit_assembler>.findRecipe(600, [<metaitem:circuit_board.plastic>, <metaitem:plate.system_on_chip>, <metaitem:wireFineCopper> * 2, <metaitem:boltTin> * 2], [<liquid:soldering_alloy> * 72]).remove();
+        //Fine Copper Wire
+            //Polyethylene plate
+                <recipemap:forming_press>.recipeBuilder()
+                    .inputs([<ore:wireFineCopper>*2, <ore:dustElectrotine>, <ore:platePlastic>])
+                    .outputs([<metaitem:circuit.microprocessor>])
+                    .duration(5*20)
+                    .EUt(60)
+                    .buildAndRegister();
+            //Silicone Plate
+                <recipemap:forming_press>.recipeBuilder()
+                    .inputs([<ore:wireFineCopper>*2, <ore:dustElectrotine>, <ore:plateSilicon>])
+                    .outputs([<metaitem:circuit.microprocessor>*2])
+                    .duration(5*20)
+                    .EUt(60)
+                    .buildAndRegister();
+        //Fine Annealed Copper Wire
+            //Polyethylene plate
+                <recipemap:forming_press>.recipeBuilder()
+                    .inputs([<ore:wireFineAnnealedCopper>*2, <ore:dustElectrotine>, <ore:platePlastic>])
+                    .outputs([<metaitem:circuit.microprocessor>*2])
+                    .duration(5*20)
+                    .EUt(60)
+                    .buildAndRegister();
+            //Silicon Plate
+                <recipemap:forming_press>.recipeBuilder()
+                    .inputs([<ore:wireFineAnnealedCopper>*2, <ore:dustElectrotine>, <ore:plateSilicon>])
+                    .outputs([<metaitem:circuit.microprocessor>*4])
+                    .duration(5*20)
+                    .EUt(60)
+                    .buildAndRegister();
+
+//Raw Crystal Chip
+    <recipemap:autoclave>.findRecipe(320, [<metaitem:gemExquisiteEmerald>], [<liquid:europium> * 16]).remove();
+    <recipemap:autoclave>.findRecipe(320, [<metaitem:gemExquisiteOlivine>], [<liquid:europium> * 16]).remove();
+    <recipemap:autoclave>.findRecipe(480, [<metaitem:crystal.raw_chip>], [<liquid:mutagen> * 250]).remove();
+    <recipemap:autoclave>.findRecipe(480, [<metaitem:crystal.raw_chip>], [<liquid:bacterial_sludge> * 250]).remove();
+    <recipemap:autoclave>.findRecipe(480, [<metaitem:crystal.raw_chip>], [<liquid:europium> * 16]).remove();
+
+//Raw Crystal Chip Parts
+    <recipemap:forge_hammer>.findRecipe(480, [<metaitem:crystal.raw>], null).remove();
+
+//Data Crystal Chip
+    <recipemap:electric_blast_furnace>.findRecipe(480, [<metaitem:plateOlivine>, <metaitem:crystal.raw>], [<liquid:helium> * 1000]).remove();
+    <recipemap:electric_blast_furnace>.findRecipe(480, [<metaitem:plateEmerald>, <metaitem:crystal.raw>], [<liquid:helium> * 1000]).remove();
+    //Emerald Plate
+        <recipemap:laser_engraver>.recipeBuilder()
+            .inputs([<ore:plateEmerald>])
+            .notConsumable([<ore:craftingLensGreen>])
+            .outputs([<metaitem:engraved.crystal_chip>])
+            .duration(5*20)
+            .EUt(480)
+            .buildAndRegister();
+    //Green Sapphire Plate
+        <recipemap:laser_engraver>.recipeBuilder()
+            .inputs([<ore:plateGreenSapphire>])
+            .notConsumable([<ore:craftingLensGreen>])
+            .outputs([<metaitem:engraved.crystal_chip>])
+            .duration(5*20)
+            .EUt(480)
+            .buildAndRegister();
+    //Olivine Plate
+        <recipemap:laser_engraver>.recipeBuilder()
+            .inputs([<ore:plateOlivine>])
+            .notConsumable([<ore:craftingLensGreen>])
+            .outputs([<metaitem:engraved.crystal_chip>])
+            .duration(5*20)
+            .EUt(480)
             .buildAndRegister();
 
 //回路基板
@@ -318,179 +399,113 @@ for i in hideFromJEI {
         <recipemap:circuit_assembler>.findRecipe(120, [<metaitem:circuit_board.good>, <metaitem:plate.simple_system_on_chip>, <metaitem:boltRedAlloy> * 2, <metaitem:wireFineTin> * 2], [<liquid:soldering_alloy> * 72]).remove();
         <recipemap:circuit_assembler>.findRecipe(120, [<metaitem:circuit_board.plastic>, <metaitem:plate.simple_system_on_chip>, <metaitem:boltRedAlloy> * 2, <metaitem:wireFineTin> * 2], [<liquid:tin> * 144]).remove();
         <recipemap:circuit_assembler>.findRecipe(120, [<metaitem:circuit_board.plastic>, <metaitem:plate.simple_system_on_chip>, <metaitem:boltRedAlloy> * 2, <metaitem:wireFineTin> * 2], [<liquid:soldering_alloy> * 72]).remove();
-        //Molten Tin
             <recipemap:circuit_assembler>.recipeBuilder()
-                .inputs([<ore:plateTin>, <ore:wireFineRedAlloy>*4, <ore:wireFineLead>*2])
+                .inputs([<ore:plateTin>, <ore:wireFineRedAlloy>*2, <ore:wireFineLead>*2])
                 .fluidInputs([<liquid:tin>*72])
                 .outputs([<metaitem:circuit.nand_chip>*2])
-                .duration(2*20)
+                .duration(5*20)
                 .EUt(7)
                 .buildAndRegister();
             <recipemap:circuit_assembler>.recipeBuilder()
-                .inputs([<ore:plateTin>, <metaitem:plate.nand_memory_chip>, <ore:wireFineLead>*2])
-                .fluidInputs([<liquid:tin>*72])
-                .outputs([<metaitem:circuit.nand_chip>*8])
-                .duration(2*20)
-                .EUt(7)
-                .buildAndRegister();
-        //Molten Soldering Alloy
-            <recipemap:circuit_assembler>.recipeBuilder()
-                .inputs([<ore:plateTin>, <ore:wireFineRedAlloy>*4, <ore:wireFineLead>*2])
+                .inputs([<ore:plateTin>, <ore:wireFineRedAlloy>*2, <ore:wireFineLead>*2])
                 .fluidInputs([<liquid:soldering_alloy>*36])
                 .outputs([<metaitem:circuit.nand_chip>*2])
-                .duration(2*20)
-                .EUt(7)
-                .buildAndRegister();
-            <recipemap:circuit_assembler>.recipeBuilder()
-                .inputs([<ore:plateTin>, <metaitem:plate.nand_memory_chip>, <ore:wireFineLead>*2])
-                .fluidInputs([<liquid:soldering_alloy>*36])
-                .outputs([<metaitem:circuit.nand_chip>*8])
-                .duration(2*20)
+                .duration(5*20)
                 .EUt(7)
                 .buildAndRegister();
 
     //Electronic Circuit
-        //Molten Tin
             RecipeBuilder.get("basic")
-                .setShaped(RecipePattern.init(["AAA", "BCB", "AAA"]).map({A:<ore:cableGtSingleCopper>, B:<ore:circuitPrimitive>, C:<ore:plateSteel>}).ingredients)
+                .setShaped(RecipePattern.init(["AAA", "BCB", "AAA"]).map({A:<ore:cableGtSingleTin>, B:<metaitem:circuit.nand_chip>, C:<ore:plateSteel>}).ingredients)
                 .setFluid(<liquid:tin>*144)
                 .addTool(<ore:artisansSolderer>, 2)
                 .addTool(<ore:GT.tool.wirecutter>, 2)
                 .addOutput(<metaitem:circuit.electronic>)
                 .create();
             RecipeBuilder.get("basic")
-                .setShaped(RecipePattern.init(["AAA", "BCB", "AAA"]).map({A:<ore:cableGtSingleCopper>, B:<ore:circuitPrimitive>, C:<ore:plateSteel>}).ingredients)
-                .setSecondaryIngredients([<metaitem:component.resistor>*4])
+                .setShaped(RecipePattern.init(["ABA", "ACA", "ABA"]).map({A:<ore:cableGtSingleTin>, B:<metaitem:circuit.nand_chip>, C:<ore:plateSteel>}).ingredients)
                 .setFluid(<liquid:tin>*144)
                 .addTool(<ore:artisansSolderer>, 2)
                 .addTool(<ore:GT.tool.wirecutter>, 2)
-                .addOutput(<metaitem:circuit.electronic>*2)
+                .addOutput(<metaitem:circuit.electronic>)
                 .create();
-        //Molten Soldering Alloy
             RecipeBuilder.get("basic")
-                .setShaped(RecipePattern.init(["AAA", "BCB", "AAA"]).map({A:<ore:cableGtSingleCopper>, B:<ore:circuitPrimitive>, C:<ore:plateSteel>}).ingredients)
+                .setShaped(RecipePattern.init(["AAA", "BCB", "AAA"]).map({A:<ore:cableGtSingleTin>, B:<metaitem:circuit.nand_chip>, C:<ore:plateSteel>}).ingredients)
                 .setFluid(<liquid:soldering_alloy>*72)
                 .addTool(<ore:artisansSolderer>, 2)
                 .addTool(<ore:GT.tool.wirecutter>, 2)
                 .addOutput(<metaitem:circuit.electronic>)
                 .create();
             RecipeBuilder.get("basic")
-                .setShaped(RecipePattern.init(["AAA", "BCB", "AAA"]).map({A:<ore:cableGtSingleCopper>, B:<ore:circuitPrimitive>, C:<ore:plateSteel>}).ingredients)
-                .setSecondaryIngredients([<metaitem:component.resistor>*4])
+                .setShaped(RecipePattern.init(["ABA", "ACA", "ABA"]).map({A:<ore:cableGtSingleTin>, B:<metaitem:circuit.nand_chip>, C:<ore:plateSteel>}).ingredients)
                 .setFluid(<liquid:soldering_alloy>*72)
                 .addTool(<ore:artisansSolderer>, 2)
                 .addTool(<ore:GT.tool.wirecutter>, 2)
-                .addOutput(<metaitem:circuit.electronic>*2)
+                .addOutput(<metaitem:circuit.electronic>)
                 .create();
         <recipemap:circuit_assembler>.findRecipe(16, [<metaitem:circuit_board.basic>, <metaitem:component.resistor> * 2, <metaitem:wireGtSingleRedAlloy> * 2, <metaitem:circuit.vacuum_tube> * 2], [<liquid:tin> * 144]).remove();
         <recipemap:circuit_assembler>.findRecipe(16, [<metaitem:circuit_board.basic>, <metaitem:component.resistor> * 2, <metaitem:wireGtSingleRedAlloy> * 2, <metaitem:circuit.vacuum_tube> * 2], [<liquid:soldering_alloy> * 72]).remove();
-        //Molten tin
-            //#ULV Circuit
+            //NAND Chip
                 <recipemap:circuit_assembler>.recipeBuilder()
-                    .inputs([<contenttweaker:circuit_board_basic>, <ore:wireFineCopper>*12, <ore:circuitPrimitive>])
+                    .inputs([<contenttweaker:circuit_board_basic>, <metaitem:circuit.nand_chip>, <ore:wireFineTin>*2])
                     .fluidInputs([<liquid:tin>*144])
                     .outputs([<metaitem:circuit.electronic>])
                     .duration(10*20)
                     .EUt(16)
                     .buildAndRegister();
                 <recipemap:circuit_assembler>.recipeBuilder()
-                    .inputs([<contenttweaker:circuit_board_basic>, <ore:wireFineCopper>*12, <ore:circuitPrimitive>, <ore:componentResistor>*2])
-                    .fluidInputs([<liquid:tin>*144])
-                    .outputs([<metaitem:circuit.electronic>*2])
+                    .inputs([<contenttweaker:circuit_board_basic>, <metaitem:circuit.nand_chip>, <ore:wireFineTin>*2])
+                    .fluidInputs([<liquid:soldering_alloy>*72])
+                    .outputs([<metaitem:circuit.electronic>])
                     .duration(10*20)
                     .EUt(16)
                     .buildAndRegister();
-            //#NAND Chip
+            //NAND Memory Chip
                 <recipemap:circuit_assembler>.recipeBuilder()
-                    .inputs([<contenttweaker:circuit_board_basic>, <ore:wireFineCopper>*6, <metaitem:plate.nand_memory_chip>])
+                    .inputs([<contenttweaker:circuit_board_basic>, <metaitem:plate.nand_memory_chip>, <ore:wireFineTin>*2])
                     .fluidInputs([<liquid:tin>*144])
                     .outputs([<metaitem:circuit.electronic>])
                     .duration(10*20)
                     .EUt(16)
                     .buildAndRegister();
                 <recipemap:circuit_assembler>.recipeBuilder()
-                    .inputs([<contenttweaker:circuit_board_basic>, <ore:wireFineCopper>*6, <metaitem:plate.nand_memory_chip>, <ore:componentResistor>*2])
-                    .fluidInputs([<liquid:tin>*144])
-                    .outputs([<metaitem:circuit.electronic>*2])
-                    .duration(10*20)
-                    .EUt(16)
-                    .buildAndRegister();
-        //Molten Soldering Alloy
-            //#ULV Circuit
-                <recipemap:circuit_assembler>.recipeBuilder()
-                    .inputs([<contenttweaker:circuit_board_basic>, <ore:wireFineCopper>*12, <ore:circuitPrimitive>])
+                    .inputs([<contenttweaker:circuit_board_basic>, <metaitem:plate.nand_memory_chip>, <ore:wireFineTin>*2])
                     .fluidInputs([<liquid:soldering_alloy>*72])
                     .outputs([<metaitem:circuit.electronic>])
-                    .duration(10*20)
-                    .EUt(16)
-                    .buildAndRegister();
-                <recipemap:circuit_assembler>.recipeBuilder()
-                    .inputs([<contenttweaker:circuit_board_basic>, <ore:wireFineCopper>*12, <ore:circuitPrimitive>, <ore:componentResistor>*2])
-                    .fluidInputs([<liquid:soldering_alloy>*72])
-                    .outputs([<metaitem:circuit.electronic>*2])
-                    .duration(10*20)
-                    .EUt(16)
-                    .buildAndRegister();
-            //#NAND Chip
-                <recipemap:circuit_assembler>.recipeBuilder()
-                    .inputs([<contenttweaker:circuit_board_basic>, <ore:wireFineCopper>*6, <metaitem:plate.nand_memory_chip>])
-                    .fluidInputs([<liquid:soldering_alloy>*72])
-                    .outputs([<metaitem:circuit.electronic>])
-                    .duration(10*20)
-                    .EUt(16)
-                    .buildAndRegister();
-                <recipemap:circuit_assembler>.recipeBuilder()
-                    .inputs([<contenttweaker:circuit_board_basic>, <ore:wireFineCopper>*6, <metaitem:plate.nand_memory_chip>, <ore:componentResistor>*2])
-                    .fluidInputs([<liquid:soldering_alloy>*72])
-                    .outputs([<metaitem:circuit.electronic>*2])
                     .duration(10*20)
                     .EUt(16)
                     .buildAndRegister();
 
+    //Integrated Logic Circuit
+
+    //Good Integrated Circuit
+
     //Good Electronic Circuit
-        //Molten Tin
             RecipeBuilder.get("basic")
-                .setShaped(RecipePattern.init(["ABA", "BCB", "ABA"]).map({A:<ore:cableGtSingleGold>, B:<ore:circuitBasic>, C:<ore:plateDoubleSteel>}).ingredients)
+                .setShaped(RecipePattern.init(["ABA", "BCB", "ABA"]).map({A:<ore:cableGtSingleCopper>, B:<ore:circuitLv>, C:<ore:plateDoubleSteel>}).ingredients)
                 .setFluid(<liquid:tin>*576)
                 .addTool(<ore:artisansSolderer>, 5)
                 .addTool(<ore:GT.tool.wirecutter>, 5)
                 .addOutput(<metaitem:circuit.good_electronic>)
                 .create();
             RecipeBuilder.get("basic")
-                .setShaped(RecipePattern.init(["ABA", "BCB", "ABA"]).map({A:<ore:cableGtSingleGold>, B:<ore:circuitBasic>, C:<ore:plateDoubleSteel>}).ingredients)
-                .setSecondaryIngredients([<metaitem:component.diode>*4])
-                .setFluid(<liquid:tin>*576)
-                .addTool(<ore:artisansSolderer>, 5)
-                .addTool(<ore:GT.tool.wirecutter>, 5)
-                .addOutput(<metaitem:circuit.good_electronic>*2)
-                .create();
-        //Molten Soldering Alloy
-            RecipeBuilder.get("basic")
-                .setShaped(RecipePattern.init(["ABA", "BCB", "ABA"]).map({A:<ore:cableGtSingleGold>, B:<ore:circuitBasic>, C:<ore:plateDoubleSteel>}).ingredients)
-                .setFluid(<liquid:tin>*576)
+                .setShaped(RecipePattern.init(["ABA", "BCB", "ABA"]).map({A:<ore:cableGtSingleCopper>, B:<ore:circuitLv>, C:<ore:plateDoubleSteel>}).ingredients)
+                .setFluid(<liquid:soldering_alloy>*288)
                 .addTool(<ore:artisansSolderer>, 5)
                 .addTool(<ore:GT.tool.wirecutter>, 5)
                 .addOutput(<metaitem:circuit.good_electronic>)
-                .create();
-            RecipeBuilder.get("basic")
-                .setShaped(RecipePattern.init(["ABA", "BCB", "ABA"]).map({A:<ore:cableGtSingleGold>, B:<ore:circuitBasic>, C:<ore:plateDoubleSteel>}).ingredients)
-                .setSecondaryIngredients([<metaitem:component.diode>*4])
-                .setFluid(<liquid:tin>*576)
-                .addTool(<ore:artisansSolderer>, 5)
-                .addTool(<ore:GT.tool.wirecutter>, 5)
-                .addOutput(<metaitem:circuit.good_electronic>*2)
                 .create();
         <recipemap:circuit_assembler>.findRecipe(30, [<metaitem:circuit_board.good>, <metaitem:circuit.electronic> * 2, <metaitem:component.diode> * 2, <metaitem:wireGtSingleCopper> * 2], [<liquid:tin> * 144]).remove();
         <recipemap:circuit_assembler>.findRecipe(30, [<metaitem:circuit_board.good>, <metaitem:circuit.electronic> * 2, <metaitem:component.diode> * 2, <metaitem:wireGtSingleCopper> * 2], [<liquid:soldering_alloy> * 72]).remove();
         <recipemap:circuit_assembler>.recipeBuilder()
-            .inputs([<ore:circuitBasic>, <ore:wireFineGold>*8, <ore:plateSteel>])
+            .inputs([<ore:circuitLv>, <ore:plateSteel>, <ore:wireFineRedAlloy>*4])
             .fluidInputs([<liquid:tin>*288])
             .outputs([<metaitem:circuit.good_electronic>])
             .duration(10*20)
             .EUt(60)
             .buildAndRegister();
         <recipemap:circuit_assembler>.recipeBuilder()
-            .inputs([<ore:circuitBasic>, <ore:wireFineGold>*8, <ore:plateSteel>])
+            .inputs([<ore:circuitLv>, <ore:plateSteel>, <ore:wireFineRedAlloy>*4])
             .fluidInputs([<liquid:soldering_alloy>*144])
             .outputs([<metaitem:circuit.good_electronic>])
             .duration(10*20)
@@ -500,40 +515,165 @@ for i in hideFromJEI {
     //Integrated Processor
         <recipemap:circuit_assembler>.findRecipe(2400, [<metaitem:circuit_board.plastic>, <metaitem:plate.system_on_chip>, <metaitem:wireFineRedAlloy> * 4, <metaitem:boltAnnealedCopper> * 4], [<liquid:tin> * 144]).remove();
         <recipemap:circuit_assembler>.findRecipe(2400, [<metaitem:circuit_board.plastic>, <metaitem:plate.system_on_chip>, <metaitem:wireFineRedAlloy> * 4, <metaitem:boltAnnealedCopper> * 4], [<liquid:soldering_alloy> * 72]).remove();
-        //<recipemap:circuit_assembler>.findRecipe(60, [<metaitem:circuit_board.plastic>, <metaitem:plate.central_processing_unit>, <ore:componentResistor> * 4, <metaitem:component.capacitor> * 4, <metaitem:component.transistor> * 4, <metaitem:wireFineRedAlloy> * 4], [<liquid:tin> * 144]).remove();
-        //<recipemap:circuit_assembler>.findRecipe(60, [<metaitem:circuit_board.plastic>, <metaitem:plate.central_processing_unit>, <ore:componentResistor> * 4, <metaitem:component.capacitor> * 4, <metaitem:component.transistor> * 4, <metaitem:wireFineRedAlloy> * 4], [<liquid:soldering_alloy> * 72]).remove();
+        //Microprocessor
         <recipemap:circuit_assembler>.recipeBuilder()
-            .inputs([<contenttweaker:circuit_board_advanced>, <ore:wireFineRedAlloy>*4, <metaitem:plate.integrated_logic_circuit>, <ore:componentTransistor>*4, <ore:componentResistor>*4, <ore:componentDiode>*4])
+            .inputs([<contenttweaker:circuit_board_advanced>, <metaitem:circuit.microprocessor>*2, <ore:wireFineCopper>*4])
             .fluidInputs([<liquid:tin>*144])
             .outputs([<metaitem:circuit.processor>])
             .duration(10*20)
             .EUt(60)
             .buildAndRegister();
         <recipemap:circuit_assembler>.recipeBuilder()
-            .inputs([<contenttweaker:circuit_board_advanced>, <ore:wireFineRedAlloy>*4, <metaitem:plate.integrated_logic_circuit>, <ore:componentTransistor>*4, <ore:componentResistor>*4, <ore:componentDiode>*4])
+            .inputs([<contenttweaker:circuit_board_advanced>, <metaitem:circuit.microprocessor>*2, <ore:wireFineCopper>*4])
+            .fluidInputs([<liquid:soldering_alloy>*72])
+            .outputs([<metaitem:circuit.processor>])
+            .duration(10*20)
+            .EUt(60)
+            .buildAndRegister();
+        //Interated Processor Circuit
+        <recipemap:circuit_assembler>.recipeBuilder()
+            .inputs([<contenttweaker:circuit_board_advanced>, <metaitem:plate.nor_memory_chip>, <ore:wireFineCopper>*4])
+            .fluidInputs([<liquid:tin>*144])
+            .outputs([<metaitem:circuit.processor>])
+            .duration(10*20)
+            .EUt(60)
+            .buildAndRegister();
+        <recipemap:circuit_assembler>.recipeBuilder()
+            .inputs([<contenttweaker:circuit_board_advanced>, <metaitem:plate.nor_memory_chip>, <ore:wireFineCopper>*4])
             .fluidInputs([<liquid:soldering_alloy>*72])
             .outputs([<metaitem:circuit.processor>])
             .duration(10*20)
             .EUt(60)
             .buildAndRegister();
 
-//Advanced Integrated Processor
-    <recipemap:circuit_assembler>.findRecipe(30, [<metaitem:circuit.good_integrated> * 2, <metaitem:plate.integrated_logic_circuit> * 2, <metaitem:plate.random_access_memory> * 2, <metaitem:component.smd.transistor> * 4, <metaitem:wireFineElectrum> * 8, <metaitem:boltAnnealedCopper> * 8], [<liquid:tin> * 144]).remove();
-    <recipemap:circuit_assembler>.findRecipe(30, [<metaitem:circuit.good_integrated> * 2, <metaitem:plate.integrated_logic_circuit> * 2, <metaitem:plate.random_access_memory> * 2, <metaitem:component.smd.transistor> * 4, <metaitem:wireFineElectrum> * 8, <metaitem:boltAnnealedCopper> * 8], [<liquid:soldering_alloy> * 72]).remove();
-    <recipemap:circuit_assembler>.recipeBuilder()
-        .inputs([<metaitem:circuit.processor>*4, <metaitem:plate.integrated_logic_circuit>, <metaitem:plate.random_access_memory>, <ore:componentCapacitor>*4, <ore:componentDiode>*4, <ore:wireFineElectrum>*8])
-        .fluidInputs([<liquid:tin>*144])
-        .outputs([<metaitem:circuit.advanced_integrated>])
-        .duration(20*20)
-        .EUt(60)
-        .buildAndRegister();
-    <recipemap:circuit_assembler>.recipeBuilder()
-        .inputs([<metaitem:circuit.processor>*4, <metaitem:plate.integrated_logic_circuit>, <metaitem:plate.random_access_memory>, <ore:componentCapacitor>*4, <ore:componentDiode>*4, <ore:wireFineElectrum>*8])
-        .fluidInputs([<liquid:soldering_alloy>*72])
-        .outputs([<metaitem:circuit.advanced_integrated>])
-        .duration(20*20)
-        .EUt(60)
-        .buildAndRegister();
+    //Assembly (HV)
+
+    //Mainframe (HV)
+
+    //Advanced Integrated Processor
+        <recipemap:circuit_assembler>.findRecipe(30, [<metaitem:circuit.good_integrated> * 2, <metaitem:plate.integrated_logic_circuit> * 2, <metaitem:plate.random_access_memory> * 2, <metaitem:component.smd.transistor> * 4, <metaitem:wireFineElectrum> * 8, <metaitem:boltAnnealedCopper> * 8], [<liquid:tin> * 144]).remove();
+        <recipemap:circuit_assembler>.findRecipe(30, [<metaitem:circuit.good_integrated> * 2, <metaitem:plate.integrated_logic_circuit> * 2, <metaitem:plate.random_access_memory> * 2, <metaitem:component.smd.transistor> * 4, <metaitem:wireFineElectrum> * 8, <metaitem:boltAnnealedCopper> * 8], [<liquid:soldering_alloy> * 72]).remove();
+        //Integrated Processor & Microprocessor
+        <recipemap:circuit_assembler>.recipeBuilder()
+            .inputs([<metaitem:circuit.processor>*4, <metaitem:circuit.microprocessor>, <ore:wireFineElectrum>*4])
+            .fluidInputs([<liquid:tin>*144])
+            .outputs([<metaitem:circuit.advanced_integrated>])
+            .duration(10*20)
+            .EUt(120)
+            .buildAndRegister();
+        <recipemap:circuit_assembler>.recipeBuilder()
+            .inputs([<metaitem:circuit.processor>*4, <metaitem:circuit.microprocessor>, <ore:wireFineElectrum>*4])
+            .fluidInputs([<liquid:soldering_alloy>*72])
+            .outputs([<metaitem:circuit.advanced_integrated>])
+            .duration(10*20)
+            .EUt(120)
+            .buildAndRegister();
+        //CPU
+        <recipemap:circuit_assembler>.recipeBuilder()
+            .inputs([<contenttweaker:circuit_board_advanced>, <metaitem:plate.central_processing_unit>, <ore:wireFineGold>*4])
+            .fluidInputs([<liquid:tin>*144])
+            .outputs([<metaitem:circuit.advanced_integrated>])
+            .duration(10*20)
+            .EUt(240)
+            .buildAndRegister();
+        <recipemap:circuit_assembler>.recipeBuilder()
+            .inputs([<contenttweaker:circuit_board_advanced>, <metaitem:plate.central_processing_unit>, <ore:wireFineGold>*4])
+            .fluidInputs([<liquid:soldering_alloy>*72])
+            .outputs([<metaitem:circuit.advanced_integrated>])
+            .duration(10*20)
+            .EUt(240)
+            .buildAndRegister();
+
+    //Nanoprocessor (HV)
+        <recipemap:circuit_assembler>.findRecipe(9600, [<metaitem:circuit_board.advanced>, <metaitem:plate.advanced_system_on_chip>, <metaitem:wireFineElectrum> * 4, <metaitem:boltPlatinum> * 4], [<liquid:tin> * 144]).remove();
+        <recipemap:circuit_assembler>.findRecipe(9600, [<metaitem:circuit_board.advanced>, <metaitem:plate.advanced_system_on_chip>, <metaitem:wireFineElectrum> * 4, <metaitem:boltPlatinum> * 4], [<liquid:soldering_alloy> * 72]).remove();
+        <recipemap:circuit_assembler>.findRecipe(600, [<metaitem:circuit_board.advanced>, <metaitem:plate.nano_central_processing_unit>, <metaitem:component.advanced_smd.resistor> * 2, <metaitem:component.advanced_smd.capacitor> * 2, <metaitem:component.advanced_smd.transistor> * 2, <metaitem:wireFineElectrum> * 8], [<liquid:tin> * 144]).remove();
+        <recipemap:circuit_assembler>.findRecipe(600, [<metaitem:circuit_board.advanced>, <metaitem:plate.nano_central_processing_unit>, <metaitem:component.advanced_smd.resistor> * 2, <metaitem:component.advanced_smd.capacitor> * 2, <metaitem:component.advanced_smd.transistor> * 2, <metaitem:wireFineElectrum> * 8], [<liquid:soldering_alloy> * 72]).remove();
+        <recipemap:circuit_assembler>.findRecipe(600, [<metaitem:circuit_board.advanced>, <metaitem:plate.nano_central_processing_unit>, <metaitem:component.smd.resistor> * 8, <metaitem:component.smd.capacitor> * 8, <metaitem:component.smd.transistor> * 8, <metaitem:wireFineElectrum> * 8], [<liquid:tin> * 144]).remove();
+        <recipemap:circuit_assembler>.findRecipe(600, [<metaitem:circuit_board.advanced>, <metaitem:plate.nano_central_processing_unit>, <metaitem:component.smd.resistor> * 8, <metaitem:component.smd.capacitor> * 8, <metaitem:component.smd.transistor> * 8, <metaitem:wireFineElectrum> * 8], [<liquid:soldering_alloy> * 72]).remove();
+
+    //Nanoprocessor Assembly (EV)
+        <recipemap:circuit_assembler>.findRecipe(600, [<metaitem:circuit_board.advanced>, <metaitem:circuit.nano_processor> * 2, <metaitem:component.advanced_smd.inductor>, <metaitem:component.advanced_smd.capacitor> * 2, <metaitem:plate.random_access_memory> * 8, <metaitem:wireFineElectrum> * 16], [<liquid:tin> * 288]).remove();
+        <recipemap:circuit_assembler>.findRecipe(600, [<metaitem:circuit_board.advanced>, <metaitem:circuit.nano_processor> * 2, <metaitem:component.advanced_smd.inductor>, <metaitem:component.advanced_smd.capacitor> * 2, <metaitem:plate.random_access_memory> * 8, <metaitem:wireFineElectrum> * 16], [<liquid:soldering_alloy> * 144]).remove();
+        <recipemap:circuit_assembler>.findRecipe(600, [<metaitem:circuit_board.advanced>, <metaitem:circuit.nano_processor> * 2, <metaitem:component.smd.inductor> * 4, <metaitem:component.smd.capacitor> * 8, <metaitem:plate.random_access_memory> * 8, <metaitem:wireFineElectrum> * 16], [<liquid:tin> * 288]).remove();
+        <recipemap:circuit_assembler>.findRecipe(600, [<metaitem:circuit_board.advanced>, <metaitem:circuit.nano_processor> * 2, <metaitem:component.smd.inductor> * 4, <metaitem:component.smd.capacitor> * 8, <metaitem:plate.random_access_memory> * 8, <metaitem:wireFineElectrum> * 16], [<liquid:soldering_alloy> * 144]).remove();
+
+    //Nano Supercomputer (IV)
+        <recipemap:circuit_assembler>.findRecipe(600, [<metaitem:circuit_board.advanced>, <metaitem:circuit.nano_assembly> * 2, <metaitem:component.advanced_smd.diode> * 2, <metaitem:plate.nor_memory_chip> * 4, <metaitem:plate.random_access_memory> * 16, <metaitem:wireFineElectrum> * 16], [<liquid:tin> * 288]).remove();
+        <recipemap:circuit_assembler>.findRecipe(600, [<metaitem:circuit_board.advanced>, <metaitem:circuit.nano_assembly> * 2, <metaitem:component.advanced_smd.diode> * 2, <metaitem:plate.nor_memory_chip> * 4, <metaitem:plate.random_access_memory> * 16, <metaitem:wireFineElectrum> * 16], [<liquid:soldering_alloy> * 144]).remove();
+        <recipemap:circuit_assembler>.findRecipe(600, [<metaitem:circuit_board.advanced>, <metaitem:circuit.nano_assembly> * 2, <metaitem:component.smd.diode> * 8, <metaitem:plate.nor_memory_chip> * 4, <metaitem:plate.random_access_memory> * 16, <metaitem:wireFineElectrum> * 16], [<liquid:tin> * 288]).remove();
+        <recipemap:circuit_assembler>.findRecipe(600, [<metaitem:circuit_board.advanced>, <metaitem:circuit.nano_assembly> * 2, <metaitem:component.smd.diode> * 8, <metaitem:plate.nor_memory_chip> * 4, <metaitem:plate.random_access_memory> * 16, <metaitem:wireFineElectrum> * 16], [<liquid:soldering_alloy> * 144]).remove();
+
+    //Nanoprocessor mainframe (LuV
+        <recipemap:circuit_assembler>.findRecipe(1920, [<metaitem:frameAluminium> * 2, <metaitem:circuit.nano_computer> * 2, <metaitem:component.advanced_smd.inductor> * 4, <metaitem:component.advanced_smd.capacitor> * 8, <metaitem:plate.random_access_memory> * 16, <metaitem:wireGtSingleAnnealedCopper> * 32], [<liquid:tin> * 576]).remove();
+        <recipemap:circuit_assembler>.findRecipe(1920, [<metaitem:frameAluminium> * 2, <metaitem:circuit.nano_computer> * 2, <metaitem:component.advanced_smd.inductor> * 4, <metaitem:component.advanced_smd.capacitor> * 8, <metaitem:plate.random_access_memory> * 16, <metaitem:wireGtSingleAnnealedCopper> * 32], [<liquid:soldering_alloy> * 288]).remove();
+        <recipemap:circuit_assembler>.findRecipe(1920, [<metaitem:frameAluminium> * 2, <metaitem:circuit.nano_computer> * 2, <metaitem:component.smd.inductor> * 16, <metaitem:component.smd.capacitor> * 32, <metaitem:plate.random_access_memory> * 16, <metaitem:wireGtSingleAnnealedCopper> * 32], [<liquid:tin> * 576]).remove();
+        <recipemap:circuit_assembler>.findRecipe(1920, [<metaitem:frameAluminium> * 2, <metaitem:circuit.nano_computer> * 2, <metaitem:component.smd.inductor> * 16, <metaitem:component.smd.capacitor> * 32, <metaitem:plate.random_access_memory> * 16, <metaitem:wireGtSingleAnnealedCopper> * 32], [<liquid:soldering_alloy> * 288]).remove();
+
+    //Data Storage Unit
+        <recipemap:forming_press>.recipeBuilder()
+            .inputs([<contenttweaker:circuit_board_advanced>, <metaitem:engraved.crystal_chip>, <ore:wireFineGold>*4])
+            .outputs([<metaitem:circuit.workstation>])
+            .duration(5*20)
+            .EUt(480)
+            .buildAndRegister();
+
+    //Data Control Circuit
+        <recipemap:circuit_assembler>.findRecipe(38400, [<metaitem:circuit_board.extreme>, <metaitem:plate.advanced_system_on_chip>, <metaitem:wireFinePlatinum> * 12, <metaitem:boltNiobiumTitanium> * 8], [<liquid:tin> * 144]).remove();
+        <recipemap:circuit_assembler>.findRecipe(38400, [<metaitem:circuit_board.extreme>, <metaitem:plate.advanced_system_on_chip>, <metaitem:wireFinePlatinum> * 12, <metaitem:boltNiobiumTitanium> * 8], [<liquid:soldering_alloy> * 72]).remove();
+        <recipemap:circuit_assembler>.findRecipe(2400, [<metaitem:circuit_board.extreme>, <metaitem:plate.qbit_central_processing_unit>, <metaitem:plate.nano_central_processing_unit>, <metaitem:component.advanced_smd.capacitor> * 3, <metaitem:component.advanced_smd.transistor> * 3, <metaitem:wireFinePlatinum> * 12], [<liquid:tin> * 144]).remove();
+        <recipemap:circuit_assembler>.findRecipe(2400, [<metaitem:circuit_board.extreme>, <metaitem:plate.qbit_central_processing_unit>, <metaitem:plate.nano_central_processing_unit>, <metaitem:component.advanced_smd.capacitor> * 3, <metaitem:component.advanced_smd.transistor> * 3, <metaitem:wireFinePlatinum> * 12], [<liquid:soldering_alloy> * 72]).remove();
+        <recipemap:circuit_assembler>.findRecipe(2400, [<metaitem:circuit_board.extreme>, <metaitem:plate.qbit_central_processing_unit>, <metaitem:plate.nano_central_processing_unit>, <metaitem:component.smd.capacitor> * 12, <metaitem:component.smd.transistor> * 12, <metaitem:wireFinePlatinum> * 12], [<liquid:tin> * 144]).remove();
+        <recipemap:circuit_assembler>.findRecipe(2400, [<metaitem:circuit_board.extreme>, <metaitem:plate.qbit_central_processing_unit>, <metaitem:plate.nano_central_processing_unit>, <metaitem:component.smd.capacitor> * 12, <metaitem:component.smd.transistor> * 12, <metaitem:wireFinePlatinum> * 12], [<liquid:soldering_alloy> * 72]).remove();
+        <recipemap:circuit_assembler>.recipeBuilder()
+            .inputs([<contenttweaker:circuit_board_elite>, <metaitem:circuit.workstation>*3, <ore:wireFinePlatinum>*8])
+            .outputs([<metaitem:circuit.quantum_processor>])
+            .duration(10*20)
+            .EUt(480)
+            .buildAndRegister();
+
+    //Quantumprocessor Assembly (IV)
+        <recipemap:circuit_assembler>.findRecipe(2400, [<metaitem:circuit_board.extreme>, <metaitem:circuit.quantum_processor> * 2, <metaitem:component.advanced_smd.inductor> * 2, <metaitem:component.advanced_smd.capacitor> * 4, <metaitem:plate.random_access_memory> * 4, <metaitem:wireFinePlatinum> * 16], [<liquid:tin> * 288]).remove();
+        <recipemap:circuit_assembler>.findRecipe(2400, [<metaitem:circuit_board.extreme>, <metaitem:circuit.quantum_processor> * 2, <metaitem:component.advanced_smd.inductor> * 2, <metaitem:component.advanced_smd.capacitor> * 4, <metaitem:plate.random_access_memory> * 4, <metaitem:wireFinePlatinum> * 16], [<liquid:soldering_alloy> * 144]).remove();
+        <recipemap:circuit_assembler>.findRecipe(2400, [<metaitem:circuit_board.extreme>, <metaitem:circuit.quantum_processor> * 2, <metaitem:component.smd.inductor> * 8, <metaitem:component.smd.capacitor> * 16, <metaitem:plate.random_access_memory> * 4, <metaitem:wireFinePlatinum> * 16], [<liquid:tin> * 288]).remove();
+        <recipemap:circuit_assembler>.findRecipe(2400, [<metaitem:circuit_board.extreme>, <metaitem:circuit.quantum_processor> * 2, <metaitem:component.smd.inductor> * 8, <metaitem:component.smd.capacitor> * 16, <metaitem:plate.random_access_memory> * 4, <metaitem:wireFinePlatinum> * 16], [<liquid:soldering_alloy> * 144]).remove();
+
+    //Quantum Supercomputer (LuV)
+        <recipemap:circuit_assembler>.findRecipe(2400, [<metaitem:circuit_board.extreme>, <metaitem:circuit.quantum_assembly> * 2, <metaitem:component.advanced_smd.diode> * 2, <metaitem:plate.nor_memory_chip> * 4, <metaitem:plate.random_access_memory> * 16, <metaitem:wireFinePlatinum> * 32], [<liquid:tin> * 288]).remove();
+        <recipemap:circuit_assembler>.findRecipe(2400, [<metaitem:circuit_board.extreme>, <metaitem:circuit.quantum_assembly> * 2, <metaitem:component.advanced_smd.diode> * 2, <metaitem:plate.nor_memory_chip> * 4, <metaitem:plate.random_access_memory> * 16, <metaitem:wireFinePlatinum> * 32], [<liquid:soldering_alloy> * 144]).remove();
+        <recipemap:circuit_assembler>.findRecipe(2400, [<metaitem:circuit_board.extreme>, <metaitem:circuit.quantum_assembly> * 2, <metaitem:component.smd.diode> * 8, <metaitem:plate.nor_memory_chip> * 4, <metaitem:plate.random_access_memory> * 16, <metaitem:wireFinePlatinum> * 32], [<liquid:tin> * 288]).remove();
+        <recipemap:circuit_assembler>.findRecipe(2400, [<metaitem:circuit_board.extreme>, <metaitem:circuit.quantum_assembly> * 2, <metaitem:component.smd.diode> * 8, <metaitem:plate.nor_memory_chip> * 4, <metaitem:plate.random_access_memory> * 16, <metaitem:wireFinePlatinum> * 32], [<liquid:soldering_alloy> * 144]).remove();
+
+    //Quantumprocessor Mainframe (ZPM)
+        <recipemap:circuit_assembler>.findRecipe(7680, [<metaitem:frameHssg> * 2, <metaitem:circuit.quantum_computer> * 2, <metaitem:component.advanced_smd.inductor> * 6, <metaitem:component.advanced_smd.capacitor> * 12, <metaitem:plate.random_access_memory> * 24, <metaitem:wireGtSingleAnnealedCopper> * 48], [<liquid:tin> * 576]).remove();
+        <recipemap:circuit_assembler>.findRecipe(7680, [<metaitem:frameHssg> * 2, <metaitem:circuit.quantum_computer> * 2, <metaitem:component.advanced_smd.inductor> * 6, <metaitem:component.advanced_smd.capacitor> * 12, <metaitem:plate.random_access_memory> * 24, <metaitem:wireGtSingleAnnealedCopper> * 48], [<liquid:soldering_alloy> * 288]).remove();
+        <recipemap:circuit_assembler>.findRecipe(7680, [<metaitem:frameHssg> * 2, <metaitem:circuit.quantum_computer> * 2, <metaitem:component.smd.inductor> * 24, <metaitem:component.smd.capacitor> * 48, <metaitem:plate.random_access_memory> * 24, <metaitem:wireGtSingleAnnealedCopper> * 48], [<liquid:tin> * 576]).remove();
+        <recipemap:circuit_assembler>.findRecipe(7680, [<metaitem:frameHssg> * 2, <metaitem:circuit.quantum_computer> * 2, <metaitem:component.smd.inductor> * 24, <metaitem:component.smd.capacitor> * 48, <metaitem:plate.random_access_memory> * 24, <metaitem:wireGtSingleAnnealedCopper> * 48], [<liquid:soldering_alloy> * 288]).remove();
+
+    //Energy flow Circuit (IV)
+        <recipemap:circuit_assembler>.findRecipe(86000, [<metaitem:circuit_board.elite>, <metaitem:crystal.system_on_chip>, <metaitem:wireFineNiobiumTitanium> * 8, <metaitem:boltYttriumBariumCuprate> * 8], [<liquid:tin> * 144]).remove();
+        <recipemap:circuit_assembler>.findRecipe(86000, [<metaitem:circuit_board.elite>, <metaitem:crystal.system_on_chip>, <metaitem:wireFineNiobiumTitanium> * 8, <metaitem:boltYttriumBariumCuprate> * 8], [<liquid:soldering_alloy> * 72]).remove();
+        <recipemap:circuit_assembler>.findRecipe(9600, [<metaitem:circuit_board.elite>, <metaitem:crystal.central_processing_unit>, <metaitem:plate.nano_central_processing_unit> * 2, <metaitem:component.advanced_smd.capacitor> * 6, <metaitem:component.advanced_smd.transistor> * 6, <metaitem:wireFineNiobiumTitanium> * 8], [<liquid:tin> * 144]).remove();
+        <recipemap:circuit_assembler>.findRecipe(9600, [<metaitem:circuit_board.elite>, <metaitem:crystal.central_processing_unit>, <metaitem:plate.nano_central_processing_unit> * 2, <metaitem:component.advanced_smd.capacitor> * 6, <metaitem:component.advanced_smd.transistor> * 6, <metaitem:wireFineNiobiumTitanium> * 8], [<liquid:soldering_alloy> * 72]).remove();
+        <recipemap:circuit_assembler>.recipeBuilder()
+            .inputs([<contenttweaker:circuit_board_elite>, <metaitem:engraved.lapotron_chip>*3, <ore:wireFineNiobiumTitanium>*8])
+            .outputs([<metaitem:circuit.crystal_processor>])
+            .duration(10*20)
+            .EUt(1920)
+            .buildAndRegister();
+
+    //Crystal Processor Assembly (LuV)
+        <recipemap:circuit_assembler>.findRecipe(9600, [<metaitem:circuit_board.elite>, <metaitem:circuit.crystal_processor> * 2, <metaitem:component.advanced_smd.inductor> * 4, <metaitem:component.advanced_smd.capacitor> * 8, <metaitem:plate.random_access_memory> * 24, <metaitem:wireFineNiobiumTitanium> * 16], [<liquid:tin> * 288]).remove();
+        <recipemap:circuit_assembler>.findRecipe(9600, [<metaitem:circuit_board.elite>, <metaitem:circuit.crystal_processor> * 2, <metaitem:component.advanced_smd.inductor> * 4, <metaitem:component.advanced_smd.capacitor> * 8, <metaitem:plate.random_access_memory> * 24, <metaitem:wireFineNiobiumTitanium> * 16], [<liquid:soldering_alloy> * 144]).remove();
+
+    //Crystal Supercomputer (ZPM)
+        <recipemap:circuit_assembler>.findRecipe(9600, [<metaitem:circuit_board.elite>, <metaitem:circuit.crystal_assembly> * 2, <metaitem:plate.random_access_memory> * 4, <metaitem:plate.nor_memory_chip> * 32, <metaitem:plate.nand_memory_chip> * 64, <metaitem:wireFineNiobiumTitanium> * 32], [<liquid:tin> * 288]).remove();
+        <recipemap:circuit_assembler>.findRecipe(9600, [<metaitem:circuit_board.elite>, <metaitem:circuit.crystal_assembly> * 2, <metaitem:plate.random_access_memory> * 4, <metaitem:plate.nor_memory_chip> * 32, <metaitem:plate.nand_memory_chip> * 64, <metaitem:wireFineNiobiumTitanium> * 32], [<liquid:soldering_alloy> * 144]).remove();
+
+    //Crystal Processor Mainframe (UV)
+        <recipemap:assembly_line>.findRecipe(30720, [<metaitem:frameHsse> * 2, <metaitem:circuit.crystal_computer> * 2, <metaitem:plate.random_access_memory> * 32, <metaitem:plate.high_power_integrated_circuit> * 2, <metaitem:wireGtSingleNiobiumTitanium> * 8, <metaitem:component.advanced_smd.inductor> * 8, <metaitem:component.advanced_smd.capacitor> * 16, <metaitem:component.advanced_smd.diode> * 8], [<liquid:soldering_alloy> * 1440]).remove();
+
+
 
 #このscriptの読み込みの完了をログに出力
 print("gt-circuit.zs loaded!");

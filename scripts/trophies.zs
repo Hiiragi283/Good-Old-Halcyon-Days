@@ -80,7 +80,7 @@ print("Start loading trophies.zs ...");
     mods.jei.JEI.addItem(addTrophies(I18n.format("gohd.quest.electrification.title"),"classic",[171, 171, 171],1, <gregtech:machine:110>));
     mods.jei.JEI.addItem(addTrophies(I18n.format("gohd.quest.semiconductor.title"),"classic",[102, 137, 211],1, <gregtech:meta_item_1:331>));
     mods.jei.JEI.addItem(addTrophies(I18n.format("gohd.quest.petrochemistry.title"),"classic",[30, 27, 27],1, <gregtech:machine:1005>));
-    mods.jei.JEI.addItem(addTrophies(I18n.format("gohd.quest.visit_moon.title"),"classic",[255, 255, 255],1, <twilightforest:moon_dial>));
+    mods.jei.JEI.addItem(addTrophies(I18n.format("gohd.quest.visit_moon.title"),"classic",[255, 255, 255],1, <extrautils2:ingredients:5>));
     mods.jei.JEI.addItem(addTrophies(I18n.format("advancements.end.root.title"),"classic",[195, 84, 205],1, <minecraft:skull:5>));
     mods.jei.JEI.addItem(addTrophies(I18n.format("gohd.quest.minecraft.title"),"classic",[65, 205, 52],1, headMinecraft));
 

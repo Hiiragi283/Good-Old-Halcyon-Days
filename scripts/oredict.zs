@@ -13,6 +13,7 @@ import crafttweaker.oredict.IOreDict;
 import crafttweaker.oredict.IOreDictEntry;
 
 //各種modからclassをimport
+import mods.chisel.Carving as chisel;
 
 //scriptのimport
 import scripts.HiiragiUtils;
@@ -23,17 +24,57 @@ print("Start loading oredict.zs ...");
 //変数の定義
 
 //鉱石辞書の削除
+    <ore:dustIron>.remove(<bloodmagic:component:19>);
+    <ore:dustGold>.remove(<bloodmagic:component:20>);
+    <ore:dustCoal>.remove(<bloodmagic:component:21>);
+    <ore:dustSulfur>.remove(<bloodmagic:component:23>);
+    <ore:dustSaltpeter>.remove(<bloodmagic:component:24>);
+
+    //<ore:gearDark>.remove(<enderio:item_material:73>);
+
+    <ore:blockStone>.remove(<evilcraft:bloody_cobblestone>);
+    <ore:dyeRed>.remove(<evilcraft:hardened_blood_shard>);
+    <ore:stickWood>.remove(<evilcraft:dark_stick>);
+
+    <ore:circuitLv>.remove(<metaitem:circuit.microprocessor>);
+    <ore:circuitExtreme>.remove(<metaitem:circuit.workstation>);
+    //<ore:gemManaDiamond>.remove(<metaitem:gemManaDiamond>);
+    <ore:stickLivingwood>.remove(<metaitem:stickLivingwood>);
+    <ore:stickDreamrock>.remove(<metaitem:stickDreamwood>);
+
+    <ore:chest>.remove(<minecraft:ender_chest>);
 
 //鉱石辞書の追加
+    <ore:fanSteel>.add(<metaitem:rotorSteel>);
+
     <ore:gemManaPearl>.add(<botania:manaresource:1>);
     <ore:gemManaDiamond>.add(<botania:manaresource:2>);
+    <ore:stickLivingwood>.add(<botania:manaresource:3>);
     <ore:gemDragonStone>.add(<botania:manaresource:9>);
-
+    <ore:stickDreamwood>.add(<botania:manaresource:13>);
     <ore:blockManasteel>.add(<botania:storage:0>);
     <ore:blockTerrasteel>.add(<botania:storage:1>);
     <ore:blockElvenElementium>.add(<botania:storage:2>);
     <ore:blockManaDiamond>.add(<botania:storage:3>);
     <ore:blockDragonStone>.add(<botania:storage:4>);
+    <ore:blockLivingwood>.add(<botania:livingwood:0>);
+    <ore:blockLivingrock>.add(<botania:livingrock:0>);
+    <ore:blockDreamwood>.add(<botania:dreamwood:0>);
+    <ore:blockDreamrock>.add(<botanicadds:dreamrock:0>);
+
+    <ore:livingwoodTwig>.add(<metaitem:stickLivingwood>);
+    <ore:dreamwoodTwig>.add(<metaitem:stickDreamwood>);
+
+//ASの大理石の鉱石辞書を改変
+chisel.addGroup("marble_astral");
+for i in 0 to 6 {
+    var marbleAstral as IItemStack = <astralsorcery:blockmarble>.definition.makeStack(i);
+    HiiragiUtils.removeCrafting(marbleAstral);
+    HiiragiUtils.removeOreDict(marbleAstral);
+    <ore:blockMarbleAstral>.add(marbleAstral);
+    chisel.removeVariation("marble", marbleAstral);
+    chisel.addVariation("marble_astral", marbleAstral);
+}
 
 //GTCEuの素材一覧から登録を外す
 val toRemove as IItemStack[] = [
@@ -45,7 +86,12 @@ val toRemove as IItemStack[] = [
     <metaitem:blockTerrasteel>,
     <metaitem:ingotElvenElementium>,
     <metaitem:nuggetElvenElementium>,
-    <metaitem:blockElvenElementium>
+    <metaitem:blockElvenElementium>,
+    <metaitem:gemDark>,
+    <metaitem:gemDarkPower>,
+    <metaitem:gemAquamarine>,
+    <metaitem:ingotAstralStarmetal>,
+    <metaitem:dustAstralStarmetal>,
 ];
 
 for i in toRemove {
