@@ -104,7 +104,7 @@ print("Start loading ender.zs ...");
             .buildAndRegister();
         //Evil Infused Metal
         <recipemap:electric_blast_furnace>.recipeBuilder()
-            .property("temperature", "4444")
+            .property("temperature", 4444)
             .inputs([<metaitem:dustTungsten>])
             .fluidInputs(<liquid:evil_distillation>*1000)
             .outputs(<extrautils2:ingredients:17>)

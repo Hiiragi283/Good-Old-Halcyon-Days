@@ -64,7 +64,7 @@ print("Start loading tic-main.zs ...");
             HiiragiUtils.addCrafting(false, false, <contenttweaker:unfired_casting_table>, RecipePattern.init(["AAA", "A A", "A A"]).map({A:<contenttweaker:grout_ingot>}).ingredients);
             HiiragiUtils.addCrafting(false, false, <contenttweaker:unfired_casting_basin>, RecipePattern.init(["A A", "A A", "AAA"]).map({A:<contenttweaker:grout_ingot>}).ingredients);
         //Tinker's Complement
-            HiiragiUtils.addCrafting(false, false, <tcomplement:scorched_block:3>, RecipePattern.init(["AA", "AA"]).map({A:<tcomplement:materials:1>}).ingredients);
+            recipes.addShaped("tcomplement_scorched_block_3", <tcomplement:scorched_block:3>, RecipePattern.init(["AA", "AA"]).map({A:<tcomplement:materials:1>}).ingredients);
         //Tinker's Construct
             val stickFrame as IOreDictEntry[] = [
                 <ore:stickBrass>,
@@ -80,7 +80,7 @@ print("Start loading tic-main.zs ...");
             HiiragiUtils.addCrafting(false, true, <tconstruct:wooden_hopper>, RecipePattern.init(["ABA", "A A", " A "]).map({A:<ore:plankWood>, B:<ore:trapdoorWood>}).ingredients);
             HiiragiUtils.addCrafting(false, true, <tconstruct:slime_congealed:5>, RecipePattern.init(["AA", "AA"]).map({A:<tconstruct:edible:5>}).ingredients);
             HiiragiUtils.addCrafting(false, false, <tconstruct:toolforge>.withTag({textureBlock: {id: "chisel:iron", Count: 1 as byte, Damage: 14 as short}}), RecipePattern.init(["AAA", "BCB", "B B"]).map({A:<tconstruct:seared:*>, B:<ore:plateDoubleWroughtIron>, C:<tconstruct:tooltables:3>}).ingredients);
-            HiiragiUtils.addCrafting(false, false, <tconstruct:seared:3>, RecipePattern.init(["AA", "AA"]).map({A: <tconstruct:materials:0>}).ingredients);
+            recipes.addShaped("tconstruct_seared_3", <tconstruct:seared:3>, RecipePattern.init(["AA", "AA"]).map({A: <tconstruct:materials:0>}).ingredients);
             HiiragiUtils.addCrafting(false, true, <tconstruct:slimesling:5>, RecipePattern.init(["ABA", "C C", " C "]).map({A:<ore:string>, B:<tconstruct:slime_congealed:5>, C:<tconstruct:edible:5>}).ingredients);
             HiiragiUtils.addCrafting(false, true, <tconstruct:slime_boots:5>, RecipePattern.init(["A A", "B B"]).map({A:<tconstruct:edible:5>, B:<tconstruct:slime_congealed:5>}).ingredients);
 
