@@ -1,0 +1,16 @@
+{
+	title: "{gohd.09d26429.42aa3c8a.title}",
+	x: -1.0d,
+	y: -1.5d,
+	dependencies: [
+		"648774ca"
+	],
+	tasks: [{
+		uid: "77fb6fd3",
+		type: "item",
+		items: [{
+			item: "minecraft:dirt"
+		}],
+		count: 8L
+	}]
+}

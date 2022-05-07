@@ -1,192 +1,25 @@
 
-#Item Name
+#Quests
 
-gohd.item.escape_from_minecroft.name=Espace from Minecroft
+## Main
+gohd.main.title=Good Old Minecraft!
 
-# FTBQuests Title
-## Category
-gohd.quest.gohd.category=Good Old Halcyon Days
-gohd.quest.primitive_age.category=Primitive Age
+gohd.5f3109ce.6a052b16.title=Welcome to GOHD!
+gohd.5f3109ce.6a052b16.subtitle=Good Old Halcyon Days, in short "GOHD"
+gohd.5f3109ce.6a052b16.task1=Let's Enjoy!
 
-gohd.quest.gregtech.category=GregTech
-gohd.quest.gregtech.machine.category=GT Machines
-gohd.quest.gregtech.generator.category=GT Generator
+## Primitive Age: gohd.09d26429.
+gohd.primitiveAge.title=Primitive Age
+gohd.09d26429.648774ca.title=Start Your Journery!
 
-gohd.quest.advrocketry.category=Advanced Rocktery
+gohd.09d26429.8297ab4c.title=What we should do first is...
+gohd.09d26429.8297ab4c.text1=Accepts ANY types of log
+gohd.09d26429.baa9cb1d.subtitle=Original but Worst
+gohd.09d26429.47a3fa84.subtitle=Better than Original
+gohd.09d26429.4fb7c614.title=First Step for Tinker's Tool
+gohd.09d26429.e0c2b03d.title=Tier 1: Flint Tool
 
-gohd.quest.twilight_forest.category=Twilight Forest
-gohd.quest.wizardry.category=Wizardry
-gohd.quest.thaumcraft.category=Thaumcraft
-gohd.quest.botania.category=Botania
-gohd.quest.bloodmagic.category=Bloodmagic
-gohd.quest.evilcraft.category=Evilcraft
-gohd.quest.astralsorcery.category=Astral sorcery
+gohd.09d26429.42aa3c8a.title=Dirty Deeds Done Dirt Cheap
 
-## GOHD main
-gohd.quest.welcome.title=Welcome to Good Old Halcyon Days!
-gohd.quest.welcome.subtitle="GOHD" in short
-gohd.quest.welcome.text=
-#gohd.quest.welcome.task1=Dive into the world!
-gohd.quest.jei.title=JEI is your best friend!
-gohd.quest.jei.task1=Say Hello to JEI
-gohd.quest.jei.text1=Just Enough Items, or JEI, is the most friendly mod for modded players, and they can tell us almost all recipes, usages and information.
-gohd.quest.jei.text2=Right-click the task in quest to search how to craft it, and Left-click to search what recipes needs it.
-gohd.quest.jei.text3=Have a fun with JEI!
-gohd.quest.tutorial1.title=This is start quest
-gohd.quest.tutorial2.title=This is normal quest
-gohd.quest.tutorial3.title=This is optional quest
-gohd.quest.tutorial4.title=This is end quest
-gohd.quest.tutorial5.title=This is info quest
-gohd.quest.twilight_boss1.title=Forest Mediator
-gohd.quest.twilight_boss2.title=Swamp Adventurer
-gohd.quest.twilight_boss3.title=Illuminate The Darkness
-gohd.quest.twilight_boss4.title=Frost Walker
-gohd.quest.steam_evolution.title=Steam Evolution
-gohd.quest.semiconductor.title=Semiconductor Industry
-gohd.quest.petrochemistry.title=Petrochemistry
-gohd.quest.visit_moon.title=Fly me to the moon
-
-gohd.quest.minecraft.title=Escape to "Minecraft"
-
-### Primitive Age
-gohd.quest.punch_log.title=Punch Log!
-gohd.quest.punch_log.subtitle=§oJust Do It!§r
-gohd.quest.bed.subtitle=Completed with any colored bed
-
-gohd.quest.stick.subtitle=Now you can craft Wood Stick from Saplings!
-gohd.quest.pattern.subtitle=Patterns are compatible with Wooden Forms
-gohd.quest.tinker_preparation.title=Ready for Tinker's Tools
-gohd.quest.tool_chests.title=Storaging unused patterns or Parts
-gohd.quest.tinker_tools.title=Tinker's Tools
-gohd.quest.tinker_tools.subtitle=Better Than Greg's Tools
-gohd.quest.tinker_tools.text.material_any=You can achieve this quest no matter what material you use to make tools.
-gohd.quest.mattock.title=Mattock
-gohd.quest.mattock.text1=Mattock is a tool which can be used as axe and shovel.
-gohd.quest.longsword.title=Longsword
-gohd.quest.longsword.text1=Right-clicking Longsword, you can jump forward. But damage are less than Broadsword.
-gohd.quest.rapier.title=Rapier
-gohd.quest.rapier.text1=Right-clicking Rapier, you can jump backward. But damage are much less than Broadsword.
-gohd.quest.rapier.text2=Attack speed is faster than Broadsword and Longsword.
-gohd.quest.battlesign.title=BattleSign
-gohd.quest.battlesign.text1=Battlesign can reflect projectiles when right-clicking.
-
-gohd.quest.grout.title=Clastics, Assemble!
-gohd.quest.primitive_furnace.title=Primitive Furnace
-gohd.quest.primitive_furnace.text1=
-gohd.quest.clay_bucket.title=Clay Bucket
-gohd.quest.seared_furnace.title=Seared furnace
-gohd.quest.tinker_tank.title=Tinker Tank
-gohd.quest.tinker_tank.text1=Tinker tank is a multiblock tank that can contains §ldifferent types of fluids.§r
-gohd.quest.tinker_tank.text2=You can assemble this in §lany size !§r
-gohd.quest.melter.title=Melter
-gohd.quest.seared_tile.title=§lDon't use Seared Bricks for decolations!
-gohd.quest.seared_tile.text1=Seared bricks looks good for decorations at first glance...
-gohd.quest.seared_tile.text2=But they are "Tile Entities", which can cause serious lag if placed in large numbers
-gohd.quest.iron_ore.title=Iron Ores
-gohd.quest.gt_tools.title=Basic GT Tools
-
-## Gregtech
-### Main tab
-gohd.quest.gregtech.title=the road to GregTech is paved with quest line.
-gohd.quest.bronze_age.title=Bronze Age
-gohd.quest.lv_age.title=LV Age
-gohd.quest.lv_age.subtitle=Steel Mek Run
-gohd.quest.mv_age.title=MV Age
-gohd.quest.hv_age.title=HV Age
-gohd.quest.ev_age.title=EV Age
-gohd.quest.iv_age.title=IV Age
-gohd.quest.luv_age.title=LuV Age
-gohd.quest.zpm_age.title=ZPM Age
-gohd.quest.uv_age.title=UV Age
-gohd.quest.uhv_age.title=UHV Age
-gohd.quest.uhv_age.subtitle=The end of GregTech
-gohd.quest.pbf.title=Primitive Blast Furnace
-gohd.quest.ebf.title=Electric Blast Furnace
-gohd.quest.vacuum_freezer.title=Vacuum Freezer
-gohd.quest.assembly_line.title=Assembly Line
-gohd.quest.fusion1.title=Fusion Reactor Mk1
-gohd.quest.fusion2.title=Fusion Reactor Mk2
-gohd.quest.fusion3.title=Fusion Reactor Mk3
-gohd.quest.cupronickel_coil.title=Cupronickel Coil
-gohd.quest.kanthal_coil.title=Kanthal Coil
-gohd.quest.nichrome_coil.title=Nichrome Coil
-gohd.quest.tungstensteel_coil.title=Tungstensteel Coil
-gohd.quest.hss_g_coil.title=HSS-G Coil
-gohd.quest.naquadah_coil.title=Naquadah Coil
-gohd.quest.trinium_coil.title=Trinium Coil
-gohd.quest.tritanium_coil.title=Tritanium Coil
-
-### Machine Tab
-gohd.quest.gregtech.machine.task1=Let's make ALL GT machines!
-gohd.quest.item_only.title=Item Only
-gohd.quest.item_only.text1=Dependants of this quest show machines that process only items
-gohd.quest.item_and_liquid.title=Item & Liquid
-gohd.quest.item_and_liquid.text1=Dependants of this quest show machines that process both items and liquids
-gohd.quest.liquid_only.title=Liquid Only
-gohd.quest.liquid_only.text1=Dependants of this quest show machines that process only liquid
-
-### Generator Tab
-
-### Basic GT
-gohd.quest.basic_gt.category=Basic GT
-gohd.quest.coke_brick.title=Coke Bricks
-gohd.quest.crushed_ore.title=Crushed Ore
-gohd.quest.impure_dust.title=Impure Dust
-
-gohd.quest.effcient_machines.title1=More Efficient Processing (MUST)
-gohd.quest.effcient_machines.title2=More Efficient Processing (optional)
-gohd.quest.new_machines.title1=New Processing Machines (MUST)
-gohd.quest.new_machines.title2=New Processing Machines (optional)
-
-### Advanced GT
-
-gohd.quest.advanced_gt.category=Advanced GT
-
-### Elite GT
-
-gohd.quest.elite_gt.category=Elite GT
-
-## Advanced Rocktery
-
-## Twilight Forest
-gohd.quest.vis_crystals.title=Vis Crystals
-gohd.quest.arctic_armor=Arctic Armor
-gohd.quest.torchberries.text=
-gohd.quest.magic_map.text=
-gohd.quest.transformation_powder.text=
-gohd.quest.experiment115.text=
-gohd.quest.peacock_feather_fan.text=
-gohd.quest.moonworm_queen.text=
-gohd.quest.ore_magnet.text=
-gohd.quest.charm_of_keeping.text1=
-gohd.quest.charm_of_keeping.text2=
-gohd.quest.charm_of_keeping.text3=
-gohd.quest.charm_of_life.text1=
-gohd.quest.charm_of_life.text2=
-gohd.quest.uncrafting_table.text=
-gohd.quest.firefly_jar.text=
-gohd.quest.robust_twilight_oak.text=
-gohd.quest.tree_of_time.text=
-gohd.quest.tree_of_transformation.text=
-gohd.quest.miners_tree.text=
-gohd.quest.sorting_tree.text=
-gohd.quest.rainbow_oak.text=
-
-# thaumcraft research
-gohd.research.base_taintology.name=Basic Taintology
-gohd.reseatch.base_taintology.stage.1=
-
-gohd.research.unlock_soulomancy.name=Discovering Soulomancy
-gohd.reseatch.unlock_soulomancy.stage.1=
-gohd.reseatch.unlock_soulomancy.stage.2=
-
-gohd.research.base_soulomancy.name=Basic Soulomancy
-
-# item tooltip
-gohd.tooltip.hided.name=§6Hide from JEI§r but §aavailable§r
-gohd.tooltip.removed.name=§4Recipe Removed!§r
-
-gohd.tooltip.wooden_pattern.name=§aPattern can be recycled into Wooden Form by crafting§r
-gohd.tooltip.wooden_form.name=§aCompatible with Pattern§r
-gohd.tooltip.smeltery_controller.name=§4Disabled§r
-gohd.tooltip.cast_chisel.name=§aYou can change part type with chisel§r
+gohd.09d26429.dbb48ae7.title=My mouth is gravelly-gravelly lol
+gohd.09d26429.8ebddfdc.title=We are not grout?

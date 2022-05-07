@@ -1,3 +1,43 @@
 {
-  "savedSubBlockNames": {}
+  "savedSubBlockNames": {
+    "0": {
+      "0": "graphite_ore",
+      "1": "magnetite_ore",
+      "2": "tantalite_ore_sample",
+      "3": "salt_ore",
+      "4": "bauxite_ore",
+      "5": "illumenite_ore",
+      "6": "uraninite_ore",
+      "7": "rock_salt_ore_sample",
+      "8": "wrought_iron_block",
+      "9": "tungsten_carbide_block",
+      "10": "cobaltite_ore_sample",
+      "11": "chromite_ore_sample",
+      "12": "magnesia_ore",
+      "13": "osmium_block",
+      "14": "stainless_steel_block",
+      "15": "tantalite_ore"
+    },
+    "1": {
+      "0": "magnetite_ore_sample",
+      "1": "tungstate_ore_sample",
+      "2": "bauxite_ore_sample",
+      "3": "chromite_ore",
+      "4": "titanium_block",
+      "5": "tungstate_ore",
+      "6": "cobalt_block",
+      "7": "salt_ore_sample",
+      "8": "magnesia_ore_sample",
+      "9": "magnalium_block",
+      "10": "illumenite_ore_sample",
+      "11": "rock_salt_ore",
+      "12": "beryllium_block",
+      "13": "graphite_ore_sample",
+      "14": "uraninite_ore_sample",
+      "15": "cobaltite_ore"
+    },
+    "2": {
+      "0": "redstone_alloy_block"
+    }
+  }
 }

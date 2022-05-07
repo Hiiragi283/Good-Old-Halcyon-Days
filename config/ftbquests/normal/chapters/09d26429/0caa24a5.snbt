@@ -1,0 +1,29 @@
+{
+	title: "{gohd.09d26429.8ebddfdc.title}",
+	x: -1.5d,
+	y: 3.0d,
+	dependencies: [
+		"dbb48ae7"
+	],
+	tasks: [{
+		uid: "f47ecac5",
+		type: "item",
+		items: [{
+			item: "minecraft:sand"
+		}]
+	},
+	{
+		uid: "bb6e5e4c",
+		type: "item",
+		items: [{
+			item: "minecraft:gravel"
+		}]
+	},
+	{
+		uid: "1d850ef0",
+		type: "item",
+		items: [{
+			item: "minecraft:clay_ball"
+		}]
+	}]
+}

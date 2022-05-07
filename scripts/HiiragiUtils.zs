@@ -1,8 +1,8 @@
 #======================================================================
-# name : HiiragiUtils.zs
-# auther : Hiiragi Russell Tsubasa;URL -> https://github.com/Hiiragi283
-# info : Registry useful functions
-#        Some scripts are partially referred to GrassUtils
+# ファイル名 : HiiragiUtils.zs
+# 作成者 : Hiiragi Russell Tsubasa;URL -> https://github.com/Hiiragi283
+# 情報 : 有用な機能を実装
+#        このスクリプトの一部はGrassUtilsを参考にしています
 #        -> https://github.com/friendlyhj/GrassUtils
 #======================================================================
 
@@ -95,7 +95,7 @@ print("Start loading HiiragiUtils.zs ...");
     function removeFurnace (output as IItemStack) {
         furnace.remove(output);
     }
-
+/*
 //代入した文字列から特定の鋳型を返す関数
     function castClay (pattern as string) as IItemStack {
         if (isNull(pattern)) {
@@ -126,6 +126,6 @@ print("Start loading HiiragiUtils.zs ...");
             var patternName = "tconstruct:" + pattern;
             return <tconstruct:cast>.withTag({PartType:patternName});
     }
-
+*/
 //このscriptの読み込みの完了をログに出力
 print("HiiragiUtils.zs loaded!");

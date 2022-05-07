@@ -1,0 +1,30 @@
+{
+	title: "{gohd.09d26429.8297ab4c.title}",
+	x: 1.5d,
+	y: 0.0d,
+	text: [
+		"{gohd.09d26429.8297ab4c.text1}"
+	],
+	dependencies: [
+		"648774ca"
+	],
+	tasks: [{
+		uid: "3364c7c7",
+		type: "item",
+		icon: "minecraft:log",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "logWood",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any logWood"
+				}
+			}
+		}]
+	}]
+}

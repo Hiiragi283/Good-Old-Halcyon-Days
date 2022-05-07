@@ -1,9 +1,0 @@
-{
-    "input": {
-        "item": "tconstruct:faucet"
-    },
-    "output": {
-        "item": "tcomplement:scorched_faucet"
-    },
-    "duration": 600
-}

@@ -1,16 +1,8 @@
-# Good-Old-Halcyon-Days
-
-GregTech and Thaumcraft based Minecraft modpack
+# Good Old Halcyon Days: GOHD
 
 ## Credits
 
 - Textures in
+  - resources/base/textures/items/gear.png are from "[Thermal Foundation](https://github.com/CoFH/ThermalFoundation-1.12-Legacy)" by [TeamCoFH](https://github.com/CoFH) and are licensed under [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International Public License (CC By-NC-SA 4.0)](https://creativecommons.org/licenses/by-nc-sa/4.0/).
 
-  - resources/minecraft/textures/gui are from "Halcyon Days 3D" by ikezou and are licensed under [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International Public License (CC By-NC-SA 4.0)](https://creativecommons.org/licenses/by-nc-sa/4.0/).
-
-  - resources/gregtech/textures/items/gt5 are from [GregTech Community Edition](https://github.com/GregTechCE/GregTech) by GregTechCE licensed under [GNU Lesser General Public License v3.0](https://www.gnu.org/licenses/lgpl-3.0.en.html)
-
-- Some scripts are partially referred to
-  - [GrassUtils](https://github.com/friendlyhj/GrassUtils)
-
-  - [MorphoDays_old](https://github.com/delta-nos/MorphoDays_old)
+  - resources/base/textures/items/cable.png are from "[Tech Reborn](https://github.com/TechReborn/TechReborn/tree/1.12-v2.18)" by [Team Reborn](https://github.com/TechReborn) and are licensed under [MIT License](https://github.com/TechReborn/TechReborn/blob/1.18/LICENSE.md).

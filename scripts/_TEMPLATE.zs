@@ -1,7 +1,7 @@
 #======================================================================
-# name : _TEMPLATE.zs
-# auther : Hiiragi Russell Tsubasa;URL -> https://github.com/Hiiragi283
-# info : Write about this script file
+# ファイル名 : _TEMPLATE.zs
+# 作成者 : Hiiragi Russell Tsubasa: https://github.com/Hiiragi283
+# 情報 : このファイルについて書く
 #======================================================================
 
 #priority 0
@@ -11,7 +11,7 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 
 //各種modからclassをimport
-import mods.gregtech.recipe.RecipeMap;
+import mods.ctintegration.util.RecipePattern;
 
 //scriptのimport
 import scripts.HiiragiUtils;
@@ -45,20 +45,6 @@ print("Start loading _TEMPLATE.zs ...");
 //AWレシピの編集
     //import
     //新規
-
-//GTレシピの編集
-    //削除
-    //上書き
-    //新規
-
-    /*
-    <recipemap:name>.recipeBuilder()
-        .inputs([])
-        .outputs()
-        .duration()
-        .EUt()
-        .buildAndRegister();
-    */
 
 //このscriptの読み込みの完了をログに出力
 print("_TEMPLATE.zs loaded!");

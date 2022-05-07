@@ -1,0 +1,49 @@
+{
+	title: "{gohd.09d26429.e0c2b03d.title}",
+	x: 1.5d,
+	y: 2.0d,
+	dependencies: [
+		"dbb48ae7",
+		"4fb7c614"
+	],
+	tasks: [{
+		uid: "0e68e47c",
+		type: "item",
+		items: [{
+			id: "tconstruct:pick_head",
+			tag: {
+				Material: "flint"
+			}
+		}]
+	},
+	{
+		uid: "587c94fa",
+		type: "item",
+		items: [{
+			id: "tconstruct:shovel_head",
+			tag: {
+				Material: "flint"
+			}
+		}]
+	},
+	{
+		uid: "43acdcbd",
+		type: "item",
+		items: [{
+			id: "tconstruct:axe_head",
+			tag: {
+				Material: "flint"
+			}
+		}]
+	},
+	{
+		uid: "1b84ad8d",
+		type: "item",
+		items: [{
+			id: "tconstruct:large_sword_blade",
+			tag: {
+				Material: "flint"
+			}
+		}]
+	}]
+}

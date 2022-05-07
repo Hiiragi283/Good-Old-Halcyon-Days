@@ -1,0 +1,30 @@
+{
+	title: "{gohd.09d26429.dbb48ae7.title}",
+	icon: "minecraft:gravel",
+	x: -1.0d,
+	y: 2.0d,
+	dependencies: [
+		"648774ca"
+	],
+	tasks: [{
+		uid: "40a3779e",
+		type: "item",
+		items: [{
+			item: "minecraft:gravel"
+		}],
+		count: 3L
+	},
+	{
+		uid: "3ccfe6a5",
+		type: "item",
+		items: [{
+			item: "minecraft:flint"
+		}]
+	}],
+	rewards: [{
+		uid: "4ffd1901",
+		type: "item",
+		item: "minecraft:flint",
+		count: 15
+	}]
+}
