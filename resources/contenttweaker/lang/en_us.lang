@@ -1,21 +1,15 @@
 
 #Items
-item.contenttweaker.gear_Titanium.name=Titanium Gear
-item.contenttweaker.gear_Stainless Steel.name=Stainless Steel Gear
-item.contenttweaker.gear_Wrought Iron.name=Wrought Iron Gear
-item.contenttweaker.gear_Tungstensteel.name=Tungstensteel Gear
-item.contenttweaker.wire_Redstone Alloy.name=Redstone Alloy Wire
-item.contenttweaker.cable_Aluminum.name=Aluminum Cable
-item.contenttweaker.cable_Steel.name=Steel Cable
-item.contenttweaker.cable_Electrum.name=Electrum Cable
-item.contenttweaker.cable_Redstone Alloy.name=Redstone Alloy Cable
+tile.contenttweaker.unfired_casting_channel.name=Unfired casting Channel
+tile.contenttweaker.unfired_casting_table.name=Unfired casting Table
+tile.contenttweaker.unfired_casting_basin.name=Unfired casting Basin
+tile.contenttweaker.dustblock_tantalum_hafnium_carbide.name=Tantalum Hafnium Carbide Dust Block
+tile.contenttweaker.dustblock_platinum.name=PlatinumDust Block
+tile.contenttweaker.dustblock_tungsten_carbide.name=Tungsten Carbide Dust Block
+tile.contenttweaker.dustblock_cobalt.name=Cobalt Dust Block
 
 # Fluids
-fluid.hydrogen_fluoride=Hydrogen Fluoride
-fluid.hydrogen_chloride=Hydrogen Chloride
+fluid.hydrogen_halide=Hydrogen Halide
 fluid.hydrogen_sulfide=Hydrogen Sulfide
-fluid.ammonia=Ammonia
-fluid.florine=fluorine
-fluid.chlorine=chlorine
-
-fluid.nitric_acid=Nitric Acid
+fluid.halogen=Halogen
+fluid.titanium_tetrachloride=Titanium Tetrachloride
