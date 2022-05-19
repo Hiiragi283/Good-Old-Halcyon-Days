@@ -38,6 +38,7 @@ journeymap/server/
 #特定のファイル
 
 BotaniaVars.dat
+hei_bookmarks.ini
 minecraftinstance.json
 options.txt
 optionsof.txt
