@@ -1,6 +1,7 @@
 #ワイルドカード
 
 *.curseclient
+*.dat
 *.log
 *.jar
 *.lnk

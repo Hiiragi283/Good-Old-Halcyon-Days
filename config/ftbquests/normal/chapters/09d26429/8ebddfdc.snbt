@@ -1,6 +1,6 @@
 {
 	icon: "tconstruct:soil",
-	x: -2.0d,
+	x: -1.0d,
 	y: 4.0d,
 	dependencies: [
 		"0caa24a5"

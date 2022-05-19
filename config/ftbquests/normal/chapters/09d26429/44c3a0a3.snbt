@@ -1,0 +1,63 @@
+{
+	x: 1.5d,
+	y: 3.0d,
+	dependencies: [
+		"a3e12b21"
+	],
+	tasks: [{
+		uid: "e8b6ba3c",
+		type: "item",
+		items: [{
+			item: "tconstruct:cast"
+		}]
+	},
+	{
+		uid: "c58e6987",
+		type: "item",
+		items: [{
+			item: "chisel:chisel_iron"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "3dc054ed",
+		type: "item",
+		item: {
+			id: "tconstruct:cast",
+			tag: {
+				PartType: "tconstruct:pick_head"
+			}
+		}
+	},
+	{
+		uid: "fc0f1048",
+		type: "item",
+		item: {
+			id: "tconstruct:cast",
+			tag: {
+				PartType: "tconstruct:shovel_head"
+			}
+		}
+	},
+	{
+		uid: "2065c464",
+		type: "item",
+		item: {
+			id: "tconstruct:cast",
+			tag: {
+				PartType: "tconstruct:axe_head"
+			}
+		}
+	},
+	{
+		uid: "667ca511",
+		type: "item",
+		item: {
+			id: "tconstruct:cast",
+			tag: {
+				PartType: "tconstruct:sword_blade"
+			}
+		}
+	}]
+}

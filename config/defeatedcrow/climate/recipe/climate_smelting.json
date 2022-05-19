@@ -1,0 +1,66 @@
+{
+    "SampleRecipeID1 (Any string.)": {
+        "recipe_type": "ADD",
+        "output": {
+            "item": "samplemod:sample_output:metadata"
+        },
+        "climate_temperature": "KILN (If this is removed, it will be forced to NORMAL.)",
+        "climate_humidity": "DRY (If this is removed, it will be unspecified.)",
+        "climate_airflow": "TIGHT (If this is removed, it will be unspecified.)",
+        "input": {
+            "ore_dict": "ore_dict name is acceptable as input."
+        }
+    },
+    "SampleRecipeID2": {
+        "recipe_type": "REMOVE",
+        "output": {
+            "item": "samplemod:remove_output:0"
+        },
+        "climate_temperature": "COLD",
+        "climate_humidity": "WET"
+    },
+    "dustblock_tantalum_hafniumcarbide": {
+        "recipe_type": "ADD",
+        "output": {
+            "item": "contenttweaker:sub_block_holder_2:1"
+        },
+        "climate_temperature": "UHT",
+        "climate_airflow": "TIGHT",
+        "input": {
+            "item": "contenttweaker:dustblock_tantalum_hafnium_carbide:0"
+        }
+    },
+    "dustblock_platinum": {
+        "recipe_type": "ADD",
+        "output": {
+            "item": "techreborn:storage:9"
+        },
+        "climate_temperature": "UHT",
+        "climate_airflow": "TIGHT",
+        "input": {
+            "item": "contenttweaker:dustblock_platinum:0"
+        }
+    },
+    "dustblock_tungsten_carbide": {
+        "recipe_type": "ADD",
+        "output": {
+            "item": "contenttweaker:sub_block_holder_0:6"
+        },
+        "climate_temperature": "UHT",
+        "climate_airflow": "TIGHT",
+        "input": {
+            "item": "contenttweaker:dustblock_tungsten_carbide:0"
+        }
+    },
+    "dustblock_cobalt": {
+        "recipe_type": "ADD",
+        "output": {
+            "item": "tconstruct:metal:0"
+        },
+        "climate_temperature": "SMELTING",
+        "climate_airflow": "TIGHT",
+        "input": {
+            "item": "contenttweaker:dustblock_cobalt:0"
+        }
+    }
+}
