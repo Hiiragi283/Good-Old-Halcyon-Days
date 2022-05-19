@@ -33,7 +33,9 @@ print("Start loading chisel.zs ...");
             HiiragiUtils.removeCrafting(i);
         }
     //上書き
-        HiiragiUtils.addCrafting(false, true, <contenttweaker:unfired_heating_crucible>, RecipePattern.init(["A A", "A A", "AAA"]).map({A:<ore:ingotGrout>}).ingredients);
+        HiiragiUtils.addCrafting(false, false, <contenttweaker:unfired_casting_channel>, RecipePattern.init(["A A", "AAA"]).map({A:<ore:ingotGrout>}).ingredients);
+        HiiragiUtils.addCrafting(false, false, <contenttweaker:unfired_casting_table>, RecipePattern.init(["AAA", "A A", "A A"]).map({A:<ore:ingotGrout>}).ingredients);
+        HiiragiUtils.addCrafting(false, false, <contenttweaker:unfired_casting_basin>, RecipePattern.init(["A A", "A A", "AAA"]).map({A:<ore:ingotGrout>}).ingredients);
     //新規
 
 //かまどレシピの編集

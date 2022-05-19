@@ -5,7 +5,7 @@
 #======================================================================
 
 #loader contenttweaker
-#priority 1000
+#priority 100
 
 //crafttweakerからclassをimport
 import crafttweaker.item.IItemStack;
@@ -19,17 +19,25 @@ import mods.contenttweaker.ResourceLocation;
 import mods.contenttweaker.VanillaFactory;
 import mods.zenutils.HexHelper;
 
+//scriptのimport
+import scripts.RussellUtils;
+
 //このscriptの読み込みの開始をログに出力
 print("Start loading _TEMPLATE.zs ...");
 
-//アイテムの追加
+//アイテムの登録
     val items as string[] = [
-        "unfired_heating_crucible"
+        "elven_pearl",
+        "ephemerald"
     ];
     for i in items {
-        var itemToRegister = mods.contenttweaker.VanillaFactory.createItem(i);
-        itemToRegister.register();
+        RussellUtils.addItem(i);
     }
+
+//ブロックの登録
+    RussellUtils.addBlock("unfired_casting_channel", <blockmaterial:grass>, 3.0, 0.5, "shovel", -1, <soundtype:ground>);
+    RussellUtils.addBlock("unfired_casting_table", <blockmaterial:grass>, 3.0, 0.5, "shovel", -1, <soundtype:ground>);
+    RussellUtils.addBlock("unfired_casting_basin", <blockmaterial:grass>, 3.0, 0.5, "shovel", -1, <soundtype:ground>);
 
 //このscriptの読み込みの完了をログに出力
 print("_TEMPLATE.zs loaded!");
