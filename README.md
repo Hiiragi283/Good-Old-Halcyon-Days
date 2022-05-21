@@ -1,5 +1,9 @@
 # Good Old Halcyon Days: GOHD
 
+## 日本語向け
+
+-> [日本語に対応したREADME.mdはこちら！](https://github.com/Hiiragi283/Good-Old-Halcyon-Days/blob/main/README_JP.md)
+
 ## Credits
 
 - scripts/HiiragiUtils.zs
@@ -13,13 +17,13 @@
   - Thanks to [SevTech-Ages](https://github.com/DarkPacks/SevTech-Ages) by Darkosto !
 
 - resources/base/textures/blocks/block.png
-  - The texture is from techreborn/textures/blocks/aluminum_block.png licensed under [MIT License](https://github.com/TechReborn/TechReborn/blob/1.12-v2.18/LICENSE.md)
+  - The texture is from `techreborn:textures/blocks/aluminum_block.png` licensed under [MIT License](https://github.com/TechReborn/TechReborn/blob/1.12-v2.18/LICENSE.md)
   - Thanks to [TechReborn](https://github.com/TechReborn/TechReborn/tree/1.12-v2.18) by Team Reborn !
 
 - resources/base/textures/items/dust.png
-  - The texture is from techreborn/textures/items/dust/aluminum_dust.png licensed under [MIT License](https://github.com/TechReborn/TechReborn/blob/1.12-v2.18/LICENSE.md)
+  - The texture is from `techreborn:textures/items/dust/aluminum_dust.png` licensed under [MIT License](https://github.com/TechReborn/TechReborn/blob/1.12-v2.18/LICENSE.md)
   - Thanks to [TechReborn](https://github.com/TechReborn/TechReborn/tree/1.12-v2.18) by Team Reborn !
 
 - resources/base/textures/items/small_dust.png
-  - The texture is from techreborn/textures/items/smalldust/aluminum_smalldust.png licensed under [MIT License](https://github.com/TechReborn/TechReborn/blob/1.12-v2.18/LICENSE.md)
+  - The texture is from `techreborn:textures/items/smalldust/aluminum_smalldust.png` licensed under [MIT License](https://github.com/TechReborn/TechReborn/blob/1.12-v2.18/LICENSE.md)
   - Thanks to [TechReborn](https://github.com/TechReborn/TechReborn/tree/1.12-v2.18) by Team Reborn !
