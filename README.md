@@ -1,20 +1,25 @@
-# Good-Old-Halcyon-Days
-
-GregTech and Thaumcraft based Minecraft modpack
+# Good Old Halcyon Days: GOHD
 
 ## Credits
 
-- Textures in
+- scripts/HiiragiUtils.zs
+  - Thanks to [grassUtils](https://github.com/friendlyhj/GrassUtils) by friendlyhj !
 
-  - `resources/minecraft/textures/gui` are from "Halcyon Days 3D" by ikezou and are licensed under [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International Public License (CC By-NC-SA 4.0)](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+- scripts/RussellUtils.zs
+  - Thanks to [MorphoDays](https://github.com/delta-nos/MorphoDays_old
+) by delta-nos !
 
-  - `resources/contenttweaker/textures/items/botania` are from [Botania](https://github.com/VazkiiMods/Botania) yb Vazkii licensed under [Botania License](https://botaniamod.net/license.php)
+- scripts/materialRegistry.zs
+  - Thanks to [SevTech-Ages](https://github.com/DarkPacks/SevTech-Ages) by Darkosto !
 
-  - `resources/contenttweaker/textures/items/gt5` are from [GregTech Community Edition](https://github.com/GregTechCE/GregTech) by GregTechCE licensed under [GNU Lesser General Public License v3.0](https://www.gnu.org/licenses/lgpl-3.0.en.html)
+- resources/base/textures/blocks/block.png
+  - The texture is from techreborn/textures/blocks/aluminum_block.png licensed under [MIT License](https://github.com/TechReborn/TechReborn/blob/1.12-v2.18/LICENSE.md)
+  - Thanks to [TechReborn](https://github.com/TechReborn/TechReborn/tree/1.12-v2.18) by Team Reborn !
 
-- Some scripts are partially referred to
-  - [GrassUtils](https://github.com/friendlyhj/GrassUtils)
+- resources/base/textures/items/dust.png
+  - The texture is from techreborn/textures/items/dust/aluminum_dust.png licensed under [MIT License](https://github.com/TechReborn/TechReborn/blob/1.12-v2.18/LICENSE.md)
+  - Thanks to [TechReborn](https://github.com/TechReborn/TechReborn/tree/1.12-v2.18) by Team Reborn !
 
-  - [MorphoDays_old](https://github.com/delta-nos/MorphoDays_old)
-
-  - [Nomifactory](https://github.com/Nomifactory/Nomifactory)
+- resources/base/textures/items/small_dust.png
+  - The texture is from techreborn/textures/items/smalldust/aluminum_smalldust.png licensed under [MIT License](https://github.com/TechReborn/TechReborn/blob/1.12-v2.18/LICENSE.md)
+  - Thanks to [TechReborn](https://github.com/TechReborn/TechReborn/tree/1.12-v2.18) by Team Reborn !

@@ -1,0 +1,28 @@
+{
+	x: -0.5d,
+	y: 5.0d,
+	dependencies: [
+		"8ebddfdc"
+	],
+	tasks: [{
+		uid: "e9ab2cc1",
+		type: "item",
+		items: [{
+			item: "contenttweaker:unfired_casting_channel"
+		}]
+	},
+	{
+		uid: "4f7c47ae",
+		type: "item",
+		items: [{
+			item: "tconstruct:channel"
+		}]
+	},
+	{
+		uid: "ef19edf4",
+		type: "item",
+		items: [{
+			item: "tconstruct:faucet"
+		}]
+	}]
+}

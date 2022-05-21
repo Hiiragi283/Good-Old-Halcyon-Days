@@ -14,17 +14,56 @@
       "oreDictKey": "artisansToolWood"
     },
     {
-      "name": "wrought_iron",
+      "name": "stone",
+      "harvestLevel": 1,
+      "maxUses": 131,
+      "efficiency": 4.0,
+      "damage": 1.0,
+      "enchantability": 5,
+      "color": "969696",
+      "shiny": false,
+      "ingredient": "ore:stone",
+      "langKey": "material.athenaeum.stone",
+      "oreDictKey": "artisansToolStone"
+    },
+    {
+      "name": "iron",
       "harvestLevel": 2,
       "maxUses": 250,
       "efficiency": 6.0,
       "damage": 2.0,
       "enchantability": 14,
-      "color": "C8B4B4",
+      "color": "d4d4d4",
       "shiny": true,
-      "ingredient": "ore:ingotWroughtIron",
+      "ingredient": "ore:ingotIron",
       "langKey": "material.athenaeum.iron",
       "oreDictKey": "artisansToolIron"
+    },
+    {
+      "name": "gold",
+      "harvestLevel": 0,
+      "maxUses": 32,
+      "efficiency": 12.0,
+      "damage": 0.0,
+      "enchantability": 22,
+      "color": "ffe947",
+      "shiny": false,
+      "ingredient": "ore:ingotGold",
+      "langKey": "material.athenaeum.gold",
+      "oreDictKey": "artisansToolGold"
+    },
+    {
+      "name": "diamond",
+      "harvestLevel": 3,
+      "maxUses": 1561,
+      "efficiency": 8.0,
+      "damage": 3.0,
+      "enchantability": 10,
+      "color": "33ebcb",
+      "shiny": false,
+      "ingredient": "ore:gemDiamond",
+      "langKey": "material.athenaeum.diamond",
+      "oreDictKey": "artisansToolDiamond"
     },
     {
       "name": "flint",
@@ -66,6 +105,19 @@
       "oreDictKey": "artisansToolInvar"
     },
     {
+      "name": "platinum",
+      "harvestLevel": 4,
+      "maxUses": 1700,
+      "efficiency": 9.0,
+      "damage": 4.0,
+      "enchantability": 9,
+      "color": "4bacd8",
+      "shiny": true,
+      "ingredient": "ore:ingotPlatinum",
+      "langKey": "material.athenaeum.platinum",
+      "oreDictKey": "artisansToolPlatinum"
+    },
+    {
       "name": "steel",
       "harvestLevel": 2,
       "maxUses": 500,
@@ -77,6 +129,19 @@
       "ingredient": "ore:ingotSteel",
       "langKey": "material.athenaeum.steel",
       "oreDictKey": "artisansToolSteel"
+    },
+    {
+      "name": "osmium",
+      "harvestLevel": 2,
+      "maxUses": 500,
+      "efficiency": 10.0,
+      "damage": 4.0,
+      "enchantability": 12,
+      "color": "9ba9b1",
+      "shiny": true,
+      "ingredient": "ore:ingotOsmium",
+      "langKey": "material.athenaeum.osmium",
+      "oreDictKey": "artisansToolOsmium"
     }
   ]
 }

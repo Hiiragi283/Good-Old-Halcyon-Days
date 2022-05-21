@@ -1,0 +1,21 @@
+{
+	x: 0.5d,
+	y: 3.0d,
+	dependencies: [
+		"efbbdf1d"
+	],
+	tasks: [{
+		uid: "92447edb",
+		type: "item",
+		items: [{
+			item: "tconstruct:casting"
+		}]
+	},
+	{
+		uid: "99248d12",
+		type: "item",
+		items: [{
+			item: "tconstruct:casting 1 1"
+		}]
+	}]
+}

@@ -3,11 +3,21 @@
     {
         "title":
         {
-            "image" : "gohd:textures/gui/gohd_title.png",
-            "posX" : -90,
+            "image" : "custommainmenu:textures/gui/minecraft.png",
+            "posX" : -137,
             "posY" : 30,
-            "width" : 183,
-            "height" : 75,
+            "width" : 512,
+            "height" : 512,
+            "alignment" : "top_center"
+        },
+        
+        "edition":
+        {
+            "image" : "custommainmenu:textures/gui/edition.png",
+            "posX" : -49,
+            "posY" : 67,
+            "width" : 128,
+            "height" : 16,
             "alignment" : "top_center"
         }
     },
@@ -141,12 +151,21 @@
     
     "other":
     {
+        "splash-text":
+        {
+            "posX" : 90,
+            "posY" : 70,
+            "color" : -256,
+            "alignment" : "top_center",
+            "texts" : "file:minecraft:texts/splashes.txt"
+        },
+        
         "panorama":
         {
             "images" : "minecraft:textures/gui/title/background/panorama_%c.png",
             "animate" : true,
             "animationSpeed" : 1,
-            "blur" : false,
+            "blur" : true,
             "gradient" : false
         }
     }

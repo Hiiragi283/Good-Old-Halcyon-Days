@@ -1,7 +1,7 @@
 #======================================================================
-# name : chisel.zs
-# auther : Hiiragi Russell Tsubasa;URL -> https://github.com/Hiiragi283
-# infot : scripts for chisel mod
+# ファイル名 : chisel.zs
+# 作成者 : Hiiragi Russell Tsubasa: https://github.com/Hiiragi283
+# 情報 : Chiselの改変
 #======================================================================
 
 #priority 95
@@ -11,6 +11,7 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 
 //各種modからclassをimport
+import mods.ctintegration.util.RecipePattern;
 
 //scriptのimport
 import scripts.HiiragiUtils;
@@ -45,27 +46,45 @@ print("Start loading chisel.zs ...");
     //import
     //新規
 
-//GTレシピの編集
-    //削除
-    //上書き
-    //新規
-
-//chiselおよびunlimited chisel worksの建材のみをJEIから隠す
-    val chisel = loadedMods["chisel"];
-    for i in chisel.items {
-        if (!(i.matches(<chisel:auto_chisel>)
-            || i.matches(<chisel:chisel_iron>)
-            || i.matches(<chisel:chisel_diamond>)
-            || i.matches(<chisel:chisel_hitech>)
-            || i.matches(<chisel:offsettool>))) {
-                HiiragiUtils.hideFromJEI(i);
-                HiiragiUtils.removeOreDict(i);
+//Tinker's Contruct / Complement
+    //Scorched Block
+        for i in 0 to 11 {
+            recipes.remove(<tcomplement:scorched_block>.definition.makeStack(i));
         }
-    }
-    val ucw = loadedMods["unlimitedchiselworks"];
-    for i in ucw.items {
-            HiiragiUtils.hideFromJEI(i);
-    }
+    //Scorched Block Slab
+        mods.chisel.Carving.addGroup("scorched_slab");
+        for i in 0 to 7 {
+            mods.chisel.Carving.addVariation("scorched_slab", <tcomplement:scorched_slab>.definition.makeStack(i));
+        }
+        for i in 0 to 3 {
+            mods.chisel.Carving.addVariation("scorched_slab", <tcomplement:scorched_slab2>.definition.makeStack(i));
+        }
+    //Seared Block
+        for i in 0 to 11 {
+            recipes.remove(<tconstruct:seared>.definition.makeStack(i));
+        }
+    //Seared Block slab
+        mods.chisel.Carving.addGroup("seared_slab");
+        for i in 0 to 7 {
+            mods.chisel.Carving.addVariation("seared_slab", <tconstruct:seared_slab>.definition.makeStack(i));
+        }
+        for i in 0 to 3 {
+            mods.chisel.Carving.addVariation("seared_slab", <tconstruct:seared_slab2>.definition.makeStack(i));
+        }
+    //Brownstone Block
+        mods.chisel.Carving.addGroup("brownstone_slab");
+        for i in 0 to 11 {
+            if (i!=1) {
+                recipes.remove(<tconstruct:brownstone>.definition.makeStack(i));
+            }
+        }
+    //Brownstone Block Slab
+        for i in 0 to 7 {
+            mods.chisel.Carving.addVariation("brownstone_slab", <tconstruct:brownstone_slab>.definition.makeStack(i));
+        }
+        for i in 0 to 3 {
+            mods.chisel.Carving.addVariation("brownstone_slab", <tconstruct:brownstone_slab2>.definition.makeStack(i));
+        }
 
 //このscriptの読み込みの完了をログに出力
 print("chisel.zs loaded!");

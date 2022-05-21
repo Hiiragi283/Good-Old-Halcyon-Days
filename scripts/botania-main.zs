@@ -4,6 +4,7 @@
 # info : Scripts for Botania
 #======================================================================
 
+//norun
 #priority 0
 
 //crafttweakerからclassをimport
@@ -18,9 +19,6 @@ import mods.botania.ManaInfusion as Manapool;
 import mods.botania.PureDaisy as PureDaisy;
 import mods.chisel.Carving as chisel;
 import mods.ctintegration.util.RecipePattern;
-import mods.gregtech.recipe.RecipeMap;
-import mods.thaumcraft.Infusion;
-import thaumcraft.aspect.CTAspectStack;
 
 //scriptのimport
 import scripts.HiiragiUtils;
@@ -47,54 +45,51 @@ print("Start loading botania-main.zs ...");
     //上書き
         //Botania
             HiiragiUtils.addCrafting(false, true, <botania:lexicon>, RecipePattern.init(["AA ", "AB ", "   "]).map({A:<minecraft:paper>, B:<twilightforest:naga_scale>}).ingredients);
-            //HiiragiUtils.addCrafting(true, true, <botania:manaresource:11>*32, [[<ore:workbench>, <metaitem:plateLivingrock>]]);
-            HiiragiUtils.addCrafting(true, true, <botania:lens:0>, [[<metaitem:ringManasteel>, <ore:paneGlass>, HiiragiUtils.toolInput(<extrautils2:glasscutter>, 1)]]);
+            //HiiragiUtils.addCrafting(true, true, <botania:lens:0>, [[<ore:ringManasteel>, <ore:paneGlass>, HiiragiUtils.toolInput(<extrautils2:glasscutter>, 1)]]);
             HiiragiUtils.addCrafting(true, true, <botania:lens:10>, [[<botania:lens:0>, <ore:ingotIronMagnetic>, <ore:dyeRed>, <ore:dyeBlue>]]);
-            //HiiragiUtils.addCrafting(false, true, <botania:manatablet>, RecipePattern.init(["AAA", "ABA", "AAA"]).map({A:<metaitem:plateLivingrock>, B:<botania:manaresource:1>}).ingredients);
-            //HiiragiUtils.addCrafting(false, true, <botania:manatablet>, RecipePattern.init(["AAA", "ABA", "AAA"]).map({A:<metaitem:plateLivingrock>, B:<botania:manaresource:2>}).ingredients);
-            HiiragiUtils.addCraftingAdv(false, true, <botania:manamirror>, RecipePattern.init(["A", "B", "C"]).map({A:<botania:manatablet>.marked("inherit"), B:<thaumcraft:mirrored_glass>, C:<botania:manaresource:3>}).ingredients, HiiragiUtils.inheritStatus(<botania:manamirror>), null);
+            //HiiragiUtils.addCraftingAdv(false, true, <botania:manamirror>, RecipePattern.init(["A", "B", "C"]).map({A:<botania:manatablet>.marked("inherit"), B:<thaumcraft:mirrored_glass>, C:<botania:manaresource:3>}).ingredients, HiiragiUtils.inheritStatus(<botania:manamirror>), null);
             val toolManasteel as IItemStack[IItemStack] = {
-                <botania:manasteelpick>: <metaitem:toolHeadPickaxeManasteel>,
-                <botania:manasteelshovel>: <metaitem:toolHeadShovelManasteel>,
-                <botania:manasteelaxe>: <metaitem:toolHeadAxeManasteel>,
-                <botania:manasteelsword>: <metaitem:toolHeadSwordManasteel>,
+                <botania:manasteelpick>: <tconstruct:pick_head>,
+                <botania:manasteelshovel>: <tconstruct:shovel_head>,
+                <botania:manasteelaxe>: <tconstruct:axe_head>,
+                <botania:manasteelsword>: <tconstruct:sword_blade>,
             };
             for tool, toolHead in toolManasteel {
-                HiiragiUtils.addCrafting(true, true, tool, [[toolHead, <botania:manaresource:3>]]);
+                HiiragiUtils.addCrafting(true, true, tool, [[toolHead.withTag({Material: "manasteel"}), <botania:manaresource:3>]]);
             }
-            HiiragiUtils.addCrafting(false, true, <botania:manasteelshears>, RecipePattern.init(["AB", "CA"]).map({A:<ore:plateManasteel>, B:<ore:GT.tool.file>, C:<metaitem:boltLivingwood>}).ingredients);
-            HiiragiUtils.addCrafting(true, true, <botania:terrasword>, [[<metaitem:toolHeadSwordTerrasteel>, <botania:manaresource:3>]]);
-            HiiragiUtils.addCraftingAdv(false, true, <botania:terrasword>, RecipePattern.init(["A", "A", "B"]).map({A:<metaitem:plateTerrasteel>, B:<botania:manasteelsword>.marked("inherit")}).ingredients, HiiragiUtils.inheritStatus(<botania:terrasword>), null);
-            HiiragiUtils.addCraftingAdv(true, true, <botania:manaring>, [[<botania:manatablet>.marked("inherit"), <metaitem:ringManasteel>]], HiiragiUtils.inheritStatus(<botania:manaring>), null);
-            HiiragiUtils.addCrafting(true, true, <botania:auraring>, [[<ore:runeManaB>, <metaitem:ringManasteel>]]);
-            HiiragiUtils.addCrafting(true, true, <botania:magnetring>, [[<botania:lens:10>, <metaitem:ringManasteel>]]);
-            HiiragiUtils.addCrafting(true, true, <botania:waterring>, [[<ore:runeWaterB>, <metaitem:ringManasteel>]]);
-            HiiragiUtils.addCrafting(true, true, <botania:miningring>, [[<ore:runeEarthB>, <metaitem:ringManasteel>]]);
+            HiiragiUtils.addCrafting(false, true, <botania:manasteelshears>, RecipePattern.init(["AB", "CA"]).map({A:<tconstruct:kama_head>.withTag({Material: "manasteel"}), B:<ore:GT.tool.file>, C:<ore:boltLivingwood>}).ingredients);
+            HiiragiUtils.addCrafting(true, true, <botania:terrasword>, [[<tconstruct:sword_blade>.withTag({Material: "terrasteel"}), <botania:manaresource:3>]]);
+            HiiragiUtils.addCraftingAdv(false, true, <botania:terrasword>, [[<tconstruct:sword_blade>.withTag({Material: "terrasteel"}), <botania:manasteelsword>.marked("inherit")]], HiiragiUtils.inheritStatus(<botania:terrasword>), null);
+            HiiragiUtils.addCraftingAdv(true, true, <botania:manaring>, [[<botania:manatablet>.marked("inherit"), <ore:ringManasteel>]], HiiragiUtils.inheritStatus(<botania:manaring>), null);
+            HiiragiUtils.addCrafting(true, true, <botania:auraring>, [[<ore:runeManaB>, <ore:ringManasteel>]]);
+            HiiragiUtils.addCrafting(true, true, <botania:magnetring>, [[<botania:lens:10>, <ore:ringManasteel>]]);
+            HiiragiUtils.addCrafting(true, true, <botania:waterring>, [[<ore:runeWaterB>, <ore:ringManasteel>]]);
+            HiiragiUtils.addCrafting(true, true, <botania:miningring>, [[<ore:runeEarthB>, <ore:ringManasteel>]]);
             val toolElementium as IItemStack[IItemStack] = {
-                <botania:elementiumpick>: <metaitem:toolHeadPickaxeElvenElementium>,
-                <botania:elementiumshovel>: <metaitem:toolHeadShovelElvenElementium>,
-                <botania:elementiumaxe>: <metaitem:toolHeadAxeElvenElementium>,
-                <botania:elementiumsword>: <metaitem:toolHeadSwordElvenElementium>,
+                <botania:elementiumpick>: <tconstruct:pick_head>,
+                <botania:elementiumshovel>: <tconstruct:shovel_head>,
+                <botania:elementiumaxe>: <tconstruct:axe_head>,
+                <botania:elementiumsword>: <tconstruct:sword_blade>,
             };
             for tool, toolHead in toolElementium {
                 HiiragiUtils.addCrafting(true, true, tool, [[toolHead, <botania:manaresource:13>]]);
             }
-            HiiragiUtils.addCrafting(false, true, <botania:elementiumshears>, RecipePattern.init(["AB", "CA"]).map({A:<ore:plateElvenElementium>, B:<ore:GT.tool.file>, C:<metaitem:boltDreamwood>}).ingredients);
+            HiiragiUtils.addCrafting(false, true, <botania:elementiumshears>, RecipePattern.init(["AB", "CA"]).map({A:<ore:plateElvenElementium>, B:<ore:GT.tool.file>, C:<ore:boltDreamwood>}).ingredients);
             HiiragiUtils.addCrafting(false, true, <botania:openbucket>, RecipePattern.init(["A A", " A "]).map({A:<ore:plateElvenElementium>}).ingredients);
-            HiiragiUtils.addCrafting(true, true, <botania:craftinghalo>, [[<ore:workbench>, <metaitem:ringManasteel>]]);
+            HiiragiUtils.addCrafting(true, true, <botania:craftinghalo>, [[<ore:workbench>, <ore:ringManasteel>]]);
             HiiragiUtils.addCrafting(false, true, <botania:crystalbow>, RecipePattern.init([" AB", "C B", " AB"]).map({A:<botania:manaresource:13>, B:<botania:manaresource:16>, C:<botania:manaresource:3>}).ingredients);
             HiiragiUtils.addCraftingAdv(false, false, <botania:crystalbow>, RecipePattern.init([" A", "BC", " A"]).map({A:<botania:manaresource:13>, B:<botania:manaresource:3>, C:<botania:livingwoodbow>.marked("inherit")}).ingredients, HiiragiUtils.inheritStatus(<botania:crystalbow>), null);
-            HiiragiUtils.addCrafting(true, true, <botania:swapring>, [[<artisanworktables:toolbox>, <metaitem:ringManasteel>]]);
-            //HiiragiUtils.addCrafting(false, true, <botania:baublebox>, RecipePattern.init([" A ", "BCB", " B "]).map({A:<metaitem:plateGold>, B:<metaitem:plateManasteel>, C:<ore:chest>}).ingredients);
-            HiiragiUtils.addCrafting(false, true, <botania:pylon:0>, RecipePattern.init([" A ", "BAB", "BCB"]).map({A:<ore:gemManaDiamond>, B:<metaitem:plateGold>, C:<botania:storage:0>}).ingredients);
-            HiiragiUtils.addCrafting(false, true, <botania:pylon:1>, RecipePattern.init([" A ", "BAB", "BCB"]).map({A:<contenttweaker:ephemerald>, B:<metaitem:plateLivingwood>, C:<botania:storage:1>}).ingredients);
-            //HiiragiUtils.addCrafting(false, true, <botania:spreader:0>, RecipePattern.init(["AAA", "BCD", "AAA"]).map({A:<botania:livingwood:0>, B:<ore:gemManaDiamond>, C:<metaitem:gearGold>, D:<botania:managlass>}).ingredients);
-            //HiiragiUtils.addCrafting(false, true, <botania:pool:0>, RecipePattern.init(["A A", "AAA"]).map({A:<metaitem:plateLivingrock>}).ingredients);
-            HiiragiUtils.addCrafting(true, true, <botania:manadetector>, [[<contenttweaker:casing_livingrock>, <minecraft:comparator>]]);
-            //HiiragiUtils.addCrafting(false, true, <botania:turntable>, RecipePattern.init([" A ", " B ", "CCC"]).map({A:<ore:slimeball>, B:<contenttweaker:casing_livingwood>, C:<metaitem:gearWood>}).ingredients);
-            HiiragiUtils.addCrafting(true, true, <botania:opencrate:0>, [[<contenttweaker:casing_livingwood>, <ore:GT.tool.saw>]]);
-            HiiragiUtils.addCrafting(false, true, <botania:opencrate:1>, RecipePattern.init(["ABA", "ACA", "A A"]).map({A:<metaitem:plateDreamwood>, B:<ore:workbench>, C:<metaitem:frameDreamwood>}).ingredients);
-            HiiragiUtils.addCrafting(false, true, <botania:terraplate>, RecipePattern.init([" A ", "BBB"]).map({A:<biomesoplenty:terrestrial_artifact>, B:<minecraft:lapis_block>}).ingredients);
+            HiiragiUtils.addCrafting(true, true, <botania:swapring>, [[<artisanworktables:toolbox>, <ore:ringManasteel>]]);
+            //HiiragiUtils.addCrafting(false, true, <botania:baublebox>, RecipePattern.init([" A ", "BCB", " B "]).map({A:<ore:plateGold>, B:<ore:plateManasteel>, C:<ore:chest>}).ingredients);
+            HiiragiUtils.addCrafting(false, true, <botania:pylon:0>, RecipePattern.init([" A ", "BAB", "BCB"]).map({A:<ore:gemManaDiamond>, B:<ore:plateGold>, C:<botania:storage:0>}).ingredients);
+            HiiragiUtils.addCrafting(false, true, <botania:pylon:1>, RecipePattern.init([" A ", "BAB", "BCB"]).map({A:<contenttweaker:ephemerald>, B:<ore:plateLivingwood>, C:<botania:storage:1>}).ingredients);
+            //HiiragiUtils.addCrafting(false, true, <botania:spreader:0>, RecipePattern.init(["AAA", "BCD", "AAA"]).map({A:<botania:livingwood:0>, B:<ore:gemManaDiamond>, C:<ore:gearGold>, D:<botania:managlass>}).ingredients);
+            //HiiragiUtils.addCrafting(false, true, <botania:pool:0>, RecipePattern.init(["A A", "AAA"]).map({A:<ore:plateLivingrock>}).ingredients);
+            //HiiragiUtils.addCrafting(true, true, <botania:manadetector>, [[<contenttweaker:casing_livingrock>, <minecraft:comparator>]]);
+            //HiiragiUtils.addCrafting(false, true, <botania:turntable>, RecipePattern.init([" A ", " B ", "CCC"]).map({A:<ore:slimeball>, B:<contenttweaker:casing_livingwood>, C:<ore:gearWood>}).ingredients);
+            //HiiragiUtils.addCrafting(true, true, <botania:opencrate:0>, [[<contenttweaker:casing_livingwood>, <ore:GT.tool.saw>]]);
+            //HiiragiUtils.addCrafting(false, true, <botania:opencrate:1>, RecipePattern.init(["ABA", "ACA", "A A"]).map({A:<ore:plateDreamwood>, B:<ore:workbench>, C:<ore:frameDreamwood>}).ingredients);
+            //HiiragiUtils.addCrafting(false, true, <botania:terraplate>, RecipePattern.init([" A ", "BBB"]).map({A:<biomesoplenty:terrestrial_artifact>, B:<minecraft:lapis_block>}).ingredients);
             val redStringed as IIngredient[IItemStack] = {
                 <botania:redstringcontainer>: <ore:chest>,
                 <botania:redstringdispenser>: <minecraft:dispenser>,
@@ -103,41 +98,28 @@ print("Start loading botania-main.zs ...");
                 <botania:redstringrelay>: <botania:spreader:0>
             };
             for output, input in redStringed {
-                HiiragiUtils.addCrafting(false, true, output, RecipePattern.init(["ABC"]).map({A:<contenttweaker:casing_livingrock>, B:<botania:manaresource:12>, C:input}).ingredients);
+                //HiiragiUtils.addCrafting(false, true, output, RecipePattern.init(["ABC"]).map({A:<contenttweaker:casing_livingrock>, B:<botania:manaresource:12>, C:input}).ingredients);
             }
 
-            recipes.replaceAllOccurences(<botania:livingrock>, <metaitem:plateLivingrock>, <botania:manaresource:11>);
-            recipes.replaceAllOccurences(<botania:livingrock>, <metaitem:plateLivingrock>, <botania:manatablet>);
-            recipes.replaceAllOccurences(<botania:manaresource>, <metaitem:plateManasteel>, <botania:baublebox>);
-            recipes.replaceAllOccurences(<minecraft:gold_ingot>, <metaitem:plateGold>, <botania:baublebox>);
-            recipes.replaceAllOccurences(<minecraft:gold_ingot>, <metaitem:gearGold>, <botania:spreader:0>);
-            recipes.replaceAllOccurences(<botania:livingrock>, <metaitem:plateLivingrock>, <botania:pool:0>);
-            recipes.replaceAllOccurences(<botania:livingwood>, <metaitem:plateLivingwood>, <botania:turntable>);
+            recipes.replaceAllOccurences(<botania:livingrock>, <ore:plateLivingrock>, <botania:manaresource:11>);
+            //recipes.replaceAllOccurences(<botania:livingrock>, <ore:plateLivingrock>, <botania:manatablet>);
+            //recipes.replaceAllOccurences(<botania:manaresource>, <ore:plateManasteel>, <botania:baublebox>);
+            recipes.replaceAllOccurences(<minecraft:gold_ingot>, <ore:plateGold>, <botania:baublebox>);
+            recipes.replaceAllOccurences(<minecraft:gold_ingot>, <ore:gearGold>, <botania:spreader:0>);
+            recipes.replaceAllOccurences(<botania:livingrock>, <ore:plateLivingrock>, <botania:pool:0>);
+            recipes.replaceAllOccurences(<botania:livingwood>, <ore:plateLivingwood>, <botania:turntable>);
 
         //Botanic Adds
-            HiiragiUtils.addCrafting(false, true, <botanicadds:pool_dreaming>, RecipePattern.init(["A A", "AAA"]).map({A:<metaitem:plateDreamrock>}).ingredients);
+            HiiragiUtils.addCrafting(false, true, <botanicadds:pool_dreaming>, RecipePattern.init(["A A", "AAA"]).map({A:<ore:plateDreamrock>}).ingredients);
             HiiragiUtils.addCraftingAdv(false, true, <botanicadds:mana_stealer_sword>, RecipePattern.init(["A", "A", "B"]).map({A:<botanicadds:gaiasteel_ingot>, B:<botania:terrasword>.marked("inherit")}).ingredients, HiiragiUtils.inheritStatus(<botanicadds:mana_stealer_sword>), null);
 
     //新規
         //Content Tweaker
-            HiiragiUtils.addCrafting(false, true, <contenttweaker:casing_livingwood>, RecipePattern.init(["ABA", "ACA", "ADA"]).map({A:<metaitem:plateLivingwood>, B:<ore:GT.tool.saw>, C:<metaitem:frameLivingwood>, D:<ore:GT.tool.hammer.soft>}).ingredients);
-            HiiragiUtils.addCrafting(false, false, <contenttweaker:casing_livingrock>, RecipePattern.init(["ABA", "ACA", "ADA"]).map({A:<metaitem:plateLivingrock>, B:<ore:GT.tool.saw>, C:<metaitem:frameLivingwood>, D:<ore:GT.tool.hammer.hard>}).ingredients);
-            HiiragiUtils.addCrafting(false, false, <contenttweaker:agglo_core_mana>, RecipePattern.init(["ABA", "CDC", "EEE"]).map({A:<botania:quartztypemana:2>, B:<botania:quartztypemana:1>, C:<ore:gemManaDiamond>, D:<botania:storage:0>, E:<metaitem:plateLivingrock>}).ingredients);
-            HiiragiUtils.addCrafting(false, false, <contenttweaker:agglo_core_terra>, RecipePattern.init(["ABA", "CDC", "EEE"]).map({A:<botania:quartztypeelf:2>, B:<botania:quartztypeelf:1>, C:<contenttweaker:ephemerald>, D:<botania:storage:1>, E:<metaitem:plateDreamrock>}).ingredients);
-            HiiragiUtils.addCrafting(false, false, <contenttweaker:agglo_core_elem>, RecipePattern.init(["ABA", "CDC", "EEE"]).map({A:<botania:quartztypelavender:2>, B:<botania:quartztypelavender:1>, C:<ore:gemDragonStone>, D:<botania:storage:2>, E:<botania:shimmerrock>}).ingredients);
-        //gregTech
-            HiiragiUtils.addCrafting(true, true, <metaitem:dustLivingwood>*4, [[<botania:livingwood:0>, <ore:GT.tool.mortar>]]);
-            HiiragiUtils.addCrafting(true, true, <metaitem:dustLivingwood>, [[<botania:livingwood:1>, <ore:GT.tool.mortar>]]);
-            HiiragiUtils.addCrafting(true, true, <metaitem:dustLivingrock>, [[<botania:livingrock:*>, <ore:GT.tool.mortar>]]);
-            HiiragiUtils.addCrafting(true, true, <metaitem:dustDreamwood>*4, [[<botania:dreamwood:0>, <ore:GT.tool.mortar>]]);
-            HiiragiUtils.addCrafting(true, true, <metaitem:dustDreamwood>, [[<botania:dreamwood:1>, <ore:GT.tool.mortar>]]);
-            HiiragiUtils.addCrafting(true, true, <metaitem:dustDreamwood>, [[<botanicadds:dreamrock>, <ore:GT.tool.mortar>]]);
-            HiiragiUtils.addCrafting(true, false, <metaitem:plateLivingwood>*6, [[<botania:livingwood:0>, <ore:GT.tool.saw>]]);
-            HiiragiUtils.addCraftingConv(<botania:livingwood:1>, <metaitem:plateLivingwood>);
-            HiiragiUtils.addCrafting(true, false, <metaitem:plateLivingrock>, [[<botania:livingrock:*>, <ore:GT.tool.saw>]]);
-            HiiragiUtils.addCrafting(true, false, <metaitem:plateDreamwood>*6, [[<botania:dreamwood:0>, <ore:GT.tool.saw>]]);
-            HiiragiUtils.addCraftingConv(<botania:dreamwood:1>, <metaitem:plateDreamwood>);
-            HiiragiUtils.addCrafting(true, false, <metaitem:plateDreamrock>, [[<botanicadds:dreamrock>, <ore:GT.tool.saw>]]);
+            //HiiragiUtils.addCrafting(false, true, <contenttweaker:casing_livingwood>, RecipePattern.init(["ABA", "ACA", "ADA"]).map({A:<ore:plateLivingwood>, B:<ore:GT.tool.saw>, C:<ore:frameLivingwood>, D:<ore:GT.tool.hammer.soft>}).ingredients);
+            //HiiragiUtils.addCrafting(false, false, <contenttweaker:casing_livingrock>, RecipePattern.init(["ABA", "ACA", "ADA"]).map({A:<ore:plateLivingrock>, B:<ore:GT.tool.saw>, C:<ore:frameLivingwood>, D:<ore:GT.tool.hammer.hard>}).ingredients);
+            //HiiragiUtils.addCrafting(false, false, <contenttweaker:agglo_core_mana>, RecipePattern.init(["ABA", "CDC", "EEE"]).map({A:<botania:quartztypemana:2>, B:<botania:quartztypemana:1>, C:<ore:gemManaDiamond>, D:<botania:storage:0>, E:<ore:plateLivingrock>}).ingredients);
+            //HiiragiUtils.addCrafting(false, false, <contenttweaker:agglo_core_terra>, RecipePattern.init(["ABA", "CDC", "EEE"]).map({A:<botania:quartztypeelf:2>, B:<botania:quartztypeelf:1>, C:<contenttweaker:ephemerald>, D:<botania:storage:1>, E:<ore:plateDreamrock>}).ingredients);
+            //HiiragiUtils.addCrafting(false, false, <contenttweaker:agglo_core_elem>, RecipePattern.init(["ABA", "CDC", "EEE"]).map({A:<botania:quartztypelavender:2>, B:<botania:quartztypelavender:1>, C:<ore:gemDragonStone>, D:<botania:storage:2>, E:<botania:shimmerrock>}).ingredients);
 
 //かまどレシピの編集
     //削除
@@ -158,7 +140,7 @@ print("Start loading botania-main.zs ...");
     RecipeBuilder.get("basic")
         .setShaped(RecipePattern
             .init([" ABC ", "  CDC", "  BCB", " E  A", "F    "])
-            .map({A:<metaitem:plateTerrasteel>, B:<metaitem:plateDoubleTerrasteel>, C:<metaitem:plateLivingwood>, D:<botania:manatablet>, E:<botania:livingwood>, F:<metaitem:stickTerrasteel>})
+            .map({A:<ore:plateTerrasteel>, B:<ore:plateDoubleTerrasteel>, C:<ore:plateLivingwood>, D:<botania:manatablet>, E:<botania:livingwood>, F:<ore:stickTerrasteel>})
             .ingredients)
         .addOutput(<botania:terrapick>)
         .create();
@@ -166,7 +148,7 @@ print("Start loading botania-main.zs ...");
     RecipeBuilder.get("basic")
         .setShaped(RecipePattern
             .init(["  AA ", " ABBC", " ABDA", "  CA ", " E   "])
-            .map({A:<metaitem:plateTerrasteel>, B:<metaitem:plateDoubleTerrasteel>, C:<botania:livingwood:0>, D:<minecraft:glowstone>, E:<botania:manaresource:4>})
+            .map({A:<ore:plateTerrasteel>, B:<ore:plateDoubleTerrasteel>, C:<botania:livingwood:0>, D:<minecraft:glowstone>, E:<botania:manaresource:4>})
             .ingredients)
         .addOutput(<botania:terraaxe>)
         .create();
@@ -198,18 +180,18 @@ print("Start loading botania-main.zs ...");
 //マナプール周りのレシピ
     //Manasteel ingot
         Manapool.removeRecipe(<botania:manaresource:0>);
-        Manapool.addInfusion(<botania:manaresource:0>, <metaitem:ingotWroughtIron>, 3000);
-        Manapool.addInfusion(<botania:manaresource:0>*2, <metaitem:ingotSteel>, 3000);
+        Manapool.addInfusion(<botania:manaresource:0>, <ore:ingotWroughtIron>, 3000);
+        Manapool.addInfusion(<botania:manaresource:0>*2, <ore:ingotSteel>, 3000);
         Manapool.addInfusion(<botania:manaresource:0>*2, <twilightforest:steeleaf_ingot>, 3000);
-        Manapool.addInfusion(<botania:manaresource:0>*4, <metaitem:ingotStainlessSteel>, 3000);
-        Manapool.addInfusion(<botania:manaresource:0>*8, <metaitem:ingotTungstenSteel>, 3000);
+        Manapool.addInfusion(<botania:manaresource:0>*4, <ore:ingotStainlessSteel>, 3000);
+        Manapool.addInfusion(<botania:manaresource:0>*8, <ore:ingotTungstensteel>, 3000);
         Manapool.addInfusion(<botania:manaresource:0>*8, <enderio:item_alloy_ingot:6>, 3000);
     //Block of Manasteel
-        Manapool.addInfusion(<botania:storage:0>, <metaitem:blockWroughtIron>, 27000);
-        Manapool.addInfusion(<botania:storage:0>*2, <metaitem:blockSteel>, 27000);
+        Manapool.addInfusion(<botania:storage:0>, <ore:blockWroughtIron>, 27000);
+        Manapool.addInfusion(<botania:storage:0>*2, <ore:blockSteel>, 27000);
         Manapool.addInfusion(<botania:storage:0>*2, <twilightforest:block_storage:2>, 27000);
-        Manapool.addInfusion(<botania:storage:0>*4, <metaitem:blockStainlessSteel>, 27000);
-        Manapool.addInfusion(<botania:storage:0>*8, <metaitem:blockTungstenSteel>, 27000);
+        Manapool.addInfusion(<botania:storage:0>*4, <ore:blockStainlessSteel>, 27000);
+        Manapool.addInfusion(<botania:storage:0>*8, <ore:blockTungstensteel>, 27000);
         Manapool.addInfusion(<botania:storage:0>*8, <enderio:block_alloy:6>, 27000);
 
 //Pure Daisyによる加工
@@ -225,8 +207,8 @@ print("Start loading botania-main.zs ...");
     }
 
 //Dreaming Daisyによる加工
-    val dreaming_daisy = mods.morechids.Registry.getFlower("dreaming_daisy");
-    dreaming_daisy.addRecipe(<botania:livingrock>, <botanicadds:dreamrock>, 1);
+    //val dreaming_daisy = mods.morechids.Registry.getFlower("dreaming_daisy");
+    //dreaming_daisy.addRecipe(<botania:livingrock>, <botanicadds:dreamrock>, 1);
 
 //アズレージョをChiselで加工するように変更
     chisel.addGroup("azulejo");
@@ -243,22 +225,23 @@ print("Start loading botania-main.zs ...");
     }
 
 //Thaumcraftの注入の儀式
+/*
     mods.thaumcraft.Infusion.registerRecipe("runic_altar", "", <botania:runealtar>,
         10,[<aspect:ordo>*128, <aspect:praecantatio>*64, <aspect:alkimia>*64], 
         <botania:manaresource:2>, [
-            <twilightforest:castle_rune_brick:3>, <metaitem:plateLivingrock>, <metaitem:plateLivingrock>,
-            <twilightforest:castle_rune_brick:1>, <metaitem:plateLivingrock>, <metaitem:plateLivingrock>,
-            <twilightforest:castle_rune_brick:2>, <metaitem:plateLivingrock>, <metaitem:plateLivingrock>,
-            <twilightforest:castle_rune_brick:0>, <metaitem:plateLivingrock>, <metaitem:plateLivingrock>
+            <twilightforest:castle_rune_brick:3>, <ore:plateLivingrock>, <ore:plateLivingrock>,
+            <twilightforest:castle_rune_brick:1>, <ore:plateLivingrock>, <ore:plateLivingrock>,
+            <twilightforest:castle_rune_brick:2>, <ore:plateLivingrock>, <ore:plateLivingrock>,
+            <twilightforest:castle_rune_brick:0>, <ore:plateLivingrock>, <ore:plateLivingrock>
         ]);
     mods.thaumcraft.Infusion.registerRecipe("elven_runic_altar", "", <botanicadds:elven_altar>,
         10,[<aspect:ordo>*128, <aspect:praecantatio>*64, <aspect:alkimia>*64], 
         <botania:manaresource:9>, [
-            <twilightforest:castle_rune_brick:3>, <metaitem:plateDreamrock>, <metaitem:plateDreamrock>,
-            <twilightforest:castle_rune_brick:1>, <metaitem:plateDreamrock>, <metaitem:plateDreamrock>,
-            <twilightforest:castle_rune_brick:2>, <metaitem:plateDreamrock>, <metaitem:plateDreamrock>,
-            <twilightforest:castle_rune_brick:0>, <metaitem:plateDreamrock>, <metaitem:plateDreamrock>
+            <twilightforest:castle_rune_brick:3>, <ore:plateDreamrock>, <ore:plateDreamrock>,
+            <twilightforest:castle_rune_brick:1>, <ore:plateDreamrock>, <ore:plateDreamrock>,
+            <twilightforest:castle_rune_brick:2>, <ore:plateDreamrock>, <ore:plateDreamrock>,
+            <twilightforest:castle_rune_brick:0>, <ore:plateDreamrock>, <ore:plateDreamrock>
         ]);  
-
+*/
 //このscriptの読み込みの完了をログに出力
 print("botania-main.zs loaded!");

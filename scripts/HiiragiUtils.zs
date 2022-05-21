@@ -1,8 +1,8 @@
 #======================================================================
-# name : HiiragiUtils.zs
-# auther : Hiiragi Russell Tsubasa;URL -> https://github.com/Hiiragi283
-# info : Registry useful functions
-#        Some scripts are partially referred to GrassUtils
+# ファイル名 : HiiragiUtils.zs
+# 作成者 : Hiiragi Russell Tsubasa;URL -> https://github.com/Hiiragi283
+# 情報 : 有用な機能を実装
+#        このスクリプトの一部はGrassUtilsを参考にしています
 #        -> https://github.com/friendlyhj/GrassUtils
 #======================================================================
 
@@ -18,13 +18,11 @@ import crafttweaker.recipes.IRecipeAction;
 import crafttweaker.recipes.IRecipeFunction;
 
 //各種modからclassをimport
-import mods.astralsorcery.Altar;
+//import mods.astralsorcery.Altar;
 import mods.jei.JEI.hide;
 import mods.jei.JEI.removeAndHide;
-import mods.thaumcraft.ArcaneWorkbench;
 import mods.zenutils.HexHelper;
 import mods.zenutils.I18n;
-import thaumcraft.aspect.CTAspectStack;
 
 //このscriptの読み込みの開始をログに出力
 print("Start loading HiiragiUtils.zs ...");
@@ -48,7 +46,8 @@ print("Start loading HiiragiUtils.zs ...");
         <ore:dyeOrange>,
         <ore:dyeWhite>,
     ];
-    static dyeLiquid as ILiquidStack[] = [
+
+    /*static dyeLiquid as ILiquidStack[] = [
         <liquid:dye_black>,
         <liquid:dye_red>,
         <liquid:dye_green>,
@@ -65,6 +64,16 @@ print("Start loading HiiragiUtils.zs ...");
         <liquid:dye_magenta>,
         <liquid:dye_orange>,
         <liquid:dye_white>,
+    ];*/
+
+    static voltageTier as int[] = [
+        32, //ULV
+        128, //LV
+        512, //MV
+        2048, //HV
+        8192, //EV
+        32768, //IV
+        131072, //LuV
     ];
 
 //代入されたIItemStackから名前を生成する関数
@@ -200,7 +209,7 @@ function inheritStatus(itemBase as IItemStack) as IRecipeFunction {
         }
     };
 }
-
+/*
 //Astral Sorcery関連の関数
     function addAltarAS1 (output as IItemStack, starlight as int, time as int, inputs as IIngredient[][]) {
         var recipeNameAS1 as string = getNameItem(output) ~ "_" ~ recipeID;
@@ -211,39 +220,7 @@ function inheritStatus(itemBase as IItemStack) as IRecipeFunction {
         var recipeNameAS2 as string = getNameItem(output) ~ "_" ~ recipeID;
         mods.astralsorcery.Altar.addAttunementAltarRecipe(recipeNameAS2, output, starlight, time, inputs[0]);
     }
-
-//Bloodmagic関連の関数
-    static orbTier as string[] = [
-        "bloodmagic:weak",
-        "bloodmagic:apprentice",
-        "bloodmagic:magician",
-        "bloodmagic:master",
-        "bloodmagic:archmage",
-    ];
-
-    function orbBlood (tier as int) as IItemStack {
-        var num as int = tier - 1;
-        return <bloodmagic:blood_orb>.withTag({orb: orbTier[num]}).reuse();
-    }
-
-//Thaumcraft関連の関数
-    function addCraftingArcane (shapeless as bool, remove as bool, research as string, vis as int, aspects as CTAspectStack[], output as IItemStack, input as IIngredient[][]) {
-        var recipeNameArcane as string = getNameItem(output) ~ "_" ~ recipeID;
-        if (remove) {
-            mods.thaumcraft.ArcaneWorkbench.removeRecipe(output);
-        }
-        if (!shapeless) {
-            mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe(recipeNameArcane, research, vis, aspects, output, input);
-        } else {
-            mods.thaumcraft.ArcaneWorkbench.registerShapelessRecipe(recipeNameArcane, research, vis, aspects, output, input[0]);
-        }
-        recipeID += 1;
-    }
-
-    function addCrucibleArcane (research as string, output as IItemStack, input as IIngredient, aspects as CTAspectStack[]) {
-        var recipeNameCrucible as string = getNameItem(output) ~ "_" ~ recipeID;
-        mods.thaumcraft.Crucible.registerRecipe(recipeNameCrucible, research, output, input, aspects);
-    }
+*/
 
 //このscriptの読み込みの完了をログに出力
 print("HiiragiUtils.zs loaded!");

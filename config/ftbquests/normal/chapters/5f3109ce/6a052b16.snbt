@@ -1,0 +1,11 @@
+{
+	title: "{gohd.5f3109ce.6a052b16.title}",
+	x: 0.0d,
+	y: 0.0d,
+	description: "{gohd.5f3109ce.6a052b16.subtitle}",
+	tasks: [{
+		uid: "3696e1d4",
+		type: "checkmark",
+		title: "{gohd.5f3109ce.6a052b16.task1}"
+	}]
+}

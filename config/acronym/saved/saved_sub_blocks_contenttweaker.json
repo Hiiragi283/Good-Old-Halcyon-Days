@@ -1,3 +1,38 @@
 {
-  "savedSubBlockNames": {}
+  "savedSubBlockNames": {
+    "0": {
+      "1": "tantalite_ore_sample",
+      "2": "galena_ore_sample",
+      "3": "copper_ore_sample",
+      "4": "rock_salt_ore_sample",
+      "5": "uraninite_ore",
+      "6": "tungsten_carbide_block",
+      "7": "cobaltite_ore_sample",
+      "8": "magnesia_ore",
+      "9": "quartz_ore_sample",
+      "10": "iron_ore_sample",
+      "11": "tin_ore_sample",
+      "12": "sheldonite_ore_minecraft_end_stone",
+      "13": "cinnabar_ore_sample",
+      "14": "tungstate_ore_sample"
+    },
+    "1": {
+      "0": "sulfur_ore_sample",
+      "1": "magnesia_ore_sample",
+      "2": "certus_quartz_ore_sample",
+      "3": "tantalite_ore_minecraft_netherrack",
+      "4": "lead_ore_sample",
+      "6": "magnalium_block",
+      "7": "rock_salt_ore",
+      "8": "beryllium_block",
+      "10": "uraninite_ore_sample",
+      "11": "osmium_ore_sample",
+      "12": "cobaltite_ore",
+      "13": "gold_ore_sample",
+      "14": "tungstate_ore_minecraft_end_stone"
+    },
+    "2": {
+      "1": "tantalum_hafnium_carbide_block"
+    }
+  }
 }
