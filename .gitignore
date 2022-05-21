@@ -23,11 +23,14 @@ profileImage/
 resourepack/
 saves/
 screenshots/
+server-resource-packs/
 shaderpacks/
+texturepacks/
 
 #特定のフォルダ
 
 config/acronym/saved/
+config/advRocketry/*.xml
 config/biomesoplenty/biomes/defaults
 config/enderio/recipes/examples/
 config/enderio/recipes/*.pdf
@@ -35,11 +38,13 @@ config/tellme/
 journeymap/data/
 journeymap/icon/
 journeymap/server/
+resources/crossroads/
 
 #特定のファイル
 
 BotaniaVars.dat
 hei_bookmarks.ini
+icon.png
 minecraftinstance.json
 options.txt
 optionsof.txt
@@ -51,6 +56,8 @@ usernamecache.json
 astralsorcery/gatewayFilter/worldFilter.dat
 
 config/AppliedEnergistics2/items.csv
+config/artisanintegrations/module.botania.Tools-Generated.json
+config/artisanworktables/module.Tools.Materials.Generated.json
 config/jei/itemBlacklist.cfg
 config/jei/jei.cfg
 config/jei/worldSettings.cfg
@@ -60,6 +67,7 @@ config/tinker_ore_dict_melting_cache.dat
 config/thaumicjei_itemstack_aspects.json
 config/vanillafix/methods-stable_39.csv
 
-#config/splash.properties
-
 journeymap/journeymap.log
+
+
+!config/advRocktery/planetDefs.xml
