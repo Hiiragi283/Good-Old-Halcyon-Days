@@ -1,8 +1,8 @@
 
 #Items
-tile.contenttweaker.unfired_casting_channel.name=Unfired casting Channel
-tile.contenttweaker.unfired_casting_table.name=Unfired casting Table
-tile.contenttweaker.unfired_casting_basin.name=Unfired casting Basin
+tile.contenttweaker.unfired_casting_channel.name=Unfired Casting Channel
+tile.contenttweaker.unfired_casting_table.name=Unfired Casting Table
+tile.contenttweaker.unfired_casting_basin.name=Unfired Casting Basin
 tile.contenttweaker.dustblock_tantalum_hafnium_carbide.name=Tantalum Hafnium Carbide Dust Block
 tile.contenttweaker.dustblock_platinum.name=PlatinumDust Block
 tile.contenttweaker.dustblock_tungsten_carbide.name=Tungsten Carbide Dust Block
