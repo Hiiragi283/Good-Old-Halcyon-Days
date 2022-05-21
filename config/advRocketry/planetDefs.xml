@@ -1,0 +1,96 @@
+<galaxy>
+    <star name="Minecroft" temp="100" x="0" y="0" numPlanets="4" numGasGiants="5">
+        <planet name="Earth" DIMID="0" dimMapping="" customIcon="earthlike">
+            <isKnown>true</isKnown>
+            <fogColor>1,1,1</fogColor>
+            <skyColor>1,1,1</skyColor>
+            <atmosphereDensity>100</atmosphereDensity>
+            <gravitationalMultiplier>100</gravitationalMultiplier>
+            <orbitalDistance>100</orbitalDistance>
+            <rotationalPeriod>24000</rotationalPeriod>
+            <planet name="Moon" DIMID="100" customIcon="moon">
+                <isKnown>true</isKnown>
+                <fogColor>1,1,1</fogColor>
+                <skyColor>1,1,1</skyColor>
+                <atmosphereDensity>0</atmosphereDensity>
+                <gravitationalMultiplier>16</gravitationalMultiplier>
+                <orbitalDistance>100</orbitalDistance>
+                <orbitalTheta>190</orbitalTheta>
+                <rotationalPeriod>192000</rotationalPeriod>
+                <biomeIds>advancedrocketry:moon,advancedrocketry:moondark</biomeIds>
+            </planet>
+        </planet>
+        <planet name="Mercury" DIMID="101" customIcon="moon">
+            <isKnown>true</isKnown>
+            <gasGiant>true</gasGiant>
+            <orbitalDistance>39</orbitalDistance>
+            <rotationalPeriod>1392000</rotationalPeriod>
+            <artifact>minecarft:nether_star</artifact>
+        </planet>
+        <planet name="Vinus" DIMID="102" customIcon="venusian">
+            <isKnown>true</isKnown>
+            <fogColor>0xf7c544</fogColor>
+            <skyColor>0xd19a0a</skyColor>
+            <atmosphereDensity>200</atmosphereDensity>
+            <hasOxygen>falsse</hasOxygen>
+            <gravitationalMultiplier>90</gravitationalMultiplier>
+            <orbitalDistance>72</orbitalDistance>
+            <rotationalPeriod>384000</rotationalPeriod>
+            <biomeIds>advancedrocketry:volcanic,advancedrocketry:volcanicbarren,minecraft:ocean</biomeIds>
+            <artifact>minecarft:nether_star</artifact>
+        </planet>
+        <planet name="Mars" DIMID="103" customIcon="marslike">
+            <isKnown>true</isKnown>
+            <fogColor>0x07b40</fogColor>
+            <skyColor>0x57442</skyColor>
+            <atmosphereDensity>50</atmosphereDensity>
+            <gravitationalMultiplier>33</gravitationalMultiplier>
+            <orbitalDistance>152</orbitalDistance>
+            <rotationalPeriod>24000</rotationalPeriod>
+            <biomeIds>advancedrocketry:hotdryrock</biomeIds>
+            <artifact>minecarft:nether_star</artifact>
+        </planet>
+        <planet name="Jupiter" DIMID="104" customIcon="gasgiantbrown">
+            <isKnown>true</isKnown>
+            <gasGiant>true</gasGiant>
+            <orbitalDistance>520</orbitalDistance>
+            <rotationalPeriod>12000</rotationalPeriod>
+            <artifact>minecarft:nether_star</artifact>
+        </planet>
+        <planet name="Saturn" DIMID="105" customIcon="gasgiantbrown">
+            <isKnown>true</isKnown>
+            <gasGiant>true</gasGiant>
+            <hasRings>true</hasRings>
+            <orbitalDistance>955</orbitalDistance>
+            <rotationalPeriod>12000</rotationalPeriod>
+            <artifact>minecarft:nether_star</artifact>
+        </planet>
+        <planet name="Uranus" DIMID="106" customIcon="iceworld">
+            <isKnown>true</isKnown>
+            <gasGiant>true</gasGiant>
+            <orbitalDistance>1922</orbitalDistance>
+            <rotationalPeriod>18000</rotationalPeriod>
+            <artifact>minecarft:nether_star</artifact>
+        </planet>
+        <planet name="Neptune" DIMID="107" customIcon="gasgiantblue">
+            <isKnown>true</isKnown>
+            <gasGiant>true</gasGiant>
+            <orbitalDistance>3011</orbitalDistance>
+            <rotationalPeriod>12000</rotationalPeriod>
+            <artifact>minecarft:nether_star</artifact>
+        </planet>
+    </star>
+    <star name="Mojang" temp="100" x="2011" y="1118" numPlanets="1" numgasGiants="0">
+        <planet name="Minecraft" DIMID="2011" customIcon="earthlike">
+            <isKnown>true</isKnown>
+            <fogColor>1,1,1</fogColor>
+            <skyColor>1,1,1</skyColor>
+            <atmosphereDensity>100</atmosphereDensity>
+            <gravitationalMultiplier>100</gravitationalMultiplier>
+            <orbitalDistance>100</orbitalDistance>
+            <rotationalPeriod>24000</rotationalPeriod>
+            <biomeIds>biomesoplenty:origin_island,minecraft:ocean</biomeIds>
+            <artifact>biomesoplenty:earth</artifact>
+        </planet>
+    </star>
+</galaxy>

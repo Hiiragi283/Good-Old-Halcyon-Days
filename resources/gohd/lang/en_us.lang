@@ -1,0 +1,408 @@
+
+
+#=========
+#Item Name
+#=========
+gohd.item.escape_from_minecroft.name=Espace from Minecroft
+
+#================
+# FTBQuests Title
+#================
+
+# Category
+gohd.quest.gohd.category=Good Old Halcyon Days
+gohd.quest.primitive_age.category=Primitive Age
+
+gohd.quest.gregtech.category=GregTech
+gohd.quest.gregtech.machine.category=GT Machines
+gohd.quest.gregtech.generator.category=GT Generator
+gohd.quest.basic_gt.category=Basic GT
+gohd.quest.advanced_gt.category=Advanced GT
+gohd.quest.elite_gt.category=Elite GT
+
+gohd.quest.advrocketry.category=Advanced Rocketry
+
+gohd.quest.twilight_forest.category=Twilight Forest
+gohd.quest.wizardry.category=Wizardry
+gohd.quest.thaumcraft.category=Thaumcraft
+gohd.quest.botania.category=Botania
+gohd.quest.bloodmagic.category=Bloodmagic
+gohd.quest.evilcraft.category=Evilcraft
+gohd.quest.astralsorcery.category=Astral sorcery
+
+# GOHD main
+gohd.quest.welcome.title=Welcome to Good Old Halcyon Days!
+gohd.quest.welcome.subtitle="GOHD" in short
+gohd.quest.welcome.text=
+gohd.quest.jei.title=JEI is your best friend!
+gohd.quest.jei.task1=Say Hello to JEI
+gohd.quest.jei.text1=Just Enough Items, or JEI, is the most friendly mod for modded players, and they can tell us almost all recipes, usages and information.
+gohd.quest.jei.text2=Right-click the task in quest to search how to craft it, and Left-click to search what recipes needs it.
+gohd.quest.jei.text3=Have a fun with JEI!
+gohd.quest.tutorial1.title=This is start quest
+gohd.quest.tutorial2.title=This is normal quest
+gohd.quest.tutorial3.title=This is optional quest
+gohd.quest.tutorial4.title=This is end quest
+gohd.quest.tutorial5.title=This is info quest
+gohd.quest.twilight_boss1.title=Forest Mediator
+gohd.quest.twilight_boss2.title=Swamp Adventurer
+gohd.quest.twilight_boss3.title=Illuminate The Darkness
+gohd.quest.twilight_boss4.title=Frost Walker
+gohd.quest.steam_evolution.title=Steam Evolution
+gohd.quest.electrification.title=Electrification
+gohd.quest.semiconductor.title=Semiconductor Industry
+gohd.quest.petrochemistry.title=Petrochemistry
+gohd.quest.visit_moon.title=Fly me to the moon
+
+gohd.quest.minecraft.title=Escape to "Minecraft"
+
+# Primitive Age
+gohd.quest.punch_log.title=Punch Log!
+gohd.quest.punch_log.subtitle=§oJust Do It!§r
+gohd.quest.bed.subtitle=Completed with any colored bed
+
+gohd.quest.stick.subtitle=Now you can craft Wood Stick from Saplings!
+gohd.quest.pattern.subtitle=Patterns are compatible with Wooden Forms
+gohd.quest.tinker_preparation.title=Ready for Tinker's Tools
+gohd.quest.tool_chests.title=Storaging unused patterns or Parts
+gohd.quest.tinker_tools.title=Tinker's Tools
+gohd.quest.tinker_tools.subtitle=Better Than Greg's Tools
+gohd.quest.tinker_tools.text.material_any=You can achieve this quest no matter what material you use to make tools.
+gohd.quest.mattock.text1=Mattock is a tool which can be used as axe and shovel.
+gohd.quest.longsword.text1=Right-clicking Longsword, you can jump forward. But damage are less than Broadsword.
+gohd.quest.rapier.text1=Right-clicking Rapier, you can jump backward. But damage are much less than Broadsword.
+gohd.quest.rapier.text2=Attack speed is faster than Broadsword and Longsword.
+gohd.quest.battlesign.text1=Battlesign can reflect projectiles when right-clicking.
+
+gohd.quest.primitive_furnace.title=Primitive Furnace
+gohd.quest.primitive_furnace.text1=
+gohd.quest.clay_bucket.title=Clay Bucket
+gohd.quest.tinker_tank.text1=Tinker tank is a multiblock tank that can contains §ldifferent types of fluids.§r
+gohd.quest.tinker_tank.text2=You can assemble this in §lany size !§r
+gohd.quest.seared_tile.title=§lDon't use Seared Bricks for decolations!
+gohd.quest.seared_tile.text1=Seared bricks looks good for decorations at first glance...
+gohd.quest.seared_tile.text2=But they are "Tile Entities", which can cause serious lag if placed in large numbers
+gohd.quest.gt_tools.title=Basic GT Tools
+
+gohd.quest.key_of_twilightforest.title=Key to the Twilight World
+gohd.quest.key_of_twilightforest.subtitle=Available from amber ore or below quest
+gohd.quest.key_of_twilightforest.text=Instead of diamond, to enter the forgotten world you need Preserved Curiosity
+gohd.quest.Ill_give_you_curio.title=Many ambers make a curiosity
+
+# Gregtech
+## Main tab
+gohd.quest.gregtech.title=The road to GregTech is paved with quest line.
+gohd.quest.bronze_age.title=Bronze Age
+gohd.quest.lv_age.title=LV Age
+gohd.quest.lv_age.subtitle=Steel Mek Run
+gohd.quest.mv_age.title=MV Age
+gohd.quest.mv_age.subtitle=You need Alumin"i"um
+gohd.quest.hv_age.title=HV Age
+gohd.quest.hv_age.subtitle=There's NO clean room
+gohd.quest.ev_age.title=EV Age
+gohd.quest.ev_age.title=
+gohd.quest.iv_age.title=IV Age
+gohd.quest.iv_age.subtitle=Don't be eaten by the Insane Wolf(ram)
+gohd.quest.luv_age.title=LuV Age
+gohd.quest.luv_age.subtitle=Do you really LuV GregTech?
+gohd.quest.zpm_age.title=ZPM Age
+gohd.quest.zpm_age.subtitle=This is Gate, not Wars or Trek
+gohd.quest.uv_age.title=UV Age
+gohd.quest.uv_age.subtitle=Cutting radiation, not UV
+gohd.quest.uhv_age.title=UHV Age
+gohd.quest.uhv_age.subtitle=The end of GregTech
+gohd.quest.lv_part.title=LV Parts
+gohd.quest.lv_part.text1=Calculating the number of materials needed to create a part is sooooo tired, isn't it?
+gohd.quest.lv_part.text2=In this quest, all you have to do is submit the materials and they'll be crafted automatically!
+gohd.quest.lv_part.text3=(Instead, the number of materials required is increased by 10%)
+gohd.quest.mv_part.title=MV Parts
+gohd.quest.hv_part.title=HV Parts
+gohd.quest.ev_part.title=EV Parts
+gohd.quest.iv_part.title=IV Parts
+
+## Machine Tab
+gohd.quest.gregtech.machine.task1=Let's make ALL GT machines!
+gohd.quest.metal_processing.title=Metal Processing
+gohd.quest.ore_processing.title=Ore Processing
+gohd.quest.gem_processing.title=Gem Processing
+gohd.quest.chemical_processing.title=Chemical Processing
+gohd.quest.fluid_processing.title=fluid Processing
+gohd.quest.automation.title=Automation
+gohd.quest.resource_collector.title=Resourse Collector
+
+gohd.quest.electric_furnace.title=Electric Furnace
+gohd.quest.electric_furnace.text=Just a furnace using Electricity
+gohd.quest.macerator.title=Macerator
+gohd.quest.macerator.text=Crushing items into dusts
+gohd.quest.alloy_smelter.title=Alloy Smelter
+gohd.quest.alloy_smelter.text=Making alloys
+gohd.quest.arc_furnace.title=Arc Furnace
+gohd.quest.arc_furnace.text=Recycle metal parts or machines into ingots
+gohd.quest.assembling_machine.title=Assembling Machine
+gohd.quest.assembling_machine.text=Automate your crafting
+gohd.quest.autoclave.title=Autoclave
+gohd.quest.autoclave.text=Crystallize gem dusts
+gohd.quest.bending.title=Bending Machine
+gohd.quest.bending.text=Make 1 plate from 1 ingot
+gohd.quest.brewery.title=Brewery
+gohd.quest.brewery.text=§oLiquor has not yet been implemented§r
+gohd.quest.canning.title=Canning Machine
+gohd.quest.canning.text=Fills containers with items ore liquids
+gohd.quest.centrifuge.title=Centrifuge
+gohd.quest.centrifuge.text=Separates items or liquids into other materials
+gohd.quest.bath.title=Chemical Bath
+gohd.quest.bath.text=§oMachine for dipping Oreos in milk§r
+gohd.quest.chemical_reactor.title=Chemical Reactor
+gohd.quest.chemical_reactor.text=Time for a chemistry lab!
+gohd.quest.compressor.title=Compressor
+gohd.quest.compressor.text=§oCompress your NSFW images into a zip file§r
+gohd.quest.cutting.title=Cutting Machine
+gohd.quest.cutting.text=§oCut a pizza into precise slices§r
+gohd.quest.distillery.title=Distillery
+gohd.quest.distillery.text=Refine liquids
+gohd.quest.electrolyzer.title=Electrolyzer
+gohd.quest.electrolyzer.text=§oAlkali Metal Detector§r
+gohd.quest.electromagnetic.title=Electromagnetic Separator
+gohd.quest.electromagnetic.text=Get more materials from Purified Dusts
+gohd.quest.extractor.title=Extractor
+gohd.quest.extractor.text=Not olny extracting items but also melting metals
+gohd.quest.extruder.title=Extruder
+gohd.quest.extruder.text=Make machine part more efficiently
+gohd.quest.fermenter.title=Fermenter
+gohd.quest.fermenter.text=You can make Fermented Spider Eye with this!
+gohd.quest.fluid_heater.title=Fluid Heater
+gohd.quest.fluid_heater.text=§oDo you wanna cup of coffee?§r
+gohd.quest.solidifier.title=Fluid Solidifier
+gohd.quest.solidifier.text=Make liquids into solid
+gohd.quest.forge_hammer.title=Forge Hammer
+gohd.quest.forge_hammer.text=§oAntonym - Fabric Sickle§r
+gohd.quest.forming.title=Forming Press
+gohd.quest.forming.text=Making Turbine Blades, Circuit Borads and Currency, or copying Molds or Shapes
+gohd.quest.lathe.title=Lathe
+gohd.quest.lathe.text=Making rods or Screw
+gohd.quest.mixer.title=Mixer
+gohd.quest.mixer.text=§oLet's make fresh juice in a machine used for mizing concrete!§r
+gohd.quest.ore_washing.title=Ore Washing Plant
+gohd.quest.ore_washing.text=Not only purifying Crushed Ore but also Impure Dusts!
+gohd.quest.gas_collector.title=Gas Collector
+gohd.quest.gas_collector.text=Collects different atmospheres for each dimension
+gohd.quest.polarizer.title=Polarizer
+gohd.quest.polarizer.text=Magnetizes the metal
+gohd.quest.laser_engraver.title=Precision Laser Engraver
+gohd.quest.laser_engraver.text=Engrave blocks, wafers and Circuit Wirings, or cutting large Gems
+gohd.quest.sifter.title=Sifting Machine
+gohd.quest.sifter.text=§oGem Gacha§r
+gohd.quest.thermal_centrifuge.title=Thermal Centrifuge
+gohd.quest.thermal_centrifuge.text=§oRemnants of IC2§r
+gohd.quest.wiremill.title=Wiremill
+gohd.quest.wiremill.text=Make wires mor efficiently
+gohd.quest.circuit_assembler.title=Circuit Assembler
+gohd.quest.circuit_assembler.text=§oWhy don't you use Assembling Machines to make circuits?§r
+gohd.quest.rock_breaker.title=Rock Breaker
+gohd.quest.rock_breaker.text=Not mining stones but generating with electricity
+gohd.quest.miner.title=Miner
+gohd.quest.miner.text=§oNot miner but minor§e
+gohd.quest.item_collector.title=Item Collector
+gohd.quest.item_collector.text=
+gohd.quest.accelerator.title=World Accelerator
+gohd.quest.accelerator.text=§oMade In Heaven!§r
+gohd.quest.buffer.title=Buffer
+gohd.quest.buffer.text=Store items and liquids
+gohd.quest.fisher.title=Fisher
+gohd.quest.fisher.text=Fishing automatically with electricity and string
+gohd.quest.pump.title=Pump
+gohd.quest.pump.text=
+gohd.quest.block_breaker.title=Block Breaker
+gohd.quest.block_breaker.text=Not generating blocks with electricity but mining
+gohd.quest.super_chest.title=Super Chest
+gohd.quest.super_tank.title=Super Tank
+
+gohd.quest.wooden_multiblock_tank.text=Cheap and large tank which can holds 250B(=250,000mB).
+gohd.quest.steel_multiblock_tank.text=Hold 4x liquids(=1,000B=1,000,000mB)
+
+### Generator Tab
+
+### Basic GT
+gohd.quest.coke_brick.title=Coke Bricks
+gohd.quest.crushed_ore.title=Crushed Ore
+gohd.quest.impure_dust.title=Impure Dust
+
+gohd.quest.effcient_machines.title1=More Efficient Processing (MUST)
+gohd.quest.effcient_machines.title2=More Efficient Processing (Optional)
+gohd.quest.new_machines.title1=New Processing Machines 
+gohd.quest.new_machines.title2=New Processing Machines
+
+### Advanced GT
+
+gohd.quest.tungstate_mineral.title=Tungstate Mineral Dust
+
+### Elite GT
+
+## Advanced Rocktery
+
+gohd.quest.rocket_assembling.title=Ride ON your rocket!
+gohd.quest.space_suits.title=Space Suits
+gohd.quest.oxygen_tank.title=Oxygen Tank
+gohd.quest.build_henshin.title=§oARE YOU READY?§r
+gohd.quest.build_henshin.task=§oI'm ready.§r
+gohd.quest.satellite_orbit.title=Onboard Satellite Orbit
+
+## Twilight Forest
+gohd.quest.better_ram.title=§oBetter Questing Ram§r
+gohd.quest.better_ram.task=§oRam is better Than Wolves, or Mods§r
+gohd.quest.vis_crystals.title=Vis Crystals
+gohd.quest.arctic_armor=Arctic Armor
+gohd.quest.torchberries.text=
+gohd.quest.magic_map.text=
+gohd.quest.transformation_powder.text=
+gohd.quest.experiment115.text=
+gohd.quest.peacock_feather_fan.text=
+gohd.quest.moonworm_queen.text=
+gohd.quest.ore_magnet.text=
+gohd.quest.charm_of_keeping.text1=
+gohd.quest.charm_of_keeping.text2=
+gohd.quest.charm_of_keeping.text3=
+gohd.quest.charm_of_life.text1=
+gohd.quest.charm_of_life.text2=
+gohd.quest.uncrafting_table.text=
+gohd.quest.firefly_jar.text=
+gohd.quest.robust_twilight_oak.text=
+gohd.quest.tree_of_time.text=
+gohd.quest.tree_of_transformation.text=
+gohd.quest.miners_tree.text=
+gohd.quest.sorting_tree.text=
+gohd.quest.rainbow_oak.text=
+
+## Thaumcraft
+
+gohd.quest.thaumcraft.subtitle=Thaumonomicon is the quest book for Thaumcraft!
+gohd.quest.salis_mundus.text=Now I'll show you hidden recipes in dependants!
+
+## Botania
+gohd.quest.botania.subtitle=Lexica Botania is the best guidebook as far as i know
+gohd.quest.mystical_flower.title=Mystical Flowers
+gohd.quest.living.title=We are living!
+gohd.quest.manasteel_tool.title=Manasteel Tools
+gohd.quest.manasteel_armor.title=manasteel Armor
+gohd.quest.manaweave_armor.title=Manaweave Armor
+
+gohd.quest.orechid.subtitle=Miniture of Hollow Hill
+gohd.quest.orechid_terrestris.text1=To make Terrestrial Agglomeration Plate, you need Terrestrial Artifact.
+gohd.quest.orechid_terrestris.text2=This artifact is made by collecting several kinds of gems: ruby, topaz, amber, peridot, malachite, sapphiree, tanzanite and emerald.
+gohd.quest.orechid_terrestris.text3=But going out of your way to imitate an GregTech player is tedious, isn't it?
+gohd.quest.orechid_terrestris.text4=So now you can get these gems from NEW Orechid, or "Orechid Terrestris"!
+gohd.quest.rainbow_gems.title=Rainbow Gems
+gohd.quest.terrasteel_armor.title=Terror of Terra
+gohd.quest.duplicate_terrasteel.title=How to duplicate Terrasteel
+gohd.quest.duplicate_terrasteel.text1=Terrasteel is very powerful and useful but expensive.
+gohd.quest.duplicate_terrasteel.text2=So I asked the elves, "Could you tell me how to make terrasteel cheaper?"
+gohd.quest.duplicate_terrasteel.text3=Then they traded new ingredients, Elven Pearl and Ephemerald.
+gohd.quest.duplicate_terrasteel.text4=It appears that replacing Mana Pearl and Mana Diamond with them, you can duplicate Terrasteel for 80% mana cost!
+gohd.quest.duplicate_terrasteel.text5=But you must create new Agglomeration Altar for it...
+
+gohd.quest.more_agglomeration.title=More Aggromelations!!!
+gohd.quest.more_agglomeration.task=Let's agglomeration!
+
+gohd.quest.rune_castle.title=Antient Runes
+gohd.quest.dreaming.title=We are dreaming!
+gohd.qust.rune1.title=Rune of Elements
+gohd.qust.rune2.title=Rune of Seasons
+gohd.qust.rune3.title=Rune of Seven Deadly Sins
+gohd.qust.rune4.title=Rune of Energy
+gohd.quest.elemental_dust.title=Elemental Dusts
+gohd.quest.elementium_armor.title=Elementium Armor
+gohd.quest.shimmer.title=We are shimmering!
+
+## Bloodmagic
+gohd.reward.sentient.title=Sentient Reward
+gohd.quest.another_will_crystals.title=Attributed Will Crystals
+
+## Evilcraft
+gohd.quest.evilcraft.subtitle=Origins of Darkness and tooltips tell you what you want to know
+gohd.quest.blood_evil.title=Safer Blood Collection
+gohd.quest.blood_pearl.subtitle=Reusable Ender Pearl with blood
+gohd.quest.blood_infusion_core.subtitle=Bloody Star
+gohd.quest.blood_infused_materials.title=Power of Blood
+gohd.quest.pulifier.subtitle=Extracts enchantment from items, or potion effect from mobs
+gohd.quest.undead_tree.subtitle=§oLiving but Undead
+gohd.quest.promise_of_efficiency.title=Promise of Efficiency
+gohd.quest.blood_drop.subtitle=Soul Network -> Evilcraft
+gohd.quest.entangled_chalice.subtitle=§oNon-Ender Ender Tank
+gohd.quest.spirit_reanimator.subtitle=§oWisdom Reanimated
+gohd.quest.piercing_focus.subtitle=§oGhost Busters!
+gohd.quest.werewolf.subtitle=§oCannibalism
+gohd.quest.rejuvenated_flesh=§oThe Flesh of Grisaia
+gohd.quest.broom.subtitle=§oWitch's Delivery Service
+gohd.quest.environmental_accumulator=§oDestroyer of biomes
+
+#Astral Sorcery
+gohd.quest.astralsorcery.subtitle=Astral Tome tells you a lot of information but it will be difficult to read easily...
+gohd.quest.astral_marble.subtitle=Not just a marble but it's magical
+gohd.quest.resonating_wands.title=Attuned Resonating Wands
+gohd.quest.fosic_resonator.subtitle=Tells you a place with strong starlight
+gohd.quest.illumation.subtitle=Place light source at the face where you clicked
+gohd.quest.cave_illuminator.subtitle=Automatically place light source below itself
+gohd.quest.looking_glass.subtitle=§oAmethyst not used.
+gohd.quest.telescope.subtitle=§oHey, Look! Hey, Look! Hey, Look! Hey, Look! Hey, Look! Hey, Look! Hey, Look! Hey, Look!
+gohd.quest.chalice.text=When Chalices filled with different liquids are placed close together, the liquids react with each other
+gohd.quest.rock_crystal_tools.title=Rock Crystal Tool
+gohd.quest.rock_crystal_tools.subtitle=Can be repaied in liquid starlight and shapen by Grindstone
+gohd.quest.infused_crystal_tools.title=§oCharging, GO!
+gohd.quest.shifting_star.text=Resets progress of the park tree and §cPERK POINTS!
+gohd.quest.irradiant_star.title=§oBetter than Shifting Star
+gohd.quest.irradiant_star.text=Not only resets the progress, but also restores perk points and restarts attuned constellation!
+gohd.quest.celestial_gateway.subtitle=Warp between gateways with NO COST!
+gohd.quest.astral_builders_wands.title=Astral Builder's Wands
+gohd.quest.ritual_anchor.subtitle=Move linked Ritual effect
+gohd.quest.starlight_lens.subtitle=Concentrates starlight on single block to change it
+gohd.quest.resplendent_prism.subtitle=Upgrades your enchantments randomly
+gohd.quest.resplendent_prism.text=You can change the effect by alternative recipe!
+gohd.quest.stellar_enchanter.subtitle=Enchanting or brewing with the power of constellations
+gohd.quest.tree_beacon.subtitle=Generates logs or sapling from hologram trees
+gohd.quest.mantle_of_stars.subtitle=§oPower of STAR
+gohd.quest.evershifting_fountain.subtitle=Starlight Quarry
+gohd.quest.evershifting_fountain.text=§6Only placed under Evershifting Fountain
+gohd.quest.neromantic_prime.subtitle=Environmental destructing pump
+gohd.quest.pysallidic_prime.subtitle=Starlight Attractor Obelisk
+
+# thaumcraft research
+gohd.research.base_taintology.name=Basic Taintology
+gohd.reseatch.base_taintology.stage.1=
+
+gohd.research.unlock_soulomancy.name=Discovering Soulomancy
+gohd.reseatch.unlock_soulomancy.stage.1=
+gohd.reseatch.unlock_soulomancy.stage.2=
+
+gohd.research.base_soulomancy.name=Basic Soulomancy
+
+# item tooltip
+gohd.tooltip.armor.common.name=§7§lCommon Armor§r
+gohd.tooltip.armor.uncommon.name=§a§lUncommon Armor§r
+gohd.tooltip.armor.rare.name=§9§lRare Armor§r
+gohd.tooltip.armor.epic.name=§5§lEpic Armor§r
+gohd.tooltip.armor.legendary.name=§6§lLegendary Armor§r
+gohd.tooltip.armor.mythic.name=§4§lMythic Armor§r
+
+gohd.tooltip.tool.common.name=§7§lCommon Tool§r
+gohd.tooltip.tool.uncommon.name=§a§lUncommon Tool§r
+gohd.tooltip.tool.rare.name=§9§lRare Tool§r
+gohd.tooltip.tool.epic.name=§5§lEpic Tool§r
+gohd.tooltip.tool.legendary.name=§6§lLegendary Tool§r
+gohd.tooltip.tool.mythic.name=§4§lMythic Tool§r
+
+gohd.tooltip.weapon.common.name=§7§lCommon Weapon§r
+gohd.tooltip.weapon.uncommon.name=§a§lUncommon Weapon§r
+gohd.tooltip.weapon.rare.name=§9§lRare Weapon§r
+gohd.tooltip.weapon.epic.name=§5§lEpic Weapon§r
+gohd.tooltip.weapon.legendary.name=§6§lLegendary Weapon§r
+gohd.tooltip.weapon.mythic.name=§4§lMythic Weapon§r
+
+gohd.tooltip.hided.name=§6Hide from JEI§r but §aavailable§r
+gohd.tooltip.removed.name=§4Recipe Removed!§r
+
+gohd.tooltip.wooden_pattern.name=§aPattern can be recycled into Wooden Form by crafting§r
+gohd.tooltip.wooden_form.name=§aCompatible with Pattern§r
+gohd.tooltip.smeltery_controller.name=§4Disabled§r
+gohd.tooltip.cast_chisel.name=§aYou can change part type with chisel§r
+
+//gohd.tooltip.dreaming_daisy.name=§7§oWhat dream do you want to see?§r
