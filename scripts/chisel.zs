@@ -4,7 +4,7 @@
 # 情報 : Chiselの改変
 #======================================================================
 
-#priority 95
+#priority 0
 
 //crafttweakerからclassをimport
 import crafttweaker.item.IItemStack;
