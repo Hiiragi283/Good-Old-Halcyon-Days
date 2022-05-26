@@ -1,0 +1,14 @@
+{
+	x: -3.0d,
+	y: 1.0d,
+	dependencies: [
+		"c1775971"
+	],
+	tasks: [{
+		uid: "54890c76",
+		type: "item",
+		items: [{
+			item: "contenttweaker:token_obsidian"
+		}]
+	}]
+}

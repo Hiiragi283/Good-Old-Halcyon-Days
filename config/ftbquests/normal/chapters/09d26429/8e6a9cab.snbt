@@ -1,0 +1,34 @@
+{
+	title: "{gohd.09d26429.8e6a9cab.title}",
+	icon: "minecraft:stick",
+	x: -1.5d,
+	y: 0.0d,
+	dependencies: [
+		"648774ca"
+	],
+	tasks: [{
+		uid: "75ef15d6",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "treeSapling",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any treeSapling"
+				}
+			}
+		}]
+	},
+	{
+		uid: "7a080bee",
+		type: "item",
+		items: [{
+			item: "minecraft:stick"
+		}]
+	}]
+}

@@ -1,9 +1,9 @@
 {
 	title: "{gohd.09d26429.8ebddfdc.title}",
-	x: -1.5d,
-	y: 3.0d,
+	x: -1.0d,
+	y: 2.0d,
 	dependencies: [
-		"dbb48ae7"
+		"648774ca"
 	],
 	tasks: [{
 		uid: "f47ecac5",

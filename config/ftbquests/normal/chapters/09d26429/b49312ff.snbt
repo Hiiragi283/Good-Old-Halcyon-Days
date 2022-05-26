@@ -1,0 +1,15 @@
+{
+	x: -2.5d,
+	y: 0.0d,
+	description: "{gohd.09d26429.b49312ff.subtitle}",
+	dependencies: [
+		"2b45ab00"
+	],
+	tasks: [{
+		uid: "ab91aaf6",
+		type: "item",
+		items: [{
+			item: "artisanworktables:workshop 1 10"
+		}]
+	}]
+}

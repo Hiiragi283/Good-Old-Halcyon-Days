@@ -1,0 +1,27 @@
+{
+	"block_pools": [
+		{
+			"name": "pebble_stone",
+			"type": {
+				"type": "ore",
+				"name": "stone"
+			},
+			"clicktype": "right",
+			"properties": [
+				{
+					"type": "require_item",
+					"name": "minecraft:stick",
+					"meta": 0,
+					"amount": 1
+				}
+			],
+			"drops": [
+				{
+					"name": "contenttweaker:pebble_stone",
+					"meta": 0,
+					"chance": 30
+				}
+			]
+		}
+	]
+}

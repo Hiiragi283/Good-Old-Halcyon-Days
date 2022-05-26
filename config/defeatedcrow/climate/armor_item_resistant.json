@@ -1,174 +1,174 @@
 {
-    "advancedrocketry:spacehelmet": {
-        "heat": 3.0,
-        "cold": 3.0
-    },
-    "advancedrocketry:spacechestplate": {
-        "heat": 3.0,
-        "cold": 3.0
-    },
-    "advancedrocketry:spaceleggings": {
-        "heat": 3.0,
-        "cold": 3.0
-    },
-    "advancedrocketry:spaceboots": {
-        "heat": 3.0,
-        "cold": 3.0
-    },
-    "botania:terrasteelhelm": {
-        "heat": 1.0,
-        "cold": 1.0
-    },
-    "botania:terrasteelchest": {
-        "heat": 1.0,
-        "cold": 1.0
-    },
-    "botania:terrasteellegs": {
-        "heat": 1.0,
-        "cold": 1.0
-    },
-    "botania:terrasteelboots": {
-        "heat": 1.0,
-        "cold": 1.0
-    },
-    "botania:elementiumhelm": {
-        "heat": 0.5,
-        "cold": 0.5
-    },
-    "botania:elementiumchest": {
-        "heat": 0.5,
-        "cold": 0.5
-    },
-    "botania:elementiumlegs": {
-        "heat": 0.5,
-        "cold": 0.5
-    },
-    "botania:elementiumboots": {
-        "heat": 0.5,
-        "cold": 0.5
-    },
-    "botania:manaweavehelm": {
-        "heat": 0.5,
-        "cold": 0.5
-    },
-    "botania:manaweavechest": {
-        "heat": 0.5,
-        "cold": 0.5
-    },
-    "botania:manaweavelegs": {
-        "heat": 0.5,
-        "cold": 0.5
-    },
-    "botania:manaweaveboots": {
-        "heat": 0.5,
-        "cold": 0.5
-    },
-    "railcraft:armor_goggles": {
-        "heat": 1.0,
-        "cold": 1.0
-    },
-    "railcraft:armor_overalls": {
-        "heat": 1.0,
-        "cold": 3.0
-    },
-    "techreborn:lithiumbatpack": {
-        "heat": 0.25,
-        "cold": 0.25
-    },
-    "twilightforest:naga_chestplate": {
-        "heat": 1.0,
-        "cold": 1.0
-    },
-    "twilightforest:naga_leggings": {
-        "heat": 1.0,
-        "cold": 1.0
-    },
-    "twilightforest:ironwood_helmet": {
-        "heat": 0.5,
-        "cold": 0.5
-    },
-    "twilightforest:ironwood_chestplate": {
-        "heat": 0.5,
-        "cold": 0.5
-    },
-    "twilightforest:ironwood_leggings": {
-        "heat": 0.5,
-        "cold": 0.5
-    },
-    "twilightforest:ironwood_boots": {
-        "heat": 0.5,
-        "cold": 0.5
-    },
-    "twilightforest:fiery_helmet": {
-        "heat": 3.0,
-        "cold": 0.0
-    },
-    "twilightforest:fiery_chestplate": {
-        "heat": 3.0,
-        "cold": 0.0
-    },
-    "twilightforest:fiery_leggings": {
-        "heat": 3.0,
-        "cold": 0.0
-    },
-    "twilightforest:fiery_boots": {
-        "heat": 3.0,
-        "cold": 0.0
-    },
-    "twilightforest:steeleaf_helmet": {
-        "heat": 1.0,
-        "cold": 1.0
-    },
-    "twilightforest:steeleaf_chestplate": {
-        "heat": 1.0,
-        "cold": 1.0
-    },
-    "twilightforest:steeleaf_leggings": {
-        "heat": 1.0,
-        "cold": 1.0
-    },
-    "twilightforest:steeleaf_boots": {
-        "heat": 1.0,
-        "cold": 1.0
-    },
-    "twilightforest:phantom_helmet": {
-        "heat": 2.0,
-        "cold": 2.0
-    },
-    "twilightforest:phantom_chestplate": {
-        "heat": 2.0,
-        "cold": 2.0
-    },
-    "twilightforest:yeti_helmet": {
-        "heat": 0.0,
-        "cold": 3.0
-    },
-    "twilightforest:yeti_chestplate": {
-        "heat": 0.0,
-        "cold": 3.0
-    },
-    "twilightforest:yeti_leggings": {
-        "heat": 0.0,
-        "cold": 3.0
-    },
-    "twilightforest:yeti_boots": {
-        "heat": 0.0,
-        "cold": 3.0
-    },
-    "twilightforest:arctic_helmet": {
-        "heat": 0.5,
-        "cold": 2.5
-    },
-    "twilightforest:arctic_chestplate": {
-        "heat": 0.5,
-        "cold": 2.5
-    },
-    "twilightforest:arctic_leggings": {
-        "heat": 0.5,
-        "cold": 2.5
-    },
-    "twilightforest:arctic_boots": {
-        "heat": 0.5,
-        "cold": 2.5
-    }
+	"advancedrocketry:spacehelmet": {
+		"heat": 3.0,
+		"cold": 3.0
+	},
+	"advancedrocketry:spacechestplate": {
+		"heat": 3.0,
+		"cold": 3.0
+	},
+	"advancedrocketry:spaceleggings": {
+		"heat": 3.0,
+		"cold": 3.0
+	},
+	"advancedrocketry:spaceboots": {
+		"heat": 3.0,
+		"cold": 3.0
+	},
+	"botania:terrasteelhelm": {
+		"heat": 1.0,
+		"cold": 1.0
+	},
+	"botania:terrasteelchest": {
+		"heat": 1.0,
+		"cold": 1.0
+	},
+	"botania:terrasteellegs": {
+		"heat": 1.0,
+		"cold": 1.0
+	},
+	"botania:terrasteelboots": {
+		"heat": 1.0,
+		"cold": 1.0
+	},
+	"botania:elementiumhelm": {
+		"heat": 0.5,
+		"cold": 0.5
+	},
+	"botania:elementiumchest": {
+		"heat": 0.5,
+		"cold": 0.5
+	},
+	"botania:elementiumlegs": {
+		"heat": 0.5,
+		"cold": 0.5
+	},
+	"botania:elementiumboots": {
+		"heat": 0.5,
+		"cold": 0.5
+	},
+	"botania:manaweavehelm": {
+		"heat": 0.5,
+		"cold": 0.5
+	},
+	"botania:manaweavechest": {
+		"heat": 0.5,
+		"cold": 0.5
+	},
+	"botania:manaweavelegs": {
+		"heat": 0.5,
+		"cold": 0.5
+	},
+	"botania:manaweaveboots": {
+		"heat": 0.5,
+		"cold": 0.5
+	},
+	"railcraft:armor_goggles": {
+		"heat": 1.0,
+		"cold": 1.0
+	},
+	"railcraft:armor_overalls": {
+		"heat": 1.0,
+		"cold": 3.0
+	},
+	"techreborn:lithiumbatpack": {
+		"heat": 0.25,
+		"cold": 0.25
+	},
+	"twilightforest:naga_chestplate": {
+		"heat": 1.0,
+		"cold": 1.0
+	},
+	"twilightforest:naga_leggings": {
+		"heat": 1.0,
+		"cold": 1.0
+	},
+	"twilightforest:ironwood_helmet": {
+		"heat": 0.5,
+		"cold": 0.5
+	},
+	"twilightforest:ironwood_chestplate": {
+		"heat": 0.5,
+		"cold": 0.5
+	},
+	"twilightforest:ironwood_leggings": {
+		"heat": 0.5,
+		"cold": 0.5
+	},
+	"twilightforest:ironwood_boots": {
+		"heat": 0.5,
+		"cold": 0.5
+	},
+	"twilightforest:fiery_helmet": {
+		"heat": 3.0,
+		"cold": 0.0
+	},
+	"twilightforest:fiery_chestplate": {
+		"heat": 3.0,
+		"cold": 0.0
+	},
+	"twilightforest:fiery_leggings": {
+		"heat": 3.0,
+		"cold": 0.0
+	},
+	"twilightforest:fiery_boots": {
+		"heat": 3.0,
+		"cold": 0.0
+	},
+	"twilightforest:steeleaf_helmet": {
+		"heat": 1.0,
+		"cold": 1.0
+	},
+	"twilightforest:steeleaf_chestplate": {
+		"heat": 1.0,
+		"cold": 1.0
+	},
+	"twilightforest:steeleaf_leggings": {
+		"heat": 1.0,
+		"cold": 1.0
+	},
+	"twilightforest:steeleaf_boots": {
+		"heat": 1.0,
+		"cold": 1.0
+	},
+	"twilightforest:phantom_helmet": {
+		"heat": 2.0,
+		"cold": 2.0
+	},
+	"twilightforest:phantom_chestplate": {
+		"heat": 2.0,
+		"cold": 2.0
+	},
+	"twilightforest:yeti_helmet": {
+		"heat": 0.0,
+		"cold": 3.0
+	},
+	"twilightforest:yeti_chestplate": {
+		"heat": 0.0,
+		"cold": 3.0
+	},
+	"twilightforest:yeti_leggings": {
+		"heat": 0.0,
+		"cold": 3.0
+	},
+	"twilightforest:yeti_boots": {
+		"heat": 0.0,
+		"cold": 3.0
+	},
+	"twilightforest:arctic_helmet": {
+		"heat": 0.5,
+		"cold": 2.5
+	},
+	"twilightforest:arctic_chestplate": {
+		"heat": 0.5,
+		"cold": 2.5
+	},
+	"twilightforest:arctic_leggings": {
+		"heat": 0.5,
+		"cold": 2.5
+	},
+	"twilightforest:arctic_boots": {
+		"heat": 0.5,
+		"cold": 2.5
+	}
 }

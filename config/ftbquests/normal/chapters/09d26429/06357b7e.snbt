@@ -1,0 +1,15 @@
+{
+	x: 1.5d,
+	y: -1.0d,
+	description: "{link.youtu.be.2P2TC8Tlq7M.g}",
+	dependencies: [
+		"648774ca"
+	],
+	tasks: [{
+		uid: "2908857f",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_ore_stone_new 1 1"
+		}]
+	}]
+}

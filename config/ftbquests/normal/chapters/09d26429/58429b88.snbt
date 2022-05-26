@@ -1,0 +1,22 @@
+{
+	x: 4.5d,
+	y: -3.0d,
+	dependencies: [
+		"7258a8a2",
+		"a1e882a3"
+	],
+	tasks: [{
+		uid: "3550c147",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_ore_dustblock 1 4"
+		}]
+	},
+	{
+		uid: "d679fa29",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_ore_metal_alloy"
+		}]
+	}]
+}

@@ -1,0 +1,11 @@
+{
+	x: 0.5d,
+	y: -3.0d,
+	tasks: [{
+		uid: "8973786c",
+		type: "item",
+		items: [{
+			item: "techreborn:iron_alloy_furnace"
+		}]
+	}]
+}

@@ -1,0 +1,48 @@
+{
+	title: "{gohd.09d26429.8e32b0c6.title}",
+	x: -4.0d,
+	y: 1.0d,
+	dependencies: [
+		"2453cbe0"
+	],
+	tasks: [{
+		uid: "71bf0b11",
+		type: "item",
+		items: [{
+			id: "tconstruct:pick_head",
+			tag: {
+				Material: "obsidian"
+			}
+		}]
+	},
+	{
+		uid: "932b35dd",
+		type: "item",
+		items: [{
+			id: "tconstruct:shovel_head",
+			tag: {
+				Material: "obsidian"
+			}
+		}]
+	},
+	{
+		uid: "49a0529c",
+		type: "item",
+		items: [{
+			id: "tconstruct:axe_head",
+			tag: {
+				Material: "obsidian"
+			}
+		}]
+	},
+	{
+		uid: "69c6d541",
+		type: "item",
+		items: [{
+			id: "tconstruct:sword_blade",
+			tag: {
+				Material: "obsidian"
+			}
+		}]
+	}]
+}

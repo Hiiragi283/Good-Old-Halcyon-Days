@@ -1,0 +1,49 @@
+{
+	title: "{gohd.09d26429.4c90a4fb.title}",
+	x: 5.0d,
+	y: 2.0d,
+	dependencies: [
+		"44c3a0a3",
+		"ead0b171"
+	],
+	tasks: [{
+		uid: "793bc3d0",
+		type: "item",
+		items: [{
+			id: "tconstruct:pick_head",
+			tag: {
+				Material: "bronze"
+			}
+		}]
+	},
+	{
+		uid: "3cd04849",
+		type: "item",
+		items: [{
+			id: "tconstruct:shovel_head",
+			tag: {
+				Material: "bronze"
+			}
+		}]
+	},
+	{
+		uid: "c6d50ead",
+		type: "item",
+		items: [{
+			id: "tconstruct:axe_head",
+			tag: {
+				Material: "bronze"
+			}
+		}]
+	},
+	{
+		uid: "7814e54f",
+		type: "item",
+		items: [{
+			id: "tconstruct:sword_blade",
+			tag: {
+				Material: "bronze"
+			}
+		}]
+	}]
+}

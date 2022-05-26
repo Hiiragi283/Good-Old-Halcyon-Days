@@ -1,10 +1,10 @@
 {
 	title: "{gohd.09d26429.e0c2b03d.title}",
-	x: 1.0d,
+	x: -3.5d,
 	y: 2.0d,
 	dependencies: [
-		"dbb48ae7",
-		"4fb7c614"
+		"b49312ff",
+		"dbb48ae7"
 	],
 	tasks: [{
 		uid: "0e68e47c",

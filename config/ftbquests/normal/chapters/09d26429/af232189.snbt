@@ -1,0 +1,28 @@
+{
+	icon: "techreborn:ingot 1 1",
+	x: 6.5d,
+	y: -3.0d,
+	shape: "hexagon",
+	dependencies: [
+		"58429b88"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "dac5777b",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "ingotBrass",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any ingotBrass"
+				}
+			}
+		}]
+	}]
+}
