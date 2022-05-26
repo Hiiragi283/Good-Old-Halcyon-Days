@@ -1,5 +1,21 @@
 
 #Items
+item.contenttweaker.pebble_stone.name=Stone Pebble
+item.contenttweaker.pebble_granite.name=Granite Pebble
+item.contenttweaker.pebble_diorite.name=Diorite Pebble
+item.contenttweaker.pebble_andesite.name=Andesite Pebble
+item.contenttweaker.pebble_bedrock.name=Bedrock Pebble
+item.contenttweaker.pebble_obsidian.name=Obsidian Pebble
+item.contenttweaker.pebble_netherrack.name=Netherrack Pebble
+item.contenttweaker.pebble_end_stone.name=End Stone Pebble
+item.contenttweaker.pebble_prismarine.name=Prismarine Pebble
+item.contenttweaker.token_stone.name=Stone Token
+item.contenttweaker.token_obsidian.name=Obsidian Token
+item.contenttweaker.token_netherrack.name=Netherrack Token
+item.contenttweaker.token_end_stone.name=End Stone Token
+item.contenttweaker.token_prismarine.name=Prismarine Token
+
+#Blocks
 tile.contenttweaker.unfired_casting_channel.name=Unfired Casting Channel
 tile.contenttweaker.unfired_casting_table.name=Unfired Casting Table
 tile.contenttweaker.unfired_casting_basin.name=Unfired Casting Basin
