@@ -5,6 +5,7 @@
 #======================================================================
 
 #priority 0
+#norun
 
 //crafttweakerからclassをimport
 import crafttweaker.item.IItemStack;

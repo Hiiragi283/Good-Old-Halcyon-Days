@@ -11,6 +11,7 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 
 //各種modからclassをimport
+import mods.artisanworktables.builder.RecipeBuilder;
 import mods.ctintegration.util.RecipePattern;
 
 //scriptのimport

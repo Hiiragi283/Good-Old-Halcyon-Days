@@ -82,7 +82,7 @@ print("Start loading HiiragiUtils.zs ...");
         var id as string = item.definition.id.split(":")[1];
         var meta as int = item.metadata;
         return (owner ~ "_" ~ id ~ "_" ~ meta);
-    } 
+    }
 
 //代入されたILiquidStackから名前を生成する関数
     function getNameLiquid (fluid as ILiquidStack) as string {

@@ -9,6 +9,7 @@
 //crafttweakerからclassをimport
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
+import crafttweaker.oredict.IOreDictEntry;
 
 //各種modからclassをimport
 import mods.ctintegration.util.RecipePattern;
@@ -20,6 +21,12 @@ import scripts.HiiragiUtils;
 print("Start loading chisel.zs ...");
 
 //変数の定義
+	//chisel（道具）に鉱石辞書を付与する
+		<ore:artisansChisel>.add([
+			<chisel:chisel_iron>,
+			<chisel:chisel_diamond>,
+			<chisel:chisel_hitech>,
+		]);
 
 //作業台レシピの編集
     //削除
@@ -45,6 +52,19 @@ print("Start loading chisel.zs ...");
 //AWレシピの編集
     //import
     //新規
+
+//OreDict
+	val chiselOreDict as IItemStack[][string] = {
+		"block_peridot": <ore:blockPeridot>.items,
+		"block_ruby": <ore:blockRuby>.items,
+		"block_sapphire": <ore:blockSapphire>.items,
+	};
+		for i, j in chiselOreDict {
+			mods.chisel.Carving.addGroup(i);
+			for k in j {
+				mods.chisel.Carving.addVariation(i, k);
+			}
+		}
 
 //Tinker's Contruct / Complement
     //Scorched Block

@@ -11,6 +11,7 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 
 //各種modからclassをimport
+import mods.artisanworktables.builder.RecipeBuilder;
 import mods.ctintegration.util.RecipePattern;
 
 //scriptのimport
@@ -26,6 +27,7 @@ print("Start loading unification.zs ...");
         val removeCrafting as IItemStack[] = [
             <dcs_climate:dcs_ore_gemblock:4>,
             <techreborn:nuggets:24>,
+			<thermalfoundation:storage_resource:1>,
         ];
         for i in removeCrafting {
             HiiragiUtils.removeCrafting(i);
@@ -34,8 +36,8 @@ print("Start loading unification.zs ...");
 //unidict:dustiron_x1_size.1
 
         val removeCraftingName as string[] = [
-            "unidict:dustiron_x1_size.1",
             "dcs_climate:main_container/dcs_gem_blue_1",
+			"dcs_climate:main_yagen/dcs_gem_layer_1",
         ];
         for i in removeCraftingName {
             recipes.removeByRecipeName(i);
@@ -55,6 +57,7 @@ print("Start loading unification.zs ...");
         HiiragiUtils.addCrafting(false, true, <tconstruct:slimesling:5>, RecipePattern.init(["ABA", "C C", " C "]).map({A:<minecraft:string>, B:<tconstruct:slime_congealed:5>, C:<tconstruct:edible:5>}).ingredients);
         HiiragiUtils.addCrafting(false, true, <tconstruct:slime_boots:5>, RecipePattern.init(["A A", "B B"]).map({A:<tconstruct:edible:5>, B:<tconstruct:slime_congealed:5>}).ingredients);
         HiiragiUtils.addCrafting(false, true, <minecraft:trapdoor>*2, RecipePattern.init(["AAA", "AAA"]).map({A:<minecraft:planks:0>}).ingredients);
+		HiiragiUtils.addCrafting(true, true, <appliedenergistics2:material>*4, [[<appliedenergistics2:quartz_block:0>]]);
 
     //新規
 
@@ -73,6 +76,105 @@ print("Start loading unification.zs ...");
 //AWレシピの編集
     //import
     //新規
+		RecipeBuilder.get("farmer")
+		.setShapeless([<ore:pebbleStone>, <ore:pebbleStone>])
+		.addOutput(<contenttweaker:token_stone> * 25)
+		.create();
+		RecipeBuilder.get("farmer")
+		.setShapeless([<ore:pebbleGranite>, <ore:pebbleGranite>])
+		.addOutput(<contenttweaker:token_stone> * 25)
+		.create();
+		RecipeBuilder.get("farmer")
+		.setShapeless([<ore:pebbleDiorite>, <ore:pebbleDiorite>])
+		.addOutput(<contenttweaker:token_stone> * 25)
+		.create();
+		RecipeBuilder.get("farmer")
+		.setShapeless([<ore:pebbleAndesite>, <ore:pebbleAndesite>])
+		.addOutput(<contenttweaker:token_stone> * 25)
+		.create();
+		RecipeBuilder.get("farmer")
+		.setShapeless([<ore:pebbleObsidian>, <ore:pebbleObsidian>])
+		.addOutput(<contenttweaker:token_obsidian> * 25)
+		.create();
+		RecipeBuilder.get("farmer")
+		.setShapeless([<ore:pebbleNetherrack>, <ore:pebbleStone>])
+		.addOutput(<contenttweaker:token_netherrack> * 25)
+		.create();
+		RecipeBuilder.get("farmer")
+		.setShapeless([<ore:pebbleEndstone>, <ore:pebbleEndstone>])
+		.addOutput(<contenttweaker:token_end_stone> * 25)
+		.create();
+		RecipeBuilder.get("farmer")
+		.setShapeless([<ore:pebblePrismarine>, <ore:pebblePrismarine>])
+		.addOutput(<contenttweaker:token_prismarine> * 25)
+		.create();
+
+		val terraFirmaPick = RecipePattern.init([
+			" AA  ",
+			"   A ",
+			"    A",
+			"    A"]);
+		val terraFirmaShovel = RecipePattern.init([
+			" AAA ",
+			" AAA ",
+			" AAA ",
+			"  A  "]);
+		val terraFirmaAxe = RecipePattern.init([
+			" A   ",
+			"AAAA ",
+			"AAAAA",
+			"AAAA ",
+			" A   "]);
+		val terraFirmaBlade = RecipePattern.init([
+			"   AA",
+			"  AAA",
+			" AAA ",
+			"AAA  ",
+			" A   "]);
+		val terraFirmaKama = RecipePattern.init([
+			"AAAAA",
+			"   AA"]);
+		val terraFirmaKnife = RecipePattern.init([
+			"A   A",
+			"AA AA",
+			"AA AA",
+			"AA AA",
+			"AA AA"]);
+
+		val terraFirmaMaterial as string[IItemStack] = {
+			<contenttweaker:token_stone>: "stone",
+			<contenttweaker:token_obsidian>: "obsidian",
+			<contenttweaker:token_netherrack>: "netherrack",
+			<contenttweaker:token_end_stone>: "endstone",
+			<contenttweaker:token_prismarine>: "prismarine",
+			<minecraft:flint>: "flint",
+		};
+		for i, j in terraFirmaMaterial {
+			RecipeBuilder.get("farmer")
+				.setShaped(terraFirmaPick.map({A:i}).ingredients)
+				.addOutput(<tconstruct:pick_head>.withTag({Material: j}))
+				.create();
+				RecipeBuilder.get("farmer")
+				.setShaped(terraFirmaShovel.map({A:i}).ingredients)
+				.addOutput(<tconstruct:shovel_head>.withTag({Material: j}))
+				.create();
+				RecipeBuilder.get("farmer")
+				.setShaped(terraFirmaAxe.map({A:i}).ingredients)
+				.addOutput(<tconstruct:axe_head>.withTag({Material: j}))
+				.create();
+				RecipeBuilder.get("farmer")
+				.setShaped(terraFirmaBlade.map({A:i}).ingredients)
+				.addOutput(<tconstruct:sword_blade>.withTag({Material: j}))
+				.create();
+				RecipeBuilder.get("farmer")
+				.setShaped(terraFirmaKama.map({A:i}).ingredients)
+				.addOutput(<tconstruct:kama_head>.withTag({Material: j}))
+				.create();
+				RecipeBuilder.get("farmer")
+				.setShaped(terraFirmaKnife.map({A:i}).ingredients)
+				.addOutput(<tconstruct:knife_blade>.withTag({Material: j}))
+				.create();
+		}
 
 //JEIからエントリを完全に削除
     val removeFromJEI as IItemStack[] = [
@@ -93,6 +195,7 @@ print("Start loading unification.zs ...");
 //鉱石辞書の削除
     <ore:dustWood>.remove(<dcs_climate:dcs_fooddust:7>);
     <ore:blockAluminium>.remove(<techreborn:storage:1>);
+	//HiiragiUtils.removeOreDict(<dcs_climate:dcs_gem_layer:4>);
     HiiragiUtils.removeOreDict(<libvulpes:ore0:4>);
     HiiragiUtils.removeOreDict(<libvulpes:ore0:5>);
     HiiragiUtils.removeOreDict(<libvulpes:ore0:8>);
@@ -100,6 +203,17 @@ print("Start loading unification.zs ...");
     HiiragiUtils.removeOreDict(<libvulpes:ore0:10>);
 
 //鉱石辞書の追加
+	<ore:pebbleStone>.add(<contenttweaker:pebble_stone>);
+	<ore:pebbleGranite>.add(<contenttweaker:pebble_granite>);
+	<ore:pebbleDiorite>.add(<contenttweaker:pebble_diorite>);
+	<ore:pebbleBedrock>.add(<contenttweaker:pebble_bedrock>);
+	<ore:pebbleObsidian>.add(<contenttweaker:pebble_obsidian>);
+	<ore:pebbleNetherrack>.add(<contenttweaker:pebble_netherrack>);
+	<ore:pebbleEndstone>.add(<contenttweaker:pebble_end_stone>);
+	<ore:pebblePrismarine>.add(<contenttweaker:pebble_prismarine>);
+
+	<ore:blockFuelCoke>.add(<railcraft:generic:6>);
+
     <ore:cableTin>.add(<techreborn:cable:1>);
     <ore:cableCopper>.add(<techreborn:cable:0>);
     <ore:cableGold>.add(<techreborn:cable:2>);
@@ -109,6 +223,8 @@ print("Start loading unification.zs ...");
     <ore:cableGoldInsulated>.add(<techreborn:cable:6>);
     <ore:cableAluminumInsulated>.add(<techreborn:cable:7>);
     <ore:cableSuperconductor>.add(<techreborn:cable:8>);
+
+	<ore:blockCoke>.add(<thermalfoundation:storage_resource:1>);
 
 //このscriptの読み込みの完了をログに出力
 print("unification.zs loaded!");

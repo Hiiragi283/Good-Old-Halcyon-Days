@@ -28,16 +28,36 @@ print("Start loading _TEMPLATE.zs ...");
 //アイテムの登録
     val items as string[] = [
         "elven_pearl",
-        "ephemerald"
+        "ephemerald",
+		"token_stone",
+		"token_obsidian",
+		"token_netherrack",
+		"token_end_stone",
+		"token_prismarine",
     ];
     for i in items {
         RussellUtils.addItem(i);
     }
 
+	val itemsPebble as string[string] = {
+		"pebble_stone": "CDCDCD",
+		"pebble_granite": "CFA18C",
+		"pebble_diorite": "EFEFEF",
+		"pebble_andesite": "BEBEBE",
+		"pebble_bedrock": "2F2F2F",
+		"pebble_obsidian": "503264",
+		"pebble_netherrack": "C80000",
+		"pebble_end_stone": "D9DE9E",
+		"pebble_prismarine": "C8FFFF",
+	};
+	for i, j in itemsPebble {
+		RussellUtils.addItemColored(i, j, "dcs_climate:items/ores/gem_chal_white");
+	}
+
 //ブロックの登録
-    RussellUtils.addBlock("unfired_casting_channel", <blockmaterial:grass>, 3.0, 0.5, "shovel", -1, <soundtype:ground>);
-    RussellUtils.addBlock("unfired_casting_table", <blockmaterial:grass>, 3.0, 0.5, "shovel", -1, <soundtype:ground>);
-    RussellUtils.addBlock("unfired_casting_basin", <blockmaterial:grass>, 3.0, 0.5, "shovel", -1, <soundtype:ground>);
+    RussellUtils.addBlockAdvanced("unfired_casting_channel", <blockmaterial:grass>, 3.0, 0.5, "shovel", -1, <soundtype:ground>, false);
+    RussellUtils.addBlockAdvanced("unfired_casting_table", <blockmaterial:grass>, 3.0, 0.5, "shovel", -1, <soundtype:ground>, false);
+    RussellUtils.addBlockAdvanced("unfired_casting_basin", <blockmaterial:grass>, 3.0, 0.5, "shovel", -1, <soundtype:ground>, false);
 
 //このscriptの読み込みの完了をログに出力
 print("_TEMPLATE.zs loaded!");

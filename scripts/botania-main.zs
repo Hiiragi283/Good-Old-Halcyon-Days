@@ -227,7 +227,7 @@ print("Start loading botania-main.zs ...");
 //Thaumcraftの注入の儀式
 /*
     mods.thaumcraft.Infusion.registerRecipe("runic_altar", "", <botania:runealtar>,
-        10,[<aspect:ordo>*128, <aspect:praecantatio>*64, <aspect:alkimia>*64], 
+        10,[<aspect:ordo>*128, <aspect:praecantatio>*64, <aspect:alkimia>*64],
         <botania:manaresource:2>, [
             <twilightforest:castle_rune_brick:3>, <ore:plateLivingrock>, <ore:plateLivingrock>,
             <twilightforest:castle_rune_brick:1>, <ore:plateLivingrock>, <ore:plateLivingrock>,
@@ -235,13 +235,13 @@ print("Start loading botania-main.zs ...");
             <twilightforest:castle_rune_brick:0>, <ore:plateLivingrock>, <ore:plateLivingrock>
         ]);
     mods.thaumcraft.Infusion.registerRecipe("elven_runic_altar", "", <botanicadds:elven_altar>,
-        10,[<aspect:ordo>*128, <aspect:praecantatio>*64, <aspect:alkimia>*64], 
+        10,[<aspect:ordo>*128, <aspect:praecantatio>*64, <aspect:alkimia>*64],
         <botania:manaresource:9>, [
             <twilightforest:castle_rune_brick:3>, <ore:plateDreamrock>, <ore:plateDreamrock>,
             <twilightforest:castle_rune_brick:1>, <ore:plateDreamrock>, <ore:plateDreamrock>,
             <twilightforest:castle_rune_brick:2>, <ore:plateDreamrock>, <ore:plateDreamrock>,
             <twilightforest:castle_rune_brick:0>, <ore:plateDreamrock>, <ore:plateDreamrock>
-        ]);  
+        ]);
 */
 //このscriptの読み込みの完了をログに出力
 print("botania-main.zs loaded!");

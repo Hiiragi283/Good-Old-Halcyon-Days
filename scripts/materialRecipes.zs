@@ -12,6 +12,7 @@ import crafttweaker.item.IIngredient;
 import crafttweaker.oredict.IOreDict;
 
 //各種modからclassをimport
+import mods.artisanworktables.builder.RecipeBuilder;
 import mods.ctintegration.util.RecipePattern;
 import mods.techreborn.plateBendingMachine;
 import mods.techreborn.rollingMachine;

@@ -7,6 +7,7 @@
 #======================================================================
 
 #priority 90
+#norun
 
 //crafttweakerからclassをimport
 import crafttweaker.data.IData;
@@ -217,7 +218,7 @@ for tier, items in armorTier {
 }
 
 //Chain Armor (vanilla)
-    
+
     RecipeBuilder.get("basic")
         .setShaped(RecipePattern.init(["AAA", "A A"]).map({A:<ore:ringWroughtIron>}).ingredients)
         .setSecondaryIngredients([<minecraft:leather_helmet>.marked("inherit")])
