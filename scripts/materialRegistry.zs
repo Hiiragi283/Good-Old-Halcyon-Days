@@ -45,48 +45,47 @@ print("Start loading materialRegistry.zs ...");
 
 //素材とその色の定義
     //気体元素
-        val materialHydrogenHalide = funcRegisterMaterial("hydrogen_halide", "0088AA");
         val materialHydrogenSulfide = funcRegisterMaterial("hydrogen_sulfide", "C94404");
         val materialHalogen = funcRegisterMaterial("halogen", "2B7F7F");
 
     //非金属
         val materialGraphite = funcRegisterMaterial("Graphite", "808080");
         val materialSilicon = funcRegisterMaterial("Silicon", "3C3C50");
-        val materialPhosphorus = funcRegisterMaterial("Phosphorus", "FFFF00");
+        //val materialPhosphorus = funcRegisterMaterial("Phosphorus", "FFFF00");
         //val materialPhosphate = funcRegisterMaterial("Phosphate", "FFFF00");
-        val materialSulfur = funcRegisterMaterial("Sulfur", "C8C800");
-        val materialGallium = funcRegisterMaterial("Gallium", "434343");
-        val materialGalliumArsenide = funcRegisterMaterial("Gallium Arsenide", "A0A0A0"); //GaAs
-        val materialArsenic = funcRegisterMaterial("Arsenic", "676756");
-        val materialIndium = funcRegisterMaterial("Indium", "400080");
-        val materialIndiumGalliumPhosphide = funcRegisterMaterial("Indium Gallium Phosphide", "A08CBE"); //InGaP
+        //val materialSulfur = funcRegisterMaterial("Sulfur", "C8C800");
+        //val materialGallium = funcRegisterMaterial("Gallium", "434343");
+        //val materialGalliumArsenide = funcRegisterMaterial("Gallium Arsenide", "A0A0A0"); //GaAs
+        //val materialArsenic = funcRegisterMaterial("Arsenic", "676756");
+        //val materialIndium = funcRegisterMaterial("Indium", "400080");
+        //val materialIndiumGalliumPhosphide = funcRegisterMaterial("Indium Gallium Phosphide", "A08CBE"); //InGaP
 
     //遷移金属
         val materialAluminum = funcRegisterMaterial("Aluminum", "E2D1CE");
         val materialAlumina = funcRegisterMaterial("Alumina", "FDFDFD"); //Al2O3
-        val materialTitanium = funcRegisterMaterial("Titanium", "E6D6C1");
-        val materialTitaniumAlloy = funcRegisterMaterial("Titanium Alloy", "ae9169");
+        val materialTitanium = funcRegisterMaterial("Titanium", "F0F0F0");
+        val materialTitaniumAlloy = funcRegisterMaterial("Titanium Alloy", "AE9169");
         val materialTitaniumTetrachloride = funcRegisterMaterial("titanium_tetrachloride", "D40D5C"); //TiCl4
         val materialRutile  = funcRegisterMaterial("Rutile", "FFEE40"); //TiO2
-        val materialMangalloy = funcRegisterMaterial("Mangalloy", "bea0a4");
+        val materialMangalloy = funcRegisterMaterial("Mangalloy", "BEA0A4");
         val materialIron = funcRegisterMaterial("Iron", "C8C8C8");
-        val materialIron3Chloride = funcRegisterMaterial("Iron Chloride (III)", "0088AA"); //FeCl3
+        //val materialIron3Chloride = funcRegisterMaterial("Iron Chloride (III)", "0088AA"); //FeCl3
         val materialStainlessSteel = funcRegisterMaterial("Stainless Steel", "D6D6D9"); //Fe6Ni2Mn
         val materialSteel = funcRegisterMaterial("Steel", "808080");
         val materialToolSteel = funcRegisterMaterial("Tool Steel", "919990");
         //val materialMagnetite = funcRegisterMaterial("Magnetite", "1E1E1E");
         val materialCobalt = funcRegisterMaterial("Cobalt", "5050FA");
-        val materialCobaltite = funcRegisterMaterial("Cobaltite", "5050FA"); //CoAsS
-        val materialNickelSilver = funcRegisterMaterial("Nickelsilver", "aabfbf"); //CoAsS
+        //val materialCobaltite = funcRegisterMaterial("Cobaltite", "5050FA"); //CoAsS
+        val materialNickelSilver = funcRegisterMaterial("Nickelsilver", "AABFBF"); //CoAsS
         val materialCopper = funcRegisterMaterial("Copper", "FF6400");
-        //val materialBrass = funcRegisterMaterial("Brass", "FFB400"); //Cu3Zn
+        val materialBrass = funcRegisterMaterial("Brass", "FFB400"); //Cu3Zn
         val materialBronze = funcRegisterMaterial("Bronze", "FF8000"); //Cu3Sn
         val materialTin = funcRegisterMaterial("Tin", "DCDCDC");
-        val materialHafnium = funcRegisterMaterial("Hafnium", "010b65");
+        val materialHafnium = funcRegisterMaterial("Hafnium", "010D65");
         val materialTantalum = funcRegisterMaterial("Tantalum", "4C0001");
         val materialTantalumHafniumCarbide = funcRegisterMaterial("Tantalum Hafnium Carbide", "330066"); //HfTa2O6
         val materialPottasiumHeptaChloroTantalate = funcRegisterMaterial("Treated Tantalite", "952aff"); //K2TaCl7
-        val materialTantalite = funcRegisterMaterial("Tantalite", "952aff"); //HfTa2O6
+        val materialTantalite = funcRegisterMaterial("Tantalite", "952AFF"); //HfTa2O6
         val materialTungsten = funcRegisterMaterial("Tungsten", "677680");
         val materialTungstenCarbide = funcRegisterMaterial("Tungsten Carbide", "10181E"); //WC
         val materialTungstensteel = funcRegisterMaterial("Tungstensteel", "667680"); //WC
@@ -117,38 +116,41 @@ print("Start loading materialRegistry.zs ...");
         val materialSapphire = funcRegisterMaterial("Sapphire", "6464C8");
 
     //酸
+		val materialHydrogenHalide = funcRegisterMaterial("hydrogen_halide", "0088AA");
 
     //有機物質
 
     //未分類
-        val materialGrout = funcRegisterMaterial("Grout", "d0d1d6");
+        val materialGrout = funcRegisterMaterial("Grout", "D0D1D6");
 
     //架空素材
         val materialRedstone = funcRegisterMaterial("Redstone", "C80000");
         val materialRedAlloy = funcRegisterMaterial("Redstone Alloy", "C80000");
 
-        val materialManasteel = funcRegisterMaterial("Manasteel", "0073ff");
-        val materialTerrasteel = funcRegisterMaterial("Terrasteel", "a8fd55");
-        val materialElementium = funcRegisterMaterial("Elementium", "ef5cd0");
+        val materialManasteel = funcRegisterMaterial("Manasteel", "0073FF");
+        val materialTerrasteel = funcRegisterMaterial("Terrasteel", "A8FD55");
+        val materialElementium = funcRegisterMaterial("Elementium", "EF5CD0");
+
+		val materialIronwood = funcRegisterMaterial("Ironwood", "857648");
+		val materialFiery = funcRegisterMaterial("Fiery", "391D1E");
+		val materialKnightmetal = funcRegisterMaterial("Knightmetal", "C7D6AF");
+
+		val materialEvolite = funcRegisterMaterial("Evolite", "1D2C39");
 
 //部品の新規登録
 
 //部品の登録
     //Dust, Small Dust
         val materialDust as Material[] = [
-            //materialGraphite,
-            materialGalliumArsenide,
-            materialArsenic,
-            materialIndium,
-            materialIndiumGalliumPhosphide,
-
+			materialSilicon,
             materialAlumina,
+			materialTitaniumAlloy,
             materialRutile,
             materialMangalloy,
             materialStainlessSteel,
             materialToolSteel,
             materialCobalt,
-            materialCobaltite,
+            //materialCobaltite,
             materialNickelSilver,
             materialHafnium,
             materialTantalum,
@@ -177,7 +179,8 @@ print("Start loading materialRegistry.zs ...");
     //Casing
         val materialCasing as Material[] = [
             materialAluminum,
-            materialTitanium,
+			materialTitanium,
+            materialTitaniumAlloy,
             materialIron,
             materialStainlessSteel,
             materialSteel,
@@ -195,7 +198,7 @@ print("Start loading materialRegistry.zs ...");
 
     //Gear
         val materialGear as Material[] = [
-            materialTitanium,
+            materialTitaniumAlloy,
             materialStainlessSteel,
             materialTungstensteel,
         ];
@@ -206,6 +209,7 @@ print("Start loading materialRegistry.zs ...");
 
     //Plate
         val materialPlate as Material[] = [
+			materialTitaniumAlloy,
             materialMangalloy,
             materialStainlessSteel,
             materialToolSteel,
@@ -220,6 +224,10 @@ print("Start loading materialRegistry.zs ...");
             materialManasteel,
             materialTerrasteel,
             materialElementium,
+			materialIronwood,
+			materialFiery,
+			materialKnightmetal,
+			materialEvolite,
         ];
 
         for i in materialPlate {
@@ -234,6 +242,7 @@ print("Start loading materialRegistry.zs ...");
             materialStainlessSteel,
             materialSteel,
             materialCopper,
+			materialBrass,
             materialBronze,
             materialTungstensteel,
             materialGold,
@@ -250,18 +259,17 @@ print("Start loading materialRegistry.zs ...");
         val materialMetal as Material[] = [
             materialTantalumHafniumCarbide,
             materialTungstenCarbide,
-            //materialOsmium,
             materialBeryllium,
             materialMagnalium,
-            //materialRedAlloy,
         ];
 
         for i in materialMetal {
-            i.registerParts(["ingot", "nugget", "block", "molten"] as string[]);
+            i.registerParts(["ingot", "block", "molten"] as string[]);
         }
 
         materialGrout.registerPart("ingot");
-
+		materialEvolite.registerParts(["ingot", "molten"] as string[]);
+/*
     //Ore Sample
         val materialOreItem as Material[] = [
             //materialGraphite,
@@ -289,11 +297,11 @@ print("Start loading materialRegistry.zs ...");
         for i in materialOreItem {
             i.registerPart("ore_sample" as string);
         }
-
+*/
     //Ore (Block)
         val materialOreBlock as Material[] = [
             //materialGraphite,
-            materialCobaltite,
+            //materialCobaltite,
             materialUraninite,
             materialRockSalt,
             materialMagnesia,
@@ -317,6 +325,7 @@ print("Start loading materialRegistry.zs ...");
             "cobalt": materialCobalt,
             "tantalum_hafnium_carbide": materialTantalumHafniumCarbide,
             "tungsten_carbide": materialTungstenCarbide,
+			"electrum": materialElectrum,
             "platinum": materialPlatinum,
         };
 

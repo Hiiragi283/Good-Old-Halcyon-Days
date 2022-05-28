@@ -13,6 +13,7 @@ import crafttweaker.item.IIngredient;
 //各種modからclassをimport
 import mods.artisanworktables.builder.RecipeBuilder;
 import mods.ctintegration.util.RecipePattern;
+import mods.zenutils.I18n;
 
 //scriptのimport
 import scripts.HiiragiUtils;
@@ -38,6 +39,8 @@ print("Start loading unification.zs ...");
         val removeCraftingName as string[] = [
             "dcs_climate:main_container/dcs_gem_blue_1",
 			"dcs_climate:main_yagen/dcs_gem_layer_1",
+			"thermalfoundation:gunpowder",
+			"thermalfoundation:gunpowder_1",
         ];
         for i in removeCraftingName {
             recipes.removeByRecipeName(i);
@@ -49,26 +52,35 @@ print("Start loading unification.zs ...");
         }
 
     //上書き
-        HiiragiUtils.addCrafting(true, true, <thermalfoundation:material:802>, [[<thermalfoundation:storage_resource:1>]]);
+		HiiragiUtils.addCrafting(true, true, <appliedenergistics2:material>*4, [[<appliedenergistics2:quartz_block:0>]]);
+		HiiragiUtils.addCrafting(false, true, <tconstruct:soil>, RecipePattern.init(["AA", "AA"]).map({A:<contenttweaker:grout_ball>}).ingredients);
         HiiragiUtils.addCrafting(false, true, <minecraft:wooden_pressure_plate>, RecipePattern.init(["AA"]).map({A:<minecraft:planks:0>}).ingredients);
         HiiragiUtils.addCrafting(false, true, <minecraft:slime>, RecipePattern.init(["AAA", "AAA", "AAA"]).map({A:<minecraft:slime_ball>}).ingredients);
+		HiiragiUtils.addCrafting(false, true, <minecraft:trapdoor>*2, RecipePattern.init(["AAA", "AAA"]).map({A:<minecraft:planks:0>}).ingredients);
         HiiragiUtils.addCrafting(false, true, <tconstruct:slime:5>, RecipePattern.init(["AAA", "AAA", "AAA"]).map({A:<tconstruct:edible:5>}).ingredients);
         HiiragiUtils.addCrafting(false, true, <tconstruct:slime_congealed:5>, RecipePattern.init(["AA", "AA"]).map({A:<tconstruct:edible:5>}).ingredients);
         HiiragiUtils.addCrafting(false, true, <tconstruct:slimesling:5>, RecipePattern.init(["ABA", "C C", " C "]).map({A:<minecraft:string>, B:<tconstruct:slime_congealed:5>, C:<tconstruct:edible:5>}).ingredients);
         HiiragiUtils.addCrafting(false, true, <tconstruct:slime_boots:5>, RecipePattern.init(["A A", "B B"]).map({A:<tconstruct:edible:5>, B:<tconstruct:slime_congealed:5>}).ingredients);
-        HiiragiUtils.addCrafting(false, true, <minecraft:trapdoor>*2, RecipePattern.init(["AAA", "AAA"]).map({A:<minecraft:planks:0>}).ingredients);
-		HiiragiUtils.addCrafting(true, true, <appliedenergistics2:material>*4, [[<appliedenergistics2:quartz_block:0>]]);
+		HiiragiUtils.addCrafting(true, true, <thermalfoundation:material:802>, [[<thermalfoundation:storage_resource:1>]]);
 
     //新規
+		HiiragiUtils.addCraftingConv(<contenttweaker:grout_ball>, <contenttweaker:grout_ingot>);
 
 //かまどレシピの編集
     //削除
-        val removeFurnace as IItemStack[] = [];
+        val removeFurnace as IItemStack[] = [
+			<tconstruct:materials>,
+		];
         for i in removeFurnace {
             HiiragiUtils.removeFurnace(i);
         }
     //新規
-        val addFurnace as IIngredient[IItemStack] = {};
+        val addFurnace as IIngredient[IItemStack] = {
+			<tconstruct:materials>: <contenttweaker:grout_ingot>,
+			<tconstruct:channel>: <contenttweaker:unfired_casting_channel>,
+			<tconstruct:casting>: <contenttweaker:unfired_casting_table>,
+			<tconstruct:casting:1>: <contenttweaker:unfired_casting_basin>,
+		};
         for output, input in addFurnace {
             HiiragiUtils.addFurnace(false, output, input);
         }
@@ -178,14 +190,12 @@ print("Start loading unification.zs ...");
 
 //JEIからエントリを完全に削除
     val removeFromJEI as IItemStack[] = [
-
         //Heat And Climate
             <dcs_climate:dcs_gem:*>,
             <dcs_climate:dcs_door_marble>,
             <dcs_climate:dcs_door_greisen>,
             <dcs_climate:dcs_door_gypsum>,
             <dcs_climate:dcs_door_steel>,
-
     ];
     for i in removeFromJEI {
         HiiragiUtils.removeFromJEI(i);
@@ -196,13 +206,47 @@ print("Start loading unification.zs ...");
     <ore:dustWood>.remove(<dcs_climate:dcs_fooddust:7>);
     <ore:blockAluminium>.remove(<techreborn:storage:1>);
 	//HiiragiUtils.removeOreDict(<dcs_climate:dcs_gem_layer:4>);
-    HiiragiUtils.removeOreDict(<libvulpes:ore0:4>);
-    HiiragiUtils.removeOreDict(<libvulpes:ore0:5>);
-    HiiragiUtils.removeOreDict(<libvulpes:ore0:8>);
-    HiiragiUtils.removeOreDict(<libvulpes:ore0:9>);
-    HiiragiUtils.removeOreDict(<libvulpes:ore0:10>);
+
+	val removeLibvulpes as IItemStack[] = [
+        <libvulpes:productdust>,
+        <libvulpes:productingot>,
+        <libvulpes:productboule>,
+        <libvulpes:productnugget>,
+        <libvulpes:productplate>,
+        <libvulpes:productrod>,
+        <libvulpes:productsheet>,
+        <libvulpes:productgear>,
+        <libvulpes:ore0>,
+	];
+	for i in 0 to 10 {
+		for j in removeLibvulpes {
+			HiiragiUtils.removeFromJEI(j.definition.makeStack(i));
+			HiiragiUtils.removeOreDict(j.definition.makeStack(i));
+		}
+	}
+
+	val test as IItemStack[] = [
+        <libvulpes:metal0:4>,
+        <libvulpes:metal0:5>,
+        <libvulpes:metal0:6>,
+        //<libvulpes:metal0:7>,
+        <libvulpes:metal0:9>,
+        <libvulpes:metal0:10>,
+        //<advancedrocketry:productdust:*>,
+        //<advancedrocketry:productingot:*>,
+        //<advancedrocketry:productnugget:*>,
+        //<advancedrocketry:productplate:*>,
+        //<advancedrocketry:productrod:*>,
+        //<advancedrocketry:productgear:*>,
+    ];
 
 //鉱石辞書の追加
+	<ore:itemCloth>.add(<botania:manaresource:22>);
+	<ore:itemMagicCloth>.add(<botania:manaresource:22>);
+	<ore:ingotElementium>.add(<botania:manaresource:7>);
+	<ore:nuggetElementium>.add(<botania:manaresource:19>);
+	<ore:blockElementium>.add(<botania:storage:2>);
+
 	<ore:pebbleStone>.add(<contenttweaker:pebble_stone>);
 	<ore:pebbleGranite>.add(<contenttweaker:pebble_granite>);
 	<ore:pebbleDiorite>.add(<contenttweaker:pebble_diorite>);
@@ -225,6 +269,13 @@ print("Start loading unification.zs ...");
     <ore:cableSuperconductor>.add(<techreborn:cable:8>);
 
 	<ore:blockCoke>.add(<thermalfoundation:storage_resource:1>);
+
+//Tooltipの追加
+	<artisanworktables:workshop:10>.addTooltip(I18n.format("gohd.tooltip.terra_firma_interface.name"));
+	<contenttweaker:unfired_casting_channel>.addTooltip(I18n.format("gohd.tooltip.grout_forming.name"));
+	<contenttweaker:unfired_casting_table>.addTooltip(I18n.format("gohd.tooltip.grout_forming.name"));
+	<contenttweaker:unfired_casting_basin>.addTooltip(I18n.format("gohd.tooltip.grout_forming.name"));
+	<dcs_climate:dcs_tinder:1>.addTooltip(I18n.format("gohd.tooltip.burning_stick.name"));
 
 //このscriptの読み込みの完了をログに出力
 print("unification.zs loaded!");

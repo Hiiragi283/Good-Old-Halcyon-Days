@@ -1,7 +1,7 @@
 #======================================================================
-# ファイル名 : chisel.zs
+# ファイル名 : minecraft.zs
 # 作成者 : Hiiragi Russell Tsubasa: https://github.com/Hiiragi283
-# 情報 : Tikers Contructおよびそのアドオンの改変
+# 情報 : このファイルについて書く
 #======================================================================
 
 #priority 0
@@ -18,27 +18,18 @@ import mods.ctintegration.util.RecipePattern;
 import scripts.HiiragiUtils;
 
 //このscriptの読み込みの開始をログに出力
-print("Start loading chisel.zs ...");
+print("Start loading minecraft.zs ...");
 
 //変数の定義
-    mods.jei.JEI.addItem(<tconstruct:edible:5>);
-    mods.jei.JEI.addItem(<tconstruct:slime:5>);
-    mods.jei.JEI.addItem(<tconstruct:slime_congealed:5>);
-    mods.jei.JEI.addItem(<tconstruct:slimesling:5>);
-    mods.jei.JEI.addItem(<tconstruct:slime_boots:5>);
 
 //作業台レシピの編集
     //削除
-        val removeCrafting as IItemStack[] = [
-			<tconstruct:faucet>,
-			<tconstruct:channel>,
-			<tconstruct:casting:*>,
-		];
+        val removeCrafting as IItemStack[] = [];
         for i in removeCrafting {
             HiiragiUtils.removeCrafting(i);
         }
     //上書き
-		HiiragiUtils.addCrafting(false, true, <tcomplement:melter>, RecipePattern.init(["ABA", "ACA", "ADA"]).map({A:<tconstruct:materials:0>, B:<minecraft:hopper>, C:<tconstruct:seared_tank:*>, D:<ore:ingotIron>}).ingredients);
+		HiiragiUtils.addCrafting(false, true, <minecraft:furnace>, RecipePattern.init(["AAA", "ABA", "AAA"]).map({A:<ore:cobblestone>, B:<dcs_climate:dcs_tinder:1>}).ingredients);
     //新規
 
 //かまどレシピの編集
@@ -56,11 +47,6 @@ print("Start loading chisel.zs ...");
 //AWレシピの編集
     //import
     //新規
-		RecipeBuilder.get("basic")
-			.setShapeless([<tconstruct:channel>])
-			.addTool(<ore:artisansHandsaw>, 1)
-			.addOutput(<tconstruct:faucet>*2)
-			.create();
 
 //このscriptの読み込みの完了をログに出力
-print("chisel.zs loaded!");
+print("minecraft.zs loaded!");

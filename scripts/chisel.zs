@@ -67,7 +67,7 @@ print("Start loading chisel.zs ...");
 		}
 
 //Tinker's Contruct / Complement
-    //Scorched Block
+    /*//Scorched Block
         for i in 0 to 11 {
             recipes.remove(<tcomplement:scorched_block>.definition.makeStack(i));
         }
@@ -78,7 +78,7 @@ print("Start loading chisel.zs ...");
         }
         for i in 0 to 3 {
             mods.chisel.Carving.addVariation("scorched_slab", <tcomplement:scorched_slab2>.definition.makeStack(i));
-        }
+        }*/
     //Seared Block
         for i in 0 to 11 {
             recipes.remove(<tconstruct:seared>.definition.makeStack(i));

@@ -33,7 +33,6 @@ texturepacks
 config/acronym/saved
 config/biomesoplenty/biomes/defaults
 config/enderio/recipes/examples
-config/enderio/recipes/*.pdf
 config/tellme
 journeymap/data
 journeymap/icon
@@ -57,14 +56,15 @@ config/AppliedEnergistics2/*.cfg
 !config/AppliedEnergistics2/AppliedEnergistics2.cfg
 config/artisanintegrations/module.botania.Tools-Generated.json
 config/artisanworktables/module.Tools.Materials.Generated.json
+config/enderio/recipes/*.pdf
 config/jei/itemBlacklist.cfg
 config/jei/jei.cfg
 config/jei/worldSettings.cfg
 config/jei/bookmarks.ini
 config/InvTweaks.cfg
+config/scavenge/*.txt
 config/tinker_ore_dict_melting_cache.dat
 config/thaumicjei_itemstack_aspects.json
 config/vanillafix/methods-stable_39.csvd
 journeymap/journeymap.log
 
-!config/advRocktery/planetDefs.xml

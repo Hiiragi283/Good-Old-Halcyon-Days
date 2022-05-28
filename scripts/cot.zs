@@ -39,6 +39,8 @@ print("Start loading _TEMPLATE.zs ...");
         RussellUtils.addItem(i);
     }
 
+	RussellUtils.addItemColored("grout_ball", "D0D1D6", "minecraft:items/snowball");
+
 	val itemsPebble as string[string] = {
 		"pebble_stone": "CDCDCD",
 		"pebble_granite": "CFA18C",
@@ -58,6 +60,8 @@ print("Start loading _TEMPLATE.zs ...");
     RussellUtils.addBlockAdvanced("unfired_casting_channel", <blockmaterial:grass>, 3.0, 0.5, "shovel", -1, <soundtype:ground>, false);
     RussellUtils.addBlockAdvanced("unfired_casting_table", <blockmaterial:grass>, 3.0, 0.5, "shovel", -1, <soundtype:ground>, false);
     RussellUtils.addBlockAdvanced("unfired_casting_basin", <blockmaterial:grass>, 3.0, 0.5, "shovel", -1, <soundtype:ground>, false);
+
+	RussellUtils.addBlockAdvanced("block_evolite", <blockmaterial:iron>, 5.0, 5.0, "pickaxe", 2, <soundtype:metal>, false);
 
 //このscriptの読み込みの完了をログに出力
 print("_TEMPLATE.zs loaded!");

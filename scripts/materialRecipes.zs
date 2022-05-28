@@ -105,7 +105,6 @@ print("Start loading materialRecipes.zs ...");
             "Iron",
             "StainlessSteel",
             "Steel",
-            //"WroughtIron",
             "Copper",
             "Bronze",
             "Tin",
@@ -122,7 +121,6 @@ print("Start loading materialRecipes.zs ...");
     //Ingot, Nugget, Block
         val listIngot as string[] = [
             "StainlessSteel",
-            //"WroughtIron",
             "TungstenCarbide",
             "Beryllium",
             "Magnalium",
@@ -138,11 +136,10 @@ print("Start loading materialRecipes.zs ...");
         }
 
     //Plate
-        val listBending as string[] = [
+        /*val listBending as string[] = [
             "TitaniumAluminide",
             "TitaniumIridium",
             "StainlessSteel",
-            "WroughtIron",
             "TungstenCarbide",
             "RedstoneAlloy",
         ];
@@ -150,7 +147,7 @@ print("Start loading materialRecipes.zs ...");
             if(!isNull(oreDict["plate" ~ i].firstItem) && !isNull(oreDict["ingot" ~ i].firstItem)) {
                 mods.techreborn.plateBendingMachine.addRecipe(oreDict["plate" ~ i].firstItem, oreDict["ingot" ~ i], 2*20, HiiragiUtils.voltageTier[0]);
             }
-        }
+        }*/
 
     //Rod
         val listStick as string[] = [
@@ -161,8 +158,8 @@ print("Start loading materialRecipes.zs ...");
             "Iron",
             "StainlessSteel",
             "Steel",
-            //"WroughtIron",
             "Copper",
+			"Brass",
             "Bronze",
             "Tungstensteel",
             "Gold",

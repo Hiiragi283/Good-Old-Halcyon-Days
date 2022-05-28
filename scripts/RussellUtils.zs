@@ -6,8 +6,8 @@
 #        https://github.com/delta-nos/MorphoDays_old
 #======================================================================
 
-#loader contenttweaker
 #priority 999
+#loader contenttweaker
 
 //crafttweakerからclassをimport
 import crafttweaker.item.IItemStack;

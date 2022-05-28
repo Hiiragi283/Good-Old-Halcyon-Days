@@ -47,24 +47,24 @@ print("Start loading HiiragiUtils.zs ...");
         <ore:dyeWhite>,
     ];
 
-    /*static dyeLiquid as ILiquidStack[] = [
-        <liquid:dye_black>,
-        <liquid:dye_red>,
-        <liquid:dye_green>,
-        <liquid:dye_brown>,
-        <liquid:dye_blue>,
-        <liquid:dye_purple>,
-        <liquid:dye_cyan>,
-        <liquid:dye_light_gray>,
-        <liquid:dye_gray>,
-        <liquid:dye_pink>,
-        <liquid:dye_lime>,
-        <liquid:dye_yellow>,
-        <liquid:dye_light_blue>,
-        <liquid:dye_magenta>,
-        <liquid:dye_orange>,
-        <liquid:dye_white>,
-    ];*/
+    static dyeLiquid as ILiquidStack[] = [
+        <liquid:black>,
+        <liquid:red>,
+        <liquid:green>,
+        <liquid:brown>,
+        <liquid:blue>,
+        <liquid:purple>,
+        <liquid:cyan>,
+        <liquid:light_gray>,
+        <liquid:gray>,
+        <liquid:pink>,
+        <liquid:lime>,
+        <liquid:yellow>,
+        <liquid:light_blue>,
+        <liquid:magenta>,
+        <liquid:orange>,
+        <liquid:white>,
+    ];
 
     static voltageTier as int[] = [
         32, //ULV
