@@ -22,6 +22,181 @@
 					"chance": 30
 				}
 			]
+		},
+		{
+			"name": "pebble_granite",
+			"type": {
+				"type": "ore",
+				"name": "stoneGranite"
+			},
+			"clicktype": "right",
+			"properties": [
+				{
+					"type": "require_item",
+					"name": "minecraft:stick",
+					"meta": 0,
+					"amount": 1
+				}
+			],
+			"drops": [
+				{
+					"name": "contenttweaker:pebble_granite",
+					"meta": 0,
+					"chance": 30
+				}
+			]
+		},
+		{
+			"name": "pebble_diorite",
+			"type": {
+				"type": "ore",
+				"name": "stoneDiorite"
+			},
+			"clicktype": "right",
+			"properties": [
+				{
+					"type": "require_item",
+					"name": "minecraft:stick",
+					"meta": 0,
+					"amount": 1
+				}
+			],
+			"drops": [
+				{
+					"name": "contenttweaker:pebble_diorite",
+					"meta": 0,
+					"chance": 30
+				}
+			]
+		},
+		{
+			"name": "pebble_obsidian",
+			"type": {
+				"type": "ore",
+				"name": "obsidian"
+			},
+			"clicktype": "right",
+			"properties": [
+				{
+					"type": "require_item",
+					"name": "minecraft:stick",
+					"meta": 0,
+					"amount": 1
+				}
+			],
+			"drops": [
+				{
+					"name": "contenttweaker:pebble_obsidian",
+					"meta": 0,
+					"chance": 30
+				}
+			]
+		},
+		{
+			"name": "pebble_netherrack",
+			"type": {
+				"type": "ore",
+				"name": "netherrack"
+			},
+			"clicktype": "right",
+			"properties": [
+				{
+					"type": "require_item",
+					"name": "minecraft:stick",
+					"meta": 0,
+					"amount": 1
+				}
+			],
+			"drops": [
+				{
+					"name": "contenttweaker:pebble_netherrack",
+					"meta": 0,
+					"chance": 30
+				}
+			]
+		},
+		{
+			"name": "pebble_end_stone",
+			"type": {
+				"type": "ore",
+				"name": "endstone"
+			},
+			"clicktype": "right",
+			"properties": [
+				{
+					"type": "require_item",
+					"name": "minecraft:stick",
+					"meta": 0,
+					"amount": 1
+				}
+			],
+			"drops": [
+				{
+					"name": "contenttweaker:pebble_end_stone",
+					"meta": 0,
+					"chance": 30
+				}
+			]
+		},
+		{
+			"name": "pebble_prismarine",
+			"type": {
+				"type": "ore",
+				"name": "prismarine"
+			},
+			"clicktype": "right",
+			"properties": [
+				{
+					"type": "require_item",
+					"name": "minecraft:stick",
+					"meta": 0,
+					"amount": 1
+				}
+			],
+			"drops": [
+				{
+					"name": "contenttweaker:pebble_prismarine",
+					"meta": 0,
+					"chance": 30
+				}
+			]
+		},
+		{
+			"name": "terra_firma_interface",
+			"type": {
+				"type": "ore",
+				"name": "grass"
+			},
+			"clicktype": "right",
+			"properties": [
+				{
+					"type": "require_item",
+					"name": "contenttweaker:pebble_stone",
+					"meta": 0,
+					"amount": 1
+				},
+				{
+					"type": "consume_item",
+					"amount": 1
+				},
+				{
+					"type": "require_item",
+					"name": "contenttweaker:pebble_stone",
+					"meta": 0,
+					"amount": 1,
+					"offHand": true
+				},
+				{
+					"type": "consume_item",
+					"amount": 1,
+					"offHand": true
+				},
+				{
+					"type": "consume_block",
+					"name": "artisanworktables:workshop",
+					"meta": 10
+				}
+			]
 		}
 	]
 }

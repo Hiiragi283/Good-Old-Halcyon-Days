@@ -19,39 +19,6 @@
 		"climate_temperature": "COLD",
 		"climate_humidity": "WET"
 	},
-	"unfired_casting_channel": {
-		"recipe_type": "ADD",
-		"output": {
-			"item": "tconstruct:channel:0"
-		},
-		"climate_temperature": "KILN",
-		"climate_airflow": "TIGHT",
-		"input": {
-			"item": "contenttweaker:unfired_casting_channel:0"
-		}
-	},
-	"unfired_casting_table": {
-		"recipe_type": "ADD",
-		"output": {
-			"item": "tconstruct:casting:0"
-		},
-		"climate_temperature": "KILN",
-		"climate_airflow": "TIGHT",
-		"input": {
-			"item": "contenttweaker:unfired_casting_table:0"
-		}
-	},
-	"unfired_casting_basin": {
-		"recipe_type": "ADD",
-		"output": {
-			"item": "tconstruct:casting:1"
-		},
-		"climate_temperature": "KILN",
-		"climate_airflow": "TIGHT",
-		"input": {
-			"item": "contenttweaker:unfired_casting_basin:0"
-		}
-	},
 	"dustblock_tantalum_hafniumcarbide": {
 		"recipe_type": "ADD",
 		"output": {
