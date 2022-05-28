@@ -9,7 +9,12 @@
 		type: "item",
 		items: [{
 			item: "tconstruct:seared_tank"
-		}],
-		ignore_damage: true
+		},
+		{
+			item: "tconstruct:seared_tank 1 1"
+		},
+		{
+			item: "tconstruct:seared_tank 1 2"
+		}]
 	}]
 }

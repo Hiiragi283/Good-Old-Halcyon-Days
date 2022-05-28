@@ -1,9 +1,10 @@
 {
 	title: "{gohd.09d26429.2b45ab00.title}",
-	x: -2.0d,
+	x: -2.5d,
 	y: -1.0d,
 	text: [
-		"{gohd.09d26429.2b45ab00.desc.1}"
+		"{gohd.09d26429.2b45ab00.desc.1}",
+		"{gohd.09d26429.2b45ab00.desc.2}"
 	],
 	dependencies: [
 		"8e6a9cab"

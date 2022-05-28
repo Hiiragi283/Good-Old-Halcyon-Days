@@ -1,0 +1,26 @@
+{
+	title: "{gohd.5f3109ce.41da5781.title}",
+	x: 7.5d,
+	y: 0.0d,
+	dependencies: [
+		"8093a1e1"
+	],
+	tasks: [{
+		uid: "4111f2e4",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "ingotStainlessSteel",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any ingotStainlessSteel"
+				}
+			}
+		}]
+	}]
+}

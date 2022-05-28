@@ -1,0 +1,21 @@
+{
+	x: 12.0d,
+	y: -8.0d,
+	dependencies: [
+		"ba812d0d"
+	],
+	tasks: [{
+		uid: "9aeacd42",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_device_faucet"
+		}]
+	},
+	{
+		uid: "e140f8c4",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_device_faucet_r"
+		}]
+	}]
+}

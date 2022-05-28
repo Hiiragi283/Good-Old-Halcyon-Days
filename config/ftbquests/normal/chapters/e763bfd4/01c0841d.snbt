@@ -1,0 +1,15 @@
+{
+	x: 10.0d,
+	y: 2.0d,
+	description: "{gohd.e763bfd4.01c0841d.subtitle}",
+	dependencies: [
+		"f9c67698"
+	],
+	tasks: [{
+		uid: "bcc21abe",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_ore_heatingmetal 1 2"
+		}]
+	}]
+}

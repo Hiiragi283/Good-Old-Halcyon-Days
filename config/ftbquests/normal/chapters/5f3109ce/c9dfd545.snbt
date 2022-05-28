@@ -1,0 +1,27 @@
+{
+	title: "{gohd.5f3109ce.c9dfd545.title}",
+	x: 7.5d,
+	y: 1.0d,
+	hide_dependency_lines: true,
+	dependencies: [
+		"8093a1e1"
+	],
+	tasks: [{
+		uid: "d8fb549b",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "ingotToolSteel",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any ingotToolSteel"
+				}
+			}
+		}]
+	}]
+}

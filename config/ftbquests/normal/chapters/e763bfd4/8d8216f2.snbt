@@ -1,0 +1,23 @@
+{
+	title: "{gohd.e763bfd4.8d8216f2.title}",
+	icon: "minecraft:blaze_powder",
+	x: 4.0d,
+	y: 2.0d,
+	dependencies: [
+		"e3a30f84"
+	],
+	tasks: [{
+		uid: "8405d282",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_color 1 2"
+		}]
+	},
+	{
+		uid: "6228ad8f",
+		type: "item",
+		items: [{
+			item: "minecraft:gunpowder"
+		}]
+	}]
+}

@@ -1,0 +1,7 @@
+{
+	title: "{gohd.middleAge.title}",
+	icon: "dcs_climate:dcs_spindle 1 1",
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: ""
+}

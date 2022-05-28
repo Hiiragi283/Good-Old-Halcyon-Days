@@ -1,0 +1,19 @@
+{
+	x: 4.0d,
+	y: 0.0d,
+	dependencies: [
+		"1ebee436"
+	],
+	tasks: [{
+		uid: "35662fbc",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_device_windmill"
+		}]
+	}],
+	rewards: [{
+		uid: "059a2c91",
+		type: "item",
+		item: "dcs_climate:dcs_device_windvane"
+	}]
+}

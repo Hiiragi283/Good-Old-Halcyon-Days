@@ -6,28 +6,10 @@
 		"0caa24a5"
 	],
 	tasks: [{
-		uid: "6cc4c611",
+		uid: "61059086",
 		type: "item",
 		items: [{
-			item: "tconstruct:soil"
-		}]
-	},
-	{
-		uid: "8ba07be3",
-		type: "item",
-		items: [{
-			ForgeCaps: {
-				Parent: {
-					data: "ingotGrout",
-					id: "ore"
-				}
-			},
-			id: "itemfilters:filter",
-			tag: {
-				display: {
-					Name: "Any ingotGrout"
-				}
-			}
+			item: "contenttweaker:grout_ingot"
 		}]
 	}]
 }

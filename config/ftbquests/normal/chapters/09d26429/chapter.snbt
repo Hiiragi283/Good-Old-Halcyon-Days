@@ -1,6 +1,6 @@
 {
 	title: "{gohd.primitiveAge.title}",
-	icon: "thermalfoundation:material 1 22",
+	icon: "dcs_climate:dcs_spindle",
 	always_invisible: false,
 	group: 0,
 	default_quest_shape: "hexagon"

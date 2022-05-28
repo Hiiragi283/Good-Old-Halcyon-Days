@@ -1,0 +1,18 @@
+{
+	x: 6.0d,
+	y: -10.0d,
+	dependencies: [
+		"5a0bc24d"
+	],
+	tasks: [{
+		uid: "e80a08ed",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_food_teacup"
+		},
+		{
+			item: "dcs_climate:dcs_food_teacup 1 2"
+		}],
+		ignore_nbt: 1b
+	}]
+}

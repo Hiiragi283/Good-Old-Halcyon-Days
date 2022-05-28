@@ -1,9 +1,8 @@
 {
 	x: 1.5d,
 	y: -1.0d,
-	description: "{link.youtu.be.2P2TC8Tlq7M.g}",
 	dependencies: [
-		"648774ca"
+		"3e86f317"
 	],
 	tasks: [{
 		uid: "2908857f",

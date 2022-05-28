@@ -1,5 +1,5 @@
 {
-	icon: "techreborn:ingot 1 1",
+	title: "{gohd.5f3109ce.8178a881.title}",
 	x: 6.5d,
 	y: -3.0d,
 	shape: "hexagon",
@@ -11,18 +11,7 @@
 		uid: "dac5777b",
 		type: "item",
 		items: [{
-			ForgeCaps: {
-				Parent: {
-					data: "ingotBrass",
-					id: "ore"
-				}
-			},
-			id: "itemfilters:filter",
-			tag: {
-				display: {
-					Name: "Any ingotBrass"
-				}
-			}
+			item: "dcs_climate:dcs_ingot 1 4"
 		}]
 	}]
 }

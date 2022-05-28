@@ -1,0 +1,14 @@
+{
+	x: 2.0d,
+	y: 2.0d,
+	dependencies: [
+		"3e86f317"
+	],
+	tasks: [{
+		uid: "5e84843c",
+		type: "item",
+		items: [{
+			item: "minecraft:gunpowder"
+		}]
+	}]
+}

@@ -1,0 +1,16 @@
+{
+	x: 5.5d,
+	y: -5.0d,
+	dependencies: [
+		"af232189"
+	],
+	tasks: [{
+		uid: "a4aa2fb9",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_wrench"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

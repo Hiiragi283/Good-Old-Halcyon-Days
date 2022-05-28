@@ -1,0 +1,14 @@
+{
+	x: 13.0d,
+	y: 0.0d,
+	dependencies: [
+		"cb0b4b59"
+	],
+	tasks: [{
+		uid: "272c6704",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_oredust 1 9"
+		}]
+	}]
+}

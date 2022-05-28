@@ -1,0 +1,14 @@
+{
+	x: 2.0d,
+	y: -2.0d,
+	dependencies: [
+		"1ebee436"
+	],
+	tasks: [{
+		uid: "b086baee",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_device_handcrank"
+		}]
+	}]
+}

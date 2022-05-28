@@ -1,0 +1,43 @@
+{
+	x: 7.5d,
+	y: -5.0d,
+	dependencies: [
+		"af232189"
+	],
+	tasks: [{
+		uid: "5dc29b28",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_met_brass"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "850d4649",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_plate_brass"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "4d068d51",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_leggins_brass"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "b8287212",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_boots_brass"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

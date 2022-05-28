@@ -1,7 +1,7 @@
 {
 	title: "{gohd.09d26429.e0c2b03d.title}",
 	x: -3.5d,
-	y: 2.0d,
+	y: 1.0d,
 	dependencies: [
 		"b49312ff",
 		"dbb48ae7"
@@ -40,7 +40,7 @@
 		uid: "1b84ad8d",
 		type: "item",
 		items: [{
-			id: "tconstruct:large_sword_blade",
+			id: "tconstruct:sword_blade",
 			tag: {
 				Material: "flint"
 			}

@@ -1,7 +1,7 @@
 {
 	title: "{gohd.09d26429.8e6a9cab.title}",
 	icon: "minecraft:stick",
-	x: -1.5d,
+	x: -2.0d,
 	y: 0.0d,
 	dependencies: [
 		"648774ca"

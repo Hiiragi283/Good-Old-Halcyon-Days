@@ -1,0 +1,14 @@
+{
+	x: 6.0d,
+	y: -8.0d,
+	dependencies: [
+		"5a0bc24d"
+	],
+	tasks: [{
+		uid: "a6794f46",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_device_tea_pot"
+		}]
+	}]
+}

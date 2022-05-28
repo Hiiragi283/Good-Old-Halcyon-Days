@@ -1,4 +1,5 @@
 {
+	icon: "dcs_climate:dcs_ore_dustblock 1 9",
 	x: 4.5d,
 	y: -1.0d,
 	dependencies: [

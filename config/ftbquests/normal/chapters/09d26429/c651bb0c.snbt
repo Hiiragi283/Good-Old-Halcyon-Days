@@ -1,0 +1,27 @@
+{
+	icon: "techreborn:dust 1 27",
+	x: 0.5d,
+	y: -5.0d,
+	shape: "hexagon",
+	dependencies: [
+		"4866a0fe"
+	],
+	tasks: [{
+		uid: "96081260",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "dustIron",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any dustIron"
+				}
+			}
+		}]
+	}]
+}

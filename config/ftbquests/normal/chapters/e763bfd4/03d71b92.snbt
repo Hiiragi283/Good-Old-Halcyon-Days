@@ -1,0 +1,14 @@
+{
+	x: 8.0d,
+	y: 10.0d,
+	dependencies: [
+		"6724c976"
+	],
+	tasks: [{
+		uid: "a5ef6a81",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_device_crafting_counter"
+		}]
+	}]
+}

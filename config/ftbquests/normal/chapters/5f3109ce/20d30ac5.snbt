@@ -1,0 +1,16 @@
+{
+	title: "{gohd.5f3109ce.20d30ac5.title}",
+	x: 9.0d,
+	y: 1.0d,
+	hide_dependency_lines: true,
+	dependencies: [
+		"41da5781"
+	],
+	tasks: [{
+		uid: "c6d4284d",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_ingot 1 18"
+		}]
+	}]
+}

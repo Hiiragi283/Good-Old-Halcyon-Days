@@ -1,0 +1,27 @@
+{
+	title: "{gohd.5f3109ce.8178a881.title}",
+	icon: "dcs_climate:dcs_ingot 1 4",
+	x: 3.0d,
+	y: 0.0d,
+	dependencies: [
+		"62a4b686"
+	],
+	tasks: [{
+		uid: "6fed99ec",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "ingotBrass",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any ingotBrass"
+				}
+			}
+		}]
+	}]
+}

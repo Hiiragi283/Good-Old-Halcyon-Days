@@ -1,0 +1,15 @@
+{
+	title: "{gohd.middleAge.title}",
+	icon: "techreborn:plates 1 18",
+	x: 0.0d,
+	y: 0.0d,
+	shape: "square",
+	dependencies: [
+		"af232189"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "a3144494",
+		type: "checkmark"
+	}]
+}

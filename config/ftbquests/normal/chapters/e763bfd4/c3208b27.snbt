@@ -1,0 +1,14 @@
+{
+	x: 15.0d,
+	y: 2.0d,
+	dependencies: [
+		"ad2400ca"
+	],
+	tasks: [{
+		uid: "e695fda4",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_ingot 1 17"
+		}]
+	}]
+}

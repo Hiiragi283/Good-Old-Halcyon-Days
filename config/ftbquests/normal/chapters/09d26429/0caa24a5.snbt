@@ -1,29 +1,33 @@
 {
-	title: "{gohd.09d26429.8ebddfdc.title}",
 	x: -1.0d,
 	y: 2.0d,
 	dependencies: [
 		"648774ca"
 	],
 	tasks: [{
-		uid: "f47ecac5",
+		uid: "7d41acfb",
 		type: "item",
 		items: [{
-			item: "minecraft:sand"
-		}]
+			item: "tconstruct:soil"
+		}],
+		count: 32L
+	}],
+	rewards: [{
+		uid: "d294896b",
+		type: "item",
+		item: "minecraft:sand",
+		count: 64
 	},
 	{
-		uid: "bb6e5e4c",
+		uid: "ecf882c1",
 		type: "item",
-		items: [{
-			item: "minecraft:gravel"
-		}]
+		item: "minecraft:gravel",
+		count: 64
 	},
 	{
-		uid: "1d850ef0",
+		uid: "8e020c58",
 		type: "item",
-		items: [{
-			item: "minecraft:clay_ball"
-		}]
+		item: "minecraft:clay_ball",
+		count: 64
 	}]
 }

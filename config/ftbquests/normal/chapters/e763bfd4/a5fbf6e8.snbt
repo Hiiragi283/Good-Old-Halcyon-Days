@@ -1,0 +1,14 @@
+{
+	x: 10.0d,
+	y: -4.0d,
+	dependencies: [
+		"ba812d0d"
+	],
+	tasks: [{
+		uid: "99b96889",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_device_gearbox"
+		}]
+	}]
+}

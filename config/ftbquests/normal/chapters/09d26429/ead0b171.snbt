@@ -1,5 +1,5 @@
 {
-	icon: "techreborn:ingot 1 2",
+	title: "{gohd.5f3109ce.b3542d57.title}",
 	x: 6.5d,
 	y: -1.0d,
 	dependencies: [
@@ -10,18 +10,7 @@
 		uid: "775c4990",
 		type: "item",
 		items: [{
-			ForgeCaps: {
-				Parent: {
-					data: "ingotBronze",
-					id: "ore"
-				}
-			},
-			id: "itemfilters:filter",
-			tag: {
-				display: {
-					Name: "Any ingotBronze"
-				}
-			}
+			item: "dcs_climate:dcs_ingot 1 9"
 		}]
 	}]
 }

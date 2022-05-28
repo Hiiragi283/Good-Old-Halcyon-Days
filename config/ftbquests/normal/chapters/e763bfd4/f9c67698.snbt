@@ -1,0 +1,22 @@
+{
+	title: "{gohd.e763bfd4.f9c67698.title}",
+	x: 8.0d,
+	y: 2.0d,
+	dependencies: [
+		"62b97ff1"
+	],
+	tasks: [{
+		uid: "238cd075",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_ore_dustblock 1 5"
+		}]
+	},
+	{
+		uid: "71ad967b",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_ore_metal_alloy 1 2"
+		}]
+	}]
+}

@@ -1,0 +1,14 @@
+{
+	x: 10.0d,
+	y: 8.0d,
+	dependencies: [
+		"6724c976"
+	],
+	tasks: [{
+		uid: "caf2bf6a",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_device_heat_exchanger"
+		}]
+	}]
+}

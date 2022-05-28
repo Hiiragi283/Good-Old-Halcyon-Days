@@ -1,0 +1,27 @@
+{
+	title: "{gohd.5f3109ce.8093a1e1.title}",
+	icon: "dcs_climate:dcs_ingot 1 5",
+	x: 6.0d,
+	y: 0.0d,
+	dependencies: [
+		"bf4f273a"
+	],
+	tasks: [{
+		uid: "ea334120",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "ingotSteel",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any ingotSteel"
+				}
+			}
+		}]
+	}]
+}

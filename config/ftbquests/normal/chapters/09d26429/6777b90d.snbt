@@ -1,0 +1,17 @@
+{
+	x: 4.0d,
+	y: -5.0d,
+	dependencies: [
+		"6724c976",
+		"048fe784"
+	],
+	tasks: [{
+		uid: "bcbf3501",
+		type: "item",
+		items: [{
+			item: "hap:wrench"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

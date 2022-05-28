@@ -1,0 +1,26 @@
+{
+	title: "{gohd.5f3109ce.bf4f273a.title}",
+	x: 4.5d,
+	y: 0.0d,
+	dependencies: [
+		"8178a881"
+	],
+	tasks: [{
+		uid: "ff8b30d8",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "ingotNickelsilver",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any ingotNickelsilver"
+				}
+			}
+		}]
+	}]
+}

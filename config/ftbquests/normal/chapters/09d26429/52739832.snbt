@@ -1,0 +1,24 @@
+{
+	x: -1.5d,
+	y: 1.0d,
+	text: [
+		"{gohd.09d26429.52739832.desc.1}"
+	],
+	dependencies: [
+		"8e6a9cab"
+	],
+	tasks: [{
+		uid: "8ec71307",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_tinder"
+		}]
+	},
+	{
+		uid: "518ec5c9",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_tinder 1 1"
+		}]
+	}]
+}

@@ -1,0 +1,17 @@
+{
+	x: 6.0d,
+	y: 0.0d,
+	dependencies: [
+		"dd6bdfb3"
+	],
+	tasks: [{
+		uid: "72e9d11c",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_device_bellow"
+		},
+		{
+			item: "dcs_climate:dcs_device_fan"
+		}]
+	}]
+}

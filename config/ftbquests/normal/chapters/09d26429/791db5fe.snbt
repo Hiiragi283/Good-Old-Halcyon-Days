@@ -1,0 +1,14 @@
+{
+	x: 3.0d,
+	y: 4.0d,
+	dependencies: [
+		"de863d39"
+	],
+	tasks: [{
+		uid: "26b0dba1",
+		type: "item",
+		items: [{
+			item: "techreborn:iron_furnace"
+		}]
+	}]
+}
