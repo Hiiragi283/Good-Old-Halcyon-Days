@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "base:items/plate",
+		"layer1": "contenttweaker:items/plate_fiery_overlay"
+  }
+}
