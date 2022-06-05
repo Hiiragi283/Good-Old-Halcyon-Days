@@ -13,12 +13,12 @@ import crafttweaker.item.IIngredient;
 
 //各種modからclassをimport
 import mods.artisanworktables.builder.RecipeBuilder;
-import mods.botania.Apothecary;
+
 import mods.botania.ElvenTrade as ElvenTrade;
 import mods.botania.PureDaisy as PureDaisy;
 import mods.ctintegration.util.RecipePattern;
 import mods.gregtech.recipe.RecipeMap;
-import mods.zenutils.I18n;
+
 import thaumcraft.aspect.CTAspectStack;
 
 //scriptのimport
@@ -85,8 +85,7 @@ print("Start loading botania-flower.zs ...");
             .setFluid(<liquid:mana_fluid> * 1000)
             .addOutput(<botania:specialflower>.withTag({type: "puredaisy"}))
             .create();
-    //Dreaming Daisy
-            ElvenTrade.addRecipe([<botania:specialflower>.withTag({type: "dreaming_daisy"})], [<botania:specialflower>.withTag({type: "puredaisy"})]);
+
             //<botania:specialflower>.withTag({type: "dreaming_daisy"}).addTooltip(I18n.format("gohd.tooltip.dreaming_daisy.name"));
 
     //Orechid
@@ -94,12 +93,6 @@ print("Start loading botania-flower.zs ...");
                                     [<ore:blockLapis>, <ore:blockEmerald>, <ore:blockRedstone>],
                                     [<ore:blockCoal>, <ore:mysticFlowerLime>, <ore:blockGold>],
                                     [<ore:blockIron>, <twilightforest:ore_magnet>, <ore:blockDiamond>]]);
-    //Orechid Terrestris
-        HiiragiUtils.addCraftingArcane(false, false, "", 100, [], <botania:specialflower>.withTag({type: "orechid_terrestris"}), [
-                                    [<botania:biomestonea:7>, <botania:biomestonea:2>, <botania:biomestonea:6>],
-                                    [<botania:biomestonea:0>, <botania:specialflower>.withTag({type: "orechid"}), <botania:biomestonea:5>],
-                                    [<botania:biomestonea:4>, <thaumcraft:nugget:10>, <botania:biomestonea:3>]]);
-
 
 //このscriptの読み込みの完了をログに出力
 print("botania-flower.zs loaded!");

@@ -25,49 +25,35 @@ print("Start loading bop.zs ...");
 //変数の定義
 
 //作業台レシピの編集
-    //削除
-        val removeCrafting as IItemStack[] = [];
-        for i in removeCrafting {
-            HiiragiUtils.removeCrafting(i);
-        }
-    //上書き
-    //新規
+	//削除
+		val removeCrafting as IItemStack[] = [];
+		for i in removeCrafting {
+			HiiragiUtils.removeCrafting(i);
+		}
+	//上書き
+	//新規
 
 //かまどレシピの編集
-    //削除
-        val removeFurnace as IItemStack[] = [];
-        for i in removeFurnace {
-            HiiragiUtils.removeFurnace(i);
-        }
-    //新規
-        val addFurnace as IIngredient[IItemStack] = {};
-        for output, input in addFurnace {
-            HiiragiUtils.addFurnace(false, output, input);
-        }
+	//削除
+		val removeFurnace as IItemStack[] = [];
+		for i in removeFurnace {
+			HiiragiUtils.removeFurnace(i);
+		}
+	//新規
+		val addFurnace as IIngredient[IItemStack] = {};
+		for output, input in addFurnace {
+			HiiragiUtils.addFurnace(false, output, input);
+		}
 
 //AWレシピの編集
-    //import
-    //新規
-
-//GTレシピの編集
-    //削除
-    //上書き
-    //新規
-
-    /*
-    <recipemap:name>.recipeBuilder()
-        .inputs([])
-        .outputs()
-        .duration()
-        .EUt()
-        .buildAndRegister();
-    */
+	//import
+	//新規
 
 //Orechid TerrestrisによるBOP鉱石の生成
-    val orechid_terrestris = mods.morechids.Registry.getFlower("orechid_terrestris");
-    for i in 1 to 7 {
-        orechid_terrestris.addRecipe(<ore:stone>, <biomesoplenty:gem_ore>.definition.makeStack(i), 1);
-    }
+	val orechid_terrestris = mods.morechids.Registry.getFlower("orechid_terrestris");
+	for i in 1 to 7 {
+		orechid_terrestris.addRecipe(<ore:stone>, <biomesoplenty:gem_ore>.definition.makeStack(i), 1);
+	}
 //    orechid_terrestris.addRecipe(<ore:stone>, <thaumcraft:ore_amber>, 1);
 
 //このscriptの読み込みの完了をログに出力

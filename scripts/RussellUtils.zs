@@ -34,56 +34,56 @@ import mods.zenutils.HexHelper;
 print("Start loading RussellUtils.zs ...");
 
 //アイテムの登録処理
-    function addItem (id as string) {
-        mods.contenttweaker.VanillaFactory.createItem(id).register();
-    }
+	function addItem (id as string) {
+		mods.contenttweaker.VanillaFactory.createItem(id).register();
+	}
 
-    function addItemColored (id  as string, color as string, texture as string) {
-        var item = mods.contenttweaker.VanillaFactory.createItem(id);
-        item.itemColorSupplier = function(item, tintindex) {
-                return Color.fromHex(color);
-            };
-            item.textureLocation = ResourceLocation.create(texture);
-            item.register();
-    }
+	function addItemColored (id  as string, color as string, texture as string) {
+		var item = mods.contenttweaker.VanillaFactory.createItem(id);
+		item.itemColorSupplier = function(item, tintindex) {
+				return Color.fromHex(color);
+			};
+			item.textureLocation = ResourceLocation.create(texture);
+			item.register();
+	}
 
 //ブロックの登録処理
-    function addBlock (id as string, material as BlockMaterial, hardness as float, resistance as float, tool as string, toolLevel as int, sound as SoundType) {
-        var block = VanillaFactory.createBlock(id, material);
-        block.setBlockHardness(hardness);
+	function addBlock (id as string, material as BlockMaterial, hardness as float, resistance as float, tool as string, toolLevel as int, sound as SoundType) {
+		var block = VanillaFactory.createBlock(id, material);
+		block.setBlockHardness(hardness);
 		block.setBlockResistance(resistance);
 		block.setToolClass(tool);
 		block.setToolLevel(toolLevel);
-        block.setBlockSoundType(sound);
-        block.register();
-    }
+		block.setBlockSoundType(sound);
+		block.register();
+	}
 
-    function addBlockColored (id as string, material as BlockMaterial, hardness as float, resistance as float, tool as string, toolLevel as int, sound as SoundType, color as string) {
-        var block = VanillaFactory.createBlock(id, material);
-        block.setBlockHardness(hardness);
+	function addBlockColored (id as string, material as BlockMaterial, hardness as float, resistance as float, tool as string, toolLevel as int, sound as SoundType, color as string) {
+		var block = VanillaFactory.createBlock(id, material);
+		block.setBlockHardness(hardness);
 		block.setBlockResistance(resistance);
 		block.setToolClass(tool);
 		block.setToolLevel(toolLevel);
-        block.setBlockSoundType(sound);
-        block.blockColorSupplier = function(state as BlockState, access as IBlockAccess, pos as BlockPos, tintIndex as int) as Color {
-            return Color.fromHex(color);
-        };
-        block.itemColorSupplier = function(item, tintindex) {
-            return Color.fromHex(color);
-        };
-        block.register();
-    }
+		block.setBlockSoundType(sound);
+		block.blockColorSupplier = function(state as BlockState, access as IBlockAccess, pos as BlockPos, tintIndex as int) as Color {
+			return Color.fromHex(color);
+		};
+		block.itemColorSupplier = function(item, tintindex) {
+			return Color.fromHex(color);
+		};
+		block.register();
+	}
 
 	function addBlockAdvanced (id as string, material as BlockMaterial, hardness as float, resistance as float, tool as string, toolLevel as int, sound as SoundType, isFull as bool) {
-        var block = VanillaFactory.createBlock(id, material);
-        block.setBlockHardness(hardness);
+		var block = VanillaFactory.createBlock(id, material);
+		block.setBlockHardness(hardness);
 		block.setBlockResistance(resistance);
 		block.setToolClass(tool);
 		block.setToolLevel(toolLevel);
-        block.setBlockSoundType(sound);
+		block.setBlockSoundType(sound);
 		block.fullBlock = isFull;
 		block.register();
-    }
+	}
 
 //このscriptの読み込みの完了をログに出力
 print("RussellUtils.zs loaded!");

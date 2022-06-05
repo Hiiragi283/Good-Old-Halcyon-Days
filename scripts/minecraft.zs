@@ -23,30 +23,30 @@ print("Start loading minecraft.zs ...");
 //変数の定義
 
 //作業台レシピの編集
-    //削除
-        val removeCrafting as IItemStack[] = [];
-        for i in removeCrafting {
-            HiiragiUtils.removeCrafting(i);
-        }
-    //上書き
+	//削除
+		val removeCrafting as IItemStack[] = [];
+		for i in removeCrafting {
+			HiiragiUtils.removeCrafting(i);
+		}
+	//上書き
 		HiiragiUtils.addCrafting(false, true, <minecraft:furnace>, RecipePattern.init(["AAA", "ABA", "AAA"]).map({A:<ore:cobblestone>, B:<dcs_climate:dcs_tinder:1>}).ingredients);
-    //新規
+	//新規
 
 //かまどレシピの編集
-    //削除
-        val removeFurnace as IItemStack[] = [];
-        for i in removeFurnace {
-            HiiragiUtils.removeFurnace(i);
-        }
-    //新規
-        val addFurnace as IIngredient[IItemStack] = {};
-        for output, input in addFurnace {
-            HiiragiUtils.addFurnace(false, output, input);
-        }
+	//削除
+		val removeFurnace as IItemStack[] = [];
+		for i in removeFurnace {
+			HiiragiUtils.removeFurnace(i);
+		}
+	//新規
+		val addFurnace as IIngredient[IItemStack] = {};
+		for output, input in addFurnace {
+			HiiragiUtils.addFurnace(false, output, input);
+		}
 
 //AWレシピの編集
-    //import
-    //新規
+	//import
+	//新規
 
 //このscriptの読み込みの完了をログに出力
 print("minecraft.zs loaded!");

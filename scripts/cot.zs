@@ -26,18 +26,18 @@ import scripts.RussellUtils;
 print("Start loading _TEMPLATE.zs ...");
 
 //アイテムの登録
-    val items as string[] = [
-        "elven_pearl",
-        "ephemerald",
+	val items as string[] = [
+		"elven_pearl",
+		"ephemerald",
 		"token_stone",
 		"token_obsidian",
 		"token_netherrack",
 		"token_end_stone",
 		"token_prismarine",
-    ];
-    for i in items {
-        RussellUtils.addItem(i);
-    }
+	];
+	for i in items {
+		RussellUtils.addItem(i);
+	}
 
 	RussellUtils.addItemColored("grout_ball", "D0D1D6", "minecraft:items/snowball");
 
@@ -57,11 +57,11 @@ print("Start loading _TEMPLATE.zs ...");
 	}
 
 //ブロックの登録
-    RussellUtils.addBlockAdvanced("unfired_casting_channel", <blockmaterial:grass>, 3.0, 0.5, "shovel", -1, <soundtype:ground>, false);
-    RussellUtils.addBlockAdvanced("unfired_casting_table", <blockmaterial:grass>, 3.0, 0.5, "shovel", -1, <soundtype:ground>, false);
-    RussellUtils.addBlockAdvanced("unfired_casting_basin", <blockmaterial:grass>, 3.0, 0.5, "shovel", -1, <soundtype:ground>, false);
+	RussellUtils.addBlockAdvanced("unfired_casting_channel", <blockmaterial:grass>, 3.0, 0.5, "shovel", -1, <soundtype:ground>, false);
+	RussellUtils.addBlockAdvanced("unfired_casting_table", <blockmaterial:grass>, 3.0, 0.5, "shovel", -1, <soundtype:ground>, false);
+	RussellUtils.addBlockAdvanced("unfired_casting_basin", <blockmaterial:grass>, 3.0, 0.5, "shovel", -1, <soundtype:ground>, false);
 
-	RussellUtils.addBlockAdvanced("block_evolite", <blockmaterial:iron>, 5.0, 5.0, "pickaxe", 2, <soundtype:metal>, false);
+	//RussellUtils.addBlockAdvanced("block_evolite", <blockmaterial:iron>, 5.0, 5.0, "pickaxe", 2, <soundtype:metal>, false);
 
 //このscriptの読み込みの完了をログに出力
 print("_TEMPLATE.zs loaded!");

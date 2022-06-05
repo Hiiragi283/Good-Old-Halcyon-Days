@@ -7,6 +7,7 @@
 #======================================================================
 
 #priority 90
+#norun
 
 //crafttweakerからclassをimport
 import crafttweaker.data.IData;
@@ -26,110 +27,113 @@ import scripts.HiiragiUtils;
 print("Start loading armor.zs ...");
 
 //変数の定義
-
-val toRemove as IItemStack[] = [
-	<minecraft:leather_helmet>,
-    <minecraft:leather_chestplate>,
-    <minecraft:leather_leggings>,
-    <minecraft:leather_boots>,
-    <minecraft:chainmail_helmet>,
-    <minecraft:chainmail_chestplate>,
-    <minecraft:chainmail_leggings>,
-    <minecraft:chainmail_boots>,
-    <minecraft:iron_helmet>,
-    <minecraft:iron_chestplate>,
-    <minecraft:iron_leggings>,
-    <minecraft:iron_boots>,
-    <minecraft:diamond_helmet>,
-    <minecraft:diamond_chestplate>,
-    <minecraft:diamond_leggings>,
-    <minecraft:diamond_boots>,
-    <minecraft:golden_helmet>,
-    <minecraft:golden_chestplate>,
-    <minecraft:golden_leggings>,
-    <minecraft:golden_boots>,
-    <botania:manasteelhelm>,
-    <botania:manasteelchest>,
-    <botania:manasteellegs>,
-    <botania:manasteelboots>,
-    <botania:terrasteelhelm>,
-    <botania:terrasteelchest>,
-    <botania:terrasteellegs>,
-    <botania:terrasteelboots>,
-    <botania:elementiumhelm>,
-    <botania:elementiumchest>,
-    <botania:elementiumlegs>,
-    <botania:elementiumboots>,
-	<dcs_climate:dcs_met_brass>,
-	<dcs_climate:dcs_plate_brass>,
-	<dcs_climate:dcs_leggins_brass>,
-	<dcs_climate:dcs_boots_brass>,
-	<dcs_climate:dcs_met_chalcedony>,
-	<dcs_climate:dcs_plate_chalcedony>,
-	<dcs_climate:dcs_leggins_chalcedony>,
-	<dcs_climate:dcs_boots_chalcedony>,
-	<dcs_climate:dcs_met_sapphire>,
-	<dcs_climate:dcs_met_steel>,
-	<dcs_climate:dcs_plate_steel>,
-	<dcs_climate:dcs_leggins_steel>,
-	<dcs_climate:dcs_boots_steel>,
-	<dcs_climate:dcs_plate_sapphire>,
-	<dcs_climate:dcs_leggins_sapphire>,
-	<dcs_climate:dcs_boots_sapphire>,
-	<dcs_climate:dcs_met_titanium>,
-	<dcs_climate:dcs_plate_titanium>,
-	<dcs_climate:dcs_leggins_titanium>,
-	<dcs_climate:dcs_boots_titanium>,
-	<dcs_climate:dcs_met_silver>,
-	<dcs_climate:dcs_plate_silver>,
-	<dcs_climate:dcs_leggins_silver>,
-	<dcs_climate:dcs_boots_silver>,
-	<twilightforest:naga_chestplate>.withTag({ench: [{lvl: 3 as short, id: 1 as short}]}),
-    <twilightforest:naga_leggings>.withTag({ench: [{lvl: 3 as short, id: 0 as short}]}),
-	<twilightforest:ironwood_helmet>.withTag({ench: [{lvl: 1 as short, id: 6 as short}]}),
-	<twilightforest:ironwood_chestplate>.withTag({ench: [{lvl: 1 as short, id: 0 as short}]}),
-	<twilightforest:ironwood_leggings>.withTag({ench: [{lvl: 1 as short, id: 0 as short}]}),
-	<twilightforest:ironwood_boots>.withTag({ench: [{lvl: 1 as short, id: 2 as short}]}),
-	<twilightforest:steeleaf_helmet>,
-    <twilightforest:steeleaf_chestplate>,
-    <twilightforest:steeleaf_leggings>,
-    <twilightforest:steeleaf_boots>,
-	<twilightforest:fiery_helmet>,
-    <twilightforest:fiery_chestplate>,
-    <twilightforest:fiery_leggings>,
-    <twilightforest:fiery_boots>,
-	<twilightforest:steeleaf_helmet>,
-	<twilightforest:steeleaf_chestplate>,
-	<twilightforest:steeleaf_leggings>,
-	<twilightforest:steeleaf_boots>,
-	<twilightforest:knightmetal_helmet>,
-    <twilightforest:knightmetal_chestplate>,
-    <twilightforest:knightmetal_leggings>,
-    <twilightforest:knightmetal_boots>,
-	<twilightforest:yeti_helmet>.withTag({ench: [{lvl: 2 as short, id: 0 as short}]}),
-	<twilightforest:yeti_chestplate>.withTag({ench: [{lvl: 2 as short, id: 0 as short}]}),
-	<twilightforest:yeti_leggings>.withTag({ench: [{lvl: 2 as short, id: 0 as short}]}),
-	<twilightforest:yeti_boots>.withTag({ench: [{lvl: 2 as short, id: 0 as short}, {lvl: 4 as short, id: 2 as short}]}),
-	<twilightforest:arctic_helmet>,
-	<twilightforest:arctic_chestplate>,
-	<twilightforest:arctic_leggings>,
-	<twilightforest:arctic_boots>,
-	<thermalfoundation:armor.helmet_bronze>,
-	<thermalfoundation:armor.plate_bronze>,
-	<thermalfoundation:armor.legs_bronze>,
-	<thermalfoundation:armor.boots_bronze>,
-	<thermalfoundation:armor.helmet_invar>,
-	<thermalfoundation:armor.plate_invar>,
-	<thermalfoundation:armor.legs_invar>,
-	<thermalfoundation:armor.boots_invar>,
-	<thermalfoundation:armor.helmet_lead>,
-	<thermalfoundation:armor.plate_lead>,
-	<thermalfoundation:armor.legs_lead>,
-	<thermalfoundation:armor.boots_lead>,
+	val toRemove as IItemStack[] = [
+		<minecraft:leather_helmet>,
+		<minecraft:leather_chestplate>,
+		<minecraft:leather_leggings>,
+		<minecraft:leather_boots>,
+		<minecraft:chainmail_helmet>,
+		<minecraft:chainmail_chestplate>,
+		<minecraft:chainmail_leggings>,
+		<minecraft:chainmail_boots>,
+		<minecraft:iron_helmet>,
+		<minecraft:iron_chestplate>,
+		<minecraft:iron_leggings>,
+		<minecraft:iron_boots>,
+		<minecraft:diamond_helmet>,
+		<minecraft:diamond_chestplate>,
+		<minecraft:diamond_leggings>,
+		<minecraft:diamond_boots>,
+		<minecraft:golden_helmet>,
+		<minecraft:golden_chestplate>,
+		<minecraft:golden_leggings>,
+		<minecraft:golden_boots>,
+		<botania:manasteelhelm>,
+		<botania:manasteelchest>,
+		<botania:manasteellegs>,
+		<botania:manasteelboots>,
+		<botania:terrasteelhelm>,
+		<botania:terrasteelchest>,
+		<botania:terrasteellegs>,
+		<botania:terrasteelboots>,
+		<botania:elementiumhelm>,
+		<botania:elementiumchest>,
+		<botania:elementiumlegs>,
+		<botania:elementiumboots>,
+		<dcs_climate:dcs_met_brass>,
+		<dcs_climate:dcs_plate_brass>,
+		<dcs_climate:dcs_leggins_brass>,
+		<dcs_climate:dcs_boots_brass>,
+		<dcs_climate:dcs_met_chalcedony>,
+		<dcs_climate:dcs_plate_chalcedony>,
+		<dcs_climate:dcs_leggins_chalcedony>,
+		<dcs_climate:dcs_boots_chalcedony>,
+		<dcs_climate:dcs_met_sapphire>,
+		<dcs_climate:dcs_met_steel>,
+		<dcs_climate:dcs_plate_steel>,
+		<dcs_climate:dcs_leggins_steel>,
+		<dcs_climate:dcs_boots_steel>,
+		<dcs_climate:dcs_plate_sapphire>,
+		<dcs_climate:dcs_leggins_sapphire>,
+		<dcs_climate:dcs_boots_sapphire>,
+		<dcs_climate:dcs_met_titanium>,
+		<dcs_climate:dcs_plate_titanium>,
+		<dcs_climate:dcs_leggins_titanium>,
+		<dcs_climate:dcs_boots_titanium>,
+		<dcs_climate:dcs_met_silver>,
+		<dcs_climate:dcs_plate_silver>,
+		<dcs_climate:dcs_leggins_silver>,
+		<dcs_climate:dcs_boots_silver>,
+		<tcomplement:manyullyn_helmet>,
+		<tcomplement:manyullyn_chestplate>,
+		<tcomplement:manyullyn_leggings>,
+		<tcomplement:manyullyn_boots>,
+		<thermalfoundation:armor.helmet_bronze>,
+		<thermalfoundation:armor.plate_bronze>,
+		<thermalfoundation:armor.legs_bronze>,
+		<thermalfoundation:armor.boots_bronze>,
+		<thermalfoundation:armor.helmet_invar>,
+		<thermalfoundation:armor.plate_invar>,
+		<thermalfoundation:armor.legs_invar>,
+		<thermalfoundation:armor.boots_invar>,
+		<thermalfoundation:armor.helmet_lead>,
+		<thermalfoundation:armor.plate_lead>,
+		<thermalfoundation:armor.legs_lead>,
+		<thermalfoundation:armor.boots_lead>,
+		<twilightforest:naga_chestplate>.withTag({ench: [{lvl: 3 as short, id: 1 as short}]}),
+		<twilightforest:naga_leggings>.withTag({ench: [{lvl: 3 as short, id: 0 as short}]}),
+		<twilightforest:ironwood_helmet>.withTag({ench: [{lvl: 1 as short, id: 6 as short}]}),
+		<twilightforest:ironwood_chestplate>.withTag({ench: [{lvl: 1 as short, id: 0 as short}]}),
+		<twilightforest:ironwood_leggings>.withTag({ench: [{lvl: 1 as short, id: 0 as short}]}),
+		<twilightforest:ironwood_boots>.withTag({ench: [{lvl: 1 as short, id: 2 as short}]}),
+		<twilightforest:steeleaf_helmet>,
+		<twilightforest:steeleaf_chestplate>,
+		<twilightforest:steeleaf_leggings>,
+		<twilightforest:steeleaf_boots>,
+		<twilightforest:fiery_helmet>,
+		<twilightforest:fiery_chestplate>,
+		<twilightforest:fiery_leggings>,
+		<twilightforest:fiery_boots>,
+		<twilightforest:steeleaf_helmet>,
+		<twilightforest:steeleaf_chestplate>,
+		<twilightforest:steeleaf_leggings>,
+		<twilightforest:steeleaf_boots>,
+		<twilightforest:knightmetal_helmet>,
+		<twilightforest:knightmetal_chestplate>,
+		<twilightforest:knightmetal_leggings>,
+		<twilightforest:knightmetal_boots>,
+		<twilightforest:yeti_helmet>.withTag({ench: [{lvl: 2 as short, id: 0 as short}]}),
+		<twilightforest:yeti_chestplate>.withTag({ench: [{lvl: 2 as short, id: 0 as short}]}),
+		<twilightforest:yeti_leggings>.withTag({ench: [{lvl: 2 as short, id: 0 as short}]}),
+		<twilightforest:yeti_boots>.withTag({ench: [{lvl: 2 as short, id: 0 as short}, {lvl: 4 as short, id: 2 as short}]}),
+		<twilightforest:arctic_helmet>,
+		<twilightforest:arctic_chestplate>,
+		<twilightforest:arctic_leggings>,
+		<twilightforest:arctic_boots>,
 ];
-for i in toRemove {
-    HiiragiUtils.removeCrafting(i);
-}
+	for i in toRemove {
+		HiiragiUtils.removeCrafting(i);
+	}
 
 val armorTier as IItemStack[][string] = {
     "gohd.tooltip.armor.common.name": [
@@ -164,10 +168,6 @@ val armorTier as IItemStack[][string] = {
         <minecraft:iron_chestplate>,
         <minecraft:iron_leggings>,
         <minecraft:iron_boots>,
-		<tcomplement:knightslime_helmet>,
-		<tcomplement:knightslime_chestplate>,
-		<tcomplement:knightslime_leggings>,
-		<tcomplement:knightslime_boots>,
 		<thermalfoundation:armor.helmet_lead>,
 		<thermalfoundation:armor.plate_lead>,
 		<thermalfoundation:armor.legs_lead>,
@@ -243,6 +243,10 @@ val armorTier as IItemStack[][string] = {
         <enderio:item_dark_steel_leggings>,
         <enderio:item_dark_steel_boots>,
 		<railcraft:armor_goggles>,
+		<tcomplement:knightslime_helmet>,
+		<tcomplement:knightslime_chestplate>,
+		<tcomplement:knightslime_leggings>,
+		<tcomplement:knightslime_boots>,
 		<techreborn:lapotronpack>,
         <twilightforest:fiery_helmet>,
         <twilightforest:fiery_chestplate>,
@@ -279,12 +283,16 @@ val armorTier as IItemStack[][string] = {
         //<projecte:item.pe_gem_armor_0>,
     ]
 };
+	for i, j in armorTier {
+		for k in j {
+			k.addTooltip(I18n.format(i));
+		}
+	}
 
-for i, j in armorTier {
-    for k in j {
-        k.addTooltip(I18n.format(i));
-    }
-}
+	val knightslime_helmet as IItemStack = <tcomplement:knightslime_helmet>.withTag({AttributeModifiers: [{UUIDMost: 4366328559327923520 as long, UUIDLeast: -8914065653409751182 as long, Amount: 0.2, Slot: "head", AttributeName: "generic.luck", Operation: 0, Name: "generic.luck"}, {UUIDMost: -736681705368501924 as long, UUIDLeast: -7837307268431901504 as long, Amount: 1.0, Slot: "head", AttributeName: "generic.armor", Operation: 0, Name: "generic.armor"}, {UUIDMost: 1972677501282894116 as long, UUIDLeast: -5689293813011406663 as long, Amount: 1.0, Slot: "head", AttributeName: "generic.armorToughness", Operation: 0, Name: "generic.armorToughness"}]});
+	val knightslime_chestplate as IItemStack = <tcomplement:knightslime_chestplate>.withTag({AttributeModifiers: [{UUIDMost: -692053273748946324 as long, UUIDLeast: -4693642000942087956 as long, Amount: 1.0, Slot: "chest", AttributeName: "generic.armorToughness", Operation: 0, Name: "generic.armorToughness"}, {UUIDMost: -5960868532214545847 as long, UUIDLeast: -8726949763557091948 as long, Amount: 5.0, Slot: "chest", AttributeName: "generic.armor", Operation: 0, Name: "generic.armor"}, {UUIDMost: 2575235033659820092 as long, UUIDLeast: -7103939952431313130 as long, Amount: 0.4, Slot: "chest", AttributeName: "generic.luck", Operation: 0, Name: "generic.luck"}]});
+	val knightslime_leggings as IItemStack = <tcomplement:knightslime_leggings>.withTag({AttributeModifiers: [{UUIDMost: -8975285954824155161 as long, UUIDLeast: -8554451618017491213 as long, Amount: 1.0, Slot: "legs", AttributeName: "generic.armorToughness", Operation: 0, Name: "generic.armorToughness"}, {UUIDMost: 4091975994188317888 as long, UUIDLeast: -6914791562034679253 as long, Amount: 4.0, Slot: "legs", AttributeName: "generic.armor", Operation: 0, Name: "generic.armor"}, {UUIDMost: 1066912793790074780 as long, UUIDLeast: -5667504214306890750 as long, Amount: 0.3, Slot: "legs", AttributeName: "generic.luck", Operation: 0, Name: "generic.luck"}]});
+	val knightslime_boots as IItemStack = <tcomplement:knightslime_boots>.withTag({AttributeModifiers: [{UUIDMost: -4585015522474766899 as long, UUIDLeast: -7585540920869510228 as long, Amount: 1.0, Slot: "feet", AttributeName: "generic.armorToughness", Operation: 0, Name: "generic.armorToughness"}, {UUIDMost: -3943481662496028374 as long, UUIDLeast: -9131694542155411395 as long, Amount: 2.0, Slot: "feet", AttributeName: "generic.armor", Operation: 0, Name: "generic.armor"}, {UUIDMost: -2218550809267322550 as long, UUIDLeast: -6875407563071919891 as long, Amount: 0.1, Slot: "feet", AttributeName: "generic.luck", Operation: 0, Name: "generic.luck"}]});
 
 //Leather Armor (vanilla)
     RecipeBuilder.get("basic")
@@ -755,8 +763,68 @@ for i, j in armorTier {
         .create();
 
 //Darksteel Armor (EnderIO)
+	RecipeBuilder.get("basic")
+        .setShaped(RecipePattern.init(["AAA", "ABA"]).map({A:<ore:plateDarkSteel>, B:<ore:itemSyntheticCloth>}).ingredients)
+		.setSecondaryIngredients([<techreborn:part:3>])
+        .addTool(<ore:artisansHammer>, 80)
+        .addTool(<ore:artisansCutters>, 80)
+        .addOutput(<enderio:item_dark_steel_helmet>)
+        .create();
+    RecipeBuilder.get("basic")
+        .setShaped(RecipePattern.init(["ABA", "AAA", "AAA"]).map({A:<ore:plateDarkSteel>, B:<ore:itemSyntheticCloth>}).ingredients)
+		.setSecondaryIngredients([<techreborn:part:3>])
+        .addTool(<ore:artisansHammer>, 80)
+        .addTool(<ore:artisansCutters>, 80)
+        .addOutput(<enderio:item_dark_steel_chestplate>)
+        .create();
+    RecipeBuilder.get("basic")
+        .setShaped(RecipePattern.init(["AAA", "ABA", "A A"]).map({A:<ore:plateDarkSteel>, B:<ore:itemSyntheticCloth>}).ingredients)
+		.setSecondaryIngredients([<techreborn:part:3>])
+        .addTool(<ore:artisansHammer>, 80)
+        .addTool(<ore:artisansCutters>, 80)
+        .addOutput(<enderio:item_dark_steel_leggings>)
+        .create();
+    RecipeBuilder.get("basic")
+        .setShaped(RecipePattern.init(["A A", "ABA"]).map({A:<ore:plateDarkSteel>, B:<ore:itemSyntheticCloth>}).ingredients)
+		.setSecondaryIngredients([<techreborn:part:3>])
+        .addTool(<ore:artisansHammer>, 80)
+        .addTool(<ore:artisansCutters>, 80)
+        .addOutput(<enderio:item_dark_steel_boots>)
+        .create();
 
 //Endsteel Armor (EnderIO)
+	RecipeBuilder.get("basic")
+        .setShaped(RecipePattern.init(["AAA", "A A"]).map({A:<ore:plateEndSteel>}).ingredients)
+		.setSecondaryIngredients([<enderio:item_dark_steel_helmet>.marked("inherit")])
+        .addTool(<ore:artisansHammer>, 160)
+        .addTool(<ore:artisansCutters>, 160)
+        .addOutput(<enderio:item_end_steel_helmet>)
+		.setRecipeFunction(HiiragiUtils.inheritStatus(<enderio:item_end_steel_helmet>))
+        .create();
+    RecipeBuilder.get("basic")
+        .setShaped(RecipePattern.init(["A A", "AAA", "AAA"]).map({A:<ore:plateEndSteel>}).ingredients)
+		.setSecondaryIngredients([<enderio:item_dark_steel_chestplate>.marked("inherit")])
+        .addTool(<ore:artisansHammer>, 160)
+        .addTool(<ore:artisansCutters>, 160)
+        .addOutput(<enderio:item_end_steel_chestplate>)
+		.setRecipeFunction(HiiragiUtils.inheritStatus(<enderio:item_end_steel_chestplate>))
+        .create();
+    RecipeBuilder.get("basic")
+        .setShaped(RecipePattern.init(["AAA", "A A", "A A"]).map({A:<ore:plateEndSteel>}).ingredients)
+		.setSecondaryIngredients([<enderio:item_dark_steel_leggings>.marked("inherit")])
+        .addTool(<ore:artisansHammer>, 160)
+        .addTool(<ore:artisansCutters>, 160)
+        .addOutput(<enderio:item_end_steel_leggings>)
+		.setRecipeFunction(HiiragiUtils.inheritStatus(<enderio:item_end_steel_leggings>))
+        .create();
+    RecipeBuilder.get("basic")
+        .setShaped(RecipePattern.init(["A A", "A A"]).map({A:<ore:plateEndSteel>}).ingredients)
+		.setSecondaryIngredients([<enderio:item_dark_steel_boots>.marked("inherit")])
+        .addTool(<ore:artisansHammer>, 160)
+        .addTool(<ore:artisansCutters>, 160)
+        .addOutput(<enderio:item_end_steel_boots>)
+		.setRecipeFunction(HiiragiUtils.inheritStatus(<enderio:item_end_steel_boots>))
+        .create();
 
 //Dark Matter Armor (ProjectE)
 
@@ -867,6 +935,38 @@ for i, j in armorTier {
         .create();
 
 //Knightslime Armor (Tinkers Complement)
+	RecipeBuilder.get("basic")
+        .setShaped(RecipePattern.init(["AAA", "A A"]).map({A:<ore:ingotKnightslime>}).ingredients)
+        .setSecondaryIngredients([<tcomplement:manyullyn_helmet>.marked("inherit")])
+        .addTool(<ore:artisansHammer>, 80)
+        .addTool(<ore:artisansCutters>, 80)
+        .addOutput(knightslime_helmet)
+        .setRecipeFunction(HiiragiUtils.inheritStatus(knightslime_helmet))
+        .create();
+    RecipeBuilder.get("basic")
+        .setShaped(RecipePattern.init(["A A", "AAA", "AAA"]).map({A:<ore:ingotKnightslime>}).ingredients)
+        .setSecondaryIngredients([<tcomplement:manyullyn_chestplate>.marked("inherit")])
+        .addTool(<ore:artisansHammer>, 80)
+        .addTool(<ore:artisansCutters>, 80)
+        .addOutput(knightslime_chestplate)
+        .setRecipeFunction(HiiragiUtils.inheritStatus(knightslime_chestplate))
+        .create();
+    RecipeBuilder.get("basic")
+        .setShaped(RecipePattern.init(["AAA", "A A", "A A"]).map({A:<ore:ingotKnightslime>}).ingredients)
+        .setSecondaryIngredients([<tcomplement:manyullyn_leggings>.marked("inherit")])
+        .addTool(<ore:artisansHammer>, 80)
+        .addTool(<ore:artisansCutters>, 80)
+        .addOutput(knightslime_leggings)
+        .setRecipeFunction(HiiragiUtils.inheritStatus(knightslime_leggings))
+        .create();
+    RecipeBuilder.get("basic")
+        .setShaped(RecipePattern.init(["A A", "A A"]).map({A:<ore:ingotKnightslime>}).ingredients)
+        .setSecondaryIngredients([<tcomplement:manyullyn_boots>.marked("inherit")])
+        .addTool(<ore:artisansHammer>, 80)
+        .addTool(<ore:artisansCutters>, 80)
+        .addOutput(knightslime_boots)
+        .setRecipeFunction(HiiragiUtils.inheritStatus(knightslime_boots))
+        .create();
 
 //Manyullyn Armor (Tinkers Complement)
 

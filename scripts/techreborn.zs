@@ -23,31 +23,29 @@ print("Start loading techreborn.zs ...");
 //変数の定義
 
 //作業台レシピの編集
-    //削除
-        val removeCrafting as IItemStack[] = [];
-        for i in removeCrafting {
-            HiiragiUtils.removeCrafting(i);
-        }
-    //上書き
-		HiiragiUtils.addCrafting(false, true, <techreborn:iron_alloy_furnace>, RecipePattern.init(["AAA", "B B", "AAA"]).map({A:<ore:plateIron>, B:<techreborn:iron_furnace>}).ingredients);
-		HiiragiUtils.addCrafting(false, true, <techreborn:iron_furnace>, RecipePattern.init(["AAA", "ABA", "AAA"]).map({A:<ore:plateIron>, B:<minecraft:furnace>}).ingredients);
-    //新規
+	//削除
+		val removeCrafting as IItemStack[] = [];
+		for i in removeCrafting {
+			HiiragiUtils.removeCrafting(i);
+		}
+	//上書き
+	//新規
 
 //かまどレシピの編集
-    //削除
-        val removeFurnace as IItemStack[] = [];
-        for i in removeFurnace {
-            HiiragiUtils.removeFurnace(i);
-        }
-    //新規
-        val addFurnace as IIngredient[IItemStack] = {};
-        for output, input in addFurnace {
-            HiiragiUtils.addFurnace(false, output, input);
-        }
+	//削除
+		val removeFurnace as IItemStack[] = [];
+		for i in removeFurnace {
+			HiiragiUtils.removeFurnace(i);
+		}
+	//新規
+		val addFurnace as IIngredient[IItemStack] = {};
+		for output, input in addFurnace {
+			HiiragiUtils.addFurnace(false, output, input);
+		}
 
 //AWレシピの編集
-    //import
-    //新規
+	//import
+	//新規
 
 //このscriptの読み込みの完了をログに出力
 print("techreborn.zs loaded!");
