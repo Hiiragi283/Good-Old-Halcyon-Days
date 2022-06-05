@@ -28,10 +28,6 @@
   - このテクスチャは`techreborn:textures/items/smalldust/aluminum_smalldust.png`から引用しており，[MIT License](https://github.com/TechReborn/TechReborn/blob/1.12-v2.18/LICENSE.md)の下で使用しています
   - [TechReborn](https://github.com/TechReborn/TechReborn/tree/1.12-v2.18) by Team Rebornに感謝！
 
-- resources/contenttweaker/models/block/block_evoltine.json
-  - このファイルは`twilightforest:models/block/fiery_block.jsonをもとに加工しており，[GNU LESSER GENERAL PUBLIC LICENSE Version 2.1](https://github.com/TeamTwilight/twilightforest/blob/1.12.x/LICENSE)の下で使用しています
-  - [Twiligth Forest](https://github.com/TeamTwilight/twilightforest/tree/1.12.x) by TeamTwilightに感謝！
-
 - resources/morechids/textures/dreaming_daisy.png
   - このテクスチャは`botania:textures/blocks/flower_misc_pure_daisy.png`をもとに加工しており，[Botania License](https://botaniamod.net/license.php)の下で使用しています
   - [Botanita](https://github.com/Vazkii](https://github.com/VazkiiMods/Botania)) by Vazkiiに感謝！
