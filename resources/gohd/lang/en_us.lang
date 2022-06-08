@@ -1,5 +1,8 @@
 
 #Tooltips
+gohd.tooltip.hidden.name=§6Hide from JEI§r but §aavailable§r
+gohd.tooltip.removed.name=§4Recipe Removed!§r
+
 gohd.tooltip.burning_stick.name=§aObtained by right-clicking Fire with Tinder
 gohd.tooltip.grout_forming.name=§aObtained by right-clicking Grout with Wooden Stick
 gohd.tooltip.terra_firma_interface.name=§aObtained by right-clicking Grass with two Stone Pebbles
@@ -10,6 +13,13 @@ gohd.tooltip.armor.rare.name=§9§lRare Armor
 gohd.tooltip.armor.epic.name=§d§lEpic Armor
 gohd.tooltip.armor.legendary.name=§6§lLegendary Armor
 gohd.tooltip.armor.mythic.name=§c§lMythic Armor
+
+gohd.tooltip.tool.common.name=§lCommon Tool
+gohd.tooltip.tool.uncommon.name=§a§lUncommon Tool
+gohd.tooltip.tool.rare.name=§9§lRare Tool
+gohd.tooltip.tool.epic.name=§d§lEpic Tool
+gohd.tooltip.tool.legendary.name=§6§lLegendary Tool
+gohd.tooltip.tool.mythic.name=§c§lMythic Tool
 
 #Quests
 ## Main: gohd.5f3109ce.
@@ -45,19 +55,19 @@ link.youtu.be.TG6yHxuK22g=§oThe Kimera
 gohd.09d26429.42aa3c8a.title=Dirty Deeds Done Dirt Cheap
 
 gohd.09d26429.8e6a9cab.title=Wooden Sticks from Saplings
-gohd.09d26429.2b45ab00.title=Why did you think you can mine stones with wooden pickaxe ?
-gohd.09d26429.2b45ab00.desc.1=4x Pebbles are crafted into 1x Stone.
-gohd.09d26429.2b45ab00.desc.2=So you can get building materials INFINITELY !!!
-gohd.09d26429.2b45ab00.task=Stone Pebbles
-gohd.09d26429.b49312ff.subtitle=§oGood Old Primitive Tool Crafting
-gohd.09d26429.d069fde6.subtitle=Not a Stone Plate
+//gohd.09d26429.2b45ab00.title=Why did you think you can mine stones with wooden pickaxe ?
+//gohd.09d26429.2b45ab00.desc.1=4x Pebbles are crafted into 1x Stone.
+//gohd.09d26429.2b45ab00.desc.2=So you can get building materials INFINITELY !!!
+//gohd.09d26429.2b45ab00.task=Stone Pebbles
+//gohd.09d26429.b49312ff.subtitle=§oGood Old Primitive Tool Crafting
+//gohd.09d26429.d069fde6.subtitle=Not a Stone Plate
 gohd.09d26429.820ea2c4.title=Tier 1: Stone Tool
-gohd.09d26429.c1775971.subtitle=Did you think you can make obsidian ?
-gohd.09d26429.2453cbe0.subtitle=Not a Obsidian Plate
+//gohd.09d26429.c1775971.subtitle=Did you think you can make obsidian ?
+//gohd.09d26429.2453cbe0.subtitle=Not a Obsidian Plate
 gohd.09d26429.8e32b0c6.title=Tier 1+: Obsidian Tool
 gohd.09d26429.e0c2b03d.title=Tier 1+: Flint Tool
 
-gohd.09d26429.52739832.desc.1=You can get the fiest fire by right-clicking Planks with two Wooden Sticks
+gohd.09d26429.52739832.desc.1=You can get the first fire by right-clicking Planks with two Wooden Sticks
 
 gohd.09d26429.845fedcf.subtitle=Can't you find Cassiterite Ore ?
 

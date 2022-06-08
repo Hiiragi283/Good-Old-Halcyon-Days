@@ -2,6 +2,6 @@
   "parent": "item/generated",
   "textures": {
     "layer0": "base:items/plate",
-		"layer1": "contenttweaker:items/fiery_plate_overlay"
+		"layer1": "contenttweaker:items/frostbite_plate_overlay"
   }
 }
