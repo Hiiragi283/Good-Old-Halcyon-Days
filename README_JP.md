@@ -35,3 +35,7 @@
 - resources/morechids/textures/orechid_terrestris.png
   - このテクスチャは`botania:textures/blocks/flower_func_orechid.png`をもとに加工しており，[Botania License](https://botaniamod.net/license.php)の下で使用しています
   - [Botania](https://github.com/VazkiiMods/Botania) by Vazkiiに感謝！
+
+- resources/techreborn/textures/items/ingot/chrome_ingot.png
+  - このテクスチャは`techreborn:textures/items/ingot/uranium_ingot.png`から引用しており，[MIT License](https://github.com/TechReborn/TechReborn/blob/1.12-v2.18/LICENSE.md)の下で使用しています
+  - [TechReborn](https://github.com/TechReborn/TechReborn/tree/1.12-v2.18) by Team Rebornに感謝！
