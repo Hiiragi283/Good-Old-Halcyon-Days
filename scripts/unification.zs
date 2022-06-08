@@ -85,6 +85,7 @@ print("Start loading unification.zs ...");
 //AWレシピの編集
 	//import
 	//新規
+	/*
 		RecipeBuilder.get("farmer")
 		.setShapeless([<ore:pebbleStone>, <ore:pebbleStone>])
 		.addOutput(<contenttweaker:token_stone> * 25)
@@ -183,12 +184,12 @@ print("Start loading unification.zs ...");
 				.setShaped(terraFirmaKnife.map({A:i}).ingredients)
 				.addOutput(<tconstruct:knife_blade>.withTag({Material: j}))
 				.create();
-		}
+		}*/
 
 //JEIからエントリを完全に削除
 	val removeFromJEI as IItemStack[] = [
 		//Heat And Climate
-			<dcs_climate:dcs_gem:*>,
+			//<dcs_climate:dcs_gem:*>,
 			<dcs_climate:dcs_door_marble>,
 			<dcs_climate:dcs_door_greisen>,
 			<dcs_climate:dcs_door_gypsum>,
@@ -196,13 +197,14 @@ print("Start loading unification.zs ...");
 	];
 	for i in removeFromJEI {
 		HiiragiUtils.removeFromJEI(i);
-		HiiragiUtils.removeOreDict(i);
+		//HiiragiUtils.removeOreDict(i);
 	}
 
 //鉱石辞書の削除
 	<ore:dustWood>.remove(<dcs_climate:dcs_fooddust:7>);
 	<ore:blockAluminium>.remove(<techreborn:storage:1>);
-	//HiiragiUtils.removeOreDict(<dcs_climate:dcs_gem_layer:4>);
+
+	HiiragiUtils.removeOreDict(<dcs_climate:dcs_gem_layer:4>);
 
 	val removeLibvulpes as IItemStack[] = [
 		<libvulpes:productdust>,
@@ -253,7 +255,7 @@ print("Start loading unification.zs ...");
 	<ore:blockCoke>.add(<thermalfoundation:storage_resource:1>);
 
 //Tooltipの追加
-	<artisanworktables:workshop:10>.addTooltip(I18n.format("gohd.tooltip.terra_firma_interface.name"));
+	//<artisanworktables:workshop:10>.addTooltip(I18n.format("gohd.tooltip.terra_firma_interface.name"));
 	<contenttweaker:unfired_casting_channel>.addTooltip(I18n.format("gohd.tooltip.grout_forming.name"));
 	<contenttweaker:unfired_casting_table>.addTooltip(I18n.format("gohd.tooltip.grout_forming.name"));
 	<contenttweaker:unfired_casting_basin>.addTooltip(I18n.format("gohd.tooltip.grout_forming.name"));

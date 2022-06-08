@@ -103,7 +103,7 @@ print("Start loading HiiragiUtils.zs ...");
 //代入されたIItemStackをJEIから隠す関数
 	function hideFromJEI (item as IItemStack) {
 		mods.jei.JEI.hide(item);
-		item.addTooltip(I18n.format("gohd.tooltip.hided.name"));
+		item.addTooltip(I18n.format("gohd.tooltip.hidden.name"));
 	}
 
 //代入されたIItemStackをJEIから隠し、レシピを削除する関数

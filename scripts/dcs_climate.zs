@@ -13,6 +13,7 @@ import crafttweaker.item.IIngredient;
 //各種modからclassをimport
 import mods.artisanworktables.builder.RecipeBuilder;
 import mods.ctintegration.util.RecipePattern;
+import mods.tconstruct.Casting;
 
 //scriptのimport
 import scripts.HiiragiUtils;
@@ -25,22 +26,7 @@ print("Start loading dcs_climate.zs ...");
 //作業台レシピの編集
 	//削除
 		val removeCrafting as IItemStack[] = [
-			<dcs_climate:dcs_device_shaft_s>,
-			<dcs_climate:dcs_device_shaft_l>,
-			<dcs_climate:dcs_device_shaft_ta>,
-			<dcs_climate:dcs_device_shaft_tb>,
-			<dcs_climate:dcs_device_shaft_x>,
-			<dcs_climate:dcs_device_handcrank>,
-			<dcs_climate:dcs_device_shaft_s_steel>,
-			<dcs_climate:dcs_device_shaft_l_steel>,
-			<dcs_climate:dcs_device_shaft_ta_steel>,
-			<dcs_climate:dcs_device_shaft_tb_steel>,
-			<dcs_climate:dcs_device_shaft_x_steel>,
-			<dcs_climate:dcs_device_shaft_s_sus>,
-			<dcs_climate:dcs_device_shaft_l_sus>,
-			<dcs_climate:dcs_device_shaft_ta_sus>,
-			<dcs_climate:dcs_device_shaft_tb_sus>,
-			<dcs_climate:dcs_device_shaft_x_sus>,
+			/*
 			<hap:shaft_straight_steel>,
 			<hap:shaft_l_shaped_steel>,
 			<hap:shaft_bifurcated_steel>,
@@ -52,13 +38,30 @@ print("Start loading dcs_climate.zs ...");
 			<hap:shaft_bifurcated_sus>,
 			<hap:shaft_perpendicular_sus>,
 			<hap:shaft_t_shaped_sus>,
-			<hap:shaft_x_shaped_sus>,
+			<hap:shaft_x_shaped_sus>,*/
+			<dcs_climate:dcs_device_pail>,
 		];
 		for i in removeCrafting {
 			HiiragiUtils.removeCrafting(i);
 		}
 	//上書き
-		HiiragiUtils.addCrafting(false, true, <dcs_climate:dcs_device_chamber>, RecipePattern.init(["AAA", "ABA", "ACA"]).map({A:<tconstruct:seared:0>, B:<minecraft:blaze_rod>, C:<dcs_climate:dcs_cont_log:6>}).ingredients);
+		HiiragiUtils.addCrafting(false, true, <dcs_climate:dcs_device_chamber>, RecipePattern.init(["ABA", "BCB", "ABA"]).map({A:<minecraft:blaze_rod>, B:<tconstruct:seared:*>, C:<dcs_climate:dcs_cont_log:6>}).ingredients);
+		HiiragiUtils.addCrafting(false, true, <dcs_climate:dcs_device_bellow>, RecipePattern.init(["ABA", "BCD", "ABA"]).map({A:<ore:ingotIron>, B:<ore:itemLeather>, C:<ore:gearWood>, D:<ore:craftingPiston>}).ingredients);
+		//Brass Shafts
+			HiiragiUtils.addCrafting(false, true, <dcs_climate:dcs_device_shaft_l>*8, RecipePattern.init([" A", "AB"]).map({A:<ore:ingotBrass>, B:<ore:gearBrass>}).ingredients);
+			HiiragiUtils.addCrafting(false, true, <dcs_climate:dcs_device_shaft_ta>*8, RecipePattern.init([" A", "AB", " A"]).map({A:<ore:ingotBrass>, B:<ore:gearBrass>}).ingredients);
+			HiiragiUtils.addCrafting(false, true, <dcs_climate:dcs_device_shaft_tb>*8, RecipePattern.init([" A ", "ABA"]).map({A:<ore:ingotBrass>, B:<ore:gearBrass>}).ingredients);
+			HiiragiUtils.addCrafting(false, true, <dcs_climate:dcs_device_shaft_x>*8, RecipePattern.init(["  A ", "ABA", " A "]).map({A:<ore:ingotBrass>, B:<ore:gearBrass>}).ingredients);
+		//Steel Shaft
+			HiiragiUtils.addCrafting(false, true, <dcs_climate:dcs_device_shaft_l_steel>*8, RecipePattern.init([" A", "AB"]).map({A:<ore:ingotSteel>, B:<ore:gearSteel>}).ingredients);
+			HiiragiUtils.addCrafting(false, true, <dcs_climate:dcs_device_shaft_ta_steel>*8, RecipePattern.init([" A", "AB", " A"]).map({A:<ore:ingotSteel>, B:<ore:gearSteel>}).ingredients);
+			HiiragiUtils.addCrafting(false, true, <dcs_climate:dcs_device_shaft_tb_steel>*8, RecipePattern.init([" A ", "ABA"]).map({A:<ore:ingotSteel>, B:<ore:gearSteel>}).ingredients);
+			HiiragiUtils.addCrafting(false, true, <dcs_climate:dcs_device_shaft_x_steel>*8, RecipePattern.init(["  A ", "ABA", " A "]).map({A:<ore:ingotSteel>, B:<ore:gearSteel>}).ingredients);
+		//Stainless Shaft
+			HiiragiUtils.addCrafting(false, true, <dcs_climate:dcs_device_shaft_l_sus>*8, RecipePattern.init([" A", "AB"]).map({A:<ore:ingotSUS>, B:<ore:gearToolsteel>}).ingredients);
+			HiiragiUtils.addCrafting(false, true, <dcs_climate:dcs_device_shaft_ta_sus>*8, RecipePattern.init([" A", "AB", " A"]).map({A:<ore:ingotSUS>, B:<ore:gearToolSteel>}).ingredients);
+			HiiragiUtils.addCrafting(false, true, <dcs_climate:dcs_device_shaft_tb_sus>*8, RecipePattern.init([" A ", "ABA"]).map({A:<ore:ingotSUS>, B:<ore:gearToolSteel>}).ingredients);
+			HiiragiUtils.addCrafting(false, true, <dcs_climate:dcs_device_shaft_x_sus>*8, RecipePattern.init(["  A ", "ABA", " A "]).map({A:<ore:ingotSUS>, B:<ore:gearToolSteel>}).ingredients);
 	//新規
 
 //かまどレシピの編集
@@ -76,6 +79,9 @@ print("Start loading dcs_climate.zs ...");
 //AWレシピの編集
 	//import
 	//新規
+
+//Castingレシピの追加
+	mods.tconstruct.Casting.addBasinRecipe(<dcs_climate:dcs_device_pail>, <minecraft:bucket>, <liquid:molten_tin>, 288, true);
 
 //このscriptの読み込みの完了をログに出力
 print("dcs_climate.zs loaded!");

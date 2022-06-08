@@ -62,7 +62,7 @@ print("Start loading materialRegistry.zs ...");
 
 	//遷移金属
 		val materialAluminum = funcRegisterMaterial("Aluminum", "E2D1CE");
-		val materialAlumina = funcRegisterMaterial("Alumina", "FDFDFD"); //Al2O3
+		//val materialAlumina = funcRegisterMaterial("Alumina", "FDFDFD"); //Al2O3
 		val materialTitanium = funcRegisterMaterial("Titanium", "F0F0F0");
 		val materialTitaniumAlloy = funcRegisterMaterial("Titanium Alloy", "AE9169");
 		val materialTitaniumTetrachloride = funcRegisterMaterial("titanium_tetrachloride", "D40D5C"); //TiCl4
@@ -96,7 +96,7 @@ print("Start loading materialRegistry.zs ...");
 
 	//アルカリ金属
 		//val materialSalt = funcRegisterMaterial("Salt", "FAFAFA"); //NaCl
-		val materialRockSalt = funcRegisterMaterial("Rock Salt", "F0C8C8"); //KCl
+		//val materialRockSalt = funcRegisterMaterial("Rock Salt", "F0C8C8"); //KCl
 
 	//アルカリ土類金属
 		val materialBeryllium = funcRegisterMaterial("Beryllium", "64B464");
@@ -129,6 +129,8 @@ print("Start loading materialRegistry.zs ...");
 		val materialSoularium = funcRegisterMaterial("Soularium", "8A745C");
 		val materialEndSteel = funcRegisterMaterial("End Steel", "D5CF9B");
 
+		val materialEnergium = funcRegisterMaterial("Energium", "FF6464");
+
 		val materialIronwood = funcRegisterMaterial("Ironwood", "857648");
 		val materialFiery = funcRegisterMaterial("Fiery", "391D1E");
 		val materialKnightmetal = funcRegisterMaterial("Knightmetal", "C7D6AF");
@@ -141,8 +143,8 @@ print("Start loading materialRegistry.zs ...");
 	//Dust, Small Dust
 		val materialDust as Material[] = [
 			materialSilicon,
-			materialAlumina,
-			materialTitaniumAlloy,
+			//materialAlumina,
+			//materialTitaniumAlloy,
 			materialRutile,
 			materialMangalloy,
 			materialStainlessSteel,
@@ -153,7 +155,7 @@ print("Start loading materialRegistry.zs ...");
 			materialTungstate,
 			materialUraninite,
 
-			materialRockSalt,
+			//materialRockSalt,
 
 			materialBeryllium,
 			materialMagnalium,
@@ -163,21 +165,12 @@ print("Start loading materialRegistry.zs ...");
 			materialCertusQuartz,
 
 			materialRedAlloy,
+
+			materialEnergium,
 		];
 
 		for i in materialDust {
 			i.registerParts(["dust", "Small_dust"] as string[]);
-		}
-
-	//Gear
-		val materialGear as Material[] = [
-			materialTitaniumAlloy,
-			materialStainlessSteel,
-			materialTungstensteel,
-		];
-
-		for i in materialGear {
-			i.registerPart("gear");
 		}
 
 	//Ingot, Block, Molten
@@ -196,7 +189,7 @@ print("Start loading materialRegistry.zs ...");
 	//Ore (Block)
 		val materialOreBlock as Material[] = [
 			materialUraninite,
-			materialRockSalt,
+			//materialRockSalt,
 			materialMagnesia,
 		];
 

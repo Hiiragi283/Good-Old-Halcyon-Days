@@ -29,6 +29,30 @@ print("Start loading techreborn.zs ...");
 			HiiragiUtils.removeCrafting(i);
 		}
 	//上書き
+		//Machine Casing
+			HiiragiUtils.addCrafting(false, true, <techreborn:machine_casing:0>, RecipePattern.init(["ABA", "BCB", "ABA"]).map({A:<ore:ingotNickelsilver>, B:<ore:ingotAluminum>, C:<techreborn:machine_frame:0>}).ingredients);
+			HiiragiUtils.addCrafting(false, true, <techreborn:machine_casing:1>, RecipePattern.init(["ABA", "BCB", "ABA"]).map({A:<ore:ingotSteel>, B:<ore:plateSilicon>, C:<techreborn:machine_casing:0>}).ingredients);
+			HiiragiUtils.addCrafting(false, true, <techreborn:machine_casing:2>, RecipePattern.init(["ABA", "BCB", "ABA"]).map({A:<ore:ingotTungstensteel>, B:<ore:ingotChrome>, C:<techreborn:machine_casing:1>}).ingredients);
+		//Glass Fiber
+			//Redstone & Silver
+				HiiragiUtils.addCrafting(false, true, <techreborn:cable:4>*3, RecipePattern.init(["AAA", "BCB", "AAA"]).map({A:<ore:fusedGlass>, B:<ore:ingotSilver>, C:<ore:dustRedstone>}).ingredients);
+				HiiragiUtils.addCrafting(false, true, <techreborn:cable:4>*6, RecipePattern.init(["AAA", "BCB", "AAA"]).map({A:<ore:fusedQuartz>, B:<ore:ingotSilver>, C:<ore:dustRedstone>}).ingredients);
+				HiiragiUtils.addCrafting(false, true, <techreborn:cable:4>*9, RecipePattern.init(["AAA", "BCB", "AAA"]).map({A:<dcs_climate:dcs_synthetic:2>, B:<ore:ingotSilver>, C:<ore:dustRedstone>}).ingredients);
+			//Redstone & BSCCO
+				HiiragiUtils.addCrafting(false, true, <techreborn:cable:4>*6, RecipePattern.init(["AAA", "BCB", "AAA"]).map({A:<ore:fusedGlass>, B:<ore:ingotBSCCO>, C:<ore:dustRedstone>}).ingredients);
+				HiiragiUtils.addCrafting(false, true, <techreborn:cable:4>*12, RecipePattern.init(["AAA", "BCB", "AAA"]).map({A:<ore:fusedQuartz>, B:<ore:ingotBSCCO>, C:<ore:dustRedstone>}).ingredients);
+				HiiragiUtils.addCrafting(false, true, <techreborn:cable:4>*18, RecipePattern.init(["AAA", "BCB", "AAA"]).map({A:<dcs_climate:dcs_synthetic:2>, B:<ore:ingotBSCCO>, C:<ore:dustRedstone>}).ingredients);
+			//Energium & Silver
+				HiiragiUtils.addCrafting(false, true, <techreborn:cable:4>*4, RecipePattern.init(["AAA", "BCB", "AAA"]).map({A:<ore:fusedGlass>, B:<ore:ingotSilver>, C:<ore:dustEnergium>}).ingredients);
+				HiiragiUtils.addCrafting(false, true, <techreborn:cable:4>*8, RecipePattern.init(["AAA", "BCB", "AAA"]).map({A:<ore:fusedQuartz>, B:<ore:ingotSilver>, C:<ore:dustEnergium>}).ingredients);
+				HiiragiUtils.addCrafting(false, true, <techreborn:cable:4>*12, RecipePattern.init(["AAA", "BCB", "AAA"]).map({A:<dcs_climate:dcs_synthetic:2>, B:<ore:ingotSilver>, C:<ore:dustEnergium>}).ingredients);
+			//Energium & BSCCO
+				HiiragiUtils.addCrafting(false, true, <techreborn:cable:4>*8, RecipePattern.init(["AAA", "BCB", "AAA"]).map({A:<ore:fusedGlass>, B:<ore:ingotBSCCO>, C:<ore:dustEnergium>}).ingredients);
+				HiiragiUtils.addCrafting(false, true, <techreborn:cable:4>*16, RecipePattern.init(["AAA", "BCB", "AAA"]).map({A:<ore:fusedQuartz>, B:<ore:ingotBSCCO>, C:<ore:dustEnergium>}).ingredients);
+				HiiragiUtils.addCrafting(false, true, <techreborn:cable:4>*32, RecipePattern.init(["AAA", "BCB", "AAA"]).map({A:<dcs_climate:dcs_synthetic:2>, B:<ore:ingotBSCCO>, C:<ore:dustEnergium>}).ingredients);
+		//Machine Frame
+			HiiragiUtils.addCrafting(false, true, <techreborn:machine_frame:0>, RecipePattern.init(["AAA", "A A", "AAA"]).map({A:<ore:ingotSUS>}).ingredients);
+			HiiragiUtils.addCrafting(false, true, <techreborn:machine_frame:2>, RecipePattern.init(["AAA", "A A", "AAA"]).map({A:<ore:ingotTungstensteel>}).ingredients);
 	//新規
 
 //かまどレシピの編集

@@ -83,7 +83,7 @@ print("Start loading materialRecipes.zs ...");
 	//新規
 
 	//Cable
-		mods.techreborn.wireMill.removeAll();
+		/*mods.techreborn.wireMill.removeAll();
 		val listWire as string[] = [
 			"Copper",
 			"RefinedIron",
@@ -94,7 +94,7 @@ print("Start loading materialRecipes.zs ...");
 			if(!isNull(oreDict["cable" ~ i].firstItem) && !isNull(oreDict["ingot" ~ i].firstItem)) {
 				mods.techreborn.wireMill.addRecipe(oreDict["cable" ~ i].firstItem*3, oreDict["ingot" ~ i], 2*20, HiiragiUtils.voltageTier[0]);
 			}
-		}
+		}*/
 
 	//Ingot, Block
 		val listIngot as string[] = [
@@ -138,6 +138,7 @@ print("Start loading materialRecipes.zs ...");
 			"Zinc",
 			"RefinedIron",
 			"Magnalium",
+			"Constantan",
 			"Mithril",
 			"Signalum",
 			"Lumium",
@@ -174,6 +175,7 @@ print("Start loading materialRecipes.zs ...");
 		HiiragiUtils.removeFromJEI(<techreborn:plates:3>);
 		HiiragiUtils.removeFromJEI(<techreborn:plates:4>);
 		HiiragiUtils.removeFromJEI(<techreborn:plates:9>);
+		HiiragiUtils.removeFromJEI(<techreborn:plates:10>);
 
 //このscriptの読み込みの完了をログに出力
 print("materialRecipes.zs loaded!");

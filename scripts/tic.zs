@@ -1,5 +1,5 @@
 #======================================================================
-# ファイル名 : chisel.zs
+# ファイル名 : tic.zs
 # 作成者 : Hiiragi Russell Tsubasa: https://github.com/Hiiragi283
 # 情報 : Tikers Contructおよびそのアドオンの改変
 #======================================================================
@@ -21,7 +21,7 @@ import mods.zenutils.I18n;
 import scripts.HiiragiUtils;
 
 //このscriptの読み込みの開始をログに出力
-print("Start loading chisel.zs ...");
+print("Start loading tic.zs ...");
 
 //変数の定義
 	mods.jei.JEI.addItem(<tconstruct:edible:5>);
@@ -122,4 +122,4 @@ print("Start loading chisel.zs ...");
 	HiiragiUtils.removeFromJEI(HiiragiUtils.castClay("chisel_head"));
 
 //このscriptの読み込みの完了をログに出力
-print("chisel.zs loaded!");
+print("tic.zs loaded!");
