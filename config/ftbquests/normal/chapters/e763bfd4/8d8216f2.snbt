@@ -1,7 +1,7 @@
 {
 	title: "{gohd.e763bfd4.8d8216f2.title}",
 	icon: "minecraft:blaze_powder",
-	x: 4.0d,
+	x: 2.0d,
 	y: 2.0d,
 	dependencies: [
 		"e3a30f84"

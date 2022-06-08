@@ -1,5 +1,5 @@
 {
-	x: 6.0d,
+	x: 3.0d,
 	y: -5.0d,
 	dependencies: [
 		"301c5ddf"

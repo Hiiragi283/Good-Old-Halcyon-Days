@@ -3,7 +3,6 @@
 	x: -3.5d,
 	y: 1.0d,
 	dependencies: [
-		"b49312ff",
 		"dbb48ae7"
 	],
 	tasks: [{

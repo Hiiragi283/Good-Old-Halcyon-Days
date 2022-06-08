@@ -12,5 +12,10 @@
 		title: "{gohd.09d26429.648774ca.title}",
 		icon: "minecraft:grass",
 		dim: 0
+	}],
+	rewards: [{
+		uid: "1208f479",
+		type: "item",
+		item: "dcs_lib:dcs_checker"
 	}]
 }

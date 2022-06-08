@@ -28,5 +28,68 @@
 		"input": {
 			"item": "samplemod:remove_input:0"
 		}
+	},
+	"add_oreBauxite": {
+		"recipe_type": "ADD",
+		"output_primary": {
+			"item": "techreborn:dust:5",
+			"amount": 2
+		},
+		"output_secondary": {
+			"item": "dcs_climate:dcs_miscdust:2",
+			"chance": 0.20
+		},
+		"output_tertiary": {
+			"item": "dcs_climate:dcs_gem_red:5",
+			"chance": 0.05
+		},
+		"catalyst": {
+			"item": "dcs_climate:dcs_rotaryblade:1"
+		},
+		"input": {
+			"ore_dict": "oreBauxite"
+		}
+	},
+	"add_oreGalena": {
+		"recipe_type": "ADD",
+		"output_primary": {
+			"item": "techreborn:dust:23",
+			"amount": 2
+		},
+		"output_secondary": {
+			"item": "dcs_climate:dcs_gem_layer",
+			"chance": 0.20
+		},
+		"output_tertiary": {
+			"item": "dcs_climate:dcs_oredust:3",
+			"chance": 0.05
+		},
+		"catalyst": {
+			"item": "dcs_climate:dcs_rotaryblade:1"
+		},
+		"input": {
+			"ore_dict": "oreGalena"
+		}
+	},
+	"add_oreRutile": {
+		"recipe_type": "ADD",
+		"output_primary": {
+			"item": "contenttweaker:rutile_dust:0",
+			"amount": 2
+		},
+		"output_secondary": {
+			"item": "dcs_climate:dcs_miscdust:1",
+			"chance": 0.20
+		},
+		"output_tertiary": {
+			"item": "dcs_climate:dcs_gem_white:2",
+			"chance": 0.05
+		},
+		"catalyst": {
+			"item": "dcs_climate:dcs_rotaryblade:1"
+		},
+		"input": {
+			"ore_dict": "oreRutile"
+		}
 	}
 }

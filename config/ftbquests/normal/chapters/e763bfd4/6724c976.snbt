@@ -1,10 +1,10 @@
 {
 	title: "{gohd.5f3109ce.8093a1e1.title}",
-	x: 8.0d,
-	y: 8.0d,
+	x: 6.0d,
+	y: 6.0d,
 	shape: "diamond",
 	dependencies: [
-		"f9c67698"
+		"433f670e"
 	],
 	size: 2.0d,
 	tasks: [{

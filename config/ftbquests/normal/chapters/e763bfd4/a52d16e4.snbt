@@ -1,6 +1,6 @@
 {
-	x: 6.0d,
-	y: -8.0d,
+	x: 5.0d,
+	y: -7.0d,
 	dependencies: [
 		"5a0bc24d"
 	],
@@ -10,5 +10,20 @@
 		items: [{
 			item: "dcs_climate:dcs_device_tea_pot"
 		}]
+	}],
+	rewards: [{
+		uid: "56fb4953",
+		type: "item",
+		item: "dcs_climate:dcs_food_teacup"
+	},
+	{
+		uid: "f4f95515",
+		type: "item",
+		item: "dcs_climate:dcs_food_teacup 1 1"
+	},
+	{
+		uid: "d4eef813",
+		type: "item",
+		item: "dcs_climate:dcs_food_teacup 1 2"
 	}]
 }

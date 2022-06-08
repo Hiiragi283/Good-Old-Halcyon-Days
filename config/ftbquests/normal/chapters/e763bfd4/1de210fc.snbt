@@ -1,6 +1,6 @@
 {
 	icon: "techreborn:dust 1 47",
-	x: 7.0d,
+	x: 4.0d,
 	y: -2.0d,
 	dependencies: [
 		"418b6471"

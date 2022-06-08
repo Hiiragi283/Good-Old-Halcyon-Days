@@ -1,9 +1,9 @@
 {
-	x: 2.0d,
+	title: "{gohd.middleAge.title}",
+	x: 0.0d,
 	y: 0.0d,
-	dependencies: [
-		"26f2f5b9"
-	],
+	shape: "square",
+	size: 2.0d,
 	tasks: [{
 		uid: "521d6cbf",
 		type: "item",

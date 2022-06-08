@@ -1,7 +1,7 @@
 {
 	title: "{gohd.e763bfd4.7b187aea.title}",
 	icon: "minecraft:blaze_rod",
-	x: 6.0d,
+	x: 4.0d,
 	y: 2.0d,
 	dependencies: [
 		"8d8216f2"

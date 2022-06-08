@@ -22,7 +22,7 @@
 	"dustblock_tantalum_hafniumcarbide": {
 		"recipe_type": "ADD",
 		"output": {
-			"item": "contenttweaker:sub_block_holder_2:1"
+			"item": "contenttweaker:sub_block_holder_0:2"
 		},
 		"climate_temperature": "UHT",
 		"climate_airflow": "TIGHT",
@@ -44,7 +44,7 @@
 	"dustblock_tungsten_carbide": {
 		"recipe_type": "ADD",
 		"output": {
-			"item": "contenttweaker:sub_block_holder_0:6"
+			"item": "contenttweaker:sub_block_holder_0:1"
 		},
 		"climate_temperature": "UHT",
 		"climate_airflow": "TIGHT",

@@ -1,6 +1,6 @@
 {
-	x: 6.0d,
-	y: 6.0d,
+	x: 5.0d,
+	y: 5.0d,
 	description: "{link.youtu.be.2P2TC8Tlq7M}",
 	dependencies: [
 		"6724c976"

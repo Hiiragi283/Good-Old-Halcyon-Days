@@ -1,0 +1,15 @@
+{
+	title: "{gohd.e763bfd4.f9c67698.title}",
+	x: 6.0d,
+	y: 4.0d,
+	dependencies: [
+		"f9c67698"
+	],
+	tasks: [{
+		uid: "fde88a62",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_ore_metal_alloy 1 2"
+		}]
+	}]
+}
