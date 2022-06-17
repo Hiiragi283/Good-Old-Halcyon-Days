@@ -21,11 +21,8 @@
 	"add_oreBauxite": {
 		"recipe_type": "ADD",
 		"output_primary": {
-			"item": "techreborn:dust:5"
-		},
-		"output_secondary": {
 			"item": "techreborn:dust:5",
-			"chance": 1.00
+			"count": 2
 		},
 		"input": {
 			"ore_dict": "oreBauxite"

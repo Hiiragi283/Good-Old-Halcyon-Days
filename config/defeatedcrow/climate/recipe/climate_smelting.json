@@ -19,15 +19,15 @@
 		"climate_temperature": "COLD",
 		"climate_humidity": "WET"
 	},
-	"dustblock_tantalum_hafniumcarbide": {
+	"dustblock_electrum": {
 		"recipe_type": "ADD",
 		"output": {
-			"item": "contenttweaker:sub_block_holder_0:2"
+			"item": "techreborn:storage:7"
 		},
-		"climate_temperature": "UHT",
+		"climate_temperature": "SMELTING",
 		"climate_airflow": "TIGHT",
 		"input": {
-			"item": "contenttweaker:dustblock_tantalum_hafnium_carbide:0"
+			"item": "contenttweaker:dustblock_electrum:0"
 		}
 	},
 	"dustblock_platinum": {
@@ -41,17 +41,6 @@
 			"item": "contenttweaker:dustblock_platinum:0"
 		}
 	},
-	"dustblock_tungsten_carbide": {
-		"recipe_type": "ADD",
-		"output": {
-			"item": "contenttweaker:sub_block_holder_0:1"
-		},
-		"climate_temperature": "UHT",
-		"climate_airflow": "TIGHT",
-		"input": {
-			"item": "contenttweaker:dustblock_tungsten_carbide:0"
-		}
-	},
 	"dustblock_cobalt": {
 		"recipe_type": "ADD",
 		"output": {
@@ -61,6 +50,28 @@
 		"climate_airflow": "TIGHT",
 		"input": {
 			"item": "contenttweaker:dustblock_cobalt:0"
+		}
+	},
+	"dustblock_lead": {
+		"recipe_type": "ADD",
+		"output": {
+			"item": "dcs_climate:dcs_ore_metal_new:3"
+		},
+		"climate_temperature": "SMELTING",
+		"climate_airflow": "TIGHT",
+		"input": {
+			"item": "contenttweaker:dustblock_lead:0"
+		}
+	},
+	"ingot_refined_iron": {
+		"recipe_type": "ADD",
+		"output": {
+			"item": "techreborn:ingot:19"
+		},
+		"climate_temperature": "UHT",
+		"climate_airflow": "TIGHT",
+		"input": {
+			"ore_dict": "ingotIron"
 		}
 	}
 }
