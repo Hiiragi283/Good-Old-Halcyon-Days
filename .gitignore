@@ -16,6 +16,7 @@ caches
 docs
 download
 generated
+icon
 infinity-data
 local
 logs
@@ -44,6 +45,7 @@ resources/crossroads
 BotaniaVars.dat
 hei_bookmarks.ini
 icon.png
+icon_old.png
 minecraftinstance.json
 options.txt
 optionsof.txt
