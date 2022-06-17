@@ -1,6 +1,6 @@
 {
-	x: -3.0d,
-	y: 0.0d,
+	x: 6.0d,
+	y: 3.0d,
 	dependencies: [
 		"8e6a9cab"
 	],
@@ -13,5 +13,11 @@
 				Material: "stone"
 			}
 		}]
+	}],
+	rewards: [{
+		uid: "79eac815",
+		type: "item",
+		item: "minecraft:cobblestone",
+		count: 64
 	}]
 }

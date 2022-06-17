@@ -1,9 +1,10 @@
 {
 	title: "{gohd.09d26429.e0c2b03d.title}",
-	x: -3.5d,
-	y: 1.0d,
+	x: 7.0d,
+	y: -3.0d,
 	dependencies: [
-		"dbb48ae7"
+		"dbb48ae7",
+		"4fb7c614"
 	],
 	tasks: [{
 		uid: "0e68e47c",
@@ -44,5 +45,16 @@
 				Material: "flint"
 			}
 		}]
+	}],
+	rewards: [{
+		uid: "7a3294a0",
+		type: "item",
+		item: {
+			id: "tconstruct:sharpening_kit",
+			tag: {
+				Material: "flint"
+			}
+		},
+		count: 8
 	}]
 }

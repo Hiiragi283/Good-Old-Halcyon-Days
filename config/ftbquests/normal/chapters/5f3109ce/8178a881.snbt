@@ -1,27 +1,28 @@
 {
-	title: "{gohd.5f3109ce.8178a881.title}",
-	icon: "dcs_climate:dcs_ingot 1 4",
-	x: 3.0d,
+	title: "{gohd.primitiveAge.title}",
+	icon: {
+		id: "tconstruct:large_plate",
+		tag: {
+			Material: "bronze"
+		}
+	},
+	x: 2.0d,
 	y: 0.0d,
 	dependencies: [
-		"62a4b686"
+		"6a052b16"
 	],
 	tasks: [{
-		uid: "6fed99ec",
+		uid: "a79f1e99",
 		type: "item",
 		items: [{
-			ForgeCaps: {
-				Parent: {
-					data: "ingotBrass",
-					id: "ore"
-				}
-			},
-			id: "itemfilters:filter",
-			tag: {
-				display: {
-					Name: "Any ingotBrass"
-				}
-			}
+			item: "minecraft:iron_ingot"
+		}]
+	},
+	{
+		uid: "187bd50b",
+		type: "item",
+		items: [{
+			item: "tcomplement:melter"
 		}]
 	}]
 }

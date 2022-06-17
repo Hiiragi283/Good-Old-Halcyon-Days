@@ -1,8 +1,15 @@
 {
-	title: "{gohd.5f3109ce.41da5781.title}",
-	x: 7.5d,
-	y: 0.0d,
+	title: "{gohd.chemicalAge.title1}",
+	icon: {
+		id: "tconstruct:large_plate",
+		tag: {
+			Material: "stainless_steel"
+		}
+	},
+	x: 6.0d,
+	y: -1.0d,
 	dependencies: [
+		"bf4f273a",
 		"8093a1e1"
 	],
 	tasks: [{
@@ -21,6 +28,13 @@
 					Name: "Any ingotStainlessSteel"
 				}
 			}
+		}]
+	},
+	{
+		uid: "b3802f20",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_device_reactor"
 		}]
 	}]
 }

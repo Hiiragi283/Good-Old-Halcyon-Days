@@ -1,0 +1,30 @@
+{
+	title: "{gohd.cccede9d.6ef83f24.title}",
+	icon: "dcs_climate:dcs_ore_stone_new 1 1",
+	x: 0.0d,
+	y: 2.0d,
+	text: [
+		"{dcs.info.desc.stone_g}"
+	],
+	tasks: [{
+		uid: "e7772ed3",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_ore_stone_new 1 1"
+		}]
+	},
+	{
+		uid: "57a61998",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_ore_stone_new 1 6"
+		}]
+	},
+	{
+		uid: "3b204cbd",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_layer_stone_new 1 6"
+		}]
+	}]
+}

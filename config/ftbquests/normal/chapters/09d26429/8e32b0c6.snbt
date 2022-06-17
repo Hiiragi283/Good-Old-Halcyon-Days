@@ -1,9 +1,10 @@
 {
 	title: "{gohd.09d26429.8e32b0c6.title}",
-	x: -3.5d,
-	y: -1.0d,
+	x: 8.0d,
+	y: -3.0d,
 	dependencies: [
-		"83b108d4"
+		"83b108d4",
+		"4fb7c614"
 	],
 	tasks: [{
 		uid: "71bf0b11",
@@ -44,5 +45,16 @@
 				Material: "obsidian"
 			}
 		}]
+	}],
+	rewards: [{
+		uid: "4bd069ee",
+		type: "item",
+		item: {
+			id: "tconstruct:sharpening_kit",
+			tag: {
+				Material: "obsidian"
+			}
+		},
+		count: 8
 	}]
 }

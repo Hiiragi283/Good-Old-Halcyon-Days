@@ -1,0 +1,21 @@
+{
+	x: 8.0d,
+	y: 1.0d,
+	dependencies: [
+		"67d0931b"
+	],
+	tasks: [{
+		uid: "cb1dc906",
+		type: "item",
+		items: [{
+			item: "contenttweaker:dustblock_lead"
+		}]
+	},
+	{
+		uid: "45b58163",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_ore_metal_new 1 3"
+		}]
+	}]
+}

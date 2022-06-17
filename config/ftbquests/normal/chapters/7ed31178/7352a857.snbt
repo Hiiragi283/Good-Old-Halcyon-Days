@@ -1,0 +1,12 @@
+{
+	icon: "dcs_climate:dcs_ingot 1 11",
+	x: 0.0d,
+	y: 0.0d,
+	shape: "square",
+	size: 2.0d,
+	tasks: [{
+		uid: "7b907c8e",
+		type: "checkmark",
+		title: "{gohd.industrialAge.title}"
+	}]
+}

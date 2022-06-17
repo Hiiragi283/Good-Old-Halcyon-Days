@@ -1,6 +1,6 @@
 {
-	x: 6.0d,
-	y: 8.0d,
+	x: 11.0d,
+	y: 1.0d,
 	dependencies: [
 		"6724c976"
 	],
@@ -8,7 +8,7 @@
 		uid: "a5ef6a81",
 		type: "item",
 		items: [{
-			item: "dcs_climate:dcs_device_crafting_counter"
+			item: "dcs_climate:dcs_device_steel_pot"
 		}]
 	}]
 }

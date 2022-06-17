@@ -1,10 +1,10 @@
 {
 	title: "{gohd.09d26429.4fb7c614.title}",
-	x: 3.5d,
-	y: 1.0d,
+	x: 5.0d,
+	y: -3.0d,
 	description: "{link.youtu.be.TG6yHxuK22g}",
 	dependencies: [
-		"47a3fa84"
+		"8297ab4c"
 	],
 	tasks: [{
 		uid: "a411ca44",

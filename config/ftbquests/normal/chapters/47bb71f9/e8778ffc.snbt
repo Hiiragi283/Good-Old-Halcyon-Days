@@ -1,0 +1,21 @@
+{
+	x: 2.0d,
+	y: -6.0d,
+	shape: "square",
+	dependencies: [
+		"80983d24"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "cc041ba8",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_device_boiler_turbine"
+		}]
+	}],
+	rewards: [{
+		uid: "8d2aa37f",
+		type: "item",
+		item: "dcs_climate:dcs_device_geyser_stone"
+	}]
+}

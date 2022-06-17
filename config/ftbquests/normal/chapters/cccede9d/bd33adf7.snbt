@@ -1,0 +1,14 @@
+{
+	title: "Red",
+	icon: "dcs_climate:dcs_color 1 7",
+	x: 5.0d,
+	y: 1.0d,
+	hide_dependency_lines: true,
+	dependencies: [
+		"add5de61"
+	],
+	tasks: [{
+		uid: "ca2ba7ad",
+		type: "checkmark"
+	}]
+}

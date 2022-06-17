@@ -1,0 +1,48 @@
+{
+	title: "{gohd.cccede9d.3634dbb2.title}",
+	icon: "dcs_climate:dcs_layer_stone_new 1 1",
+	x: 1.5d,
+	y: 3.0d,
+	shape: "rsquare",
+	text: [
+		"{gohd.cccede9d.3634dbb2.desc1}"
+	],
+	dependencies: [
+		"d70f01cb"
+	],
+	optional: true,
+	tasks: [{
+		uid: "7cee1552",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_layer_stone_new 1 1"
+		}]
+	},
+	{
+		uid: "1e1279c2",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_ore_gemblock 1 6"
+		}]
+	},
+	{
+		uid: "d632f576",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_layer_skarn_ore"
+		},
+		{
+			item: "dcs_climate:dcs_gem_red 1 5"
+		}]
+	},
+	{
+		uid: "8b21c1f0",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_layer_skarn_ore 1 1"
+		},
+		{
+			item: "dcs_climate:dcs_gem_blue 1 5"
+		}]
+	}]
+}

@@ -1,0 +1,17 @@
+{
+	x: 3.0d,
+	y: 5.0d,
+	shape: "rsquare",
+	description: "{gohd.cccede9d.1a7f5909.subtitle}",
+	text: [
+		"{gohd.cccede9d.1a7f5909.desc1}"
+	],
+	optional: true,
+	tasks: [{
+		uid: "80ec293f",
+		type: "item",
+		items: [{
+			item: "railcraft:ore_magic"
+		}]
+	}]
+}

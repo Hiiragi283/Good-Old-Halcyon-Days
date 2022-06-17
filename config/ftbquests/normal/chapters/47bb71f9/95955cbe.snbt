@@ -1,0 +1,16 @@
+{
+	x: 11.0d,
+	y: 3.0d,
+	shape: "rsquare",
+	dependencies: [
+		"33715e9c"
+	],
+	optional: true,
+	tasks: [{
+		uid: "89dd5dfd",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_reagent 1 12"
+		}]
+	}]
+}

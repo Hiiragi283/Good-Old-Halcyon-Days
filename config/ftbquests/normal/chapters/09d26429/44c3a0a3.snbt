@@ -1,6 +1,7 @@
 {
-	x: 4.0d,
-	y: 2.0d,
+	icon: "tconstruct:cast",
+	x: 11.0d,
+	y: 6.0d,
 	dependencies: [
 		"a3e12b21",
 		"25daeec3",
@@ -12,15 +13,6 @@
 		items: [{
 			item: "tconstruct:cast"
 		}]
-	},
-	{
-		uid: "c58e6987",
-		type: "item",
-		items: [{
-			item: "chisel:chisel_iron"
-		}],
-		ignore_damage: true,
-		ignore_nbt: 1b
 	}],
 	rewards: [{
 		uid: "3dc054ed",
@@ -61,5 +53,10 @@
 				PartType: "tconstruct:sword_blade"
 			}
 		}
+	},
+	{
+		uid: "14109009",
+		type: "item",
+		item: "chisel:chisel_iron"
 	}]
 }

@@ -1,0 +1,14 @@
+{
+	x: 9.0d,
+	y: 3.0d,
+	tasks: [{
+		uid: "affe8acf",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_layer_skarn_ore 1 1"
+		},
+		{
+			item: "dcs_climate:dcs_gem_blue 1 5"
+		}]
+	}]
+}

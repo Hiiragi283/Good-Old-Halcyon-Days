@@ -1,0 +1,27 @@
+{
+	x: 4.0d,
+	y: -6.0d,
+	dependencies: [
+		"e8778ffc"
+	],
+	tasks: [{
+		uid: "42524dc3",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_device_shaft_s_sus"
+		}],
+		count: 8L
+	}],
+	rewards: [{
+		uid: "eda01c3c",
+		type: "item",
+		item: "dcs_climate:dcs_device_shaft_s_sus",
+		count: 56
+	},
+	{
+		uid: "b326b545",
+		type: "item",
+		item: "dcs_climate:dcs_device_gearbox_sus",
+		count: 4
+	}]
+}

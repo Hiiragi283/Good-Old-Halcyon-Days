@@ -1,0 +1,22 @@
+{
+	icon: "dcs_climate:dcs_oreitem 1 7",
+	x: 4.0d,
+	y: 1.0d,
+	dependencies: [
+		"885c0e70"
+	],
+	tasks: [{
+		uid: "6382ef97",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_oreitem 1 7"
+		}]
+	},
+	{
+		uid: "23e2ba7f",
+		type: "item",
+		items: [{
+			item: "techreborn:dust 1 23"
+		}]
+	}]
+}

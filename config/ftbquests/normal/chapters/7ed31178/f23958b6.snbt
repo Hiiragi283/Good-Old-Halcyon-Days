@@ -1,0 +1,30 @@
+{
+	x: -2.0d,
+	y: 0.0d,
+	shape: "square",
+	dependencies: [
+		"7352a857"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "54c0dbef",
+		type: "item",
+		items: [{
+			item: "hap:reactor_advanced"
+		}]
+	},
+	{
+		uid: "ac95a25d",
+		type: "item",
+		items: [{
+			item: "hap:reactor_fluid_port"
+		}]
+	},
+	{
+		uid: "2d38b006",
+		type: "item",
+		items: [{
+			item: "hap:reactor_storage"
+		}]
+	}]
+}

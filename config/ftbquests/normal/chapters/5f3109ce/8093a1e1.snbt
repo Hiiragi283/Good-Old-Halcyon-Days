@@ -1,10 +1,15 @@
 {
-	title: "{gohd.5f3109ce.8093a1e1.title}",
-	icon: "dcs_climate:dcs_ingot 1 5",
-	x: 6.0d,
-	y: 0.0d,
+	title: "{gohd.middleAge.title2}",
+	icon: {
+		id: "tconstruct:large_plate",
+		tag: {
+			Material: "steel"
+		}
+	},
+	x: 4.0d,
+	y: -1.0d,
 	dependencies: [
-		"bf4f273a"
+		"8178a881"
 	],
 	tasks: [{
 		uid: "ea334120",
@@ -22,6 +27,13 @@
 					Name: "Any ingotSteel"
 				}
 			}
+		}]
+	},
+	{
+		uid: "4c028e95",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_device_heat_exchanger"
 		}]
 	}]
 }

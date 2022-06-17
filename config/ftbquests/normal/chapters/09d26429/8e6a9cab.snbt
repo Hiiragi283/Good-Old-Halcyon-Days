@@ -1,10 +1,10 @@
 {
 	title: "{gohd.09d26429.8e6a9cab.title}",
 	icon: "minecraft:stick",
-	x: -2.0d,
-	y: 0.0d,
+	x: 5.0d,
+	y: 3.0d,
 	dependencies: [
-		"648774ca"
+		"8297ab4c"
 	],
 	tasks: [{
 		uid: "75ef15d6",

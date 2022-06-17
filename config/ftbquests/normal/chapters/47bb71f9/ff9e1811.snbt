@@ -1,0 +1,22 @@
+{
+	icon: "dcs_climate:dcs_ore_dustblock 1 13",
+	x: 8.0d,
+	y: -1.0d,
+	dependencies: [
+		"a5332248"
+	],
+	tasks: [{
+		uid: "b2ae7f3f",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_ore_dustblock 1 13"
+		}]
+	},
+	{
+		uid: "7c7ea9ea",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_ore_metal_new 1 4"
+		}]
+	}]
+}

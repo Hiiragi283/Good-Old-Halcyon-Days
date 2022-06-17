@@ -1,7 +1,7 @@
 {
 	title: "{gohd.5f3109ce.8093a1e1.title}",
-	x: 6.0d,
-	y: 6.0d,
+	x: 12.0d,
+	y: 2.0d,
 	shape: "diamond",
 	dependencies: [
 		"433f670e"

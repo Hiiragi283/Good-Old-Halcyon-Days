@@ -1,6 +1,6 @@
 {
-	x: 1.0d,
-	y: 2.0d,
+	x: 7.0d,
+	y: 6.0d,
 	dependencies: [
 		"efbbdf1d",
 		"de863d39"
@@ -17,6 +17,20 @@
 		type: "item",
 		items: [{
 			item: "tconstruct:casting 1 1"
+		}]
+	},
+	{
+		uid: "48eb2e87",
+		type: "item",
+		items: [{
+			item: "tconstruct:channel"
+		}]
+	},
+	{
+		uid: "c7b468f0",
+		type: "item",
+		items: [{
+			item: "tconstruct:faucet"
 		}]
 	}]
 }

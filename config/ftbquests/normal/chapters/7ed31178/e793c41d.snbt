@@ -1,0 +1,13 @@
+{
+	x: 10.0d,
+	y: 0.0d,
+	shape: "diamond",
+	size: 2.0d,
+	tasks: [{
+		uid: "e404e286",
+		type: "item",
+		items: [{
+			item: "techreborn:ingot 1 17"
+		}]
+	}]
+}

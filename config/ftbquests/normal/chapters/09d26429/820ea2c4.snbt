@@ -1,9 +1,10 @@
 {
 	title: "{gohd.09d26429.820ea2c4.title}",
-	x: -4.0d,
-	y: 0.0d,
+	x: 6.0d,
+	y: -3.0d,
 	dependencies: [
-		"14ff1572"
+		"14ff1572",
+		"4fb7c614"
 	],
 	tasks: [{
 		uid: "3acaef95",
@@ -44,5 +45,16 @@
 				Material: "stone"
 			}
 		}]
+	}],
+	rewards: [{
+		uid: "ce0e5efa",
+		type: "item",
+		item: {
+			id: "tconstruct:sharpening_kit",
+			tag: {
+				Material: "stone"
+			}
+		},
+		count: 8
 	}]
 }

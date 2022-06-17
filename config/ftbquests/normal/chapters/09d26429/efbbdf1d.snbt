@@ -1,8 +1,8 @@
 {
-	x: 0.0d,
-	y: 2.0d,
+	x: 4.0d,
+	y: 6.0d,
 	dependencies: [
-		"8ebddfdc"
+		"0caa24a5"
 	],
 	tasks: [{
 		uid: "77081576",
@@ -16,6 +16,13 @@
 		type: "item",
 		items: [{
 			item: "contenttweaker:unfired_casting_basin"
+		}]
+	},
+	{
+		uid: "eb11f11e",
+		type: "item",
+		items: [{
+			item: "contenttweaker:unfired_casting_channel"
 		}]
 	}]
 }

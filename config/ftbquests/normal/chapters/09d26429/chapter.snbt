@@ -1,7 +1,12 @@
 {
 	title: "{gohd.primitiveAge.title}",
-	icon: "dcs_climate:dcs_spindle",
+	icon: {
+		id: "tconstruct:large_plate",
+		tag: {
+			Material: "wood"
+		}
+	},
 	always_invisible: false,
-	group: 0,
-	default_quest_shape: "hexagon"
+	group: 1597049294,
+	default_quest_shape: "circle"
 }

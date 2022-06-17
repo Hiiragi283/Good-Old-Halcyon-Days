@@ -1,6 +1,7 @@
 {
-	x: 5.0d,
-	y: -7.0d,
+	x: 9.0d,
+	y: -3.0d,
+	description: "{gohd.e763bfd4.a52d16e4.subtitle}",
 	dependencies: [
 		"5a0bc24d"
 	],

@@ -1,7 +1,13 @@
 {
-	title: "{gohd.5f3109ce.bf4f273a.title}",
-	x: 4.5d,
-	y: 0.0d,
+	title: "{gohd.middleAge.title1}",
+	icon: {
+		id: "tconstruct:large_plate",
+		tag: {
+			Material: "nickelsilver"
+		}
+	},
+	x: 4.0d,
+	y: 1.0d,
 	dependencies: [
 		"8178a881"
 	],
@@ -21,6 +27,13 @@
 					Name: "Any ingotNickelsilver"
 				}
 			}
+		}]
+	},
+	{
+		uid: "1c70b5ca",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_device_stonemill"
 		}]
 	}]
 }

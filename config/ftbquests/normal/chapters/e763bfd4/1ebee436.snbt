@@ -3,6 +3,9 @@
 	x: 0.0d,
 	y: 0.0d,
 	shape: "square",
+	dependencies: [
+		"af232189"
+	],
 	size: 2.0d,
 	tasks: [{
 		uid: "521d6cbf",
@@ -13,33 +16,15 @@
 		count: 8L
 	}],
 	rewards: [{
-		uid: "ecf3632e",
+		uid: "8abbf39e",
 		type: "item",
 		item: "dcs_climate:dcs_device_shaft_s",
-		count: 24
+		count: 56
 	},
 	{
-		uid: "d224d185",
+		uid: "3ff8e3d4",
 		type: "item",
-		item: "dcs_climate:dcs_device_shaft_l",
-		count: 16
-	},
-	{
-		uid: "f8c09897",
-		type: "item",
-		item: "dcs_climate:dcs_device_shaft_x",
+		item: "dcs_climate:dcs_device_gearbox",
 		count: 4
-	},
-	{
-		uid: "0280fee1",
-		type: "item",
-		item: "dcs_climate:dcs_device_shaft_ta",
-		count: 8
-	},
-	{
-		uid: "f523444d",
-		type: "item",
-		item: "dcs_climate:dcs_device_shaft_tb",
-		count: 8
 	}]
 }

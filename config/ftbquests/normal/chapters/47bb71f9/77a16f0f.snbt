@@ -1,0 +1,14 @@
+{
+	x: 5.0d,
+	y: 9.0d,
+	dependencies: [
+		"030e7a85"
+	],
+	tasks: [{
+		uid: "02afc7bc",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_device_diesel_engine"
+		}]
+	}]
+}

@@ -1,7 +1,13 @@
 {
-	title: "{gohd.5f3109ce.9e83be60.title}",
-	x: 9.0d,
-	y: 0.0d,
+	title: "{gohd.industrialAge.title1}",
+	icon: {
+		id: "tconstruct:large_plate",
+		tag: {
+			Material: "titanium_alloy"
+		}
+	},
+	x: 8.0d,
+	y: -1.0d,
 	dependencies: [
 		"41da5781"
 	],
@@ -21,6 +27,13 @@
 					Name: "Any ingotTitaniumAlloy"
 				}
 			}
+		}]
+	},
+	{
+		uid: "83161c52",
+		type: "item",
+		items: [{
+			item: "hap:reactor_advanced"
 		}]
 	}]
 }

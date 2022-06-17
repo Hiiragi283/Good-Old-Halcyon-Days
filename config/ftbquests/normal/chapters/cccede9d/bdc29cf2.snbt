@@ -1,0 +1,28 @@
+{
+	icon: "dcs_climate:dcs_layer_stone_new 1 7",
+	x: 3.0d,
+	y: 2.0d,
+	shape: "rsquare",
+	text: [
+		"{gohd.cccede9d.bdc29cf2.desc1}"
+	],
+	optional: true,
+	tasks: [{
+		uid: "7f081235",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_layer_stone_new 1 7"
+		}]
+	},
+	{
+		uid: "33bddcad",
+		type: "item",
+		items: [{
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "dcs.hotspring",
+				Amount: 1000
+			}
+		}]
+	}]
+}

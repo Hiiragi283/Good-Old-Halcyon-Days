@@ -1,0 +1,14 @@
+{
+	x: 6.0d,
+	y: 1.0d,
+	dependencies: [
+		"d35548e7"
+	],
+	tasks: [{
+		uid: "db961359",
+		type: "item",
+		items: [{
+			item: "techreborn:dust 1 29"
+		}]
+	}]
+}

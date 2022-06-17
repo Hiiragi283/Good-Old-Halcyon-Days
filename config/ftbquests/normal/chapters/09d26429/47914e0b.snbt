@@ -1,0 +1,15 @@
+{
+	x: 7.0d,
+	y: 8.0d,
+	dependencies: [
+		"a3e12b21"
+	],
+	tasks: [{
+		uid: "a009f41c",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_device_pail"
+		}],
+		ignore_nbt: 1b
+	}]
+}

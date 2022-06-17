@@ -1,8 +1,10 @@
 {
-	title: "{gohd.5f3109ce.b32ed3b4.title}",
-	x: 10.5d,
+	title: "{gohd.highTechAge.title1}",
+	icon: "techreborn:part 1 6",
+	x: 10.0d,
 	y: 0.0d,
 	dependencies: [
+		"7261290f",
 		"9e83be60"
 	],
 	tasks: [{

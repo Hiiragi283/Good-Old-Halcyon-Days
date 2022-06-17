@@ -1,0 +1,21 @@
+{
+	title: "{gohd.industrialAge.title2}",
+	icon: {
+		id: "tconstruct:large_plate",
+		tag: {
+			Material: "mangalloy"
+		}
+	},
+	x: 8.0d,
+	y: 1.0d,
+	dependencies: [
+		"02e35347"
+	],
+	tasks: [{
+		uid: "b7045529",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_ingot 1 18"
+		}]
+	}]
+}

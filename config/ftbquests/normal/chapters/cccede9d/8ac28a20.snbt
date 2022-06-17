@@ -1,0 +1,39 @@
+{
+	title: "{gohd.cccede9d.8ac28a20.title}",
+	icon: "railcraft:abyssal_stone",
+	x: 3.0d,
+	y: 4.0d,
+	shape: "rsquare",
+	text: [
+		"{gohd.cccede9d.8ac28a20.desc1}"
+	],
+	optional: true,
+	tasks: [{
+		uid: "6f289ef7",
+		type: "item",
+		items: [{
+			item: "railcraft:abyssal_stone"
+		}]
+	},
+	{
+		uid: "566217b1",
+		type: "item",
+		items: [{
+			item: "railcraft:ore 1 2"
+		}]
+	},
+	{
+		uid: "56882947",
+		type: "item",
+		items: [{
+			item: "railcraft:ore 1 3"
+		}]
+	},
+	{
+		uid: "6d341372",
+		type: "item",
+		items: [{
+			item: "railcraft:ore 1 4"
+		}]
+	}]
+}
