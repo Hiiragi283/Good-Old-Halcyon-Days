@@ -17,7 +17,6 @@ import mods.botaniatweaks.Agglomeration;
 import mods.botaniatweaks.AgglomerationRecipe;
 import mods.botaniatweaks.AgglomerationMultiblock;
 import mods.ctintegration.util.RecipePattern;
-import mods.gregtech.recipe.RecipeMap;
 
 //scriptのimport
 import scripts.HiiragiUtils;

@@ -47,6 +47,12 @@ print("Start loading RussellUtils.zs ...");
 			item.register();
 	}
 
+	function addItemShimmer (id as string) {
+		var itemShimmer = mods.contenttweaker.VanillaFactory.createItem(id);
+		itemShimmer.glowing = true;
+		itemShimmer.register();
+	}
+
 //ブロックの登録処理
 	function addBlock (id as string, material as BlockMaterial, hardness as float, resistance as float, tool as string, toolLevel as int, sound as SoundType) {
 		var block = VanillaFactory.createBlock(id, material);

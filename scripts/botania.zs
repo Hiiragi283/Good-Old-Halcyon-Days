@@ -1,5 +1,5 @@
 #======================================================================
-# name : botania-main.zs
+# name : botania.zs
 # auther : Hiiragi Russell Tsubasa;URL -> https://github.com/Hiiragi283
 # info : Scripts for Botania
 #======================================================================
@@ -26,7 +26,7 @@ import mods.zenutils.I18n;
 import scripts.HiiragiUtils;
 
 //このscriptの読み込みの開始をログに出力
-print("Start loading botania-main.zs ...");
+print("Start loading botania.zs ...");
 
 //変数の定義
 
@@ -216,4 +216,4 @@ print("Start loading botania-main.zs ...");
 		]);
 */
 //このscriptの読み込みの完了をログに出力
-print("botania-main.zs loaded!");
+print("botania.zs loaded!");

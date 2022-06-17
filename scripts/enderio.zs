@@ -1,7 +1,7 @@
 #======================================================================
-# name : bop.zs
-# auther : Hiiragi Russell Tsubasa;URL -> https://github.com/Hiiragi283
-# info : Script for Biomes O' Plenty
+# ファイル名 : enderio.zs
+# 作成者 : Hiiragi Russell Tsubasa: https://github.com/Hiiragi283
+# 情報 : このファイルについて書く
 #======================================================================
 
 #priority 0
@@ -18,7 +18,7 @@ import mods.ctintegration.util.RecipePattern;
 import scripts.HiiragiUtils;
 
 //このscriptの読み込みの開始をログに出力
-print("Start loading bop.zs ...");
+print("Start loading enderio.zs ...");
 
 //変数の定義
 
@@ -47,11 +47,5 @@ print("Start loading bop.zs ...");
 	//import
 	//新規
 
-//Orechid TerrestrisによるBOP鉱石の生成
-	val orechid_terrestris = mods.morechids.Registry.getFlower("orechid_terrestris");
-	for i in 1 to 7 {
-		orechid_terrestris.addRecipe(<minecraft:stone>, <biomesoplenty:gem_ore>.definition.makeStack(i), 1);
-	}
-
 //このscriptの読み込みの完了をログに出力
-print("bop.zs loaded!");
+print("enderio.zs loaded!");

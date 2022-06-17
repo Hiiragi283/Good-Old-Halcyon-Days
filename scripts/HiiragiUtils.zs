@@ -85,8 +85,8 @@ print("Start loading HiiragiUtils.zs ...");
 	}
 
 //代入されたILiquidStackから名前を生成する関数
-	function getNameLiquid (fluid as ILiquidStack) as string {
-		var name as string = fluid.name;
+	function getNameLiquid (liquid as ILiquidStack) as string {
+		var name as string = liquid.name;
 		return ("liquid_" ~ name);
 	}
 
@@ -210,5 +210,49 @@ function inheritStatus(itemBase as IItemStack) as IRecipeFunction {
 	};
 }
 
+//液体入りアイテムを返す関数
+function liquidItem (type as string, liquid as ILiquidStack) as IItemStack {
+	var name as string = liquid.name;
+	if (type == "bucket") {
+		return <forge:bucketfilled>.withTag({FluidName: name, Amount: 1000});
+	} else {
+		if (type == "cell") {
+			return <techreborn:dynamiccell>.withTag({Fluid: {FluidName: name, Amount: 1000}});
+		}
+	}
+}
+
+//HaCの見た目が変わるブロックの見た目を指定
+function changeAppear (block as IItemStack, color as int) as IItemStack {
+	return block.withTag({Color: color});
+}
+
 //このscriptの読み込みの完了をログに出力
 print("HiiragiUtils.zs loaded!");
+
+<dcs_climate:dcs_device_chamber>.withTag(
+	{BlockEntityTag: {
+		CoolTime: 0 as byte, Climate: 10 as byte, InvItems: [
+			{
+				Slot: 0 as byte, id: "minecraft:air", Count: 1 as byte, Damage: 0 as short
+			},
+			{
+				Slot: 1 as byte, id: "minecraft:air", Count: 1 as byte, Damage: 0 as short
+			},
+			{
+				Slot: 2 as byte, id: "minecraft:air", Count: 1 as byte, Damage: 0 as short
+			},
+			{
+				Slot: 3 as byte, id: "minecraft:air", Count: 1 as byte, Damage: 0 as short
+			}
+		],
+		Color: 2,
+		"dcs.climateInt": 149,
+		BurnTime: 0,
+		MaxTime: 1,
+		id: "minecraft:dcs_te_chamber_normal",
+		"dcs.heats": [],
+		Lock: ""
+		},
+		display: {Lore: ["(+NBT)"]}
+	});

@@ -88,9 +88,9 @@ print("Start loading materialRegistry.zs ...");
 		val materialPlatinum = funcRegisterMaterial("Platinum", "C2D0D8");
 		val materialSheldonite = funcRegisterMaterial("Sheldonite", "c0dc89");
 		val materialGold = funcRegisterMaterial("Gold", "FFE650");
-		val materialElectrum = funcRegisterMaterial("Electrum", "FFFF64");
+		val materialElectrum = funcRegisterMaterial("Electrum", "BE9A45");
 		val materialCinnabar = funcRegisterMaterial("Cinnabar", "960000"); //HgS
-		val materialLead = funcRegisterMaterial("Lead", "6F6B77");
+		val materialLead = funcRegisterMaterial("Lead", "605E6A");
 		val materialGalena = funcRegisterMaterial("Galena", "643C64"); //AgPb
 		val materialUraninite = funcRegisterMaterial("Uraninite", "232323"); //UO2
 
@@ -129,7 +129,7 @@ print("Start loading materialRegistry.zs ...");
 		val materialSoularium = funcRegisterMaterial("Soularium", "8A745C");
 		val materialEndSteel = funcRegisterMaterial("End Steel", "D5CF9B");
 
-		val materialEnergium = funcRegisterMaterial("Energium", "FF6464");
+		//val materialEnergium = funcRegisterMaterial("Energium", "FF6464");
 
 		val materialIronwood = funcRegisterMaterial("Ironwood", "857648");
 		val materialFiery = funcRegisterMaterial("Fiery", "391D1E");
@@ -149,34 +149,31 @@ print("Start loading materialRegistry.zs ...");
 			materialMangalloy,
 			materialStainlessSteel,
 			materialToolSteel,
-			materialCobalt,
+			//materialCobalt,
 			//materialCobaltite,
 			materialNickelSilver,
 			materialTungstate,
 			materialUraninite,
-
 			//materialRockSalt,
-
 			materialBeryllium,
-			materialMagnalium,
-			materialMagnesia,
-
-			materialNetherQuartz,
+			//materialMagnalium,
+			//materialMagnesia,
+			//materialNetherQuartz,
 			materialCertusQuartz,
-
-			materialRedAlloy,
-
-			materialEnergium,
+			//materialRedAlloy,
+			//materialEnergium,
 		];
 
 		for i in materialDust {
 			i.registerParts(["dust", "Small_dust"] as string[]);
 		}
 
-	//Ingot, Block, Molten
+		//materialLead.registerPart("dust");
+
+	//Ingot, Molten
 		val materialMetal as Material[] = [
 			materialBeryllium,
-			materialMagnalium,
+			//materialMagnalium,
 			materialFrostbite,
 		];
 
@@ -190,23 +187,20 @@ print("Start loading materialRegistry.zs ...");
 		val materialOreBlock as Material[] = [
 			materialUraninite,
 			//materialRockSalt,
-			materialMagnesia,
+			//materialMagnesia,
 		];
 
 		for i in materialOreBlock {
 			i.registerPart("ore" as string);
 		}
 
-		//Tungstate
-			materialTungstate.registerPart("ore" as string).getData().addDataValue("variants", "minecraft:end_stone");
-		//Sheldonite
-			materialSheldonite.registerPart("ore" as string).getData().addDataValue("variants", "minecraft:end_stone");
-
 	//Dust Block
 		val materialBlockDust as Material[string] = {
 			"cobalt": materialCobalt,
-			"electrum": materialElectrum,
+			"tungstensteel": materialTungstensteel,
 			"platinum": materialPlatinum,
+			"electrum": materialElectrum,
+			"lead": materialLead,
 		};
 
 	for i, j in materialBlockDust {
@@ -215,9 +209,7 @@ print("Start loading materialRegistry.zs ...");
 
 	//Liquid
 		val materialLiquid as Material[] = [
-			materialHydrogenHalide,
 			materialHydrogenSulfide,
-			materialHalogen,
 			materialTitaniumTetrachloride,
 		];
 

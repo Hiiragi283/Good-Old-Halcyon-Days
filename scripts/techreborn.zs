@@ -13,6 +13,7 @@ import crafttweaker.item.IIngredient;
 //各種modからclassをimport
 import mods.artisanworktables.builder.RecipeBuilder;
 import mods.ctintegration.util.RecipePattern;
+import mods.techreborn.compressor;
 
 //scriptのimport
 import scripts.HiiragiUtils;
@@ -24,7 +25,9 @@ print("Start loading techreborn.zs ...");
 
 //作業台レシピの編集
 	//削除
-		val removeCrafting as IItemStack[] = [];
+		val removeCrafting as IItemStack[] = [
+
+		];
 		for i in removeCrafting {
 			HiiragiUtils.removeCrafting(i);
 		}
@@ -51,13 +54,21 @@ print("Start loading techreborn.zs ...");
 				HiiragiUtils.addCrafting(false, true, <techreborn:cable:4>*16, RecipePattern.init(["AAA", "BCB", "AAA"]).map({A:<ore:fusedQuartz>, B:<ore:ingotBSCCO>, C:<ore:dustEnergium>}).ingredients);
 				HiiragiUtils.addCrafting(false, true, <techreborn:cable:4>*32, RecipePattern.init(["AAA", "BCB", "AAA"]).map({A:<dcs_climate:dcs_synthetic:2>, B:<ore:ingotBSCCO>, C:<ore:dustEnergium>}).ingredients);
 		//Machine Frame
-			HiiragiUtils.addCrafting(false, true, <techreborn:machine_frame:0>, RecipePattern.init(["AAA", "A A", "AAA"]).map({A:<ore:ingotSUS>}).ingredients);
 			HiiragiUtils.addCrafting(false, true, <techreborn:machine_frame:2>, RecipePattern.init(["AAA", "A A", "AAA"]).map({A:<ore:ingotTungstensteel>}).ingredients);
+		//Wrench
+			HiiragiUtils.addCrafting(false, true, <techreborn:wrench>, RecipePattern.init(["A A", " B ", " B "]).map({A:<ore:ingotIron>, B:<ore:ingotBronze>}).ingredients);
+
 	//新規
+		HiiragiUtils.addCrafting(false, false, <armortech:iron_hammer>, RecipePattern.init(["AA ", "ABB", "AA "]).map({A:<ore:ingotIron>, B:<ore:ingotBronze>}).ingredients);
+		HiiragiUtils.addCrafting(false, false, <armortech:iron_cutter>, RecipePattern.init(["A A", " B ", "B B"]).map({A:<ore:ingotIron>, B:<ore:ingotBronze>}).ingredients);
+		HiiragiUtils.addCrafting(false, false, <ore:dustEnergium>.firstItem*9, RecipePattern.init(["ABA", "BAB", "ABA"]).map({A:<ore:dustRedstone>, B:<ore:dustRuby>}).ingredients);
+		HiiragiUtils.addCrafting(false, false, <ore:dustLapotron>.firstItem*9, RecipePattern.init(["ABA", "BAB", "ABA"]).map({A:<ore:dustEnergium>, B:<ore:dustSapphire>}).ingredients);
 
 //かまどレシピの編集
 	//削除
-		val removeFurnace as IItemStack[] = [];
+		val removeFurnace as IItemStack[] = [
+			<techreborn:ingot:19>,
+		];
 		for i in removeFurnace {
 			HiiragiUtils.removeFurnace(i);
 		}

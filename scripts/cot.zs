@@ -29,11 +29,7 @@ print("Start loading _TEMPLATE.zs ...");
 	val items as string[] = [
 		"elven_pearl",
 		"ephemerald",
-		"token_stone",
-		"token_obsidian",
-		"token_netherrack",
-		"token_end_stone",
-		"token_prismarine",
+		"reagent_halogen"
 	];
 	for i in items {
 		RussellUtils.addItem(i);
@@ -41,20 +37,8 @@ print("Start loading _TEMPLATE.zs ...");
 
 	RussellUtils.addItemColored("grout_ball", "D0D1D6", "minecraft:items/snowball");
 
-	val itemsPebble as string[string] = {
-		"pebble_stone": "CDCDCD",
-		"pebble_granite": "CFA18C",
-		"pebble_diorite": "EFEFEF",
-		"pebble_andesite": "BEBEBE",
-		"pebble_bedrock": "2F2F2F",
-		"pebble_obsidian": "503264",
-		"pebble_netherrack": "C80000",
-		"pebble_end_stone": "D9DE9E",
-		"pebble_prismarine": "C8FFFF",
-	};
-	for i, j in itemsPebble {
-		RussellUtils.addItemColored(i, j, "dcs_climate:items/ores/gem_chal_white");
-	}
+	RussellUtils.addItemShimmer("energium_dust");
+	RussellUtils.addItemShimmer("lapotron_dust");
 
 //ブロックの登録
 	RussellUtils.addBlockAdvanced("unfired_casting_channel", <blockmaterial:grass>, 3.0, 0.5, "shovel", -1, <soundtype:ground>, false);
