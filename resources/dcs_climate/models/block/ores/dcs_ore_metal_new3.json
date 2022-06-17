@@ -1,0 +1,6 @@
+{
+	"parent": "dcs_climate:block/dcs_cube_all",
+	"textures": {
+		"all": "thermalfoundation:blocks/storage/block_lead"
+	}
+}

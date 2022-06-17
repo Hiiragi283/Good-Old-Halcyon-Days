@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "base:items/dust"
+    "layer0": "techreborn:items/dust/ruby_dust"
   }
 }

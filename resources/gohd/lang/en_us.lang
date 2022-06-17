@@ -37,20 +37,20 @@ gohd.5f3109ce.8093a1e1.title=Tier 2+: Steel Ingot
 gohd.5f3109ce.41da5781.title=Tier 3: Stainless Steel Ingot
 gohd.5f3109ce.c9dfd545.title=Tier 3: Tool Steel Ingot
 gohd.5f3109ce.9e83be60.title=Tier 4: Titanium Alloy Ingot
-gohd.5f3109ce.20d30ac5.title=Tier 3: Mangalloy Ingot
+gohd.5f3109ce.20d30ac5.title=Tier 4: Mangalloy Ingot
 gohd.5f3109ce.b32ed3b4.title=Tier 5: Tungstensteel Ingot
 
 ## Primitive Age: gohd.09d26429.
 gohd.primitiveAge.title=Primitive Age
 gohd.09d26429.648774ca.title=Start Your Journery!
-link.youtu.be.SWI_4Sx2GtI=§oThe Everyday and The Extraordinary
+link.youtu.be.SWI_4Sx2GtI=The Everyday and The Extraordinary
 
 gohd.09d26429.8297ab4c.title=why did you think you can't chop logs only with your hand ?
 gohd.09d26429.8297ab4c.text1=Accepts ANY types of log
 gohd.09d26429.baa9cb1d.subtitle=Original but Worst
 gohd.09d26429.47a3fa84.subtitle=Better than Original
 gohd.09d26429.4fb7c614.title=First Step for Tinker's Tool
-link.youtu.be.TG6yHxuK22g=§oThe Kimera
+link.youtu.be.TG6yHxuK22g=The Kimera
 
 gohd.09d26429.42aa3c8a.title=Dirty Deeds Done Dirt Cheap
 
@@ -59,7 +59,7 @@ gohd.09d26429.8e6a9cab.title=Wooden Sticks from Saplings
 //gohd.09d26429.2b45ab00.desc.1=4x Pebbles are crafted into 1x Stone.
 //gohd.09d26429.2b45ab00.desc.2=So you can get building materials INFINITELY !!!
 //gohd.09d26429.2b45ab00.task=Stone Pebbles
-//gohd.09d26429.b49312ff.subtitle=§oGood Old Primitive Tool Crafting
+//gohd.09d26429.b49312ff.subtitle=Good Old Primitive Tool Crafting
 //gohd.09d26429.d069fde6.subtitle=Not a Stone Plate
 gohd.09d26429.820ea2c4.title=Tier 1: Stone Tool
 //gohd.09d26429.c1775971.subtitle=Did you think you can make obsidian ?
@@ -71,7 +71,7 @@ gohd.09d26429.52739832.desc.1=You can get the first fire by right-clicking Plank
 
 gohd.09d26429.845fedcf.subtitle=Can't you find Cassiterite Ore ?
 
-gohd.09d26429.dbb48ae7.title=My mouth is gravelly-gravelly lol
+gohd.09d26429.a1433ad5.title=My mouth is gravelly-gravelly lol
 gohd.09d26429.efbbdf1d.desc.1=You can make Unfired Casting Basin by right-clicking grout with Wooden Stick only ONCE
 gohd.09d26429.efbbdf1d.desc.2=And Unfired Casting Table by doing the same TWICE
 gohd.09d26429.6cd694d7.desc.1=Unfired Casting Channel needs the way of ceramic art THREE TIMES
@@ -79,14 +79,62 @@ gohd.09d26429.4c90a4fb.title=Tier 2: Bronze Tool
 
 ## Middle Age: gohd.e763bfd4.
 gohd.middleAge.title=Middle Age
+gohd.middleAge.title1=Middle Age (Nickelsilver)
+gohd.middleAge.title2=Middle Age (Steel)
 
 gohd.e763bfd4.8d8216f2.title=Artificial Blaze Powder
 gohd.e763bfd4.7b187aea.title=Not Into the fire
+link.youtu.be.Opce-MSEznY=Remains of Fire
 
-link.youtu.be.Opce-MSEznY=§oRemains of Fire
+gohd.e763bfd4.a52d16e4.subtitle=Alice in Climateland
+gohd.e763bfd4.78e293e2.subtitle=It's time to think whether you should pour liquid down the sink.
+gohd.e763bfd4.d70f7431.subtitle=Better than Seared Faucet
 
 gohd.e763bfd4.f9c67698.title=First Advanced Climate Smelting
 gohd.e763bfd4.01c0841d.subtitle=Another way for Getting Iron
+link.youtu.be.2P2TC8Tlq7M=RGB
 
-link.youtu.be.2P2TC8Tlq7M=§oRGB
-gohd.e763bfd4.8b4775e4.title=Ultra Hight Heat Cliamte
+gohd.e763bfd4.8b4775e4.title=UHT Climate Smelting
+gohd.e763bfd4.8b4775e4.subtitle=UHT may means "Ultra High Heat"
+gohd.e763bfd4.2418ecab.subtitle=Bi2Sr2Ca2Cu3O10
+
+## Chemical Age:
+gohd.chemicalAge.title=Chemical Age
+gohd.chemicalAge.title1=Chemical Age (Stainless Steel)
+gohd.chemicalAge.title2=Chemical Age (Tool Steel)
+
+## Industrial Age
+gohd.industrialAge.title=Industrial Age
+gohd.industrialAge.title1=Industrial Age (Titanium Alloy)
+gohd.industrialAge.title2=Industrial Age (Mangalloy)
+
+## High-Tech Age
+gohd.highTechAge.title=High-Tech Age
+gohd.highTechAge.title1=High-Tech Age (Tungstensteel)
+gohd.highTechAge.title2=High-Tech Age (Mangalloy)
+
+## Minerals: gohd.cccede9d.
+gohd.minerals.title=Minerals
+
+gohd.cccede9d.b679e55a.title=HaC Veins
+gohd.cccede9d.add5de61.title=Red Vein
+gohd.cccede9d.6ef83f24.title=Green Vein
+gohd.cccede9d.4b446108.title=Blue Vein
+gohd.cccede9d.94dd1723.title=White vein
+gohd.cccede9d.fcea16fa.title=Black Vein
+gohd.cccede9d.d70f01cb.title=Skarn Deposit
+gohd.cccede9d.d70f01cb.desc1=Skarn deposit §lrarely§r spawn many biomes and have three types.
+gohd.cccede9d.1313a69a.title=Skarn Deposit (Stone)
+gohd.cccede9d.1313a69a.desc1=Skarn Deposit (Stone) §lrarely§r spawns under the Forest.
+gohd.cccede9d.3634dbb2.title=Skarn Deposit (Lime)
+gohd.cccede9d.3634dbb2.desc1=Skarn Deposit (Stone) §lrarely§r spawns under the Desert, Plains and Savanna.
+gohd.cccede9d.cd18f633.title=Skarn Deposit (Hornfels)
+gohd.cccede9d.cd18f633.desc1=Skarn Deposit (Stone) §lrarely§r spawns under the Sea and Swamp.
+gohd.cccede9d.33f25c86.title=Guano Vein
+gohd.cccede9d.33f25c86.desc1=Guano spawns at the bottom of the Sea.
+gohd.cccede9d.bdc29cf2.desc1=Travertine is generated in the Hot Spring that spawns in the Cold Mountaion.
+
+gohd.cccede9d.8ac28a20.title=Abyssal Geode
+gohd.cccede9d.8ac28a20.desc1=Abyssal Geode spawns at the bottom of the Sea.
+gohd.cccede9d.1a7f5909.subtitle=tile.railcraft.ore.magic.name
+gohd.cccede9d.1a7f5909.desc1=Firestone Ore spawns under the Lava Ocean in the Nether.
