@@ -4,15 +4,20 @@ item.contenttweaker.reagent_halogen.name=Halogen
 item.contenttweaker.grout_ball.name=Grout Ball
 item.contenttweaker.energium_dust.name=Energium Dust
 item.contenttweaker.lapotron_dust.name=Lapotron Dust
+item.contenttweaker.ticket_common.name=Ragi Ticket (Commom)
+item.contenttweaker.ticket_uncommon.name=Ragi Ticket (§aUncommom§r)
+item.contenttweaker.ticket_rare.name=Ragi Ticket (§9Rare§r)
+item.contenttweaker.ticket_epic.name=Ragi Ticket (§dEpic§r)
+item.contenttweaker.ticket_legendary.name=Ragi Ticket (§6Legendary§r)
+item.contenttweaker.ticket_mythic.name=Ragi Ticket (§cMythic§r)
 
 #Blocks
 tile.contenttweaker.unfired_casting_channel.name=Unfired Casting Channel
 tile.contenttweaker.unfired_casting_table.name=Unfired Casting Table
 tile.contenttweaker.unfired_casting_basin.name=Unfired Casting Basin
-//tile.contenttweaker.dustblock_tantalum_hafnium_carbide.name=Tantalum Hafnium Carbide Dust Block
 tile.contenttweaker.dustblock_electrum.name=Electrum Dust Block
 tile.contenttweaker.dustblock_platinum.name=Platinum Dust Block
-//tile.contenttweaker.dustblock_tungsten_carbide.name=Tungsten Carbide Dust Block
+tile.contenttweaker.dustblock_tungstensteel.name=Tungstensteel Dust Block
 tile.contenttweaker.dustblock_cobalt.name=Cobalt Dust Block
 tile.contenttweaker.dustblock_lead.name=Lead Dust Block
 

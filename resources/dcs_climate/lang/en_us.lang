@@ -1,5 +1,6 @@
 
 item.dcs_oreitem_white_1.name=Pyrite
+//item.dcs_oreitem_black_3.name=Wolframite
 item.dcs_oredust_chromium.name=Chromite Dust
 
 tile.dcs_device_crusher_0.name=Universal Processor
