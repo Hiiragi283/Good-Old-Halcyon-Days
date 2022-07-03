@@ -1,8 +1,8 @@
 {
 	title: "{gohd.cccede9d.cd18f633.title}",
 	icon: "dcs_climate:dcs_layer_skarn 1 1",
-	x: 1.5d,
-	y: 4.0d,
+	x: 0.0d,
+	y: 10.0d,
 	shape: "rsquare",
 	text: [
 		"{gohd.cccede9d.cd18f633.desc1}"

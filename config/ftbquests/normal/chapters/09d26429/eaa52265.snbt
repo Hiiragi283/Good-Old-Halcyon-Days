@@ -1,0 +1,20 @@
+{
+	x: 3.0d,
+	y: 7.0d,
+	dependencies: [
+		"52739832"
+	],
+	tasks: [{
+		uid: "63cdc1a8",
+		type: "item",
+		items: [{
+			item: "minecraft:torch"
+		}]
+	}],
+	rewards: [{
+		uid: "8ed414cf",
+		type: "item",
+		item: "minecraft:torch",
+		count: 32
+	}]
+}

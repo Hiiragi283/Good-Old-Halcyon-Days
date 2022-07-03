@@ -1,5 +1,5 @@
 {
-	x: 4.0d,
+	x: 2.0d,
 	y: 4.0d,
 	dependencies: [
 		"a1433ad5"
@@ -11,5 +11,11 @@
 			item: "tconstruct:soil"
 		}],
 		count: 64L
+	}],
+	rewards: [{
+		uid: "57b45590",
+		type: "item",
+		item: "tconstruct:soil",
+		count: 3
 	}]
 }

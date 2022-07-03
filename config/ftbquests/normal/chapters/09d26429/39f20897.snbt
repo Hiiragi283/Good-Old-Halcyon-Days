@@ -1,0 +1,22 @@
+{
+	icon: "techreborn:ore 1 8",
+	x: 19.0d,
+	y: -2.0d,
+	dependencies: [
+		"885c0e70"
+	],
+	tasks: [{
+		uid: "b519c265",
+		type: "item",
+		items: [{
+			item: "techreborn:ore 1 8"
+		}]
+	},
+	{
+		uid: "97901607",
+		type: "item",
+		items: [{
+			item: "techreborn:dust 1 55"
+		}]
+	}]
+}

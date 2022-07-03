@@ -1,0 +1,15 @@
+{
+	x: 20.0d,
+	y: 4.0d,
+	dependencies: [
+		"b2567136",
+		"f21c911a"
+	],
+	tasks: [{
+		uid: "ac513fbb",
+		type: "item",
+		items: [{
+			item: "hap:compact_heater"
+		}]
+	}]
+}

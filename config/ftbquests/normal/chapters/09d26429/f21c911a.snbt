@@ -1,0 +1,15 @@
+{
+	x: 17.5d,
+	y: 4.0d,
+	dependencies: [
+		"efd4198c",
+		"72b4363c"
+	],
+	tasks: [{
+		uid: "f9dc6cd9",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_device_gas_burner"
+		}]
+	}]
+}

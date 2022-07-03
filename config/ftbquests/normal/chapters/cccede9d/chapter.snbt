@@ -1,7 +1,7 @@
 {
 	title: "{gohd.minerals.title}",
-	icon: "dcs_climate:dcs_gem 1 6",
+	icon: "dcs_climate:dcs_gem_black 1 5",
 	always_invisible: false,
-	group: 0,
+	group: 946551985,
 	default_quest_shape: "square"
 }

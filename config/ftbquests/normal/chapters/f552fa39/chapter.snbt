@@ -1,0 +1,7 @@
+{
+	title: "{gohd.device.title}",
+	icon: "dcs_climate:dcs_device_creative_box",
+	always_invisible: false,
+	group: 946551985,
+	default_quest_shape: ""
+}

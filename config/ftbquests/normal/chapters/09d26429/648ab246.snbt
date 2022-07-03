@@ -1,0 +1,21 @@
+{
+	x: 21.5d,
+	y: -2.0d,
+	shape: "diamond",
+	dependencies: [
+		"8dd7fd56"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "5c3b21c1",
+		type: "item",
+		items: [{
+			item: "techreborn:ingot 1 17"
+		}]
+	}],
+	rewards: [{
+		uid: "a31d993d",
+		type: "item",
+		item: "contenttweaker:ticket_epic"
+	}]
+}

@@ -1,0 +1,21 @@
+{
+	title: "{gohd.ingotIron.title}",
+	x: 7.0d,
+	y: 6.0d,
+	shape: "diamond",
+	dependencies: [
+		"de863d39"
+	],
+	tasks: [{
+		uid: "318d9b13",
+		type: "item",
+		items: [{
+			item: "minecraft:iron_ingot"
+		}]
+	}],
+	rewards: [{
+		uid: "68b5986f",
+		type: "item",
+		item: "contenttweaker:ticket_uncommon"
+	}]
+}

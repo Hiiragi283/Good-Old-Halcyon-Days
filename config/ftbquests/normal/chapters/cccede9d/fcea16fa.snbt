@@ -6,18 +6,43 @@
 	text: [
 		"{dcs.info.desc.stone_b}"
 	],
+	dependencies: [
+		"347787d5"
+	],
 	tasks: [{
 		uid: "5972d499",
 		type: "item",
 		items: [{
-			item: "dcs_climate:dcs_ore_stone_new 1 4"
+			ForgeCaps: {
+				Parent: {
+					data: "oreBlack",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any oreBlack"
+				}
+			}
 		}]
 	},
 	{
 		uid: "3e663a90",
 		type: "item",
 		items: [{
-			item: "dcs_climate:dcs_ore_stone_new 1 9"
+			ForgeCaps: {
+				Parent: {
+					data: "oreLargeBlack",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any oreLargeBlack"
+				}
+			}
 		}]
 	},
 	{

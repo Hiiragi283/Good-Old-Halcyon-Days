@@ -1,0 +1,19 @@
+{
+	x: 11.0d,
+	y: 1.0d,
+	hide_dependency_lines: true,
+	dependencies: [
+		"add5de61",
+		"cfb6b559"
+	],
+	tasks: [{
+		uid: "df387527",
+		type: "item",
+		items: [{
+			item: "biomesoplenty:gem_ore"
+		},
+		{
+			item: "dcs_climate:dcs_gem_red 1 3"
+		}]
+	}]
+}

@@ -1,0 +1,36 @@
+{
+	title: "{gohd.industrialAge.title}",
+	x: 23.5d,
+	y: 2.0d,
+	shape: "square",
+	dependencies: [
+		"b2567136"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "57f3732e",
+		type: "item",
+		items: [{
+			item: "hap:reactor_advanced"
+		}]
+	},
+	{
+		uid: "8e6b5fb9",
+		type: "item",
+		items: [{
+			item: "hap:reactor_fluid_port"
+		}]
+	},
+	{
+		uid: "14d0b4b9",
+		type: "item",
+		items: [{
+			item: "hap:reactor_storage"
+		}]
+	}],
+	rewards: [{
+		uid: "6ab0e53c",
+		type: "item",
+		item: "contenttweaker:ticket_legendary"
+	}]
+}

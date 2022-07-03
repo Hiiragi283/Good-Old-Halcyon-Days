@@ -1,0 +1,20 @@
+{
+	x: 8.0d,
+	y: 1.0d,
+	dependencies: [
+		"9e79be74"
+	],
+	tasks: [{
+		uid: "44f34dd3",
+		type: "item",
+		items: [{
+			item: "contenttweaker:ticket_epic"
+		}]
+	}],
+	rewards: [{
+		uid: "b36eb1d4",
+		type: "item",
+		item: "contenttweaker:ticket_epic",
+		count: 3
+	}]
+}

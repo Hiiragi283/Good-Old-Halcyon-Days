@@ -1,0 +1,20 @@
+{
+	x: 12.5d,
+	y: -1.0d,
+	description: "{gohd.09d26429.f9c67698.title}",
+	dependencies: [
+		"62b97ff1"
+	],
+	tasks: [{
+		uid: "2da860f4",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_ore_metal_alloy 1 2"
+		}]
+	}],
+	rewards: [{
+		uid: "f1d91785",
+		type: "item",
+		item: "dcs_climate:dcs_ore_dustblock 1 5"
+	}]
+}

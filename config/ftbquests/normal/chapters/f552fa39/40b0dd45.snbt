@@ -1,0 +1,15 @@
+{
+	icon: "dcs_climate:dcs_ingot 1 5",
+	x: 6.0d,
+	y: 0.0d,
+	shape: "square",
+	dependencies: [
+		"f74bb10a",
+		"6724c976"
+	],
+	tasks: [{
+		uid: "ae562b00",
+		type: "checkmark",
+		title: "{gohd.ingotSteel.title}"
+	}]
+}

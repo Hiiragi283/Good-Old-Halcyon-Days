@@ -1,0 +1,14 @@
+{
+	x: 6.0d,
+	y: -4.0d,
+	dependencies: [
+		"0074578c"
+	],
+	tasks: [{
+		uid: "bfa5c9be",
+		type: "item",
+		items: [{
+			item: "hap:conveyor"
+		}]
+	}]
+}

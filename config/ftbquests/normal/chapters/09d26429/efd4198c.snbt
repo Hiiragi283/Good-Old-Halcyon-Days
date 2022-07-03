@@ -1,0 +1,15 @@
+{
+	x: 13.5d,
+	y: 0.0d,
+	dependencies: [
+		"62b97ff1",
+		"6724c976"
+	],
+	tasks: [{
+		uid: "694503cb",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_device_fuelstove"
+		}]
+	}]
+}

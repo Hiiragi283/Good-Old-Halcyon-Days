@@ -1,0 +1,24 @@
+{
+	x: 8.0d,
+	y: -2.0d,
+	hide_dependency_lines: true,
+	dependencies: [
+		"ebd53cb7"
+	],
+	tasks: [{
+		uid: "23f20920",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_device_monitor_rs"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "e180271d",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_device_monitor_cm"
+		}],
+		ignore_nbt: 1b
+	}]
+}

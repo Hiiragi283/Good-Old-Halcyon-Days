@@ -1,0 +1,14 @@
+{
+	x: 6.0d,
+	y: 2.0d,
+	dependencies: [
+		"97e22c03"
+	],
+	tasks: [{
+		uid: "3e39f9fb",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_gem_green 1 1"
+		}]
+	}]
+}

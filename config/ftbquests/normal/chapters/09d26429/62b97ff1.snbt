@@ -1,0 +1,24 @@
+{
+	title: "{gohd.middleAge.title}",
+	x: 11.0d,
+	y: 0.0d,
+	shape: "square",
+	description: "{link.youtu.be.Opce-MSEznY}",
+	dependencies: [
+		"0c989db0",
+		"6d90e11d"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "db85517d",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_device_chamber"
+		}]
+	}],
+	rewards: [{
+		uid: "7452258b",
+		type: "item",
+		item: "contenttweaker:ticket_rare"
+	}]
+}

@@ -1,8 +1,8 @@
 {
 	title: "{gohd.09d26429.8e6a9cab.title}",
 	icon: "minecraft:stick",
-	x: 5.0d,
-	y: 3.0d,
+	x: 3.0d,
+	y: 1.0d,
 	dependencies: [
 		"8297ab4c"
 	],

@@ -1,0 +1,17 @@
+{
+	x: 6.0d,
+	y: -2.0d,
+	shape: "hexagon",
+	hide_dependency_lines: true,
+	dependencies: [
+		"62b97ff1",
+		"40b0dd45"
+	],
+	tasks: [{
+		uid: "0382398e",
+		type: "item",
+		items: [{
+			item: "hap:coke_oven"
+		}]
+	}]
+}

@@ -1,9 +1,8 @@
 {
 	icon: "tconstruct:cast",
-	x: 11.0d,
-	y: 6.0d,
+	x: 9.0d,
+	y: 4.0d,
 	dependencies: [
-		"a3e12b21",
 		"25daeec3",
 		"af232189"
 	],

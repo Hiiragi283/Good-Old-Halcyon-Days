@@ -1,0 +1,27 @@
+{
+	icon: "dcs_climate:dcs_ore_dustblock2 1 2",
+	x: 16.5d,
+	y: -1.0d,
+	dependencies: [
+		"8b4775e4"
+	],
+	tasks: [{
+		uid: "7e1354f0",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_ore_dustblock2 1 2"
+		}]
+	},
+	{
+		uid: "28d0e118",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_ore_metal_alloy 1 4"
+		}]
+	}],
+	rewards: [{
+		uid: "ed942619",
+		type: "item",
+		item: "dcs_climate:dcs_ore_dustblock2 1 2"
+	}]
+}

@@ -1,0 +1,24 @@
+{
+	x: 11.0d,
+	y: 4.0d,
+	shape: "square",
+	dependencies: [
+		"62b97ff1",
+		"25daeec3",
+		"d0ef4250"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "04019fb3",
+		type: "item",
+		items: [{
+			item: "tconstruct:smeltery_controller"
+		}]
+	}],
+	rewards: [{
+		uid: "0f2c2f78",
+		type: "item",
+		item: "contenttweaker:ticket_uncommon",
+		count: 3
+	}]
+}

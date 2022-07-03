@@ -1,0 +1,15 @@
+{
+	x: 0.0d,
+	y: 2.0d,
+	hide_dependency_lines: true,
+	dependencies: [
+		"053b4e1a"
+	],
+	tasks: [{
+		uid: "3a009e7c",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_device_hopper_filter"
+		}]
+	}]
+}

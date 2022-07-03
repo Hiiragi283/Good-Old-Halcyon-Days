@@ -1,0 +1,85 @@
+{
+	"name": "gohd:magmatic_dynamo",
+	"target-item": "thermalexpansion:dynamo",
+	"target-meta": 1,
+  "target-count": 1,
+	"duration": 300,
+  "symmetrical": true,
+	"catalyst": "thermalfoundation:material",
+	"catalyst-meta": 514,
+  "input-types": {
+    "a": {
+      "id": "techreborn:storage",
+      "meta": 12
+    },
+    "b": {
+      "id": "dcs_climate:dcs_ore_metal_alloy",
+      "meta": 2
+    },
+    "c": {
+      "id": "dcs_climate:dcs_device_dynamo",
+      "ignore-meta": true
+    },
+    "d": {
+      "id": "dcs_climate:dcs_device_fan",
+      "ignore-meta": true
+    },
+    "e": {
+      "id": "dcs_climate:dcs_device_ibc",
+      "ignore-meta": true
+    }
+  },
+  "shape": [
+    [
+      [
+        "_",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "c",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_"
+      ]
+    ],
+    [
+      [
+        "a",
+        "b",
+        "a"
+      ],
+      [
+        "b",
+        "d",
+        "b"
+      ],
+      [
+        "a",
+        "b",
+        "a"
+      ]
+    ],
+    [
+      [
+        "a",
+        "b",
+        "a"
+      ],
+      [
+        "b",
+        "e",
+        "b"
+      ],
+      [
+        "a",
+        "b",
+        "a"
+      ]
+    ]
+  ]
+}

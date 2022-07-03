@@ -1,0 +1,16 @@
+{
+	x: 13.0d,
+	y: 1.0d,
+	hide_dependency_lines: true,
+	dependencies: [
+		"add5de61",
+		"87070199"
+	],
+	tasks: [{
+		uid: "04b1e928",
+		type: "item",
+		items: [{
+			item: "techreborn:ore 1 6"
+		}]
+	}]
+}

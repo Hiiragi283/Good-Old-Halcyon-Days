@@ -1,0 +1,27 @@
+{
+	title: "{gohd.ingotToolSteel.title}",
+	x: 17.5d,
+	y: -2.0d,
+	shape: "diamond",
+	dependencies: [
+		"ad2400ca"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "e695fda4",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_ingot 1 17"
+		}]
+	}],
+	rewards: [{
+		uid: "dd01a6f3",
+		type: "item",
+		item: "hap:heat_block"
+	},
+	{
+		uid: "57de1eec",
+		type: "item",
+		item: "contenttweaker:ticket_rare"
+	}]
+}

@@ -1,0 +1,14 @@
+{
+	x: 7.0d,
+	y: 5.0d,
+	dependencies: [
+		"5fa72b78"
+	],
+	tasks: [{
+		uid: "ccf7180d",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_gem_black 1 2"
+		}]
+	}]
+}

@@ -1,0 +1,19 @@
+{
+	x: 11.0d,
+	y: 2.0d,
+	hide_dependency_lines: true,
+	dependencies: [
+		"6ef83f24",
+		"cfb6b559"
+	],
+	tasks: [{
+		uid: "6f0df8d0",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_layer_skarn_ore 1 7"
+		},
+		{
+			item: "dcs_climate:dcs_gem_green 1 4"
+		}]
+	}]
+}

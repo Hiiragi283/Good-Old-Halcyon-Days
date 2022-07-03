@@ -6,6 +6,9 @@
 	text: [
 		"{dcs.info.desc.stone_g}"
 	],
+	dependencies: [
+		"347787d5"
+	],
 	tasks: [{
 		uid: "e7772ed3",
 		type: "item",

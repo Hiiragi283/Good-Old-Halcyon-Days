@@ -68,7 +68,8 @@
 		"input": [
 			"dustBauxite",
 			"dustBauxite",
-			"gemFluorite"
+			"gemFluorite",
+			"dustAlkali"
 		]
 	},
 	"add_dustLead": {
@@ -93,40 +94,19 @@
 			"dustGalena"
 		]
 	},
-	"add_titanium_tetrachloride": {
-		"recipe_type": "ADD",
-		"output_fluid_primary": {
-			"amount": 1000,
-			"fluid": "titanium_tetrachloride"
-		},
-		"climate_temperature": "SMELTING",
-		"input": [
-			"dustRutile",
-			"dustCoal",
-			"dustHalogen",
-			"dustHalogen",
-			"dustHalogen",
-			"dustHalogen"
-		]
-	},
 	"add_dustTitanium": {
 		"recipe_type": "ADD",
 		"output_primary": {
 			"item": "dcs_climate:dcs_oredust:10"
 		},
-		"output_secondary": {
-			"item": "dcs_climate:dcs_food_materials",
-			"count": 4
+		"climate_temperature": "SMELTING",
+		"catalyst": {
+			"ore_dict": "blockSalt"
 		},
-		"climate_temperature": "NORMAL",
-		"input_fluid_primary": {
-			"amount": 1000,
-			"fluid": "titanium_tetrachloride"
-		},
-		"input_fluid_secondary": {
-			"amount": 4000,
-			"fluid": "fluidsodium"
-		}
+		"input": [
+			"dustRutile",
+			"dustCoal"
+		]
 	},
 	"remove_dustAlkali_1": {
 		"recipe_type": "REMOVE",
@@ -166,6 +146,31 @@
 		},
 		"input": [
 			"dustSalt"
+		]
+	},
+	"add_dustTungsten": {
+		"recipe_type": "ADD",
+		"output_primary": {
+			"item": "techreborn:dust:55"
+		},
+		"output_secondary": {
+			"item": "dcs_climate:dcs_oredust:14"
+		},
+		"output_fluid_primary": {
+			"amount": 4000,
+			"fluid": "dcs.steam"
+		},
+		"climate_temperature": "NORMAL",
+		"input_fluid_primary": {
+			"amount": 500,
+			"fluid": "dcs.sulfuric_acid"
+		},
+		"input_fluid_secondary": {
+			"amount": 3000,
+			"fluid": "dcs.hydrogen"
+		},
+		"input": [
+			"dustWolframite"
 		]
 	}
 }

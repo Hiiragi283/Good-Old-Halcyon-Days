@@ -1,0 +1,14 @@
+{
+	x: 2.0d,
+	y: -4.0d,
+	dependencies: [
+		"a330ee6f"
+	],
+	tasks: [{
+		uid: "dbf8ed10",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_device_stevenson_screen"
+		}]
+	}]
+}

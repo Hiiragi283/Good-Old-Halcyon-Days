@@ -1,0 +1,20 @@
+{
+	title: "{link.www.mariowiki.com.File.Gusty_Garden_Galaxy_Super_Mario_Galaxy.oga}",
+	x: 9.0d,
+	y: 0.0d,
+	dependencies: [
+		"ead0b171",
+		"af232189"
+	],
+	dependency_requirement: "one_completed",
+	tasks: [{
+		uid: "72e9d11c",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_device_bellow"
+		},
+		{
+			item: "dcs_climate:dcs_device_fan"
+		}]
+	}]
+}

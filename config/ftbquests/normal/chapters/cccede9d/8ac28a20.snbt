@@ -1,8 +1,8 @@
 {
 	title: "{gohd.cccede9d.8ac28a20.title}",
 	icon: "railcraft:abyssal_stone",
-	x: 3.0d,
-	y: 4.0d,
+	x: 2.0d,
+	y: 10.0d,
 	shape: "rsquare",
 	text: [
 		"{gohd.cccede9d.8ac28a20.desc1}"

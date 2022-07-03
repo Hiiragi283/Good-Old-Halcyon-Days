@@ -1,0 +1,15 @@
+{
+	icon: "dcs_climate:dcs_ingot 1 11",
+	x: 10.0d,
+	y: 0.0d,
+	shape: "square",
+	dependencies: [
+		"b2567136",
+		"ebd53cb7"
+	],
+	tasks: [{
+		uid: "dc8a6d78",
+		type: "checkmark",
+		title: "{gohd.ingotTitanium.title}"
+	}]
+}

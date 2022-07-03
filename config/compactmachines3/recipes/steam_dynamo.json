@@ -1,0 +1,85 @@
+{
+	"name": "gohd:steam_dynamo",
+	"target-item": "thermalexpansion:dynamo",
+	"target-meta": 0,
+  "target-count": 1,
+	"duration": 300,
+  "symmetrical": true,
+	"catalyst": "thermalfoundation:material",
+	"catalyst-meta": 514,
+  "input-types": {
+    "a": {
+      "id": "dcs_climate:dcs_ore_metal_alloy",
+      "meta": 1
+    },
+    "b": {
+      "id": "dcs_climate:dcs_ore_metal_alloy",
+      "meta": 2
+    },
+    "c": {
+      "id": "dcs_climate:dcs_device_dynamo",
+      "ignore-meta": true
+    },
+    "d": {
+      "id": "dcs_climate:dcs_device_boiler_turbine",
+      "ignore-meta": true
+    },
+    "e": {
+      "id": "dcs_climate:dcs_device_chamber",
+      "ignore-meta": true
+    }
+  },
+  "shape": [
+    [
+      [
+        "_",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "c",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_"
+      ]
+    ],
+    [
+      [
+        "a",
+        "b",
+        "a"
+      ],
+      [
+        "b",
+        "d",
+        "b"
+      ],
+      [
+        "a",
+        "b",
+        "a"
+      ]
+    ],
+    [
+      [
+        "a",
+        "b",
+        "a"
+      ],
+      [
+        "b",
+        "e",
+        "b"
+      ],
+      [
+        "a",
+        "b",
+        "a"
+      ]
+    ]
+  ]
+}

@@ -1,11 +1,14 @@
 {
 	title: "{gohd.cccede9d.33f25c86.title}",
 	icon: "dcs_climate:dcs_layer_stone_new 1 2",
-	x: 3.0d,
-	y: 1.0d,
+	x: 2.0d,
+	y: 7.0d,
 	shape: "rsquare",
 	text: [
 		"{gohd.cccede9d.33f25c86.desc1}"
+	],
+	dependencies: [
+		"347787d5"
 	],
 	optional: true,
 	tasks: [{

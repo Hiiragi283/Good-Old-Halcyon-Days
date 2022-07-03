@@ -1,0 +1,29 @@
+{
+	title: "{gohd.09d26429.bf14d483.title}",
+	x: 4.0d,
+	y: -4.0d,
+	dependencies: [
+		"63ceb32d"
+	],
+	tasks: [{
+		uid: "18b7103a",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_build_coldlamp"
+		},
+		{
+			item: "dcs_climate:dcs_build_coldlamp 1 1"
+		},
+		{
+			item: "dcs_climate:dcs_build_coldlamp 1 2"
+		},
+		{
+			item: "dcs_climate:dcs_build_coldlamp 1 3"
+		}]
+	}],
+	rewards: [{
+		uid: "f6817f7b",
+		type: "item",
+		item: "dcs_climate:dcs_coolant"
+	}]
+}

@@ -1,0 +1,22 @@
+{
+	title: "{gohd.highTechAge.title}",
+	x: 23.5d,
+	y: -2.0d,
+	shape: "square",
+	dependencies: [
+		"648ab246"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "8aada300",
+		type: "item",
+		items: [{
+			item: "techreborn:fusion_control_computer"
+		}]
+	}],
+	rewards: [{
+		uid: "3389c88a",
+		type: "item",
+		item: "contenttweaker:ticket_legendary"
+	}]
+}

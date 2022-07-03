@@ -52,6 +52,17 @@
 			"item": "contenttweaker:dustblock_cobalt:0"
 		}
 	},
+	"dustblock_tungstensteel": {
+		"recipe_type": "ADD",
+		"output": {
+			"item": "techreborn:storage2:0"
+		},
+		"climate_temperature": "UHT",
+		"climate_airflow": "TIGHT",
+		"input": {
+			"item": "contenttweaker:dustblock_tungstensteel:0"
+		}
+	},
 	"dustblock_lead": {
 		"recipe_type": "ADD",
 		"output": {

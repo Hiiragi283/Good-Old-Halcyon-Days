@@ -1,0 +1,22 @@
+{
+	title: "{gohd.chemicalAge.title}",
+	x: 19.0d,
+	y: 0.0d,
+	shape: "square",
+	dependencies: [
+		"80983d24"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "40fdd1cc",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_device_reactor"
+		}]
+	}],
+	rewards: [{
+		uid: "b8bdb218",
+		type: "item",
+		item: "contenttweaker:ticket_epic"
+	}]
+}

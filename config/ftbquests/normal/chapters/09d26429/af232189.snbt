@@ -1,6 +1,6 @@
 {
-	title: "{gohd.5f3109ce.8178a881.title}",
-	x: 11.0d,
+	title: "{gohd.ingotBrass.title}",
+	x: 9.0d,
 	y: -2.0d,
 	shape: "diamond",
 	dependencies: [
@@ -13,5 +13,10 @@
 		items: [{
 			item: "dcs_climate:dcs_ingot 1 4"
 		}]
+	}],
+	rewards: [{
+		uid: "2061fd71",
+		type: "item",
+		item: "contenttweaker:ticket_uncommon"
 	}]
 }

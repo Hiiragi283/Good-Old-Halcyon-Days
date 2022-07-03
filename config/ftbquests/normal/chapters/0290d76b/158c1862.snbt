@@ -1,0 +1,23 @@
+{
+	title: "{gohd.reward.ring_gold.title}",
+	icon: "dcs_climate:dcs_color_ring2 1 2",
+	x: 2.0d,
+	y: 3.0d,
+	can_repeat: true,
+	hide_dependency_lines: true,
+	dependencies: [
+		"4815ea22"
+	],
+	tasks: [{
+		uid: "abf0c162",
+		type: "item",
+		items: [{
+			item: "contenttweaker:ticket_common"
+		}]
+	}],
+	rewards: [{
+		uid: "5ab3a409",
+		type: "choice",
+		table: 1
+	}]
+}

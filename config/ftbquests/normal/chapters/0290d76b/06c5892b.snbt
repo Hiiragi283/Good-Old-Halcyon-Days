@@ -1,0 +1,20 @@
+{
+	x: 10.0d,
+	y: 1.0d,
+	dependencies: [
+		"c3670652"
+	],
+	tasks: [{
+		uid: "f11f2dd1",
+		type: "item",
+		items: [{
+			item: "contenttweaker:ticket_legendary"
+		}]
+	}],
+	rewards: [{
+		uid: "bc943ae8",
+		type: "item",
+		item: "contenttweaker:ticket_legendary",
+		count: 3
+	}]
+}

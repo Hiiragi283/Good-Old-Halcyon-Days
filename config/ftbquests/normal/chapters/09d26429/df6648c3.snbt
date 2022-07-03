@@ -1,0 +1,19 @@
+{
+	x: 14.5d,
+	y: -1.0d,
+	dependencies: [
+		"6724c976"
+	],
+	tasks: [{
+		uid: "caf2bf6a",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_device_heat_exchanger"
+		}]
+	}],
+	rewards: [{
+		uid: "fe7e260c",
+		type: "item",
+		item: "contenttweaker:ticket_uncommon"
+	}]
+}

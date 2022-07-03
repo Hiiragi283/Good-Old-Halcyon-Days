@@ -1,0 +1,14 @@
+{
+	x: 16.5d,
+	y: -3.0d,
+	dependencies: [
+		"c3208b27"
+	],
+	tasks: [{
+		uid: "bfd6258b",
+		type: "item",
+		items: [{
+			item: "hap:heat_block"
+		}]
+	}]
+}

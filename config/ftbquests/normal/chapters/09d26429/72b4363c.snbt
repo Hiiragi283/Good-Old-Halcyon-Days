@@ -1,0 +1,22 @@
+{
+	title: "{gohd.ingotSUS.title}",
+	x: 17.5d,
+	y: 2.0d,
+	shape: "diamond",
+	dependencies: [
+		"4224ac66"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "fb9b53a5",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_ingot 1 10"
+		}]
+	}],
+	rewards: [{
+		uid: "f2e42fd9",
+		type: "item",
+		item: "contenttweaker:ticket_rare"
+	}]
+}

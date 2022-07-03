@@ -1,7 +1,0 @@
-{
-	title: "{gohd.main.title}",
-	icon: "biomesoplenty:grass 1 5",
-	always_invisible: false,
-	group: 0,
-	default_quest_shape: ""
-}

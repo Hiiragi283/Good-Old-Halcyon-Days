@@ -110,6 +110,27 @@
 			"ore_dict": "oreRutile"
 		}
 	},
+	"add_oreWolframite": {
+		"recipe_type": "ADD",
+		"output_primary": {
+			"item": "contenttweaker:wolframite_dust",
+			"count": 2
+		},
+		"output_secondary": {
+			"item": "dcs_climate:dcs_miscdust:13",
+			"chance": 0.20
+		},
+		"output_tertiary": {
+			"item": "extrautils2:ingredients:5",
+			"chance": 0.05
+		},
+		"catalyst": {
+			"item": "dcs_climate:dcs_rotaryblade:1"
+		},
+		"input": {
+			"ore_dict": "oreWolframite"
+		}
+	},
 	"add_energycrystal": {
 		"recipe_type": "ADD",
 		"output_primary": {

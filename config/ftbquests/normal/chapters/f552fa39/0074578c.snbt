@@ -1,0 +1,22 @@
+{
+	x: 6.0d,
+	y: -3.0d,
+	hide_dependency_lines: true,
+	dependencies: [
+		"40b0dd45"
+	],
+	tasks: [{
+		uid: "52660677",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_device_conveyor"
+		}],
+		count: 8L
+	}],
+	rewards: [{
+		uid: "e408e7d7",
+		type: "item",
+		item: "dcs_climate:dcs_device_conveyor",
+		count: 56
+	}]
+}

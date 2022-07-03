@@ -28,5 +28,11 @@
 			item: "minecraft:clay_ball"
 		}],
 		count: 64L
+	}],
+	rewards: [{
+		uid: "8221438d",
+		type: "item",
+		item: "contenttweaker:ticket_common",
+		count: 3
 	}]
 }

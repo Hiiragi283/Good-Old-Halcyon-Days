@@ -1,21 +1,19 @@
 {
+	title: "{gohd.5f3109ce.648774ca.title}",
+	icon: "minecraft:grass",
 	x: 0.0d,
 	y: 0.0d,
-	description: "{link.youtu.be.SWI_4Sx2GtI}",
-	dependencies: [
-		"6a052b16"
-	],
+	shape: "hexagon",
+	description: "{gohd.5f3109ce.648774ca.subtitle}",
 	size: 2.0d,
 	tasks: [{
-		uid: "3d2df3d7",
-		type: "dimension",
-		title: "{gohd.09d26429.648774ca.title}",
-		icon: "minecraft:grass",
-		dim: 0
+		uid: "7d5754d9",
+		type: "checkmark",
+		title: "{gohd.09d26429.648774ca.title}"
 	}],
 	rewards: [{
-		uid: "1208f479",
+		uid: "36df3308",
 		type: "item",
-		item: "dcs_lib:dcs_checker"
+		item: "biomesoplenty:terrarium 1 13"
 	}]
 }

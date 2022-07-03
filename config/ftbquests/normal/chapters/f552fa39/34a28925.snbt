@@ -1,0 +1,23 @@
+{
+	x: 6.0d,
+	y: 2.0d,
+	shape: "gear",
+	hide_dependency_lines: true,
+	dependencies: [
+		"40b0dd45"
+	],
+	tasks: [{
+		uid: "3c89f47b",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_device_shaft_s_steel"
+		}],
+		count: 8L
+	}],
+	rewards: [{
+		uid: "9f4ab05a",
+		type: "item",
+		item: "dcs_climate:dcs_device_shaft_s_steel",
+		count: 56
+	}]
+}

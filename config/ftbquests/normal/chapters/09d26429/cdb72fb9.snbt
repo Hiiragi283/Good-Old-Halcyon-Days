@@ -1,0 +1,14 @@
+{
+	x: 1.0d,
+	y: -3.0d,
+	dependencies: [
+		"a330ee6f"
+	],
+	tasks: [{
+		uid: "d20684a1",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_device_windvane"
+		}]
+	}]
+}

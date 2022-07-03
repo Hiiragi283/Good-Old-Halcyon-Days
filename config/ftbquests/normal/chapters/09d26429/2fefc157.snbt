@@ -1,0 +1,20 @@
+{
+	x: 6.0d,
+	y: -2.0d,
+	dependencies: [
+		"c592cbbc"
+	],
+	tasks: [{
+		uid: "db97510d",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_device_shitirin"
+		}]
+	}],
+	rewards: [{
+		uid: "732762bd",
+		type: "item",
+		item: "minecraft:coal 1 1",
+		count: 8
+	}]
+}

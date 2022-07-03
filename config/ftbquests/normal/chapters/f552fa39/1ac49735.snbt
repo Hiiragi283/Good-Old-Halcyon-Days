@@ -1,0 +1,22 @@
+{
+	x: 4.0d,
+	y: -2.0d,
+	hide_dependency_lines: true,
+	dependencies: [
+		"f74bb10a"
+	],
+	tasks: [{
+		uid: "8520af65",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_device_hopper_fluid"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "7e656757",
+		type: "item",
+		item: "dcs_climate:dcs_food_pack",
+		count: 16
+	}]
+}

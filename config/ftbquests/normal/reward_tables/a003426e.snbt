@@ -1,0 +1,16 @@
+{
+	title: "test",
+	loot_size: 1,
+	rewards: [{
+		item: "minecraft:stone"
+	}],
+	loot_crate: {
+		string_id: "test",
+		color: 16777215,
+		drops: {
+			boss: 0,
+			passive: 0,
+			monster: 0
+		}
+	}
+}

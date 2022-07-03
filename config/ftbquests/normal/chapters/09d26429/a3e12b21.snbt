@@ -1,9 +1,10 @@
 {
-	x: 7.0d,
-	y: 6.0d,
+	x: 6.0d,
+	y: 5.0d,
 	dependencies: [
 		"efbbdf1d",
-		"de863d39"
+		"de863d39",
+		"a87e9ce9"
 	],
 	tasks: [{
 		uid: "92447edb",
@@ -32,5 +33,10 @@
 		items: [{
 			item: "tconstruct:faucet"
 		}]
+	}],
+	rewards: [{
+		uid: "d52c68ab",
+		type: "item",
+		item: "tconstruct:seared_tank 1 1"
 	}]
 }

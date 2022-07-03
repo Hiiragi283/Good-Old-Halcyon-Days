@@ -1,0 +1,19 @@
+{
+	x: 14.5d,
+	y: 1.0d,
+	dependencies: [
+		"5a0bc24d"
+	],
+	tasks: [{
+		uid: "9ab06c25",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_device_stonemill"
+		}]
+	}],
+	rewards: [{
+		uid: "3fe95769",
+		type: "item",
+		item: "contenttweaker:ticket_uncommon"
+	}]
+}

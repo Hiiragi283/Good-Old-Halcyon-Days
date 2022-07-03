@@ -1,8 +1,9 @@
 {
-	x: 7.0d,
+	icon: "dcs_climate:dcs_ore_stone_new",
+	x: 6.0d,
 	y: 0.0d,
 	dependencies: [
-		"47a3fa84"
+		"4fb7c614"
 	],
 	tasks: [{
 		uid: "f9642dab",
@@ -10,5 +11,35 @@
 		items: [{
 			item: "dcs_climate:dcs_ore_stone_new"
 		}]
+	},
+	{
+		uid: "a56fa03a",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_oreitem"
+		}]
+	},
+	{
+		uid: "97fc8285",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "dustCopper",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any dustCopper"
+				}
+			}
+		}]
+	}],
+	rewards: [{
+		uid: "07044f8d",
+		type: "item",
+		item: "contenttweaker:ticket_common"
 	}]
 }

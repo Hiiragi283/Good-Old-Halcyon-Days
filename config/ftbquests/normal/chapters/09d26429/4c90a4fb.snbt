@@ -1,7 +1,7 @@
 {
 	title: "{gohd.09d26429.4c90a4fb.title}",
-	x: 11.0d,
-	y: 4.0d,
+	x: 8.0d,
+	y: 3.0d,
 	dependencies: [
 		"44c3a0a3",
 		"ead0b171"
@@ -45,5 +45,21 @@
 				Material: "bronze"
 			}
 		}]
+	}],
+	rewards: [{
+		uid: "7c28e08f",
+		type: "item",
+		item: {
+			id: "tconstruct:sharpening_kit",
+			tag: {
+				Material: "bronze"
+			}
+		},
+		count: 8
+	},
+	{
+		uid: "c33c9c9c",
+		type: "item",
+		item: "contenttweaker:ticket_uncommon"
 	}]
 }

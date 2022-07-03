@@ -1,0 +1,22 @@
+{
+	title: "{gohd.ingotSteel.title}",
+	x: 13.5d,
+	y: -2.0d,
+	shape: "diamond",
+	dependencies: [
+		"f9c67698"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "51dd9f5c",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_ingot 1 5"
+		}]
+	}],
+	rewards: [{
+		uid: "4c085987",
+		type: "item",
+		item: "contenttweaker:ticket_rare"
+	}]
+}

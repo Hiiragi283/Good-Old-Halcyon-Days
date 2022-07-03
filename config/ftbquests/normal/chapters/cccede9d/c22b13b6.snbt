@@ -1,0 +1,15 @@
+{
+	x: 5.0d,
+	y: 4.0d,
+	hide_dependency_lines: true,
+	dependencies: [
+		"94dd1723"
+	],
+	tasks: [{
+		uid: "593f4953",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_gem_white"
+		}]
+	}]
+}

@@ -1,0 +1,19 @@
+{
+	x: 0.0d,
+	y: 0.0d,
+	shape: "hexagon",
+	can_repeat: true,
+	size: 2.0d,
+	tasks: [{
+		uid: "c289f48c",
+		type: "checkmark",
+		title: "{gohd.hac.title}",
+		icon: "dcs_climate:dcs_icons"
+	}],
+	rewards: [{
+		uid: "ffe9b65e",
+		type: "item",
+		item: "dcs_climate:dcs_icons",
+		count: 64
+	}]
+}

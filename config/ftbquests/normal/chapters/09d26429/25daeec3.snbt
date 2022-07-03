@@ -1,9 +1,10 @@
 {
-	x: 9.0d,
-	y: 5.0d,
+	x: 7.0d,
+	y: 4.0d,
 	dependencies: [
 		"a3e12b21",
-		"ac130ae2"
+		"ac130ae2",
+		"6c77c9cd"
 	],
 	tasks: [{
 		uid: "1543a6fa",
@@ -11,5 +12,11 @@
 		items: [{
 			item: "tcomplement:melter"
 		}]
+	}],
+	rewards: [{
+		uid: "7368210a",
+		type: "item",
+		item: "contenttweaker:ticket_common",
+		count: 5
 	}]
 }

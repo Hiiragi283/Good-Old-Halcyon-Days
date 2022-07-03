@@ -1,6 +1,6 @@
 {
 	x: 5.0d,
-	y: 5.0d,
+	y: 6.0d,
 	dependencies: [
 		"52739832"
 	],
@@ -10,5 +10,15 @@
 		items: [{
 			item: "minecraft:furnace"
 		}]
+	}],
+	rewards: [{
+		uid: "231cd255",
+		type: "item",
+		item: "dcs_climate:dcs_hat_leather"
+	},
+	{
+		uid: "f5859335",
+		type: "item",
+		item: "contenttweaker:ticket_common"
 	}]
 }

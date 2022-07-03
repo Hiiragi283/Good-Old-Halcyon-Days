@@ -1,0 +1,19 @@
+{
+	x: 18.5d,
+	y: 3.0d,
+	dependencies: [
+		"72b4363c"
+	],
+	tasks: [{
+		uid: "d0a1c51b",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_device_kitchen_hood"
+		}]
+	}],
+	rewards: [{
+		uid: "a75d87cd",
+		type: "item",
+		item: "dcs_climate:dcs_device_crafting_counter"
+	}]
+}

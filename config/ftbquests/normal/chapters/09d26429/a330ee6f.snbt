@@ -1,0 +1,19 @@
+{
+	x: 2.0d,
+	y: -2.0d,
+	dependencies: [
+		"648774ca"
+	],
+	tasks: [{
+		uid: "04911720",
+		type: "advancement",
+		advancement: "dcs_climate:climate_damage",
+		criterion: ""
+	}],
+	rewards: [{
+		uid: "a8875b2f",
+		type: "item",
+		item: "dcs_lib:dcs_checker",
+		count: 3
+	}]
+}

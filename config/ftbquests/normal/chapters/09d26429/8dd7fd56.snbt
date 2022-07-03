@@ -1,0 +1,27 @@
+{
+	icon: "contenttweaker:dustblock_tungstensteel",
+	x: 20.0d,
+	y: -2.0d,
+	dependencies: [
+		"39f20897"
+	],
+	tasks: [{
+		uid: "53a79484",
+		type: "item",
+		items: [{
+			item: "contenttweaker:dustblock_tungstensteel"
+		}]
+	},
+	{
+		uid: "dfeb5e9d",
+		type: "item",
+		items: [{
+			item: "techreborn:storage2"
+		}]
+	}],
+	rewards: [{
+		uid: "ab399716",
+		type: "item",
+		item: "contenttweaker:dustblock_tungstensteel"
+	}]
+}

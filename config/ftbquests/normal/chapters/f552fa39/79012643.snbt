@@ -1,0 +1,35 @@
+{
+	x: 9.0d,
+	y: 4.0d,
+	shape: "gear",
+	dependencies: [
+		"38d37236"
+	],
+	tasks: [{
+		uid: "253df2bd",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_device_portal_manager"
+		}]
+	}],
+	rewards: [{
+		uid: "863ddd51",
+		type: "item",
+		item: "dcs_climate:dcs_adapter_card"
+	},
+	{
+		uid: "aa73ad3e",
+		type: "item",
+		item: "dcs_climate:dcs_adapter_card 1 1"
+	},
+	{
+		uid: "16145a5d",
+		type: "item",
+		item: "dcs_climate:dcs_adapter_card 1 2"
+	},
+	{
+		uid: "06ed68f3",
+		type: "item",
+		item: "dcs_climate:dcs_adapter_card 1 3"
+	}]
+}

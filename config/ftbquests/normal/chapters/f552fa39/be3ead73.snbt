@@ -1,0 +1,16 @@
+{
+	x: 4.0d,
+	y: -1.0d,
+	hide_dependency_lines: true,
+	dependencies: [
+		"f74bb10a"
+	],
+	tasks: [{
+		uid: "ec7fad3c",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_device_ibc"
+		}],
+		ignore_nbt: 1b
+	}]
+}

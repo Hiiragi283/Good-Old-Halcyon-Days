@@ -1,0 +1,16 @@
+{
+	x: 4.0d,
+	y: 3.0d,
+	shape: "gear",
+	hide_dependency_lines: true,
+	dependencies: [
+		"f74bb10a"
+	],
+	tasks: [{
+		uid: "6e7c4fc5",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_device_water_pump"
+		}]
+	}]
+}

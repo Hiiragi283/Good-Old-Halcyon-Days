@@ -1,0 +1,20 @@
+{
+	x: 4.0d,
+	y: 5.0d,
+	dependencies: [
+		"ac130ae2"
+	],
+	tasks: [{
+		uid: "85aa079e",
+		type: "item",
+		items: [{
+			item: "artisanworktables:workstation 1 5"
+		}]
+	}],
+	rewards: [{
+		uid: "2e5788f9",
+		type: "item",
+		item: "contenttweaker:ticket_common",
+		count: 3
+	}]
+}

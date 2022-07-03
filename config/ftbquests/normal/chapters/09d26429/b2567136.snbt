@@ -1,0 +1,32 @@
+{
+	title: "{gohd.ingotTitanium.title}",
+	x: 21.5d,
+	y: 2.0d,
+	shape: "diamond",
+	dependencies: [
+		"f591041c"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "25687b21",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_ingot 1 11"
+		}]
+	}],
+	rewards: [{
+		uid: "597141ea",
+		type: "item",
+		item: {
+			id: "dcs_climate:dcs_leggins_combatdress",
+			tag: {
+				color: 1
+			}
+		}
+	},
+	{
+		uid: "969c39c8",
+		type: "item",
+		item: "contenttweaker:ticket_epic"
+	}]
+}

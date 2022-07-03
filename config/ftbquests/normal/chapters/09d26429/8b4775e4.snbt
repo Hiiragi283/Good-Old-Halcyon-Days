@@ -1,0 +1,16 @@
+{
+	title: "{gohd.09d26429.8b4775e4.title}",
+	icon: "dcs_climate:dcs_icons 1 1",
+	x: 15.5d,
+	y: 0.0d,
+	description: "{gohd.09d26429.8b4775e4.subtitle}",
+	dependencies: [
+		"df6648c3",
+		"b224ea06"
+	],
+	tasks: [{
+		uid: "342663cf",
+		type: "checkmark",
+		title: "{gohd.e763bfd4.8b4775e4.title}"
+	}]
+}

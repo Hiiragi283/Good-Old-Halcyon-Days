@@ -1,7 +1,7 @@
 {
 	title: "{gohd.09d26429.820ea2c4.title}",
-	x: 6.0d,
-	y: -3.0d,
+	x: 4.0d,
+	y: 3.0d,
 	dependencies: [
 		"14ff1572",
 		"4fb7c614"
@@ -56,5 +56,10 @@
 			}
 		},
 		count: 8
+	},
+	{
+		uid: "32c6ad2e",
+		type: "item",
+		item: "contenttweaker:ticket_common"
 	}]
 }

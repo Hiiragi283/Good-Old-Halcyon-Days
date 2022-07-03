@@ -1,0 +1,29 @@
+{
+	x: 2.0d,
+	y: 2.0d,
+	shape: "gear",
+	hide_dependency_lines: true,
+	dependencies: [
+		"053b4e1a"
+	],
+	tasks: [{
+		uid: "2544369a",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_device_shaft_s"
+		}],
+		count: 8L
+	}],
+	rewards: [{
+		uid: "b8bbb834",
+		type: "item",
+		item: "dcs_climate:dcs_device_shaft_s",
+		count: 56
+	},
+	{
+		uid: "b6cb7ef5",
+		type: "item",
+		item: "dcs_climate:dcs_device_gearbox",
+		count: 4
+	}]
+}
