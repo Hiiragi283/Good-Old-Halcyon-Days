@@ -1,8 +1,8 @@
-#======================================================================
-# ファイル名 : misc.zs
+#====================================================================
+# ファイル名 : buildings.zs
 # 作成者 : Hiiragi Russell Tsubasa: https://github.com/Hiiragi283
 # 情報 : このファイルについて書く
-#======================================================================
+#====================================================================
 
 #priority 90
 
@@ -18,7 +18,7 @@ import mods.ctintegration.util.RecipePattern;
 import scripts.HiiragiUtils;
 
 //このscriptの読み込みの開始をログに出力
-print("Start loading misc.zs ...");
+print("Start loading buildings.zs ...");
 
 //変数の定義
 
@@ -173,7 +173,7 @@ print("Start loading misc.zs ...");
 		<railcraft:quarried_slab:1>: <railcraft:quarried:0>,
 		<railcraft:sandy_slab:0>: <railcraft:sandy:1>,
 		<railcraft:sandy_slab:1>: <railcraft:sandy:0>,
-		<techreborn:rubber_plank_double_slab>: <techreborn:rubber_planks>,
+		//<techreborn:rubber_plank_double_slab>: <techreborn:rubber_planks>,
 		<twilightforest:aurora_slab>: <twilightforest:aurora_block>,
 		<twilightforest:twilight_oak_slab>: <twilightforest:twilight_oak_planks:0>,
 		<twilightforest:canopy_slab>: <twilightforest:canopy_planks:0>,
@@ -233,7 +233,7 @@ print("Start loading misc.zs ...");
 			.addTool(<ore:artisansHandsaw>, 1)
 			.addOutput(slab* 2)
 			.create();
-		HiiragiUtils.addCrafting(false, true, full, RecipePattern.init(["A", "A"]).map({A:slab}).ingredients);
+		HiiragiUtils.addCraftingShaped(false, full, RecipePattern.init(["A", "A"]).map({A:slab}).ingredients, null, null);
 		}
 
 
@@ -278,7 +278,7 @@ print("Start loading misc.zs ...");
 			.addTool(<ore:artisansChisel>, 1)
 			.addOutput(chiseled)
 			.create();
-		HiiragiUtils.addCrafting(true, false, full, [[chiseled]]);
+		HiiragiUtils.addCraftingShapeless(false, full, [chiseled], null, null);
 	}
 
 	val removePillar as IItemStack[IItemStack] = {
@@ -301,7 +301,7 @@ print("Start loading misc.zs ...");
 			.addTool(<ore:artisansChisel>, 1)
 			.addOutput(pillar* 2)
 			.create();
-		HiiragiUtils.addCrafting(true, false, full, [[pillar]]);
+		HiiragiUtils.addCraftingShapeless(false, full, [pillar], null, null);
 	}
 
 //Stairのレシピを抜本的に改変
@@ -426,16 +426,7 @@ print("Start loading misc.zs ...");
 		<railcraft:pearlized_paver_stairs>: <railcraft:pearlized:0>,
 		<railcraft:quarried_paver_stairs>: <railcraft:quarried:0>,
 		<railcraft:sandy_paver_stairs>: <railcraft:sandy:0>,
-		<techreborn:rubber_plank_stair>: <techreborn:rubber_planks>,
-		<twilightforest:castle_stairs_brick>: <twilightforest:castle_brick:0>,
-		<twilightforest:castle_stairs_worn>: <twilightforest:castle_brick:1>,
-		<twilightforest:castle_stairs_cracked>: <twilightforest:castle_brick:2>,
-		<twilightforest:castle_stairs_mossy>: <twilightforest:castle_brick:4>,
-		<twilightforest:castle_stairs:0>: <twilightforest:castle_pillar:0>,
-		<twilightforest:castle_stairs:8>: <twilightforest:castle_pillar:3>,
-		<twilightforest:nagastone_stairs>: <twilightforest:etched_nagastone>,
-		<twilightforest:nagastone_stairs_mossy>: <twilightforest:etched_nagastone_mossy>,
-		<twilightforest:nagastone_stairs_weathered>: <twilightforest:etched_nagastone_weathered>,
+		//<techreborn:rubber_plank_stair>: <techreborn:rubber_planks>,
 		//<twilightforest:aurora_slab>: <twilightforest:aurora_block>,
 		<twilightforest:twilight_oak_stairs>: <twilightforest:twilight_oak_planks:0>,
 		<twilightforest:canopy_stairs>: <twilightforest:canopy_planks:0>,
@@ -495,8 +486,29 @@ print("Start loading misc.zs ...");
 			.addTool(<ore:artisansHandsaw>, 1)
 			.addOutput(stair* 4)
 			.create();
-		HiiragiUtils.addCrafting(false, true, full, RecipePattern.init(["AA", "AA"]).map({A:stair}).ingredients);
+		HiiragiUtils.addCraftingShaped(false, full*3, RecipePattern.init(["AA", "AA"]).map({A:stair}).ingredients, null, null);
+	}
+
+	val mapStairTwilight as IItemStack[IItemStack] = {
+		<twilightforest:castle_stairs_brick>: <twilightforest:castle_brick:0>,
+		<twilightforest:castle_stairs_worn>: <twilightforest:castle_brick:1>,
+		<twilightforest:castle_stairs_cracked>: <twilightforest:castle_brick:2>,
+		<twilightforest:castle_stairs_mossy>: <twilightforest:castle_brick:4>,
+		<twilightforest:castle_stairs:0>: <twilightforest:castle_pillar:0>,
+		<twilightforest:castle_stairs:8>: <twilightforest:castle_pillar:3>,
+		<twilightforest:nagastone_stairs>: <twilightforest:etched_nagastone>,
+		<twilightforest:nagastone_stairs_mossy>: <twilightforest:etched_nagastone_mossy>,
+		<twilightforest:nagastone_stairs_weathered>: <twilightforest:etched_nagastone_weathered>,
+	};
+
+	for stair, full in mapStairTwilight {
+		recipes.remove(stair);
+		RecipeBuilder.get("basic")
+			.setShaped(RecipePattern.init(["A ", "AA"]).map({A:full}).ingredients)
+			.addTool(<ore:artisansHandsaw>, 1)
+			.addOutput(stair* 4)
+			.create();
 	}
 
 //このscriptの読み込みの完了をログに出力
-print("misc.zs loaded!");
+print("buildings.zs loaded!");

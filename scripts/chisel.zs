@@ -1,8 +1,8 @@
-#======================================================================
+#====================================================================
 # ファイル名 : chisel.zs
 # 作成者 : Hiiragi Russell Tsubasa: https://github.com/Hiiragi283
 # 情報 : Chiselの改変
-#======================================================================
+#====================================================================
 
 #priority 0
 
@@ -55,9 +55,14 @@ print("Start loading chisel.zs ...");
 
 //OreDict
 	val chiselOreDict as IItemStack[][string] = {
-		"block_peridot": <ore:blockPeridot>.items,
-		"block_ruby": <ore:blockRuby>.items,
-		"block_sapphire": <ore:blockSapphire>.items,
+		//blocks
+			"block_peridot": <ore:blockPeridot>.items,
+			"block_ruby": <ore:blockRuby>.items,
+			"block_sapphire": <ore:blockSapphire>.items,
+		//items
+			"item_peridot": <ore:gemPeridot>.items,
+			"item_ruby": <ore:gemRuby>.items,
+			"item_sapphire": <ore:gemSapphire>.items,
 	};
 		for i, j in chiselOreDict {
 			mods.chisel.Carving.addGroup(i);
@@ -188,7 +193,7 @@ print("Start loading chisel.zs ...");
 			mods.chisel.Carving.addVariation("badlands_stone", <railcraft:badlands>.definition.makeStack(i));
 		}
 	//Nether
-		for i in 0 to 5 {
+		for i in 1 to 5 {
 			recipes.remove(<railcraft:nether>.definition.makeStack(i));
 			mods.chisel.Carving.addVariation("netherbrick", <railcraft:nether>.definition.makeStack(i));
 		}

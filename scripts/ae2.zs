@@ -1,5 +1,5 @@
 #====================================================================
-# ファイル名 : _TEMPLATE.zs
+# ファイル名 : ae2.zs
 # 作成者 : Hiiragi Russell Tsubasa: https://github.com/Hiiragi283
 # 情報 : このファイルについて書く
 #====================================================================
@@ -12,13 +12,14 @@ import crafttweaker.item.IIngredient;
 
 //各種modからclassをimport
 import mods.artisanworktables.builder.RecipeBuilder;
+import mods.appliedenergistics2.Inscriber;
 import mods.ctintegration.util.RecipePattern;
 
 //scriptのimport
 import scripts.HiiragiUtils;
 
 //このscriptの読み込みの開始をログに出力
-print("Start loading _TEMPLATE.zs ...");
+print("Start loading ae2.zs ...");
 
 //変数の定義
 
@@ -47,5 +48,11 @@ print("Start loading _TEMPLATE.zs ...");
 	//import
 	//新規
 
+//Inscriberのレシピ
+	Inscriber.addRecipe(<enderio:item_basic_capacitor:0>, <ore:dustBedrock>, false, <ore:ingotCopper>, <ore:ingotRedstoneAlloy>);
+	Inscriber.addRecipe(<enderio:item_basic_capacitor:1>, <ore:itemSilicon>, false, <ore:ingotSilver>, <ore:ingotEnergeticAlloy>);
+	Inscriber.addRecipe(<enderio:item_basic_capacitor:2>, <ore:dustBismuth>, false, <ore:ingotGold>, <ore:ingotVibrantAlloy>);
+	Inscriber.addRecipe(<enderio:item_material:3>, <ore:itemPowderPhotovoltaic>, false, <ore:fusedQuartz>, <dcs_climate:dcs_gem_blue:1>);
+
 //このscriptの読み込みの完了をログに出力
-print("_TEMPLATE.zs loaded!");
+print("ae2.zs loaded!");

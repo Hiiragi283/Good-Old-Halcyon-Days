@@ -1,10 +1,10 @@
-#======================================================================
+#====================================================================
 # ファイル名 : HiiragiUtils.zs
 # 作成者 : Hiiragi Russell Tsubasa;URL -> https://github.com/Hiiragi283
 # 情報 : 有用な機能を実装
 #        このスクリプトの一部はGrassUtilsを参考にしています
 #        -> https://github.com/friendlyhj/GrassUtils
-#======================================================================
+#====================================================================
 
 #priority 99
 
@@ -90,6 +90,11 @@ print("Start loading HiiragiUtils.zs ...");
 		return ("liquid_" ~ name);
 	}
 
+//代入されたIOreDictEntryから名前を生成する関数
+	function getNameOreDict (oredict as IOreDictEntry) as string {
+		var name as string = oredict.name;
+	}
+
 //代入されたIItemStackに紐づけされた鉱石辞書を取得し、それを削除する関数
 	function removeOreDict (item as IItemStack) {
 		if (!isNull(item.ores)) {
@@ -143,12 +148,46 @@ print("Start loading HiiragiUtils.zs ...");
 		recipeID += 1;
 	}
 
+	function addCraftingShaped (remove as bool, output as IItemStack, input as IIngredient[][], recipeFunction as IRecipeFunction, recipeAction as IRecipeAction) {
+		var recipeName as string = getNameItem(output) ~ "_" ~ recipeID;
+		if (remove) {
+			recipes.remove(output, true);
+		}
+		recipes.addShaped(recipeName, output, input, recipeFunction, recipeAction);
+		recipeID += 1;
+	}
+
+	function addCraftingShapeless (remove as bool, output as IItemStack, input as IIngredient[], recipeFunction as IRecipeFunction, recipeAction as IRecipeAction) {
+		var recipeName as string = getNameItem(output) ~ "_" ~ recipeID;
+		if (remove) {
+			recipes.remove(output, true);
+		}
+		recipes.addShapeless(recipeName, output, input, recipeFunction, recipeAction);
+		recipeID += 1;
+	}
+
 //アイテムの等価交換を実装するレシピ
-	function addCraftingConv (item1 as IItemStack, item2 as IItemStack) {
-		var recipeName1 as string = getNameItem(item1) ~ "_" ~ recipeID;
-		var recipeName2 as string = getNameItem(item2) ~ "_" ~ recipeID;
-		recipes.addShapeless(recipeName1, item1, [item2]);
-		recipes.addShapeless(recipeName2, item2, [item1]);
+	function addCraftingConv (item1, item2) {
+		var recipeName1 as string = getNameItem(item1 as IItemStack) ~ "_" ~ recipeID;
+		var recipeName2 as string = getNameItem(item2 as IItemStack) ~ "_" ~ recipeID;
+		recipes.addShapeless(recipeName1, item1 as IItemStack, [item2 as IIngredient]);
+		recipes.addShapeless(recipeName2, item2  as IItemStack, [item1 as IIngredient]);
+	}
+
+	function addCraftingConvOre (item1 as IOreDictEntry, item2 as IOreDictEntry) {
+		var recipeName1 as string = getNameOreDict(item1) ~ "_" ~ recipeID;
+		var recipeName2 as string = getNameOreDict(item2) ~ "_" ~ recipeID;
+		recipes.addShapeless(recipeName1, item1.firstItem, [item2]);
+		recipes.addShapeless(recipeName2, item2.firstItem, [item1]);
+	}
+
+//レシピ上のアイテムを置換する関数
+	function addCraftingReplace (fromReplace as IIngredient, toReplace as IIngredient, output as IItemStack) {
+		if (isNull(output)) {
+			recipes.replaceAllOccurences(fromReplace, toReplace);
+		} else {
+			recipes.replaceAllOccurences(fromReplace, toReplace, output);
+		}
 	}
 
 //自動的に古いレシピを削除する機能を備えた関数
@@ -165,6 +204,11 @@ print("Start loading HiiragiUtils.zs ...");
 //道具の耐久値を消費するレシピ用
 	function toolInput(tool as IItemStack, damage as int) as IIngredient {
 		return tool.anyDamage().transformDamage(damage);
+	}
+
+//代入したアイテムに翻訳キーを対応させる
+	function addLocname(item as IItemStack, key as string) as IItemStack {
+		return item.withTag({display:{LocName: key}});
 	}
 
 //代入した文字列から特定の鋳型を返す関数
@@ -198,6 +242,21 @@ print("Start loading HiiragiUtils.zs ...");
 			return <tconstruct:cast>.withTag({PartType:patternName});
 	}
 
+//Castingレシピの編集
+	function addCasting(type as string, remove as bool, output as IItemStack, cast as IIngredient, liquid as ILiquidStack, amount as int, consume as bool, time as int) {
+		if(type == "table") {
+			if(remove) {
+				mods.tconstruct.Casting.removeTableRecipe(output);
+			}
+			mods.tconstruct.Casting.addTableRecipe(output, cast, liquid, amount, consume, time);
+		} else if(type == "basin") {
+			if(remove) {
+				mods.tconstruct.Casting.removeBasinRecipe(output);
+			}
+			mods.tconstruct.Casting.addBasinRecipe(output, cast, liquid, amount, consume, time);
+		}
+	}
+
 //アイテムに付与されたNBTタグを継承する
 function inheritStatus(itemBase as IItemStack) as IRecipeFunction {
 	return function(out, ins, cInfo){
@@ -211,7 +270,7 @@ function inheritStatus(itemBase as IItemStack) as IRecipeFunction {
 }
 
 //液体入りアイテムを返す関数
-function liquidItem (type as string, liquid as ILiquidStack) as IItemStack {
+/*function liquidItem (type as string, liquid as ILiquidStack) as IItemStack {
 	var name as string = liquid.name;
 	if (type == "bucket") {
 		return <forge:bucketfilled>.withTag({FluidName: name, Amount: 1000});
@@ -220,7 +279,7 @@ function liquidItem (type as string, liquid as ILiquidStack) as IItemStack {
 			return <techreborn:dynamiccell>.withTag({Fluid: {FluidName: name, Amount: 1000}});
 		}
 	}
-}
+}*/
 
 //HaCの見た目が変わるブロックの見た目を指定
 function changeAppear (block as IItemStack, color as int) as IItemStack {
@@ -229,30 +288,3 @@ function changeAppear (block as IItemStack, color as int) as IItemStack {
 
 //このscriptの読み込みの完了をログに出力
 print("HiiragiUtils.zs loaded!");
-
-<dcs_climate:dcs_device_chamber>.withTag(
-	{BlockEntityTag: {
-		CoolTime: 0 as byte, Climate: 10 as byte, InvItems: [
-			{
-				Slot: 0 as byte, id: "minecraft:air", Count: 1 as byte, Damage: 0 as short
-			},
-			{
-				Slot: 1 as byte, id: "minecraft:air", Count: 1 as byte, Damage: 0 as short
-			},
-			{
-				Slot: 2 as byte, id: "minecraft:air", Count: 1 as byte, Damage: 0 as short
-			},
-			{
-				Slot: 3 as byte, id: "minecraft:air", Count: 1 as byte, Damage: 0 as short
-			}
-		],
-		Color: 2,
-		"dcs.climateInt": 149,
-		BurnTime: 0,
-		MaxTime: 1,
-		id: "minecraft:dcs_te_chamber_normal",
-		"dcs.heats": [],
-		Lock: ""
-		},
-		display: {Lore: ["(+NBT)"]}
-	});

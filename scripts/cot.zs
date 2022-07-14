@@ -1,8 +1,8 @@
-#======================================================================
+#====================================================================
 # ファイル名 : _TEMPLATE.zs
 # 作成者 : Hiiragi Russell Tsubasa: https://github.com/Hiiragi283
 # 情報 : このファイルについて書く
-#======================================================================
+#====================================================================
 
 #loader contenttweaker
 #priority 100
@@ -29,16 +29,23 @@ print("Start loading _TEMPLATE.zs ...");
 	val items as string[] = [
 		"elven_pearl",
 		"ephemerald",
-		"reagent_halogen"
+		"reagent_halogen",
+		"ticket_common",
+		"ticket_uncommon",
+		"ticket_rare",
+		"ticket_epic",
+		"ticket_legendary",
+		"ticket_mythic",
 	];
 	for i in items {
 		RussellUtils.addItem(i);
 	}
 
 	RussellUtils.addItemColored("grout_ball", "D0D1D6", "minecraft:items/snowball");
+	RussellUtils.addItemColored("endsteel_machine_parts", "FCF9D7", "enderio:items/item_material_simple_chassi_parts");
 
-	RussellUtils.addItemShimmer("energium_dust");
-	RussellUtils.addItemShimmer("lapotron_dust");
+	//RussellUtils.addItemShimmer("energium_dust");
+	//RussellUtils.addItemShimmer("lapotron_dust");
 
 //ブロックの登録
 	RussellUtils.addBlockAdvanced("unfired_casting_channel", <blockmaterial:grass>, 3.0, 0.5, "shovel", -1, <soundtype:ground>, false);

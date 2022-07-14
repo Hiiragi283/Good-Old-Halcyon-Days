@@ -1,8 +1,8 @@
-#======================================================================
+#====================================================================
 # ファイル名 : minecraft.zs
 # 作成者 : Hiiragi Russell Tsubasa: https://github.com/Hiiragi283
 # 情報 : このファイルについて書く
-#======================================================================
+#====================================================================
 
 #priority 0
 
@@ -29,7 +29,7 @@ print("Start loading minecraft.zs ...");
 			HiiragiUtils.removeCrafting(i);
 		}
 	//上書き
-		HiiragiUtils.addCrafting(false, true, <minecraft:furnace>, RecipePattern.init(["AAA", "ABA", "AAA"]).map({A:<ore:cobblestone>, B:<dcs_climate:dcs_tinder:1>}).ingredients);
+		HiiragiUtils.addCraftingShaped(true, <minecraft:furnace>, RecipePattern.init(["AAA", "ABA", "AAA"]).map({A:<ore:cobblestone>, B:<dcs_climate:dcs_tinder:1>}).ingredients, null, null);
 	//新規
 
 //かまどレシピの編集

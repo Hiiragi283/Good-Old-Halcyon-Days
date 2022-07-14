@@ -1,8 +1,8 @@
-#======================================================================
+#====================================================================
 # name : botania.zs
 # auther : Hiiragi Russell Tsubasa;URL -> https://github.com/Hiiragi283
 # info : Scripts for Botania
-#======================================================================
+#====================================================================
 
 #priority 0
 //norun
@@ -46,32 +46,14 @@ print("Start loading botania.zs ...");
 		HiiragiUtils.removeFromJEI(<botania:pool:2>);
 	//上書き
 		//Botania
-			HiiragiUtils.addCrafting(false, true, <botania:lexicon>, RecipePattern.init(["AA ", "AB ", "   "]).map({A:<minecraft:paper>, B:<twilightforest:naga_scale>}).ingredients);
-			HiiragiUtils.addCrafting(true, true, <botania:lens:10>, [[<botania:lens:0>, <ore:ingotFerrite>, <ore:dyeRed>, <ore:dyeBlue>]]);
-			val toolManasteel as IItemStack[IItemStack] = {
-				<botania:manasteelpick>: <tconstruct:pick_head>,
-				<botania:manasteelshovel>: <tconstruct:shovel_head>,
-				<botania:manasteelaxe>: <tconstruct:axe_head>,
-				<botania:manasteelsword>: <tconstruct:sword_blade>,
-			};
-			for tool, toolHead in toolManasteel {
-				HiiragiUtils.addCrafting(true, true, tool, [[toolHead.withTag({Material: "manasteel"}), <botania:manaresource:3>]]);
-			}
-			HiiragiUtils.addCrafting(true, true, <botania:terrasword>, [[<tconstruct:sword_blade>.withTag({Material: "terrasteel"}), <botania:manaresource:3>]]);
-			HiiragiUtils.addCraftingAdv(false, true, <botania:terrasword>, [[<tconstruct:sword_blade>.withTag({Material: "terrasteel"}), <botania:manasteelsword>.marked("inherit")]], HiiragiUtils.inheritStatus(<botania:terrasword>), null);
-			val toolElementium as IItemStack[IItemStack] = {
-				<botania:elementiumpick>: <tconstruct:pick_head>,
-				<botania:elementiumshovel>: <tconstruct:shovel_head>,
-				<botania:elementiumaxe>: <tconstruct:axe_head>,
-				<botania:elementiumsword>: <tconstruct:sword_blade>,
-			};
-			for tool, toolHead in toolElementium {
-				HiiragiUtils.addCrafting(true, true, tool, [[toolHead.withTag({Material: "elementium"}), <botania:manaresource:13>]]);
-			}
-			HiiragiUtils.addCrafting(true, true, <botania:craftinghalo>, [[<ore:workbench>, <ore:ringManasteel>]]);
-			HiiragiUtils.addCrafting(false, true, <botania:crystalbow>, RecipePattern.init([" AB", "C B", " AB"]).map({A:<botania:manaresource:13>, B:<botania:manaresource:16>, C:<botania:manaresource:3>}).ingredients);
-			HiiragiUtils.addCraftingAdv(false, false, <botania:crystalbow>, RecipePattern.init([" A", "BC", " A"]).map({A:<botania:manaresource:13>, B:<botania:manaresource:3>, C:<botania:livingwoodbow>.marked("inherit")}).ingredients, HiiragiUtils.inheritStatus(<botania:crystalbow>), null);
-			HiiragiUtils.addCrafting(true, true, <botania:swapring>, [[<artisanworktables:toolbox>, <ore:ringManasteel>]]);
+			HiiragiUtils.addCraftingShaped(true, <botania:lexicon>, RecipePattern.init(["AA ", "AB ", "   "]).map({A:<minecraft:paper>, B:<twilightforest:naga_scale>}).ingredients, null, null);
+			HiiragiUtils.addCraftingShapeless(true, <botania:lens:10>, [<botania:lens:0>, <ore:ingotFerrite>, <ore:dyeRed>, <ore:dyeBlue>], null, null);
+			HiiragiUtils.addCraftingShapeless(true, <botania:terrasword>, [<tconstruct:sword_blade>.withTag({Material: "terrasteel"}), <botania:manaresource:3>], null, null);
+			HiiragiUtils.addCraftingShapeless(true, <botania:terrasword>, [<tconstruct:sword_blade>.withTag({Material: "terrasteel"}), <botania:manasteelsword>.marked("inherit")], HiiragiUtils.inheritStatus(<botania:terrasword>), null);
+			HiiragiUtils.addCraftingShapeless(true, <botania:craftinghalo>, [<ore:workbench>, <ore:ringManasteel>], null, null);
+			HiiragiUtils.addCraftingShaped(true, <botania:crystalbow>, RecipePattern.init([" AB", "C B", " AB"]).map({A:<botania:manaresource:13>, B:<botania:manaresource:16>, C:<botania:manaresource:3>}).ingredients, null, null);
+			HiiragiUtils.addCraftingShaped(false, <botania:crystalbow>, RecipePattern.init([" A", "BC", " A"]).map({A:<botania:manaresource:13>, B:<botania:manaresource:3>, C:<botania:livingwoodbow>.marked("inherit")}).ingredients, HiiragiUtils.inheritStatus(<botania:crystalbow>), null);
+			HiiragiUtils.addCraftingShapeless(true, <botania:swapring>, [<artisanworktables:toolbox>, <ore:ringManasteel>], null, null);
 			val redStringed as IIngredient[IItemStack] = {
 				<botania:redstringcontainer>: <ore:chest>,
 				<botania:redstringdispenser>: <minecraft:dispenser>,
@@ -80,12 +62,12 @@ print("Start loading botania.zs ...");
 				<botania:redstringrelay>: <botania:spreader:0>
 			};
 			for output, input in redStringed {
-				//HiiragiUtils.addCrafting(false, true, output, RecipePattern.init(["ABC"]).map({A:<contenttweaker:casing_livingrock>, B:<botania:manaresource:12>, C:input}).ingredients);
+				//HiiragiUtils.addCraftingShaped(true, output, RecipePattern.init(["ABC"]).map({A:<contenttweaker:casing_livingrock>, B:<botania:manaresource:12>, C:input}).ingredients, null, null);
 			}
 
 		//Botanic Adds
-			HiiragiUtils.addCrafting(false, true, <botanicadds:pool_dreaming>, RecipePattern.init(["A A", "AAA"]).map({A:<botanicadds:dreamrock>}).ingredients);
-			HiiragiUtils.addCraftingAdv(false, true, <botanicadds:mana_stealer_sword>, RecipePattern.init(["A", "A", "B"]).map({A:<botanicadds:gaiasteel_ingot>, B:<botania:terrasword>.marked("inherit")}).ingredients, HiiragiUtils.inheritStatus(<botanicadds:mana_stealer_sword>), null);
+			HiiragiUtils.addCraftingShaped(true, <botanicadds:pool_dreaming>, RecipePattern.init(["A A", "AAA"]).map({A:<botanicadds:dreamrock>}).ingredients, null, null);
+			HiiragiUtils.addCraftingShaped(true, <botanicadds:mana_stealer_sword>, RecipePattern.init(["A", "A", "B"]).map({A:<botanicadds:gaiasteel_ingot>, B:<botania:terrasword>.marked("inherit")}).ingredients, HiiragiUtils.inheritStatus(<botanicadds:mana_stealer_sword>), null);
 
 	//新規
 
@@ -105,7 +87,7 @@ print("Start loading botania.zs ...");
 //import
 //新規
 	//Terra Shatterer
-	RecipeBuilder.get("basic")
+	/*RecipeBuilder.get("basic")
 		.setShaped(RecipePattern
 			.init([" ABC ", "  CDC", "  BCB", " E  A", "F    "])
 			.map({A:<botania:manaresource:4>, B:<tconstruct:large_plate>.withTag({Material: "terrasteel"}), C:<ore:plateLivingwood>, D:<botania:manatablet>, E:<botania:livingwood:0>, F:<tconstruct:tool_rod>.withTag({Material: "terrasteel"})})
@@ -119,14 +101,15 @@ print("Start loading botania.zs ...");
 			.map({A:<botania:manaresource:4>, B:<tconstruct:large_plate>.withTag({Material: "terrasteel"}), C:<botania:livingwood:0>, D:<minecraft:glowstone>, E:<botania:manaresource:4>})
 			.ingredients)
 		.addOutput(<botania:terraaxe>)
-		.create();
+		.create();*/
+
 	//Dreaming Daisy
 		ElvenTrade.addRecipe([<botania:specialflower>.withTag({type: "dreaming_daisy"})], [<botania:specialflower>.withTag({type: "puredaisy"})]);
 	//Orechid Terrestris
-		HiiragiUtils.addCrafting(false, false, <botania:specialflower>.withTag({type: "orechid_terrestris"}), [
+		HiiragiUtils.addCraftingShaped(false, <botania:specialflower>.withTag({type: "orechid_terrestris"}), [
 			[<botania:biomestonea:7>, <botania:biomestonea:2>, <botania:biomestonea:6>],
 			[<botania:biomestonea:0>, <botania:specialflower>.withTag({type: "orechid"}), <botania:biomestonea:5>],
-			[<botania:biomestonea:4>, <twilightforest:liveroot>, <botania:biomestonea:3>]]);
+			[<botania:biomestonea:4>, <twilightforest:liveroot>, <botania:biomestonea:3>]], null, null);
 
 //GTレシピの編集
 //削除

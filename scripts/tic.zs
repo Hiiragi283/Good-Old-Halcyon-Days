@@ -1,8 +1,8 @@
-#======================================================================
+#====================================================================
 # ファイル名 : tic.zs
 # 作成者 : Hiiragi Russell Tsubasa: https://github.com/Hiiragi283
 # 情報 : Tikers Contructおよびそのアドオンの改変
-#======================================================================
+#====================================================================
 
 #priority 0
 
@@ -41,8 +41,10 @@ print("Start loading tic.zs ...");
 			HiiragiUtils.removeCrafting(i);
 		}
 	//上書き
-		HiiragiUtils.addCrafting(false, true, <tcomplement:melter>, RecipePattern.init(["ABA", "ACA", "ADA"]).map({A:<tconstruct:materials:0>, B:<minecraft:hopper>, C:<tconstruct:seared_tank:*>, D:<ore:ingotIron>}).ingredients);
+		HiiragiUtils.addCraftingShaped(true, <tcomplement:melter>, RecipePattern.init(["ABA", "ACA", "ADA"]).map({A:<tconstruct:materials:0>, B:<minecraft:hopper>, C:<tconstruct:seared_tank:*>, D:<ore:ingotIron>}).ingredients, null, null);
+		HiiragiUtils.addCraftingShaped(true, <tconstruct:smeltery_controller>, RecipePattern.init(["ABA", "ACA", "ADA"]).map({A:<tconstruct:materials:0>, B:<tcomplement:alloy_tank>, C:<tcomplement:melter>, D:<dcs_climate:dcs_device_chamber>}).ingredients, null, null);
 	//新規
+		HiiragiUtils.addCraftingShaped(false, <tconstruct:seared:3>, RecipePattern.init(["AA", "AA"]).map({A:<tconstruct:materials:0>}).ingredients, null, null);
 
 //かまどレシピの編集
 	//削除
@@ -65,6 +67,7 @@ print("Start loading tic.zs ...");
 			.addOutput(<tconstruct:faucet>*2)
 			.create();
 
+//Castの統一
 	mods.chisel.Carving.addGroup("cast");
 	mods.chisel.Carving.addVariation("cast", <tconstruct:cast>);
 	mods.tconstruct.Casting.removeTableRecipe(<tconstruct:cast>);
@@ -120,6 +123,15 @@ print("Start loading tic.zs ...");
 	mods.tconstruct.Casting.removeTableRecipe(HiiragiUtils.castBrass("chisel_head"));
 	mods.tconstruct.Casting.removeTableRecipe(HiiragiUtils.castClay("chisel_head"));
 	HiiragiUtils.removeFromJEI(HiiragiUtils.castClay("chisel_head"));
+
+//Castingレシピの追加
+	HiiragiUtils.addCasting("table", false, <dcs_climate:dcs_device_pail>, <minecraft:bucket>, <liquid:tin>, 288, true, 5*20);
+	HiiragiUtils.addCasting("table", true, <enderio:item_material:11>, <ore:dustBedrock>, <liquid:steel>, 144, true, 5*20);
+	HiiragiUtils.addCasting("table", true, <enderio:item_material:73>, <enderio:item_material:11>, <liquid:dark_steel>, 144, true, 5*20);
+	HiiragiUtils.addCasting("table", true, <enderio:item_material:12>, <enderio:item_material:73>, <liquid:energetic_alloy>, 144, true, 5*20);
+	HiiragiUtils.addCasting("table", true, <enderio:item_material:13>, <enderio:item_material:12>, <liquid:vibrant_alloy>, 144, true, 5*20);
+	HiiragiUtils.addCasting("table", true, <enderio:item_material:14>, <ore:gemDiamond>, <liquid:pulsating_iron>, 144, true, 5*20);
+	HiiragiUtils.addCasting("table", true, <enderio:item_material:15>, <ore:gemEmerald>, <liquid:vibrant_alloy>, 144, true, 5*20);
 
 //このscriptの読み込みの完了をログに出力
 print("tic.zs loaded!");

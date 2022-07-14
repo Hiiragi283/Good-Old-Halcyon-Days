@@ -1,8 +1,8 @@
-#======================================================================
+#====================================================================
 # ファイル名 : railcraft.zs
 # 作成者 : Hiiragi Russell Tsubasa: https://github.com/Hiiragi283
 # 情報 : このファイルについて書く
-#======================================================================
+#====================================================================
 
 #priority 0
 
@@ -31,11 +31,11 @@ print("Start loading railcraft.zs ...");
 		}
 	//上書き
 	//新規
-		HiiragiUtils.addCrafting(false, false, <railcraft:frostbound:2>*8, RecipePattern.init(["AAA", "ABA", "AAA"]).map({A:<minecraft:packed_ice>, B:<ore:dropBlue>}).ingredients);
-		HiiragiUtils.addCrafting(false, false, <railcraft:badlands:2>*8, RecipePattern.init(["AAA", "ABA", "AAA"]).map({A:<minecraft:red_sandstone:2>, B:<ore:dropRed>}).ingredients);
-		HiiragiUtils.addCrafting(false, false, <railcraft:sandy:2>*8, RecipePattern.init(["AAA", "ABA", "AAA"]).map({A:<minecraft:sandstone:2>, B:<ore:dropWhite>}).ingredients);
-		HiiragiUtils.addCrafting(false, false, <railcraft:pearlized:2>*8, RecipePattern.init(["AAA", "ABA", "AAA"]).map({A:<minecraft:end_stone>, B:<ore:dropGreen>}).ingredients);
-		HiiragiUtils.addCrafting(false, false, <railcraft:infernal:2>*8, RecipePattern.init(["AAA", "ABA", "AAA"]).map({A:<minecraft:soul_sand>, B:<ore:dropBlack>}).ingredients);
+		HiiragiUtils.addCraftingShaped(false, <railcraft:frostbound:2>*8, RecipePattern.init(["AAA", "ABA", "AAA"]).map({A:<minecraft:packed_ice>, B:<ore:dropBlue>}).ingredients, null, null);
+		HiiragiUtils.addCraftingShaped(false, <railcraft:badlands:2>*8, RecipePattern.init(["AAA", "ABA", "AAA"]).map({A:<minecraft:red_sandstone:2>, B:<ore:dropRed>}).ingredients, null, null);
+		HiiragiUtils.addCraftingShaped(false, <railcraft:sandy:2>*8, RecipePattern.init(["AAA", "ABA", "AAA"]).map({A:<minecraft:sandstone:2>, B:<ore:dropWhite>}).ingredients, null, null);
+		HiiragiUtils.addCraftingShaped(false, <railcraft:pearlized:2>*8, RecipePattern.init(["AAA", "ABA", "AAA"]).map({A:<minecraft:end_stone>, B:<ore:dropGreen>}).ingredients, null, null);
+		HiiragiUtils.addCraftingShaped(false, <railcraft:infernal:2>*8, RecipePattern.init(["AAA", "ABA", "AAA"]).map({A:<minecraft:soul_sand>, B:<ore:dropBlack>}).ingredients, null, null);
 
 //かまどレシピの編集
 	//削除

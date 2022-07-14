@@ -1,8 +1,8 @@
-#======================================================================
+#====================================================================
 # name : ender.zs
 # auther : Hiiragi Russell Tsubasa;URL -> https://github.com/Hiiragi283
 # info : Scripts for category of Ender
-#======================================================================
+#====================================================================
 
 #priority 0
 #norun
@@ -13,11 +13,11 @@ import crafttweaker.item.IIngredient;
 
 //各種modからclassをimport
 import mods.artisanworktables.builder.RecipeBuilder;
-import mods.astralsorcery.Altar;
+//import mods.astralsorcery.Altar;
 import mods.botania.PureDaisy as PureDaisy;
 import mods.ctintegration.util.RecipePattern;
-import mods.evilcraft.EnvironmentalAccumulator;
-import mods.gregtech.recipe.RecipeMap;
+//import mods.evilcraft.EnvironmentalAccumulator;
+//import mods.gregtech.recipe.RecipeMap;
 
 //scriptのimport
 import scripts.HiiragiUtils;

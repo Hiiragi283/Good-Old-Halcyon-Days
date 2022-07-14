@@ -1,8 +1,8 @@
-#======================================================================
+#====================================================================
 # ファイル名 : dcs_climate.zs
 # 作成者 : Hiiragi Russell Tsubasa: https://github.com/Hiiragi283
 # 情報 : このファイルについて書く
-#======================================================================
+#====================================================================
 
 #priority 0
 
@@ -64,7 +64,8 @@ print("Start loading dcs_climate.zs ...");
 			"dcs_climate:main_build/dcs_desktop_accessories_3",
 			"dcs_climate:main_build/dcs_desktop_accessories_4",
 			"dcs_climate:main_build/dcs_desktop_accessories_5",
-			"dcs_climate:main_build/dcs_desktop_accessories_6","dcs_climate:main_build/dcs_desktop_accessories_7",
+			"dcs_climate:main_build/dcs_desktop_accessories_6",
+			"dcs_climate:main_build/dcs_desktop_accessories_7",
 			"dcs_climate:main_build/dcs_desktop_accessories_8",
 		];
 		for i in removeByname {
@@ -72,53 +73,54 @@ print("Start loading dcs_climate.zs ...");
 		}
 
 	//上書き
-		HiiragiUtils.addCrafting(false, true, <dcs_climate:dcs_device_bellow>, RecipePattern.init(["ABA", "BCD", "ABA"]).map({A:<ore:ingotIron>, B:<ore:itemLeather>, C:<ore:gearWood>, D:<ore:craftingPiston>}).ingredients);
-		HiiragiUtils.addCrafting(false, true, <hap:reactor_advanced>, RecipePattern.init(["ABA", "CDE", "AFA"]).map({A:<ore:ingotTitanium>, B:<hap:compact_heater>, C:<enderio:item_liquid_conduit:1>, D:<dcs_climate:dcs_device_reactor>, E:<enderio:item_item_conduit>, F:<hap:compact_freezer>}).ingredients);
+		HiiragiUtils.addCraftingShaped(true, <dcs_climate:dcs_device_bellow>, RecipePattern.init(["ABA", "BCD", "ABA"]).map({A:<ore:ingotIron>, B:<ore:itemLeather>, C:<ore:gearWood>, D:<ore:craftingPiston>}).ingredients, null, null);
+		HiiragiUtils.addCraftingShaped(true, <hap:reactor_advanced>, RecipePattern.init(["ABA", "CDE", "AFA"]).map({A:<ore:ingotTitanium>, B:<hap:compact_heater>, C:<thermaldynamics:duct_16:2>, D:<dcs_climate:dcs_device_reactor>, E:<thermaldynamics:duct_32>, F:<hap:compact_freezer>}).ingredients, null, null);
 
-		recipes.replaceAllOccurences(<ore:ingotSteel>, <dcs_climate:dcs_ingot:11>, <hap:reactor_fluid_port>);
-		recipes.replaceAllOccurences(<ore:ingotSteel>, <dcs_climate:dcs_ingot:11>, <hap:reactor_storage>);
-
+		HiiragiUtils.addCraftingReplace(<ore:ingotSteel>, <dcs_climate:dcs_ingot:11>, <hap:reactor_fluid_port>);
+		HiiragiUtils.addCraftingReplace(<ore:ingotSteel>, <dcs_climate:dcs_ingot:11>, <hap:reactor_storage>);
+/*
 		//Combustion Chamber
-			HiiragiUtils.addCrafting(false, true, <dcs_climate:dcs_device_chamber>, RecipePattern.init(["ABA", "BCB", "ABA"]).map({A:<ore:ingotBrass>, B:<tconstruct:seared:*>, C:<minecraft:blaze_rod>}).ingredients);
-			HiiragiUtils.addCrafting(false, true, HiiragiUtils.changeAppear(<dcs_climate:dcs_device_chamber>, 1), RecipePattern.init(["A A", "ABA", "ACA"]).map({A:<ore:ingotSteel>, B:<ore:gemCarbide>, C:<minecraft:iron_bars>}).ingredients);
-			HiiragiUtils.addCrafting(false, true, HiiragiUtils.changeAppear(<dcs_climate:dcs_device_chamber>, 2), RecipePattern.init(["A A", "ABA", "AAA"]).map({A:<railcraft:sandy>, B:<ore:fuelCoke>}).ingredients);
+			HiiragiUtils.addCraftingShaped(true, <dcs_climate:dcs_device_chamber>, RecipePattern.init(["ABA", "BCB", "ABA"]).map({A:<ore:ingotBrass>, B:<ore:ingotBrickSeared>, C:<minecraft:blaze_rod>}).ingredients, null, null);
+			HiiragiUtils.addCraftingShaped(true, HiiragiUtils.changeAppear(<dcs_climate:dcs_device_chamber>, 1), RecipePattern.init(["A A", "ABA", "ACA"]).map({A:<ore:ingotSteel>, B:<ore:gemCarbide>, C:<minecraft:iron_bars>}).ingredients, null, null);
+			HiiragiUtils.addCraftingShaped(true, HiiragiUtils.changeAppear(<dcs_climate:dcs_device_chamber>, 2), RecipePattern.init(["A A", "ABA", "AAA"]).map({A:<railcraft:sandy>, B:<ore:fuelCoke>}).ingredients, null, null);
 		//Shichirin
-			HiiragiUtils.addCrafting(false, true, <dcs_climate:dcs_device_shitirin>, RecipePattern.init(["ABA", "ACA", "AAA"]).map({A:<minecraft:clay_ball>, B:<dcs_climate:dcs_build_plate:1>, C:<minecraft:coal:1>}).ingredients);
-			HiiragiUtils.addCrafting(false, true, HiiragiUtils.changeAppear(<dcs_climate:dcs_device_shitirin>, 1), RecipePattern.init(["ABA", "ACA", "AAA"]).map({A:<minecraft:stained_hardened_clay:3>, B:<minecraft:coal:1>, C:<dcs_climate:dcs_cont_cake:2>}).ingredients);
-			HiiragiUtils.addCrafting(false, true, HiiragiUtils.changeAppear(<dcs_climate:dcs_device_shitirin>, 2), RecipePattern.init(["ABA", "ACA", "AAA"]).map({A:<minecraft:stained_hardened_clay:12>, B:<minecraft:coal:1>, C:<dcs_climate:dcs_cont_cake:2>}).ingredients);
-			HiiragiUtils.addCrafting(false, true, HiiragiUtils.changeAppear(<dcs_climate:dcs_device_shitirin>, 3), RecipePattern.init(["ABA", "ACA", "AAA"]).map({A:<minecraft:stained_hardened_clay:4>, B:<minecraft:coal:1>, C:<dcs_climate:dcs_cont_cake:2>}).ingredients);
+			HiiragiUtils.addCraftingShaped(true, <dcs_climate:dcs_device_shitirin>, RecipePattern.init(["ABA", "ACA", "AAA"]).map({A:<minecraft:clay_ball>, B:<dcs_climate:dcs_build_plate:1>, C:<minecraft:coal:1>}).ingredients, null, null);
+			HiiragiUtils.addCraftingShaped(true, HiiragiUtils.changeAppear(<dcs_climate:dcs_device_shitirin>, 1), RecipePattern.init(["ABA", "ACA", "AAA"]).map({A:<minecraft:stained_hardened_clay:3>, B:<minecraft:coal:1>, C:<dcs_climate:dcs_cont_cake:2>}).ingredients, null, null);
+			HiiragiUtils.addCraftingShaped(true, HiiragiUtils.changeAppear(<dcs_climate:dcs_device_shitirin>, 2), RecipePattern.init(["ABA", "ACA", "AAA"]).map({A:<minecraft:stained_hardened_clay:12>, B:<minecraft:coal:1>, C:<dcs_climate:dcs_cont_cake:2>}).ingredients, null, null);
+			HiiragiUtils.addCraftingShaped(true, HiiragiUtils.changeAppear(<dcs_climate:dcs_device_shitirin>, 3), RecipePattern.init(["ABA", "ACA", "AAA"]).map({A:<minecraft:stained_hardened_clay:4>, B:<minecraft:coal:1>, C:<dcs_climate:dcs_cont_cake:2>}).ingredients, null, null);
 		//Fluid Fuel Stove
-			HiiragiUtils.addCrafting(false, true, <dcs_climate:dcs_device_fuelstove>, RecipePattern.init(["ABA", "CDC", "CEC"]).map({A:<ore:ingotSteel>, B:<minecraft:flint_and_steel>, C:<ore:stoneMarble>, D:<minecraft:furnace>, E:<minecraft:bucket>}).ingredients);
-			HiiragiUtils.addCrafting(false, true, HiiragiUtils.changeAppear(<dcs_climate:dcs_device_fuelstove>, 1), RecipePattern.init(["ABA", "CDC", "CEC"]).map({A:<ore:ingotSteel>, B:<minecraft:flint_and_steel>, C:<dcs_climate:dcs_ore_gemblock:12>, D:<minecraft:furnace>, E:<minecraft:bucket>}).ingredients);
-			HiiragiUtils.addCrafting(false, true, HiiragiUtils.changeAppear(<dcs_climate:dcs_device_fuelstove>, 2), RecipePattern.init(["ABA", "CDC", "CEC"]).map({A:<ore:ingotSteel>, B:<minecraft:flint_and_steel>, C:<dcs_climate:dcs_layer_skarn:1>, D:<minecraft:furnace>, E:<minecraft:bucket>}).ingredients);
+			HiiragiUtils.addCraftingShaped(true, <dcs_climate:dcs_device_fuelstove>, RecipePattern.init(["ABA", "CDC", "CEC"]).map({A:<ore:ingotSteel>, B:<minecraft:flint_and_steel>, C:<ore:stoneMarble>, D:<minecraft:furnace>, E:<minecraft:bucket>}).ingredients, null, null);
+			HiiragiUtils.addCraftingShaped(true, HiiragiUtils.changeAppear(<dcs_climate:dcs_device_fuelstove>, 1), RecipePattern.init(["ABA", "CDC", "CEC"]).map({A:<ore:ingotSteel>, B:<minecraft:flint_and_steel>, C:<dcs_climate:dcs_ore_gemblock:12>, D:<minecraft:furnace>, E:<minecraft:bucket>}).ingredients, null, null);
+			HiiragiUtils.addCraftingShaped(true, HiiragiUtils.changeAppear(<dcs_climate:dcs_device_fuelstove>, 2), RecipePattern.init(["ABA", "CDC", "CEC"]).map({A:<ore:ingotSteel>, B:<minecraft:flint_and_steel>, C:<dcs_climate:dcs_layer_skarn:1>, D:<minecraft:furnace>, E:<minecraft:bucket>}).ingredients, null, null);
 		//Sink (Half)
-			HiiragiUtils.addCrafting(false, true, HiiragiUtils.changeAppear(<dcs_climate:dcs_device_sink_half>, 1), RecipePattern.init(["A A", "AAA"]).map({A:<minecraft:stained_hardened_clay:0>}).ingredients);
-			HiiragiUtils.addCrafting(false, true, HiiragiUtils.changeAppear(<dcs_climate:dcs_device_sink_half>, 2), RecipePattern.init(["ABA", "AAA"]).map({A:<botania:pavement:3>, B:<minecraft:stone:3>}).ingredients);
-			HiiragiUtils.addCrafting(false, true, HiiragiUtils.changeAppear(<dcs_climate:dcs_device_sink_half>, 3), RecipePattern.init(["ABA", "AAA"]).map({A:<dcs_climate:dcs_build_build>, B:<minecraft:stone:3>}).ingredients);
+			HiiragiUtils.addCraftingShaped(true, HiiragiUtils.changeAppear(<dcs_climate:dcs_device_sink_half>, 1), RecipePattern.init(["A A", "AAA"]).map({A:<minecraft:stained_hardened_clay:0>}).ingredients, null, null);
+			HiiragiUtils.addCraftingShaped(true, HiiragiUtils.changeAppear(<dcs_climate:dcs_device_sink_half>, 2), RecipePattern.init(["ABA", "AAA"]).map({A:<botania:pavement:3>, B:<minecraft:stone:3>}).ingredients, null, null);
+			HiiragiUtils.addCraftingShaped(true, HiiragiUtils.changeAppear(<dcs_climate:dcs_device_sink_half>, 3), RecipePattern.init(["ABA", "AAA"]).map({A:<dcs_climate:dcs_build_build>, B:<minecraft:stone:3>}).ingredients, null, null);
 		//Sink
-			HiiragiUtils.addCrafting(false, true, HiiragiUtils.changeAppear(<dcs_climate:dcs_device_sink_full>, 1), RecipePattern.init(["A", "B"]).map({A:<dcs_climate:dcs_device_sink_half>, B:<dcs_climate:dcs_ore_gemblock:12>}).ingredients);
-			HiiragiUtils.addCrafting(false, true, HiiragiUtils.changeAppear(<dcs_climate:dcs_device_sink_full>, 2), RecipePattern.init(["A", "B"]).map({A:<dcs_climate:dcs_device_sink_half>, B:<dcs_climate:dcs_layer_skarn:1>}).ingredients);
-			HiiragiUtils.addCrafting(false, true, HiiragiUtils.changeAppear(<dcs_climate:dcs_device_sink_full>, 3), RecipePattern.init(["A", "B"]).map({A:<dcs_climate:dcs_device_sink_half>, B:<minecraft:stained_hardened_clay:9>}).ingredients);
-			HiiragiUtils.addCrafting(false, true, HiiragiUtils.changeAppear(<dcs_climate:dcs_device_sink_full>, 4), RecipePattern.init([" A ", "BBB", "B B"]).map({A:<dcs_climate:dcs_device_sink_half>, B:<minecraft:iron_bars>}).ingredients);
-			HiiragiUtils.addCrafting(false, true, HiiragiUtils.changeAppear(<dcs_climate:dcs_device_sink_full>, 5), RecipePattern.init(["A", "B"]).map({A:<dcs_climate:dcs_device_sink_half>, B:<dcs_climate:dcs_device_faucet_r>}).ingredients);
+			HiiragiUtils.addCraftingShaped(true, HiiragiUtils.changeAppear(<dcs_climate:dcs_device_sink_full>, 1), RecipePattern.init(["A", "B"]).map({A:<dcs_climate:dcs_device_sink_half>, B:<dcs_climate:dcs_ore_gemblock:12>}).ingredients, null, null);
+			HiiragiUtils.addCraftingShaped(true, HiiragiUtils.changeAppear(<dcs_climate:dcs_device_sink_full>, 2), RecipePattern.init(["A", "B"]).map({A:<dcs_climate:dcs_device_sink_half>, B:<dcs_climate:dcs_layer_skarn:1>}).ingredients, null, null);
+			HiiragiUtils.addCraftingShaped(true, HiiragiUtils.changeAppear(<dcs_climate:dcs_device_sink_full>, 3), RecipePattern.init(["A", "B"]).map({A:<dcs_climate:dcs_device_sink_half>, B:<minecraft:stained_hardened_clay:9>}).ingredients, null, null);
+			HiiragiUtils.addCraftingShaped(true, HiiragiUtils.changeAppear(<dcs_climate:dcs_device_sink_full>, 4), RecipePattern.init([" A ", "BBB", "B B"]).map({A:<dcs_climate:dcs_device_sink_half>, B:<minecraft:iron_bars>}).ingredients, null, null);
+			HiiragiUtils.addCraftingShaped(true, HiiragiUtils.changeAppear(<dcs_climate:dcs_device_sink_full>, 5), RecipePattern.init(["A", "B"]).map({A:<dcs_climate:dcs_device_sink_half>, B:<dcs_climate:dcs_device_faucet_r>}).ingredients, null, null);
 		//Kitchen countertop
-			HiiragiUtils.addCrafting(false, true, <dcs_climate:dcs_device_crafting_counter>, RecipePattern.init(["AAA", "BCB", "BDB"]).map({A:<dcs_climate:dcs_build_linoleum:8>, B:<dcs_climate:dcs_ore_gemblock:6>, C:<ore:workbench>, D:<ore:chest>}).ingredients);
-			HiiragiUtils.addCrafting(false, true, HiiragiUtils.changeAppear(<dcs_climate:dcs_device_crafting_counter>, 1), RecipePattern.init(["AAA", "BCB", "BDB"]).map({A:<dcs_climate:dcs_ore_gemblock:6>, B:<dcs_climate:dcs_ore_gemblock:12>, C:<dcs_climate:dcs_ore_gemblock:12>, D:<minecraft:furnace>}).ingredients);
-			HiiragiUtils.addCrafting(false, true, HiiragiUtils.changeAppear(<dcs_climate:dcs_device_crafting_counter>, 2), RecipePattern.init(["AAA", "BCB", "BDB"]).map({A:<dcs_climate:dcs_layer_skarn>, B:<dcs_climate:dcs_layer_skarn:1>, C:<dcs_climate:dcs_layer_skarn:1>, D:<minecraft:furnace>}).ingredients);
-			HiiragiUtils.addCrafting(false, true, HiiragiUtils.changeAppear(<dcs_climate:dcs_device_crafting_counter>, 3), RecipePattern.init(["AAA", "BCB", "BDB"]).map({A:<dcs_climate:dcs_build_linoleum>, B:<minecraft:stained_hardened_clay:9>, C:<ore:stoneMarble>, D:<minecraft:furnace>}).ingredients);
+			HiiragiUtils.addCraftingShaped(true, <dcs_climate:dcs_device_crafting_counter>, RecipePattern.init(["AAA", "BCB", "BDB"]).map({A:<dcs_climate:dcs_build_linoleum:8>, B:<dcs_climate:dcs_ore_gemblock:6>, C:<ore:workbench>, D:<ore:chest>}).ingredients, null, null);
+			HiiragiUtils.addCraftingShaped(true, HiiragiUtils.changeAppear(<dcs_climate:dcs_device_crafting_counter>, 1), RecipePattern.init(["AAA", "BCB", "BDB"]).map({A:<dcs_climate:dcs_ore_gemblock:6>, B:<dcs_climate:dcs_ore_gemblock:12>, C:<dcs_climate:dcs_ore_gemblock:12>, D:<minecraft:furnace>}).ingredients, null, null);
+			HiiragiUtils.addCraftingShaped(true, HiiragiUtils.changeAppear(<dcs_climate:dcs_device_crafting_counter>, 2), RecipePattern.init(["AAA", "BCB", "BDB"]).map({A:<dcs_climate:dcs_layer_skarn>, B:<dcs_climate:dcs_layer_skarn:1>, C:<dcs_climate:dcs_layer_skarn:1>, D:<minecraft:furnace>}).ingredients, null, null);
+			HiiragiUtils.addCraftingShaped(true, HiiragiUtils.changeAppear(<dcs_climate:dcs_device_crafting_counter>, 3), RecipePattern.init(["AAA", "BCB", "BDB"]).map({A:<dcs_climate:dcs_build_linoleum>, B:<minecraft:stained_hardened_clay:9>, C:<ore:stoneMarble>, D:<minecraft:furnace>}).ingredients, null, null);:*/
 		//Gypsum Chandelier
-			HiiragiUtils.addCrafting(false, true, <dcs_climate:dcs_build_chandelier>, RecipePattern.init([" A ", "BCB", " B "]).map({A:<dcs_climate:dcs_build_chain:0>, B:<ore:gemGypsum>, C:<dcs_climate:dcs_build_challamp:1>}).ingredients);
+			HiiragiUtils.addCraftingShaped(true, <dcs_climate:dcs_build_chandelier>, RecipePattern.init([" A ", "BCB", " B "]).map({A:<dcs_climate:dcs_build_chain:0>, B:<ore:gemGypsum>, C:<dcs_climate:dcs_build_challamp:1>}).ingredients, null, null);
 		//Rock Salt Chandelier
-			HiiragiUtils.addCrafting(false, true, <dcs_climate:dcs_build_chandelier:1>, RecipePattern.init([" A ", "BCB", " B "]).map({A:<dcs_climate:dcs_build_chain:2>, B:<ore:gemSalt>, C:<dcs_climate:dcs_build_challamp:1>}).ingredients);
+			HiiragiUtils.addCraftingShaped(true, <dcs_climate:dcs_build_chandelier:1>, RecipePattern.init([" A ", "BCB", " B "]).map({A:<dcs_climate:dcs_build_chain:2>, B:<ore:gemSalt>, C:<dcs_climate:dcs_build_challamp:1>}).ingredients, null, null);
 		//Chacedony Chandelier
-			HiiragiUtils.addCrafting(false, true, <dcs_climate:dcs_build_chandelier:2>, RecipePattern.init([" A ", "BCB", " B "]).map({A:<dcs_climate:dcs_build_chain:1>, B:<ore:gemSalt>, C:<dcs_climate:dcs_build_challamp:2>}).ingredients);
+			HiiragiUtils.addCraftingShaped(true, <dcs_climate:dcs_build_chandelier:2>, RecipePattern.init([" A ", "BCB", " B "]).map({A:<dcs_climate:dcs_build_chain:1>, B:<ore:gemSalt>, C:<dcs_climate:dcs_build_challamp:2>}).ingredients, null, null);
 		//marble Chandelier
-			HiiragiUtils.addCrafting(false, true, <dcs_climate:dcs_build_chandelier:3>, RecipePattern.init([" A ", "BCB", " B "]).map({A:<dcs_climate:dcs_build_chain:0>, B:<ore:stoneMarble>, C:<dcs_climate:dcs_build_challamp:1>}).ingredients);
+			HiiragiUtils.addCraftingShaped(true, <dcs_climate:dcs_build_chandelier:3>, RecipePattern.init([" A ", "BCB", " B "]).map({A:<dcs_climate:dcs_build_chain:0>, B:<ore:stoneMarble>, C:<dcs_climate:dcs_build_challamp:1>}).ingredients, null, null);
 	//新規
-			HiiragiUtils.addCrafting(false, false, <contenttweaker:dustblock_electrum>, RecipePattern.init(["AAA", "A B", "BBB"]).map({A:<ore:dustGold>, B:<ore:dustSilver>}).ingredients);
-			HiiragiUtils.addCrafting(false, false, <contenttweaker:dustblock_platinum>, RecipePattern.init(["AAA", "AAA", "AAA"]).map({A:<ore:dustPlatinum>}).ingredients);
-			HiiragiUtils.addCrafting(false, false, <contenttweaker:dustblock_cobalt>, RecipePattern.init(["AAA", "AAA", "AAA"]).map({A:<ore:dustCobalt>}).ingredients);
-			HiiragiUtils.addCrafting(false, false, <contenttweaker:dustblock_lead>, RecipePattern.init(["AAA", "AAA", "AAA"]).map({A:<ore:dustLead>}).ingredients);
+			HiiragiUtils.addCraftingShaped(false, <contenttweaker:dustblock_electrum>, RecipePattern.init(["AAA", "AAB", "BBB"]).map({A:<ore:dustGold>, B:<ore:dustSilver>}).ingredients, null, null);
+			HiiragiUtils.addCraftingShaped(false, <contenttweaker:dustblock_platinum>, RecipePattern.init(["AAA", "AAA", "AAA"]).map({A:<ore:dustPlatinum>}).ingredients, null, null);
+			HiiragiUtils.addCraftingShaped(false, <contenttweaker:dustblock_cobalt>, RecipePattern.init(["AAA", "AAA", "AAA"]).map({A:<ore:dustCobalt>}).ingredients, null, null);
+			HiiragiUtils.addCraftingShaped(false, <contenttweaker:dustblock_lead>, RecipePattern.init(["AAA", "AAA", "AAA"]).map({A:<ore:dustLead>}).ingredients, null, null);
+			//HiiragiUtils.addCraftingShaped(false, <contenttweaker:dustblock_tungstensteel>, RecipePattern.init(["AAA", "AAA", "BBC"]).map({A:<ore:dustIron>, B:<ore:dustTungsten>, C:<ore:dustCoal>}).ingredients, null, null);
 
 //かまどレシピの編集
 	//削除
@@ -135,9 +137,6 @@ print("Start loading dcs_climate.zs ...");
 //AWレシピの編集
 	//import
 	//新規
-
-//Castingレシピの追加
-	mods.tconstruct.Casting.addBasinRecipe(<dcs_climate:dcs_device_pail>, <minecraft:bucket>, <liquid:tin>, 288, true);
 
 //このscriptの読み込みの完了をログに出力
 print("dcs_climate.zs loaded!");

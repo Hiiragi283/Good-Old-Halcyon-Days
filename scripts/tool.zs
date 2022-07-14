@@ -1,8 +1,8 @@
-#======================================================================
+#====================================================================
 # ファイル名 : tool.zs
 # 作成者 : Hiiragi Russell Tsubasa: https://github.com/Hiiragi283
 # 情報 : このファイルについて書く
-#======================================================================
+#====================================================================
 
 #priority 90
 
@@ -81,8 +81,8 @@ print("Start loading tool.zs ...");
 		<minecraft:name_tag>,
 		<appliedenergistics2:certus_quartz_wrench>,
 		<appliedenergistics2:certus_quartz_cutting_knife>,
-		<armortech:iron_cutter>,
-		<armortech:iron_hammer>,
+		//<ore:artisansCutters>,
+		//<ore:artisansHammer>,
 		<bibliocraft:stockroomcatalog>,
 		<bibliocraft:testeritem>,
 		<bibliocraft:atlasbook>,
@@ -167,12 +167,12 @@ print("Start loading tool.zs ...");
 		<minecraft:diamond_shovel>,
 		<minecraft:diamond_pickaxe>,
 		<minecraft:diamond_axe>,
-		<armortech:lighter>,
-		<armortech:tungsten_sword>,
-		<armortech:tungsten_shovel>,
-		<armortech:tungsten_pickaxe>,
-		<armortech:tungsten_axe>,
-		<armortech:tungsten_hoe>,
+		//<armortech:lighter>,
+		//<armortech:tungsten_sword>,
+		//<armortech:tungsten_shovel>,
+		//<armortech:tungsten_pickaxe>,
+		//<armortech:tungsten_axe>,
+		//<armortech:tungsten_hoe>,
 		<botania:manatablet>,
 		<botania:managun>,
 		<botania:dirtrod>,
@@ -225,9 +225,9 @@ print("Start loading tool.zs ...");
 		<dcs_climate:dcs_magic_card:4>,
 		<mekanism:flamethrower>,
 		<railcraft:borehead_steel>,
-		<techreborn:ironchainsaw>,
-		<techreborn:irondrill>,
-		<techreborn:steeljackhammer>,
+		//<techreborn:ironchainsaw>,
+		//<techreborn:irondrill>,
+		//<techreborn:steeljackhammer>,
 		<twilightforest:steeleaf_sword>,
 		<twilightforest:steeleaf_shovel>,
 		<twilightforest:steeleaf_pickaxe>,
@@ -250,11 +250,11 @@ print("Start loading tool.zs ...");
 		<appliedenergistics2:matter_cannon>,
 		<appliedenergistics2:portable_cell>,
 		<appliedenergistics2:color_applicator>,
-		<armortech:tungstensteel_sword>,
-		<armortech:tungstensteel_shovel>,
-		<armortech:tungstensteel_pickaxe>,
-		<armortech:tungstensteel_axe>,
-		<armortech:tungstensteel_hoe>,
+		//<armortech:tungstensteel_sword>,
+		//<armortech:tungstensteel_shovel>,
+		//<armortech:tungstensteel_pickaxe>,
+		//<armortech:tungstensteel_axe>,
+		//<armortech:tungstensteel_hoe>,
 		<botania:terraformrod>,
 		<botania:manamirror>,
 		<botania:terrasword>,
@@ -323,10 +323,10 @@ print("Start loading tool.zs ...");
 		<hap:wrench>,
 		<mekanism:electricbow>,
 		<railcraft:borehead_diamond>,
-		<techreborn:diamondchainsaw>,
-		<techreborn:diamonddrill>,
-		<techreborn:diamondjackhammer>,
-		<techreborn:rockcutter>,
+		//<techreborn:diamondchainsaw>,
+		//<techreborn:diamonddrill>,
+		//<techreborn:diamondjackhammer>,
+		//<techreborn:rockcutter>,
 		<twilightforest:fiery_sword>,
 		<twilightforest:fiery_pickaxe>,
 		<twilightforest:giant_pickaxe>,
@@ -381,10 +381,10 @@ print("Start loading tool.zs ...");
 		<dcs_climate:dcs_color_gauntlet2:2>,
 		<dcs_climate:dcs_color_gauntlet2:3>,
 		<dcs_climate:dcs_color_gauntlet2:4>,
-		<techreborn:advancedchainsaw>,
-		<techreborn:advanceddrill>,
-		<techreborn:ironjackhammer>,
-		<techreborn:nanosaber>,
+		//<techreborn:advancedchainsaw>,
+		//<techreborn:advanceddrill>,
+		//<techreborn:ironjackhammer>,
+		//<techreborn:nanosaber>,
 		<twilightforest:minotaur_axe>,
 		<twilightforest:mazebreaker_pickaxe>,
 		<twilightforest:glass_sword>,
@@ -411,44 +411,116 @@ print("Start loading tool.zs ...");
 		}
 	}
 
-//作業台レシピの編集
-	//削除
-		val removeCrafting as IItemStack[] = [];
-		for i in removeCrafting {
-			HiiragiUtils.removeCrafting(i);
-		}
+val toolHead as IItemStack[IItemStack] = {
+	//Iron (Minecraft)
+		<minecraft:iron_shovel>: <tconstruct:shovel_head>.withTag({Material: "iron"}),
+		<minecraft:iron_pickaxe>: <tconstruct:pick_head>.withTag({Material: "iron"}),
+		<minecraft:iron_axe>: <tconstruct:axe_head>.withTag({Material: "iron"}),
+		<minecraft:iron_sword>: <tconstruct:sword_blade>.withTag({Material: "iron"}),
+		<minecraft:iron_hoe>: <tconstruct:kama_head>.withTag({Material: "iron"}),
+	//Wooden (Minecraft)
+		<minecraft:wooden_shovel>: <tconstruct:shovel_head>.withTag({Material: "wood"}),
+		<minecraft:wooden_pickaxe>: <tconstruct:pick_head>.withTag({Material: "wood"}),
+		<minecraft:wooden_axe>: <tconstruct:axe_head>.withTag({Material: "wood"}),
+		<minecraft:wooden_sword>: <tconstruct:sword_blade>.withTag({Material: "wood"}),
+		<minecraft:wooden_hoe>: <tconstruct:kama_head>.withTag({Material: "wood"}),
+	//Stone (Minecraft)
+		<minecraft:stone_shovel>: <tconstruct:shovel_head>.withTag({Material: "stone"}),
+		<minecraft:stone_pickaxe>: <tconstruct:pick_head>.withTag({Material: "stone"}),
+		<minecraft:stone_axe>: <tconstruct:axe_head>.withTag({Material: "stone"}),
+		<minecraft:stone_sword>: <tconstruct:sword_blade>.withTag({Material: "stone"}),
+		<minecraft:stone_hoe>: <tconstruct:kama_head>.withTag({Material: "stone"}),
+	//Certus Quartz (Applied Energistics 2)
+		<appliedenergistics2:certus_quartz_spade>: <tconstruct:shovel_head>.withTag({Material: "certus_quartz"}),
+		<appliedenergistics2:certus_quartz_pickaxe>: <tconstruct:pick_head>.withTag({Material: "certus_quartz"}),
+		<appliedenergistics2:certus_quartz_axe>: <tconstruct:axe_head>.withTag({Material: "certus_quartz"}),
+		<appliedenergistics2:certus_quartz_sword>: <tconstruct:sword_blade>.withTag({Material: "certus_quartz"}),
+		<appliedenergistics2:certus_quartz_hoe>: <tconstruct:kama_head>.withTag({Material: "certus_quartz"}),
+};
+for tool, toolHead in toolHead {
+	HiiragiUtils.addCraftingShapeless(true, tool, [toolHead, <ore:stickWood>], null, null);
+}
 
-		val removeByName as string[] = [
-			/*"dcs_climate:main_equip/dcs_axe_sapphire_0_2",
-			"dcs_climate:main_equip/dcs_pickaxe_sapphire_0_2",
-			"dcs_climate:main_equip/dcs_spade_sapphire_0_2",
-			"dcs_climate:main_equip/dcs_axe_garnet_0_2",
-			"dcs_climate:main_equip/dcs_pickaxe_garnet_0_2",
-			"dcs_climate:main_equip/dcs_spade_garnet_0_2",
-			"dcs_climate:main_equip/dcs_axe_garnet_0_2",
-			"dcs_climate:main_equip/dcs_scythe_garnet_0_2",*/
-		];
-		for i in removeByName {
-			recipes.removeByRecipeName(i);
-		}
-    //上書き
-	//新規
+//Diamond (Minecraft)
+	val toolDiamond as IItemStack[IItemStack] = {
+		<minecraft:diamond_shovel>: <minecraft:iron_shovel>,
+		<minecraft:diamond_pickaxe>: <minecraft:iron_pickaxe>,
+		<minecraft:diamond_axe>: <minecraft:iron_axe>,
+		<minecraft:diamond_sword>: <minecraft:iron_sword>,
+		<minecraft:diamond_hoe>: <minecraft:iron_hoe>,
+	};
+	for tool, toolBase in toolDiamond {
+		HiiragiUtils.addCraftingShapeless(true, tool, [toolBase.marked("inherit"), <ore:gemDiamond>, <contenttweaker:ticket_rare>], HiiragiUtils.inheritStatus(tool), null);
+	}
 
-//かまどレシピの編集
-	//削除
-		val removeFurnace as IItemStack[] = [];
-		for i in removeFurnace {
-			HiiragiUtils.removeFurnace(i);
-		}
-	//新規
-		val addFurnace as IIngredient[IItemStack] = {};
-		for output, input in addFurnace {
-			HiiragiUtils.addFurnace(false, output, input);
-		}
+//Golden (Minecraft)
+	val toolGold as IItemStack[IItemStack] = {
+		<minecraft:golden_shovel>: <minecraft:wooden_shovel>,
+		<minecraft:golden_pickaxe>: <minecraft:wooden_pickaxe>,
+		<minecraft:golden_axe>: <minecraft:wooden_axe>,
+		<minecraft:golden_sword>: <minecraft:wooden_sword>,
+		<minecraft:golden_hoe>: <minecraft:wooden_hoe>,
+	};
+	for tool, toolBase in toolGold {
+		HiiragiUtils.addCraftingShapeless(true, tool, [toolBase.marked("inherit"), <ore:ingotGold>], HiiragiUtils.inheritStatus(tool), null);
+	}
 
-//AWレシピの編集
-	//import
-	//新規
+//Manasteel (Botania)
+	val toolManasteel as IItemStack[IItemStack] = {
+		<botania:manasteelpick>: <tconstruct:pick_head>,
+		<botania:manasteelshovel>: <tconstruct:shovel_head>,
+		<botania:manasteelaxe>: <tconstruct:axe_head>,
+		<botania:manasteelsword>: <tconstruct:sword_blade>,
+	};
+	for tool, toolHead in toolManasteel {
+		HiiragiUtils.addCraftingShapeless(true, tool, [toolHead.withTag({Material: "manasteel"}), <botania:manaresource:3>], null, null);
+	}
+
+//Terrasteel (Botania)
+	HiiragiUtils.addCraftingShaped(false, <botania:terrapick>, RecipePattern.init(["ABA", " C ", " D "]).map({
+		A: <tconstruct:large_plate>.withTag({Material: "terrasteel"}),
+		B: <botania:manatablet>.marked("inherit"),
+		C: <botania:manaresource:3>,
+		D:<tconstruct:tough_tool_rod>.withTag({Material: "terrasteel"}),
+	}).ingredients, HiiragiUtils.inheritStatus(<botania:terrapick>), null);
+	HiiragiUtils.addCraftingShaped(false, <botania:terraaxe>, RecipePattern.init(["AAB", "AC ", " D "]).map({
+		A: <tconstruct:large_plate>.withTag({Material: "terrasteel"}),
+		B: <botania:manatablet>.marked("inherit"),
+		C: <botania:manaresource:3>,
+		D:<tconstruct:tough_tool_rod>.withTag({Material: "terrasteel"}),
+	}).ingredients, HiiragiUtils.inheritStatus(<botania:terraaxe>), null);
+
+//Elementium (Botania)
+	val toolElementium as IItemStack[IItemStack] = {
+		<botania:elementiumpick>: <tconstruct:pick_head>,
+		<botania:elementiumshovel>: <tconstruct:shovel_head>,
+		<botania:elementiumaxe>: <tconstruct:axe_head>,
+		<botania:elementiumsword>: <tconstruct:sword_blade>,
+	};
+	for tool, toolHead in toolElementium {
+		HiiragiUtils.addCraftingShapeless(true, tool, [toolHead.withTag({Material: "elementium"}), <botania:manaresource:13>], null, null);
+	}
+
+//Dark Steel (Ender IO)
+	val toolDarksteel as IItemStack[IItemStack] = {
+		<enderio:item_dark_steel_pickaxe>: <tconstruct:pick_head>,
+		<enderio:item_dark_steel_axe>: <tconstruct:axe_head>,
+		<enderio:item_dark_steel_sword>: <tconstruct:sword_blade>,
+		<enderio:item_dark_steel_crook>: <tconstruct:scythe_head>,
+	};
+	for tool, toolHead in toolDarksteel {
+		HiiragiUtils.addCraftingShapeless(true, tool, [toolHead.withTag({Material: "dark_steel"}), <ore:itemNutritiousStick>], null, null);
+	}
+
+//End Steel (Ender IO)
+	val toolEndsteel as IItemStack[IItemStack] = {
+		<enderio:item_end_steel_pickaxe>: <tconstruct:pick_head>,
+		<enderio:item_end_steel_axe>: <tconstruct:axe_head>,
+		<enderio:item_end_steel_sword>: <tconstruct:sword_blade>,
+	};
+	for tool, toolHead in toolEndsteel {
+		HiiragiUtils.addCraftingShapeless(true, tool, [toolHead.withTag({Material: "end_steel"}), <ore:itemInfinityRod>], null, null);
+	}
 
 //このscriptの読み込みの完了をログに出力
 print("tool.zs loaded!");

@@ -1,8 +1,8 @@
-#======================================================================
+#====================================================================
 # name : advrocktery.zs
 # auther : Hiiragi Russell Tsubasa;URL -> https://github.com/Hiiragi283
 # info : Scripts for Advanced Rocktery
-#======================================================================
+#====================================================================
 
 #priority 0
 
@@ -32,17 +32,17 @@ print("Start loading advrocktery.zs ...");
 			HiiragiUtils.removeCrafting(i);
 		}
 	//上書き
-	HiiragiUtils.addCrafting(true, true, <advancedrocketry:satelliteidchip>, [[<techreborn:part:3>]]);
-	HiiragiUtils.addCrafting(true, true, <advancedrocketry:carbonscrubbercartridge>, [[<techreborn:dynamiccell>, <minecraft:iron_bars>]]);
+	//HiiragiUtils.addCraftingShapeless(true, <advancedrocketry:satelliteidchip>, [<techreborn:part:3>], null, null);
+	//HiiragiUtils.addCraftingShapeless(true, <advancedrocketry:carbonscrubbercartridge>, [<techreborn:dynamiccell>, <minecraft:iron_bars>], null, null);
 
-	recipes.replaceAllOccurences(<libvulpes:productsheet:1>, <ore:plateIron>);
-	recipes.replaceAllOccurences(<libvulpes:productsheet:4>, <ore:plateCopper>);
-	recipes.replaceAllOccurences(<libvulpes:productsheet:6>, <ore:plateSteel>);
-	recipes.replaceAllOccurences(<libvulpes:productsheet:7>, <ore:plateTitanium>);
-	//recipes.replaceAllOccurences(<advancedrocketry:ic:3>, <metaitem:circuit.quantum_processor>);
-	//recipes.replaceAllOccurences(<advancedrocketry:ic:4>, <metaitem:robot.arm.hv>);
-	//recipes.replaceAllOccurences(<advancedrocketry:ic:5>, <metaitem:fluid.regulator.hv>);
-	recipes.replaceAllOccurences(<advancedrocketry:misc:0>, <techreborn:part:24>);
+	HiiragiUtils.addCraftingReplace(<libvulpes:productsheet:1>, <ore:plateIron>, null);
+	HiiragiUtils.addCraftingReplace(<libvulpes:productsheet:4>, <ore:plateCopper>, null);
+	HiiragiUtils.addCraftingReplace(<libvulpes:productsheet:6>, <ore:plateSteel>, null);
+	HiiragiUtils.addCraftingReplace(<libvulpes:productsheet:7>, <ore:plateTitanium>, null);
+	//HiiragiUtils.addCraftingReplace(<advancedrocketry:ic:3>, <metaitem:circuit.quantum_processor>);
+	//HiiragiUtils.addCraftingReplace(<advancedrocketry:ic:4>, <metaitem:robot.arm.hv>);
+	//HiiragiUtils.addCraftingReplace(<advancedrocketry:ic:5>, <metaitem:fluid.regulator.hv>);
+	//HiiragiUtils.addCraftingReplace(<advancedrocketry:misc:0>, <techreborn:part:24>, null);
 	//新規
 
 //かまどレシピの編集
