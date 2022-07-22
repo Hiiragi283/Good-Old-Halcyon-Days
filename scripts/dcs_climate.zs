@@ -122,18 +122,6 @@ print("Start loading dcs_climate.zs ...");
 			HiiragiUtils.addCraftingShaped(false, <contenttweaker:dustblock_lead>, RecipePattern.init(["AAA", "AAA", "AAA"]).map({A:<ore:dustLead>}).ingredients, null, null);
 			//HiiragiUtils.addCraftingShaped(false, <contenttweaker:dustblock_tungstensteel>, RecipePattern.init(["AAA", "AAA", "BBC"]).map({A:<ore:dustIron>, B:<ore:dustTungsten>, C:<ore:dustCoal>}).ingredients, null, null);
 
-//かまどレシピの編集
-	//削除
-		val removeFurnace as IItemStack[] = [];
-		for i in removeFurnace {
-			HiiragiUtils.removeFurnace(i);
-		}
-	//新規
-		val addFurnace as IIngredient[IItemStack] = {};
-		for output, input in addFurnace {
-			HiiragiUtils.addFurnace(false, output, input);
-		}
-
 //AWレシピの編集
 	//import
 	//新規

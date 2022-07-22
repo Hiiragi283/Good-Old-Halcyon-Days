@@ -47,31 +47,6 @@ print("Start loading armor.zs ...");
 		<minecraft:golden_chestplate>,
 		<minecraft:golden_leggings>,
 		<minecraft:golden_boots>,
-		//<armortech:carbon_plate_helmet>,
-		//<armortech:carbon_plate_chestplate>,
-		//<armortech:carbon_plate_leggings>,
-		//<armortech:carbon_plate_boots>,
-		//<armortech:composite_helmet>,
-		//<armortech:composite_chestplate>,
-		//<armortech:composite_leggings>,
-		//<armortech:composite_boots>,
-		//<armortech:nano_helmet>,
-		//<armortech:nano_chestplate>,
-		//<armortech:nano_leggings>,
-		//<armortech:nano_boots>,
-		//<armortech:night_vision_goggles>,
-		//<armortech:steel_helmet>,
-		//<armortech:steel_chestplate>,
-		//<armortech:steel_leggings>,
-		//<armortech:steel_boots>,
-		//<armortech:tungsten_helmet>,
-		//<armortech:tungsten_chestplate>,
-		//<armortech:tungsten_leggings>,
-		//<armortech:tungsten_boots>,
-		//<armortech:tungstensteel_helmet>,
-		//<armortech:tungstensteel_chestplate>,
-		//<armortech:tungstensteel_leggings>,
-		//<armortech:tungstensteel_boots>,
 		<botania:manasteelhelm>,
 		<botania:manasteelchest>,
 		<botania:manasteellegs>,
@@ -211,18 +186,6 @@ val armorTier as IItemStack[][string] = {
 		<twilightforest:ironwood_boots>,
 	],
 	"gohd.tooltip.armor.rare.name": [
-		//<armortech:composite_helmet>,
-		//<armortech:composite_chestplate>,
-		//<armortech:composite_leggings>,
-		//<armortech:composite_boots>,
-		//<armortech:tungsten_helmet>,
-		//<armortech:tungsten_chestplate>,
-		//<armortech:tungsten_leggings>,
-		//<armortech:tungsten_boots>,
-		//<armortech:tungstensteel_helmet>,
-		//<armortech:tungstensteel_chestplate>,
-		//<armortech:tungstensteel_leggings>,
-		//<armortech:tungstensteel_boots>,
 		<dcs_climate:dcs_met_steel>,
 		<dcs_climate:dcs_plate_steel>,
 		<dcs_climate:dcs_leggins_steel>,
@@ -248,11 +211,14 @@ val armorTier as IItemStack[][string] = {
 		<mekanism:gasmask>,
 		<mekanism:scubatank>,
 		<mekanism:freerunners>,
+		<mekanismtools:glowstonehelmet>,
+		<mekanismtools:glowstonechestplate>,
+		<mekanismtools:glowstoneleggings>,
+		<mekanismtools:glowstoneboots>,
 		<tcomplement:manyullyn_helmet>,
 		<tcomplement:manyullyn_chestplate>,
 		<tcomplement:manyullyn_leggings>,
 		<tcomplement:manyullyn_boots>,
-		//<techreborn:lithiumbatpack>,
 		<twilightforest:naga_chestplate>,
 		<twilightforest:naga_leggings>,
 		<twilightforest:steeleaf_helmet>,
@@ -266,11 +232,6 @@ val armorTier as IItemStack[][string] = {
 	],
 	"gohd.tooltip.armor.epic.name": [
 		<minecraft:elytra>,
-		//<armortech:nano_helmet>,
-		//<armortech:nano_chestplate>,
-		//<armortech:nano_leggings>,
-		//<armortech:nano_boots>,
-		//<armortech:night_vision_goggles>,
 		<dcs_climate:dcs_met_chalcedony>,
 		<dcs_climate:dcs_plate_chalcedony>,
 		<dcs_climate:dcs_leggins_chalcedony>,
@@ -290,12 +251,15 @@ val armorTier as IItemStack[][string] = {
 		<enderio:item_dark_steel_leggings>,
 		<enderio:item_dark_steel_boots>,
 		<mekanism:armoredjetpack>,
+		<mekanismtools:osmiumhelmet>,
+		<mekanismtools:osmiumchestplate>,
+		<mekanismtools:osmiumleggings>,
+		<mekanismtools:osmiumboots>,
 		<railcraft:armor_goggles>,
 		<tcomplement:knightslime_helmet>,
 		<tcomplement:knightslime_chestplate>,
 		<tcomplement:knightslime_leggings>,
 		<tcomplement:knightslime_boots>,
-		//<techreborn:lapotronpack>,
 		<twilightforest:fiery_helmet>,
 		<twilightforest:fiery_chestplate>,
 		<twilightforest:fiery_leggings>,
@@ -312,6 +276,10 @@ val armorTier as IItemStack[][string] = {
 		<enderio:item_end_steel_chestplate>,
 		<enderio:item_end_steel_leggings>,
 		<enderio:item_end_steel_boots>,
+		<mekanismtools:obsidianhelmet>,
+		<mekanismtools:obsidianchestplate>,
+		<mekanismtools:obsidianleggings>,
+		<mekanismtools:obsidianboots>,
 		//<projecte:item.pe_dm_armor_3>,
 		//<projecte:item.pe_dm_armor_2>,
 		//<projecte:item.pe_dm_armor_1>,
@@ -320,7 +288,6 @@ val armorTier as IItemStack[][string] = {
 		//<projecte:item.pe_rm_armor_2>,
 		//<projecte:item.pe_rm_armor_1>,
 		//<projecte:item.pe_rm_armor_0>,
-		//<techreborn:cloakingdevice>,
 		<twilightforest:phantom_helmet>,
 		<twilightforest:phantom_chestplate>
 	],
@@ -336,7 +303,7 @@ val armorTier as IItemStack[][string] = {
 			k.addTooltip(I18n.format(i));
 		}
 	}
-
+/*
 //Leather Armor (vanilla)
 	RecipeBuilder.get("basic")
 		.setShaped(RecipePattern.init(["AAA", "ABA"]).map({A:<ore:itemLeather>, B:<ore:itemCloth>}).ingredients)
@@ -498,151 +465,7 @@ val armorTier as IItemStack[][string] = {
 		.addOutput(<minecraft:golden_boots>)
 		.setRecipeFunction(HiiragiUtils.inheritStatus(<minecraft:golden_boots>))
 		.create();
-/*
-//Composite Armor (Armor Tech)
-	RecipeBuilder.get("basic")
-		.setShaped(RecipePattern.init(["ABA", "A A"]).map({A:<ore:plateAdvancedAlloy>, B:<ore:plateCarbon>}).ingredients)
-		.setSecondaryIngredients([<minecraft:leather_helmet>.marked("inherit")])
-		.addTool(<ore:artisansHammer>, 40)
-		.addTool(<ore:artisansCutters>, 40)
-		.addOutput(<armortech:composite_helmet>)
-		.setRecipeFunction(HiiragiUtils.inheritStatus(<armortech:composite_helmet>))
-		.create();
-	RecipeBuilder.get("basic")
-		.setShaped(RecipePattern.init(["A A", "ABA", "BBB"]).map({A:<ore:plateAdvancedAlloy>, B:<ore:plateCarbon>}).ingredients)
-		.setSecondaryIngredients([<minecraft:leather_chestplate>.marked("inherit")])
-		.addTool(<ore:artisansHammer>, 40)
-		.addTool(<ore:artisansCutters>, 40)
-		.addOutput(<armortech:composite_chestplate>)
-		.setRecipeFunction(HiiragiUtils.inheritStatus(<armortech:composite_chestplate>))
-		.create();
-	RecipeBuilder.get("basic")
-		.setShaped(RecipePattern.init(["AAA", "A A", "B B"]).map({A:<ore:plateAdvancedAlloy>, B:<ore:plateCarbon>}).ingredients)
-		.setSecondaryIngredients([<minecraft:leather_leggings>.marked("inherit")])
-		.addTool(<ore:artisansHammer>, 40)
-		.addTool(<ore:artisansCutters>, 40)
-		.addOutput(<armortech:composite_leggings>)
-		.setRecipeFunction(HiiragiUtils.inheritStatus(<armortech:composite_leggings>))
-		.create();
-	RecipeBuilder.get("basic")
-		.setShaped(RecipePattern.init(["A A", "B B"]).map({A:<ore:plateAdvancedAlloy>, B:<ore:plateCarbon>}).ingredients)
-		.setSecondaryIngredients([<minecraft:leather_boots>.marked("inherit")])
-		.addTool(<ore:artisansHammer>, 40)
-		.addTool(<ore:artisansCutters>, 40)
-		.addOutput(<armortech:composite_boots>)
-		.setRecipeFunction(HiiragiUtils.inheritStatus(<armortech:composite_boots>))
-		.create();
 
-//Tungsten Armor (Armor Tech)
-	RecipeBuilder.get("basic")
-		.setShaped(RecipePattern.init(["AAA", "A A"]).map({A:<ore:ingotTungsten>}).ingredients)
-		.setSecondaryIngredients([<minecraft:leather_helmet>.marked("inherit")])
-		.addTool(<ore:artisansHammer>, 40)
-		.addTool(<ore:artisansCutters>, 40)
-		.addOutput(<armortech:tungsten_helmet>)
-		.setRecipeFunction(HiiragiUtils.inheritStatus(<armortech:tungsten_helmet>))
-		.create();
-	RecipeBuilder.get("basic")
-		.setShaped(RecipePattern.init(["A A", "AAA", "AAA"]).map({A:<ore:ingotTungsten>}).ingredients)
-		.setSecondaryIngredients([<minecraft:leather_chestplate>.marked("inherit")])
-		.addTool(<ore:artisansHammer>, 40)
-		.addTool(<ore:artisansCutters>, 40)
-		.addOutput(<armortech:tungsten_chestplate>)
-		.setRecipeFunction(HiiragiUtils.inheritStatus(<armortech:tungsten_chestplate>))
-		.create();
-	RecipeBuilder.get("basic")
-		.setShaped(RecipePattern.init(["AAA", "A A", "A A"]).map({A:<ore:ingotTungsten>}).ingredients)
-		.setSecondaryIngredients([<minecraft:leather_leggings>.marked("inherit")])
-		.addTool(<ore:artisansHammer>, 40)
-		.addTool(<ore:artisansCutters>, 40)
-		.addOutput(<armortech:tungsten_leggings>)
-		.setRecipeFunction(HiiragiUtils.inheritStatus(<armortech:tungsten_leggings>))
-		.create();
-	RecipeBuilder.get("basic")
-		.setShaped(RecipePattern.init(["A A", "A A"]).map({A:<ore:ingotTungsten>}).ingredients)
-		.setSecondaryIngredients([<minecraft:leather_boots>.marked("inherit")])
-		.addTool(<ore:artisansHammer>, 40)
-		.addTool(<ore:artisansCutters>, 40)
-		.addOutput(<armortech:tungsten_boots>)
-		.setRecipeFunction(HiiragiUtils.inheritStatus(<armortech:tungsten_boots>))
-		.create();
-
-//Tungstensteel Armor (Armor Tech)
-	RecipeBuilder.get("basic")
-		.setShaped(RecipePattern.init(["AAA", "A A"]).map({A:<ore:ingotTungstensteel>}).ingredients)
-		.setSecondaryIngredients([<minecraft:leather_helmet>.marked("inherit")])
-		.addTool(<ore:artisansHammer>, 40)
-		.addTool(<ore:artisansCutters>, 40)
-		.addOutput(<armortech:tungstensteel_helmet>)
-		.setRecipeFunction(HiiragiUtils.inheritStatus(<armortech:tungstensteel_helmet>))
-		.create();
-	RecipeBuilder.get("basic")
-		.setShaped(RecipePattern.init(["A A", "AAA", "AAA"]).map({A:<ore:ingotTungstensteel>}).ingredients)
-		.setSecondaryIngredients([<minecraft:leather_chestplate>.marked("inherit")])
-		.addTool(<ore:artisansHammer>, 40)
-		.addTool(<ore:artisansCutters>, 40)
-		.addOutput(<armortech:tungstensteel_chestplate>)
-		.setRecipeFunction(HiiragiUtils.inheritStatus(<armortech:tungstensteel_chestplate>))
-		.create();
-	RecipeBuilder.get("basic")
-		.setShaped(RecipePattern.init(["AAA", "A A", "A A"]).map({A:<ore:ingotTungstensteel>}).ingredients)
-		.setSecondaryIngredients([<minecraft:leather_leggings>.marked("inherit")])
-		.addTool(<ore:artisansHammer>, 40)
-		.addTool(<ore:artisansCutters>, 40)
-		.addOutput(<armortech:tungstensteel_leggings>)
-		.setRecipeFunction(HiiragiUtils.inheritStatus(<armortech:tungstensteel_leggings>))
-		.create();
-	RecipeBuilder.get("basic")
-		.setShaped(RecipePattern.init(["A A", "A A"]).map({A:<ore:ingotTungstensteel>}).ingredients)
-		.setSecondaryIngredients([<minecraft:leather_boots>.marked("inherit")])
-		.addTool(<ore:artisansHammer>, 40)
-		.addTool(<ore:artisansCutters>, 40)
-		.addOutput(<armortech:tungstensteel_boots>)
-		.setRecipeFunction(HiiragiUtils.inheritStatus(<armortech:tungstensteel_boots>))
-		.create();
-
-//Nano Suits (Armor Tech)
-	RecipeBuilder.get("basic")
-		.setShaped(RecipePattern.init(["AAA", "ABA"]).map({A:<ore:plateCarbon>, B:<techreborn:energycrystal>}).ingredients)
-		.addTool(<ore:artisansHammer>, 80)
-		.addTool(<ore:artisansCutters>, 80)
-		.addOutput(<armortech:nano_helmet>)
-		.create();
-	RecipeBuilder.get("basic")
-		.setShaped(RecipePattern.init(["ABA", "AAA", "AAA"]).map({A:<ore:plateCarbon>, B:<techreborn:energycrystal>}).ingredients)
-		.addTool(<ore:artisansHammer>, 80)
-		.addTool(<ore:artisansCutters>, 80)
-		.addOutput(<armortech:nano_chestplate>)
-		.create();
-	RecipeBuilder.get("basic")
-		.setShaped(RecipePattern.init(["AAA", "ABA", "A A"]).map({A:<ore:plateCarbon>, B:<techreborn:energycrystal>}).ingredients)
-		.addTool(<ore:artisansHammer>, 80)
-		.addTool(<ore:artisansCutters>, 80)
-		.addOutput(<armortech:nano_leggings>)
-		.create();
-	RecipeBuilder.get("basic")
-		.setShaped(RecipePattern.init(["A A", "ABA"]).map({A:<ore:plateCarbon>, B:<techreborn:energycrystal>}).ingredients)
-		.addTool(<ore:artisansHammer>, 80)
-		.addTool(<ore:artisansCutters>, 80)
-		.addOutput(<armortech:nano_boots>)
-		.create();
-
-//Night Vision Goggles (ArmorTech)
-	RecipeBuilder.get("basic")
-		.setShaped(RecipePattern.init(["ABA", "CDC", "EFE"]).map({
-			A:<dcs_climate:dcs_device_heat_exchanger>,
-			B:<techreborn:lithiumbattery>.marked("inherit"),
-			C:<appliedenergistics2:part:180>,
-			D:<botania:cosmetic:4>,
-			E:<techreborn:part:32>,
-			F:<ore:circuitAdvanced>
-		}).ingredients)
-		.addTool(<ore:artisansHammer>, 80)
-		.addTool(<ore:artisansCutters>, 80)
-		.addOutput(<armortech:night_vision_goggles>)
-		.setRecipeFunction(HiiragiUtils.inheritStatus(<armortech:night_vision_goggles>))
-		.create();
-*/
 //Manasteel Armor (Botania)
 	RecipeBuilder.get("basic")
 		.setShaped(RecipePattern.init(["AAA", "A A"]).map({A:<ore:ingotManasteel>}).ingredients)
@@ -1013,6 +836,101 @@ val armorTier as IItemStack[][string] = {
 		.setRecipeFunction(HiiragiUtils.inheritStatus(<enderio:item_end_steel_boots>))
 		.create();
 
+//Refined Glowstone (Mekanism)
+	RecipeBuilder.get("basic")
+		.setShaped(RecipePattern.init(["AAA", "A A"]).map({A:<ore:ingotRefinedGlowstone>}).ingredients)
+		.setSecondaryIngredients([<mekanismtools:osmiumhelmet>.marked("inherit")])
+		.addTool(<ore:artisansHammer>, 40)
+		.addTool(<ore:artisansCutters>, 40)
+		.addOutput(<mekanismtools:glowstonehelmet>)
+		.setRecipeFunction(HiiragiUtils.inheritStatus(<mekanismtools:glowstonehelmet>))
+		.create();
+	RecipeBuilder.get("basic")
+		.setShaped(RecipePattern.init(["A A", "AAA", "AAA"]).map({A:<ore:ingotRefinedGlowstone>}).ingredients)
+		.setSecondaryIngredients([<mekanismtools:osmiumchestplate>.marked("inherit")])
+		.addTool(<ore:artisansHammer>, 40)
+		.addTool(<ore:artisansCutters>, 40)
+		.addOutput(<mekanismtools:glowstonechestplate>)
+		.setRecipeFunction(HiiragiUtils.inheritStatus(<mekanismtools:glowstonechestplate>))
+		.create();
+	RecipeBuilder.get("basic")
+		.setShaped(RecipePattern.init(["AAA", "A A", "A A"]).map({A:<ore:ingotRefinedGlowstone>}).ingredients)
+		.setSecondaryIngredients([<mekanismtools:osmiumleggings>.marked("inherit")])
+		.addTool(<ore:artisansHammer>, 40)
+		.addTool(<ore:artisansCutters>, 40)
+		.addOutput(<mekanismtools:glowstoneleggings>)
+		.setRecipeFunction(HiiragiUtils.inheritStatus(<mekanismtools:glowstoneleggings>))
+		.create();
+	RecipeBuilder.get("basic")
+		.setShaped(RecipePattern.init(["A A", "A A"]).map({A:<ore:ingotRefinedGlowstone>}).ingredients)
+		.setSecondaryIngredients([<mekanismtools:osmiumboots>.marked("inherit")])
+		.addTool(<ore:artisansHammer>, 40)
+		.addTool(<ore:artisansCutters>, 40)
+		.addOutput(<mekanismtools:glowstoneboots>)
+		.setRecipeFunction(HiiragiUtils.inheritStatus(<mekanismtools:glowstoneboots>))
+		.create();
+
+//Osmium (Mekanism)
+	RecipeBuilder.get("basic")
+		.setShaped(RecipePattern.init(["AAA", "ABA"]).map({A:<ore:ingotOsmium>, B:<ore:itemSyntheticCloth>}).ingredients)
+		.addTool(<ore:artisansHammer>, 80)
+		.addTool(<ore:artisansCutters>, 80)
+		.addOutput(<mekanismtools:osmiumhelmet>)
+		.create();
+	RecipeBuilder.get("basic")
+		.setShaped(RecipePattern.init(["ABA", "AAA", "AAA"]).map({A:<ore:ingotOsmium>, B: <ore:itemSyntheticCloth>}).ingredients)
+		.addTool(<ore:artisansHammer>, 80)
+		.addTool(<ore:artisansCutters>, 80)
+		.addOutput(<mekanismtools:osmiumchestplate>)
+		.create();
+	RecipeBuilder.get("basic")
+		.setShaped(RecipePattern.init(["AAA", "ABA", "A A"]).map({A:<ore:ingotOsmium>, B: <ore:itemSyntheticCloth>}).ingredients)
+		.addTool(<ore:artisansHammer>, 80)
+		.addTool(<ore:artisansCutters>, 80)
+		.addOutput(<mekanismtools:osmiumleggings>)
+		.create();
+	RecipeBuilder.get("basic")
+		.setShaped(RecipePattern.init(["A A", "ABA"]).map({A:<ore:ingotOsmium>, B: <ore:itemSyntheticCloth>}).ingredients)
+		.addTool(<ore:artisansHammer>, 80)
+		.addTool(<ore:artisansCutters>, 80)
+		.addOutput(<mekanismtools:osmiumboots>)
+		.create();
+
+//Obsidian (Mekanism)
+	RecipeBuilder.get("basic")
+		.setShaped(RecipePattern.init(["AAA", "A A"]).map({A:<ore:ingotRefinedObsidian>}).ingredients)
+		.setSecondaryIngredients([<mekanismtools:osmiumhelmet>.marked("inherit")])
+		.addTool(<ore:artisansHammer>, 160)
+		.addTool(<ore:artisansCutters>, 160)
+		.addOutput(<mekanismtools:obsidianhelmet>)
+		.setRecipeFunction(HiiragiUtils.inheritStatus(<mekanismtools:obsidianhelmet>))
+		.create();
+	RecipeBuilder.get("basic")
+		.setShaped(RecipePattern.init(["A A", "AAA", "AAA"]).map({A:<ore:ingotRefinedObsidian>}).ingredients)
+		.setSecondaryIngredients([<mekanismtools:osmiumchestplate>.marked("inherit")])
+		.addTool(<ore:artisansHammer>, 160)
+		.addTool(<ore:artisansCutters>, 160)
+		.addOutput(<mekanismtools:obsidianchestplate>)
+		.setRecipeFunction(HiiragiUtils.inheritStatus(<mekanismtools:obsidianchestplate>))
+		.create();
+	RecipeBuilder.get("basic")
+		.setShaped(RecipePattern.init(["AAA", "A A", "A A"]).map({A:<ore:ingotRefinedObsidian>}).ingredients)
+		.setSecondaryIngredients([<mekanismtools:osmiumleggings>.marked("inherit")])
+		.addTool(<ore:artisansHammer>, 160)
+		.addTool(<ore:artisansCutters>, 160)
+		.addOutput(<mekanismtools:obsidianleggings>)
+		.setRecipeFunction(HiiragiUtils.inheritStatus(<mekanismtools:obsidianleggings>))
+		.create();
+	RecipeBuilder.get("basic")
+		.setShaped(RecipePattern.init(["A A", "A A"]).map({A:<ore:ingotRefinedObsidian>}).ingredients)
+		.setSecondaryIngredients([<mekanismtools:osmiumboots>.marked("inherit")])
+		.addTool(<ore:artisansHammer>, 160)
+		.addTool(<ore:artisansCutters>, 160)
+		.addOutput(<mekanismtools:obsidianboots>)
+		.setRecipeFunction(HiiragiUtils.inheritStatus(<mekanismtools:obsidianboots>))
+		.create();
+
+
 //Dark Matter Armor (ProjectE)
 
 //Red Matter Armor (ProjectE)
@@ -1342,6 +1260,6 @@ val armorTier as IItemStack[][string] = {
 		.addTool(<ore:artisansCutters>, 10)
 		.addOutput(<twilightforest:arctic_boots>)
 		.create();
-
+*/
 //このscriptの読み込みの完了をログに出力
 print("armor.zs loaded!");

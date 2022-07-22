@@ -13,6 +13,7 @@ import crafttweaker.item.IIngredient;
 //各種modからclassをimport
 import mods.artisanworktables.builder.RecipeBuilder;
 import mods.ctintegration.util.RecipePattern;
+import mods.thermalexpansion.Compactor;
 
 //scriptのimport
 import scripts.HiiragiUtils;
@@ -24,7 +25,14 @@ print("Start loading thermal.zs ...");
 
 //作業台レシピの編集
 	//削除
-		val removeCrafting as IItemStack[] = [];
+		val removeCrafting as IItemStack[] = [
+			<thermalexpansion:augment:*>,
+			<thermalfoundation:material:512>,
+			<thermalfoundation:material:513>,
+			<thermalfoundation:material:514>,
+			<thermalfoundation:material:515>,
+			<thermalfoundation:material:640>,
+		];
 		for i in removeCrafting {
 			HiiragiUtils.removeCrafting(i);
 		}
@@ -40,34 +48,20 @@ print("Start loading thermal.zs ...");
 		HiiragiUtils.addCraftingShaped(true, <thermalexpansion:frame>*3, RecipePattern.init(["ABA", "BCB", "DBD"]).map({A:<ore:ingotToolSteel>, B:<ore:fusedQuartz>, C:<ore:gearToolSteel>, D:<ore:ingotStainlessSteel>}).ingredients, null, null);
 		HiiragiUtils.addCraftingShaped(true, <thermalexpansion:frame:64>, RecipePattern.init(["ABA", "BCB", "ABA"]).map({A:<ore:ingotSilver>, B:<ore:ingotTin>, C:<ore:blockGlassHardened>}).ingredients, null, null);
 		HiiragiUtils.addCraftingShaped(false, <thermalexpansion:frame:64>*3, RecipePattern.init(["ABA", "BCB", "ABA"]).map({A:<ore:ingotNickelsilver>, B:<ore:ingotLead>, C:<ore:fusedQuartz>}).ingredients, null, null);
-		//HiiragiUtils.addCraftingShaped(true, <thermalfoundation:material:640>, RecipePattern.init(["ABA", "ACA", "ADA"]).map({A:<ore:ingotElectrum>, B:<thermalfoundation:material:515>, C:<ore:circuitBasic>, D:<thermalfoundation:material:512>}).ingredients, null, null);
 		HiiragiUtils.addCraftingShaped(true, <thermalfoundation:material:656>, RecipePattern.init(["  A", "AB ", "CA "]).map({A:<ore:ingotToolSteel>, B:<ore:gearToolSteel>, C:<ore:blockToolSteel>}).ingredients, null, null);
 		HiiragiUtils.addCraftingShaped(true, <thermalfoundation:material:657>, RecipePattern.init([" A ", "ABA", " A "]).map({A:<ore:bladeToolSteel>, B:<ore:gearToolSteel>}).ingredients, null, null);
-		//HiiragiUtils.addCraftingShaped(false, <thermalinnovation:drill:0>, RecipePattern.init([" AA", "BCD", " E "]).map({A:<ore:ingotRedstoneAlloy>, B:<thermalfoundation:material:656>, C:<thermalfoundation:material:640>, D:<thermalexpansion:capacitor>, E:<ore:ingotStainlessSteel>}).ingredients, null, null);
-		//HiiragiUtils.addCraftingShaped(false, <thermalinnovation:saw:0>, RecipePattern.init([" AA", "BCD", " E "]).map({A:<ore:ingotRedstoneAlloy>, B:<thermalfoundation:material:657>, C:<thermalfoundation:material:640>, D:<thermalexpansion:capacitor>, E:<ore:ingotStainlessSteel>}).ingredients, null, null);
-	//新規
 
-//かまどレシピの編集
-	//削除
-		val removeFurnace as IItemStack[] = [];
-		for i in removeFurnace {
-			HiiragiUtils.removeFurnace(i);
+		for i in 0 to 15 {
+			HiiragiUtils.addCraftingShapeless(true, <thermalfoundation:rockwool>.definition.makeStack(i), [<ore:blockRockwool>, HiiragiUtils.dyeList[i]], null, null);
 		}
 	//新規
-		val addFurnace as IIngredient[IItemStack] = {};
-		for output, input in addFurnace {
-			HiiragiUtils.addFurnace(false, output, input);
-		}
 
 //AWレシピの編集
 	//import
 	//新規
-		RecipeBuilder.get("basic")
-			.setShaped(RecipePattern.init(["AAA", "ABA"]).map({A:<ore:itemLeather>, B:<ore:itemCloth>}).ingredients)
-			.addTool(<ore:artisansHammer>, 10)
-			.addTool(<ore:artisansCutters>, 10)
-			.addOutput(<minecraft:leather_helmet>)
-			.create();
+
+//Compactor
+	mods.thermalexpansion.Compactor.addPressRecipe(<enderio:item_material:71>, <ore:dustBedrock>.firstItem*5, 8000);
 
 //このscriptの読み込みの完了をログに出力
 print("thermal.zs loaded!");

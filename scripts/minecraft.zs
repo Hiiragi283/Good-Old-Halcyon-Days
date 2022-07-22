@@ -32,18 +32,6 @@ print("Start loading minecraft.zs ...");
 		HiiragiUtils.addCraftingShaped(true, <minecraft:furnace>, RecipePattern.init(["AAA", "ABA", "AAA"]).map({A:<ore:cobblestone>, B:<dcs_climate:dcs_tinder:1>}).ingredients, null, null);
 	//新規
 
-//かまどレシピの編集
-	//削除
-		val removeFurnace as IItemStack[] = [];
-		for i in removeFurnace {
-			HiiragiUtils.removeFurnace(i);
-		}
-	//新規
-		val addFurnace as IIngredient[IItemStack] = {};
-		for output, input in addFurnace {
-			HiiragiUtils.addFurnace(false, output, input);
-		}
-
 //AWレシピの編集
 	//import
 	//新規

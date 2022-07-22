@@ -37,18 +37,6 @@ print("Start loading railcraft.zs ...");
 		HiiragiUtils.addCraftingShaped(false, <railcraft:pearlized:2>*8, RecipePattern.init(["AAA", "ABA", "AAA"]).map({A:<minecraft:end_stone>, B:<ore:dropGreen>}).ingredients, null, null);
 		HiiragiUtils.addCraftingShaped(false, <railcraft:infernal:2>*8, RecipePattern.init(["AAA", "ABA", "AAA"]).map({A:<minecraft:soul_sand>, B:<ore:dropBlack>}).ingredients, null, null);
 
-//かまどレシピの編集
-	//削除
-		val removeFurnace as IItemStack[] = [];
-		for i in removeFurnace {
-			HiiragiUtils.removeFurnace(i);
-		}
-	//新規
-		val addFurnace as IIngredient[IItemStack] = {};
-		for output, input in addFurnace {
-			HiiragiUtils.addFurnace(false, output, input);
-		}
-
 //AWレシピの編集
 	//import
 	//新規

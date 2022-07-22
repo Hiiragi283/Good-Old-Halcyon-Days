@@ -31,25 +31,13 @@ print("Start loading bop.zs ...");
 	//上書き
 	//新規
 
-//かまどレシピの編集
-	//削除
-		val removeFurnace as IItemStack[] = [];
-		for i in removeFurnace {
-			HiiragiUtils.removeFurnace(i);
-		}
-	//新規
-		val addFurnace as IIngredient[IItemStack] = {};
-		for output, input in addFurnace {
-			HiiragiUtils.addFurnace(false, output, input);
-		}
-
 //AWレシピの編集
 	//import
 	//新規
 
 //Orechid TerrestrisによるBOP鉱石の生成
 	val orechid_terrestris = mods.morechids.Registry.getFlower("orechid_terrestris");
-	for i in 1 to 7 {
+	for i in 1 to 8 {
 		orechid_terrestris.addRecipe(<minecraft:stone>, <biomesoplenty:gem_ore>.definition.makeStack(i), 1);
 	}
 

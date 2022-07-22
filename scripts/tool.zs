@@ -50,7 +50,20 @@ print("Start loading tool.zs ...");
 		<dcs_climate:dcs_tinder:*>,
 		<dcs_climate:dcs_color_changer>,
 		<dcs_climate:dcs_handnet>,
+		<pickletweaks:wooden_paxel>,
+		<pickletweaks:golden_paxel>,
+		<pickletweaks:lead_paxel>,
 		<railcraft:borehead_bronze>,
+		<thermalfoundation:tool.sword_lead>,
+		<thermalfoundation:tool.shovel_lead>,
+		<thermalfoundation:tool.pickaxe_lead>,
+		<thermalfoundation:tool.axe_lead>,
+		<thermalfoundation:tool.hoe_lead>,
+		<thermalfoundation:tool.bow_lead>,
+		<thermalfoundation:tool.shears_lead>,
+		<thermalfoundation:tool.sickle_lead>,
+		<thermalfoundation:tool.hammer_lead>,
+		<thermalfoundation:tool.excavator_lead>,
 		<thermalfoundation:tool.shears_stone>,
 		<thermalfoundation:tool.sickle_stone>,
 		<thermalfoundation:tool.hammer_stone>,
@@ -79,10 +92,18 @@ print("Start loading tool.zs ...");
 		<minecraft:map>,
 		<minecraft:fireworks>,
 		<minecraft:name_tag>,
+		<aiotbotania:livingwoodsword>,
+		<aiotbotania:livingwoodaxe>,
+		<aiotbotania:livingwoodpickaxe>,
+		<aiotbotania:livingwoodshovel>,
+		<aiotbotania:livingwoodhoe>,
+		<aiotbotania:livingrocksword>,
+		<aiotbotania:livingrockaxe>,
+		<aiotbotania:livingrockpickaxe>,
+		<aiotbotania:livingrockshovel>,
+		<aiotbotania:livingrockhoe>,
 		<appliedenergistics2:certus_quartz_wrench>,
 		<appliedenergistics2:certus_quartz_cutting_knife>,
-		//<ore:artisansCutters>,
-		//<ore:artisansHammer>,
 		<bibliocraft:stockroomcatalog>,
 		<bibliocraft:testeritem>,
 		<bibliocraft:atlasbook>,
@@ -117,6 +138,11 @@ print("Start loading tool.zs ...");
 		<inspirations:barometer>,
 		<inspirations:photometer>,
 		<inspirations:waypoint_compass>,
+		<pickletweaks:flint_sword>,
+		<pickletweaks:flint_pickaxe>,
+		<pickletweaks:flint_shovel>,
+		<pickletweaks:flint_axe>,
+		<pickletweaks:flint_hoe>,
 		<railcraft:tool_crowbar_iron>,
 		<railcraft:tool_crowbar_steel>,
 		<railcraft:borehead_iron>,
@@ -127,16 +153,6 @@ print("Start loading tool.zs ...");
 		<twilightforest:ironwood_pickaxe>,
 		<twilightforest:ironwood_axe>,
 		<twilightforest:ironwood_hoe>,
-		<thermalfoundation:tool.sword_steel>,
-		<thermalfoundation:tool.shovel_steel>,
-		<thermalfoundation:tool.pickaxe_steel>,
-		<thermalfoundation:tool.axe_steel>,
-		<thermalfoundation:tool.hoe_steel>,
-		<thermalfoundation:tool.bow_steel>,
-		<thermalfoundation:tool.shears_steel>,
-		<thermalfoundation:tool.sickle_steel>,
-		<thermalfoundation:tool.hammer_steel>,
-		<thermalfoundation:tool.excavator_steel>,
 		<thermalfoundation:tool.sword_invar>,
 		<thermalfoundation:tool.shovel_invar>,
 		<thermalfoundation:tool.pickaxe_invar>,
@@ -167,12 +183,9 @@ print("Start loading tool.zs ...");
 		<minecraft:diamond_shovel>,
 		<minecraft:diamond_pickaxe>,
 		<minecraft:diamond_axe>,
-		//<armortech:lighter>,
-		//<armortech:tungsten_sword>,
-		//<armortech:tungsten_shovel>,
-		//<armortech:tungsten_pickaxe>,
-		//<armortech:tungsten_axe>,
-		//<armortech:tungsten_hoe>,
+		<aiotbotania:livingwoodaiot>,
+		<aiotbotania:livingrockaiot>,
+		<aiotbotania:manasteelhoe>,
 		<botania:manatablet>,
 		<botania:managun>,
 		<botania:dirtrod>,
@@ -224,10 +237,18 @@ print("Start loading tool.zs ...");
 		<dcs_climate:dcs_magic_card:3>,
 		<dcs_climate:dcs_magic_card:4>,
 		<mekanism:flamethrower>,
+		<mekanismtools:glowstonepickaxe>,
+		<mekanismtools:glowstoneaxe>,
+		<mekanismtools:glowstoneshovel>,
+		<mekanismtools:glowstonehoe>,
+		<mekanismtools:glowstonesword>,
+		<pickletweaks:stone_paxel>,
+		<pickletweaks:iron_paxel>,
+		<pickletweaks:bronze_paxel>,
+		<pickletweaks:invar_paxel>,
+		<pickletweaks:steel_paxel>,
+		<pickletweaks:flint_paxel>,
 		<railcraft:borehead_steel>,
-		//<techreborn:ironchainsaw>,
-		//<techreborn:irondrill>,
-		//<techreborn:steeljackhammer>,
 		<twilightforest:steeleaf_sword>,
 		<twilightforest:steeleaf_shovel>,
 		<twilightforest:steeleaf_pickaxe>,
@@ -237,6 +258,16 @@ print("Start loading tool.zs ...");
 		<twilightforest:knightmetal_sword>,
 		<twilightforest:knightmetal_pickaxe>,
 		<twilightforest:knightmetal_axe>,
+		//<thermalfoundation:tool.sword_steel>,
+		//<thermalfoundation:tool.shovel_steel>,
+		//<thermalfoundation:tool.pickaxe_steel>,
+		//<thermalfoundation:tool.axe_steel>,
+		//<thermalfoundation:tool.hoe_steel>,
+		<thermalfoundation:tool.bow_steel>,
+		<thermalfoundation:tool.shears_steel>,
+		<thermalfoundation:tool.sickle_steel>,
+		<thermalfoundation:tool.hammer_steel>,
+		<thermalfoundation:tool.excavator_steel>,
 		<thermalfoundation:tool.bow_diamond>,
 		<thermalfoundation:tool.shears_diamond>,
 		<thermalfoundation:tool.sickle_diamond>,
@@ -244,17 +275,14 @@ print("Start loading tool.zs ...");
 		<thermalfoundation:tool.excavator_diamond>,
 	],
 	"gohd.tooltip.tool.epic.name": [
+		<aiotbotania:manasteelaiot>,
+		<aiotbotania:elementiumhoe>,
 		<appliedenergistics2:entropy_manipulator>,
 		<appliedenergistics2:wireless_terminal>,
 		<appliedenergistics2:charged_staff>,
 		<appliedenergistics2:matter_cannon>,
 		<appliedenergistics2:portable_cell>,
 		<appliedenergistics2:color_applicator>,
-		//<armortech:tungstensteel_sword>,
-		//<armortech:tungstensteel_shovel>,
-		//<armortech:tungstensteel_pickaxe>,
-		//<armortech:tungstensteel_axe>,
-		//<armortech:tungstensteel_hoe>,
 		<botania:terraformrod>,
 		<botania:manamirror>,
 		<botania:terrasword>,
@@ -322,11 +350,14 @@ print("Start loading tool.zs ...");
 		<dcs_climate:dcs_color_gauntlet:4>,
 		<hap:wrench>,
 		<mekanism:electricbow>,
+		<mekanismtools:glowstonepaxel>,
+		<mekanismtools:osmiumpickaxe>,
+		<mekanismtools:osmiumaxe>,
+		<mekanismtools:osmiumshovel>,
+		<mekanismtools:osmiumhoe>,
+		<mekanismtools:osmiumsword>,
+		<pickletweaks:diamond_paxel>,
 		<railcraft:borehead_diamond>,
-		//<techreborn:diamondchainsaw>,
-		//<techreborn:diamonddrill>,
-		//<techreborn:diamondjackhammer>,
-		//<techreborn:rockcutter>,
 		<twilightforest:fiery_sword>,
 		<twilightforest:fiery_pickaxe>,
 		<twilightforest:giant_pickaxe>,
@@ -338,6 +369,7 @@ print("Start loading tool.zs ...");
 		<twilightforest:ice_sword>,
 	],
 	"gohd.tooltip.tool.legendary.name": [
+		<aiotbotania:elementiumaiot>,
 		<minecraft:diamond_hoe>,
 		<minecraft:totem_of_undying>,
 		<advancedrocketry:jackhammer>,
@@ -381,10 +413,12 @@ print("Start loading tool.zs ...");
 		<dcs_climate:dcs_color_gauntlet2:2>,
 		<dcs_climate:dcs_color_gauntlet2:3>,
 		<dcs_climate:dcs_color_gauntlet2:4>,
-		//<techreborn:advancedchainsaw>,
-		//<techreborn:advanceddrill>,
-		//<techreborn:ironjackhammer>,
-		//<techreborn:nanosaber>,
+		<mekanismtools:osmiumpaxel>,
+		<mekanismtools:obsidianpickaxe>,
+		<mekanismtools:obsidianaxe>,
+		<mekanismtools:obsidianshovel>,
+		<mekanismtools:obsidianhoe>,
+		<mekanismtools:obsidiansword>,
 		<twilightforest:minotaur_axe>,
 		<twilightforest:mazebreaker_pickaxe>,
 		<twilightforest:glass_sword>,
@@ -403,6 +437,7 @@ print("Start loading tool.zs ...");
 		<dcs_climate:dcs_magic_card_m3:4>,
 		<extrautils2:lawsword>,
 		<mekanism:atomicdisassembler>,
+		<mekanismtools:obsidianpaxel>,
 	],
 	};
 	for i, j in toolTier {
@@ -410,7 +445,7 @@ print("Start loading tool.zs ...");
 			k.addTooltip(I18n.format(i));
 		}
 	}
-
+/*
 val toolHead as IItemStack[IItemStack] = {
 	//Iron (Minecraft)
 		<minecraft:iron_shovel>: <tconstruct:shovel_head>.withTag({Material: "iron"}),
@@ -418,24 +453,119 @@ val toolHead as IItemStack[IItemStack] = {
 		<minecraft:iron_axe>: <tconstruct:axe_head>.withTag({Material: "iron"}),
 		<minecraft:iron_sword>: <tconstruct:sword_blade>.withTag({Material: "iron"}),
 		<minecraft:iron_hoe>: <tconstruct:kama_head>.withTag({Material: "iron"}),
+		<thermalfoundation:tool.sickle_iron>: <tconstruct:scythe_head>.withTag({Material: "iron"}),
+		<thermalfoundation:tool.hammer_iron>: <tconstruct:hammer_head>.withTag({Material: "iron"}),
+		<thermalfoundation:tool.excavator_iron>: <tconstruct:excavator_head>.withTag({Material: "iron"}),
 	//Wooden (Minecraft)
 		<minecraft:wooden_shovel>: <tconstruct:shovel_head>.withTag({Material: "wood"}),
 		<minecraft:wooden_pickaxe>: <tconstruct:pick_head>.withTag({Material: "wood"}),
 		<minecraft:wooden_axe>: <tconstruct:axe_head>.withTag({Material: "wood"}),
 		<minecraft:wooden_sword>: <tconstruct:sword_blade>.withTag({Material: "wood"}),
 		<minecraft:wooden_hoe>: <tconstruct:kama_head>.withTag({Material: "wood"}),
+		<thermalfoundation:tool.sickle_wood>: <tconstruct:scythe_head>.withTag({Material: "wood"}),
+		<thermalfoundation:tool.hammer_wood>: <tconstruct:hammer_head>.withTag({Material: "wood"}),
+		<thermalfoundation:tool.excavator_wood>: <tconstruct:excavator_head>.withTag({Material: "wood"}),
 	//Stone (Minecraft)
 		<minecraft:stone_shovel>: <tconstruct:shovel_head>.withTag({Material: "stone"}),
 		<minecraft:stone_pickaxe>: <tconstruct:pick_head>.withTag({Material: "stone"}),
 		<minecraft:stone_axe>: <tconstruct:axe_head>.withTag({Material: "stone"}),
 		<minecraft:stone_sword>: <tconstruct:sword_blade>.withTag({Material: "stone"}),
 		<minecraft:stone_hoe>: <tconstruct:kama_head>.withTag({Material: "stone"}),
+		<dcs_climate:dcs_scythe_stone>: <tconstruct:scythe_head>.withTag({Material: "stone"}),
+		<thermalfoundation:tool.hammer_stone>: <tconstruct:hammer_head>.withTag({Material: "stone"}),
+		<thermalfoundation:tool.excavator_stone>: <tconstruct:excavator_head>.withTag({Material: "stone"}),
 	//Certus Quartz (Applied Energistics 2)
 		<appliedenergistics2:certus_quartz_spade>: <tconstruct:shovel_head>.withTag({Material: "certus_quartz"}),
 		<appliedenergistics2:certus_quartz_pickaxe>: <tconstruct:pick_head>.withTag({Material: "certus_quartz"}),
 		<appliedenergistics2:certus_quartz_axe>: <tconstruct:axe_head>.withTag({Material: "certus_quartz"}),
 		<appliedenergistics2:certus_quartz_sword>: <tconstruct:sword_blade>.withTag({Material: "certus_quartz"}),
 		<appliedenergistics2:certus_quartz_hoe>: <tconstruct:kama_head>.withTag({Material: "certus_quartz"}),
+	//Steel (Heat And climate)
+		<dcs_climate:dcs_spade_steel>: <tconstruct:shovel_head>.withTag({Material: "steel"}),
+		<dcs_climate:dcs_pickaxe_steel>: <tconstruct:pick_head>.withTag({Material: "steel"}),
+		<dcs_climate:dcs_axe_steel>: <tconstruct:axe_head>.withTag({Material: "steel"}),
+		<dcs_climate:dcs_sword_steel>: <tconstruct:sword_blade>.withTag({Material: "steel"}),
+		<dcs_climate:dcs_scythe_steel>: <tconstruct:scythe_head>.withTag({Material: "steel"}),
+	//Silver (Heat And Climate)
+		<dcs_climate:dcs_spade_silver>: <tconstruct:shovel_head>.withTag({Material: "silver"}),
+		<dcs_climate:dcs_pickaxe_silver>: <tconstruct:pick_head>.withTag({Material: "silver"}),
+		<dcs_climate:dcs_axe_silver>: <tconstruct:axe_head>.withTag({Material: "silver"}),
+		<dcs_climate:dcs_sword_silver>: <tconstruct:sword_blade>.withTag({Material: "silver"}),
+	//Nickelsilver (Heat And Climate)
+		<dcs_climate:dcs_spade_nickelsilver>: <tconstruct:shovel_head>.withTag({Material: "nickelsilver"}),
+		<dcs_climate:dcs_pickaxe_nickelsilver>: <tconstruct:pick_head>.withTag({Material: "nickelsilver"}),
+		<dcs_climate:dcs_axe_nickelsilver>: <tconstruct:axe_head>.withTag({Material: "nickelsilver"}),
+		<dcs_climate:dcs_sword_nickelsilver>: <tconstruct:sword_blade>.withTag({Material: "nickelsilver"}),
+	//Chalcedony (Heat And Climate)
+		<dcs_climate:dcs_spade_chalcedony>: <tconstruct:shovel_head>.withTag({Material: "chalcedony"}),
+		<dcs_climate:dcs_pickaxe_chalcedony>: <tconstruct:pick_head>.withTag({Material: "chalcedony"}),
+		<dcs_climate:dcs_axe_chalcedony>: <tconstruct:axe_head>.withTag({Material: "chalcedony"}),
+		<dcs_climate:dcs_sword_chalcedony>: <tconstruct:sword_blade>.withTag({Material: "chalcedony"}),
+		<dcs_climate:dcs_scythe_chalcedony>: <tconstruct:scythe_head>.withTag({Material: "chalcedony"}),
+	//Titanium (Heat And Climate)
+		<dcs_climate:dcs_spade_titanium>: <tconstruct:shovel_head>.withTag({Material: "titanium_alloy"}),
+		<dcs_climate:dcs_pickaxe_titanium>: <tconstruct:pick_head>.withTag({Material: "titanium_alloy"}),
+		<dcs_climate:dcs_axe_titanium>: <tconstruct:axe_head>.withTag({Material: "titanium_alloy"}),
+		<dcs_climate:dcs_sword_titanium>: <tconstruct:sword_blade>.withTag({Material: "titanium_alloy"}),
+	//Refined Glowstone (Mekanism)
+		<mekanismtools:glowstonepickaxe>: <tconstruct:pick_head>.withTag({Material: "refined_glowstone"}),
+		<mekanismtools:glowstoneaxe>: <tconstruct:axe_head>.withTag({Material: "refined_glowstone"}),
+		<mekanismtools:glowstoneshovel>: <tconstruct:shovel_head>.withTag({Material: "refined_glowstone"}),
+		<mekanismtools:glowstonehoe>: <tconstruct:kama_head>.withTag({Material: "refined_glowstone"}),
+		<mekanismtools:glowstonesword>: <tconstruct:sword_blade>.withTag({Material: "refined_glowstone"}),
+	//Osmium (Mekanism)
+		<mekanismtools:osmiumpickaxe>: <tconstruct:pick_head>.withTag({Material: "osmium"}),
+		<mekanismtools:osmiumaxe>: <tconstruct:axe_head>.withTag({Material: "osmium"}),
+		<mekanismtools:osmiumshovel>: <tconstruct:shovel_head>.withTag({Material: "osmium"}),
+		<mekanismtools:osmiumhoe>: <tconstruct:kama_head>.withTag({Material: "osmium"}),
+		<mekanismtools:osmiumsword>: <tconstruct:sword_blade>.withTag({Material: "osmium"}),
+	//Refined Obsidian (Mekanism)
+		<mekanismtools:obsidianpickaxe>: <tconstruct:pick_head>.withTag({Material: "refined_obsidian"}),
+		<mekanismtools:obsidianaxe>: <tconstruct:axe_head>.withTag({Material: "refined_obsidian"}),
+		<mekanismtools:obsidianshovel>: <tconstruct:shovel_head>.withTag({Material: "refined_obsidian"}),
+		<mekanismtools:obsidianhoe>: <tconstruct:kama_head>.withTag({Material: "refined_obsidian"}),
+		<mekanismtools:obsidiansword>: <tconstruct:sword_blade>.withTag({Material: "refined_obsidian"}),
+	//Flint (Pickle Tweaks)
+		<pickletweaks:flint_sword>: <tconstruct:sword_blade>.withTag({Material: "flint"}),
+		<pickletweaks:flint_pickaxe>: <tconstruct:pick_head>.withTag({Material: "flint"}),
+		<pickletweaks:flint_shovel>: <tconstruct:shovel_head>.withTag({Material: "flint"}),
+		<pickletweaks:flint_axe>: <tconstruct:axe_head>.withTag({Material: "flint"}),
+		<pickletweaks:flint_hoe>: <tconstruct:kama_head>.withTag({Material: "flint"}),
+	//Fiery (Twilight Forest)
+		<twilightforest:fiery_pickaxe>: <tconstruct:pick_head>.withTag({Material: "fierymetal"}),
+		<twilightforest:fiery_sword>.withTag({ench: [{lvl: 2 as short, id: 20 as short}]}): <tconstruct:sword_blade>.withTag({Material: "fierymetal"}),
+	//Steeleaf (Twilight Forest)
+		<twilightforest:steeleaf_shovel>.withTag({ench: [{lvl: 2 as short, id: 32 as short}]}): <tconstruct:shovel_head>.withTag({Material: "steeleaf"}),
+		<twilightforest:steeleaf_pickaxe>.withTag({ench: [{lvl: 2 as short, id: 35 as short}]}): <tconstruct:pick_head>.withTag({Material: "steeleaf"}),
+		<twilightforest:steeleaf_axe>.withTag({ench: [{lvl: 2 as short, id: 32 as short}]}): <tconstruct:axe_head>.withTag({Material: "steeleaf"}),
+		<twilightforest:steeleaf_sword>.withTag({ench: [{lvl: 2 as short, id: 21 as short}]}): <tconstruct:sword_blade>.withTag({Material: "steeleaf"}),
+	//Knightmetal (Twilight Forest)
+		<twilightforest:knightmetal_pickaxe>: <tconstruct:pick_head>.withTag({Material: "knightmetal"}),
+		<twilightforest:knightmetal_axe>: <tconstruct:axe_head>.withTag({Material: "knightmetal"}),
+		<twilightforest:knightmetal_sword>: <tconstruct:sword_blade>.withTag({Material: "knightmetal"}),
+	//Lead (Thermal Foundation)
+		<thermalfoundation:tool.shovel_lead>: <tconstruct:shovel_head>.withTag({Material: "lead"}),
+		<thermalfoundation:tool.pickaxe_lead>: <tconstruct:pick_head>.withTag({Material: "lead"}),
+		<thermalfoundation:tool.axe_lead>: <tconstruct:axe_head>.withTag({Material: "lead"}),
+		<thermalfoundation:tool.sword_lead>: <tconstruct:sword_blade>.withTag({Material: "lead"}),
+		<thermalfoundation:tool.hoe_lead>: <tconstruct:kama_head>.withTag({Material: "lead"}),
+		<thermalfoundation:tool.sickle_lead>: <tconstruct:scythe_head>.withTag({Material: "lead"}),
+		<thermalfoundation:tool.hammer_lead>: <tconstruct:hammer_head>.withTag({Material: "lead"}),
+		<thermalfoundation:tool.excavator_lead>: <tconstruct:excavator_head>.withTag({Material: "lead"}),
+	//Steel (Thermal Foundation)
+		<thermalfoundation:tool.hoe_steel>: <tconstruct:kama_head>.withTag({Material: "steel"}),
+		<thermalfoundation:tool.sickle_steel>: <tconstruct:scythe_head>.withTag({Material: "steel"}),
+		<thermalfoundation:tool.hammer_steel>: <tconstruct:hammer_head>.withTag({Material: "steel"}),
+		<thermalfoundation:tool.excavator_steel>: <tconstruct:excavator_head>.withTag({Material: "steel"}),
+	//Bronze (Thermal Foundation)
+		<thermalfoundation:tool.shovel_bronze>: <tconstruct:shovel_head>.withTag({Material: "bronze"}),
+		<thermalfoundation:tool.pickaxe_bronze>: <tconstruct:pick_head>.withTag({Material: "bronze"}),
+		<thermalfoundation:tool.axe_bronze>: <tconstruct:axe_head>.withTag({Material: "bronze"}),
+		<thermalfoundation:tool.sword_bronze>: <tconstruct:sword_blade>.withTag({Material: "bronze"}),
+		<thermalfoundation:tool.hoe_bronze>: <tconstruct:kama_head>.withTag({Material: "bronze"}),
+		<thermalfoundation:tool.sickle_bronze>: <tconstruct:scythe_head>.withTag({Material: "bronze"}),
+		<thermalfoundation:tool.hammer_bronze>: <tconstruct:hammer_head>.withTag({Material: "bronze"}),
+		<thermalfoundation:tool.excavator_bronze>: <tconstruct:excavator_head>.withTag({Material: "bronze"}),
 };
 for tool, toolHead in toolHead {
 	HiiragiUtils.addCraftingShapeless(true, tool, [toolHead, <ore:stickWood>], null, null);
@@ -448,6 +578,9 @@ for tool, toolHead in toolHead {
 		<minecraft:diamond_axe>: <minecraft:iron_axe>,
 		<minecraft:diamond_sword>: <minecraft:iron_sword>,
 		<minecraft:diamond_hoe>: <minecraft:iron_hoe>,
+		<thermalfoundation:tool.sickle_diamond>: <thermalfoundation:tool.sickle_iron>,
+		<thermalfoundation:tool.hammer_diamond>: <thermalfoundation:tool.hammer_iron>,
+		<thermalfoundation:tool.excavator_diamond>: <thermalfoundation:tool.hammer_iron>,
 	};
 	for tool, toolBase in toolDiamond {
 		HiiragiUtils.addCraftingShapeless(true, tool, [toolBase.marked("inherit"), <ore:gemDiamond>, <contenttweaker:ticket_rare>], HiiragiUtils.inheritStatus(tool), null);
@@ -460,20 +593,35 @@ for tool, toolHead in toolHead {
 		<minecraft:golden_axe>: <minecraft:wooden_axe>,
 		<minecraft:golden_sword>: <minecraft:wooden_sword>,
 		<minecraft:golden_hoe>: <minecraft:wooden_hoe>,
+		<thermalfoundation:tool.sickle_gold>: <thermalfoundation:tool.sickle_wood>,
+		<thermalfoundation:tool.hammer_gold>: <thermalfoundation:tool.hammer_wood>,
+		<thermalfoundation:tool.excavator_gold>: <thermalfoundation:tool.hammer_wood>,
 	};
 	for tool, toolBase in toolGold {
 		HiiragiUtils.addCraftingShapeless(true, tool, [toolBase.marked("inherit"), <ore:ingotGold>], HiiragiUtils.inheritStatus(tool), null);
 	}
 
-//Manasteel (Botania)
-	val toolManasteel as IItemStack[IItemStack] = {
-		<botania:manasteelpick>: <tconstruct:pick_head>,
-		<botania:manasteelshovel>: <tconstruct:shovel_head>,
-		<botania:manasteelaxe>: <tconstruct:axe_head>,
-		<botania:manasteelsword>: <tconstruct:sword_blade>,
+	val toolMana as IItemStack[IItemStack] = {
+		//Living Wood (Botania AIOT)
+			<aiotbotania:livingwoodsword>: <tconstruct:sword_blade>.withTag({Material: "livingwood"}),
+			<aiotbotania:livingwoodaxe>: <tconstruct:axe_head>.withTag({Material: "livingwood"}),
+			<aiotbotania:livingwoodpickaxe>: <tconstruct:pick_head>.withTag({Material: "livingwood"}),
+			<aiotbotania:livingwoodshovel>: <tconstruct:shovel_head>.withTag({Material: "livingwood"}),
+			<aiotbotania:livingwoodhoe>:<tconstruct:kama_head>.withTag({Material: "livingwood"}),
+		//Living Rock (Botania AIOT)
+			<aiotbotania:livingrocksword>: <tconstruct:sword_blade>.withTag({Material: "livingrock"}),
+			<aiotbotania:livingrockaxe>: <tconstruct:axe_head>.withTag({Material: "livingrock"}),
+			<aiotbotania:livingrockpickaxe>: <tconstruct:pick_head>.withTag({Material: "livingrock"}),
+			<aiotbotania:livingrockshovel>: <tconstruct:shovel_head>.withTag({Material: "livingrock"}),
+			<aiotbotania:livingrockhoe>:<tconstruct:kama_head>.withTag({Material: "livingrock"}),
+		//Manasteel (Botania)
+			<botania:manasteelpick>: <tconstruct:pick_head>.withTag({Material: "manasteel"}),
+			<botania:manasteelshovel>: <tconstruct:shovel_head>.withTag({Material: "manasteel"}),
+			<botania:manasteelaxe>: <tconstruct:axe_head>.withTag({Material: "manasteel"}),
+			<botania:manasteelsword>: <tconstruct:sword_blade>.withTag({Material: "manasteel"}),
 	};
-	for tool, toolHead in toolManasteel {
-		HiiragiUtils.addCraftingShapeless(true, tool, [toolHead.withTag({Material: "manasteel"}), <botania:manaresource:3>], null, null);
+	for tool, toolHead in toolMana {
+		HiiragiUtils.addCraftingShapeless(true, tool, [toolHead, <botania:manaresource:3>], null, null);
 	}
 
 //Terrasteel (Botania)
@@ -522,5 +670,34 @@ for tool, toolHead in toolHead {
 		HiiragiUtils.addCraftingShapeless(true, tool, [toolHead.withTag({Material: "end_steel"}), <ore:itemInfinityRod>], null, null);
 	}
 
+//Brass (HaC)
+
+//Sapphire (Heat And Climate)
+	val toolSapphire as IItemStack[IItemStack] = {
+		<dcs_climate:dcs_spade_sapphire>: <minecraft:iron_shovel>,
+		<dcs_climate:dcs_pickaxe_sapphire>: <minecraft:iron_pickaxe>,
+		<dcs_climate:dcs_axe_sapphire>: <minecraft:iron_axe>,
+		<dcs_climate:dcs_sword_sapphire>: <minecraft:iron_sword>,
+	};
+	for tool, toolBase in toolSapphire {
+		HiiragiUtils.addCraftingShapeless(true, tool, [toolBase.marked("inherit"), <ore:gemSapphire>|<ore:gemRuby>], HiiragiUtils.inheritStatus(tool), null);
+	}
+
+//Garnet (Heat And Climate)
+	val toolGarnet as IItemStack[IItemStack] = {
+		<dcs_climate:dcs_spade_garnet>: <minecraft:stone_shovel>,
+		<dcs_climate:dcs_pickaxe_garnet>: <minecraft:stone_pickaxe>,
+		<dcs_climate:dcs_axe_garnet>: <minecraft:stone_axe>,
+		<dcs_climate:dcs_sword_garnet>: <minecraft:stone_sword>,
+		<dcs_climate:dcs_scythe_garnet>: <dcs_climate:dcs_scythe_stone>,
+	};
+	for tool, toolBase in toolGarnet {
+		HiiragiUtils.addCraftingShapeless(true, tool, [toolBase.marked("inherit"), <ore:gemGarnet>|<ore:gemTsavorite>], HiiragiUtils.inheritStatus(tool), null);
+	}
+
+//Tool Steel (Heat And Climate)
+
+//Mangalloy (Heat And Climate)
+*/
 //このscriptの読み込みの完了をログに出力
 print("tool.zs loaded!");

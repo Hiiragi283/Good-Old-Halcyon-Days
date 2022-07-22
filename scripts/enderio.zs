@@ -25,11 +25,27 @@ print("Start loading enderio.zs ...");
 //作業台レシピの編集
 	//削除
 		val removeCrafting as IItemStack[] = [
+			<enderio:item_basic_capacitor:*>,
 			<enderio:item_material:11>,
 			<enderio:item_material:12>,
 			<enderio:item_material:13>,
 			<enderio:item_material:14>,
 			<enderio:item_material:15>,
+			<enderio:item_material:60>,
+			<enderio:item_material:65>,
+			<enderio:item_material:71>,
+			<enderio:item_material:73>,
+			<enderio:item_conduit_probe>,
+			<enderio:item_magnet>,
+			<enderio:item_inventory_charger_simple>,
+			<enderio:item_inventory_charger_basic>,
+			<enderio:item_inventory_charger>,
+			<enderio:item_inventory_charger_vibrant>,
+			<enderio:item_extract_speed_upgrade>,
+			<enderio:item_extract_speed_downgrade>,
+			<enderio:block_reservoir>,
+			<enderio:block_omni_reservoir>,
+			<enderio:block_solar_panel:*>,
 		];
 		for i in removeCrafting {
 			HiiragiUtils.removeCrafting(i);
@@ -40,19 +56,9 @@ print("Start loading enderio.zs ...");
 		HiiragiUtils.addCraftingShaped(true, <enderio:item_material:66>, RecipePattern.init(["ABA", "BCB", "ABA"]).map({A:<ore:ingotEndSteel>, B:<enderio:block_end_iron_bars>, C:<ore:gearVibrant>}).ingredients, null, null);
 		HiiragiUtils.addCraftingShapeless(true, <enderio:item_material:38>*3, [<ore:itemSilicon>, <ore:dustBismuth>, <ore:dustBedrock>], null, null);
 		HiiragiUtils.addCraftingShaped(true, <enderio:item_material:51>, RecipePattern.init(["ABA", "CDC", "ABA"]).map({A:<enderio:item_material:50>, B:<ore:dustNetherQuartz>, C:<ore:dyeGray>, D:<dcs_climate:dcs_coating_tool:8>}).ingredients, null, null);
+		HiiragiUtils.addCraftingShapeless(true, <enderio:block_buffer:0>, [<ore:chest>, <ore:itemChassiParts>], null, null);
+		HiiragiUtils.addCraftingShapeless(true, <enderio:block_buffer:1>, [<enderio:item_basic_capacitor:0>, <ore:itemChassiParts>], null, null);
 	//新規
-
-//かまどレシピの編集
-	//削除
-		val removeFurnace as IItemStack[] = [];
-		for i in removeFurnace {
-			HiiragiUtils.removeFurnace(i);
-		}
-	//新規
-		val addFurnace as IIngredient[IItemStack] = {};
-		for output, input in addFurnace {
-			HiiragiUtils.addFurnace(false, output, input);
-		}
 
 //AWレシピの編集
 	//import

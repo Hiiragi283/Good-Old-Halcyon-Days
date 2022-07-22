@@ -37,18 +37,6 @@ print("Start loading chisel.zs ...");
 	//上書き
 	//新規
 
-//かまどレシピの編集
-	//削除
-		val removeFurnace as IItemStack[] = [];
-		for i in removeFurnace {
-			HiiragiUtils.removeFurnace(i);
-		}
-	//新規
-		val addFurnace as IIngredient[IItemStack] = {};
-		for output, input in addFurnace {
-			HiiragiUtils.addFurnace(false, output, input);
-		}
-
 //AWレシピの編集
 	//import
 	//新規
@@ -71,10 +59,97 @@ print("Start loading chisel.zs ...");
 			}
 		}
 
+//Minecraft
+	//Bedrock
+		mods.chisel.Carving.addGroup("bedrock");
+		val bedrock as IItemStack[] = [
+			<minecraft:bedrock>,
+			<extrautils2:decorativebedrock:0>,
+			<extrautils2:decorativebedrock:1>,
+			<extrautils2:decorativebedrock:2>,
+			<dcs_climate:dcs_ore_gemblock:12>,
+			<dcs_climate:dcs_build_bricks:3>,
+		];
+		for i in bedrock {
+			HiiragiUtils.removeCrafting(i);
+			mods.chisel.Carving.addVariation("bedrock", i);
+		}
+
+//Biblio Craft
+	//Fancy lantern (Gold)
+		mods.chisel.Carving.addGroup("biblio_fancy_lantern_gold");
+		for i in 0 to 15 {
+			HiiragiUtils.removeCrafting(<bibliocraft:lanterngold>.definition.makeStack(i));
+			mods.chisel.Carving.addVariation("biblio_fancy_lantern_gold", <bibliocraft:lanterngold>.definition.makeStack(i));
+		}
+	//Fancy lantern (Iron)
+		mods.chisel.Carving.addGroup("biblio_fancy_lantern_iron");
+		for i in 0 to 15 {
+			HiiragiUtils.removeCrafting(<bibliocraft:lanterniron>.definition.makeStack(i));
+			mods.chisel.Carving.addVariation("biblio_fancy_lantern_iron", <bibliocraft:lanterniron>.definition.makeStack(i));
+		}
+	//Fancy Lamp (Gold)
+		mods.chisel.Carving.addGroup("biblio_fancy_lamp_gold");
+		for i in 0 to 15 {
+			HiiragiUtils.removeCrafting(<bibliocraft:lampgold>.definition.makeStack(i));
+			mods.chisel.Carving.addVariation("biblio_fancy_lamp_gold", <bibliocraft:lampgold>.definition.makeStack(i));
+		}
+	//Fancy Lamp (Iron)
+		mods.chisel.Carving.addGroup("biblio_fancy_lamp_iron");
+		for i in 0 to 15 {
+			HiiragiUtils.removeCrafting(<bibliocraft:lampiron>.definition.makeStack(i));
+			mods.chisel.Carving.addVariation("biblio_fancy_lamp_iron", <bibliocraft:lampiron>.definition.makeStack(i));
+		}
+	//Typewriter (Gold)
+		mods.chisel.Carving.addGroup("biblio_typewriter");
+		for i in 0 to 15 {
+			HiiragiUtils.removeCrafting(<bibliocraft:typewriter>.definition.makeStack(i));
+			mods.chisel.Carving.addVariation("biblio_typewriter", <bibliocraft:typewriter>.definition.makeStack(i));
+		}
+	//Sword Pedestal
+		mods.chisel.Carving.addGroup("biblio_sword_pedestal");
+		for i in 0 to 15 {
+			HiiragiUtils.removeCrafting(<bibliocraft:swordpedestal>.definition.makeStack(i));
+			mods.chisel.Carving.addVariation("biblio_sword_pedestal", <bibliocraft:swordpedestal>.definition.makeStack(i));
+		}
+
+//Botania
+	//Azulejo
+		mods.chisel.Carving.addGroup("botania_azulejo");
+		for i in 0 to 15 {
+			HiiragiUtils.removeCrafting(<botania:custombrick>.definition.makeStack(i));
+			mods.chisel.Carving.addVariation("botania_azulejo", <botania:custombrick>.definition.makeStack(i));
+		}
+	//cosmetic
+		mods.chisel.Carving.addGroup("botania_cosmetic");
+		for i in 0 to 32 {
+			HiiragiUtils.removeCrafting(<botania:cosmetic>.definition.makeStack(i));
+			mods.chisel.Carving.addVariation("botania_cosmetic", <botania:cosmetic>.definition.makeStack(i));
+		}
+
 //Ender IO
+	//Self-resetting Lever
+		val selfResettinglever as IItemStack[] = [
+			<enderio:block_self_resetting_lever5>,
+			<enderio:block_self_resetting_lever10>,
+			<enderio:block_self_resetting_lever30>,
+			<enderio:block_self_resetting_lever60>,
+			<enderio:block_self_resetting_lever300>,
+			<enderio:block_self_resetting_lever5i>,
+			<enderio:block_self_resetting_lever10i>,
+			<enderio:block_self_resetting_lever30i>,
+			<enderio:block_self_resetting_lever60i>,
+			<enderio:block_self_resetting_lever300i>,
+		];
+		mods.chisel.Carving.addGroup("enderio_self_resetting_lever");
+		for i in selfResettinglever {
+			recipes.remove(i);
+			mods.chisel.Carving.addVariation("enderio_self_resetting_lever", i);
+		}
+		HiiragiUtils.addCraftingShapeless(false, <enderio:block_self_resetting_lever5>, [<minecraft:lever>, <ore:dustRedstone>], null, null);
 	//Decoration
 		mods.chisel.Carving.addGroup("enderio_decoration");
-		for i in 0 to 15 {
+		for i in 0 to 16 {
 			recipes.remove(<enderio:block_decoration1>.definition.makeStack(i));
 			mods.chisel.Carving.addVariation("enderio_decoration", <enderio:block_decoration1>.definition.makeStack(i));
 			recipes.remove(<enderio:block_decoration2>.definition.makeStack(i));
@@ -84,146 +159,167 @@ print("Start loading chisel.zs ...");
 			recipes.remove(<enderio:block_decoration3>.definition.makeStack(i));
 			mods.chisel.Carving.addVariation("enderio_decoration", <enderio:block_decoration3>.definition.makeStack(i));
 		}
+		HiiragiUtils.addCraftingShapeless(false, <enderio:block_decoration1:0>, [<ore:itemChassiParts>, <ore:itemChassiParts>], null, null);
+	//Redstone Filter
+		val redstoneFilter as IItemStack[] = [
+			<enderio:item_material:60>,
+			<enderio:item_redstone_not_filter>,
+			<enderio:item_redstone_or_filter>,
+			<enderio:item_redstone_and_filter>,
+			<enderio:item_redstone_nor_filter>,
+			<enderio:item_redstone_nand_filter>,
+			<enderio:item_redstone_xor_filter>,
+			<enderio:item_redstone_xnor_filter>,
+			<enderio:item_redstone_toggle_filter>,
+			<enderio:item_redstone_counting_filter>,
+			<enderio:item_redstone_sensor_filter>,
+			<enderio:item_redstone_timer_filter>,
+		];
+		mods.chisel.Carving.addGroup("enderio_redstone_filter");
+		for i in redstoneFilter {
+			HiiragiUtils.addCraftingShapeless(true, i, [i], null, null);
+			mods.chisel.Carving.addVariation("enderio_redstone_filter", i);
+		}
 
 //HaC
 	//Desktop Accessories
-		mods.chisel.Carving.addGroup("desktop_accessories");
+		mods.chisel.Carving.addGroup("dcs_desktop_accessories");
 		for i in 0 to 8 {
-			mods.chisel.Carving.addVariation("desktop_accessories", <dcs_climate:dcs_desktop_accessories>.definition.makeStack(i));
+			mods.chisel.Carving.addVariation("dcs_desktop_accessories", <dcs_climate:dcs_desktop_accessories>.definition.makeStack(i));
 		}
-
 	//Marble
 		mods.chisel.Carving.addVariation("marble", <dcs_climate:dcs_ore_gemblock:6>);
 		mods.chisel.Carving.addVariation("marble", <dcs_climate:dcs_build_bricks:1>);
-
 	//Brass Shaft
-		mods.chisel.Carving.addGroup("shaft_brass");
-		mods.chisel.Carving.addVariation("shaft_brass", <dcs_climate:dcs_device_shaft_s>);
-		mods.chisel.Carving.addVariation("shaft_brass", <dcs_climate:dcs_device_shaft_l>);
-		mods.chisel.Carving.addVariation("shaft_brass", <dcs_climate:dcs_device_shaft_ta>);
-		mods.chisel.Carving.addVariation("shaft_brass", <dcs_climate:dcs_device_shaft_tb>);
-		mods.chisel.Carving.addVariation("shaft_brass", <dcs_climate:dcs_device_shaft_x>);
-		mods.chisel.Carving.addVariation("shaft_brass", <dcs_climate:dcs_device_shaft_switch>);
-
+		mods.chisel.Carving.addGroup("dcs_shaft_brass");
+		mods.chisel.Carving.addVariation("dcs_shaft_brass", <dcs_climate:dcs_device_shaft_s>);
+		mods.chisel.Carving.addVariation("dcs_shaft_brass", <dcs_climate:dcs_device_shaft_l>);
+		mods.chisel.Carving.addVariation("dcs_shaft_brass", <dcs_climate:dcs_device_shaft_ta>);
+		mods.chisel.Carving.addVariation("dcs_shaft_brass", <dcs_climate:dcs_device_shaft_tb>);
+		mods.chisel.Carving.addVariation("dcs_shaft_brass", <dcs_climate:dcs_device_shaft_x>);
+		mods.chisel.Carving.addVariation("dcs_shaft_brass", <dcs_climate:dcs_device_shaft_switch>);
 	//Steel Shaft
-		mods.chisel.Carving.addGroup("shaft_steel");
-		mods.chisel.Carving.addVariation("shaft_steel", <dcs_climate:dcs_device_shaft_s_steel>);
-		mods.chisel.Carving.addVariation("shaft_steel", <dcs_climate:dcs_device_shaft_l_steel>);
-		mods.chisel.Carving.addVariation("shaft_steel", <dcs_climate:dcs_device_shaft_ta_steel>);
-		mods.chisel.Carving.addVariation("shaft_steel", <dcs_climate:dcs_device_shaft_tb_steel>);
-		mods.chisel.Carving.addVariation("shaft_steel", <dcs_climate:dcs_device_shaft_x_steel>);
-		mods.chisel.Carving.addVariation("shaft_steel", <dcs_climate:dcs_device_shaft_switch_steel>);
-
+		mods.chisel.Carving.addGroup("dcs_shaft_steel");
+		mods.chisel.Carving.addVariation("dcs_shaft_steel", <dcs_climate:dcs_device_shaft_s_steel>);
+		mods.chisel.Carving.addVariation("dcs_shaft_steel", <dcs_climate:dcs_device_shaft_l_steel>);
+		mods.chisel.Carving.addVariation("dcs_shaft_steel", <dcs_climate:dcs_device_shaft_ta_steel>);
+		mods.chisel.Carving.addVariation("dcs_shaft_steel", <dcs_climate:dcs_device_shaft_tb_steel>);
+		mods.chisel.Carving.addVariation("dcs_shaft_steel", <dcs_climate:dcs_device_shaft_x_steel>);
+		mods.chisel.Carving.addVariation("dcs_shaft_steel", <dcs_climate:dcs_device_shaft_switch_steel>);
 	//Stainless Steel Shaft
-		mods.chisel.Carving.addGroup("shaft_sus");
-		mods.chisel.Carving.addVariation("shaft_sus", <dcs_climate:dcs_device_shaft_s_sus>);
-		mods.chisel.Carving.addVariation("shaft_sus", <dcs_climate:dcs_device_shaft_l_sus>);
-		mods.chisel.Carving.addVariation("shaft_sus", <dcs_climate:dcs_device_shaft_ta_sus>);
-		mods.chisel.Carving.addVariation("shaft_sus", <dcs_climate:dcs_device_shaft_tb_sus>);
-		mods.chisel.Carving.addVariation("shaft_sus", <dcs_climate:dcs_device_shaft_x_sus>);
-		//mods.chisel.Carving.addVariation("shaft_sus", <dcs_climate:dcs_device_shaft_switch_sus>);
-
+		mods.chisel.Carving.addGroup("dcs_shaft_sus");
+		mods.chisel.Carving.addVariation("dcs_shaft_sus", <dcs_climate:dcs_device_shaft_s_sus>);
+		mods.chisel.Carving.addVariation("dcs_shaft_sus", <dcs_climate:dcs_device_shaft_l_sus>);
+		mods.chisel.Carving.addVariation("dcs_shaft_sus", <dcs_climate:dcs_device_shaft_ta_sus>);
+		mods.chisel.Carving.addVariation("dcs_shaft_sus", <dcs_climate:dcs_device_shaft_tb_sus>);
+		mods.chisel.Carving.addVariation("dcs_shaft_sus", <dcs_climate:dcs_device_shaft_x_sus>);
+		//mods.chisel.Carving.addVariation("dcs_shaft_sus", <dcs_climate:dcs_device_shaft_switch_sus>);
 	//Steel Shaft (Lossless)
-		mods.chisel.Carving.addGroup("shaft_steel_lossless");
-		mods.chisel.Carving.addVariation("shaft_steel_lossless", <hap:shaft_straight_steel>);
-		mods.chisel.Carving.addVariation("shaft_steel_lossless", <hap:shaft_l_shaped_steel>);
-		mods.chisel.Carving.addVariation("shaft_steel_lossless", <hap:shaft_bifurcated_steel>);
-		mods.chisel.Carving.addVariation("shaft_steel_lossless", <hap:shaft_perpendicular_steel>);
-		mods.chisel.Carving.addVariation("shaft_steel_lossless", <hap:shaft_t_shaped_steel>);
-		mods.chisel.Carving.addVariation("shaft_steel_lossless", <hap:shaft_x_shaped_steel>);
-
+		mods.chisel.Carving.addGroup("hap_shaft_steel_lossless");
+		mods.chisel.Carving.addVariation("hap_shaft_steel_lossless", <hap:shaft_straight_steel>);
+		mods.chisel.Carving.addVariation("hap_shaft_steel_lossless", <hap:shaft_l_shaped_steel>);
+		mods.chisel.Carving.addVariation("hap_shaft_steel_lossless", <hap:shaft_bifurcated_steel>);
+		mods.chisel.Carving.addVariation("hap_shaft_steel_lossless", <hap:shaft_perpendicular_steel>);
+		mods.chisel.Carving.addVariation("hap_shaft_steel_lossless", <hap:shaft_t_shaped_steel>);
+		mods.chisel.Carving.addVariation("hap_shaft_steel_lossless", <hap:shaft_x_shaped_steel>);
 	//Stainless Steel Shaft (Lossless)
-		mods.chisel.Carving.addGroup("shaft_sus_lossless");
-		mods.chisel.Carving.addVariation("shaft_sus_lossless", <hap:shaft_straight_sus>);
-		mods.chisel.Carving.addVariation("shaft_sus_lossless", <hap:shaft_l_shaped_sus>);
-		mods.chisel.Carving.addVariation("shaft_sus_lossless", <hap:shaft_bifurcated_sus>);
-		mods.chisel.Carving.addVariation("shaft_sus_lossless", <hap:shaft_perpendicular_sus>);
-		mods.chisel.Carving.addVariation("shaft_sus_lossless", <hap:shaft_t_shaped_sus>);
-		mods.chisel.Carving.addVariation("shaft_sus_lossless", <hap:shaft_x_shaped_sus>);
+		mods.chisel.Carving.addGroup("hap_shaft_sus_lossless");
+		mods.chisel.Carving.addVariation("hap_shaft_sus_lossless", <hap:shaft_straight_sus>);
+		mods.chisel.Carving.addVariation("hap_shaft_sus_lossless", <hap:shaft_l_shaped_sus>);
+		mods.chisel.Carving.addVariation("hap_shaft_sus_lossless", <hap:shaft_bifurcated_sus>);
+		mods.chisel.Carving.addVariation("hap_shaft_sus_lossless", <hap:shaft_perpendicular_sus>);
+		mods.chisel.Carving.addVariation("hap_shaft_sus_lossless", <hap:shaft_t_shaped_sus>);
+		mods.chisel.Carving.addVariation("hap_shaft_sus_lossless", <hap:shaft_x_shaped_sus>);
 
 //Railcraft
 	//Abyssal
-		mods.chisel.Carving.addGroup("abyssal_stone");
-		mods.chisel.Carving.addVariation("abyssal_stone", <railcraft:abyssal_stone>);
-		for i in 0 to 5 {
+		mods.chisel.Carving.addGroup("railcraft_abyssal_stone");
+		mods.chisel.Carving.addVariation("railcraft_abyssal_stone", <railcraft:abyssal_stone>);
+		for i in 0 to 6 {
 			recipes.remove(<railcraft:abyssal>.definition.makeStack(i));
-			mods.chisel.Carving.addVariation("abyssal_stone", <railcraft:abyssal>.definition.makeStack(i));
+			mods.chisel.Carving.addVariation("railcraft_abyssal_stone", <railcraft:abyssal>.definition.makeStack(i));
 		}
 	//Bleached Bone
-		mods.chisel.Carving.addGroup("bleachedbone_stone");
-		for i in 0 to 5 {
+		mods.chisel.Carving.addGroup("railcraft_bleachedbone_stone");
+		for i in 0 to 6 {
 			recipes.remove(<railcraft:bleachedbone>.definition.makeStack(i));
-			mods.chisel.Carving.addVariation("bleachedbone_stone", <railcraft:bleachedbone>.definition.makeStack(i));
+			mods.chisel.Carving.addVariation("railcraft_bleachedbone_stone", <railcraft:bleachedbone>.definition.makeStack(i));
 		}
 	//Blood Stained
-		mods.chisel.Carving.addGroup("bloodstained_stone");
-		for i in 0 to 5 {
+		mods.chisel.Carving.addGroup("railcraft_bloodstained_stone");
+		for i in 0 to 6 {
 			recipes.remove(<railcraft:bloodstained>.definition.makeStack(i));
-			mods.chisel.Carving.addVariation("bloodstained_stone", <railcraft:bloodstained>.definition.makeStack(i));
+			mods.chisel.Carving.addVariation("railcraft_bloodstained_stone", <railcraft:bloodstained>.definition.makeStack(i));
 		}
 	//Frost Bound
-		mods.chisel.Carving.addGroup("frostbound_stone");
-		for i in 0 to 5 {
+		mods.chisel.Carving.addGroup("railcraft_frostbound_stone");
+		for i in 0 to 6 {
 			recipes.remove(<railcraft:frostbound>.definition.makeStack(i));
-			mods.chisel.Carving.addVariation("frostbound_stone", <railcraft:frostbound>.definition.makeStack(i));
+			mods.chisel.Carving.addVariation("railcraft_frostbound_stone", <railcraft:frostbound>.definition.makeStack(i));
 		}
 	//Infernal
-		mods.chisel.Carving.addGroup("infernal_stone");
-		for i in 0 to 5 {
+		mods.chisel.Carving.addGroup("railcraft_infernal_stone");
+		for i in 0 to 6 {
 			recipes.remove(<railcraft:infernal>.definition.makeStack(i));
-			mods.chisel.Carving.addVariation("infernal_stone", <railcraft:infernal>.definition.makeStack(i));
+			mods.chisel.Carving.addVariation("railcraft_infernal_stone", <railcraft:infernal>.definition.makeStack(i));
 		}
 	//Quarried
-		mods.chisel.Carving.addGroup("quarried_stone");
-		mods.chisel.Carving.addVariation("quarried_stone", <railcraft:quarried_stone>);
-		for i in 0 to 5 {
+		mods.chisel.Carving.addGroup("railcraft_quarried_stone");
+		mods.chisel.Carving.addVariation("railcraft_quarried_stone", <railcraft:quarried_stone>);
+		for i in 0 to 6 {
 			recipes.remove(<railcraft:quarried>.definition.makeStack(i));
-			mods.chisel.Carving.addVariation("quarried_stone", <railcraft:quarried>.definition.makeStack(i));
+			mods.chisel.Carving.addVariation("railcraft_quarried_stone", <railcraft:quarried>.definition.makeStack(i));
 		}
 	//Sandy
-		mods.chisel.Carving.addGroup("sandy_stone");
-		for i in 0 to 5 {
+		mods.chisel.Carving.addGroup("railcraft_sandy_stone");
+		for i in 0 to 6 {
 			recipes.remove(<railcraft:sandy>.definition.makeStack(i));
-			mods.chisel.Carving.addVariation("sandy_stone", <railcraft:sandy>.definition.makeStack(i));
+			mods.chisel.Carving.addVariation("railcraft_sandy_stone", <railcraft:sandy>.definition.makeStack(i));
 		}
 	//Badlands
-		mods.chisel.Carving.addGroup("badlands_stone");
-		for i in 0 to 5 {
+		mods.chisel.Carving.addGroup("railcraft_badlands_stone");
+		for i in 0 to 6 {
 			recipes.remove(<railcraft:badlands>.definition.makeStack(i));
-			mods.chisel.Carving.addVariation("badlands_stone", <railcraft:badlands>.definition.makeStack(i));
+			mods.chisel.Carving.addVariation("railcraft_badlands_stone", <railcraft:badlands>.definition.makeStack(i));
 		}
 	//Nether
-		for i in 1 to 5 {
+		for i in 1 to 6 {
 			recipes.remove(<railcraft:nether>.definition.makeStack(i));
 			mods.chisel.Carving.addVariation("netherbrick", <railcraft:nether>.definition.makeStack(i));
 		}
 	//Red Nether
 		mods.chisel.Carving.addGroup("red_nether_stone");
 		mods.chisel.Carving.addVariation("red_nether_stone", <minecraft:red_nether_brick>);
-		for i in 0 to 5 {
+		for i in 1 to 6 {
 			recipes.remove(<railcraft:red_nether>.definition.makeStack(i));
-			mods.chisel.Carving.addVariation("rednether_stone", <railcraft:red_nether>.definition.makeStack(i));
+			mods.chisel.Carving.addVariation("red_nether_stone", <railcraft:red_nether>.definition.makeStack(i));
 		}
 	//Andesite
-		for i in 0 to 5 {
-			recipes.remove(<railcraft:andesite>.definition.makeStack(i));
-			mods.chisel.Carving.addVariation("andesite", <railcraft:andesite>.definition.makeStack(i));
+		for i in 0 to 6 {
+			if (i != 2) {
+				recipes.remove(<railcraft:andesite>.definition.makeStack(i));
+				mods.chisel.Carving.addVariation("andesite", <railcraft:andesite>.definition.makeStack(i));
+			}
 		}
 	//Diorite
-		for i in 0 to 5 {
-			recipes.remove(<railcraft:diorite>.definition.makeStack(i));
-			mods.chisel.Carving.addVariation("diorite", <railcraft:diorite>.definition.makeStack(i));
+		for i in 0 to 6 {
+			if (i != 2) {
+				recipes.remove(<railcraft:diorite>.definition.makeStack(i));
+				mods.chisel.Carving.addVariation("diorite", <railcraft:diorite>.definition.makeStack(i));
+			}
 		}
 	//Granite
-		for i in 0 to 5 {
-			recipes.remove(<railcraft:granite>.definition.makeStack(i));
-			mods.chisel.Carving.addVariation("granite", <railcraft:granite>.definition.makeStack(i));
+		for i in 0 to 6 {
+			if (i != 2) {
+				recipes.remove(<railcraft:granite>.definition.makeStack(i));
+				mods.chisel.Carving.addVariation("granite", <railcraft:granite>.definition.makeStack(i));
+			}
 		}
 	//Pearlized
-		mods.chisel.Carving.addGroup("pearlized_stone");
-		for i in 0 to 5 {
+		mods.chisel.Carving.addGroup("railcraft_pearlized_stone");
+		for i in 0 to 6 {
 			recipes.remove(<railcraft:pearlized>.definition.makeStack(i));
-			mods.chisel.Carving.addVariation("rednether_stone", <railcraft:pearlized>.definition.makeStack(i));
+			mods.chisel.Carving.addVariation("railcraft_pearlized_stone", <railcraft:pearlized>.definition.makeStack(i));
 		}
 
 //Tinker's Contruct / Complement
@@ -244,15 +340,15 @@ print("Start loading chisel.zs ...");
 			recipes.remove(<tconstruct:seared>.definition.makeStack(i));
 		}
 	//Seared Block slab
-		mods.chisel.Carving.addGroup("seared_slab");
+		mods.chisel.Carving.addGroup("tcon_seared_slab");
 		for i in 0 to 7 {
-			mods.chisel.Carving.addVariation("seared_slab", <tconstruct:seared_slab>.definition.makeStack(i));
+			mods.chisel.Carving.addVariation("tcon_seared_slab", <tconstruct:seared_slab>.definition.makeStack(i));
 		}
 		for i in 0 to 3 {
-			mods.chisel.Carving.addVariation("seared_slab", <tconstruct:seared_slab2>.definition.makeStack(i));
+			mods.chisel.Carving.addVariation("tcon_seared_slab", <tconstruct:seared_slab2>.definition.makeStack(i));
 		}
 	//Brownstone Block
-		mods.chisel.Carving.addGroup("brownstone_slab");
+		mods.chisel.Carving.addGroup("tcon_brownstone_slab");
 		for i in 0 to 11 {
 			if (i!=1) {
 				recipes.remove(<tconstruct:brownstone>.definition.makeStack(i));
@@ -260,10 +356,10 @@ print("Start loading chisel.zs ...");
 		}
 	//Brownstone Block Slab
 		for i in 0 to 7 {
-			mods.chisel.Carving.addVariation("brownstone_slab", <tconstruct:brownstone_slab>.definition.makeStack(i));
+			mods.chisel.Carving.addVariation("tcon_brownstone_slab", <tconstruct:brownstone_slab>.definition.makeStack(i));
 		}
 		for i in 0 to 3 {
-			mods.chisel.Carving.addVariation("brownstone_slab", <tconstruct:brownstone_slab2>.definition.makeStack(i));
+			mods.chisel.Carving.addVariation("tcon_brownstone_slab", <tconstruct:brownstone_slab2>.definition.makeStack(i));
 		}
 
 //このscriptの読み込みの完了をログに出力

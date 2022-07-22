@@ -54,13 +54,14 @@ print("Start loading RussellUtils.zs ...");
 	}
 
 //ブロックの登録処理
-	function addBlock (id as string, material as BlockMaterial, hardness as float, resistance as float, tool as string, toolLevel as int, sound as SoundType) {
+	function addBlock (id as string, material as BlockMaterial, hardness as float, resistance as float, tool as string, toolLevel as int, sound as SoundType, isFull as bool) {
 		var block = VanillaFactory.createBlock(id, material);
 		block.setBlockHardness(hardness);
 		block.setBlockResistance(resistance);
 		block.setToolClass(tool);
 		block.setToolLevel(toolLevel);
 		block.setBlockSoundType(sound);
+		block.fullBlock = isFull;
 		block.register();
 	}
 

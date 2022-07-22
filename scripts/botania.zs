@@ -17,6 +17,7 @@ import mods.artisanworktables.builder.RecipeBuilder;
 import mods.botania.Apothecary;
 import mods.botania.ElvenTrade;
 import mods.botania.ManaInfusion;
+import mods.botania.Orechid;
 import mods.botania.PureDaisy;
 import mods.chisel.Carving;
 import mods.ctintegration.util.RecipePattern;
@@ -70,18 +71,6 @@ print("Start loading botania.zs ...");
 			HiiragiUtils.addCraftingShaped(true, <botanicadds:mana_stealer_sword>, RecipePattern.init(["A", "A", "B"]).map({A:<botanicadds:gaiasteel_ingot>, B:<botania:terrasword>.marked("inherit")}).ingredients, HiiragiUtils.inheritStatus(<botanicadds:mana_stealer_sword>), null);
 
 	//新規
-
-//かまどレシピの編集
-	//削除
-			val removeFurnace as IItemStack[] = [];
-			for i in removeFurnace {
-				HiiragiUtils.removeFurnace(i);
-			}
-		//新規
-		val addFurnace as IIngredient[IItemStack] = {};
-		for output, input in addFurnace {
-			HiiragiUtils.addFurnace(false, output, input);
-		}
 
 //AWレシピの編集
 //import
@@ -149,6 +138,17 @@ print("Start loading botania.zs ...");
 		mods.botania.ManaInfusion.addInfusion(<botania:storage:0>*8, <ore:blockTungstensteel>, 27000);
 		mods.botania.ManaInfusion.addInfusion(<botania:storage:0>*8, <enderio:block_alloy:6>, 27000);
 
+//Orechid
+	val removeOrechid as string[] = [
+		"oreAmber",
+		"oreSapphire",
+		"oreApatite",
+		"oreSulfur"
+	];
+	for i in removeOrechid {
+		mods.botania.Orechid.removeOre(i);
+	}
+
 //Pure Daisyによる加工
 	val toRemovePure as IIngredient[] = [
 		<botania:livingwood>
@@ -164,20 +164,8 @@ print("Start loading botania.zs ...");
 //Dreaming Daisyによる加工
 	val dreaming_daisy = mods.morechids.Registry.getFlower("dreaming_daisy");
 	dreaming_daisy.addRecipe(<botania:livingrock>, <botanicadds:dreamrock>, 1);
+	dreaming_daisy.addRecipe(<botania:livingwood>, <botania:dreamwood>, 1);
 
-//アズレージョをChiselで加工するように変更
-	mods.chisel.Carving.addGroup("azulejo");
-	for i in 0 to 15 {
-		HiiragiUtils.removeCrafting(<botania:custombrick>.definition.makeStack(i));
-		mods.chisel.Carving.addVariation("azulejo", <botania:custombrick>.definition.makeStack(i));
-	}
-
-//装飾品をchiselで加工するように変更
-	mods.chisel.Carving.addGroup("botania_cosmetic");
-	for i in 0 to 32 {
-		HiiragiUtils.removeCrafting(<botania:cosmetic>.definition.makeStack(i));
-		mods.chisel.Carving.addVariation("botania_cosmetic", <botania:cosmetic>.definition.makeStack(i));
-	}
 
 //Thaumcraftの注入の儀式
 /*

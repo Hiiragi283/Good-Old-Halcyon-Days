@@ -46,18 +46,6 @@ print("Start loading tic.zs ...");
 	//新規
 		HiiragiUtils.addCraftingShaped(false, <tconstruct:seared:3>, RecipePattern.init(["AA", "AA"]).map({A:<tconstruct:materials:0>}).ingredients, null, null);
 
-//かまどレシピの編集
-	//削除
-		val removeFurnace as IItemStack[] = [];
-		for i in removeFurnace {
-			HiiragiUtils.removeFurnace(i);
-		}
-	//新規
-		val addFurnace as IIngredient[IItemStack] = {};
-		for output, input in addFurnace {
-			HiiragiUtils.addFurnace(false, output, input);
-		}
-
 //AWレシピの編集
     //import
     //新規
@@ -128,10 +116,15 @@ print("Start loading tic.zs ...");
 	HiiragiUtils.addCasting("table", false, <dcs_climate:dcs_device_pail>, <minecraft:bucket>, <liquid:tin>, 288, true, 5*20);
 	HiiragiUtils.addCasting("table", true, <enderio:item_material:11>, <ore:dustBedrock>, <liquid:steel>, 144, true, 5*20);
 	HiiragiUtils.addCasting("table", true, <enderio:item_material:73>, <enderio:item_material:11>, <liquid:dark_steel>, 144, true, 5*20);
-	HiiragiUtils.addCasting("table", true, <enderio:item_material:12>, <enderio:item_material:73>, <liquid:energetic_alloy>, 144, true, 5*20);
-	HiiragiUtils.addCasting("table", true, <enderio:item_material:13>, <enderio:item_material:12>, <liquid:vibrant_alloy>, 144, true, 5*20);
+	HiiragiUtils.addCasting("table", true, <enderio:item_material:12>, <enderio:item_material:11>, <liquid:energetic_alloy>, 144, true, 5*20);
+	HiiragiUtils.addCasting("table", true, <enderio:item_material:13>, <enderio:item_material:11>, <liquid:vibrant_alloy>, 144, true, 5*20);
 	HiiragiUtils.addCasting("table", true, <enderio:item_material:14>, <ore:gemDiamond>, <liquid:pulsating_iron>, 144, true, 5*20);
 	HiiragiUtils.addCasting("table", true, <enderio:item_material:15>, <ore:gemEmerald>, <liquid:vibrant_alloy>, 144, true, 5*20);
+	HiiragiUtils.addCasting("table", false, <thermalfoundation:material:512>, <ore:plateIron>, <liquid:redstone>, 144, true, 5*20);
+	HiiragiUtils.addCasting("table", false, <thermalfoundation:material:513>, <ore:plateGold>, <liquid:redstone>, 144, true, 5*20);
+	HiiragiUtils.addCasting("table", false, <thermalfoundation:material:514>, <ore:plateSilver>, <liquid:redstone>, 144, true, 5*20);
+	HiiragiUtils.addCasting("table", false, <thermalfoundation:material:515>, <ore:plateElectrum>, <liquid:redstone>, 144, true, 5*20);
+	HiiragiUtils.addCasting("table", false, <thermalfoundation:material:640>, <thermalfoundation:material:512>, <liquid:electrum>, 144, true, 5*20);
 
 //このscriptの読み込みの完了をログに出力
 print("tic.zs loaded!");
