@@ -1,7 +1,7 @@
 {
 	title: "{gohd.ingotIron.title}",
 	x: 7.0d,
-	y: 6.0d,
+	y: 3.0d,
 	shape: "diamond",
 	dependencies: [
 		"de863d39"

@@ -1,12 +1,13 @@
 {
 	title: "{gohd.chemicalAge.title}",
 	x: 19.0d,
-	y: 0.0d,
+	y: 2.0d,
 	shape: "square",
 	dependencies: [
-		"80983d24"
+		"72b4363c",
+		"c3208b27"
 	],
-	size: 2.0d,
+	size: 1.5d,
 	tasks: [{
 		uid: "40fdd1cc",
 		type: "item",

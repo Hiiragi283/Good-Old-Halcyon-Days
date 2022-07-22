@@ -1,0 +1,23 @@
+{
+	icon: {
+		id: "ftbquests:custom_icon",
+		tag: {
+			icon: "dcs_climate:textures/items/magic/infernal_flame.png"
+		}
+	},
+	x: 11.0d,
+	y: 6.0d,
+	dependencies: [
+		"0290b797"
+	],
+	tasks: [{
+		uid: "2fb829ef",
+		type: "dimension",
+		dim: -1
+	}],
+	rewards: [{
+		uid: "d644f5dd",
+		type: "item",
+		item: "biomesoplenty:terrarium 1 14"
+	}]
+}

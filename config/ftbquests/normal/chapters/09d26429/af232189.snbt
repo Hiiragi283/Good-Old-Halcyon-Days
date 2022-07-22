@@ -1,7 +1,7 @@
 {
 	title: "{gohd.ingotBrass.title}",
 	x: 9.0d,
-	y: -2.0d,
+	y: 2.0d,
 	shape: "diamond",
 	dependencies: [
 		"58429b88"

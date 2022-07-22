@@ -1,0 +1,51 @@
+{
+	title: "{gohd.thermal.title}",
+	icon: "thermalfoundation:wrench",
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: "",
+	images: [{
+		x: 0.0d,
+		y: -10.0d,
+		width: 8.0d,
+		height: 3.0d,
+		rotation: 0.0d,
+		image: "thermalfoundation:textures/logo.png",
+		hover: [],
+		click: "",
+		dev: false
+	},
+	{
+		x: 0.0d,
+		y: -7.5d,
+		width: 8.0d,
+		height: 3.0d,
+		rotation: 0.0d,
+		image: "thermalexpansion:textures/logo.png",
+		hover: [],
+		click: "",
+		dev: false
+	},
+	{
+		x: 0.0d,
+		y: -5.0d,
+		width: 8.0d,
+		height: 3.0d,
+		rotation: 0.0d,
+		image: "thermaldynamics:textures/logo.png",
+		hover: [],
+		click: "",
+		dev: false
+	},
+	{
+		x: 0.0d,
+		y: -2.5d,
+		width: 8.0d,
+		height: 3.0d,
+		rotation: 0.0d,
+		image: "thermalinnovation:textures/logo.png",
+		hover: [],
+		click: "",
+		dev: false
+	}]
+}

@@ -1,0 +1,32 @@
+{
+	title: "{item.dcs_gemboots_green.name}",
+	icon: "dcs_climate:dcs_gemboots_green",
+	x: 4.0d,
+	y: 6.0d,
+	can_repeat: true,
+	hide_dependency_lines: true,
+	dependencies: [
+		"ba50aed9"
+	],
+	tasks: [{
+		uid: "5929389d",
+		type: "item",
+		items: [{
+			item: "contenttweaker:ticket_uncommon"
+		}],
+		count: 3L
+	},
+	{
+		uid: "afa8fffb",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_color 1 5"
+		}],
+		count: 16L
+	}],
+	rewards: [{
+		uid: "dac9b602",
+		type: "item",
+		item: "dcs_climate:dcs_gemboots_green"
+	}]
+}

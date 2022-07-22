@@ -1,0 +1,15 @@
+{
+	title: "{gohd.thermal.title}",
+	icon: "thermalfoundation:wrench",
+	x: 0.0d,
+	y: 0.0d,
+	shape: "square",
+	dependencies: [
+		"a67c53c5"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "e17ca9f3",
+		type: "checkmark"
+	}]
+}

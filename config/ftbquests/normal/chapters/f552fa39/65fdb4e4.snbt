@@ -12,5 +12,10 @@
 		items: [{
 			item: "dcs_climate:dcs_device_windmill"
 		}]
+	}],
+	rewards: [{
+		uid: "9df3eef3",
+		type: "item",
+		item: "dcs_climate:dcs_torque_checker"
 	}]
 }

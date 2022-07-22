@@ -1,7 +1,7 @@
 {
 	title: "{gohd.ingotNickelsilver.title}",
-	x: 13.5d,
-	y: 2.0d,
+	x: 13.0d,
+	y: -2.0d,
 	shape: "diamond",
 	dependencies: [
 		"ae72043e"

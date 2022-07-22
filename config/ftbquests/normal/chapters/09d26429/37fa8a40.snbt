@@ -1,15 +1,14 @@
 {
-	x: 14.5d,
-	y: -3.0d,
-	description: "{link.youtu.be.2P2TC8Tlq7M}",
+	x: 17.0d,
+	y: 4.0d,
 	dependencies: [
-		"6724c976"
+		"2981f6de"
 	],
 	tasks: [{
 		uid: "26b6f510",
 		type: "item",
 		items: [{
-			item: "dcs_climate:dcs_color_changer"
+			item: "enderio:item_material"
 		}]
 	}]
 }

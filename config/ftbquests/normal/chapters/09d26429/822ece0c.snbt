@@ -1,0 +1,14 @@
+{
+	x: 7.0d,
+	y: 6.0d,
+	dependencies: [
+		"6c77c9cd"
+	],
+	tasks: [{
+		uid: "99566b1a",
+		type: "item",
+		items: [{
+			item: "tcomplement:alloy_tank"
+		}]
+	}]
+}

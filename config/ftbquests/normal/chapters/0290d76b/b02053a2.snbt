@@ -1,0 +1,54 @@
+{
+	title: "{gohd.custom.travelers_sleeping_bag.name}",
+	icon: {
+		id: "openblocks:sleeping_bag",
+		tag: {
+			ench: [{
+				lvl: 1s,
+				id: 37s
+			}],
+			display: {
+				LocName: "gohd.custom.travelers_sleeping_bag.name"
+			}
+		}
+	},
+	x: 4.0d,
+	y: 4.0d,
+	hide_dependency_lines: true,
+	dependencies: [
+		"ba50aed9"
+	],
+	tasks: [{
+		uid: "22560ac9",
+		type: "item",
+		items: [{
+			item: "contenttweaker:ticket_uncommon"
+		}],
+		count: 3L
+	},
+	{
+		uid: "51c70621",
+		type: "item",
+		items: [{
+			item: "openblocks:sleeping_bag"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "1d6a0260",
+		type: "item",
+		item: {
+			id: "openblocks:sleeping_bag",
+			tag: {
+				ench: [{
+					lvl: 1s,
+					id: 37s
+				}],
+				display: {
+					LocName: "gohd.custom.travelers_sleeping_bag.name"
+				}
+			}
+		}
+	}]
+}

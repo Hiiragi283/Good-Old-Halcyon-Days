@@ -1,7 +1,7 @@
 {
 	icon: "dcs_climate:dcs_ore_dustblock 1 6",
-	x: 12.5d,
-	y: 1.0d,
+	x: 12.0d,
+	y: -1.0d,
 	dependencies: [
 		"62b97ff1"
 	],

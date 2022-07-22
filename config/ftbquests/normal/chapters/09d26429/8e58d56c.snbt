@@ -1,14 +1,14 @@
 {
-	x: 19.0d,
-	y: 2.0d,
+	x: 21.0d,
+	y: 4.0d,
 	dependencies: [
 		"885c0e70"
 	],
 	tasks: [{
-		uid: "4a027dcf",
+		uid: "73a948dc",
 		type: "item",
 		items: [{
-			item: "dcs_climate:dcs_oredust 1 10"
+			item: "enderio:item_material 1 51"
 		}]
 	}]
 }

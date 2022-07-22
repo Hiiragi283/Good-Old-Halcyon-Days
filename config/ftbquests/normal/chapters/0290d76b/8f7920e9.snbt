@@ -1,4 +1,5 @@
 {
+	icon: "thermalexpansion:augment 1 336",
 	x: 2.0d,
 	y: -1.0d,
 	dependencies: [

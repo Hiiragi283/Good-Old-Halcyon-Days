@@ -1,7 +1,8 @@
 {
 	title: "{gohd.ingotBronze.title}",
+	icon: "thermalfoundation:material 1 163",
 	x: 9.0d,
-	y: 2.0d,
+	y: -2.0d,
 	shape: "diamond",
 	dependencies: [
 		"607a8f56"
@@ -11,7 +12,18 @@
 		uid: "775c4990",
 		type: "item",
 		items: [{
-			item: "dcs_climate:dcs_ingot 1 9"
+			ForgeCaps: {
+				Parent: {
+					data: "ingotBronze",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any ingotBronze"
+				}
+			}
 		}]
 	}],
 	rewards: [{

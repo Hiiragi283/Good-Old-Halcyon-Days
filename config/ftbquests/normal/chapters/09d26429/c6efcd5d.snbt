@@ -1,12 +1,13 @@
 {
 	title: "{gohd.industrialAge.title}",
-	x: 23.5d,
-	y: 2.0d,
+	x: 21.0d,
+	y: 0.0d,
 	shape: "square",
 	dependencies: [
-		"b2567136"
+		"b2567136",
+		"885c0e70"
 	],
-	size: 2.0d,
+	size: 1.5d,
 	tasks: [{
 		uid: "57f3732e",
 		type: "item",
