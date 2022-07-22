@@ -22,7 +22,7 @@
 	"dustblock_electrum": {
 		"recipe_type": "ADD",
 		"output": {
-			"item": "techreborn:storage:7"
+			"item": "thermalfoundation:storage_alloy:1"
 		},
 		"climate_temperature": "SMELTING",
 		"climate_airflow": "TIGHT",
@@ -33,7 +33,7 @@
 	"dustblock_platinum": {
 		"recipe_type": "ADD",
 		"output": {
-			"item": "techreborn:storage:9"
+			"item": "thermalfoundation:storage:6"
 		},
 		"climate_temperature": "UHT",
 		"climate_airflow": "TIGHT",
@@ -52,17 +52,6 @@
 			"item": "contenttweaker:dustblock_cobalt:0"
 		}
 	},
-	"dustblock_tungstensteel": {
-		"recipe_type": "ADD",
-		"output": {
-			"item": "techreborn:storage2:0"
-		},
-		"climate_temperature": "UHT",
-		"climate_airflow": "TIGHT",
-		"input": {
-			"item": "contenttweaker:dustblock_tungstensteel:0"
-		}
-	},
 	"dustblock_lead": {
 		"recipe_type": "ADD",
 		"output": {
@@ -72,17 +61,6 @@
 		"climate_airflow": "TIGHT",
 		"input": {
 			"item": "contenttweaker:dustblock_lead:0"
-		}
-	},
-	"ingot_refined_iron": {
-		"recipe_type": "ADD",
-		"output": {
-			"item": "techreborn:ingot:19"
-		},
-		"climate_temperature": "UHT",
-		"climate_airflow": "TIGHT",
-		"input": {
-			"ore_dict": "ingotIron"
 		}
 	}
 }

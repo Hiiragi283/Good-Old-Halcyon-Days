@@ -17,15 +17,5 @@
 		"input": {
 			"item": "samplemod:remove_input:0"
 		}
-	},
-	"add_oreBauxite": {
-		"recipe_type": "ADD",
-		"output_primary": {
-			"item": "techreborn:dust:5",
-			"count": 2
-		},
-		"input": {
-			"ore_dict": "oreBauxite"
-		}
 	}
 }
