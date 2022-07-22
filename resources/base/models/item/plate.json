@@ -1,6 +1,6 @@
 {
 	"parent": "item/generated",
 	"textures": {
-		"layer0": "techreborn:items/plate/aluminum_plate"
+		"layer0": "thermalfoundation:items/material/plate_aluminum"
 	}
 }

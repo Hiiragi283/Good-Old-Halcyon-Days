@@ -1,4 +1,8 @@
 
+#custom Item Name
+gohd.custom.upstreaming_hang_glider.name=Upstreaming Hang Glider
+gohd.custom.travelers_sleeping_bag.name=Traveler's Sleeping Bag
+
 #Tooltips
 gohd.tooltip.hidden.name=§6Hide from JEI§r but §aavailable§r
 gohd.tooltip.removed.name=§4Recipe Removed!§r
@@ -50,9 +54,6 @@ gohd.09d26429.47a3fa84.subtitle=Better than Original
 gohd.09d26429.4fb7c614.title=First Step for Tinker's Tool
 gohd.09d26429.42aa3c8a.title=Dirty Deeds Done Dirt Cheap
 gohd.09d26429.8e6a9cab.title=Wooden Sticks from Saplings
-gohd.09d26429.820ea2c4.title=Tier 1: Stone Tool
-gohd.09d26429.8e32b0c6.title=Tier 1+: Obsidian Tool
-gohd.09d26429.e0c2b03d.title=Tier 1+: Flint Tool
 gohd.09d26429.06357b7e.desc1=Green Vein is TOOOO hard to find, so I recommend to buy Green Gold Ring at Shop in Quest Page.
 
 gohd.09d26429.52739832.desc.1=You can get the first fire by right-clicking Planks with two Wooden Sticks
@@ -60,7 +61,6 @@ gohd.09d26429.a1433ad5.title=My mouth is gravelly-gravelly lol
 gohd.09d26429.efbbdf1d.desc.1=You can make Unfired Casting Basin by right-clicking grout with Wooden Stick only ONCE
 gohd.09d26429.efbbdf1d.desc.2=And Unfired Casting Table by doing the same TWICE
 gohd.09d26429.6cd694d7.desc.1=Unfired Casting Channel needs the way of ceramic art THREE TIMES
-gohd.09d26429.4c90a4fb.title=Tier 2: Bronze Tool
 
 gohd.09d26429.bf14d483.title=Bright but Cold ?
 
@@ -71,9 +71,9 @@ gohd.09d26429.6777b90d.subtitle=Not using as Pickaxe but having INFINITY durabil
 gohd.middleAge.title=Middle Age
 gohd.middleAge.title1=Middle Age (Nickelsilver)
 gohd.middleAge.title2=Middle Age (Steel)
-gohd.09d26429.a52d16e4.subtitle=Alice in Climateland
-gohd.09d26429.78e293e2.subtitle=It's time to think whether you should pour liquid down the sink.
-gohd.09d26429.d70f7431.subtitle=Better than Seared Faucet
+//gohd.09d26429.a52d16e4.subtitle=Alice in Climateland
+//gohd.09d26429.78e293e2.subtitle=It's time to think whether you should pour liquid down the sink.
+//gohd.09d26429.d70f7431.subtitle=Better than Seared Faucet
 gohd.09d26429.f9c67698.title=First Advanced Climate Smelting
 gohd.09d26429.01c0841d.subtitle=Another way for Getting Iron
 gohd.09d26429.8b4775e4.title=UHT Climate Smelting
@@ -102,13 +102,13 @@ gohd.cccede9d.4b446108.title=Blue Vein
 gohd.cccede9d.94dd1723.title=White vein
 gohd.cccede9d.fcea16fa.title=Black Vein
 gohd.cccede9d.d70f01cb.title=Skarn Deposit
-gohd.cccede9d.d70f01cb.desc1=Skarn deposit §lrarely§r spawn many biomes and have three types.
+gohd.cccede9d.d70f01cb.desc1=Skarn deposit §lRARELY§r spawn many biomes and have three types.
 gohd.cccede9d.1313a69a.title=Skarn Deposit (Stone)
-gohd.cccede9d.1313a69a.desc1=Skarn Deposit (Stone) §lrarely§r spawns under the Forest.
+gohd.cccede9d.1313a69a.desc1=Skarn Deposit (Stone) §lRARELY§r spawns under the Forest.
 gohd.cccede9d.3634dbb2.title=Skarn Deposit (Lime)
-gohd.cccede9d.3634dbb2.desc1=Skarn Deposit (Stone) §lrarely§r spawns under the Desert, Plains and Savanna.
+gohd.cccede9d.3634dbb2.desc1=Skarn Deposit (Stone) §lRARELY§r spawns under the Desert, Plains and Savanna.
 gohd.cccede9d.cd18f633.title=Skarn Deposit (Hornfels)
-gohd.cccede9d.cd18f633.desc1=Skarn Deposit (Stone) §lrarely§r spawns under the Sea and Swamp.
+gohd.cccede9d.cd18f633.desc1=Skarn Deposit (Stone) §lRARELY§r spawns under the Sea and Swamp.
 gohd.cccede9d.33f25c86.title=Guano Vein
 gohd.cccede9d.33f25c86.desc1=Guano spawns at the bottom of the Sea.
 gohd.cccede9d.bdc29cf2.desc1=Travertine is generated in the Hot Spring that spawns in the Cold Mountaion.
@@ -118,17 +118,48 @@ gohd.cccede9d.8ac28a20.desc1=Abyssal Geode spawns at the bottom of the Sea.
 gohd.cccede9d.1a7f5909.subtitle=tile.railcraft.ore.magic.name
 gohd.cccede9d.1a7f5909.desc1=Firestone Ore spawns under the Lava Ocean in the Nether.
 
-## Devide
+## Device
 gohd.device.title=Devices
 
-## Shop
+## Shop gohd.0290d76b.
 gohd.shop.title=Quest Shop
 gohd.shop.desc1=In this Quest Page, you can buy some useful items !
 gohd.shop.desc2=All you need to buy is Tickets, that are obtained from reward of Quests.
+gohd.0290d76b.ff5f1169.title=Starter Kit for Travelers
+
+## Ender IO
+gohd.enderio.title=Ender IO
+
+## Mekanism
+gohd.mekanism.title=Mekanism
+
+## Thermal Series
+gohd.thermal.title=Thermal Series
+
+## Tools
+gohd.tool.title=Tools
+### Tier 0
+gohd.tool.stone.title=Tier 0: Stone Tool
+gohd.tool.obsidian.title=Tier 0+: Obsidian Tool
+gohd.tool.flint.title=Tier 0+: Flint Tool
+### Tier 1
+gohd.tool.brone.title=Tier 1: Bronze Tool
+gohd.tool.brass.title=Tier 1: Brass Tool
+### Tier 2
+gohd.tool.nickelsilver.title=Tier 2: Nickelsilver Tool
+gohd.tool.steel.title=Tier 2+: Steel Tool
+### Tier 3
+gohd.tool.sus.title=Tier 3: Stainless Tool
+gohd.tool.toolsteel.title=Tier 3+: Tool Steel Tool
+### Tier 4
+gohd.tool.titanium.title=Tier 4: Titanium Alloy Tool
+gohd.tool.mangalloy.title=Tier 4+: Mangalloy Tool
 
 ## Reward Table
 gohd.reward.ring_gold.title=Gold Rings
 gohd.reward.ring_silver.title=Silver Rings
+gohd.reward.slimesling.title=Slimeslings
+gohd.reward.slime_boots.title=Slime Boots
 
 #Special Links
 

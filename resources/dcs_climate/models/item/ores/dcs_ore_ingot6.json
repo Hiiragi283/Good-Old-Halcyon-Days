@@ -1,6 +1,6 @@
 {
 	"parent": "item/generated",
 	"textures": {
-		"layer0": "techreborn:items/ingot/refined_iron_ingot"
+		"layer0": "railcraft:items/ingot_zinc"
 	}
 }
