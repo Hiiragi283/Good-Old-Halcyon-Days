@@ -118,27 +118,27 @@ print("Start loading HiiragiUtils.zs ...");
 	}
 
 //レシピ名を自動的に生成しつつレシピを登録する関数
-	static recipeID as int = 0;
+	//static recipeID as int = 0;
 	function removeCrafting (output as IItemStack) {
 		recipes.remove(output, true);
 	}
 
 	function addCraftingShaped (remove as bool, output as IItemStack, input as IIngredient[][], recipeFunction as IRecipeFunction, recipeAction as IRecipeAction) {
-		var recipeName as string = getNameItem(output) ~ "_" ~ recipeID;
+		//var recipeName as string = getNameItem(output) ~ "_" ~ recipeID;
 		if (remove) {
 			removeCrafting(output);
 		}
 		recipes.addShaped(recipeName, output, input, recipeFunction, recipeAction);
-		recipeID += 1;
+		//recipeID += 1;
 	}
 
 	function addCraftingShapeless (remove as bool, output as IItemStack, input as IIngredient[], recipeFunction as IRecipeFunction, recipeAction as IRecipeAction) {
-		var recipeName as string = getNameItem(output) ~ "_" ~ recipeID;
+		//var recipeName as string = getNameItem(output) ~ "_" ~ recipeID;
 		if (remove) {
 			removeCrafting(output);
 		}
 		recipes.addShapeless(recipeName, output, input, recipeFunction, recipeAction);
-		recipeID += 1;
+		//recipeID += 1;
 	}
 
 //アイテムの等価交換を実装するレシピ
