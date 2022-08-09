@@ -1,11 +1,11 @@
 {
 	"images": {
 		"title": {
-			"image": "gohd:textures/gui/title/gohd.png",
+			"image": "custommainmenu:textures/gui/minecraft.png",
 			"posX": -137,
 			"posY": 30,
-			"width": 272,
-			"height": 78,
+			"width": 512,
+			"height": 512,
 			"alignment": "top_center"
 		}
 	},
@@ -116,9 +116,12 @@
 			"alignment": "top_center",
 			"texts": "file:minecraft:texts/splashes.txt"
 		},
-		"background": {
-			"image": "gohd:textures/gui/title/background/background.png",
-			"mode": "fill"
+		"panorama": {
+			"images": "minecraft:textures/gui/title/background/panorama_%c.png",
+			"animate": true,
+			"animationSpeed": 1,
+			"blur": true,
+			"gradient": false
 		}
 	}
 }
