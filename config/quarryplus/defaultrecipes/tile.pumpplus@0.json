@@ -1,0 +1,44 @@
+{
+  "id": "quarryplus:builtin_pumpplus",
+  "type": "quarryplus:workbench_recipe",
+  "ingredients": [
+    {
+      "item": "minecraft:gold_ingot",
+      "data": 0,
+      "count": 16
+    },
+    {
+      "item": "minecraft:iron_ingot",
+      "data": 0,
+      "count": 48
+    },
+    {
+      "item": "minecraft:redstone",
+      "data": 0,
+      "count": 64
+    },
+    {
+      "item": "minecraft:glass",
+      "data": 0,
+      "count": 512
+    },
+    {
+      "item": "minecraft:cactus",
+      "data": 0,
+      "count": 80
+    }
+  ],
+  "energy": 32000.0,
+  "showInJEI": true,
+  "result": {
+    "item": "quarryplus:pumpplus",
+    "data": 0,
+    "count": 1
+  },
+  "conditions": [
+    {
+      "type": "quarryplus:machine_enabled",
+      "value": "PumpPlus"
+    }
+  ]
+}

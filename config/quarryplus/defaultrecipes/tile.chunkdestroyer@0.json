@@ -1,0 +1,64 @@
+{
+  "id": "quarryplus:builtin_chunkdestroyer",
+  "type": "quarryplus:workbench_recipe",
+  "ingredients": [
+    {
+      "item": "quarryplus:quarry",
+      "data": 0,
+      "count": 3
+    },
+    {
+      "item": "quarryplus:pumpplus",
+      "data": 0,
+      "count": 2
+    },
+    {
+      "item": "quarryplus:tool",
+      "data": 1,
+      "count": 2
+    },
+    {
+      "item": "quarryplus:markerplus",
+      "data": 0,
+      "count": 3
+    },
+    {
+      "item": "minecraft:diamond_block",
+      "data": 0,
+      "count": 8
+    },
+    {
+      "item": "minecraft:emerald_block",
+      "data": 0,
+      "count": 8
+    },
+    {
+      "item": "minecraft:ender_eye",
+      "data": 0,
+      "count": 64
+    },
+    {
+      "item": "minecraft:nether_star",
+      "data": 0,
+      "count": 2
+    },
+    {
+      "item": "minecraft:skull",
+      "data": 5,
+      "count": 1
+    }
+  ],
+  "energy": 320000.0,
+  "showInJEI": true,
+  "result": {
+    "item": "quarryplus:chunkdestroyer",
+    "data": 0,
+    "count": 1
+  },
+  "conditions": [
+    {
+      "type": "quarryplus:machine_enabled",
+      "value": "ChunkDestroyer"
+    }
+  ]
+}

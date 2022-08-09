@@ -1,24 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <enderio:recipes xmlns:enderio="http://enderio.com/recipes" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://enderio.com/recipes recipes.xsd ">
 
-<recipe name="Compatibility: Glass Pane" disabled="true"></recipe>
+<!--Remove Recipes-->
+	<recipe name="Compatibility: Glass Pane" disabled="true"></recipe>
+	<recipe name="Tweak: Stick from Wood" disabled="true"></recipe>
+	<recipe name="Tweak: Chest from Wood" disabled="true"></recipe>
+	<recipe name="Tweak: Wood Hopper" disabled="true"></recipe>
+	<recipe name="Gear, Wood" disabled="true"></recipe>
+	<recipe name="Gear, ae2 messes things up" disabled="true"></recipe>
+	<recipe name="Gear, just to be sure" disabled="true"></recipe>
+	<recipe name="Gear, better save than sorry" disabled="true"></recipe>
+	<recipe name="Gear, Stone" disabled="true"></recipe>
+	<recipe name="Gear, Stone, Upgrade" disabled="true"></recipe>
 
-<recipe name="Tweak: Stick from Wood" disabled="true"></recipe>
+<!--Add Recipes-->
+	<recipe name="Alloy: Calculation Processor" required="true">
+		<alloying energy="10000" exp="0">
+			<input name="appliedenergistics2:material:16"/>
+			<input name="dustRedstone"/>
+			<input name="appliedenergistics2:material:20"/>
+			<output name="appliedenergistics2:material:23"/>
+		</alloying>
+	</recipe>
+	<recipe name="Alloy: Engineering Processor" required="true">
+		<alloying energy="10000" exp="0">
+			<input name="appliedenergistics2:material:17"/>
+			<input name="dustRedstone"/>
+			<input name="appliedenergistics2:material:20"/>
+			<output name="appliedenergistics2:material:24"/>
+		</alloying>
+	</recipe>
+	<recipe name="Alloy: Logic Processor" required="true">
+		<alloying energy="10000" exp="0">
+			<input name="appliedenergistics2:material:18"/>
+			<input name="dustRedstone"/>
+			<input name="appliedenergistics2:material:20"/>
+			<output name="appliedenergistics2:material:25"/>
+		</alloying>
+	</recipe>
+	<recipe name="Alloy: Evil Infused Ingot" required="true">
+		<alloying energy="120000" exp="0">
+			<input name="ingotEndSteel"/>
+			<input name="dropofevil"/>
+			<input name="botanicadds:gaia_shard"/>
+			<output name="extrautils2:ingredients:17"/>
+		</alloying>
+	</recipe>
 
-<recipe name="Tweak: Chest from Wood" disabled="true"></recipe>
-
-<recipe name="Tweak: Wood Hopper" disabled="true"></recipe>
-
-<recipe name="Gear, Wood" disabled="true"></recipe>
-
-<recipe name="Gear, ae2 messes things up" disabled="true"></recipe>
-
-<recipe name="Gear, just to be sure" disabled="true"></recipe>
-
-<recipe name="Gear, better save than sorry" disabled="true"></recipe>
-
-<recipe name="Gear, Stone" disabled="true"></recipe>
-
-<recipe name="Gear, Stone, Upgrade" disabled="true"></recipe>
+	<recipe name="Tank: Red Drop" required="true">
+		<tanking type="FILL" logic="NONE">
+			<input name="minecraft:glass_bottle"/>
+			<fluid name="drop_red" amount="250"/>
+			<output name="dcs_climate:dcs_color:2"/>
+		</tanking>
+	</recipe>
+	<recipe name="Tank: Green Drop" required="true">
+		<tanking type="FILL" logic="NONE">
+			<input name="minecraft:glass_bottle"/>
+			<fluid name="drop_green" amount="250"/>
+			<output name="dcs_climate:dcs_color:1"/>
+		</tanking>
+	</recipe>
+	<recipe name="Tank: Blue Drop" required="true">
+		<tanking type="FILL" logic="NONE">
+			<input name="minecraft:glass_bottle"/>
+			<fluid name="drop_blue" amount="250"/>
+			<output name="dcs_climate:dcs_color:0"/>
+		</tanking>
+	</recipe>
+	<recipe name="Tank: White Drop" required="true">
+		<tanking type="FILL" logic="NONE">
+			<input name="minecraft:glass_bottle"/>
+			<fluid name="drop_white" amount="250"/>
+			<output name="dcs_climate:dcs_color:4"/>
+		</tanking>
+	</recipe>
+	<recipe name="Tank: Black Drop" required="true">
+		<tanking type="FILL" logic="NONE">
+			<input name="minecraft:glass_bottle"/>
+			<fluid name="drop_black" amount="250"/>
+			<output name="dcs_climate:dcs_color:3"/>
+		</tanking>
+	</recipe>
 
 </enderio:recipes>

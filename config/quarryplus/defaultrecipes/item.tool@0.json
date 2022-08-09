@@ -1,0 +1,43 @@
+{
+  "id": "quarryplus:builtin_item.statuschecker",
+  "type": "quarryplus:workbench_recipe",
+  "ingredients": [
+    {
+      "item": "minecraft:diamond",
+      "data": 0,
+      "count": 4
+    },
+    {
+      "item": "minecraft:gold_ingot",
+      "data": 0,
+      "count": 16
+    },
+    {
+      "item": "minecraft:iron_ingot",
+      "data": 0,
+      "count": 24
+    },
+    {
+      "item": "minecraft:redstone",
+      "data": 0,
+      "count": 32
+    },
+    {
+      "item": "minecraft:dye",
+      "data": 4,
+      "count": 8
+    },
+    {
+      "item": "minecraft:obsidian",
+      "data": 0,
+      "count": 4
+    }
+  ],
+  "energy": 8000.0,
+  "showInJEI": true,
+  "result": {
+    "item": "quarryplus:tool",
+    "data": 0,
+    "count": 1
+  }
+}

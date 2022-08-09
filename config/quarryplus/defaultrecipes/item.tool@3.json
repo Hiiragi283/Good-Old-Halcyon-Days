@@ -1,0 +1,33 @@
+{
+  "id": "quarryplus:builtin_item.y_setter",
+  "type": "quarryplus:workbench_recipe",
+  "ingredients": [
+    {
+      "item": "minecraft:gold_ingot",
+      "data": 0,
+      "count": 32
+    },
+    {
+      "item": "minecraft:repeater",
+      "data": 0,
+      "count": 16
+    },
+    {
+      "item": "minecraft:comparator",
+      "data": 0,
+      "count": 8
+    },
+    {
+      "item": "minecraft:quartz",
+      "data": 0,
+      "count": 64
+    }
+  ],
+  "energy": 8000.0,
+  "showInJEI": true,
+  "result": {
+    "item": "quarryplus:tool",
+    "data": 3,
+    "count": 1
+  }
+}

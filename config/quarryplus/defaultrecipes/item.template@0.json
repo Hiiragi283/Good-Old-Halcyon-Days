@@ -1,0 +1,26 @@
+{
+  "id": "quarryplus:builtin_item.template",
+  "type": "quarryplus:workbench_recipe",
+  "ingredients": [
+    {
+      "item": "quarryplus:tool",
+      "data": 1,
+      "count": 2
+    },
+    {
+      "item": "minecraft:chest",
+      "data": 0,
+      "count": 4
+    }
+  ],
+  "energy": 8000.0,
+  "showInJEI": true,
+  "result": {
+    "item": "quarryplus:template",
+    "data": 0,
+    "count": 1,
+    "nbt": {
+      "HideFlags": 1
+    }
+  }
+}

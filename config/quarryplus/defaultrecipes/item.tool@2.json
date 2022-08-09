@@ -1,0 +1,28 @@
+{
+  "id": "quarryplus:builtin_item.liquidselector",
+  "type": "quarryplus:workbench_recipe",
+  "ingredients": [
+    {
+      "item": "minecraft:iron_ingot",
+      "data": 0,
+      "count": 64
+    },
+    {
+      "item": "minecraft:lava_bucket",
+      "data": 0,
+      "count": 2
+    },
+    {
+      "item": "minecraft:water_bucket",
+      "data": 0,
+      "count": 2
+    }
+  ],
+  "energy": 32000.0,
+  "showInJEI": true,
+  "result": {
+    "item": "quarryplus:tool",
+    "data": 2,
+    "count": 1
+  }
+}

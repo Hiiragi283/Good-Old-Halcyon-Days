@@ -50,5 +50,26 @@
 		},
 		"climate_temperature": "KILN (If this is removed, it will be forced to NORMAL.)",
 		"comment": "At a minimum, either an item or a fluid is required for input."
+	},
+	"add_certus_quartz": {
+		"recipe_type": "ADD",
+		"output_primary": {
+			"item": "appliedenergistics2:material:0"
+		},
+		"output_secondary": {
+			"item": "appliedenergistics2:material:0",
+			"chance": 0.5
+		},
+		"climate_temperature": "SMELTING",
+		"input_fluid_primary": {
+			"amount": 1000,
+			"fluid": "dcs.tonic_water"
+		},
+		"catalyst": {
+			"item": "botania:quartz:1"
+		},
+		"input": [
+			"dustNetherQuartz"
+		]
 	}
 }

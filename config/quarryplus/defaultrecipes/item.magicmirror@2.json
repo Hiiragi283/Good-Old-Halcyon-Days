@@ -1,0 +1,38 @@
+{
+  "id": "quarryplus:builtin_item.overworldmirror",
+  "type": "quarryplus:workbench_recipe",
+  "ingredients": [
+    {
+      "item": "minecraft:ender_eye",
+      "data": 0,
+      "count": 16
+    },
+    {
+      "item": "quarryplus:magicmirror",
+      "data": 0,
+      "count": 2
+    },
+    {
+      "item": "minecraft:obsidian",
+      "data": 0,
+      "count": 8
+    },
+    {
+      "item": "minecraft:dirt",
+      "data": 0,
+      "count": 16
+    },
+    {
+      "item": "minecraft:planks",
+      "data": 0,
+      "count": 16
+    }
+  ],
+  "energy": 3200.0,
+  "showInJEI": true,
+  "result": {
+    "item": "quarryplus:magicmirror",
+    "data": 2,
+    "count": 1
+  }
+}

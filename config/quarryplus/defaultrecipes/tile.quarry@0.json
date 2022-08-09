@@ -1,0 +1,44 @@
+{
+  "id": "quarryplus:builtin_newquarry",
+  "type": "quarryplus:workbench_recipe",
+  "ingredients": [
+    {
+      "item": "minecraft:diamond",
+      "data": 0,
+      "count": 32
+    },
+    {
+      "item": "minecraft:gold_ingot",
+      "data": 0,
+      "count": 32
+    },
+    {
+      "item": "minecraft:iron_ingot",
+      "data": 0,
+      "count": 64
+    },
+    {
+      "item": "minecraft:redstone",
+      "data": 0,
+      "count": 16
+    },
+    {
+      "item": "minecraft:ender_pearl",
+      "data": 0,
+      "count": 4
+    }
+  ],
+  "energy": 32000.0,
+  "showInJEI": true,
+  "result": {
+    "item": "quarryplus:quarry",
+    "data": 0,
+    "count": 1
+  },
+  "conditions": [
+    {
+      "type": "quarryplus:machine_enabled",
+      "value": "NewQuarry"
+    }
+  ]
+}

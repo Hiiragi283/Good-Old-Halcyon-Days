@@ -19,6 +19,50 @@
 		"climate_temperature": "COLD",
 		"climate_humidity": "WET"
 	},
+	"dustblock_alubrass": {
+		"recipe_type": "ADD",
+		"output": {
+			"item": "tconstruct:metal:5"
+		},
+		"climate_temperature": "KILN",
+		"climate_airflow": "TIGHT",
+		"input": {
+			"item": "contenttweaker:dustblock_alubrass:0"
+		}
+	},
+	"dustblock_ardite": {
+		"recipe_type": "ADD",
+		"output": {
+			"item": "tconstruct:metal:1"
+		},
+		"climate_temperature": "UHT",
+		"climate_airflow": "TIGHT",
+		"input": {
+			"item": "contenttweaker:dustblock_ardite:0"
+		}
+	},
+	"dustblock_cobalt": {
+		"recipe_type": "ADD",
+		"output": {
+			"item": "tconstruct:metal:0"
+		},
+		"climate_temperature": "UHT",
+		"climate_airflow": "TIGHT",
+		"input": {
+			"item": "contenttweaker:dustblock_cobalt:0"
+		}
+	},
+	"dustblock_constantan": {
+		"recipe_type": "ADD",
+		"output": {
+			"item": "thermalfoundation:storage_alloy:4"
+		},
+		"climate_temperature": "SMELTING",
+		"climate_airflow": "TIGHT",
+		"input": {
+			"item": "contenttweaker:dustblock_constantan:0"
+		}
+	},
 	"dustblock_electrum": {
 		"recipe_type": "ADD",
 		"output": {
@@ -30,6 +74,61 @@
 			"item": "contenttweaker:dustblock_electrum:0"
 		}
 	},
+	"dustblock_invar": {
+		"recipe_type": "ADD",
+		"output": {
+			"item": "thermalfoundation:storage_alloy:2"
+		},
+		"climate_temperature": "SMELTING",
+		"climate_airflow": "TIGHT",
+		"input": {
+			"item": "contenttweaker:dustblock_invar:0"
+		}
+	},
+	"dustblock_iridium": {
+		"recipe_type": "ADD",
+		"output": {
+			"item": "thermalfoundation:storage:7"
+		},
+		"climate_temperature": "UHT",
+		"climate_airflow": "TIGHT",
+		"input": {
+			"item": "contenttweaker:dustblock_iridium:0"
+		}
+	},
+	"dustblock_lead": {
+		"recipe_type": "ADD",
+		"output": {
+			"item": "thermalfoundation:storage:3"
+		},
+		"climate_temperature": "KILN",
+		"climate_airflow": "TIGHT",
+		"input": {
+			"item": "contenttweaker:dustblock_lead:0"
+		}
+	},
+	"dustblock_manyullyn": {
+		"recipe_type": "ADD",
+		"output": {
+			"item": "tconstruct:metal:2"
+		},
+		"climate_temperature": "UHT",
+		"climate_airflow": "TIGHT",
+		"input": {
+			"item": "contenttweaker:dustblock_manyullyn:0"
+		}
+	},
+	"dustblock_osmium": {
+		"recipe_type": "ADD",
+		"output": {
+			"item": "mekanism:basicblock:0"
+		},
+		"climate_temperature": "UHT",
+		"climate_airflow": "TIGHT",
+		"input": {
+			"item": "contenttweaker:dustblock_osmium:0"
+		}
+	},
 	"dustblock_platinum": {
 		"recipe_type": "ADD",
 		"output": {
@@ -39,28 +138,6 @@
 		"climate_airflow": "TIGHT",
 		"input": {
 			"item": "contenttweaker:dustblock_platinum:0"
-		}
-	},
-	"dustblock_cobalt": {
-		"recipe_type": "ADD",
-		"output": {
-			"item": "tconstruct:metal:0"
-		},
-		"climate_temperature": "SMELTING",
-		"climate_airflow": "TIGHT",
-		"input": {
-			"item": "contenttweaker:dustblock_cobalt:0"
-		}
-	},
-	"dustblock_lead": {
-		"recipe_type": "ADD",
-		"output": {
-			"item": "dcs_climate:dcs_ore_metal_new:3"
-		},
-		"climate_temperature": "SMELTING",
-		"climate_airflow": "TIGHT",
-		"input": {
-			"item": "contenttweaker:dustblock_lead:0"
 		}
 	}
 }

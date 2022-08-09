@@ -1,0 +1,46 @@
+{
+  "id": "quarryplus:builtin_item.listeditor",
+  "type": "quarryplus:workbench_recipe",
+  "ingredients": [
+    {
+      "item": "minecraft:diamond",
+      "data": 0,
+      "count": 4
+    },
+    {
+      "item": "minecraft:iron_ingot",
+      "data": 0,
+      "count": 16
+    },
+    {
+      "item": "minecraft:redstone",
+      "data": 0,
+      "count": 4
+    },
+    {
+      "item": "minecraft:dye",
+      "data": 0,
+      "count": 16
+    },
+    {
+      "item": "minecraft:book",
+      "data": 0,
+      "count": 64
+    },
+    {
+      "item": "minecraft:feather",
+      "data": 0,
+      "count": 2
+    }
+  ],
+  "energy": 16000.0,
+  "showInJEI": true,
+  "result": {
+    "item": "quarryplus:tool",
+    "data": 1,
+    "count": 1,
+    "nbt": {
+      "HideFlags": 1
+    }
+  }
+}

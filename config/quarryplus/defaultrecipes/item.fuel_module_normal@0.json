@@ -1,0 +1,23 @@
+{
+  "id": "quarryplus:builtin_item.fuel_module_normal",
+  "type": "quarryplus:workbench_recipe",
+  "ingredients": [
+    {
+      "item": "minecraft:furnace",
+      "data": 0,
+      "count": 3
+    },
+    {
+      "item": "minecraft:gold_block",
+      "data": 0,
+      "count": 16
+    }
+  ],
+  "energy": 320.0,
+  "showInJEI": true,
+  "result": {
+    "item": "quarryplus:fuel_module_normal",
+    "data": 0,
+    "count": 1
+  }
+}

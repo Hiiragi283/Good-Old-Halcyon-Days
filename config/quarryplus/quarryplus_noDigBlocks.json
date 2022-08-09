@@ -1,0 +1,69 @@
+[
+  {
+    "blockstate": {
+      "name": "minecraft:sandstone",
+      "properties": {
+        "type": "sandstone"
+      }
+    },
+    "ignoreProperty": false,
+    "ignoreMeta": true
+  },
+  {
+    "blockstate": {
+      "name": "minecraft:netherrack",
+      "properties": {}
+    },
+    "ignoreProperty": false,
+    "ignoreMeta": false
+  },
+  {
+    "blockstate": {
+      "name": "minecraft:cobblestone",
+      "properties": {}
+    },
+    "ignoreProperty": false,
+    "ignoreMeta": false
+  },
+  {
+    "blockstate": {
+      "name": "minecraft:stone",
+      "properties": {
+        "variant": "stone"
+      }
+    },
+    "ignoreProperty": false,
+    "ignoreMeta": true
+  },
+  {
+    "blockstate": {
+      "name": "minecraft:dirt",
+      "properties": {
+        "snowy": "false",
+        "variant": "dirt"
+      }
+    },
+    "ignoreProperty": true,
+    "ignoreMeta": false
+  },
+  {
+    "blockstate": {
+      "name": "minecraft:grass",
+      "properties": {
+        "snowy": "false"
+      }
+    },
+    "ignoreProperty": true,
+    "ignoreMeta": false
+  },
+  {
+    "blockstate": {
+      "name": "minecraft:red_sandstone",
+      "properties": {
+        "type": "red_sandstone"
+      }
+    },
+    "ignoreProperty": false,
+    "ignoreMeta": true
+  }
+]
