@@ -31,7 +31,7 @@ print("Start loading setEffect.zs ...");
 		.addEffect(<potion:tconstruct:magnetic>.makePotionEffect(100, 0))
 		.register();
 	//Titanium Armor (HaC)
-	mods.SetEffect.newSet()
+	/*mods.SetEffect.newSet()
 		.setName("armor_titanium")
 		.withHead(<dcs_climate:dcs_met_titanium>)
 		.withChest(<dcs_climate:dcs_plate_titanium>)
@@ -39,13 +39,6 @@ print("Start loading setEffect.zs ...");
 		.withFeet(<dcs_climate:dcs_boots_titanium>)
 		.addEffect(<potion:minecraft:resistance>.makePotionEffect(100, 1))
 		.addImmunity(<potion:twilightforest:frosted>)
-		.register();
-	//Cloaking Device
-	/*mods.SetEffect.newSet()
-		.setName("armor_cloaking")
-		.withChest(<dcs_climate:dcs_plate_titanium>)
-		.addEffect(<potion:dcs_climate:dcs.potion.warp>.makePotionEffect(100, 0))
-		.addImmunity(<potion:minecraft:glowing>)
 		.register();*/
 	//Yeti Armor
 	mods.SetEffect.newSet()
@@ -67,21 +60,6 @@ print("Start loading setEffect.zs ...");
 		.addEffect(<potion:minecraft:luck>.makePotionEffect(100, 1))
 		.addImmunity(<potion:minecraft:unluck>)
 		.register();
-
-	//Upstreaming Hang Glider
-	/*mods.SetEffect.newSet()
-		.setName("custom_upstreaming_hang_glider")
-		.withMainhand(HiiragiUtils.addLocname(<openblocks:hang_glider>, "gohd.custom.upstreaming_hang_glider.name"))
-		.addEffect(<potion:dcs_climate:dcs.potion.bird>.makePotionEffect(100, 0))
-		.register();*/
-
-	//Traveler's Sleeping bag
-	/*mods.SetEffect.newSet()
-		.setName("custom_travelers_sleeping_bed")
-		.withChest(<openblocks:sleeping_bag>.withTag({Sleeping: 1 as byte, display: {LocName: "gohd.custom.travelers_sleeping_bag.name"}}))
-		.addEffect(<potion:minecraft:regeneration>.makePotionEffect(100, 7))
-		.addEffect(<potion:minecraft:saturation>.makePotionEffect(100, 7))
-		.register();*/
 
 //このscriptの読み込みの完了をログに出力
 print("setEffect.zs loaded!");
