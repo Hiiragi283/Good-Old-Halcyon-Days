@@ -1,7 +1,7 @@
 #====================================================================
 # ファイル名 : RussellUtils.zs
 # 作成者 : Hiiragi Russell Tsubasa: https://github.com/Hiiragi283
-# 情報 : 有用な機能を実装
+# 情報 : Registry some functions for Content Tweaker
 #        このスクリプトの一部はMorphosDaysを参考にしています
 #        https://github.com/delta-nos/MorphoDays_old
 #====================================================================
@@ -18,6 +18,7 @@ import crafttweaker.world.IBlockAccess;
 import mods.contenttweaker.BlockState;
 import mods.contenttweaker.BlockPos;
 import mods.contenttweaker.Color;
+import mods.contenttweaker.IBlockAction;
 import mods.contenttweaker.IBlockColorSupplier;
 import mods.contenttweaker.BlockMaterial;
 import mods.contenttweaker.Material;
@@ -81,14 +82,16 @@ print("Start loading RussellUtils.zs ...");
 		block.register();
 	}
 
-	function addBlockAdvanced (id as string, material as BlockMaterial, hardness as float, resistance as float, tool as string, toolLevel as int, sound as SoundType, isFull as bool) {
+	function addDustBlock (id as string, material as BlockMaterial, hardness as float, resistance as float, tool as string, toolLevel as int, sound as SoundType) {
 		var block = VanillaFactory.createBlock(id, material);
 		block.setBlockHardness(hardness);
 		block.setBlockResistance(resistance);
 		block.setToolClass(tool);
 		block.setToolLevel(toolLevel);
 		block.setBlockSoundType(sound);
-		block.fullBlock = isFull;
+		block.onRandomTick = function(world, blockPos, blockState){
+			return true;
+		};
 		block.register();
 	}
 

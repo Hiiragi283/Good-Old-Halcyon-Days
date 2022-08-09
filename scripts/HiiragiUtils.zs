@@ -1,7 +1,7 @@
 #====================================================================
 # ファイル名 : HiiragiUtils.zs
-# 作成者 : Hiiragi Russell Tsubasa;URL -> https://github.com/Hiiragi283
-# 情報 : 有用な機能を実装
+# 作成者 : Hiiragi Russell Tsubasa: https://github.com/Hiiragi283
+# 情報 : Registry some functions for Craft Tweaker
 #        このスクリプトの一部はGrassUtilsを参考にしています
 #        -> https://github.com/friendlyhj/GrassUtils
 #====================================================================
@@ -119,39 +119,14 @@ print("Start loading HiiragiUtils.zs ...");
 
 //レシピ名を自動的に生成しつつレシピを登録する関数
 	static recipeID as int = 0;
-	function addCrafting (shapeless as bool, remove as bool, output as IItemStack, input as IIngredient[][]) {
-		var recipeName as string = getNameItem(output) ~ "_" ~ recipeID;
-		if (remove) {
-			recipes.remove(output, true);
-		}
-		if (!shapeless) {
-			recipes.addShaped(recipeName, output, input);
-		} else {
-			recipes.addShapeless(recipeName, output, input[0]);
-		}
-		recipeID += 1;
-	}
 	function removeCrafting (output as IItemStack) {
 		recipes.remove(output, true);
-	}
-
-	function addCraftingAdv (shapeless as bool, remove as bool, output as IItemStack, input as IIngredient[][], recipeFunction as IRecipeFunction, recipeAction as IRecipeAction) {
-		var recipeName as string = getNameItem(output) ~ "_" ~ recipeID;
-		if (remove) {
-			recipes.remove(output, true);
-		}
-		if (!shapeless) {
-			recipes.addShaped(recipeName, output, input, recipeFunction, recipeAction);
-		} else {
-			recipes.addShapeless(recipeName, output, input[0], recipeFunction, recipeAction);
-		}
-		recipeID += 1;
 	}
 
 	function addCraftingShaped (remove as bool, output as IItemStack, input as IIngredient[][], recipeFunction as IRecipeFunction, recipeAction as IRecipeAction) {
 		var recipeName as string = getNameItem(output) ~ "_" ~ recipeID;
 		if (remove) {
-			recipes.remove(output, true);
+			removeCrafting(output);
 		}
 		recipes.addShaped(recipeName, output, input, recipeFunction, recipeAction);
 		recipeID += 1;
@@ -160,7 +135,7 @@ print("Start loading HiiragiUtils.zs ...");
 	function addCraftingShapeless (remove as bool, output as IItemStack, input as IIngredient[], recipeFunction as IRecipeFunction, recipeAction as IRecipeAction) {
 		var recipeName as string = getNameItem(output) ~ "_" ~ recipeID;
 		if (remove) {
-			recipes.remove(output, true);
+			removeCrafting(output);
 		}
 		recipes.addShapeless(recipeName, output, input, recipeFunction, recipeAction);
 		recipeID += 1;
@@ -268,18 +243,6 @@ function inheritStatus(itemBase as IItemStack) as IRecipeFunction {
 		}
 	};
 }
-
-//液体入りアイテムを返す関数
-/*function liquidItem (type as string, liquid as ILiquidStack) as IItemStack {
-	var name as string = liquid.name;
-	if (type == "bucket") {
-		return <forge:bucketfilled>.withTag({FluidName: name, Amount: 1000});
-	} else {
-		if (type == "cell") {
-			return <techreborn:dynamiccell>.withTag({Fluid: {FluidName: name, Amount: 1000}});
-		}
-	}
-}*/
 
 //HaCの見た目が変わるブロックの見た目を指定
 function changeAppear (block as IItemStack, color as int) as IItemStack {

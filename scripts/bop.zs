@@ -1,7 +1,7 @@
 #====================================================================
-# name : bop.zs
-# auther : Hiiragi Russell Tsubasa;URL -> https://github.com/Hiiragi283
-# info : Script for Biomes O Plenty
+# ファイル名 : bop.zs
+# 作成者 : Hiiragi Russell Tsubasa: https://github.com/Hiiragi283
+# 情報 : Script for Biomes O Plenty
 #====================================================================
 
 #priority 0
@@ -24,10 +24,10 @@ print("Start loading bop.zs ...");
 
 //作業台レシピの編集
 	//削除
-		val removeCrafting as IItemStack[] = [];
-		for i in removeCrafting {
-			HiiragiUtils.removeCrafting(i);
-		}
+	val removeCrafting as IItemStack[] = [];
+	for i in removeCrafting {
+		HiiragiUtils.removeCrafting(i);
+	}
 	//上書き
 	//新規
 

@@ -1,7 +1,7 @@
 #====================================================================
 # ファイル名 : tic.zs
 # 作成者 : Hiiragi Russell Tsubasa: https://github.com/Hiiragi283
-# 情報 : Tikers Contructおよびそのアドオンの改変
+# 情報 : Script for Tinkers Construct and its addons
 #====================================================================
 
 #priority 0
@@ -15,6 +15,7 @@ import mods.artisanworktables.builder.RecipeBuilder;
 import mods.chisel.Carving;
 import mods.ctintegration.util.RecipePattern;
 import mods.tconstruct.Casting;
+import mods.tconstruct.Melting;
 import mods.zenutils.I18n;
 
 //scriptのimport
@@ -32,28 +33,34 @@ print("Start loading tic.zs ...");
 
 //作業台レシピの編集
 	//削除
-		val removeCrafting as IItemStack[] = [
-			<tconstruct:faucet>,
-			<tconstruct:channel>,
-			<tconstruct:casting:*>,
-		];
-		for i in removeCrafting {
-			HiiragiUtils.removeCrafting(i);
-		}
+	val removeCrafting as IItemStack[] = [
+		<tconstruct:faucet>,
+		<tconstruct:channel>,
+		<tconstruct:casting:*>,
+	];
+	for i in removeCrafting {
+		HiiragiUtils.removeCrafting(i);
+	}
 	//上書き
-		HiiragiUtils.addCraftingShaped(true, <tcomplement:melter>, RecipePattern.init(["ABA", "ACA", "ADA"]).map({A:<tconstruct:materials:0>, B:<minecraft:hopper>, C:<tconstruct:seared_tank:*>, D:<ore:ingotIron>}).ingredients, null, null);
-		HiiragiUtils.addCraftingShaped(true, <tconstruct:smeltery_controller>, RecipePattern.init(["ABA", "ACA", "ADA"]).map({A:<tconstruct:materials:0>, B:<tcomplement:alloy_tank>, C:<tcomplement:melter>, D:<dcs_climate:dcs_device_chamber>}).ingredients, null, null);
+	HiiragiUtils.addCraftingShaped(true, <tcomplement:melter>, RecipePattern.init(["ABA", "ACA", "ADA"]).map({A:<tconstruct:materials:0>, B:<minecraft:hopper>, C:<tconstruct:seared_tank:*>, D:<ore:ingotIron>}).ingredients, null, null);
+	HiiragiUtils.addCraftingShaped(true, <tconstruct:smeltery_controller>, RecipePattern.init(["ABA", "ACA", "ADA"]).map({A:<tconstruct:materials:0>, B:<tcomplement:alloy_tank>, C:<tcomplement:melter>, D:<dcs_climate:dcs_device_chamber>}).ingredients, null, null);
 	//新規
-		HiiragiUtils.addCraftingShaped(false, <tconstruct:seared:3>, RecipePattern.init(["AA", "AA"]).map({A:<tconstruct:materials:0>}).ingredients, null, null);
+	HiiragiUtils.addCraftingShaped(false, <tconstruct:seared:3>, RecipePattern.init(["AA", "AA"]).map({A:<tconstruct:materials:0>}).ingredients, null, null);
+	HiiragiUtils.addCraftingShaped(false, <tconstruct:soil>, RecipePattern.init(["AA", "AA"]).map({A:<contenttweaker:grout_ball>}).ingredients, null, null);
+
+	HiiragiUtils.addCraftingShaped(true, <tconstruct:slime:5>, RecipePattern.init(["AAA", "AAA", "AAA"]).map({A:<tconstruct:edible:5>}).ingredients, null, null);
+	HiiragiUtils.addCraftingShaped(true, <tconstruct:slime_congealed:5>, RecipePattern.init(["AA", "AA"]).map({A:<tconstruct:edible:5>}).ingredients, null, null);
+	HiiragiUtils.addCraftingShaped(true, <tconstruct:slimesling:5>, RecipePattern.init(["ABA", "C C", " C "]).map({A:<minecraft:string>, B:<tconstruct:slime_congealed:5>, C:<tconstruct:edible:5>}).ingredients, null, null);
+	HiiragiUtils.addCraftingShaped(true, <tconstruct:slime_boots:5>, RecipePattern.init(["A A", "B B"]).map({A:<tconstruct:edible:5>, B:<tconstruct:slime_congealed:5>}).ingredients, null, null);
 
 //AWレシピの編集
-    //import
-    //新規
-		RecipeBuilder.get("basic")
-			.setShapeless([<tconstruct:channel>])
-			.addTool(<ore:artisansHandsaw>, 1)
-			.addOutput(<tconstruct:faucet>*2)
-			.create();
+	//import
+	//新規
+	RecipeBuilder.get("basic")
+		.setShapeless([<tconstruct:channel>])
+		.addTool(<ore:artisansHandsaw>, 1)
+		.addOutput(<tconstruct:faucet>*2)
+		.create();
 
 //Castの統一
 	mods.chisel.Carving.addGroup("cast");
@@ -112,7 +119,7 @@ print("Start loading tic.zs ...");
 	mods.tconstruct.Casting.removeTableRecipe(HiiragiUtils.castClay("chisel_head"));
 	HiiragiUtils.removeFromJEI(HiiragiUtils.castClay("chisel_head"));
 
-//Castingレシピの追加
+//Castingレシピの編集
 	HiiragiUtils.addCasting("table", false, <dcs_climate:dcs_device_pail>, <minecraft:bucket>, <liquid:tin>, 288, true, 5*20);
 	HiiragiUtils.addCasting("table", true, <enderio:item_material:11>, <ore:dustBedrock>, <liquid:steel>, 144, true, 5*20);
 	HiiragiUtils.addCasting("table", true, <enderio:item_material:73>, <enderio:item_material:11>, <liquid:dark_steel>, 144, true, 5*20);
@@ -125,6 +132,9 @@ print("Start loading tic.zs ...");
 	HiiragiUtils.addCasting("table", false, <thermalfoundation:material:514>, <ore:plateSilver>, <liquid:redstone>, 144, true, 5*20);
 	HiiragiUtils.addCasting("table", false, <thermalfoundation:material:515>, <ore:plateElectrum>, <liquid:redstone>, 144, true, 5*20);
 	HiiragiUtils.addCasting("table", false, <thermalfoundation:material:640>, <thermalfoundation:material:512>, <liquid:electrum>, 144, true, 5*20);
+
+//Meltingレシピの編集
+	mods.tconstruct.Melting.removeRecipe(<liquid:sky_stone>, <appliedenergistics2:sky_stone_block>);
 
 //このscriptの読み込みの完了をログに出力
 print("tic.zs loaded!");

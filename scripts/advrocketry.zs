@@ -1,7 +1,7 @@
 #====================================================================
-# name : advrocktery.zs
-# auther : Hiiragi Russell Tsubasa;URL -> https://github.com/Hiiragi283
-# info : Scripts for Advanced Rocktery
+# ファイル名 : advrocktery.zs
+# 作成者 : Hiiragi Russell Tsubasa: https://github.com/Hiiragi283
+# 情報 : Script for Advanced Rocktery
 #====================================================================
 
 #priority 0
@@ -24,13 +24,13 @@ print("Start loading advrocktery.zs ...");
 
 //作業台レシピの編集
 	//削除
-		val removeCrafting as IItemStack[] = [
-			<advancedrocketry:misc:1>,
-			<advancedrocketry:sawbladeiron>
-		];
-		for i in removeCrafting {
-			HiiragiUtils.removeCrafting(i);
-		}
+	val removeCrafting as IItemStack[] = [
+		<advancedrocketry:misc:1>,
+		<advancedrocketry:sawbladeiron>
+	];
+	for i in removeCrafting {
+		HiiragiUtils.removeCrafting(i);
+	}
 	//上書き
 	//HiiragiUtils.addCraftingShapeless(true, <advancedrocketry:satelliteidchip>, [<techreborn:part:3>], null, null);
 	//HiiragiUtils.addCraftingShapeless(true, <advancedrocketry:carbonscrubbercartridge>, [<techreborn:dynamiccell>, <minecraft:iron_bars>], null, null);
@@ -45,27 +45,15 @@ print("Start loading advrocktery.zs ...");
 	//HiiragiUtils.addCraftingReplace(<advancedrocketry:misc:0>, <techreborn:part:24>, null);
 	//新規
 
-//かまどレシピの編集
-	//削除
-		val removeFurnace as IItemStack[] = [];
-		for i in removeFurnace {
-			HiiragiUtils.removeFurnace(i);
-		}
-	//新規
-		val addFurnace as IIngredient[IItemStack] = {};
-		for output, input in addFurnace {
-			HiiragiUtils.addFurnace(false, output, input);
-		}
-
 //AWレシピの編集
 	//import
 	//新規
-		RecipeBuilder.get("basic")
-			.setShapeless([<ore:blockQuartz>])
-			.addTool(<ore:GT.tool.hammer.hard>, 1)
-			.addTool(<chisel:chisel_iron>, 1)
-			.addOutput(<advancedrocketry:iquartzcrucible>)
-			.create();
+	RecipeBuilder.get("basic")
+		.setShapeless([<ore:blockQuartz>])
+		.addTool(<ore:GT.tool.hammer.hard>, 1)
+		.addTool(<chisel:chisel_iron>, 1)
+		.addOutput(<advancedrocketry:iquartzcrucible>)
+		.create();
 
 //このscriptの読み込みの完了をログに出力
 print("advrocktery.zs loaded!");

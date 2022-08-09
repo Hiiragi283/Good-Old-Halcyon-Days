@@ -1,7 +1,7 @@
 #====================================================================
 # ファイル名 : thermal.zs
 # 作成者 : Hiiragi Russell Tsubasa: https://github.com/Hiiragi283
-# 情報 : このファイルについて書く
+# 情報 : Script for mods made by Team Cofh
 #====================================================================
 
 #priority 0
@@ -9,11 +9,17 @@
 //crafttweakerからclassをimport
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
+import crafttweaker.liquid.ILiquidStack;
 
 //各種modからclassをimport
 import mods.artisanworktables.builder.RecipeBuilder;
 import mods.ctintegration.util.RecipePattern;
+import mods.thermalexpansion.Centrifuge;
 import mods.thermalexpansion.Compactor;
+import mods.thermalexpansion.Enchanter;
+import mods.thermalexpansion.Refinery;
+import mods.thermalexpansion.InductionSmelter;
+import mods.thermalexpansion.Transposer;
 
 //scriptのimport
 import scripts.HiiragiUtils;
@@ -24,44 +30,134 @@ print("Start loading thermal.zs ...");
 //変数の定義
 
 //作業台レシピの編集
-	//削除
-		val removeCrafting as IItemStack[] = [
-			<thermalexpansion:augment:*>,
-			<thermalfoundation:material:512>,
-			<thermalfoundation:material:513>,
-			<thermalfoundation:material:514>,
-			<thermalfoundation:material:515>,
-			<thermalfoundation:material:640>,
-		];
-		for i in removeCrafting {
-			HiiragiUtils.removeCrafting(i);
-		}
-		val removeCraftingByName as string[] = [
-			"thermalinnovation:drill",
-			"thermalinnovation:saw",
-		];
-		for i in removeCraftingByName {
-			recipes.removeByRecipeName(i);
-		}
+//削除
+	val removeCrafting as IItemStack[] = [
+		<thermalexpansion:augment:*>,
+		<thermalfoundation:material:512>,
+		<thermalfoundation:material:513>,
+		<thermalfoundation:material:514>,
+		<thermalfoundation:material:515>,
+		<thermalfoundation:material:640>,
+	];
+	for i in removeCrafting {
+		HiiragiUtils.removeCrafting(i);
+	}
 	//上書き
-		HiiragiUtils.addCraftingShaped(true, <thermalexpansion:frame>, RecipePattern.init(["ABA", "BCB", "DBD"]).map({A:<ore:ingotInvar>, B:<dcs_climate:dcs_build_selenite:3>, C:<ore:gearToolSteel>, D:<ore:ingotSteel>}).ingredients, null, null);
-		HiiragiUtils.addCraftingShaped(true, <thermalexpansion:frame>*3, RecipePattern.init(["ABA", "BCB", "DBD"]).map({A:<ore:ingotToolSteel>, B:<ore:fusedQuartz>, C:<ore:gearToolSteel>, D:<ore:ingotStainlessSteel>}).ingredients, null, null);
-		HiiragiUtils.addCraftingShaped(true, <thermalexpansion:frame:64>, RecipePattern.init(["ABA", "BCB", "ABA"]).map({A:<ore:ingotSilver>, B:<ore:ingotTin>, C:<ore:blockGlassHardened>}).ingredients, null, null);
-		HiiragiUtils.addCraftingShaped(false, <thermalexpansion:frame:64>*3, RecipePattern.init(["ABA", "BCB", "ABA"]).map({A:<ore:ingotNickelsilver>, B:<ore:ingotLead>, C:<ore:fusedQuartz>}).ingredients, null, null);
-		HiiragiUtils.addCraftingShaped(true, <thermalfoundation:material:656>, RecipePattern.init(["  A", "AB ", "CA "]).map({A:<ore:ingotToolSteel>, B:<ore:gearToolSteel>, C:<ore:blockToolSteel>}).ingredients, null, null);
-		HiiragiUtils.addCraftingShaped(true, <thermalfoundation:material:657>, RecipePattern.init([" A ", "ABA", " A "]).map({A:<ore:bladeToolSteel>, B:<ore:gearToolSteel>}).ingredients, null, null);
+	//Frames
+	HiiragiUtils.addCraftingShaped(true, <thermalexpansion:frame>, RecipePattern.init(["ABA", "BCB", "DBD"]).map({A:<ore:ingotInvar>, B:<dcs_climate:dcs_build_selenite:3>, C:<ore:gearToolSteel>, D:<ore:ingotSteel>}).ingredients, null, null);
+	HiiragiUtils.addCraftingShaped(true, <thermalexpansion:frame>*3, RecipePattern.init(["ABA", "BCB", "DBD"]).map({A:<ore:ingotToolSteel>, B:<ore:fusedQuartz>, C:<ore:gearToolSteel>, D:<ore:ingotStainlessSteel>}).ingredients, null, null);
+	HiiragiUtils.addCraftingShaped(true, <thermalexpansion:frame:64>, RecipePattern.init(["ABA", "BCB", "ABA"]).map({A:<ore:ingotSilver>, B:<ore:ingotTin>, C:<ore:blockGlassHardened>}).ingredients, null, null);
+	HiiragiUtils.addCraftingShaped(false, <thermalexpansion:frame:64>*3, RecipePattern.init(["ABA", "BCB", "ABA"]).map({A:<ore:ingotNickelsilver>, B:<ore:ingotLead>, C:<ore:fusedQuartz>}).ingredients, null, null);
+	//Parts
+	HiiragiUtils.addCraftingShaped(true, <thermalfoundation:material:656>, RecipePattern.init(["  A", "AB ", "CA "]).map({A:<ore:ingotToolSteel>, B:<ore:gearToolSteel>, C:<ore:blockToolSteel>}).ingredients, null, null);
+	HiiragiUtils.addCraftingShaped(true, <thermalfoundation:material:657>, RecipePattern.init([" A ", "ABA", " A "]).map({A:<ore:bladeToolSteel>, B:<ore:gearToolSteel>}).ingredients, null, null);
+	HiiragiUtils.addCraftingShapeless(true, <thermalfoundation:material:802>, [<thermalfoundation:storage_resource:1>], null, null);
+	//Dynamos
+	HiiragiUtils.addCraftingShaped(true, <thermalexpansion:dynamo:0>, RecipePattern.init([" A ", "BCB", "DED"]).map({A:<dcs_climate:dcs_device_dynamo>, B:<ore:ingotSteel>, C:<dcs_climate:dcs_device_boiler_turbine>, D:<ore:ingotBronze>, E:<dcs_climate:dcs_device_chamber>}).ingredients, null, null);
+	HiiragiUtils.addCraftingShaped(true, <thermalexpansion:dynamo:1>, RecipePattern.init([" A ", "BCB", "DED"]).map({A:<dcs_climate:dcs_device_dynamo>, B:<ore:ingotSteel>, C:<dcs_climate:dcs_device_fan>, D:<ore:ingotInvar>, E:<dcs_climate:dcs_device_ibc>}).ingredients, null, null);
+	HiiragiUtils.addCraftingShaped(true, <thermalexpansion:dynamo:2>, RecipePattern.init([" A ", "BCB", "DED"]).map({A:<dcs_climate:dcs_device_dynamo>, B:<ore:ingotStainlessSteel>, C:<dcs_climate:dcs_device_diesel_engine>, D:<ore:ingotNickelsilver>, E:<dcs_climate:dcs_device_ibc>}).ingredients, null, null);
+	HiiragiUtils.addCraftingShaped(true, <thermalexpansion:dynamo:3>, RecipePattern.init([" A ", "BCB", "DED"]).map({A:<botania:rfgenerator>, B:<ore:ingotStainlessSteel>, C:<botania:conjurationcatalyst>, D:<ore:ingotLead>, E:<minecraft:enchanting_table>}).ingredients, null, null);
+	HiiragiUtils.addCraftingShaped(true, <thermalexpansion:dynamo:4>, RecipePattern.init([" A ", "BCB", "DED"]).map({A:<botania:rfgenerator>, B:<ore:ingotElectricalSteel>, C:<botania:conjurationcatalyst>, D:<ore:ingotElectrum>, E:<disenchanter:disenchantmenttable>}).ingredients, null, null);
+	HiiragiUtils.addCraftingShaped(true, <thermalexpansion:dynamo:5>, RecipePattern.init([" A ", "BCB", "DED"]).map({A:<thermalfoundation:material:514>, B:<ore:ingotElectricalSteel>, C:<dcs_climate:dcs_device_display_vending_machine>, D:<ore:ingotTitanium>, E:<railcraft:trade_station>}).ingredients, null, null);
 
-		for i in 0 to 15 {
-			HiiragiUtils.addCraftingShapeless(true, <thermalfoundation:rockwool>.definition.makeStack(i), [<ore:blockRockwool>, HiiragiUtils.dyeList[i]], null, null);
-		}
+	for i in 0 to 15 {
+		HiiragiUtils.addCraftingShapeless(true, <thermalfoundation:rockwool>.definition.makeStack(i), [<ore:blockRockwool>, HiiragiUtils.dyeList[i]], null, null);
+	}
 	//新規
 
 //AWレシピの編集
 	//import
 	//新規
 
+//Arcane Ensorcellator
+
+//Centrifugal Seperator
+	mods.thermalexpansion.Centrifuge.addRecipe([
+		<mekanism:dust:2>,
+		<thermalfoundation:material:71>,
+		<thermalfoundation:material:70>,
+		<thermalfoundation:material:770>
+	], <appliedenergistics2:material:45>, null, 10000);
+
 //Compactor
 	mods.thermalexpansion.Compactor.addPressRecipe(<enderio:item_material:71>, <ore:dustBedrock>.firstItem*5, 8000);
+	mods.thermalexpansion.Compactor.addPressRecipe(<ezstorage:condensed_storage_box>, <ezstorage:storage_box>*10, 1000);
+	mods.thermalexpansion.Compactor.addPressRecipe(<ezstorage:super_storage_box>, <ezstorage:condensed_storage_box>*4, 4000);
+	mods.thermalexpansion.Compactor.addPressRecipe(<ezstorage:ultra_storage_box>, <ezstorage:super_storage_box>*4, 16000);
+	mods.thermalexpansion.Compactor.addPressRecipe(<ezstorage:hyper_storage_box>, <ezstorage:ultra_storage_box>*5, 64000);
+
+	mods.thermalexpansion.Compactor.addGearRecipe(<railcraft:charge:1>, <dcs_climate:dcs_ingot:4>*4, 4000);
+
+	val mapTicket as int[IItemStack] = {
+		<thermalfoundation:coin:0>: 1,
+		<thermalfoundation:coin:1>:2,
+		<thermalfoundation:coin:64>: 1,
+		<thermalfoundation:coin:65>: 1,
+		<thermalfoundation:coin:66>: 2,
+		<thermalfoundation:coin:67>: 1,
+		<thermalfoundation:coin:68>: 2,
+		<thermalfoundation:coin:69>: 2,
+		<thermalfoundation:coin:70>: 16,
+		<thermalfoundation:coin:71>: 16,
+		<thermalfoundation:coin:72>: 16,
+		<thermalfoundation:coin:96>: 4,
+		<thermalfoundation:coin:97>: 4,
+		<thermalfoundation:coin:98>: 4,
+		<thermalfoundation:coin:99>: 2,
+		<thermalfoundation:coin:100>: 4,
+		<thermalfoundation:coin:101>: 8,
+		<thermalfoundation:coin:102>: 8,
+		<thermalfoundation:coin:103>: 16,
+	};
+	for i, j in mapTicket {
+		mods.thermalexpansion.Compactor.addMintRecipe(<contenttweaker:ticket_common>*j, i*3, 4000);
+	}
+	mods.thermalexpansion.Compactor.addPressRecipe(<contenttweaker:ticket_uncommon>, <contenttweaker:ticket_common>*4, 8000);
+	mods.thermalexpansion.Compactor.addPressRecipe(<contenttweaker:ticket_rare>, <contenttweaker:ticket_uncommon>*4, 16000);
+	mods.thermalexpansion.Compactor.addPressRecipe(<contenttweaker:ticket_epic>, <contenttweaker:ticket_rare>*4, 32000);
+	mods.thermalexpansion.Compactor.addPressRecipe(<contenttweaker:ticket_legendary>, <contenttweaker:ticket_epic>*4, 64000);
+
+
+//Fluid Transposer
+	mods.thermalexpansion.Transposer.addFillRecipe(<extrautils2:decorativesolidwood:1>, <minecraft:bookshelf>, <liquid:xpjuice>*500, 1600);
+	mods.thermalexpansion.Transposer.addFillRecipe(<extrautils2:ingredients:12>, <minecraft:gold_ingot>, <liquid:xpjuice>*500, 1600);
+	mods.thermalexpansion.Transposer.addFillRecipe(<extrautils2:magicapple>, <minecraft:apple>, <liquid:xpjuice>*500, 1600);
+	mods.thermalexpansion.Transposer.addFillRecipe(<railcraft:tie:0>, <minecraft:wooden_slab:*>, <liquid:creosote>*250, 400);
+	mods.thermalexpansion.Transposer.addFillRecipe(<railcraft:creosote_block>, <minecraft:log:*>, <liquid:creosote>*500, 400);
+
+	val mapFuel as ILiquidStack[] = [
+		<liquid:dcs.fuel_oil>,
+		<liquid:refined_fuel>,
+		<liquid:rocket_fuel>,
+	];
+	for i in mapFuel {
+		mods.thermalexpansion.Transposer.addFillRecipe(<hap:conveyor>, <dcs_climate:dcs_device_conveyor>, i*125, 800);
+	}
+	val mapOil as ILiquidStack[] = [
+		<liquid:dcs.seed_oil>,
+		<liquid:seed_oil>,
+		<liquid:tree_oil>,
+	];
+	for i in mapOil {
+		mods.thermalexpansion.Transposer.addFillRecipe(<hap:conveyor>, <dcs_climate:dcs_device_conveyor>, i*250, 800);
+	}
+
+//Fractionating Still
+	Refinery.addRecipe(<liquid:drop_red>*250, <dcs_climate:dcs_color:7>%50, <liquid:dcs.wine>*250, 2500);
+	Refinery.addRecipe(<liquid:drop_green>*250, <dcs_climate:dcs_color:6>%50, <liquid:dcs.mazai>*250, 2500);
+	Refinery.addRecipe(<liquid:drop_blue>*250, <dcs_climate:dcs_color:5>%50, <liquid:dcs.tonic_water>*250, 2500);
+	Refinery.addRecipe(<liquid:drop_white>*250, <dcs_climate:dcs_color:9>%50, <liquid:dcs.beer>*250, 2500);
+	Refinery.addRecipe(<liquid:drop_black>*250, <dcs_climate:dcs_color:8>%50, <liquid:dcs.date>*250, 2500);
+
+//Induction Smelter
+	mods.thermalexpansion.InductionSmelter.addRecipe(<appliedenergistics2:sky_stone_block>*4, <minecraft:obsidian>*4, <extrautils2:ingredients:5>, 10000);
+	mods.thermalexpansion.InductionSmelter.addRecipe(<appliedenergistics2:sky_stone_block>*8, <minecraft:obsidian>*8, <dcs_climate:dcs_gem_blue:2>, 10000);
+	mods.thermalexpansion.InductionSmelter.addRecipe(<appliedenergistics2:sky_stone_block>*8, <minecraft:obsidian>*8, <dcs_climate:dcs_gem_white:2>, 10000);
+	mods.thermalexpansion.InductionSmelter.addRecipe(<appliedenergistics2:sky_stone_block>*16, <minecraft:obsidian>*16, <dcs_climate:dcs_gem_white:4>, 10000);
+	mods.thermalexpansion.InductionSmelter.addRecipe(<contenttweaker:block_bedrockium>, <enderio:block_infinity:2>, <contenttweaker:ingot_rainbow>, 1000000);
+
+//Photogenic Insolator
+	mods.thermalexpansion.Insolator.addRecipe(<botania:overgrowthseed>, <thermalfoundation:fertilizer:2>*16, <botania:grassseeds:0>, 12000, null, 0, 8000);
 
 //このscriptの読み込みの完了をログに出力
 print("thermal.zs loaded!");

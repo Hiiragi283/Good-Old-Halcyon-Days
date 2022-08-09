@@ -59,6 +59,7 @@ config/AppliedEnergistics2/*.cfg
 !config/AppliedEnergistics2/AppliedEnergistics2.cfg
 config/artisanintegrations/module.botania.Tools-Generated.json
 config/artisanworktables/module.Tools.Materials.Generated.json
+config/compactmachines3/recipes/*.txt
 config/enderio/recipes/*.pdf
 config/jei/itemBlacklist.cfg
 config/jei/jei.cfg

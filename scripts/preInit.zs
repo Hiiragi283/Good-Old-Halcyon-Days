@@ -1,7 +1,7 @@
 #====================================================================
 # ファイル名 : preInit.zs
 # 作成者 : Hiiragi Russell Tsubasa: https://github.com/Hiiragi283
-# 情報 : このファイルについて書く
+# 情報 : Script loaded in preInit
 #====================================================================
 
 #loader preinit

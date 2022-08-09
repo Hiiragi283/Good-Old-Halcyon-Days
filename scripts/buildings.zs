@@ -227,7 +227,7 @@ print("Start loading buildings.zs ...");
 	};
 
 	for slab, full in mapSlabs {
-		recipes.remove(slab);
+		HiiragiUtils.removeCrafting(slab);
 		RecipeBuilder.get("basic")
 			.setShapeless([full])
 			.addTool(<ore:artisansHandsaw>, 1)
@@ -236,8 +236,7 @@ print("Start loading buildings.zs ...");
 		HiiragiUtils.addCraftingShaped(false, full, RecipePattern.init(["A", "A"]).map({A:slab}).ingredients, null, null);
 		}
 
-
-	//重複したレシピの削除
+//重複したレシピの削除
 	val removeChiseled as IItemStack[IItemStack] = {
 		<minecraft:sandstone:1>: <minecraft:sandstone:0>,
 		<minecraft:stonebrick:3>: <minecraft:stonebrick:0>,
@@ -272,7 +271,7 @@ print("Start loading buildings.zs ...");
 		<railcraft:sandy:3>: <railcraft:sandy:0>,
 	};
 	for chiseled, full in removeChiseled {
-		recipes.remove(chiseled);
+		HiiragiUtils.removeCrafting(chiseled);
 		RecipeBuilder.get("basic")
 			.setShapeless([full])
 			.addTool(<ore:artisansChisel>, 1)
@@ -295,7 +294,7 @@ print("Start loading buildings.zs ...");
 		<twilightforest:aurora_pillar>: <twilightforest:aurora_block>,
 	};
 	for pillar, full in removePillar {
-		recipes.remove(pillar);
+		HiiragiUtils.removeCrafting(pillar);
 		RecipeBuilder.get("basic")
 			.setShaped(RecipePattern.init(["A", "A"]).map({A:full}).ingredients)
 			.addTool(<ore:artisansChisel>, 1)
@@ -403,10 +402,10 @@ print("Start loading buildings.zs ...");
 		<dcs_climate:dcs_build_slab_chal:0>: <dcs_climate:dcs_ore_gemblock:0>,
 		<dcs_climate:dcs_build_slab_chal:1>: <dcs_climate:dcs_ore_gemblock:1>,
 		<dcs_climate:dcs_build_slab_chal:2>: <dcs_climate:dcs_ore_gemblock:2>,
-		<dcs_climate:dcs_build_slab_chal:3>: <dcs_climate:dcs_build_challamp:0>,
-		<dcs_climate:dcs_build_slab_chal:4>: <dcs_climate:dcs_build_challamp:1>,
-		<dcs_climate:dcs_build_slab_chal:5>: <dcs_climate:dcs_build_challamp:2>,
-		<dcs_climate:dcs_build_slab_chal:6>: <dcs_climate:dcs_build_challamp:3>,
+		//<dcs_climate:dcs_build_slab_chal:3>: <dcs_climate:dcs_build_challamp:0>,
+		//<dcs_climate:dcs_build_slab_chal:4>: <dcs_climate:dcs_build_challamp:1>,
+		//<dcs_climate:dcs_build_slab_chal:5>: <dcs_climate:dcs_build_challamp:2>,
+		//<dcs_climate:dcs_build_slab_chal:6>: <dcs_climate:dcs_build_challamp:3>,
 		<railcraft:creosote_stairs>: <railcraft:creosote_block>,
 		<railcraft:abyssal_brick_stairs>: <railcraft:abyssal:1>,
 		<railcraft:badlands_brick_stairs>: <railcraft:badlands:1>,
@@ -414,6 +413,7 @@ print("Start loading buildings.zs ...");
 		<railcraft:bloodstained_brick_stairs>: <railcraft:bloodstained:1>,
 		<railcraft:frostbound_brick_stairs>: <railcraft:frostbound:1>,
 		<railcraft:infernal_brick_stairs>: <railcraft:infernal:1>,
+		<railcraft:jaded_brick_stairs>: <railcraft:jaded:1>,
 		<railcraft:pearlized_brick_stairs>: <railcraft:pearlized:1>,
 		<railcraft:quarried_brick_stairs>: <railcraft:quarried:1>,
 		<railcraft:sandy_brick_stairs>: <railcraft:sandy:1>,
@@ -423,11 +423,10 @@ print("Start loading buildings.zs ...");
 		<railcraft:bloodstained_paver_stairs>: <railcraft:bloodstained:0>,
 		<railcraft:frostbound_paver_stairs>: <railcraft:frostbound:0>,
 		<railcraft:infernal_paver_stairs>: <railcraft:infernal:0>,
+		<railcraft:jaded_paver_stairs>: <railcraft:jaded:0>,
 		<railcraft:pearlized_paver_stairs>: <railcraft:pearlized:0>,
 		<railcraft:quarried_paver_stairs>: <railcraft:quarried:0>,
 		<railcraft:sandy_paver_stairs>: <railcraft:sandy:0>,
-		//<techreborn:rubber_plank_stair>: <techreborn:rubber_planks>,
-		//<twilightforest:aurora_slab>: <twilightforest:aurora_block>,
 		<twilightforest:twilight_oak_stairs>: <twilightforest:twilight_oak_planks:0>,
 		<twilightforest:canopy_stairs>: <twilightforest:canopy_planks:0>,
 		<twilightforest:mangrove_stairs>: <twilightforest:mangrove_planks:0>,
@@ -480,7 +479,7 @@ print("Start loading buildings.zs ...");
 	};
 
 	for stair, full in mapStair {
-		recipes.remove(stair);
+		HiiragiUtils.removeCrafting(stair);
 		RecipeBuilder.get("basic")
 			.setShaped(RecipePattern.init(["A ", "AA"]).map({A:full}).ingredients)
 			.addTool(<ore:artisansHandsaw>, 1)
@@ -502,7 +501,7 @@ print("Start loading buildings.zs ...");
 	};
 
 	for stair, full in mapStairTwilight {
-		recipes.remove(stair);
+		HiiragiUtils.removeCrafting(stair);
 		RecipeBuilder.get("basic")
 			.setShaped(RecipePattern.init(["A ", "AA"]).map({A:full}).ingredients)
 			.addTool(<ore:artisansHandsaw>, 1)
