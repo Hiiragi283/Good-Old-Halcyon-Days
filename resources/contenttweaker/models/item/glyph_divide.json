@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "openblocks:items/stencil",
+		"layer1": "contenttweaker:items/glyph_divide_overlay"
+  }
+}

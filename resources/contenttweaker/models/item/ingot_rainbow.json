@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "tconevo:items/metal/ingot/primal_metal",
+		"layer1": "contenttweaker:items/ingot_rainbow_overlay"
+  }
+}

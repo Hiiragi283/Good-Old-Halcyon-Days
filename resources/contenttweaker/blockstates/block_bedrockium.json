@@ -2,8 +2,8 @@
   "forge_marker": 1,
   "defaults": {
     "textures": {
-      "texture": "dcs_climate:blocks/ores/dustblock_sus",
-      "particle": "dcs_climate:blocks/ores/dustblock_sus"
+      "texture": "chisel:blocks/coal/coal/circular",
+      "particle": "chisel:blocks/coal/coal/circular"
     },
     "model": "base:storage",
     "uvlock": true,

@@ -1,6 +1,0 @@
-{
-	"parent": "item/generated",
-	"textures": {
-		"layer0": "techreborn:items/ingot/bronze_ingot"
-	}
-}

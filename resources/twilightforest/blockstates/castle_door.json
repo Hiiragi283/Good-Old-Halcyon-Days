@@ -1,0 +1,10 @@
+{
+  "forge_marker": 1,
+  "defaults": { "model": "twilightforest:castle_door",
+    "textures": { "all": "botania:blocks/blockdarkquartz0" } },
+  "inventory": [{}],
+  "variants": {
+    "lock_index": { "0": {}, "1": {}, "2": {}, "3": {} },
+    "active": { "true": {}, "false": {} }
+  }
+}

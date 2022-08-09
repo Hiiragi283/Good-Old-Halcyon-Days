@@ -10,6 +10,7 @@
 
 .mixin.out
 asm
+backups
 crafttweaker_dump
 crash-reports
 caches

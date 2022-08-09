@@ -2,27 +2,44 @@
 #Items
 item.contenttweaker.reagent_halogen.name=Halogen
 item.contenttweaker.grout_ball.name=Grout Ball
-item.contenttweaker.energium_dust.name=Energium Dust
-item.contenttweaker.lapotron_dust.name=Lapotron Dust
-item.contenttweaker.ticket_common.name=Ragi Ticket (Commom)
-item.contenttweaker.ticket_uncommon.name=Ragi Ticket (§aUncommom§r)
+item.contenttweaker.glyph_divide.name="Division Sigil" Glyph
+item.contenttweaker.ingot_bedrockium.name=bedrockium Ingot
+item.contenttweaker.ingot_rainbow.name=Rainbow Ingot
+item.contenttweaker.ticket_common.name=Ragi Ticket (Common)
+item.contenttweaker.ticket_uncommon.name=Ragi Ticket (§aUncommon§r)
 item.contenttweaker.ticket_rare.name=Ragi Ticket (§9Rare§r)
 item.contenttweaker.ticket_epic.name=Ragi Ticket (§dEpic§r)
 item.contenttweaker.ticket_legendary.name=Ragi Ticket (§6Legendary§r)
 item.contenttweaker.ticket_mythic.name=Ragi Ticket (§cMythic§r)
 
+item.contenttweaker.book_reloadevents.name=Debugging Book (Reload Events)
+item.contenttweaker.book_syntax.name=Debugging Book (Syntax)
+item.contenttweaker.book_facing.name=Debugging Book (Teleport to spawn point)
+
 #Blocks
 tile.contenttweaker.unfired_casting_channel.name=Unfired Casting Channel
 tile.contenttweaker.unfired_casting_table.name=Unfired Casting Table
 tile.contenttweaker.unfired_casting_basin.name=Unfired Casting Basin
-tile.contenttweaker.dustblock_electrum.name=Electrum Dust Block
-tile.contenttweaker.dustblock_platinum.name=Platinum Dust Block
-tile.contenttweaker.dustblock_tungstensteel.name=Tungstensteel Dust Block
+tile.contenttweaker.block_bedrockium.name=Block of Bedrockium
+
+tile.contenttweaker.dustblock_alubrass.name=Aluminum Brass Dust Block
+tile.contenttweaker.dustblock_ardite.name=Ardite Dust Block
 tile.contenttweaker.dustblock_cobalt.name=Cobalt Dust Block
+tile.contenttweaker.dustblock_constantan.name=Constantan Dust Block
+tile.contenttweaker.dustblock_electrum.name=Electrum Dust Block
+tile.contenttweaker.dustblock_invar.name=Invar Dust Block
+tile.contenttweaker.dustblock_iridium.name=Iridium Dust Block
 tile.contenttweaker.dustblock_lead.name=Lead Dust Block
+tile.contenttweaker.dustblock_manyullyn.name=Manyullyn Dust Block
+tile.contenttweaker.dustblock_osmium.name=Osmium Dust Block
+tile.contenttweaker.dustblock_platinum.name=Platinum Dust Block
 
 # Fluids
-fluid.hydrogen_halide=Hydrogen Halide
-fluid.hydrogen_sulfide=Hydrogen Sulfide
-fluid.halogen=Halogen
-fluid.titanium_tetrachloride=Titanium Tetrachloride
+fluid.drop_red=Extracted Red Drop
+fluid.drop_green=Extracted Green Drop
+fluid.drop_blue=Extracted Blue Drop
+fluid.drop_white=Extracted White Drop
+fluid.drop_black=Extracted Black Drop
+
+# Machine
+machine.crafttweaker:assembler=Assembler
