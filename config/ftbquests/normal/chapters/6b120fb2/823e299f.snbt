@@ -1,0 +1,20 @@
+{
+	x: 0.0d,
+	y: -4.0d,
+	dependencies: [
+		"1e590e85"
+	],
+	tasks: [{
+		uid: "079751f5",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_device_hopper_gold"
+		}]
+	}],
+	rewards: [{
+		uid: "ca1e02e6",
+		type: "item",
+		item: "dcs_climate:dcs_device_hopper_gold",
+		count: 7
+	}]
+}

@@ -1,0 +1,65 @@
+{
+	title: "{gohd.6b120fb2.83548cba.title}",
+	x: 17.5d,
+	y: 7.0d,
+	hide_dependency_lines: true,
+	dependencies: [
+		"e79fb275"
+	],
+	tasks: [{
+		uid: "56558fb8",
+		type: "item",
+		items: [{
+			item: "botania:manasteelhelm"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "13353e51",
+		type: "item",
+		items: [{
+			item: "botania:manasteelchest"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "e2832ac9",
+		type: "item",
+		items: [{
+			item: "botania:manasteellegs"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "9f96b890",
+		type: "item",
+		items: [{
+			item: "botania:manasteelboots"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "a9b9b488",
+		type: "item",
+		item: "botania:manaweavehelm"
+	},
+	{
+		uid: "b197a48f",
+		type: "item",
+		item: "botania:manaweavechest"
+	},
+	{
+		uid: "b8aedad6",
+		type: "item",
+		item: "botania:manaweavelegs"
+	},
+	{
+		uid: "df6f3de6",
+		type: "item",
+		item: "botania:manaweaveboots"
+	}]
+}

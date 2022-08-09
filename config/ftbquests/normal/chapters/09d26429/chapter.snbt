@@ -1,11 +1,6 @@
 {
 	title: "{gohd.main.title}",
-	icon: {
-		id: "ftbquests:custom_icon",
-		tag: {
-			icon: "botania:textures/misc/planet4.png"
-		}
-	},
+	icon: "minecraft:grass",
 	always_invisible: false,
 	group: 0,
 	default_quest_shape: "circle"

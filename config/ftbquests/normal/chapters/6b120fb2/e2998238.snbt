@@ -1,0 +1,50 @@
+{
+	icon: {
+		id: "railcraft:locomotive_electric",
+		tag: {
+			model: "railcraft:default"
+		}
+	},
+	x: 11.0d,
+	y: -3.0d,
+	dependencies: [
+		"96ad023b"
+	],
+	tasks: [{
+		uid: "8f6714b1",
+		type: "item",
+		items: [{
+			item: "railcraft:flux_transformer"
+		}],
+		count: 8L
+	},
+	{
+		uid: "7738293b",
+		type: "item",
+		items: [{
+			id: "railcraft:locomotive_electric",
+			tag: {
+				model: "railcraft:default"
+			}
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "280733be",
+		type: "item",
+		item: "railcraft:track_flex_electric",
+		count: 64
+	},
+	{
+		uid: "544a88a0",
+		type: "item",
+		item: "railcraft:frame",
+		count: 64
+	},
+	{
+		uid: "f2cb4490",
+		type: "item",
+		item: "railcraft:wire",
+		count: 64
+	}]
+}

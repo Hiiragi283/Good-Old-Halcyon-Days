@@ -1,0 +1,29 @@
+{
+	x: 17.5d,
+	y: 4.0d,
+	shape: "diamond",
+	dependencies: [
+		"c88285cd"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "704d0a63",
+		type: "item",
+		items: [{
+			id: "botania:terrapick",
+			tag: {}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "3f8d419d",
+		type: "item",
+		item: "botania:elementiumpick"
+	},
+	{
+		uid: "8ab97c16",
+		type: "item",
+		item: "contenttweaker:ticket_mythic"
+	}]
+}

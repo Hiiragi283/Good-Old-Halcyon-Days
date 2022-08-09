@@ -14,11 +14,13 @@
 		type: "item",
 		items: [{
 			item: "dcs_climate:dcs_device_chamber"
-		}]
+		}],
+		ignore_nbt: 1b
 	}],
 	rewards: [{
 		uid: "7452258b",
 		type: "item",
-		item: "contenttweaker:ticket_rare"
+		item: "contenttweaker:ticket_uncommon",
+		count: 3
 	}]
 }

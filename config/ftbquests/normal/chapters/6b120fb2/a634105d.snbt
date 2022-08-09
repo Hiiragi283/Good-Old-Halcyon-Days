@@ -1,0 +1,26 @@
+{
+	x: 0.0d,
+	y: 6.0d,
+	dependencies: [
+		"5b95b9a3",
+		"5a0bc24d"
+	],
+	tasks: [{
+		uid: "56d03e68",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_device_ibc"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "343f7be1",
+		type: "item",
+		item: "contenttweaker:ticket_uncommon"
+	},
+	{
+		uid: "e917f97f",
+		type: "item",
+		item: "dcs_climate:dcs_device_sink_half"
+	}]
+}

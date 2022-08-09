@@ -1,0 +1,33 @@
+{
+	x: -3.0d,
+	y: 1.0d,
+	shape: "square",
+	dependencies: [
+		"6c77c9cd"
+	],
+	tasks: [{
+		uid: "ecb46ce0",
+		type: "item",
+		items: [{
+			item: "openblocks:xp_drain"
+		}]
+	},
+	{
+		uid: "90f675e5",
+		type: "item",
+		items: [{
+			item: "openblocks:xp_shower"
+		}]
+	}],
+	rewards: [{
+		uid: "eec2043d",
+		type: "item",
+		item: {
+			id: "mekanism:machineblock2",
+			tag: {
+				tier: 3
+			},
+			Damage: 11s
+		}
+	}]
+}

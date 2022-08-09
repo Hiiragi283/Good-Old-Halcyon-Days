@@ -16,7 +16,18 @@
 	rewards: [{
 		uid: "7368210a",
 		type: "item",
-		item: "contenttweaker:ticket_common",
-		count: 5
+		item: "contenttweaker:ticket_uncommon"
+	},
+	{
+		uid: "192f52c8",
+		type: "item",
+		item: {
+			id: "tconstruct:seared_tank",
+			tag: {
+				FluidName: "lava",
+				Amount: 4000
+			},
+			Damage: 1s
+		}
 	}]
 }

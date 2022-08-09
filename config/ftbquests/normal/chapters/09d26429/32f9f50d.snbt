@@ -1,18 +1,28 @@
 {
 	x: 21.0d,
 	y: 2.0d,
-	shape: "square",
+	shape: "diamond",
 	dependencies: [
 		"8e58d56c",
-		"37fa8a40",
 		"b26e2d9c"
 	],
-	size: 1.5d,
+	dependency_requirement: "one_completed",
+	size: 2.0d,
 	tasks: [{
 		uid: "7ebad90b",
 		type: "item",
 		items: [{
 			item: "enderio:item_material 1 1"
 		}]
+	}],
+	rewards: [{
+		uid: "d21dfbee",
+		type: "item",
+		item: "contenttweaker:ticket_epic"
+	},
+	{
+		uid: "c0e2d0bb",
+		type: "item",
+		item: "enderio:item_yeta_wrench"
 	}]
 }

@@ -1,0 +1,49 @@
+{
+	icon: "minecraft:writable_book",
+	x: -1.0d,
+	y: 3.0d,
+	dependencies: [
+		"0db65950"
+	],
+	tasks: [{
+		uid: "dd2d5dd3",
+		type: "item",
+		items: [{
+			item: "bibliocraft:typesettingtable"
+		}]
+	},
+	{
+		uid: "1f293d61",
+		type: "item",
+		items: [{
+			item: "bibliocraft:bibliochase"
+		}]
+	},
+	{
+		uid: "a30f542b",
+		type: "item",
+		items: [{
+			item: "bibliocraft:printingpress"
+		}]
+	}],
+	rewards: [{
+		uid: "c143c62c",
+		type: "item",
+		item: "minecraft:dye",
+		count: 16
+	},
+	{
+		uid: "e2c70162",
+		type: "item",
+		item: {
+			id: "bibliocraft:enchantedplate",
+			tag: {
+				Unbreakable: 1b,
+				StoredEnchantments: [{
+					lvl: 5s,
+					id: 34s
+				}]
+			}
+		}
+	}]
+}

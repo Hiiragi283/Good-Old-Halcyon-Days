@@ -1,0 +1,21 @@
+{
+	x: 6.0d,
+	y: 2.0d,
+	dependencies: [
+		"5ecfe9d7"
+	],
+	tasks: [{
+		uid: "fbf41a86",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_device_conveyor"
+		}],
+		count: 8L
+	}],
+	rewards: [{
+		uid: "17ff35ca",
+		type: "item",
+		item: "hap:conveyor",
+		count: 56
+	}]
+}

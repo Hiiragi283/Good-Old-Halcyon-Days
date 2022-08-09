@@ -1,0 +1,33 @@
+{
+	title: "{gohd.6b120fb2.1c92bac1.title}",
+	icon: "enderio:item_end_steel_pickaxe",
+	x: 18.5d,
+	y: 3.0d,
+	dependencies: [
+		"d99e03b5"
+	],
+	tasks: [{
+		uid: "e5bdd8b3",
+		type: "item",
+		items: [{
+			item: "enderio:item_end_steel_pickaxe"
+		},
+		{
+			item: "enderio:item_end_steel_axe"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "82bec652",
+		type: "item",
+		item: {
+			id: "enderio:item_dark_steel_upgrade",
+			tag: {
+				"enderio:dsu": "enderio:direct"
+			},
+			Damage: 1s
+		},
+		count: 2
+	}]
+}

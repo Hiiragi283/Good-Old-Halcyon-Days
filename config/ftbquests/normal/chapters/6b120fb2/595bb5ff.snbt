@@ -1,0 +1,22 @@
+{
+	x: 17.5d,
+	y: -3.0d,
+	hide_dependency_lines: true,
+	dependencies: [
+		"d005700a"
+	],
+	tasks: [{
+		uid: "752be064",
+		type: "item",
+		items: [{
+			item: "botania:terrasword"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "777ffb95",
+		type: "item",
+		item: "botania:auraringgreater"
+	}]
+}

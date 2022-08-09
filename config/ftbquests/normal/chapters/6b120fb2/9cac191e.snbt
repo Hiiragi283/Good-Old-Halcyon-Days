@@ -1,0 +1,20 @@
+{
+	x: 5.0d,
+	y: -8.0d,
+	dependencies: [
+		"8ddb757f"
+	],
+	tasks: [{
+		uid: "79daba8c",
+		type: "item",
+		items: [{
+			item: "enderio:block_inventory_panel"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "0ef0c0e3",
+		type: "item",
+		item: "enderio:block_inventory_chest_warehouse13"
+	}]
+}

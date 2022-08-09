@@ -1,0 +1,19 @@
+{
+	title: "{gohd.6b120fb2.cc9e5886.title}",
+	icon: "minecraft:diamond_pickaxe",
+	x: 16.5d,
+	y: 2.0d,
+	shape: "square",
+	dependencies: [
+		"4fb7c614"
+	],
+	tasks: [{
+		uid: "514e70c7",
+		type: "checkmark"
+	}],
+	rewards: [{
+		uid: "50e137f8",
+		type: "item",
+		item: "minecraft:diamond_pickaxe"
+	}]
+}

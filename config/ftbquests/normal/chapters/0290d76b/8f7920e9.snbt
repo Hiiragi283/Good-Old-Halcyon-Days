@@ -1,7 +1,7 @@
 {
 	icon: "thermalexpansion:augment 1 336",
-	x: 2.0d,
-	y: -1.0d,
+	x: 0.0d,
+	y: 2.0d,
 	dependencies: [
 		"d7b278e5"
 	],
@@ -9,9 +9,7 @@
 		uid: "d56f6f53",
 		type: "item",
 		items: [{
-			id: "thermalexpansion:machine",
-			tag: {},
-			Damage: 5s
+			item: "thermalexpansion:machine 1 5"
 		}],
 		ignore_nbt: 1b
 	},

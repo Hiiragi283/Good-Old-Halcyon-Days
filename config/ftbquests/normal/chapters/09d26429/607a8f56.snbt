@@ -35,6 +35,7 @@
 	rewards: [{
 		uid: "9ca72c7f",
 		type: "item",
-		item: "dcs_climate:dcs_ore_dustblock 1 9"
+		item: "dcs_climate:dcs_ore_dustblock 1 9",
+		count: 3
 	}]
 }

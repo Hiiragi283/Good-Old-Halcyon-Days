@@ -11,5 +11,10 @@
 		items: [{
 			item: "dcs_climate:dcs_device_fuelstove"
 		}]
+	}],
+	rewards: [{
+		uid: "7bfd3bf0",
+		type: "item",
+		item: "contenttweaker:ticket_uncommon"
 	}]
 }

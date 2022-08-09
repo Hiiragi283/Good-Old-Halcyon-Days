@@ -1,0 +1,33 @@
+{
+	title: "{gohd.6b120fb2.c88285cd.title}",
+	icon: "botania:manasteelpick",
+	x: 17.5d,
+	y: 2.0d,
+	hide_dependency_lines: true,
+	dependencies: [
+		"cc9e5886"
+	],
+	tasks: [{
+		uid: "8e0b0182",
+		type: "item",
+		items: [{
+			item: "botania:manasteelpick"
+		},
+		{
+			item: "botania:manasteelshovel"
+		},
+		{
+			item: "botania:manasteelaxe"
+		},
+		{
+			item: "aiotbotania:manasteelhoe"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "20ae5443",
+		type: "item",
+		item: "botania:glasspick"
+	}]
+}

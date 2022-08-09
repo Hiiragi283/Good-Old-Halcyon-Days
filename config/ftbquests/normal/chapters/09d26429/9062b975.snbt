@@ -1,0 +1,45 @@
+{
+	title: "{gohd.cccede9d.fcea16fa.title}",
+	icon: "dcs_climate:dcs_ore_stone_new 1 4",
+	x: 0.0d,
+	y: 5.5d,
+	shape: "diamond",
+	dependencies: [
+		"b7a8e920",
+		"782ce9a8",
+		"b7f32bee",
+		"47243bc3"
+	],
+	size: 1.5d,
+	tasks: [{
+		uid: "466a723f",
+		type: "item",
+		items: [{
+			item: "minecraft:cobblestone"
+		}],
+		count: 256L
+	}],
+	rewards: [{
+		uid: "427aa493",
+		type: "item",
+		item: "dcs_climate:dcs_ore_stone_new 1 4",
+		count: 64
+	},
+	{
+		uid: "91aa473c",
+		type: "item",
+		item: "dcs_climate:dcs_ore_stone_new 1 9",
+		count: 32
+	},
+	{
+		uid: "ce9704af",
+		type: "item",
+		item: "dcs_climate:dcs_layer_stone_new 1 4",
+		count: 16
+	},
+	{
+		uid: "e7f81977",
+		type: "item",
+		item: "minecraft:diamond"
+	}]
+}

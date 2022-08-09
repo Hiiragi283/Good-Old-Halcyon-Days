@@ -1,0 +1,27 @@
+{
+	x: 7.0d,
+	y: 1.0d,
+	dependencies: [
+		"cc4088f8"
+	],
+	tasks: [{
+		uid: "2c538fe0",
+		type: "item",
+		items: [{
+			item: "hap:shaft_straight_sus"
+		}],
+		count: 8L
+	}],
+	rewards: [{
+		uid: "f93a9e34",
+		type: "item",
+		item: "hap:shaft_straight_sus",
+		count: 24
+	},
+	{
+		uid: "6acafb90",
+		type: "item",
+		item: "contenttweaker:ticket_legendary",
+		count: 3
+	}]
+}

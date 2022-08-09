@@ -1,0 +1,34 @@
+{
+	title: "{gohd.reward.coating_tool.title}",
+	loot_size: 1,
+	rewards: [{
+		item: "dcs_climate:dcs_coating_tool"
+	},
+	{
+		item: "dcs_climate:dcs_coating_tool 1 1"
+	},
+	{
+		item: "dcs_climate:dcs_coating_tool 1 2"
+	},
+	{
+		item: "dcs_climate:dcs_coating_tool 1 3"
+	},
+	{
+		item: "dcs_climate:dcs_coating_tool 1 4"
+	},
+	{
+		item: "dcs_climate:dcs_coating_tool 1 5"
+	},
+	{
+		item: "dcs_climate:dcs_coating_tool 1 6"
+	},
+	{
+		item: "dcs_climate:dcs_coating_tool 1 7"
+	},
+	{
+		item: "dcs_climate:dcs_coating_tool 1 8"
+	},
+	{
+		item: "hap:coating_molybdenum"
+	}]
+}

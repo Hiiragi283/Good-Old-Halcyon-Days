@@ -1,6 +1,6 @@
 {
 	x: 8.0d,
-	y: 1.0d,
+	y: 0.0d,
 	dependencies: [
 		"9e79be74"
 	],
@@ -10,11 +10,5 @@
 		items: [{
 			item: "contenttweaker:ticket_epic"
 		}]
-	}],
-	rewards: [{
-		uid: "b36eb1d4",
-		type: "item",
-		item: "contenttweaker:ticket_epic",
-		count: 3
 	}]
 }

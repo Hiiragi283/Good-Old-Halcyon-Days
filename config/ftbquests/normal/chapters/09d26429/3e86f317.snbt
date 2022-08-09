@@ -16,7 +16,18 @@
 		uid: "a56fa03a",
 		type: "item",
 		items: [{
-			item: "dcs_climate:dcs_oreitem"
+			ForgeCaps: {
+				Parent: {
+					data: "oreCopper",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any oreCopper"
+				}
+			}
 		}]
 	},
 	{

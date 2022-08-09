@@ -1,0 +1,14 @@
+{
+	x: 3.0d,
+	y: -1.0d,
+	dependencies: [
+		"0641bc41"
+	],
+	tasks: [{
+		uid: "64e960c2",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_device_watermill"
+		}]
+	}]
+}

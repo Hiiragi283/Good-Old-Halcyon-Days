@@ -1,0 +1,24 @@
+{
+	x: 0.0d,
+	y: 0.0d,
+	shape: "square",
+	description: "{gohd.0f73c1bb.978f1566.subtitle}",
+	dependencies: [
+		"fefdc76d",
+		"4955912c",
+		"88b4c1aa"
+	],
+	tasks: [{
+		uid: "6812eff1",
+		type: "item",
+		items: [{
+			item: "biomesoplenty:earth"
+		}]
+	}],
+	rewards: [{
+		uid: "dea493e0",
+		type: "item",
+		item: "contenttweaker:ticket_mythic",
+		count: 3
+	}]
+}

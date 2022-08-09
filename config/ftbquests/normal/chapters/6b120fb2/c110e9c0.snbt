@@ -1,0 +1,21 @@
+{
+	x: 10.0d,
+	y: 4.0d,
+	shape: "rsquare",
+	dependencies: [
+		"e608130b"
+	],
+	optional: true,
+	tasks: [{
+		uid: "7b967494",
+		type: "item",
+		items: [{
+			item: "quarryplus:miningwellplus"
+		}]
+	}],
+	rewards: [{
+		uid: "85183887",
+		type: "item",
+		item: "contenttweaker:ticket_epic"
+	}]
+}

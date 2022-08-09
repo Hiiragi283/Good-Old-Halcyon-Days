@@ -1,0 +1,39 @@
+{
+	title: "{gohd.cccede9d.4b446108.title}",
+	icon: "dcs_climate:dcs_ore_stone_new 1 2",
+	x: -1.5d,
+	y: 5.5d,
+	shape: "diamond",
+	hide_dependency_lines: true,
+	dependencies: [
+		"42aa3c8a"
+	],
+	hide: true,
+	size: 1.5d,
+	tasks: [{
+		uid: "fb292a19",
+		type: "item",
+		items: [{
+			item: "minecraft:clay"
+		}],
+		count: 64L
+	}],
+	rewards: [{
+		uid: "81e0702c",
+		type: "item",
+		item: "dcs_climate:dcs_ore_stone_new 1 2",
+		count: 64
+	},
+	{
+		uid: "797043af",
+		type: "item",
+		item: "dcs_climate:dcs_ore_stone_new 1 7",
+		count: 32
+	},
+	{
+		uid: "b158577c",
+		type: "item",
+		item: "dcs_climate:dcs_layer_stone_new",
+		count: 16
+	}]
+}

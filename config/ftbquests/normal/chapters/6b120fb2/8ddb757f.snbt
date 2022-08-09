@@ -1,0 +1,19 @@
+{
+	x: 4.0d,
+	y: -7.0d,
+	dependencies: [
+		"d427c913"
+	],
+	tasks: [{
+		uid: "f695d8c9",
+		type: "item",
+		items: [{
+			item: "ezstorage:storage_core"
+		}]
+	}],
+	rewards: [{
+		uid: "5122cdc2",
+		type: "item",
+		item: "ezstorage:hyper_storage_box"
+	}]
+}

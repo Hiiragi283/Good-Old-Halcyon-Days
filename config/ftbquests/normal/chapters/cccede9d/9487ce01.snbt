@@ -11,5 +11,10 @@
 		items: [{
 			item: "dcs_climate:dcs_gem_blue"
 		}]
+	}],
+	rewards: [{
+		uid: "279608a6",
+		type: "item",
+		item: "contenttweaker:ticket_common"
 	}]
 }

@@ -1,0 +1,19 @@
+{
+	title: "{gohd.reward.badge.title}",
+	loot_size: 1,
+	rewards: [{
+		item: "dcs_climate:dcs_color_badge 1 2"
+	},
+	{
+		item: "dcs_climate:dcs_color_badge 1 1"
+	},
+	{
+		item: "dcs_climate:dcs_color_badge"
+	},
+	{
+		item: "dcs_climate:dcs_color_badge 1 4"
+	},
+	{
+		item: "dcs_climate:dcs_color_badge 1 3"
+	}]
+}

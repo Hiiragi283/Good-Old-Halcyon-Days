@@ -1,0 +1,35 @@
+{
+	title: "{gohd.0f73c1bb.73be3bc0.title}",
+	icon: "minecraft:portal",
+	x: -2.7d,
+	y: 2.7d,
+	shape: "square",
+	text: [
+		"{gohd.0f73c1bb.73be3bc0.desc1}"
+	],
+	hide_dependency_lines: true,
+	dependencies: [
+		"978f1566"
+	],
+	tasks: [{
+		uid: "015fc332",
+		type: "item",
+		items: [{
+			item: "biomesoplenty:grass 1 5"
+		}],
+		count: 4L
+	},
+	{
+		uid: "11842c89",
+		type: "item",
+		items: [{
+			item: "biomesoplenty:leaves_2 1 8"
+		}],
+		count: 10L
+	}],
+	rewards: [{
+		uid: "671a6052",
+		type: "item",
+		item: "biomesoplenty:earth"
+	}]
+}

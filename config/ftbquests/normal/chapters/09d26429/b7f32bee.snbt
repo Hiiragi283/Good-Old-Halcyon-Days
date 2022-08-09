@@ -1,0 +1,50 @@
+{
+	title: "{gohd.cccede9d.94dd1723.title}",
+	icon: "dcs_climate:dcs_ore_stone_new 1 3",
+	x: 1.5d,
+	y: 5.5d,
+	shape: "diamond",
+	hide_dependency_lines: true,
+	dependencies: [
+		"42aa3c8a"
+	],
+	hide: true,
+	size: 1.5d,
+	tasks: [{
+		uid: "1705d140",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "gravel",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any gravel"
+				}
+			}
+		}],
+		count: 64L
+	}],
+	rewards: [{
+		uid: "45248d1b",
+		type: "item",
+		item: "dcs_climate:dcs_ore_stone_new 1 3",
+		count: 64
+	},
+	{
+		uid: "27824801",
+		type: "item",
+		item: "dcs_climate:dcs_ore_stone_new 1 8",
+		count: 32
+	},
+	{
+		uid: "73ce61ad",
+		type: "item",
+		item: "dcs_climate:dcs_layer_stone_new 1 5",
+		count: 16
+	}]
+}

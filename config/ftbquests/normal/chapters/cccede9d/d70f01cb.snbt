@@ -8,7 +8,7 @@
 		"{gohd.cccede9d.d70f01cb.desc1}"
 	],
 	dependencies: [
-		"347787d5"
+		"4fb7c614"
 	],
 	optional: true,
 	tasks: [{
@@ -27,5 +27,10 @@
 		{
 			item: "dcs_climate:dcs_gem_white 1 5"
 		}]
+	}],
+	rewards: [{
+		uid: "c9bb845e",
+		type: "item",
+		item: "contenttweaker:ticket_rare"
 	}]
 }

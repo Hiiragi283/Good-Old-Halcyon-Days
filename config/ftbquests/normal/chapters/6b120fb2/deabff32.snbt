@@ -1,0 +1,32 @@
+{
+	x: 13.0d,
+	y: 5.0d,
+	shape: "diamond",
+	dependencies: [
+		"e608130b"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "de667935",
+		type: "item",
+		items: [{
+			item: "quarryplus:quarry"
+		}]
+	}],
+	rewards: [{
+		uid: "8467ae98",
+		type: "item",
+		item: "contenttweaker:ticket_legendary"
+	},
+	{
+		uid: "dc868a4a",
+		type: "item",
+		item: "quarryplus:markerplus",
+		count: 4
+	},
+	{
+		uid: "783a5269",
+		type: "item",
+		item: "quarryplus:tool"
+	}]
+}

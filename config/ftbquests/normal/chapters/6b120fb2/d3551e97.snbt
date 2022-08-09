@@ -1,0 +1,22 @@
+{
+	x: 12.0d,
+	y: -4.0d,
+	dependencies: [
+		"5a58fff8",
+		"e2998238"
+	],
+	tasks: [{
+		uid: "0bc32ea2",
+		type: "item",
+		items: [{
+			item: "railcraft:track_flex_hs_electric"
+		}],
+		count: 32L
+	}],
+	rewards: [{
+		uid: "23a453e4",
+		type: "item",
+		item: "railcraft:track_flex_hs_electric",
+		count: 32
+	}]
+}

@@ -11,5 +11,10 @@
 		items: [{
 			item: "dcs_climate:dcs_ore_heatingmetal 1 2"
 		}]
+	}],
+	rewards: [{
+		uid: "b7df8c40",
+		type: "item",
+		item: "contenttweaker:ticket_uncommon"
 	}]
 }

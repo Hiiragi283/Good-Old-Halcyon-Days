@@ -7,7 +7,8 @@
 		}
 	},
 	x: 4.0d,
-	y: 3.0d,
+	y: 2.0d,
+	can_repeat: true,
 	hide_dependency_lines: true,
 	dependencies: [
 		"ba50aed9"
@@ -23,13 +24,7 @@
 	rewards: [{
 		uid: "631b136d",
 		type: "item",
-		item: {
-			id: "thermalexpansion:satchel",
-			tag: {
-				Accessible: 1b
-			},
-			Damage: 4s
-		}
+		item: "thermalexpansion:satchel 1 4"
 	},
 	{
 		uid: "613cf78a",
@@ -44,11 +39,11 @@
 	{
 		uid: "2f93f4c6",
 		type: "choice",
-		table: 3
+		table: 2
 	},
 	{
 		uid: "d897d10e",
 		type: "choice",
-		table: 4
+		table: 3
 	}]
 }

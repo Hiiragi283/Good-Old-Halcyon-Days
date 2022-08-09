@@ -10,7 +10,6 @@
 	],
 	tasks: [{
 		uid: "342663cf",
-		type: "checkmark",
-		title: "{gohd.e763bfd4.8b4775e4.title}"
+		type: "checkmark"
 	}]
 }

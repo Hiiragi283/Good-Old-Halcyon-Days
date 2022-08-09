@@ -16,5 +16,10 @@
 		{
 			item: "dcs_climate:dcs_device_fan"
 		}]
+	}],
+	rewards: [{
+		uid: "8ac65066",
+		type: "item",
+		item: "contenttweaker:ticket_uncommon"
 	}]
 }

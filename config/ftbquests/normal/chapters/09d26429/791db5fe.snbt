@@ -11,5 +11,15 @@
 		items: [{
 			item: "morefurnaces:furnaceblock"
 		}]
+	}],
+	rewards: [{
+		uid: "e98ca502",
+		type: "item",
+		item: "morefurnaces:upgrade 1 2"
+	},
+	{
+		uid: "be1db192",
+		type: "item",
+		item: "morefurnaces:upgrade 1 4"
 	}]
 }

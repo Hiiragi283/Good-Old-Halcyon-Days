@@ -11,5 +11,11 @@
 		items: [{
 			item: "dcs_climate:dcs_device_gas_burner"
 		}]
+	}],
+	rewards: [{
+		uid: "1121c656",
+		type: "item",
+		item: "contenttweaker:ticket_rare",
+		count: 2
 	}]
 }

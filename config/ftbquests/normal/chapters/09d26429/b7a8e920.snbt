@@ -1,0 +1,50 @@
+{
+	title: "{gohd.cccede9d.add5de61.title}",
+	icon: "dcs_climate:dcs_ore_stone_new",
+	x: 0.0d,
+	y: 4.0d,
+	shape: "diamond",
+	hide_dependency_lines: true,
+	dependencies: [
+		"42aa3c8a"
+	],
+	hide: true,
+	size: 1.5d,
+	tasks: [{
+		uid: "81dd0f24",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "sand",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any sand"
+				}
+			}
+		}],
+		count: 64L
+	}],
+	rewards: [{
+		uid: "30fd8ad9",
+		type: "item",
+		item: "dcs_climate:dcs_ore_stone_new",
+		count: 64
+	},
+	{
+		uid: "4f8cc224",
+		type: "item",
+		item: "dcs_climate:dcs_ore_stone_new 1 5",
+		count: 32
+	},
+	{
+		uid: "905ac5f4",
+		type: "item",
+		item: "dcs_climate:dcs_layer_stone_new 1 3",
+		count: 16
+	}]
+}

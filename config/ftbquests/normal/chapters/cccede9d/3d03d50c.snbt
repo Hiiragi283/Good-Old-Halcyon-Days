@@ -11,5 +11,10 @@
 		items: [{
 			item: "dcs_climate:dcs_oreitem 1 1"
 		}]
+	}],
+	rewards: [{
+		uid: "25eefca3",
+		type: "item",
+		item: "contenttweaker:ticket_common"
 	}]
 }

@@ -1,7 +1,7 @@
 {
 	title: "{item.dcs_gemboots_blue.name}",
 	icon: "dcs_climate:dcs_gemboots_blue",
-	x: 4.0d,
+	x: 6.0d,
 	y: 5.0d,
 	can_repeat: true,
 	hide_dependency_lines: true,
@@ -12,7 +12,7 @@
 		uid: "6d6a368d",
 		type: "item",
 		items: [{
-			item: "contenttweaker:ticket_uncommon"
+			item: "contenttweaker:ticket_rare"
 		}],
 		count: 3L,
 		ignore_damage: true,

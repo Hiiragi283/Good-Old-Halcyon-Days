@@ -8,12 +8,7 @@
 	tasks: [{
 		uid: "6919a4e2",
 		type: "dimension",
-		icon: {
-			id: "ftbquests:custom_icon",
-			tag: {
-				icon: "minecraft:textures/entity/end_portal.png"
-			}
-		},
+		icon: "minecraft:end_gateway",
 		dim: 1
 	}],
 	rewards: [{

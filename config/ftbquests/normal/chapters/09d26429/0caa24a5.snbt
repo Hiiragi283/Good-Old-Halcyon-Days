@@ -10,12 +10,12 @@
 		items: [{
 			item: "tconstruct:soil"
 		}],
-		count: 64L
+		count: 32L
 	}],
 	rewards: [{
 		uid: "57b45590",
 		type: "item",
 		item: "tconstruct:soil",
-		count: 3
+		count: 35
 	}]
 }

@@ -1,0 +1,17 @@
+{
+	x: -1.5d,
+	y: 7.0d,
+	shape: "diamond",
+	dependencies: [
+		"dc397ef5"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "75725564",
+		type: "item",
+		items: [{
+			item: "tconstruct:tinker_tank_controller"
+		}],
+		ignore_nbt: 1b
+	}]
+}

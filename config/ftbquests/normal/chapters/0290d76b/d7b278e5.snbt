@@ -3,6 +3,7 @@
 	icon: "dcs_climate:dcs_device_display_vending_machine",
 	x: 0.0d,
 	y: 0.0d,
+	shape: "hexagon",
 	text: [
 		"{gohd.shop.desc1}",
 		"{gohd.shop.desc2}"

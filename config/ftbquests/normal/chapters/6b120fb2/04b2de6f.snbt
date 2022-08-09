@@ -1,0 +1,20 @@
+{
+	x: 9.0d,
+	y: -3.0d,
+	dependencies: [
+		"96ad023b"
+	],
+	tasks: [{
+		uid: "17ef0907",
+		type: "item",
+		items: [{
+			item: "railcraft:bore"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "ba693347",
+		type: "item",
+		item: "railcraft:borehead_diamond"
+	}]
+}

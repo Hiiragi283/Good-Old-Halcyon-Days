@@ -9,11 +9,12 @@
 		type: "item",
 		items: [{
 			item: "dcs_climate:dcs_device_stonemill"
-		}]
+		}],
+		ignore_nbt: 1b
 	}],
 	rewards: [{
 		uid: "3fe95769",
 		type: "item",
-		item: "contenttweaker:ticket_uncommon"
+		item: "contenttweaker:ticket_rare"
 	}]
 }

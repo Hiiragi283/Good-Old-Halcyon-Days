@@ -1,0 +1,50 @@
+{
+	title: "{gohd.cccede9d.6ef83f24.title}",
+	icon: "dcs_climate:dcs_ore_stone_new 1 1",
+	x: 0.0d,
+	y: 7.0d,
+	shape: "diamond",
+	hide_dependency_lines: true,
+	dependencies: [
+		"42aa3c8a"
+	],
+	hide: true,
+	size: 1.5d,
+	tasks: [{
+		uid: "b41ce79f",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "logWood",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any logWood"
+				}
+			}
+		}],
+		count: 64L
+	}],
+	rewards: [{
+		uid: "268340d4",
+		type: "item",
+		item: "dcs_climate:dcs_ore_stone_new 1 1",
+		count: 64
+	},
+	{
+		uid: "e46394cf",
+		type: "item",
+		item: "dcs_climate:dcs_ore_stone_new 1 6",
+		count: 32
+	},
+	{
+		uid: "e083548f",
+		type: "item",
+		item: "dcs_climate:dcs_layer_stone_new 1 6",
+		count: 16
+	}]
+}

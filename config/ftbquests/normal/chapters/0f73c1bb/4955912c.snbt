@@ -1,0 +1,21 @@
+{
+	x: 2.75d,
+	y: 0.0d,
+	shape: "square",
+	description: "{gohd.0f73c1bb.4955912c.subtitle}",
+	dependencies: [
+		"6ab31c74"
+	],
+	tasks: [{
+		uid: "55abc81a",
+		type: "item",
+		items: [{
+			item: "extrautils2:teleporter"
+		}]
+	}],
+	rewards: [{
+		uid: "275e8c19",
+		type: "item",
+		item: "contenttweaker:ticket_mythic"
+	}]
+}

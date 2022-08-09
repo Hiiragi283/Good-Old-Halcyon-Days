@@ -1,0 +1,21 @@
+{
+	x: -1.0d,
+	y: -6.0d,
+	hide_dependency_lines: true,
+	dependencies: [
+		"1e590e85"
+	],
+	tasks: [{
+		uid: "b3399ccc",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_device_hopper_chest"
+		}]
+	}],
+	rewards: [{
+		uid: "05095e19",
+		type: "item",
+		item: "contenttweaker:ticket_uncommon",
+		count: 3
+	}]
+}

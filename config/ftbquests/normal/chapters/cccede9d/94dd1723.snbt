@@ -7,7 +7,7 @@
 		"{dcs.info.desc.stone_w}"
 	],
 	dependencies: [
-		"347787d5"
+		"4fb7c614"
 	],
 	tasks: [{
 		uid: "ddb487b7",
@@ -39,5 +39,10 @@
 		items: [{
 			item: "dcs_climate:dcs_ore_gemblock 1 6"
 		}]
+	}],
+	rewards: [{
+		uid: "b3b94391",
+		type: "item",
+		item: "contenttweaker:ticket_uncommon"
 	}]
 }

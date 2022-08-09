@@ -1,0 +1,26 @@
+{
+	icon: "minecraft:minecart",
+	x: 10.0d,
+	y: -4.0d,
+	dependencies: [
+		"1e4e50e2"
+	],
+	tasks: [{
+		uid: "ef0e46b2",
+		type: "item",
+		items: [{
+			item: "minecraft:minecart"
+		}]
+	}],
+	rewards: [{
+		uid: "ea3be60a",
+		type: "item",
+		item: "minecraft:rail",
+		count: 64
+	},
+	{
+		uid: "f9b57006",
+		type: "item",
+		item: "railcraft:tool_crowbar_iron"
+	}]
+}

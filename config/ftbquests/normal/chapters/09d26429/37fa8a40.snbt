@@ -1,5 +1,5 @@
 {
-	x: 17.0d,
+	x: 19.0d,
 	y: 4.0d,
 	dependencies: [
 		"2981f6de"
@@ -10,5 +10,11 @@
 		items: [{
 			item: "enderio:item_material"
 		}]
+	}],
+	rewards: [{
+		uid: "9195509c",
+		type: "item",
+		item: "enderio:item_material",
+		count: 3
 	}]
 }

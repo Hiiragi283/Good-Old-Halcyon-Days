@@ -1,0 +1,22 @@
+{
+	x: -4.0d,
+	y: -4.0d,
+	shape: "rsquare",
+	dependencies: [
+		"d9c31ec7"
+	],
+	optional: true,
+	tasks: [{
+		uid: "3a8c2f94",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_device_player_panel"
+		}]
+	}],
+	rewards: [{
+		uid: "7765f764",
+		type: "item",
+		item: "contenttweaker:ticket_epic",
+		count: 3
+	}]
+}

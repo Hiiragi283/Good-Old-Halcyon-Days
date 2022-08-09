@@ -1,0 +1,19 @@
+{
+	x: 1.0d,
+	y: -6.0d,
+	dependencies: [
+		"56363e0d"
+	],
+	tasks: [{
+		uid: "cd14bec0",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_device_hopper_sus"
+		}]
+	}],
+	rewards: [{
+		uid: "54ec98ae",
+		type: "item",
+		item: "contenttweaker:ticket_rare"
+	}]
+}

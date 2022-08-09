@@ -1,0 +1,24 @@
+{
+	title: "{gohd.reward.badge.title}",
+	icon: "dcs_climate:dcs_color_badge 1 2",
+	x: 6.0d,
+	y: 3.0d,
+	can_repeat: true,
+	hide_dependency_lines: true,
+	dependencies: [
+		"9e79be74"
+	],
+	tasks: [{
+		uid: "5d97adb6",
+		type: "item",
+		items: [{
+			item: "contenttweaker:ticket_rare"
+		}],
+		count: 3L
+	}],
+	rewards: [{
+		uid: "7653dbc2",
+		type: "choice",
+		table: 7
+	}]
+}

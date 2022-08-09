@@ -1,0 +1,20 @@
+{
+	x: 2.0d,
+	y: 8.0d,
+	dependencies: [
+		"dc397ef5"
+	],
+	tasks: [{
+		uid: "a28115b3",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_food_pack"
+		}],
+		count: 16L
+	}],
+	rewards: [{
+		uid: "25421c8a",
+		type: "item",
+		item: "dcs_climate:dcs_food_pack 1 7"
+	}]
+}

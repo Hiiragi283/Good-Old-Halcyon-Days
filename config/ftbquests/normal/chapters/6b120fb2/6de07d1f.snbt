@@ -1,0 +1,20 @@
+{
+	x: 9.0d,
+	y: -5.0d,
+	dependencies: [
+		"96ad023b"
+	],
+	tasks: [{
+		uid: "06f55ceb",
+		type: "item",
+		items: [{
+			item: "railcraft:track_flex_strap_iron"
+		}]
+	}],
+	rewards: [{
+		uid: "86dbae4e",
+		type: "item",
+		item: "railcraft:track_flex_strap_iron",
+		count: 64
+	}]
+}

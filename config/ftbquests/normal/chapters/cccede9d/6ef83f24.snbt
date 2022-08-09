@@ -7,7 +7,7 @@
 		"{dcs.info.desc.stone_g}"
 	],
 	dependencies: [
-		"347787d5"
+		"4fb7c614"
 	],
 	tasks: [{
 		uid: "e7772ed3",
@@ -29,5 +29,10 @@
 		items: [{
 			item: "dcs_climate:dcs_layer_stone_new 1 6"
 		}]
+	}],
+	rewards: [{
+		uid: "5bf888cb",
+		type: "item",
+		item: "contenttweaker:ticket_uncommon"
 	}]
 }

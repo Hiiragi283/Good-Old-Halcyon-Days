@@ -1,0 +1,19 @@
+{
+	x: 6.0d,
+	y: 4.0d,
+	dependencies: [
+		"0641bc41"
+	],
+	tasks: [{
+		uid: "aae5331b",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_device_water_pump"
+		}]
+	}],
+	rewards: [{
+		uid: "3286f9e4",
+		type: "item",
+		item: "contenttweaker:ticket_uncommon"
+	}]
+}

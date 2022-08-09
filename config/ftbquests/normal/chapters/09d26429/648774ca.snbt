@@ -1,6 +1,11 @@
 {
 	title: "{gohd.5f3109ce.648774ca.title}",
-	icon: "minecraft:grass",
+	icon: {
+		id: "ftbquests:custom_icon",
+		tag: {
+			icon: "botania:textures/misc/planet4.png"
+		}
+	},
 	x: 0.0d,
 	y: 0.0d,
 	shape: "hexagon",

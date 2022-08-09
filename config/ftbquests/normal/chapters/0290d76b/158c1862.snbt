@@ -13,11 +13,12 @@
 		type: "item",
 		items: [{
 			item: "contenttweaker:ticket_common"
-		}]
+		}],
+		count: 2L
 	}],
 	rewards: [{
 		uid: "5ab3a409",
 		type: "choice",
-		table: 1
+		table: 0
 	}]
 }

@@ -15,13 +15,9 @@
 		}]
 	}],
 	rewards: [{
-		uid: "dd01a6f3",
-		type: "item",
-		item: "hap:heat_block"
-	},
-	{
 		uid: "57de1eec",
 		type: "item",
-		item: "contenttweaker:ticket_rare"
+		item: "contenttweaker:ticket_rare",
+		count: 3
 	}]
 }

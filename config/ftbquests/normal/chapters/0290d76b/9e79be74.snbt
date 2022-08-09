@@ -1,6 +1,6 @@
 {
 	x: 6.0d,
-	y: 1.0d,
+	y: 0.0d,
 	dependencies: [
 		"ba50aed9"
 	],
@@ -10,11 +10,5 @@
 		items: [{
 			item: "contenttweaker:ticket_rare"
 		}]
-	}],
-	rewards: [{
-		uid: "28064dbd",
-		type: "item",
-		item: "contenttweaker:ticket_rare",
-		count: 3
 	}]
 }

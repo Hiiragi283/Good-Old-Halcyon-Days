@@ -15,9 +15,6 @@
 	rewards: [{
 		uid: "5d00333c",
 		type: "item",
-		item: {
-			id: "openblocks:golden_eye",
-			tag: {}
-		}
+		item: "openblocks:golden_eye"
 	}]
 }

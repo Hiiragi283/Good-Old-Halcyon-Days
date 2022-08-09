@@ -1,7 +1,0 @@
-{
-	title: "{gohd.tool.title}",
-	icon: "minecraft:diamond_pickaxe",
-	always_invisible: false,
-	group: 0,
-	default_quest_shape: ""
-}

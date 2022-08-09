@@ -1,7 +1,7 @@
 {
 	title: "{gohd.minerals.title}",
-	icon: "dcs_climate:dcs_gem_black 1 5",
+	icon: "minecraft:diamond_ore",
 	always_invisible: false,
-	group: 946551985,
+	group: 0,
 	default_quest_shape: "square"
 }

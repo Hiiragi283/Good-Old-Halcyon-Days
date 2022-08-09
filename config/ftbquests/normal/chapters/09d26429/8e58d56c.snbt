@@ -2,7 +2,8 @@
 	x: 21.0d,
 	y: 4.0d,
 	dependencies: [
-		"885c0e70"
+		"885c0e70",
+		"37fa8a40"
 	],
 	tasks: [{
 		uid: "73a948dc",
@@ -10,5 +11,11 @@
 		items: [{
 			item: "enderio:item_material 1 51"
 		}]
+	}],
+	rewards: [{
+		uid: "4fae54eb",
+		type: "item",
+		item: "enderio:item_material 1 51",
+		count: 3
 	}]
 }

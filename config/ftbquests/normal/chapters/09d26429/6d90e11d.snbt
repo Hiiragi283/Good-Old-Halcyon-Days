@@ -14,6 +14,6 @@
 	rewards: [{
 		uid: "ebfaa0e5",
 		type: "item",
-		item: "minecraft:flint_and_steel"
+		item: "dcs_climate:dcs_device_igniter"
 	}]
 }

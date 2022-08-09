@@ -1,7 +1,0 @@
-{
-	title: "{gohd.mekanism.title}",
-	icon: "mekanism:controlcircuit",
-	always_invisible: false,
-	group: 0,
-	default_quest_shape: ""
-}

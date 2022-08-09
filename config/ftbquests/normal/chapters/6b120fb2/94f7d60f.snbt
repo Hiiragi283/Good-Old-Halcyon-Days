@@ -1,0 +1,20 @@
+{
+	x: 5.0d,
+	y: -1.0d,
+	dependencies: [
+		"8cd8210c",
+		"5ecfe9d7"
+	],
+	tasks: [{
+		uid: "cc3901f6",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_device_windmill_l"
+		}]
+	}],
+	rewards: [{
+		uid: "d68ebe42",
+		type: "item",
+		item: "contenttweaker:ticket_rare"
+	}]
+}

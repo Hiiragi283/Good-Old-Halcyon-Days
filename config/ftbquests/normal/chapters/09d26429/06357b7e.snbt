@@ -19,7 +19,18 @@
 		uid: "af52d31b",
 		type: "item",
 		items: [{
-			item: "dcs_climate:dcs_oreitem 1 1"
+			ForgeCaps: {
+				Parent: {
+					data: "oreTin",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any oreTin"
+				}
+			}
 		}]
 	},
 	{

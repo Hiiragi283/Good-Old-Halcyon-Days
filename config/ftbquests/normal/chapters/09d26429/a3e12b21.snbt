@@ -3,7 +3,6 @@
 	y: 6.0d,
 	dependencies: [
 		"efbbdf1d",
-		"de863d39",
 		"a87e9ce9"
 	],
 	tasks: [{
@@ -38,5 +37,10 @@
 		uid: "d52c68ab",
 		type: "item",
 		item: "tconstruct:seared_tank 1 1"
+	},
+	{
+		uid: "1e094488",
+		type: "item",
+		item: "tconstruct:channel"
 	}]
 }

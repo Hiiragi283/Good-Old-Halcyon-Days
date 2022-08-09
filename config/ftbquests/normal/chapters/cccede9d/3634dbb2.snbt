@@ -44,5 +44,10 @@
 		{
 			item: "dcs_climate:dcs_gem_blue 1 5"
 		}]
+	}],
+	rewards: [{
+		uid: "c699a0b5",
+		type: "item",
+		item: "contenttweaker:ticket_rare"
 	}]
 }

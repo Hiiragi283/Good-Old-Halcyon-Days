@@ -1,7 +1,9 @@
 {
 	x: 9.0d,
 	y: 5.0d,
-	description: "{gohd.09d26429.048fe784.subtitle}",
+	text: [
+		"{gohd.09d26429.048fe784.desc1}"
+	],
 	dependencies: [
 		"af232189"
 	],
@@ -13,5 +15,10 @@
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "5116b0db",
+		type: "item",
+		item: "contenttweaker:ticket_uncommon"
 	}]
 }

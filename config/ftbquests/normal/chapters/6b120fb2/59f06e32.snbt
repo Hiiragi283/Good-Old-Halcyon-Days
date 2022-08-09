@@ -1,0 +1,27 @@
+{
+	x: 7.0d,
+	y: 7.0d,
+	dependencies: [
+		"437592d1"
+	],
+	tasks: [{
+		uid: "6dfd2654",
+		type: "item",
+		items: [{
+			item: "mekanism:basicblock 1 11"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "869baf46",
+		type: "item",
+		item: "mekanism:basicblock 1 9",
+		count: 22
+	},
+	{
+		uid: "c2859ab7",
+		type: "item",
+		item: "mekanism:basicblock 1 10",
+		count: 3
+	}]
+}

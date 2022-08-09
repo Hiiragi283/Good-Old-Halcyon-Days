@@ -1,17 +1,27 @@
 {
 	x: 19.0d,
 	y: -2.0d,
-	shape: "square",
+	shape: "diamond",
 	dependencies: [
 		"72b4363c",
 		"c3208b27"
 	],
-	size: 1.5d,
+	size: 2.0d,
 	tasks: [{
 		uid: "4ed81c13",
 		type: "item",
 		items: [{
 			item: "thermalexpansion:frame"
 		}]
+	}],
+	rewards: [{
+		uid: "24ec9ea7",
+		type: "item",
+		item: "contenttweaker:ticket_epic"
+	},
+	{
+		uid: "4ec593fc",
+		type: "item",
+		item: "thermalfoundation:wrench"
 	}]
 }

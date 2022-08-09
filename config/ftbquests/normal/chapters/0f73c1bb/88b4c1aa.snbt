@@ -1,0 +1,30 @@
+{
+	icon: "extrautils2:snowglobe 1 1",
+	x: -2.75d,
+	y: 0.0d,
+	shape: "square",
+	dependencies: [
+		"6ab31c74"
+	],
+	tasks: [{
+		uid: "8b284ab6",
+		type: "item",
+		items: [{
+			item: "extrautils2:snowglobe"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "8b3afd99",
+		type: "item",
+		items: [{
+			item: "extrautils2:snowglobe 1 1"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "c7881acf",
+		type: "item",
+		item: "contenttweaker:ticket_mythic"
+	}]
+}

@@ -1,0 +1,35 @@
+{
+	x: 11.0d,
+	y: 3.0d,
+	dependencies: [
+		"e608130b"
+	],
+	tasks: [{
+		uid: "0b3790be",
+		type: "item",
+		items: [{
+			item: "quarryplus:enchantmover"
+		}]
+	}],
+	rewards: [{
+		uid: "42815f7a",
+		type: "item",
+		item: {
+			id: "minecraft:diamond_pickaxe",
+			tag: {
+				ench: [{
+					lvl: 5s,
+					id: 32s
+				},
+				{
+					lvl: 3s,
+					id: 34s
+				},
+				{
+					lvl: 1s,
+					id: 33s
+				}]
+			}
+		}
+	}]
+}

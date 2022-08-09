@@ -1,6 +1,7 @@
 {
 	x: 18.0d,
 	y: 1.0d,
+	shape: "diamond",
 	dependencies: [
 		"b2567136",
 		"df6648c3"
@@ -11,5 +12,10 @@
 		items: [{
 			item: "hap:compact_heater"
 		}]
+	}],
+	rewards: [{
+		uid: "8d42a9ef",
+		type: "item",
+		item: "contenttweaker:ticket_epic"
 	}]
 }

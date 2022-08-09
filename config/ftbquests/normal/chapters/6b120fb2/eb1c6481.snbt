@@ -1,0 +1,22 @@
+{
+	x: 0.0d,
+	y: -5.0d,
+	dependencies: [
+		"823e299f",
+		"56363e0d"
+	],
+	dependency_requirement: "one_completed",
+	tasks: [{
+		uid: "72aeaf1e",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_device_hopper_filter_gold"
+		}]
+	}],
+	rewards: [{
+		uid: "d03a0e99",
+		type: "item",
+		item: "contenttweaker:ticket_uncommon",
+		count: 3
+	}]
+}

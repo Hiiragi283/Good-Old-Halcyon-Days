@@ -1,0 +1,24 @@
+{
+	title: "{gohd.reward.coating_tool.title}",
+	icon: "dcs_climate:dcs_coating_tool 1 8",
+	x: 6.0d,
+	y: 2.0d,
+	can_repeat: true,
+	hide_dependency_lines: true,
+	dependencies: [
+		"9e79be74"
+	],
+	tasks: [{
+		uid: "88c47e7d",
+		type: "item",
+		items: [{
+			item: "contenttweaker:ticket_rare"
+		}]
+	}],
+	rewards: [{
+		uid: "1e44ec63",
+		type: "choice",
+		team_reward: false,
+		table: 11
+	}]
+}

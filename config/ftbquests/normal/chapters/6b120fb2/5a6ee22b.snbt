@@ -1,0 +1,31 @@
+{
+	icon: "railcraft:firestone_raw",
+	x: 11.0d,
+	y: -1.0d,
+	dependencies: [
+		"d28227d5"
+	],
+	tasks: [{
+		uid: "a79c4802",
+		type: "item",
+		items: [{
+			item: "railcraft:firestone_raw"
+		}]
+	},
+	{
+		uid: "07fd3292",
+		type: "item",
+		items: [{
+			item: "railcraft:firestone_cut"
+		}]
+	},
+	{
+		uid: "215ef417",
+		type: "item",
+		items: [{
+			item: "railcraft:firestone_refined"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

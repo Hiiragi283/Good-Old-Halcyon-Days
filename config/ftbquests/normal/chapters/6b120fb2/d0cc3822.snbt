@@ -1,0 +1,23 @@
+{
+	x: 10.0d,
+	y: 6.0d,
+	shape: "diamond",
+	dependencies: [
+		"c110e9c0",
+		"1ce437bd",
+		"5138469f"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "bfad50e9",
+		type: "item",
+		items: [{
+			item: "quarryplus:standalonepump"
+		}]
+	}],
+	rewards: [{
+		uid: "e3d936cd",
+		type: "item",
+		item: "contenttweaker:ticket_legendary"
+	}]
+}

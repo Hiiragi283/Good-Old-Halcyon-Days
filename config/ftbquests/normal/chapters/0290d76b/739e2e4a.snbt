@@ -2,7 +2,7 @@
 	title: "{gohd.reward.ring_silver.title}",
 	icon: "dcs_climate:dcs_color_ring 1 2",
 	x: 2.0d,
-	y: 4.0d,
+	y: 2.0d,
 	can_repeat: true,
 	hide_dependency_lines: true,
 	dependencies: [
@@ -18,6 +18,6 @@
 	rewards: [{
 		uid: "d20e2634",
 		type: "choice",
-		table: 2
+		table: 1
 	}]
 }
