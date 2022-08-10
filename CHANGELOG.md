@@ -18,6 +18,7 @@
     - `HeatAndClimateMod_1.12.2-3.9.6` -> `HeatAndClimateMod_1.12.2-3.9.7`
 
 - Exclude `config/jei/*`
+- Remove unrelated credits
 
 ## v0.1.0
 
