@@ -124,36 +124,28 @@ print("Start loading HiiragiUtils.zs ...");
 	}
 
 	function addCraftingShaped (remove as bool, output as IItemStack, input as IIngredient[][], recipeFunction as IRecipeFunction, recipeAction as IRecipeAction) {
-		//var recipeName as string = getNameItem(output) ~ "_" ~ recipeID;
 		if (remove) {
 			removeCrafting(output);
 		}
-		recipes.addShaped(recipeName, output, input, recipeFunction, recipeAction);
-		//recipeID += 1;
+		recipes.addShaped(output, input, recipeFunction, recipeAction);
 	}
 
 	function addCraftingShapeless (remove as bool, output as IItemStack, input as IIngredient[], recipeFunction as IRecipeFunction, recipeAction as IRecipeAction) {
-		//var recipeName as string = getNameItem(output) ~ "_" ~ recipeID;
 		if (remove) {
 			removeCrafting(output);
 		}
-		recipes.addShapeless(recipeName, output, input, recipeFunction, recipeAction);
-		//recipeID += 1;
+		recipes.addShapeless(output, input, recipeFunction, recipeAction);
 	}
 
 //アイテムの等価交換を実装するレシピ
 	function addCraftingConv (item1, item2) {
-		var recipeName1 as string = getNameItem(item1 as IItemStack) ~ "_" ~ recipeID;
-		var recipeName2 as string = getNameItem(item2 as IItemStack) ~ "_" ~ recipeID;
-		recipes.addShapeless(recipeName1, item1 as IItemStack, [item2 as IIngredient]);
-		recipes.addShapeless(recipeName2, item2  as IItemStack, [item1 as IIngredient]);
+		recipes.addShapeless(item1 as IItemStack, [item2 as IIngredient]);
+		recipes.addShapeless(item2  as IItemStack, [item1 as IIngredient]);
 	}
 
 	function addCraftingConvOre (item1 as IOreDictEntry, item2 as IOreDictEntry) {
-		var recipeName1 as string = getNameOreDict(item1) ~ "_" ~ recipeID;
-		var recipeName2 as string = getNameOreDict(item2) ~ "_" ~ recipeID;
-		recipes.addShapeless(recipeName1, item1.firstItem, [item2]);
-		recipes.addShapeless(recipeName2, item2.firstItem, [item1]);
+		recipes.addShapeless(item1.firstItem, [item2]);
+		recipes.addShapeless(item2.firstItem, [item1]);
 	}
 
 //レシピ上のアイテムを置換する関数

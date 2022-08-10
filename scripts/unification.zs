@@ -88,10 +88,10 @@ print("Start loading unification.zs ...");
 		"railcraft:block_creosote",
 		"railcraft:minecraft_torch$1",
 		"railcraft:minecraft_torch$2",
-		"thermalinnovation:drill",
+		//"thermalinnovation:drill",
 		"thermalfoundation:gunpowder",
 		"thermalfoundation:gunpowder_1",
-		"thermalinnovation:saw",
+		//"thermalinnovation:saw",
 		"thermalfoundation:torch",
 		"thermalfoundation:torch_1",
 	];
@@ -157,7 +157,7 @@ print("Start loading unification.zs ...");
 	HiiragiUtils.addCraftingShaped(false, <twilightforest:castle_door:2>, RecipePattern.init(["ABA", "BCB", "ABA"]).map({A:<ore:dustVoid>, B:<appliedenergistics2:paint_ball:22>, C:<botania:quartztypedark:1>}).ingredients, null, null);
 	HiiragiUtils.addCraftingShaped(false, <twilightforest:castle_door:3>, RecipePattern.init(["ABA", "BCB", "ABA"]).map({A:<ore:dustVoid>, B:<appliedenergistics2:paint_ball:29>, C:<botania:quartztypedark:1>}).ingredients, null, null);
 
-	HiiragiUtils.addCraftingShaped(false, <artisanworktables:workstation:5>, RecipePattern.init(["ABA", " C ", "DDD"]).map({A:<tconstruct:seared_tank:*>, B: <ore:chest>, C:<ore:workbench>, D:<tconstruct:seared:0>}).ingredients, null, null);
+	HiiragiUtils.addCraftingShaped(false, <artisanworktables:workstation:5>, RecipePattern.init(["ABA", " C ", "DDD"]).map({A:<tconstruct:seared_tank:*>, B: <ore:chest>, C:<ore:workbench>, D:<tconstruct:seared:3>}).ingredients, null, null);
 	HiiragiUtils.addCraftingShaped(false, <contenttweaker:glyph_divide>, RecipePattern.init([" A ", "BCB", " A "]).map({A:<minecraft:skull:1>, B:<ore:boneWithered>, C:<openblocks:generic:10>}).ingredients, null, null);
 	HiiragiUtils.addCraftingShaped(true, <disenchanter:disenchantmenttable:0>, RecipePattern.init(["ABA", "CDC", "EEE"]).map({A:<botania:spellcloth>, B:<ore:book>, C:<ore:gemEmerald>, D:<ore:woolYellow>, E:<ore:obsidian>}).ingredients, null, null);
 	HiiragiUtils.addCraftingShaped(true, <storagedrawers:framingtable>, RecipePattern.init(["ABA", "C C"]).map({A:<ore:drawerTrim>, B:<minecraft:crafting_table>, C:<dcs_climate:dcs_squaretable_wood>}).ingredients, null, null);
