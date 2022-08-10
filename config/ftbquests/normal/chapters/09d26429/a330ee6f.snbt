@@ -1,12 +1,16 @@
 {
 	x: 2.0d,
 	y: -2.0d,
+	text: [
+		"{gohd.09d26429.a330ee6f.desc1}"
+	],
 	dependencies: [
 		"648774ca"
 	],
 	tasks: [{
 		uid: "04911720",
 		type: "advancement",
+		icon: "dcs_climate:dcs_icons 1 1",
 		advancement: "dcs_climate:climate_damage",
 		criterion: ""
 	}],

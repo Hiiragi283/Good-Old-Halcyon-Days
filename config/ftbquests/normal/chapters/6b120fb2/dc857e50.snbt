@@ -9,13 +9,7 @@
 	tasks: [{
 		uid: "1b93f22f",
 		type: "advancement",
-		icon: {
-			id: "botania:terrapick",
-			tag: {
-				mana: 2147483646
-			}
-		},
-		advancement: "rank_ss_pick",
+		advancement: "botania:rank_ss_pick",
 		criterion: ""
 	}],
 	rewards: [{
