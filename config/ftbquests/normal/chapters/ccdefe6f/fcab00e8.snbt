@@ -1,0 +1,75 @@
+{
+	title: "{gohd.6b120fb2.fcab00e8.title}",
+	x: 4.5d,
+	y: 1.0d,
+	hide_dependency_lines: true,
+	dependencies: [
+		"e79fb275"
+	],
+	tasks: [{
+		uid: "a72b8b8a",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_met_titanium"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "408123a9",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_plate_titanium"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "2b896c69",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_leggins_titanium"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "7e812931",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_boots_titanium"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "3a91d37f",
+		type: "item",
+		item: {
+			id: "dcs_climate:dcs_leggins_track",
+			tag: {
+				ench: [{
+					lvl: 10s,
+					id: 0s
+				},
+				{
+					lvl: 10s,
+					id: 55s
+				},
+				{
+					lvl: 1s,
+					id: 11s
+				},
+				{
+					lvl: 1s,
+					id: 10s
+				}],
+				Unbreakable: 1b,
+				color: 14,
+				display: {
+					LocName: "gohd.custom.track_neet.name"
+				}
+			}
+		}
+	}]
+}

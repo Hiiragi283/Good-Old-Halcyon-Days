@@ -1,0 +1,32 @@
+{
+	x: 5.5d,
+	y: 2.0d,
+	hide_dependency_lines: true,
+	dependencies: [
+		"e79fb275"
+	],
+	tasks: [{
+		uid: "2f8c6f82",
+		type: "item",
+		items: [{
+			item: "mekanism:gasmask"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "a024dd04",
+		type: "item",
+		item: {
+			id: "mekanism:scubatank",
+			tag: {
+				mekData: {
+					stored: {
+						amount: 24000,
+						gasName: "oxygen"
+					}
+				}
+			}
+		}
+	}]
+}

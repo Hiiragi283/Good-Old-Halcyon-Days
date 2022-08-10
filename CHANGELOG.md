@@ -1,5 +1,16 @@
 # Changelog
 
+## v0.1.2
+
+- Mod Configuration
+  - Add
+    - `BuildingGadgets-2.8.4`
+    - `modnametooltip_1.12.2-1.10.1`
+
+- Disabled Railcraft's ore generation
+- Move some quests in Utilities Tab to Tool Tab
+- Plant trees in planet Minecraft
+
 ## v0.1.1
 
 - **hotfix**

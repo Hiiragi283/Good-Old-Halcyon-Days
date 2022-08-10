@@ -1,0 +1,29 @@
+{
+	x: -1.5d,
+	y: -1.0d,
+	hide_dependency_lines: true,
+	dependencies: [
+		"d005700a"
+	],
+	tasks: [{
+		uid: "8179c30b",
+		type: "item",
+		title: "{gohd.6b120fb2.6a907d55.title}",
+		items: [{
+			item: "twilightforest:block_and_chain"
+		},
+		{
+			item: "twilightforest:minotaur_axe"
+		},
+		{
+			item: "twilightforest:giant_sword"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "d8f77e2a",
+		type: "item",
+		item: "contenttweaker:ticket_legendary"
+	}]
+}

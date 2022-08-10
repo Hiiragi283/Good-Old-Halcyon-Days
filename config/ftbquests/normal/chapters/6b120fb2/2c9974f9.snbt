@@ -1,0 +1,14 @@
+{
+	x: 7.0d,
+	y: 9.0d,
+	dependencies: [
+		"07d7486b"
+	],
+	tasks: [{
+		uid: "a26d85bc",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_device_steel_pot"
+		}]
+	}]
+}

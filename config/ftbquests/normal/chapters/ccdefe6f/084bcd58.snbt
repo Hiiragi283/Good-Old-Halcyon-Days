@@ -1,0 +1,25 @@
+{
+	x: -0.5d,
+	y: 4.0d,
+	hide_dependency_lines: true,
+	dependencies: [
+		"cc9e5886"
+	],
+	tasks: [{
+		uid: "97b832ff",
+		type: "item",
+		items: [{
+			id: "thermalinnovation:drill",
+			tag: {
+				Energy: 0,
+				Mode: 1
+			}
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "d2a9a472",
+		type: "item",
+		item: "contenttweaker:ticket_rare"
+	}]
+}

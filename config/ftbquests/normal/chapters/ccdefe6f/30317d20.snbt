@@ -1,0 +1,33 @@
+{
+	x: 2.5d,
+	y: -1.0d,
+	hide_dependency_lines: true,
+	dependencies: [
+		"d005700a"
+	],
+	tasks: [{
+		uid: "eec6ddc3",
+		type: "item",
+		title: "{gohd.6b120fb2.30317d20.title}",
+		items: [{
+			item: "twilightforest:seeker_bow"
+		},
+		{
+			item: "twilightforest:ender_bow"
+		},
+		{
+			item: "twilightforest:ice_bow"
+		},
+		{
+			item: "twilightforest:triple_bow"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "5250ff8c",
+		type: "item",
+		item: "contenttweaker:ticket_epic",
+		count: 3
+	}]
+}

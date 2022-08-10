@@ -1,0 +1,38 @@
+{
+	title: "{gohd.6b120fb2.61b73c1d.title}",
+	x: 4.5d,
+	y: 2.0d,
+	hide_dependency_lines: true,
+	dependencies: [
+		"e79fb275"
+	],
+	tasks: [{
+		uid: "41207b0f",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_leggins_magic"
+		},
+		{
+			item: "dcs_climate:dcs_coat_magic"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "6fdcd5ba",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_gemboots_blue"
+		},
+		{
+			item: "dcs_climate:dcs_gemboots_green"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "f3de7855",
+		type: "item",
+		item: "contenttweaker:ticket_legendary"
+	}]
+}

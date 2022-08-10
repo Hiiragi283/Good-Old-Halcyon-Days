@@ -1,0 +1,26 @@
+{
+	x: 5.0d,
+	y: 9.0d,
+	dependencies: [
+		"c308fdf9"
+	],
+	tasks: [{
+		uid: "347006a9",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_device_tea_pot"
+		}]
+	}],
+	rewards: [{
+		uid: "1ff47a04",
+		type: "item",
+		item: "dcs_climate:dcs_food_pack 1 3",
+		count: 16
+	},
+	{
+		uid: "cbb086ed",
+		type: "item",
+		item: "biomesoplenty:filled_honeycomb",
+		count: 16
+	}]
+}

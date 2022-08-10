@@ -23,6 +23,7 @@
 			<rotationalPeriod>24000</rotationalPeriod>
 			<biomeIds>biomesoplenty:origin_island,biomesoplenty:origin_beach,minecraft:ocean</biomeIds>
 			<artifact>biomesoplenty:earth</artifact>
+			<generateStructures>true</generateStructures>
 		</planet>
 	</star>
 </galaxy>

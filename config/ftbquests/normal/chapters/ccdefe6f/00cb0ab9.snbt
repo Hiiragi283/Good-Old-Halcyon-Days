@@ -1,0 +1,44 @@
+{
+	title: "{gohd.6b120fb2.00cb0ab9.title}",
+	icon: "dcs_climate:dcs_pickaxe_toolsteel",
+	x: -1.5d,
+	y: 1.0d,
+	hide_dependency_lines: true,
+	dependencies: [
+		"cc9e5886"
+	],
+	tasks: [{
+		uid: "51f22055",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_pickaxe_toolsteel"
+		},
+		{
+			item: "dcs_climate:dcs_spade_toolsteel"
+		},
+		{
+			item: "dcs_climate:dcs_axe_toolsteel"
+		},
+		{
+			item: "dcs_climate:dcs_scythe_toolsteel"
+		},
+		{
+			item: "dcs_climate:dcs_rake_toolsteel"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "1b213afb",
+		type: "item",
+		item: {
+			id: "dcs_climate:dcs_liquor_bottle",
+			tag: {
+				dcs.drink.sugar: 2b,
+				dcs.drink.milk: 2b
+			},
+			Damage: 1s
+		},
+		count: 8
+	}]
+}

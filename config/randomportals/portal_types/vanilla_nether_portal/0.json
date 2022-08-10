@@ -28,7 +28,7 @@
 				"minimumAmount": 0
 			}
 		],
-		"requiredCorner": "ANY_NON_AIR",
+		"requiredCorner": "ANY",
 		"cornerBlocksContributeToMinimumAmount": true,
 		"doGeneratedFramesDrop": true
 	},
