@@ -13,9 +13,6 @@
   - Thanks to [MorphoDays](https://github.com/delta-nos/MorphoDays_old
 ) by delta-nos !
 
-- scripts/materialRegistry.zs
-  - Thanks to [SevTech-Ages](https://github.com/DarkPacks/SevTech-Ages) by Darkosto !
-
 - resources/morechids/textures/dreaming_daisy.png
   - The texture is originally from `botania:textures/blocks/flower_misc_pure_daisy.png` licensed under [Botania License](https://botaniamod.net/license.php)
   - Thanks to [Botanita](https://github.com/Vazkii](https://github.com/VazkiiMods/Botania)) by Vazkii !
