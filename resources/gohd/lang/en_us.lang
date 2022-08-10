@@ -79,6 +79,7 @@ gohd.09d26429.a1433ad5.title=My mouth is gravelly-gravelly lol
 gohd.09d26429.efbbdf1d.desc.1=You can make Unfired Casting Basin by right-clicking grout with Wooden Stick only ONCE
 gohd.09d26429.efbbdf1d.desc.2=And Unfired Casting Table by doing the same TWICE
 gohd.09d26429.6cd694d7.desc.1=Unfired Casting Channel needs the way of ceramic art THREE TIMES
+gohd.09d26429.a330ee6f.desc1=Information about Heat And Climate (HaC) is written in tooltips or JEI tabs.
 gohd.09d26429.bf14d483.title=Bright but Cold?
 gohd.09d26429.048fe784.desc1=Not only turning HaC devices, but also using as Pickaxe
 gohd.09d26429.6777b90d.desc1=Not using as Pickaxe but having INFINITY durability!
@@ -99,10 +100,6 @@ gohd.09d26429.6ab31c74.title=It's time to miniaturize your buildings!
 gohd.09d26429.6ab31c74.reward1=The voice of the dragon that calls for the end
 gohd.09d26429.7f89ed7b.title=The quest that might provide another device when you lost it
 gohd.09d26429.7f89ed7b.task1=Don't lost again, okay?
-
-## Heat and Climate: gohd.386b3cb1.
-gohd.hac.title=Heat and Climate
-gohd.386b3cb1.347787d5.desc1=Information about Heat And Climate (HaC) is written in tooltips or JEI tabs.
 
 ### Minerals: gohd.cccede9d.
 gohd.minerals.title=Minerals
