@@ -19,6 +19,7 @@ download
 generated
 icon
 infinity-data
+journeymap
 local
 logs
 mods
@@ -36,9 +37,6 @@ config/acronym/saved
 config/biomesoplenty/biomes/defaults
 config/enderio/recipes/examples
 config/tellme
-journeymap/data
-journeymap/icon
-journeymap/server
 resources/crossroads
 
 #特定のファイル

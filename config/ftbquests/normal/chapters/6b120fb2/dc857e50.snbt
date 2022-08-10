@@ -9,12 +9,13 @@
 	tasks: [{
 		uid: "1b93f22f",
 		type: "advancement",
-		advancement: "botania:rank_ss_pick",
+		advancement: "botania:challenge/rank_ss_pick",
 		criterion: ""
 	}],
 	rewards: [{
 		uid: "23d6dd00",
 		type: "item",
-		item: "contenttweaker:ticket_mythic"
+		item: "contenttweaker:ticket_mythic",
+		count: 3
 	}]
 }
