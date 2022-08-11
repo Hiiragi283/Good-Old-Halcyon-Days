@@ -65,10 +65,8 @@ print("Start loading tic.zs ...");
 //Castの統一
 	mods.chisel.Carving.addGroup("cast");
 	mods.chisel.Carving.addVariation("cast", <tconstruct:cast>);
-	mods.tconstruct.Casting.removeTableRecipe(<tconstruct:cast>);
-	mods.tconstruct.Casting.addTableRecipe(<tconstruct:cast>, null, <liquid:brass>, 3*20);
-	mods.tconstruct.Casting.addTableRecipe(<tconstruct:cast>, null, <liquid:alubrass>, 3*20);
-	mods.chisel.Carving.addVariation("cast", HiiragiUtils.castBrass("chisel_head"));
+	HiiragiUtils.addCasting("table", true, <tconstruct:cast>, null, <liquid:brass>, 144, true, 1*20);
+	HiiragiUtils.addCasting("table", false, <tconstruct:cast>, null, <liquid:alubrass>, 144, true, 1*20);
 
 	val castPattern as string[] = [
 		"pick_head",
@@ -118,9 +116,9 @@ print("Start loading tic.zs ...");
 	mods.tconstruct.Casting.removeTableRecipe(HiiragiUtils.castBrass("chisel_head"));
 	mods.tconstruct.Casting.removeTableRecipe(HiiragiUtils.castClay("chisel_head"));
 	HiiragiUtils.removeFromJEI(HiiragiUtils.castClay("chisel_head"));
+	mods.chisel.Carving.addVariation("cast", HiiragiUtils.castBrass("chisel_head"));
 
 //Castingレシピの編集
-	HiiragiUtils.addCasting("table", false, <dcs_climate:dcs_device_pail>, <minecraft:bucket>, <liquid:tin>, 288, true, 5*20);
 	HiiragiUtils.addCasting("table", true, <enderio:item_material:11>, <ore:dustBedrock>, <liquid:steel>, 144, true, 5*20);
 	HiiragiUtils.addCasting("table", true, <enderio:item_material:73>, <enderio:item_material:11>, <liquid:dark_steel>, 144, true, 5*20);
 	HiiragiUtils.addCasting("table", true, <enderio:item_material:12>, <enderio:item_material:11>, <liquid:energetic_alloy>, 144, true, 5*20);

@@ -30,14 +30,13 @@ print("Start loading _TEMPLATE.zs ...");
 
 //アイテムの登録
 	val items as string[] = [
+		"gem_carbon",
 		"elven_pearl",
 		"ephemerald",
 		"glyph_divide",
-		//"heart_of_the_sea",
 		"ingot_bedrockium",
 		"ingot_rainbow",
 		"reagent_halogen",
-		//"rune_gaia",
 		"ticket_common",
 		"ticket_uncommon",
 		"ticket_rare",

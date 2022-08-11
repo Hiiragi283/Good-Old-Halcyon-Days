@@ -26,7 +26,6 @@ print("Start loading HaC.zs ...");
 //作業台レシピの編集
 	//削除
 	val removeCrafting as IItemStack[] = [
-		<dcs_climate:dcs_device_pail>,
 		<dcs_climate:dcs_device_shaft_l>,
 		<dcs_climate:dcs_device_shaft_ta>,
 		<dcs_climate:dcs_device_shaft_tb>,

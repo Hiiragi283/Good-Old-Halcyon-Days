@@ -89,9 +89,9 @@ print("Start loading RussellUtils.zs ...");
 		block.setToolClass(tool);
 		block.setToolLevel(toolLevel);
 		block.setBlockSoundType(sound);
-		block.onRandomTick = function(world, blockPos, blockState){
-			return true;
-		};
+		/*block.onRandomTick = function(world, blockPos, blockState){
+		//	return true;
+		};*/
 		block.register();
 	}
 

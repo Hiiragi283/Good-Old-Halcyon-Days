@@ -49,6 +49,7 @@ print("Start loading unification.zs ...");
 		"dcs_climate:main_build/dcs_desktop_accessories_7",
 		"dcs_climate:main_build/dcs_desktop_accessories_8",
 		"dcs_climate:main_container/dcs_gem_blue_1",
+		"dcs_climate:magic/dcs_glowstone_dust_0",
 		"dcs_climate:main_yagen/dcs_gem_layer_1",
 		"dcs_climate:main_yagen/dcs_gem_layer_4",
 		"enderio:s_a_g_mill_upgrade",
@@ -88,10 +89,17 @@ print("Start loading unification.zs ...");
 		"railcraft:block_creosote",
 		"railcraft:minecraft_torch$1",
 		"railcraft:minecraft_torch$2",
-		//"thermalinnovation:drill",
+		"railcraft:coke_oven$2",
+		"railcraft:coke_oven_red$2",
+		"railcraft:locomotive_steam_solid#0$1",
+		"thermalexpansion:dynamo",
+		"thermalexpansion:dynamo_1",
+		"thermalexpansion:dynamo_2",
+		"thermalexpansion:dynamo_3",
+		"thermalexpansion:dynamo_4",
+		"thermalexpansion:dynamo_5",
 		"thermalfoundation:gunpowder",
 		"thermalfoundation:gunpowder_1",
-		//"thermalinnovation:saw",
 		"thermalfoundation:torch",
 		"thermalfoundation:torch_1",
 	];
@@ -156,6 +164,9 @@ print("Start loading unification.zs ...");
 	HiiragiUtils.addCraftingShaped(false, <twilightforest:castle_door:1>, RecipePattern.init(["ABA", "BCB", "ABA"]).map({A:<ore:dustVoid>, B:<appliedenergistics2:paint_ball:30>, C:<botania:quartztypedark:1>}).ingredients, null, null);
 	HiiragiUtils.addCraftingShaped(false, <twilightforest:castle_door:2>, RecipePattern.init(["ABA", "BCB", "ABA"]).map({A:<ore:dustVoid>, B:<appliedenergistics2:paint_ball:22>, C:<botania:quartztypedark:1>}).ingredients, null, null);
 	HiiragiUtils.addCraftingShaped(false, <twilightforest:castle_door:3>, RecipePattern.init(["ABA", "BCB", "ABA"]).map({A:<ore:dustVoid>, B:<appliedenergistics2:paint_ball:29>, C:<botania:quartztypedark:1>}).ingredients, null, null);
+	//Diamondの作成レシピ
+	HiiragiUtils.addCraftingShaped(false, <contenttweaker:gem_carbon>, RecipePattern.init(["ABA", "ACA", "AAA"]).map({A:<ore:blockCoal>, B:<minecraft:coal>, C:<ore:nuggetDiamond>}).ingredients, null, null);
+	HiiragiUtils.addCraftingShaped(false, <contenttweaker:gem_carbon>, RecipePattern.init(["AAA", "ABA", "AAA"]).map({A:<ore:containerCharcoal>, B:<ore:nuggetDiamond>}).ingredients, null, null);
 
 	HiiragiUtils.addCraftingShaped(false, <artisanworktables:workstation:5>, RecipePattern.init(["ABA", " C ", "DDD"]).map({A:<tconstruct:seared_tank:*>, B: <ore:chest>, C:<ore:workbench>, D:<tconstruct:seared:3>}).ingredients, null, null);
 	HiiragiUtils.addCraftingShaped(false, <contenttweaker:glyph_divide>, RecipePattern.init([" A ", "BCB", " A "]).map({A:<minecraft:skull:1>, B:<ore:boneWithered>, C:<openblocks:generic:10>}).ingredients, null, null);
@@ -200,6 +211,9 @@ print("Start loading unification.zs ...");
 
 //JEIからエントリを完全に削除
 	val removeFromJEI as IItemStack[] = [
+		//Applied Energistics 2
+		<appliedenergistics2:material:40>,
+		<appliedenergistics2:material:46>,
 		//Heat And Climate
 		//<dcs_climate:dcs_gem:*>,
 		<dcs_climate:dcs_door_marble>,
@@ -294,7 +308,7 @@ print("Start loading unification.zs ...");
 		<libvulpes:ore0>,
 
 	];
-	for i in 0 to 10 {
+	for i in 1 to 10 {
 		for j in removeLibVulpes {
 			HiiragiUtils.removeFromJEI(j.definition.makeStack(i));
 			HiiragiUtils.removeOreDict(j.definition.makeStack(i));
@@ -302,11 +316,22 @@ print("Start loading unification.zs ...");
 	}
 
 //鉱石辞書の追加
+	<ore:gemManadiamond>.add(<botania:manaresource:2>);
+	<ore:gemDragonstone>.add(<botania:manaresource:9>);
 	<ore:itemCloth>.add(<botania:manaresource:22>);
 	<ore:itemMagicCloth>.add(<botania:manaresource:22>);
 	<ore:ingotElementium>.add(<botania:manaresource:7>);
 	<ore:nuggetElementium>.add(<botania:manaresource:19>);
+	<ore:blockmanasteel>.add(<botania:storage:0>);
+	<ore:blockTerrasteel>.add(<botania:storage:1>);
 	<ore:blockElementium>.add(<botania:storage:2>);
+	<ore:blockManaDiamond>.add(<botania:storage:3>);
+	<ore:blockDragonstone>.add(<botania:storage:4>);
+
+	<ore:gemManalapis>.add(<botanicadds:mana_lapis>);
+	<ore:gemElvenlapis>.add(<botanicadds:elven_lapis>);
+	<ore:blockManalapis>.add(<botanicadds:mana_lapis_block>);
+	<ore:blockElvenlapis>.add(<botanicadds:elven_lapis_block>);
 
 	<ore:dustHalogen>.add(<contenttweaker:reagent_halogen>);
 	<ore:blockBedrockium>.add(<contenttweaker:block_bedrockium>);
@@ -325,6 +350,8 @@ print("Start loading unification.zs ...");
 	<ore:dropRosin>.add(<thermalfoundation:material:832>);
 	<ore:dropCoaltar>.add(<thermalfoundation:material:833>);
 	<ore:gemSlag>.add(<thermalfoundation:material:864>);
+
+	<ore:blockIronwood>.add(<twilightforest:block_storage:0>);
 
 //Tooltipの追加
 	val mapTooltip as string[IItemStack] = {
