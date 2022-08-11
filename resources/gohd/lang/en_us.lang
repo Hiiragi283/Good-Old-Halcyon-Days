@@ -61,6 +61,7 @@ gohd.ingotTungstensteel.title=Tier 5: Tungstensteel Ingot
 
 ### Main
 gohd.main.title=Main
+gohd.hac.tooltip=Information about Heat And Climate (HaC) of Heat And Processing (HaP) is written in tooltips or JEI tabs.
 gohd.5f3109ce.648774ca.title=Welcome to GOHD!
 gohd.5f3109ce.648774ca.subtitle=Good Old Halcyon Days, in short "GOHD"
 gohd.5f3109ce.648774ca.task1=Let's Enjoy!
@@ -79,7 +80,6 @@ gohd.09d26429.a1433ad5.title=My mouth is gravelly-gravelly lol
 gohd.09d26429.efbbdf1d.desc.1=You can make Unfired Casting Basin by right-clicking grout with Wooden Stick only ONCE
 gohd.09d26429.efbbdf1d.desc.2=And Unfired Casting Table by doing the same TWICE
 gohd.09d26429.6cd694d7.desc.1=Unfired Casting Channel needs the way of ceramic art THREE TIMES
-gohd.09d26429.a330ee6f.desc1=Information about Heat And Climate (HaC) is written in tooltips or JEI tabs.
 gohd.09d26429.bf14d483.title=Bright but Cold?
 gohd.09d26429.048fe784.desc1=Not only turning HaC devices, but also using as Pickaxe
 gohd.09d26429.6777b90d.desc1=Not using as Pickaxe but having INFINITY durability!
@@ -125,11 +125,8 @@ gohd.cccede9d.8ac28a20.desc1=Abyssal Geode spawns at the bottom of the Sea.
 gohd.cccede9d.1a7f5909.subtitle=tile.railcraft.ore.magic.name
 gohd.cccede9d.1a7f5909.desc1=Firestone Ore spawns under the Lava Ocean in the Nether.
 
-## Shop gohd.0290d76b.
-gohd.shop.title=Quest Shop
-gohd.shop.desc1=In this Quest Page, you can buy some useful items!
-gohd.shop.desc2=All you need to buy is Tickets, that are obtained from reward of Quests.
-gohd.0290d76b.ff5f1169.title=Starter Kit for Travelers
+## Tools:
+gohd.tools.title=Tools
 
 ## Utilities: gohd.6b120fb2.
 gohd.utilities.title=Utilities
@@ -159,6 +156,12 @@ gohd.6b120fb2.61b73c1d.title=Clothes for Climate Magicians
 gohd.6b120fb2.09e80f8b.title=Refined Odsidian Armors
 gohd.6b120fb2.27b9a91c.title=Knightslime Armors
 gohd.6b120fb2.27b9a91c.subtitle=Bring you luck
+
+## Shop gohd.0290d76b.
+gohd.shop.title=Quest Shop
+gohd.shop.desc1=In this Quest Page, you can buy some useful items!
+gohd.shop.desc2=All you need to buy is Tickets, that are obtained from reward of Quests.
+gohd.0290d76b.ff5f1169.title=Starter Kit for Travelers
 
 ##End Game: gohd.0f73c1bb.
 gohd.end_game.title=Good Old Minecraft!
