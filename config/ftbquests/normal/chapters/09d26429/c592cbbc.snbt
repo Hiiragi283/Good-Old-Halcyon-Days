@@ -1,6 +1,9 @@
 {
 	x: 4.0d,
 	y: -2.0d,
+	text: [
+		"{gohd.hac.tooltip}"
+	],
 	dependencies: [
 		"a330ee6f"
 	],

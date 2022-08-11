@@ -1,0 +1,30 @@
+{
+	icon: "minecraft:wheat_seeds",
+	x: -2.0d,
+	y: 0.0d,
+	dependencies: [
+		"648774ca"
+	],
+	tasks: [{
+		uid: "c8b5ada7",
+		type: "item",
+		items: [{
+			item: "minecraft:wheat_seeds"
+		}],
+		count: 64L
+	},
+	{
+		uid: "783f927b",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_scythe_stone"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "16454b21",
+		type: "item",
+		item: "minecraft:diamond_hoe"
+	}]
+}

@@ -2,6 +2,9 @@
 	title: "{gohd.6b120fb2.bb71f376.title}",
 	x: -1.5d,
 	y: 2.0d,
+	text: [
+		"{gohd.hac.tooltip}"
+	],
 	hide_dependency_lines: true,
 	dependencies: [
 		"cc9e5886"

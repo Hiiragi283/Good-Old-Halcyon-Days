@@ -2,6 +2,9 @@
 	x: 2.0d,
 	y: -3.0d,
 	shape: "rsquare",
+	text: [
+		"{gohd.hac.tooltip}"
+	],
 	dependencies: [
 		"89d77cc6"
 	],

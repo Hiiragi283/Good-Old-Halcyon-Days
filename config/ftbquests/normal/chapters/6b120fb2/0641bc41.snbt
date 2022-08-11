@@ -12,5 +12,11 @@
 			item: "dcs_climate:dcs_spindle 1 2"
 		}],
 		count: 16L
+	}],
+	rewards: [{
+		uid: "9b9be881",
+		type: "item",
+		item: "dcs_climate:dcs_spindle 1 2",
+		count: 16
 	}]
 }

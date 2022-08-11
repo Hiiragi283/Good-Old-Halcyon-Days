@@ -3,6 +3,9 @@
 	icon: "dcs_climate:dcs_pickaxe_toolsteel",
 	x: -1.5d,
 	y: 1.0d,
+	text: [
+		"{gohd.hac.tooltip}"
+	],
 	hide_dependency_lines: true,
 	dependencies: [
 		"cc9e5886"

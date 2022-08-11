@@ -4,6 +4,9 @@
 	y: 0.0d,
 	shape: "square",
 	description: "{link.youtu.be.Opce-MSEznY}",
+	text: [
+		"{gohd.hac.tooltip}"
+	],
 	dependencies: [
 		"0c989db0",
 		"6d90e11d"

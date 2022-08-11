@@ -3,6 +3,9 @@
 	x: 19.0d,
 	y: 2.0d,
 	shape: "square",
+	text: [
+		"{gohd.hac.tooltip}"
+	],
 	dependencies: [
 		"72b4363c",
 		"c3208b27"

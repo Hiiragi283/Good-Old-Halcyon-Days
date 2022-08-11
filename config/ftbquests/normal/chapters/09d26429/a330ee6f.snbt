@@ -2,7 +2,7 @@
 	x: 2.0d,
 	y: -2.0d,
 	text: [
-		"{gohd.09d26429.a330ee6f.desc1}"
+		""
 	],
 	dependencies: [
 		"648774ca"

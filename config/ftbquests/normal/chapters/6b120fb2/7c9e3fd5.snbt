@@ -1,5 +1,4 @@
 {
-	title: "{gohd.6b120fb2.7c9e3fd5.title}",
 	x: 12.0d,
 	y: 0.0d,
 	dependencies: [
@@ -8,6 +7,7 @@
 	tasks: [{
 		uid: "9e636aaa",
 		type: "item",
+		title: "{gohd.6b120fb2.7c9e3fd5.title}",
 		items: [{
 			id: "thermalexpansion:dynamo",
 			tag: {

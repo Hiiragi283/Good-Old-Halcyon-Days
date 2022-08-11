@@ -2,6 +2,9 @@
 	x: 18.0d,
 	y: 1.0d,
 	shape: "diamond",
+	text: [
+		"{gohd.hac.tooltip}"
+	],
 	dependencies: [
 		"b2567136",
 		"df6648c3"
