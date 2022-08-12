@@ -1,6 +1,6 @@
 {
-	x: 1.5d,
-	y: 11.0d,
+	x: 10.5d,
+	y: 5.0d,
 	shape: "rsquare",
 	description: "{gohd.cccede9d.1a7f5909.subtitle}",
 	text: [

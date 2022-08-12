@@ -1,0 +1,14 @@
+{
+	x: 4.0d,
+	y: 8.0d,
+	dependencies: [
+		"d26abee9"
+	],
+	tasks: [{
+		uid: "66b26a9e",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_device_crusher"
+		}]
+	}]
+}

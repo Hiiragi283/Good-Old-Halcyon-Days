@@ -1,0 +1,19 @@
+{
+	x: 3.0d,
+	y: 6.5d,
+	dependencies: [
+		"c3caed90"
+	],
+	tasks: [{
+		uid: "7b4e6e3d",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_rotaryblade"
+		}]
+	}],
+	rewards: [{
+		uid: "85369a35",
+		type: "item",
+		item: "contenttweaker:ticket_rare"
+	}]
+}

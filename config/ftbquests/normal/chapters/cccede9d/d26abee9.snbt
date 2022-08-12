@@ -1,0 +1,14 @@
+{
+	x: 2.0d,
+	y: 8.0d,
+	dependencies: [
+		"4895296f"
+	],
+	tasks: [{
+		uid: "7623851f",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_device_stonemill"
+		}]
+	}]
+}

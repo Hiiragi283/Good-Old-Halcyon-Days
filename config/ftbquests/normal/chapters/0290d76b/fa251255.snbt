@@ -1,7 +1,7 @@
 {
 	title: "{gohd.reward.pendant_silver.title}",
 	icon: "dcs_climate:dcs_color_pendant 1 2",
-	x: 2.0d,
+	x: 4.0d,
 	y: 4.0d,
 	can_repeat: true,
 	hide_dependency_lines: true,
@@ -12,7 +12,7 @@
 		uid: "e1cc455b",
 		type: "item",
 		items: [{
-			item: "contenttweaker:ticket_common"
+			item: "contenttweaker:ticket_uncommon"
 		}]
 	}],
 	rewards: [{

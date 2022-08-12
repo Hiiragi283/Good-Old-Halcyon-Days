@@ -1,0 +1,19 @@
+{
+	x: 0.0d,
+	y: 8.0d,
+	dependencies: [
+		"4fb7c614"
+	],
+	tasks: [{
+		uid: "cd004b01",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_yagen_stone"
+		},
+		{
+			item: "dcs_climate:dcs_yagen_brass"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

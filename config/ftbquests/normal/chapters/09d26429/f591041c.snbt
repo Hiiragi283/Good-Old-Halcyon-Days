@@ -24,5 +24,10 @@
 		type: "item",
 		item: "dcs_climate:dcs_ore_dustblock 1 12",
 		count: 3
+	},
+	{
+		uid: "b252a77c",
+		type: "item",
+		item: "thermalexpansion:device 1 10"
 	}]
 }

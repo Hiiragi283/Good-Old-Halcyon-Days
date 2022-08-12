@@ -1,7 +1,7 @@
 {
 	icon: "dcs_climate:dcs_layer_stone_new 1 7",
-	x: 1.5d,
-	y: 8.0d,
+	x: 10.5d,
+	y: 2.0d,
 	shape: "rsquare",
 	text: [
 		"{gohd.cccede9d.bdc29cf2.desc1}"

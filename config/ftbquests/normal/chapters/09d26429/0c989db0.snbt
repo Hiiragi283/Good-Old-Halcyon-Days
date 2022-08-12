@@ -24,5 +24,10 @@
 		uid: "8ac65066",
 		type: "item",
 		item: "contenttweaker:ticket_uncommon"
+	},
+	{
+		uid: "8a8cad9e",
+		type: "item",
+		item: "dcs_climate:dcs_torque_checker"
 	}]
 }
