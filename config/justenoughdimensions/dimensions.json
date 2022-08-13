@@ -1,0 +1,18 @@
+{
+	"dimensions": [
+		{
+			"dim": 2011,
+			"biome": "biomesoplenty:origin_island",
+			"dimensiontype": {
+				"id": 2011,
+				"name": "Minecraft",
+				"suffix": "dim_2011",
+				"keeploaded": false,
+				"worldprovider": "WorldProviderSurfaceJED"
+			},
+			"worldinfo_onetime": {
+				"generatorName": "BIOMESOP"
+			}
+		}
+	]
+}
