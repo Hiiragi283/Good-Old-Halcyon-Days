@@ -6,8 +6,7 @@
 		"{gohd.hac.tooltip}"
 	],
 	dependencies: [
-		"b2567136",
-		"df6648c3"
+		"b2567136"
 	],
 	tasks: [{
 		uid: "ac513fbb",

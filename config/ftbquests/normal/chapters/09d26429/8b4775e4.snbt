@@ -6,7 +6,7 @@
 	description: "{gohd.09d26429.8b4775e4.subtitle}",
 	dependencies: [
 		"df6648c3",
-		"b224ea06"
+		"9852117b"
 	],
 	tasks: [{
 		uid: "342663cf",

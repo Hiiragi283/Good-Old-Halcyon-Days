@@ -1,14 +1,14 @@
 {
-	x: 6.0d,
-	y: 2.0d,
+	x: 14.0d,
+	y: 1.0d,
 	text: [
 		"{gohd.hac.tooltip}"
 	],
 	dependencies: [
-		"5ecfe9d7"
+		"6724c976"
 	],
 	tasks: [{
-		uid: "fbf41a86",
+		uid: "62f73ce3",
 		type: "item",
 		items: [{
 			item: "dcs_climate:dcs_device_conveyor"
@@ -16,9 +16,9 @@
 		count: 8L
 	}],
 	rewards: [{
-		uid: "17ff35ca",
+		uid: "3763c789",
 		type: "item",
-		item: "hap:conveyor",
+		item: "dcs_climate:dcs_device_conveyor",
 		count: 56
 	}]
 }
