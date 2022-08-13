@@ -46,7 +46,7 @@ print("Start loading thermal.zs ...");
 	//Frames
 	HiiragiUtils.addCraftingShaped(true, <thermalexpansion:frame>, RecipePattern.init(["ABA", "BCB", "DBD"]).map({A:<ore:ingotInvar>, B:<dcs_climate:dcs_build_selenite:3>, C:<ore:gearToolSteel>, D:<ore:ingotSteel>}).ingredients, null, null);
 	HiiragiUtils.addCraftingShaped(true, <thermalexpansion:frame>*3, RecipePattern.init(["ABA", "BCB", "DBD"]).map({A:<ore:ingotToolSteel>, B:<ore:fusedQuartz>, C:<ore:gearToolSteel>, D:<ore:ingotStainlessSteel>}).ingredients, null, null);
-	HiiragiUtils.addCraftingShaped(true, <thermalexpansion:frame:64>, RecipePattern.init(["ABA", "BCB", "ABA"]).map({A:<ore:ingotSilver>, B:<ore:ingotTin>, C:<ore:blockGlassHardened>}).ingredients, null, null);
+	HiiragiUtils.addCraftingShaped(true, <thermalexpansion:frame:64>, RecipePattern.init(["ABA", "BCB", "ABA"]).map({A:<ore:ingotSilver>, B:<ore:ingotTin>, C:<dcs_climate:dcs_build_selenite:3>}).ingredients, null, null);
 	HiiragiUtils.addCraftingShaped(false, <thermalexpansion:frame:64>*3, RecipePattern.init(["ABA", "BCB", "ABA"]).map({A:<ore:ingotNickelsilver>, B:<ore:ingotLead>, C:<ore:fusedQuartz>}).ingredients, null, null);
 	//Parts
 	HiiragiUtils.addCraftingShaped(true, <thermalfoundation:material:656>, RecipePattern.init(["  A", "AB ", "CA "]).map({A:<ore:ingotToolSteel>, B:<ore:gearToolSteel>, C:<ore:blockToolSteel>}).ingredients, null, null);
@@ -86,7 +86,7 @@ print("Start loading thermal.zs ...");
 	mods.thermalexpansion.Compactor.addPressRecipe(<ezstorage:ultra_storage_box>, <ezstorage:super_storage_box>*4, 16000);
 	mods.thermalexpansion.Compactor.addPressRecipe(<ezstorage:hyper_storage_box>, <ezstorage:ultra_storage_box>*5, 64000);
 
-	mods.thermalexpansion.Compactor.addGearRecipe(<railcraft:charge:1>, <dcs_climate:dcs_ingot:4>*4, 4000);
+	mods.thermalexpansion.Compactor.addPressRecipe(<railcraft:charge:1>, <dcs_climate:dcs_ingot:4>*4, 4000);
 
 	val mapTicket as int[IItemStack] = {
 		<thermalfoundation:coin:0>: 1,

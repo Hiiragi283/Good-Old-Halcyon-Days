@@ -24,13 +24,6 @@ import scripts.HiiragiUtils;
 //このscriptの読み込みの開始をログに出力
 print("Start loading tic.zs ...");
 
-//変数の定義
-	mods.jei.JEI.addItem(<tconstruct:edible:5>);
-	mods.jei.JEI.addItem(<tconstruct:slime:5>);
-	mods.jei.JEI.addItem(<tconstruct:slime_congealed:5>);
-	mods.jei.JEI.addItem(<tconstruct:slimesling:5>);
-	mods.jei.JEI.addItem(<tconstruct:slime_boots:5>);
-
 //作業台レシピの編集
 	//削除
 	val removeCrafting as IItemStack[] = [
@@ -125,10 +118,10 @@ print("Start loading tic.zs ...");
 	HiiragiUtils.addCasting("table", true, <enderio:item_material:13>, <enderio:item_material:11>, <liquid:vibrant_alloy>, 144, true, 5*20);
 	HiiragiUtils.addCasting("table", true, <enderio:item_material:14>, <ore:gemDiamond>, <liquid:pulsating_iron>, 144, true, 5*20);
 	HiiragiUtils.addCasting("table", true, <enderio:item_material:15>, <ore:gemEmerald>, <liquid:vibrant_alloy>, 144, true, 5*20);
-	HiiragiUtils.addCasting("table", false, <thermalfoundation:material:512>, <ore:plateIron>, <liquid:redstone>, 144, true, 5*20);
-	HiiragiUtils.addCasting("table", false, <thermalfoundation:material:513>, <ore:plateGold>, <liquid:redstone>, 144, true, 5*20);
-	HiiragiUtils.addCasting("table", false, <thermalfoundation:material:514>, <ore:plateSilver>, <liquid:redstone>, 144, true, 5*20);
-	HiiragiUtils.addCasting("table", false, <thermalfoundation:material:515>, <ore:plateElectrum>, <liquid:redstone>, 144, true, 5*20);
+	HiiragiUtils.addCasting("table", false, <thermalfoundation:material:512>, <ore:plateIron>, <liquid:redstone>, 100, true, 5*20);
+	HiiragiUtils.addCasting("table", false, <thermalfoundation:material:513>, <ore:plateGold>, <liquid:redstone>, 100, true, 5*20);
+	HiiragiUtils.addCasting("table", false, <thermalfoundation:material:514>, <ore:plateSilver>, <liquid:redstone>, 100, true, 5*20);
+	HiiragiUtils.addCasting("table", false, <thermalfoundation:material:515>, <ore:plateElectrum>, <liquid:redstone>, 100, true, 5*20);
 	HiiragiUtils.addCasting("table", false, <thermalfoundation:material:640>, <thermalfoundation:material:512>, <liquid:electrum>, 144, true, 5*20);
 
 //Meltingレシピの編集

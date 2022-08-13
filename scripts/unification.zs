@@ -119,9 +119,11 @@ print("Start loading unification.zs ...");
 	HiiragiUtils.addCraftingShapeless(false, <ore:dustBlitz>.firstItem, [<ore:dropWhite>, <ore:dustGunpowder>], null, null);
 	HiiragiUtils.addCraftingShapeless(false, <ore:dustBasalz>.firstItem, [<ore:dropBlack>, <ore:dustGunpowder>], null, null);
 	HiiragiUtils.addCraftingShapeless(false, <ore:dustPyrotheum>.firstItem, [<ore:extractRed>, <ore:dustBlaze>], null, null);
+	HiiragiUtils.addCraftingShapeless(false, <enderio:item_material:62>, [<ore:extractGreen>, <ore:slimeball>], null, null);
 	HiiragiUtils.addCraftingShapeless(false, <ore:dustCryotheum>.firstItem, [<ore:extractBlue>, <ore:dustBlizz>], null, null);
 	HiiragiUtils.addCraftingShapeless(false, <ore:dustAerotheum>.firstItem, [<ore:extractWhite>, <ore:dustBlitz>], null, null);
 	HiiragiUtils.addCraftingShapeless(false, <ore:dustPetrotheum>.firstItem, [<ore:extractBlack>, <ore:dustBasalz>], null, null);
+
 	//松明のレシピの調整
 	val mapTinder as IOreDictEntry[] = [
 		<ore:coal>,
@@ -167,6 +169,10 @@ print("Start loading unification.zs ...");
 	//Diamondの作成レシピ
 	HiiragiUtils.addCraftingShaped(false, <contenttweaker:gem_carbon>, RecipePattern.init(["ABA", "ACA", "AAA"]).map({A:<ore:blockCoal>, B:<minecraft:coal>, C:<ore:nuggetDiamond>}).ingredients, null, null);
 	HiiragiUtils.addCraftingShaped(false, <contenttweaker:gem_carbon>, RecipePattern.init(["AAA", "ABA", "AAA"]).map({A:<ore:containerCharcoal>, B:<ore:nuggetDiamond>}).ingredients, null, null);
+	//解釈違いの新たなキューブ
+	HiiragiUtils.addCraftingShapeless(false, <contenttweaker:cube_yellow>, [<ore:blockElestial>, <extrautils2:suncrystal:0>, <ore:dustLumium>], null, null);
+	HiiragiUtils.addCraftingShapeless(false, <contenttweaker:cube_magenta>, [<ore:blockElestial>, <ore:gemDragonStone>, <ore:dustRefinedObsidian>], null, null);
+	HiiragiUtils.addCraftingShapeless(false, <contenttweaker:cube_cyan>, [<ore:blockElestial>, <ore:gemManaDiamond>, <ore:itemPulsatingPowder>], null, null);
 
 	HiiragiUtils.addCraftingShaped(false, <artisanworktables:workstation:5>, RecipePattern.init(["ABA", " C ", "DDD"]).map({A:<tconstruct:seared_tank:*>, B: <ore:chest>, C:<ore:workbench>, D:<tconstruct:seared:3>}).ingredients, null, null);
 	HiiragiUtils.addCraftingShaped(false, <contenttweaker:glyph_divide>, RecipePattern.init([" A ", "BCB", " A "]).map({A:<minecraft:skull:1>, B:<ore:boneWithered>, C:<openblocks:generic:10>}).ingredients, null, null);
@@ -213,7 +219,7 @@ print("Start loading unification.zs ...");
 	val removeFromJEI as IItemStack[] = [
 		//Applied Energistics 2
 		<appliedenergistics2:material:40>,
-		<appliedenergistics2:material:46>,
+		//<appliedenergistics2:material:46>,
 		//Heat And Climate
 		//<dcs_climate:dcs_gem:*>,
 		<dcs_climate:dcs_door_marble>,
@@ -281,6 +287,19 @@ print("Start loading unification.zs ...");
 		//HiiragiUtils.removeOreDict(i);
 	}
 
+//JEIへの新規登録
+	val mapJEI as IItemStack[] = [
+		<enderio:item_material:62>,
+		<tconstruct:edible:5>,
+		<tconstruct:slime:5>,
+		<tconstruct:slime_congealed:5>,
+		<tconstruct:slimesling:5>,
+		<tconstruct:slime_boots:5>,
+	];
+	for i in mapJEI {
+		mods.jei.JEI.addItem(i);
+	}
+
 //鉱石辞書の削除
 	<ore:dustWood>.remove(<dcs_climate:dcs_fooddust:7>);
 
@@ -316,13 +335,13 @@ print("Start loading unification.zs ...");
 	}
 
 //鉱石辞書の追加
-	<ore:gemManadiamond>.add(<botania:manaresource:2>);
-	<ore:gemDragonstone>.add(<botania:manaresource:9>);
+	<ore:gemManaDiamond>.add(<botania:manaresource:2>);
+	<ore:gemDragonStone>.add(<botania:manaresource:9>);
 	<ore:itemCloth>.add(<botania:manaresource:22>);
-	<ore:itemMagicCloth>.add(<botania:manaresource:22>);
+	//<ore:itemMagicCloth>.add(<botania:manaresource:22>);
 	<ore:ingotElementium>.add(<botania:manaresource:7>);
 	<ore:nuggetElementium>.add(<botania:manaresource:19>);
-	<ore:blockmanasteel>.add(<botania:storage:0>);
+	<ore:blockManasteel>.add(<botania:storage:0>);
 	<ore:blockTerrasteel>.add(<botania:storage:1>);
 	<ore:blockElementium>.add(<botania:storage:2>);
 	<ore:blockManaDiamond>.add(<botania:storage:3>);

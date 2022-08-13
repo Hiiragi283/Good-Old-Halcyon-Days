@@ -39,12 +39,12 @@ print("Start loading extraUtil.zs ...");
 	HiiragiUtils.addCraftingShaped(false, <extrautils2:machine>.withTag({Type: "crafttweaker:assembler"}), RecipePattern.init(["ABA", "CDC", "ABA"]).map({A:<ore:alloyAdvanced>, B:<ore:circuitAdvanced>, C:<hap:conveyor>, D:<mekanism:machineblock3:5>}).ingredients, null, null);
 	HiiragiUtils.addCraftingShaped(false, <extrautils2:machine>.withTag({Type: "crafttweaker:assembler"}), RecipePattern.init(["ABA", "CDC", "ABA"]).map({A:<ore:gearSignalum>, B:<ore:plateSignalum>, C:<hap:conveyor>, D:<thermalexpansion:machine:11>}).ingredients, null, null);
 
-	HiiragiUtils.addCraftingShaped(false, <extrautils2:teleporter:0>, [
+	/*HiiragiUtils.addCraftingShaped(false, <extrautils2:teleporter:0>, [
 		[<twilightforest:naga_scale>,<twilightforest:magic_map_focus>,<twilightforest:meef_stroganoff>],
 		[<twilightforest:ice_bomb>,<extrautils2:teleporter:1>,<twilightforest:hydra_chop>,],
 		[<twilightforest:alpha_fur>,<twilightforest:fiery_tears>,<twilightforest:block_and_chain>]
-	], null, null);
-	HiiragiUtils.addCraftingShaped(false, <extrautils2:decorativesolid:8>*8, RecipePattern.init(["AAA", "ABA", "AAA"]).map({A:<extrautils2:decorativesolid:3>, B:<contenttweaker:ingot_rainbow>}).ingredients, null, null);
+	], null, null);*/
+	HiiragiUtils.addCraftingShaped(false, <extrautils2:decorativesolid:8>*8, RecipePattern.init(["AAA", "ABA", "AAA"]).map({A:<extrautils2:decorativesolid:3>, B:<contenttweaker:ingot_rainbow>.reuse()}).ingredients, null, null);
 
 	HiiragiUtils.addCraftingShapeless(false, <extrautils2:creativeharvest>, [<extrautils2:creativeharvest>, <*>.marked("creative")], function(out, ins, cInfo) {
 		var owner as string = ins.creative.definition.owner;

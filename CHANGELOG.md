@@ -5,11 +5,33 @@
 - Mod Configuration
   - Add
     - `BuildingGadgets-2.8.4`
+      - More comfortable to build!
+    - `justenoughdimensions-1.12.2-1.6.0-dev.20211009.214847`
+      - Alternative way to add new dimensions
     - `modnametooltip_1.12.2-1.10.1`
+    - `NotEnoughEnergistics-1.12.2-1.2.4`
+      - Better than JEE (Just Enought Energistics)
 
-- Disabled Railcraft's ore generation
-- Move some quests in Utilities Tab to Tool Tab
-- Plant trees in planet Minecraft
+- Disabled Railcraft's ore generation and plate registry
+- Disabled Suffocation Damage
+- Fix oredict for Rutile Quartz
+- Plant Origin trees in Minecraft
+- Remove unused resources
+- Script Update
+  - add a new way to craft Diamond from Coal/Charcoal
+  - add a easier way to get Ender Pearl
+  - add new color cubes (WIP)
+  - change the recipes for end game
+  - change the recipe for Locomotives
+  - disable randomTick from Dust Blocks
+  - fix the amount of Destabilized Redstone needed for TE Parts
+  - fix the casting Recipe of Blank Cast
+  - make the recipe of Terrestrial Agglomeration Plate harder
+  - nerf the recipe for Device Frame
+  - registry new oredict
+  - resolve recipe conflicts
+  - revert the recipe of pail
+- Update Quests
 
 ## v0.1.1
 
