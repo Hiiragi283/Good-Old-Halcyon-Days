@@ -1,10 +1,11 @@
 
 #Items
-item.contenttweaker.reagent_halogen.name=Halogen
+item.contenttweaker.gem_carbon.name=Compressed Carbon
 item.contenttweaker.grout_ball.name=Grout Ball
 item.contenttweaker.glyph_divide.name="Division Sigil" Glyph
 item.contenttweaker.ingot_bedrockium.name=bedrockium Ingot
 item.contenttweaker.ingot_rainbow.name=Rainbow Ingot
+item.contenttweaker.reagent_halogen.name=Halogen
 item.contenttweaker.ticket_common.name=Ragi Ticket (Common)
 item.contenttweaker.ticket_uncommon.name=Ragi Ticket (§aUncommon§r)
 item.contenttweaker.ticket_rare.name=Ragi Ticket (§9Rare§r)
@@ -33,6 +34,10 @@ tile.contenttweaker.dustblock_lead.name=Lead Dust Block
 tile.contenttweaker.dustblock_manyullyn.name=Manyullyn Dust Block
 tile.contenttweaker.dustblock_osmium.name=Osmium Dust Block
 tile.contenttweaker.dustblock_platinum.name=Platinum Dust Block
+
+tile.contenttweaker.cube_yellow.name=Activated Yellow Cube
+tile.contenttweaker.cube_magenta.name=Activated Magenta Cube
+tile.contenttweaker.cube_cyan.name=Activated Cyan Cube
 
 # Fluids
 fluid.drop_red=Extracted Red Drop

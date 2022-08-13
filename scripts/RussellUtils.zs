@@ -15,6 +15,7 @@ import crafttweaker.item.IIngredient;
 import crafttweaker.world.IBlockAccess;
 
 //各種modからclassをimport
+import mods.contenttweaker.AxisAlignedBB;
 import mods.contenttweaker.BlockState;
 import mods.contenttweaker.BlockPos;
 import mods.contenttweaker.Color;
@@ -89,9 +90,21 @@ print("Start loading RussellUtils.zs ...");
 		block.setToolClass(tool);
 		block.setToolLevel(toolLevel);
 		block.setBlockSoundType(sound);
-		/*block.onRandomTick = function(world, blockPos, blockState){
-		//	return true;
-		};*/
+		block.onUpdateTick = function(world, blockPos, blockState){
+			return true;
+		};
+		block.register();
+	}
+
+	function addCube (id as string, material as BlockMaterial, hardness as float, resistance as float, tool as string, toolLevel as int, sound as SoundType, isFull as bool) {
+		var block = VanillaFactory.createBlock(id, material);
+		block.setBlockHardness(hardness);
+		block.setBlockResistance(resistance);
+		block.setToolClass(tool);
+		block.setToolLevel(toolLevel);
+		block.setBlockSoundType(sound);
+		block.fullBlock = isFull;
+		block.axisAlignedBB = AxisAlignedBB.create(0.25, 0.25, 0.25, 0.75, 0.75, 0.75);
 		block.register();
 	}
 
