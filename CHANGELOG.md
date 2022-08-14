@@ -1,5 +1,27 @@
 # Changelog
 
+## v0.1.3
+
+- Added Magic Quest tab
+- Added new recipe for Mana Dust (Thermal)
+- Added tooltip for Bedrock
+- Botania Update
+  - added Elven Pearl & Ephemerald
+  - added new agglomeration recipe for Terrasteel Ingpt
+  - change the directories for Dreaming Daisy&Orechid Terrestris
+  - tweak recipes for
+    - Dragon Stone
+    - Elementium Ingot
+    - Mana Lens
+    - Orechid
+    - Orechid Terrestris
+    - Pixie Dust
+  - fix livingwood purification
+  - update credit for license
+- Disabled Soulbound (Cofh Core) Enchantment
+- Removed exchange recipe for Mythic Ticket -> Legendary Ticket
+- Update Quests
+
 ## v0.1.2
 
 - Mod Configuration
@@ -14,6 +36,7 @@
 
 - Disabled Railcraft's ore generation and plate registry
 - Disabled Suffocation Damage
+- Fix Nether Portal can't open
 - Fix oredict for Rutile Quartz
 - Plant Origin trees in Minecraft
 - Remove unused resources
