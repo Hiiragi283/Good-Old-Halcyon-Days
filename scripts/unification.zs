@@ -153,7 +153,6 @@ print("Start loading unification.zs ...");
 	HiiragiUtils.addCraftingShapeless(false, <contenttweaker:ticket_uncommon>*4, [<contenttweaker:ticket_rare>], null, null);
 	HiiragiUtils.addCraftingShapeless(false, <contenttweaker:ticket_rare>*4, [<contenttweaker:ticket_epic>], null, null);
 	HiiragiUtils.addCraftingShapeless(false, <contenttweaker:ticket_epic>*4, [<contenttweaker:ticket_legendary>], null, null);
-	HiiragiUtils.addCraftingShapeless(false, <contenttweaker:ticket_legendary>*8, [<contenttweaker:ticket_mythic>], null, null);
 	//BiblioCraftのレシピ調整
 	HiiragiUtils.addCraftingShaped(false, <bibliocraft:lanterngold:0>, RecipePattern.init([" A ", "BCB", " A "]).map({A:<ore:ingotGold>, B:<ore:paneGlass>, C:<ore:torch>|<ore:dustGlowstone>}).ingredients, null, null);
 	HiiragiUtils.addCraftingShaped(false, <bibliocraft:lanterniron:0>, RecipePattern.init([" A ", "BCB", " A "]).map({A:<ore:ingotIron>, B:<ore:paneGlass>, C:<ore:torch>|<ore:dustGlowstone>}).ingredients, null, null);
@@ -390,6 +389,7 @@ print("Start loading unification.zs ...");
 		<ezstorage:dolly_super>: "gohd.tooltip.ezstorage_dolly.name",
 		<ae2wtlib:infinity_booster_card>: "gohd.tooltip.infinity_booster_card.name",
 		<contenttweaker:ingot_rainbow>: "gohd.tooltip.ingot_rainbow.name",
+		<minecraft:bedrock>: "gohd.tooltip.bedrock.name",
 	};
 	for i, j in mapTooltip {
 		i.addTooltip(I18n.format(j));
