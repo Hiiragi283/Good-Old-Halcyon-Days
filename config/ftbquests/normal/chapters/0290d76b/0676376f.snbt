@@ -1,0 +1,57 @@
+{
+	title: "{gohd.custom.gaia_executer.name}",
+	icon: "botania:elementiumaxe",
+	x: 10.0d,
+	y: 2.0d,
+	hide_dependency_lines: true,
+	dependencies: [
+		"63c2eae3",
+		"06c5892b"
+	],
+	tasks: [{
+		uid: "8565adf9",
+		type: "item",
+		items: [{
+			item: "contenttweaker:ticket_legendary"
+		}],
+		count: 5L,
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "f69093a1",
+		type: "item",
+		item: {
+			id: "botania:elementiumaxe",
+			tag: {
+				ench: [{
+					lvl: 13s,
+					id: 21s
+				},
+				{
+					lvl: 13s,
+					id: 16s
+				},
+				{
+					lvl: 13s,
+					id: 26s
+				}],
+				display: {
+					LocName: "gohd.custom.gaia_executer.name"
+				},
+				pickletweaks: {
+					BlocksBroken: 3
+				},
+				AttributeModifiers: [{
+					UUIDMost: -1231187779937153781L,
+					UUIDLeast: -4736492681406159192L,
+					Amount: 6.0d,
+					Slot: "mainhand",
+					AttributeName: "generic.reachDistance",
+					Operation: 0,
+					Name: "generic.reachDistance"
+				}]
+			}
+		}
+	}]
+}

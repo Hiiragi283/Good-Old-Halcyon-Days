@@ -9,9 +9,8 @@
 		uid: "6b23b357",
 		type: "item",
 		items: [{
-			item: "botania:platform 1 2"
-		}],
-		count: 4L
+			item: "extrautils2:rainbowgenerator"
+		}]
 	}],
 	rewards: [{
 		uid: "de063189",
