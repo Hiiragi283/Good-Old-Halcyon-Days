@@ -1,0 +1,23 @@
+{
+	x: 6.5d,
+	y: 3.0d,
+	dependencies: [
+		"6328f68d"
+	],
+	tasks: [{
+		uid: "f8bbd1cf",
+		type: "item",
+		items: [{
+			item: "botania:rainbowrod"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "43a5d7f4",
+		type: "item",
+		items: [{
+			item: "botania:bifrostperm"
+		}]
+	}]
+}

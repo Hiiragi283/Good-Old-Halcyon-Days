@@ -1,0 +1,20 @@
+{
+	x: 6.0d,
+	y: 0.0d,
+	dependencies: [
+		"0a051cab",
+		"860c5647"
+	],
+	tasks: [{
+		uid: "ac685c68",
+		type: "item",
+		items: [{
+			item: "botanicadds:elven_altar"
+		}]
+	}],
+	rewards: [{
+		uid: "6aac0ef1",
+		type: "item",
+		item: "botania:spark"
+	}]
+}

@@ -1,0 +1,28 @@
+{
+	x: 2.0d,
+	y: 0.0d,
+	text: [
+		"{gohd.bdb7cf70.d2595f85.desc1}"
+	],
+	dependencies: [
+		"681b9247"
+	],
+	tasks: [{
+		uid: "eeb27a86",
+		type: "item",
+		items: [{
+			item: "botania:fertilizer"
+		}],
+		count: 16L
+	}],
+	rewards: [{
+		uid: "3b8b714d",
+		type: "item",
+		item: {
+			ForgeCaps: {
+				Parent: []
+			},
+			id: "botania:flowerbag"
+		}
+	}]
+}

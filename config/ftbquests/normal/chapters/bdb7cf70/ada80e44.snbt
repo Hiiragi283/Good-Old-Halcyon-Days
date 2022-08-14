@@ -1,0 +1,20 @@
+{
+	title: "{gohd.bdb7cf70.860c5647.title}",
+	x: 6.5d,
+	y: 1.0d,
+	dependencies: [
+		"860c5647"
+	],
+	tasks: [{
+		uid: "252afead",
+		type: "item",
+		items: [{
+			item: "botanicadds:pool_dreaming"
+		}]
+	}],
+	rewards: [{
+		uid: "0d0b3c4d",
+		type: "item",
+		item: "botanicadds:pool_dreaming"
+	}]
+}

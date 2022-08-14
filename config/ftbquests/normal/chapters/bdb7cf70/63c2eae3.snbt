@@ -1,0 +1,19 @@
+{
+	x: 8.0d,
+	y: 0.0d,
+	dependencies: [
+		"7ff245ce"
+	],
+	tasks: [{
+		uid: "abd02427",
+		type: "kill",
+		icon: "botania:gaiahead",
+		entity: "botania:doppleganger",
+		value: 1L
+	}],
+	rewards: [{
+		uid: "39b61857",
+		type: "item",
+		item: "botania:dice"
+	}]
+}
