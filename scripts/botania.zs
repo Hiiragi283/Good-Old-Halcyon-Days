@@ -44,11 +44,16 @@ print("Start loading botania.zs ...");
 	//上書き
 	//Botania
 	HiiragiUtils.addCraftingShaped(true, <botania:lexicon>, RecipePattern.init(["AA ", "AB ", "   "]).map({A:<minecraft:paper>, B:<twilightforest:naga_scale>}).ingredients, null, null);
-	HiiragiUtils.addCraftingShapeless(true, <botania:lens:10>, [<botania:lens:0>, <ore:ingotFerrite>, <ore:dyeRed>, <ore:dyeBlue>], null, null);
-	HiiragiUtils.addCraftingShapeless(true, <botania:terrasword>, [<tconstruct:sword_blade>.withTag({Material: "terrasteel"}), <botania:manaresource:3>], null, null);
-	HiiragiUtils.addCraftingShapeless(true, <botania:terrasword>, [<tconstruct:sword_blade>.withTag({Material: "terrasteel"}), <botania:manasteelsword>.marked("inherit")], HiiragiUtils.inheritStatus(<botania:terrasword>), null);
 	HiiragiUtils.addCraftingShaped(false, <botania:crystalbow>, RecipePattern.init([" AD", "BCD", " AD"]).map({A:<botania:manaresource:13>, B:<botania:manaresource:3>, C:<botania:livingwoodbow>.marked("inherit"), D:<ore:manaString>}).ingredients, HiiragiUtils.inheritStatus(<botania:crystalbow>), null);
 	HiiragiUtils.addCraftingShaped(true, <botania:rfgenerator>, RecipePattern.init(["ABA", "BCB", "ABA"]).map({A:<botania:livingrock>, B:<thermalfoundation:material:514>, C:<botanicadds:rune_energy>}).ingredients, null, null);
+	HiiragiUtils.addCraftingShapeless(true, <botania:lens:7>, [<botania:lens:0>, <thermalfoundation:material:656>], null, null);
+	HiiragiUtils.addCraftingShapeless(true, <botania:lens:10>, [<botania:lens:0>, <ore:ingotMagnet>], null, null);
+	HiiragiUtils.addCraftingShapeless(true, <botania:lens:12>, [<botania:lens:0>, <dcs_climate:dcs_device_conveyor>], null, null);
+	HiiragiUtils.addCraftingShapeless(true, <botania:lens:13>, [<botania:lens:0>, <enderio:block_dark_paper_anvil>], null, null);
+	HiiragiUtils.addCraftingShapeless(true, <botania:lens:14>, [<botania:lens:0>, <openblocks:paintbrush>], null, null);
+	HiiragiUtils.addCraftingShapeless(true, <botania:lens:17>, [<botania:lens:0>, <dcs_climate:dcs_magic_card:4>], null, null);
+	HiiragiUtils.addCraftingShapeless(true, <botania:fertilizer>*8, [<minecraft:dye:15>, <twilightforest:liveroot>, <ore:dustPlant>, <ore:dustPlant>], null, null);
+	HiiragiUtils.addCraftingShaped(false, <botania:platform:2>, RecipePattern.init(["AAA", "BCB"]).map({A:<dcs_climate:dcs_build_bricks:3>, B:<dcs_climate:dcs_ore_gemblock:12>, C:<ore:eternalLifeEssence>}).ingredients, null, null);
 	/*val redStringed as IIngredient[IItemStack] = {
 		<botania:redstringcontainer>: <ore:chest>,
 		<botania:redstringdispenser>: <minecraft:dispenser>,
@@ -68,18 +73,20 @@ print("Start loading botania.zs ...");
 	HiiragiUtils.addCraftingShaped(true, <botanicadds:mana_stealer_sword>, RecipePattern.init(["A", "A", "B"]).map({A:<botanicadds:gaiasteel_ingot>, B:<botania:terrasword>.marked("inherit")}).ingredients, HiiragiUtils.inheritStatus(<botanicadds:mana_stealer_sword>), null);
 
 	//新規
+	//Botania
+	HiiragiUtils.addCraftingShaped(false, <botania:specialflower>.withTag({type: "orechid"}), [
+		[<ore:blockLapis>, <ore:blockEmerald>, <ore:blockRedstone>],
+		[<ore:blockCoal>, <botania:flower:5>, <ore:blockGold>],
+		[<ore:blockIron>, <twilightforest:ore_magnet:*>, <ore:blockDiamond>]], null, null);
+	//Morechids
+	HiiragiUtils.addCraftingShaped(false, <botania:specialflower>.withTag({type: "orechid_terrestris"}), [
+		[<botania:petalblock:1>, <botania:petalblock:5>, <botania:petalblock:10>],
+		[<botania:petalblock:4>, <botania:specialflower>.withTag({type: "orechid"}), <botania:petalblock:14>],
+		[<botania:petalblock:13>, <twilightforest:liveroot>, <botania:petalblock:3>]], null, null);
 
 //AWレシピの編集
 //import
 //新規
-
-	//Dreaming Daisy
-	ElvenTrade.addRecipe([<botania:specialflower>.withTag({type: "dreaming_daisy"})], [<botania:specialflower>.withTag({type: "puredaisy"})]);
-	//Orechid Terrestris
-	HiiragiUtils.addCraftingShaped(false, <botania:specialflower>.withTag({type: "orechid_terrestris"}), [
-		[<botania:biomestonea:7>, <botania:biomestonea:2>, <botania:biomestonea:6>],
-		[<botania:biomestonea:0>, <botania:specialflower>.withTag({type: "orechid"}), <botania:biomestonea:5>],
-		[<botania:biomestonea:4>, <twilightforest:liveroot>, <botania:biomestonea:3>]], null, null);
 
 //エルフとの交易関連
 	val toRemoveElven as IIngredient[] = [
@@ -90,8 +97,6 @@ print("Start loading botania.zs ...");
 		<botania:manaresource:9>,
 		<botania:storage:4>,
 		<botanicadds:dreamrock>,
-		<botanicadds:elven_lapis>,
-		<botanicadds:elven_lapis_block>
 	];
 	for i in toRemoveElven {
 		ElvenTrade.removeRecipe(i);
@@ -99,6 +104,7 @@ print("Start loading botania.zs ...");
 
 	ElvenTrade.addRecipe([<contenttweaker:elven_pearl>], [<botania:manaresource:1>]);
 	ElvenTrade.addRecipe([<contenttweaker:ephemerald>], [<botania:manaresource:2>]);
+	ElvenTrade.addRecipe([<botania:specialflower>.withTag({type: "dreaming_daisy"})], [<botania:specialflower>.withTag({type: "puredaisy"})]);
 
 //マナプール周りのレシピ
 	val removePool as IItemStack[] = [
@@ -140,12 +146,13 @@ print("Start loading botania.zs ...");
 		mods.botania.Orechid.removeOre(i);
 	}
 
-//orechid Ignem
+//Orechid Ignem
 	mods.botania.OrechidIgnem.removeOre(<ore:oreQuartz>);
 
 //Pure Daisyによる加工
 	val toRemovePure as IIngredient[] = [
-		<botania:livingwood>
+		<botania:livingwood>,
+		<botania:livingrock>
 	];
 	for i in toRemovePure {
 		PureDaisy.removeRecipe(i);
@@ -153,9 +160,10 @@ print("Start loading botania.zs ...");
 
 	PureDaisy.addRecipe(<extrautils2:compresseddirt:3>, <biomesoplenty:grass:5>);
 	PureDaisy.addRecipe(<twilightforest:twilight_sapling:9>, <biomesoplenty:sapling_1>);
-
-	for i in 0 to 4 {
+	PureDaisy.addRecipe(<dcs_climate:dcs_ore_gemblock:6>, <botania:livingrock>);
+	for i in 0 to 16 {
 		PureDaisy.addRecipe(<twilightforest:twilight_log>.definition.makeStack(i), <botania:livingwood>);
+		PureDaisy.addRecipe(<twilightforest:magic_log>.definition.makeStack(i), <botania:livingwood>);
 	}
 
 //Runic Altarによる加工
@@ -189,6 +197,24 @@ print("Start loading botania.zs ...");
 		<ore:ingotRefinedObsidian>,
 		<ore:ingotManyullyn>,
 	], 1000000);
+	mods.botania.RuneAltar.addRecipe(<ore:ingotElementium>.firstItem,[
+		<ore:ingotManasteel>,
+		<ore:ingotManasteel>,
+		<ore:gemKunzite>,
+		<ore:dustMana>,
+	], 10000);
+	mods.botania.RuneAltar.addRecipe(<ore:elvenPixieDust>.firstItem,[
+		<biomesoplenty:flower_0:0>,
+		<biomesoplenty:flower_0:0>,
+		<ore:manaPearl>,
+		<ore:dustMana>,
+	], 10000);
+	mods.botania.RuneAltar.addRecipe(<ore:gemDragonStone>.firstItem,[
+		<minecraft:dragon_breath>,
+		<minecraft:dragon_breath>,
+		<ore:gemManaDiamond>,
+		<ore:dustMana>,
+	], 10000);
 
 //Terrestrial Agglomeratioによる加工
 	val agglo_terepad = AgglomerationMultiblock.create()
@@ -210,11 +236,6 @@ print("Start loading botania.zs ...");
 		.edgeReplace(<minecraft:coal_block>)
 		.corner(<biomesoplenty:grass:5>)
 		.cornerReplace(<extrautils2:cursedearth>);
-	val agglo_earth_charging = AgglomerationMultiblock.create()
-		.center(<extrautils2:teleporter:1>)
-		.centerReplace(<extrautils2:teleporter:0>)
-		.edge(<openblocks:sky:1>)
-		.corner(<openblocks:sky:1>);
 	val agglo_high_tech = AgglomerationMultiblock.create()
 		.center(<botania:platform:2>)
 		.edge(<botania:quartztypedark:1>)
@@ -223,6 +244,10 @@ print("Start loading botania.zs ...");
 		.center(<extrautils2:rainbowgenerator>)
 		.edge(<extrautils2:decorativesolid:8>)
 		.corner(<extrautils2:decorativesolid:8>);
+	val agglo_elven = AgglomerationMultiblock.create()
+		.center(<botanicadds:dreamrock>)
+		.edge(<botania:dreamwood:5>)
+		.corner(<botanicadds:dreamrock>);
 
 	Agglomeration.addRecipe(AgglomerationRecipe.create()
 		.output(<extrautils2:snowglobe:1>)
@@ -237,21 +262,6 @@ print("Start loading botania.zs ...");
 			<biomesoplenty:terrarium:15>,
 		])
 		.multiblock(agglo_earth_blessing));
-	/*Agglomeration.addRecipe(AgglomerationRecipe.create()
-		.output(<contenttweaker:ingot_rainbow>)
-		.inputs([
-			<botanicadds:gaiasteel_ingot>,
-			<enderio:item_alloy_ingot:1>,
-			<mekanism:ingot:3>,
-			<enderio:item_alloy_ingot:2>,
-			<thermalfoundation:material:134>,
-			<dcs_climate:dcs_ingot:13>,
-			<tconstruct:ingots:2>,
-		])
-		.color1(0x000000 as int)
-		.color2(0xFFFFFF as int)
-		.manaCost(1000000)
-		.multiblock(agglo_rainbow_consume));*/
 	Agglomeration.addRecipe(AgglomerationRecipe.create()
 		.output(<biomesoplenty:earth>)
 		.inputs([
@@ -295,16 +305,14 @@ print("Start loading botania.zs ...");
 		.manaCost(10000000)
 		.multiblock(agglo_earth_polluting));
 	Agglomeration.addRecipe(AgglomerationRecipe.create()
-		.output(<dcs_climate:dcs_icons>)
+		.output(<botania:manaresource:4>*2)
 		.inputs([
-			<ore:cubeRed>,
-			<ore:cubeGreen>,
-			<ore:cubeBlue>,
-			<ore:cubeWhite>,
-			<ore:cubeBlack>,
+			<contenttweaker:ephemerald>,
+			<botania:manaresource:4>,
+			<contenttweaker:elven_pearl>,
 		])
-		.manaCost(10000000)
-		.multiblock(agglo_earth_charging));
+		.manaCost(250000)
+		.multiblock(agglo_elven));
 
 //Dreaming Daisyによる加工
 	val dreaming_daisy = mods.morechids.Registry.getFlower("dreaming_daisy");

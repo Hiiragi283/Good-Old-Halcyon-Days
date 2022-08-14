@@ -5,7 +5,7 @@
 			{
 				"model": "botania:shapes/cross_tinted",
 				"textures": {
-					"cross": "morechids:dreaming_daisy"
+					"cross": "botania:dreaming_daisy"
 				}
 			}
 		],
@@ -14,7 +14,7 @@
 				"model": "builtin/generated",
 				"transform": "forge:default-item",
 				"textures": {
-					"layer0": "morechids:dreaming_daisy"
+					"layer0": "botania:dreaming_daisy"
 				}
 			}
 		]

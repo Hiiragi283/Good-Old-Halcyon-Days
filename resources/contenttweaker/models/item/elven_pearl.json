@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "contenttweaker:items/elven_pearl"
+    "layer0": "botania:items/elven_pearl"
   }
 }

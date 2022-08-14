@@ -8,6 +8,7 @@ gohd.custom.rake_of_the_gaia.name=Rake of the Gaia
 gohd.custom.arrow_doomsday.name=§0Arrow of the Doomsday
 gohd.custom.spring_nightmare.name=§0Spring of Nightmare
 gohd.custom.track_neet.name=NEET Suit
+gohd.custom.gaia_executer.name=§cGaia Executer
 
 #Tooltips
 gohd.tooltip.hidden.name=§6Hide from JEI§r but §aavailable§r
@@ -15,6 +16,7 @@ gohd.tooltip.removed.name=§4Recipe Removed!§r
 
 gohd.tooltip.burning_stick.name=§aObtained by right-clicking Fire with Tinder
 gohd.tooltip.grout_forming.name=§aObtained by right-clicking Grout with Wooden Stick
+gohd.tooltip.bedrock.name=§aHarvested by right-clicking on a pickaxe with Mining level 4 or higher
 
 gohd.tooltip.ezstorage_box_0.name=§aPlaced beside blocks in EZ Network, provides 400 item storage
 gohd.tooltip.ezstorage_box_1.name=§aPlaced beside blocks in EZ Network, provides 4,000 item storage
@@ -130,6 +132,18 @@ gohd.cccede9d.c0d4a6c8.task1=Ore Crystals (5x)
 
 ## Tools:
 gohd.tools.title=Tools
+
+## Magic: gohd.bdb7cf70.
+gohd.magic.title=Magic
+gohd.bdb7cf70.d2595f85.desc1=You can get the first Mystical Flower using Floral Fertilizer.
+gohd.bdb7cf70.8d0ffccf.title=We are Living!
+gohd.bdb7cf70.8d0ffccf.desc1=Check out new recipes!
+gohd.bdb7cf70.fe39e5f6.title=We are Mana-Infused!
+gohd.bdb7cf70.dbe05e17.title=More Inexpensive Agglomeration
+gohd.bdb7cf70.860c5647.title=We are Dreaming!
+gohd.bdb7cf70.52e48bc0.title=We are Metamorphosed!
+gohd.bdb7cf70.6328f68d.title=We are Runic!
+gohd.bdb7cf70.e5eb64a5.title=We are Shimmering!
 
 ## Utilities: gohd.6b120fb2.
 gohd.utilities.title=Utilities

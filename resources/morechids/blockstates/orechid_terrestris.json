@@ -5,7 +5,7 @@
 			{
 				"model": "botania:shapes/cross_tinted",
 				"textures": {
-					"cross": "morechids:orechid_terrestris"
+					"cross": "botania:orechid_terrestris"
 				}
 			}
 		],
@@ -14,7 +14,7 @@
 				"model": "builtin/generated",
 				"transform": "forge:default-item",
 				"textures": {
-					"layer0": "morechids:orechid_terrestris"
+					"layer0": "botania:orechid_terrestris"
 				}
 			}
 		]
