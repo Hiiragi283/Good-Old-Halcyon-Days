@@ -88,5 +88,29 @@
 		"input": [
 			"contenttweaker:gem_carbon:0"
 		]
+	},
+	"add_manaDust": {
+		"recipe_type": "ADD",
+		"output_primary": {
+			"item": "thermalfoundation:material:1028"
+		},
+		"output_secondary": {
+			"item": "botania:manaresource:23",
+			"chance": 0.5
+		},
+		"climate_temperature": "NORMAL",
+		"input_fluid_primary": {
+			"amount": 1000,
+			"fluid": "dcs.hotspring"
+		},
+		"catalyst": {
+			"item": "botania:alchemycatalyst:0"
+		},
+		"input": [
+			"dustPyrotheum",
+			"dustCryotheum",
+			"dustAerotheum",
+			"dustPetrotheum"
+		]
 	}
 }
