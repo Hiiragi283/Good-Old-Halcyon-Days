@@ -1,7 +1,7 @@
 {
 	icon: "minecraft:minecart",
-	x: 10.0d,
-	y: -4.0d,
+	x: 11.0d,
+	y: -3.0d,
 	dependencies: [
 		"1e4e50e2"
 	],

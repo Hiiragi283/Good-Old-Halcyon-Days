@@ -11,6 +11,12 @@
 		type: "item",
 		items: [{
 			item: "enderio:block_enhanced_sag_mill"
-		}]
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "aef71639",
+		type: "item",
+		item: "contenttweaker:ticket_legendary"
 	}]
 }

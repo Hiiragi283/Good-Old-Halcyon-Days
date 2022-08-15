@@ -1,10 +1,12 @@
 {
-	x: 2.75d,
-	y: 0.0d,
+	x: 0.0d,
+	y: -2.75d,
 	shape: "square",
 	description: "{gohd.0f73c1bb.4955912c.subtitle}",
 	dependencies: [
-		"6ab31c74"
+		"99f571cf",
+		"e608130b",
+		"2ab1ef8e"
 	],
 	tasks: [{
 		uid: "55abc81a",

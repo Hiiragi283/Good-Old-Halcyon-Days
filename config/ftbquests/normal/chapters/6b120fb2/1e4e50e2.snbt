@@ -1,8 +1,8 @@
 {
 	title: "{gui.railcraft.coke.oven}",
 	icon: "railcraft:fuel_coke",
-	x: 8.0d,
-	y: -4.0d,
+	x: 9.0d,
+	y: -3.0d,
 	shape: "square",
 	dependencies: [
 		"0caa24a5"

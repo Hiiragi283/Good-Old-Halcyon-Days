@@ -1,0 +1,35 @@
+{
+	title: "{gohd.bdb7cf70.4cbd8e5d.title}",
+	x: -1.0d,
+	y: 2.0d,
+	dependencies: [
+		"a1433ad5"
+	],
+	tasks: [{
+		uid: "2e7f9fd6",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_cont_misc"
+		}]
+	},
+	{
+		uid: "63ee2581",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_cont_metal 1 4"
+		}]
+	},
+	{
+		uid: "7d4769b7",
+		type: "item",
+		items: [{
+			item: "minecraft:gunpowder"
+		}]
+	}],
+	rewards: [{
+		uid: "178c0e12",
+		type: "item",
+		item: "dcs_climate:dcs_cont_misc",
+		count: 8
+	}]
+}

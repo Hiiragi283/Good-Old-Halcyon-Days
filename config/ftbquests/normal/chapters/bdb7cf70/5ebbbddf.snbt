@@ -1,8 +1,8 @@
 {
-	x: 4.0d,
+	x: 3.0d,
 	y: -2.0d,
 	dependencies: [
-		"e9f7ac9b"
+		"d2595f85"
 	],
 	tasks: [{
 		uid: "f1bbe61d",
@@ -13,5 +13,15 @@
 				type: "orechid_terrestris"
 			}
 		}]
+	}],
+	rewards: [{
+		uid: "cef3ee8b",
+		type: "item",
+		item: {
+			id: "botania:specialflower",
+			tag: {
+				type: "jadedAmaranthus"
+			}
+		}
 	}]
 }

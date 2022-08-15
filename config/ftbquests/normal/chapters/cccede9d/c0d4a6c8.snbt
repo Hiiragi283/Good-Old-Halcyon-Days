@@ -37,5 +37,10 @@
 		{
 			item: "dcs_climate:dcs_metal 1 7"
 		}]
+	}],
+	rewards: [{
+		uid: "b40eb146",
+		type: "item",
+		item: "contenttweaker:ticket_legendary"
 	}]
 }

@@ -1,0 +1,49 @@
+{
+	title: "{gohd.bdb7cf70.c895536e.title}",
+	x: 6.0d,
+	y: 4.0d,
+	description: "{link.youtu.be.2P2TC8Tlq7M}",
+	dependencies: [
+		"a539f485"
+	],
+	tasks: [{
+		uid: "a8dee952",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_color_cube 1 7"
+		}]
+	},
+	{
+		uid: "08fbbb91",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_color_cube 1 6"
+		}]
+	},
+	{
+		uid: "3d2f611b",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_color_cube 1 5"
+		}]
+	},
+	{
+		uid: "671f3fff",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_color_cube 1 9"
+		}]
+	},
+	{
+		uid: "df180169",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_color_cube 1 8"
+		}]
+	}],
+	rewards: [{
+		uid: "a5c40ba4",
+		type: "item",
+		item: "contenttweaker:ticket_epic"
+	}]
+}

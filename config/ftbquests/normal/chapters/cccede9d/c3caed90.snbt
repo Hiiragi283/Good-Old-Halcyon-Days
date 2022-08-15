@@ -9,6 +9,12 @@
 		type: "item",
 		items: [{
 			item: "dcs_climate:dcs_device_crusher"
-		}]
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "43e462ab",
+		type: "item",
+		item: "contenttweaker:ticket_rare"
 	}]
 }

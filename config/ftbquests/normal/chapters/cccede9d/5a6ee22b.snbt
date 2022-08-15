@@ -1,9 +1,13 @@
 {
 	icon: "railcraft:firestone_raw",
-	x: 11.0d,
-	y: -1.0d,
+	x: 10.5d,
+	y: 10.0d,
+	text: [
+		"{gohd.cccede9d.5a6ee22b.desc1}",
+		"{gohd.cccede9d.5a6ee22b.desc2}"
+	],
 	dependencies: [
-		"d28227d5"
+		"1a7f5909"
 	],
 	tasks: [{
 		uid: "a79c4802",
@@ -27,5 +31,10 @@
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "bab62154",
+		type: "item",
+		item: "minecraft:lava_bucket"
 	}]
 }

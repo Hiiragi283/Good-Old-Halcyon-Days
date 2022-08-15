@@ -1,6 +1,9 @@
 {
 	x: 13.0d,
 	y: 6.0d,
+	text: [
+		"{gohd.09d26429.a230052c.desc1}"
+	],
 	dependencies: [
 		"6f068e57"
 	],
@@ -8,7 +11,7 @@
 		uid: "7156d465",
 		type: "item",
 		items: [{
-			item: "minecraft:ender_eye"
+			item: "minecraft:ender_pearl"
 		}],
 		count: 12L
 	}],

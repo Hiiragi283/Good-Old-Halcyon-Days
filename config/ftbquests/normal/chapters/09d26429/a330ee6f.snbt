@@ -1,9 +1,6 @@
 {
 	x: 2.0d,
 	y: -2.0d,
-	text: [
-		""
-	],
 	dependencies: [
 		"648774ca"
 	],

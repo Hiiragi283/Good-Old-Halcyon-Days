@@ -5,8 +5,8 @@
 			model: "railcraft:default"
 		}
 	},
-	x: 11.0d,
-	y: -3.0d,
+	x: 12.0d,
+	y: -2.0d,
 	dependencies: [
 		"96ad023b"
 	],

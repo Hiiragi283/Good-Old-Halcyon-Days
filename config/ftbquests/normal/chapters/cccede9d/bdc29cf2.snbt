@@ -1,15 +1,14 @@
 {
 	icon: "dcs_climate:dcs_layer_stone_new 1 7",
-	x: 10.5d,
-	y: 2.0d,
-	shape: "rsquare",
+	x: 9.0d,
+	y: 7.0d,
+	shape: "square",
 	text: [
 		"{gohd.cccede9d.bdc29cf2.desc1}"
 	],
 	dependencies: [
 		"4fb7c614"
 	],
-	optional: true,
 	tasks: [{
 		uid: "7f081235",
 		type: "item",

@@ -10,5 +10,10 @@
 		items: [{
 			item: "thermalexpansion:augment 1 273"
 		}]
+	}],
+	rewards: [{
+		uid: "73ee5135",
+		type: "item",
+		item: "contenttweaker:ticket_epic"
 	}]
 }

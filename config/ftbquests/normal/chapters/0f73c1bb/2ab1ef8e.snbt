@@ -3,13 +3,13 @@
 	y: -2.75d,
 	shape: "square",
 	dependencies: [
-		"6ab31c74"
+		"d957309c"
 	],
 	tasks: [{
 		uid: "6b23b357",
 		type: "item",
 		items: [{
-			item: "extrautils2:rainbowgenerator"
+			item: "contenttweaker:cube_iridescent"
 		}]
 	}],
 	rewards: [{

@@ -3,14 +3,13 @@
 	icon: "dcs_climate:dcs_layer_skarn",
 	x: 9.0d,
 	y: 2.0d,
-	shape: "rsquare",
+	shape: "square",
 	text: [
 		"{gohd.cccede9d.1313a69a.desc1}"
 	],
 	dependencies: [
 		"d70f01cb"
 	],
-	optional: true,
 	tasks: [{
 		uid: "c428fb06",
 		type: "item",
