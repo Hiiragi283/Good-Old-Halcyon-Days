@@ -112,5 +112,59 @@
 			"dustAerotheum",
 			"dustPetrotheum"
 		]
+	},
+	"add_cubeCyan": {
+		"recipe_type": "ADD",
+		"output_primary": {
+			"item": "contenttweaker:cube_cyan:0"
+		},
+		"climate_temperature": "FROSTBITE",
+		"input_fluid_primary": {
+			"amount": 1000,
+			"fluid": "cloud_seed"
+		},
+		"catalyst": {
+			"item": "contenttweaker:cube_iridescent"
+		},
+		"input": [
+			"cubeGreen",
+			"cubeBlue"
+		]
+	},
+	"add_cubeMagenta": {
+		"recipe_type": "ADD",
+		"output_primary": {
+			"item": "contenttweaker:cube_magenta:0"
+		},
+		"climate_temperature": "SMELTING",
+		"input_fluid_primary": {
+			"amount": 1000,
+			"fluid": "dcs.chorus_liquor"
+		},
+		"catalyst": {
+			"item": "contenttweaker:cube_iridescent"
+		},
+		"input": [
+			"cubeBlue",
+			"cubeRed"
+		]
+	},
+	"add_cubeYellow": {
+		"recipe_type": "ADD",
+		"output_primary": {
+			"item": "contenttweaker:cube_yellow:0"
+		},
+		"climate_temperature": "HOT",
+		"input_fluid_primary": {
+			"amount": 1000,
+			"fluid": "liquid_sunshine"
+		},
+		"catalyst": {
+			"item": "contenttweaker:cube_iridescent"
+		},
+		"input": [
+			"cubeRed",
+			"cubeGreen"
+		]
 	}
 }

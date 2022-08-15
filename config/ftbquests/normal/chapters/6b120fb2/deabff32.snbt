@@ -11,7 +11,8 @@
 		type: "item",
 		items: [{
 			item: "quarryplus:quarry"
-		}]
+		}],
+		ignore_nbt: 1b
 	}],
 	rewards: [{
 		uid: "8467ae98",

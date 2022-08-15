@@ -13,6 +13,8 @@
 	<recipe name="Gear, Stone" disabled="true"></recipe>
 	<recipe name="Gear, Stone, Upgrade" disabled="true"></recipe>
 
+	<recipe name="Alloy: End Steel" disabled="true"></recipe>
+
 <!--Add Recipes-->
 	<recipe name="Alloy: Calculation Processor" required="true">
 		<alloying energy="10000" exp="0">
@@ -44,6 +46,22 @@
 			<input name="dropofevil"/>
 			<input name="botanicadds:gaia_shard"/>
 			<output name="extrautils2:ingredients:17"/>
+		</alloying>
+	</recipe>
+	<recipe name="Alloy: End Steel Ingot" required="true">
+		<alloying energy="20000" exp="0.5">
+			<input name="minecraft:end_stone"/>
+			<input name="ingotDarkSteel"/>
+			<input name="ingotTitanium"/>
+			<output name="ingotEndSteel"/>
+		</alloying>
+	</recipe>
+	<recipe name="Alloy: Fluix Steel Ingot" required="true">
+		<alloying energy="20000" exp="0.5">
+			<input name="dustFluix"/>
+			<input name="ingotSUS"/>
+			<input name="itemSilicon"/>
+			<output name="ingotFluixSteel"/>
 		</alloying>
 	</recipe>
 

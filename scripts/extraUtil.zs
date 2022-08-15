@@ -38,6 +38,9 @@ print("Start loading extraUtil.zs ...");
 	HiiragiUtils.addCraftingShaped(false, <extrautils2:machine>.withTag({Type: "crafttweaker:assembler"}), RecipePattern.init(["ABA", "CDC", "ABA"]).map({A:<ore:gearEnergized>, B:<enderio:item_basic_capacitor:1>, C:<hap:conveyor>, D:<enderio:block_crafter>}).ingredients, null, null);
 	HiiragiUtils.addCraftingShaped(false, <extrautils2:machine>.withTag({Type: "crafttweaker:assembler"}), RecipePattern.init(["ABA", "CDC", "ABA"]).map({A:<ore:alloyAdvanced>, B:<ore:circuitAdvanced>, C:<hap:conveyor>, D:<mekanism:machineblock3:5>}).ingredients, null, null);
 	HiiragiUtils.addCraftingShaped(false, <extrautils2:machine>.withTag({Type: "crafttweaker:assembler"}), RecipePattern.init(["ABA", "CDC", "ABA"]).map({A:<ore:gearSignalum>, B:<ore:plateSignalum>, C:<hap:conveyor>, D:<thermalexpansion:machine:11>}).ingredients, null, null);
+	HiiragiUtils.addCraftingShaped(true, <extrautils2:machine:0>, RecipePattern.init(["AAA", "ABA", "CCC"]).map({A:<ore:ingotInvar>, B:<ore:gemRedstone>, C:<ore:ingotSteel>}).ingredients, null, null);
+	HiiragiUtils.addCraftingShaped(false, <extrautils2:machine:0>*3, RecipePattern.init(["AAA", "ABA", "CCC"]).map({A:<ore:ingotToolSteel>, B:<ore:gemRedstone>, C:<ore:ingotStainlessSteel>}).ingredients, null, null);
+
 
 	/*HiiragiUtils.addCraftingShaped(false, <extrautils2:teleporter:0>, [
 		[<twilightforest:naga_scale>,<twilightforest:magic_map_focus>,<twilightforest:meef_stroganoff>],
@@ -53,8 +56,6 @@ print("Start loading extraUtil.zs ...");
 		var meta as int = ins.creative.metadata;
 		return <extrautils2:creativeharvest>.withTag({creative_block: {meta: meta, block: idMod}, display_stack: {id: idMod, Count: 1 as byte, Damage: meta as short}});
 	}, null);
-
-	HiiragiUtils.addCraftingReplace(<extrautils2:machine>, <enderio:item_material:54>, <extrautils2:terraformer:9>);
 
 //AWレシピの編集
 	//import

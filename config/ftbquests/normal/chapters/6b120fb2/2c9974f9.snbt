@@ -12,7 +12,8 @@
 		type: "item",
 		items: [{
 			item: "dcs_climate:dcs_device_steel_pot"
-		}]
+		}],
+		ignore_nbt: 1b
 	}],
 	rewards: [{
 		uid: "0940728e",

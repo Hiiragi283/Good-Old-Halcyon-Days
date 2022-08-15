@@ -12,7 +12,8 @@
 		type: "item",
 		items: [{
 			item: "dcs_climate:dcs_device_tea_pot"
-		}]
+		}],
+		ignore_nbt: 1b
 	}],
 	rewards: [{
 		uid: "1ff47a04",

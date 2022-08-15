@@ -1,0 +1,21 @@
+{
+	x: 25.0d,
+	y: 2.0d,
+	hide_dependency_lines: true,
+	dependencies: [
+		"a87e9ce9",
+		"d11fc7ac"
+	],
+	tasks: [{
+		uid: "20c3f5ff",
+		type: "item",
+		items: [{
+			item: "artisanworktables:workshop 1 5"
+		}]
+	}],
+	rewards: [{
+		uid: "78721771",
+		type: "item",
+		item: "contenttweaker:ticket_rare"
+	}]
+}

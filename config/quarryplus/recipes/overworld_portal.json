@@ -1,0 +1,23 @@
+{
+  "id": "gohd:overworld_portal",
+  "type": "quarryplus:workbench_recipe",
+  "ingredients": [
+    {
+      "item": "contenttweaker:ingot_rainbow",
+      "data": 0,
+      "count": 128
+    },
+    {
+      "item": "contenttweaker:cube_iridescent",
+      "data": 0,
+      "count": 128
+    }
+  ],
+  "energy": 20111118.0,
+  "showInJEI": true,
+  "result": {
+    "item": "extrautils2:teleporter",
+    "data": 0,
+    "count": 1
+  }
+}

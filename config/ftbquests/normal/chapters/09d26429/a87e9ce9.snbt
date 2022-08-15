@@ -12,9 +12,8 @@
 		}]
 	}],
 	rewards: [{
-		uid: "2e5788f9",
+		uid: "a27d36d6",
 		type: "item",
-		item: "contenttweaker:ticket_common",
-		count: 3
+		item: "artisanworktables:toolbox"
 	}]
 }

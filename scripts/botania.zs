@@ -131,7 +131,7 @@ print("Start loading botania.zs ...");
 	mods.botania.ManaInfusion.addInfusion(<botania:manaresource:16>*4, <dcs_climate:dcs_misc:8>, 5000);
 
 //Orechid
-	val removeOrechid as string[] = [
+	/*val removeOrechid as string[] = [
 		"oreAluminum",
 		"oreAmber",
 		"oreApatite",
@@ -155,7 +155,7 @@ print("Start loading botania.zs ...");
 	];
 	for i in removeOrechid {
 		mods.botania.Orechid.removeOre(i);
-	}
+	}*/
 
 //Orechid Ignem
 	mods.botania.OrechidIgnem.removeOre(<ore:oreQuartz>);
@@ -167,6 +167,8 @@ print("Start loading botania.zs ...");
 	}
 
 //Petal Apothecary
+	mods.botania.Apothecary.removeRecipe("orechid");
+
 	mods.botania.Apothecary.addRecipe("orechid_terrestris", [<ore:petalGreen>, <ore:petalYellow>, <ore:petalOrange>, <ore:petalLime>, <ore:petalPurple>, <ore:petalRed>, <ore:petalBlue>, <twilightforest:ore_magnet:*>]);
 
 //Pure Daisyによる加工
@@ -265,6 +267,13 @@ print("Start loading botania.zs ...");
 		.center(<railcraft:red_nether:4>)
 		.edge(<railcraft:bloodstained:2>)
 		.corner(<minecraft:red_nether_brick>);
+	val agglo_workshop = AgglomerationMultiblock.create()
+		.center(<artisanworktables:workstation:5>)
+		.centerReplace(<artisanworktables:workshop:5>)
+		.edge(<tconstruct:tooltables:0>)
+		.edgeReplace(<dcs_climate:dcs_squaretable_wood>)
+		.corner(<tconstruct:seared_tank:1>)
+		.cornerReplace(<tconstruct:seared_glass:0>);
 
 	Agglomeration.addRecipe(AgglomerationRecipe.create()
 		.output(<extrautils2:snowglobe:1>)
@@ -321,6 +330,15 @@ print("Start loading botania.zs ...");
 		])
 		.manaCost(250000)
 		.multiblock(agglo_elven));
+	Agglomeration.addRecipe(AgglomerationRecipe.create()
+		.output(<extrautils2:contract>)
+		.inputs([
+			<minecraft:paper>,
+			<inspirations:dyed_bottle:0>,
+			<twilightforest:magic_map_focus>,
+		])
+		.manaCost(50000)
+		.multiblock(agglo_workshop));
 
 //このscriptの読み込みの完了をログに出力
 print("botania.zs loaded!");

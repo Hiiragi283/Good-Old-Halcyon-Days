@@ -6,7 +6,8 @@
 	shape: "square",
 	dependencies: [
 		"c29b5fbb",
-		"bc22061f"
+		"bc22061f",
+		"38c6d533"
 	],
 	size: 1.5d,
 	tasks: [{

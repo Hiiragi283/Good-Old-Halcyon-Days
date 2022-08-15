@@ -34,7 +34,6 @@ print("Start loading unification.zs ...");
 	//削除
 	val removeCrafting as IItemStack[] = [
 		<dcs_climate:dcs_ore_gemblock:4>,
-		//<thermalfoundation:storage_resource:1>,
 	];
 	for i in removeCrafting {
 		HiiragiUtils.removeCrafting(i);
@@ -62,7 +61,7 @@ print("Start loading unification.zs ...");
 		"enderio:wired_charger_upgrade",
 		"enderio:alloy_smelter_upgrade",
 		"enderio:crafter_upgrade",
-		"extrautils2:machine_base",
+		//"extrautils2:machine_base",
 		"extrautils2:unstable_nugget",
 		"mekanism:machineblock_5",
 		"mekanism:machineblock_5_alt",
@@ -195,6 +194,8 @@ print("Start loading unification.zs ...");
 	HiiragiUtils.addCraftingShaped(true, <contenttweaker:ingot_bedrockium>, RecipePattern.init(["ABA", "BCB", "ABA"]).map({A:<ore:compressed3xCobblestone>, B:<ore:compressed4xCobblestone>, C:<ore:blockDiamond>}).ingredients, null, null);
 	HiiragiUtils.addCraftingShaped(true, <twilightforest:trophy_pedestal>, RecipePattern.init(["ABA", "BCB", "ABA"]).map({A:<ore:ingotSteeleaf>, B:<twilightforest:trophy:*>, C:<twilightforest:stone_twist_thin>}).ingredients, null, null);
 	HiiragiUtils.addCraftingShaped(true, <inspirations:mulch:0>, RecipePattern.init([" A ", "ABA", " A "]).map({A:<ore:stickWood>, B:<ore:dustPlant>}).ingredients, null, null);
+	HiiragiUtils.addCraftingShaped(false, <artisanworktables:toolbox>, RecipePattern.init(["ABA", "BCB", "ABA"]).map({A:<tconstruct:pattern:0>, B:<tconstruct:tough_tool_rod>.withTag({Material: "wood"}), C:<minecraft:chest>}).ingredients, null, null);
+	HiiragiUtils.addCraftingShaped(false, <artisanworktables:mechanical_toolbox>, RecipePattern.init(["ABA", "BCB", "ABA"]).map({A:<ore:plateBronze>, B:<ore:gearSteel>, C:<artisanworktables:toolbox>}).ingredients, null, null);
 
 //かまどレシピの編集
 	//削除

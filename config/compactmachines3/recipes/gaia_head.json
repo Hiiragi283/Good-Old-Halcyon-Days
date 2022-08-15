@@ -4,7 +4,7 @@
   "target-count": 1,
 	"duration": 300,
   "symmetrical": true,
-	"catalyst": "contenttweaker:ingot_rainbow",
+	"catalyst": "botanicadds:gaiasteel_ingot",
 	"catalyst-meta": 0,
   "input-types": {
     "a": {

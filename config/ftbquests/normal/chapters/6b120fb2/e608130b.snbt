@@ -3,14 +3,15 @@
 	y: 4.0d,
 	shape: "square",
 	dependencies: [
-		"6c77c9cd"
+		"38c6d533"
 	],
 	tasks: [{
 		uid: "c6c0cc30",
 		type: "item",
 		items: [{
 			item: "quarryplus:workbenchplus"
-		}]
+		}],
+		ignore_nbt: 1b
 	}],
 	rewards: [{
 		uid: "d8698a39",

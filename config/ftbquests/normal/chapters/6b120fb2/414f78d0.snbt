@@ -10,14 +10,16 @@
 		type: "item",
 		items: [{
 			item: "quarryplus:placerplus"
-		}]
+		}],
+		ignore_nbt: 1b
 	},
 	{
 		uid: "20172914",
 		type: "item",
 		items: [{
 			item: "quarryplus:breakerplus"
-		}]
+		}],
+		ignore_nbt: 1b
 	}],
 	rewards: [{
 		uid: "7ad485eb",

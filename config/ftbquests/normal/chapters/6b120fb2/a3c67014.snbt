@@ -13,7 +13,8 @@
 		type: "item",
 		items: [{
 			item: "appliedenergistics2:security_station"
-		}]
+		}],
+		ignore_nbt: 1b
 	},
 	{
 		uid: "a7841f26",
