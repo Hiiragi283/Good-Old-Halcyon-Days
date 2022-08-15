@@ -16,8 +16,6 @@ gohd.tooltip.removed.name=§4Recipe Removed!§r
 
 gohd.tooltip.burning_stick.name=§aObtained by right-clicking Fire with Tinder
 gohd.tooltip.grout_forming.name=§aObtained by right-clicking Grout with Wooden Stick
-gohd.tooltip.bedrock.name=§aHarvested by right-clicking on a pickaxe with Mining level 4 or higher
-
 gohd.tooltip.ezstorage_box_0.name=§aPlaced beside blocks in EZ Network, provides 400 item storage
 gohd.tooltip.ezstorage_box_1.name=§aPlaced beside blocks in EZ Network, provides 4,000 item storage
 gohd.tooltip.ezstorage_box_2.name=§aPlaced beside blocks in EZ Network, provides 20,000 item storage
@@ -27,10 +25,12 @@ gohd.tooltip.ezstorage_ejection.name=§aEject items in EZ Network above blocks
 gohd.tooltip.ezstorage_terminal.name=§aAccess EZ Network without clicking Storage Core
 gohd.tooltip.ezstorage_security.name=§6Only broken by EZ Key
 gohd.tooltip.ezstorage_dolly.name=§aOnly transfers VANILLA chest
-
 gohd.tooltip.infinity_booster_card.name=§6Dropped from Wither (30%) or Ender Dragon (100%)
-
 gohd.tooltip.ingot_rainbow.name=§dWhen §cyou §6holding §eme §ain §2offhand, §bI'll §1give §9you §5a §dD§cR§6E§eA§aM§2I§bN§1G §fpower!
+gohd.tooltip.bedrock.name=§aHarvested by right-clicking on a pickaxe with Mining level 4 or higher
+gohd.tooltip.cube_cyan.name=§bOnly crafted in Raining
+gohd.tooltip.cube_magenta.name=§dOnly crafted in Night
+gohd.tooltip.cube_yellow.name=§eOnly crafted in Twilight Forest
 
 gohd.tooltip.armor.common.name=§lCommon Armor
 gohd.tooltip.armor.uncommon.name=§a§lUncommon Armor
@@ -102,6 +102,7 @@ gohd.09d26429.6ab31c74.title=It's time to miniaturize your buildings!
 gohd.09d26429.6ab31c74.reward1=The voice of the dragon that calls for the end
 gohd.09d26429.7f89ed7b.title=The quest that might provide another device when you lost it
 gohd.09d26429.7f89ed7b.task1=Don't lost again, okay?
+gohd.09d26429.a230052c.desc1=I recommend you to craft it from Ender Fragment
 
 ### Minerals: gohd.cccede9d.
 gohd.minerals.title=Minerals
@@ -126,6 +127,8 @@ gohd.cccede9d.8ac28a20.title=Abyssal Geode
 gohd.cccede9d.8ac28a20.desc1=Abyssal Geode spawns at the bottom of the Sea.
 gohd.cccede9d.1a7f5909.subtitle=tile.railcraft.ore.magic.name
 gohd.cccede9d.1a7f5909.desc1=Firestone Ore spawns under the Lava Ocean in the Nether.
+gohd.cccede9d.5a6ee22b.desc1=Refined Firestone is charged in Lava.
+gohd.cccede9d.5a6ee22b.desc2=Charged Refined Firestone is used as solid fuel, or used to ignite fire in world.
 gohd.cccede9d.fed34783.task1=Ore Clumps (3x)
 gohd.cccede9d.3aeb8033.task1=Ore Shards (4x)
 gohd.cccede9d.c0d4a6c8.task1=Ore Crystals (5x)
@@ -144,6 +147,14 @@ gohd.bdb7cf70.860c5647.title=We are Dreaming!
 gohd.bdb7cf70.52e48bc0.title=We are Metamorphosed!
 gohd.bdb7cf70.6328f68d.title=We are Runic!
 gohd.bdb7cf70.e5eb64a5.title=We are Shimmering!
+gohd.bdb7cf70.4cbd8e5d.title=The most easiest way to get Gunpowder
+gohd.bdb7cf70.1f6861fc.title=Elemental Powders
+gohd.bdb7cf70.b2fe2a22.title=Elemental Dusts
+gohd.bdb7cf70.cac10bd4.title=Color Drops
+gohd.bdb7cf70.bbe39da4.title=Color Extracts
+gohd.bdb7cf70.a539f485.title=Inactive Color Cubes
+gohd.bdb7cf70.c895536e.title=We've been Activated!
+gohd.bdb7cf70.d957309c.title=We are Additional Cubes!
 
 ## Utilities: gohd.6b120fb2.
 gohd.utilities.title=Utilities
@@ -153,6 +164,7 @@ gohd.6b120fb2.414f78d0.subtitle=Unbreakable Block is BREAKABLE.
 gohd.6b120fb2.5e9802c1.title=EZ Network Interfaces
 gohd.6b120fb2.8caedb3d.title=Starter Kit for simple ME Network
 gohd.6b120fb2.a3c67014.title=Starter Kit for wireless ME Network
+gohd.6b120fb2.23189174.title=16 Inputs -> 6 Outputs
 gohd.6b120fb2.7c9e3fd5.title=Redstone Flux Dynamos
 gohd.6b120fb2.d005700a.title=Weapons
 gohd.6b120fb2.6a907d55.title=Twilight Weapons
@@ -221,5 +233,3 @@ link.youtu.be.SWI_4Sx2GtI=The Everyday and The Extraordinary
 link.youtu.be.TG6yHxuK22g=The Kimera
 link.youtu.be.Opce-MSEznY=Remains of Fire
 link.youtu.be.2P2TC8Tlq7M=RGB
-link.www.mariowiki.com.File.Gusty_Garden_Galaxy_Super_Mario_Galaxy.oga=Gusty Garden
-link.www.mariowiki.com.File.Super_Mario_2007_Super_Mario_Galaxy.oga=Super Mario 2007
