@@ -11,6 +11,11 @@ import crafttweaker.block.IBlockDefinition;
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 import crafttweaker.oredict.IOreDictEntry;
+import crafttweaker.player.IPlayer;
+import crafttweaker.recipes.ICraftingInfo;
+import crafttweaker.util.Position3f;
+import crafttweaker.world.IBlockPos;
+import crafttweaker.world.IWorld;
 
 //各種modからclassをimport
 import mods.artisanworktables.builder.RecipeBuilder;
@@ -123,7 +128,6 @@ print("Start loading unification.zs ...");
 	HiiragiUtils.addCraftingShapeless(false, <ore:dustCryotheum>.firstItem, [<ore:extractBlue>, <ore:dustBlizz>], null, null);
 	HiiragiUtils.addCraftingShapeless(false, <ore:dustAerotheum>.firstItem, [<ore:extractWhite>, <ore:dustBlitz>], null, null);
 	HiiragiUtils.addCraftingShapeless(false, <ore:dustPetrotheum>.firstItem, [<ore:extractBlack>, <ore:dustBasalz>], null, null);
-
 	//松明のレシピの調整
 	val mapTinder as IOreDictEntry[] = [
 		<ore:coal>,
@@ -169,9 +173,20 @@ print("Start loading unification.zs ...");
 	HiiragiUtils.addCraftingShaped(false, <contenttweaker:gem_carbon>, RecipePattern.init(["ABA", "ACA", "AAA"]).map({A:<ore:blockCoal>, B:<minecraft:coal>, C:<ore:nuggetDiamond>}).ingredients, null, null);
 	HiiragiUtils.addCraftingShaped(false, <contenttweaker:gem_carbon>, RecipePattern.init(["AAA", "ABA", "AAA"]).map({A:<ore:containerCharcoal>, B:<ore:nuggetDiamond>}).ingredients, null, null);
 	//解釈違いの新たなキューブ
-	HiiragiUtils.addCraftingShapeless(false, <contenttweaker:cube_yellow>, [<ore:blockElestial>, <extrautils2:suncrystal:0>, <ore:dustLumium>], null, null);
-	HiiragiUtils.addCraftingShapeless(false, <contenttweaker:cube_magenta>, [<ore:blockElestial>, <ore:gemDragonStone>, <ore:dustRefinedObsidian>], null, null);
-	HiiragiUtils.addCraftingShapeless(false, <contenttweaker:cube_cyan>, [<ore:blockElestial>, <ore:gemManaDiamond>, <ore:itemPulsatingPowder>], null, null);
+	//Only Crafted in Raining
+		HiiragiUtils.addCraftingShapeless(false, <contenttweaker:cube_cyan>, [<ore:blockElestial>, <ore:gemManaDiamond>, <ore:itemPulsatingPowder>], HiiragiUtils.rainCheck(<contenttweaker:cube_cyan_inactive>), null);
+		HiiragiUtils.addCraftingShaped(false, <contenttweaker:cube_cyan>, RecipePattern.init(["AAA", "ABA", "AAA"]).map({A:<minecraft:ghast_tear>, B:<contenttweaker:cube_cyan_inactive>}).ingredients, null, null);
+	//Only crafted in night
+		HiiragiUtils.addCraftingShapeless(false, <contenttweaker:cube_magenta>, [<ore:blockElestial>, <ore:gemDragonStone>, <ore:dustRefinedObsidian>], HiiragiUtils.nightCheck(<contenttweaker:cube_magenta_inactive>), null);
+		HiiragiUtils.addCraftingShaped(false, <contenttweaker:cube_magenta>, RecipePattern.init(["ABA", "ACA", "ABA"]).map({A:<dcs_climate:dcs_gem_blue:2>, B:<extrautils2:ingredients:5>, C:<contenttweaker:cube_magenta_inactive>}).ingredients, null, null);
+	//Only Crafted in Twilight Forest
+		HiiragiUtils.addCraftingShapeless(false, <contenttweaker:cube_yellow>, [<ore:blockElestial>, <extrautils2:suncrystal:0>, <ore:dustLumium>],HiiragiUtils.dimCheck(7, <contenttweaker:cube_yellow_inactive>),null);
+		HiiragiUtils.addCraftingShaped(false, <contenttweaker:cube_yellow>, RecipePattern.init(["AAA", "ABA", "AAA"]).map({A:<twilightforest:torchberries>, B:<contenttweaker:cube_yellow_inactive>}).ingredients, null, null);
+	HiiragiUtils.addCraftingShaped(false, <contenttweaker:cube_iridescent>, [
+		[<ore:cubeMagenta>, <ore:cubeWhite>, <ore:cubeRed>],
+		[<ore:cubeBlue>, <ore:dustIridium>, <ore:cubeYellow>],
+		[<ore:cubeCyan>, <ore:cubeBlack>, <ore:cubeGreen>],
+	], null, null);
 
 	HiiragiUtils.addCraftingShaped(false, <artisanworktables:workstation:5>, RecipePattern.init(["ABA", " C ", "DDD"]).map({A:<tconstruct:seared_tank:*>, B: <ore:chest>, C:<ore:workbench>, D:<tconstruct:seared:3>}).ingredients, null, null);
 	HiiragiUtils.addCraftingShaped(false, <contenttweaker:glyph_divide>, RecipePattern.init([" A ", "BCB", " A "]).map({A:<minecraft:skull:1>, B:<ore:boneWithered>, C:<openblocks:generic:10>}).ingredients, null, null);
@@ -189,6 +204,7 @@ print("Start loading unification.zs ...");
 		<dcs_climate:dcs_gem_red>,
 		<dcs_climate:dcs_ingot:11>,
 		<dcs_climate:dcs_reagent:3>,
+		<threng:material:0>,
 		<minecraft:clay_ball>,
 	];
 	for i in removeFurnace {
@@ -205,6 +221,8 @@ print("Start loading unification.zs ...");
 		<appliedenergistics2:material:22>: <appliedenergistics2:material:18>,
 		<contenttweaker:ingot_bedrockium>*9: <ore:compressed8xCobblestone>,
 		<minecraft:torch>: <ore:stickWood>,
+		<threng:material:6>: <contenttweaker:assembly_parallel>,
+		<threng:material:14>: <contenttweaker:assembly_speculative>,
 	};
 	for output, input in addFurnace {
 		HiiragiUtils.addFurnace(false, output, input);
@@ -218,7 +236,8 @@ print("Start loading unification.zs ...");
 	val removeFromJEI as IItemStack[] = [
 		//Applied Energistics 2
 		<appliedenergistics2:material:40>,
-		//<appliedenergistics2:material:46>,
+		<appliedenergistics2:inscriber>,
+		<appliedenergistics2:charger>,
 		//Heat And Climate
 		//<dcs_climate:dcs_gem:*>,
 		<dcs_climate:dcs_door_marble>,
@@ -238,6 +257,12 @@ print("Start loading unification.zs ...");
 		<extrautils2:machine>.withTag({Type: "extrautils2:enchanter"}),
 		//Inspirations
 		<inspirations:materials:8>,
+		//lazy AE2
+		<threng:machine:0>,
+		<threng:machine:1>,
+		<threng:machine:2>,
+		<threng:machine:5>,
+		<threng:material:2>,
 		//Mekanism
 		<mekanismtools:woodpaxel>,
 		<mekanismtools:stonepaxel>,
@@ -299,78 +324,6 @@ print("Start loading unification.zs ...");
 		mods.jei.JEI.addItem(i);
 	}
 
-//鉱石辞書の削除
-	<ore:dustWood>.remove(<dcs_climate:dcs_fooddust:7>);
-
-	<ore:dye>.remove([<minecraft:dye:0>, <minecraft:dye:3>, <minecraft:dye:4>, <minecraft:dye:15>]);
-	//<ore:dyeBlack>.remove(<minecraft:dye:0>); //Printing press can't copy books without ink sak
-	<ore:dyeBrown>.remove(<minecraft:dye:3>);
-	<ore:dyeBlue>.remove(<minecraft:dye:4>);
-	<ore:dyeWhite>.remove(<minecraft:dye:15>);
-
-	<ore:blockWarpCoreCore>.remove(<minecraft:gold_block>);
-	<ore:blockWarpCoreRim>.remove(<libvulpes:metal0:7>);
-
-	HiiragiUtils.removeOreDict(<dcs_climate:dcs_gem_layer:4>);
-	HiiragiUtils.removeOreDict(<dcs_climate:dcs_synthetic:2>);
-
-	val removeLibVulpes as IItemStack[] = [
-		<libvulpes:productdust>,
-		<libvulpes:productingot>,
-		<libvulpes:productboule>,
-		<libvulpes:productnugget>,
-		<libvulpes:productplate>,
-		<libvulpes:productrod>,
-		<libvulpes:productsheet>,
-		<libvulpes:productgear>,
-		<libvulpes:ore0>,
-
-	];
-	for i in 1 to 10 {
-		for j in removeLibVulpes {
-			HiiragiUtils.removeFromJEI(j.definition.makeStack(i));
-			HiiragiUtils.removeOreDict(j.definition.makeStack(i));
-		}
-	}
-
-//鉱石辞書の追加
-	<ore:gemManaDiamond>.add(<botania:manaresource:2>);
-	<ore:gemDragonStone>.add(<botania:manaresource:9>);
-	<ore:itemCloth>.add(<botania:manaresource:22>);
-	//<ore:itemMagicCloth>.add(<botania:manaresource:22>);
-	<ore:ingotElementium>.add(<botania:manaresource:7>);
-	<ore:nuggetElementium>.add(<botania:manaresource:19>);
-	<ore:blockManasteel>.add(<botania:storage:0>);
-	<ore:blockTerrasteel>.add(<botania:storage:1>);
-	<ore:blockElementium>.add(<botania:storage:2>);
-	<ore:blockManaDiamond>.add(<botania:storage:3>);
-	<ore:blockDragonstone>.add(<botania:storage:4>);
-
-	<ore:gemManalapis>.add(<botanicadds:mana_lapis>);
-	<ore:gemElvenlapis>.add(<botanicadds:elven_lapis>);
-	<ore:blockManalapis>.add(<botanicadds:mana_lapis_block>);
-	<ore:blockElvenlapis>.add(<botanicadds:elven_lapis_block>);
-
-	<ore:dustHalogen>.add(<contenttweaker:reagent_halogen>);
-	<ore:blockBedrockium>.add(<contenttweaker:block_bedrockium>);
-	<ore:ingotBedrockium>.add(<contenttweaker:ingot_bedrockium>);
-
-	<ore:dustSawDust>.add(<dcs_climate:dcs_miscdust:3>);
-	<ore:blockPeridot>.add(<dcs_climate:dcs_ore_gemblock:10>);
-	<ore:blockGlassHardened>.add(<dcs_climate:dcs_synthetic:2>);
-	<ore:fusedQuartz>.add(<dcs_climate:dcs_synthetic:2>);
-	<ore:blockWarpCoreCore>.add(<dcs_climate:dcs_ore_metal_alloy:8>);
-	<ore:blockWarpCoreRim>.add(<dcs_climate:dcs_ore_metal_alloy:7>);
-
-	<ore:blockFuelCoke>.add(<railcraft:generic:6>);
-
-	<ore:blockCoke>.add(<thermalfoundation:storage_resource:1>);
-	<ore:dropRosin>.add(<thermalfoundation:material:832>);
-	<ore:dropCoaltar>.add(<thermalfoundation:material:833>);
-	<ore:gemSlag>.add(<thermalfoundation:material:864>);
-
-	<ore:blockIronwood>.add(<twilightforest:block_storage:0>);
-
 //Tooltipの追加
 	val mapTooltip as string[IItemStack] = {
 		<contenttweaker:unfired_casting_channel>: "gohd.tooltip.grout_forming.name",
@@ -390,6 +343,9 @@ print("Start loading unification.zs ...");
 		<ae2wtlib:infinity_booster_card>: "gohd.tooltip.infinity_booster_card.name",
 		<contenttweaker:ingot_rainbow>: "gohd.tooltip.ingot_rainbow.name",
 		<minecraft:bedrock>: "gohd.tooltip.bedrock.name",
+		<contenttweaker:cube_cyan>: "gohd.tooltip.cube_cyan.name",
+		<contenttweaker:cube_magenta>: "gohd.tooltip.cube_magenta.name",
+		<contenttweaker:cube_yellow>: "gohd.tooltip.cube_yellow.name",
 	};
 	for i, j in mapTooltip {
 		i.addTooltip(I18n.format(j));
@@ -411,7 +367,7 @@ print("Start loading unification.zs ...");
 	<forge:bucketfilled>.maxStackSize = 16;
 
 //採掘レベルの調整
-	<botania:platform:2>.definition.setHarvestLevel("axe", 4);
+	//<botania:platform:2>.definition.setHarvestLevel("axe", 4);
 
 //このscriptの読み込みの完了をログに出力
 print("unification.zs loaded!");

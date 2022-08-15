@@ -1,0 +1,16 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "textures": {
+      "texture": "contenttweaker:blocks/color_crystal_y1",
+      "particle": "contenttweaker:blocks/color_crystal_y1"
+    },
+    "model": "contenttweaker:cube_yellow_inactive",
+    "uvlock": true,
+    "transform": "forge:default-block"
+  },
+  "variants": {
+    "normal": [{}],
+    "inventory": [{}]
+  }
+}

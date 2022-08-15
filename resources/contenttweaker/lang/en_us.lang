@@ -1,8 +1,10 @@
 
 #Items
-item.contenttweaker.gem_carbon.name=Compressed Carbon
+item.contenttweaker.assembly_parallel.name=Parallel Processor Assemly
+item.contenttweaker.assembly_speculative.name=Speculative  Processor Assembly
 item.contenttweaker.elven_pearl.name=Elven Pearl
 item.contenttweaker.ephemerald.name=Ephemerald
+item.contenttweaker.gem_carbon.name=Compressed Carbon
 item.contenttweaker.grout_ball.name=Grout Ball
 item.contenttweaker.glyph_divide.name="Division Sigil" Glyph
 item.contenttweaker.ingot_bedrockium.name=bedrockium Ingot
@@ -37,9 +39,13 @@ tile.contenttweaker.dustblock_manyullyn.name=Manyullyn Dust Block
 tile.contenttweaker.dustblock_osmium.name=Osmium Dust Block
 tile.contenttweaker.dustblock_platinum.name=Platinum Dust Block
 
+tile.contenttweaker.cube_yellow_inactive.name=Inactive Yellow Cube
+tile.contenttweaker.cube_magenta_inactive.name=Inactive Magenta Cube
+tile.contenttweaker.cube_cyan_inactive.name=Inactive Cyan Cube
 tile.contenttweaker.cube_yellow.name=Activated Yellow Cube
 tile.contenttweaker.cube_magenta.name=Activated Magenta Cube
 tile.contenttweaker.cube_cyan.name=Activated Cyan Cube
+tile.contenttweaker.cube_iridescent.name=Iridesccent Cube
 
 # Fluids
 fluid.drop_red=Extracted Red Drop

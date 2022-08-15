@@ -1,12 +1,16 @@
 {
-  "forge_marker": 1,
-  "defaults": {
-    "model": "contenttweaker:unfired_casting_table",
-    "uvlock": true,
-    "transform": "forge:default-block"
-  },
-  "variants": {
-    "normal": [{}],
-    "inventory": [{}]
-  }
+	"forge_marker": 1,
+	"defaults": {
+		"model": "contenttweaker:unfired_casting_table",
+		"uvlock": true,
+		"transform": "forge:default-block"
+	},
+	"variants": {
+		"normal": [
+			{}
+		],
+		"inventory": [
+			{}
+		]
+	}
 }

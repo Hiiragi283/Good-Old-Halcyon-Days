@@ -16,6 +16,8 @@ import crafttweaker.liquid.ILiquidStack;
 import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.recipes.IRecipeAction;
 import crafttweaker.recipes.IRecipeFunction;
+import crafttweaker.world.IBiome;
+import crafttweaker.world.IBiomeType;
 
 //各種modからclassをimport
 //import mods.astralsorcery.Altar;
@@ -178,6 +180,52 @@ print("Start loading HiiragiUtils.zs ...");
 		return item.withTag({display:{LocName: key}});
 	}
 
+//アイテムに付与されたNBTタグを継承する
+function inheritStatus(itemBase as IItemStack) as IRecipeFunction {
+	return function(out, ins, cInfo){
+		if(!ins.inherit.hasTag) {
+			return itemBase;
+		} else {
+			var nbt as IData = ins.inherit.tag;
+			return itemBase.withTag(nbt);
+		}
+	};
+}
+
+//クラフトが行われた時の天気をチェックする
+function rainCheck(outFailed as IItemStack) as IRecipeFunction {
+	return function(out, ins, cInfo) as IItemStack{
+		if(cInfo.world.isRaining()) {
+			return out as IItemStack;
+		} else {
+			return outFailed;
+		}
+	};
+}
+
+//クラフトが行われた時間帯をチェックする
+function nightCheck(outFailed as IItemStack) as IRecipeFunction {
+	return function(out, ins, cInfo) as IItemStack{
+		if(!cInfo.world.dayTime) {
+			return out as IItemStack;
+		} else {
+			return outFailed;
+		}
+	};
+}
+
+//クラフトが行われた次元をチェックする
+function dimCheck(dimNum as int, outFailed as IItemStack) as IRecipeFunction {
+	return function(out, ins, cInfo) as IItemStack{
+		var dim as int = cInfo.dimensionID;
+		if(dim == dimNum) {
+			return out as IItemStack;
+		} else {
+			return outFailed;
+		}
+	};
+}
+
 //代入した文字列から特定の鋳型を返す関数
 	function castClay (pattern as string) as IItemStack {
 		if (isNull(pattern)) {
@@ -223,18 +271,6 @@ print("Start loading HiiragiUtils.zs ...");
 			mods.tconstruct.Casting.addBasinRecipe(output, cast, liquid, amount, consume, time);
 		}
 	}
-
-//アイテムに付与されたNBTタグを継承する
-function inheritStatus(itemBase as IItemStack) as IRecipeFunction {
-	return function(out, ins, cInfo){
-		if(!ins.inherit.hasTag) {
-			return itemBase;
-		} else {
-			var nbt as IData = ins.inherit.tag;
-			return itemBase.withTag(nbt);
-		}
-	};
-}
 
 //HaCの見た目が変わるブロックの見た目を指定
 function changeAppear (block as IItemStack, color as int) as IItemStack {
