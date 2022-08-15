@@ -108,5 +108,17 @@ print("Start loading RussellUtils.zs ...");
 		block.register();
 	}
 
+	function addCubeInactive (id as string, material as BlockMaterial, hardness as float, resistance as float, tool as string, toolLevel as int, sound as SoundType, isFull as bool) {
+		var block = VanillaFactory.createBlock(id, material);
+		block.setBlockHardness(hardness);
+		block.setBlockResistance(resistance);
+		block.setToolClass(tool);
+		block.setToolLevel(toolLevel);
+		block.setBlockSoundType(sound);
+		block.fullBlock = isFull;
+		block.axisAlignedBB = AxisAlignedBB.create(0.25, 0.00, 0.25, 0.75, 0.50, 0.75);
+		block.register();
+	}
+
 //このscriptの読み込みの完了をログに出力
 print("RussellUtils.zs loaded!");

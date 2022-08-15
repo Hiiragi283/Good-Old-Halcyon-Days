@@ -35,11 +35,5 @@ print("Start loading bop.zs ...");
 	//import
 	//新規
 
-//Orechid TerrestrisによるBOP鉱石の生成
-	val orechid_terrestris = mods.morechids.Registry.getFlower("orechid_terrestris");
-	for i in 1 to 8 {
-		orechid_terrestris.addRecipe(<minecraft:stone>, <biomesoplenty:gem_ore>.definition.makeStack(i), 1);
-	}
-
 //このscriptの読み込みの完了をログに出力
 print("bop.zs loaded!");

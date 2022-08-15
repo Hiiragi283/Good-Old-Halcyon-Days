@@ -13,6 +13,7 @@ import crafttweaker.item.IIngredient;
 import crafttweaker.player.IPlayer;
 
 //各種modからclassをimport
+import mods.contenttweaker.AxisAlignedBB;
 import mods.contenttweaker.BlockMaterial;
 import mods.contenttweaker.Color;
 import mods.contenttweaker.Commands;
@@ -30,9 +31,11 @@ print("Start loading _TEMPLATE.zs ...");
 
 //アイテムの登録
 	val items as string[] = [
-		"gem_carbon",
+		"assembly_parallel",
+		"assembly_speculative",
 		"elven_pearl",
 		"ephemerald",
+		"gem_carbon",
 		"glyph_divide",
 		"ingot_bedrockium",
 		"ingot_rainbow",
@@ -85,9 +88,27 @@ print("Start loading _TEMPLATE.zs ...");
 	}
 
 //HaCのキューブを追加
+	RussellUtils.addCubeInactive("cube_yellow_inactive", <blockmaterial:rock>, 1.0, 15.0, "pickaxe", -1, <soundtype:stone>, false);
+	RussellUtils.addCubeInactive("cube_magenta_inactive", <blockmaterial:rock>, 1.0, 15.0, "pickaxe", -1, <soundtype:stone>, false);
+	RussellUtils.addCubeInactive("cube_cyan_inactive", <blockmaterial:rock>, 1.0, 15.0, "pickaxe", -1, <soundtype:stone>, false);
+
 	RussellUtils.addCube("cube_yellow", <blockmaterial:rock>, 1.0, 15.0, "pickaxe", -1, <soundtype:stone>, false);
 	RussellUtils.addCube("cube_magenta", <blockmaterial:rock>, 1.0, 15.0, "pickaxe", -1, <soundtype:stone>, false);
 	RussellUtils.addCube("cube_cyan", <blockmaterial:rock>, 1.0, 15.0, "pickaxe", -1, <soundtype:stone>, false);
+
+	var block = VanillaFactory.createBlock("cube_iridescent", <blockmaterial:glass>);
+	block.setBlockHardness(1.0);
+	block.setBlockResistance(15.0);
+	block.setToolClass("pickaxe");
+	block.setToolLevel(4);
+	block.setBlockSoundType(<soundtype:glass>);
+	block.fullBlock = false;
+	//block.lightOpacity = 0;
+	block.lightValue = 1;
+	//block.translucent = true;
+	block.axisAlignedBB = AxisAlignedBB.create(0.25, 0.25, 0.25, 0.75, 0.75, 0.75);
+	block.register();
+
 
 //液体の登録
 	val registerLiquid as string[string] = {

@@ -28,6 +28,12 @@ print("Start loading mekanism.zs ...");
 	val removeCrafting as IItemStack[] = [
 		<mekanism:controlcircuit:*>,
 		<mekanism:basicblock:8>,
+		<mekanism:speedupgrade>,
+		<mekanism:energyupgrade>,
+		<mekanism:filterupgrade>,
+		<mekanism:mufflingupgrade>,
+		<mekanism:gasupgrade>,
+		<mekanism:anchorupgrade>,
 	];
 	for i in removeCrafting {
 		HiiragiUtils.removeCrafting(i);
@@ -36,6 +42,7 @@ print("Start loading mekanism.zs ...");
 	HiiragiUtils.addCraftingShaped(true, <mekanism:basicblock:15>, RecipePattern.init([" A ", "ABA", " A "]).map({A:<mekanism:basicblock2>, B:<minecraft:iron_bars>}).ingredients, null, null);
 	HiiragiUtils.addCraftingShaped(true, <mekanism:basicblock2:0>, RecipePattern.init([" A ", "ABA", " A "]).map({A:<ore:ingotBronze>, B:<ore:ingotCopper>}).ingredients, null, null);
 	HiiragiUtils.addCraftingShaped(true, <mekanism:machineblock2:4>, RecipePattern.init(["ABA", "CDC", "AEA"]).map({A:<ore:ingotIron>, B:<mekanism:electrolyticcore>, C:<mekanism:gastank>, D:<mekanism:basicblock:8>, E:<mekanism:machineblock2:11>}).ingredients, null, null);
+	HiiragiUtils.addCraftingShaped(true, <mekanism:cardboardbox>, RecipePattern.init(["AA", "AA"]).map({A:<tconstruct:large_plate>.withTag({Material: "paper"})}).ingredients, null, null);
 
 	HiiragiUtils.addCraftingShaped(true, <mekanism:tierinstaller:0>, RecipePattern.init(["ABA", "BCB", "ABA"]).map({A:<ore:sheetHDPE>, B:<ore:ingotStainlessSteel>, C:<ore:circuitBasic>, D:<mekanism:basicblock:8>, E:<mekanism:machineblock2:11>}).ingredients, null, null);
 	val installer as string[] = [

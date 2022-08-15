@@ -70,6 +70,11 @@ print("Start loading thermal.zs ...");
 	//新規
 
 //Arcane Ensorcellator
+	mods.thermalexpansion.Enchanter.addRecipe(<dcs_climate:dcs_food_petals:0>, <contenttweaker:cube_iridescent>, <botania:petalblock:0>*8, 365000, 3000, false);
+	//mods.thermalexpansion.Enchanter.addRecipe(<dcs_climate:dcs_food_petals>, <contenttweaker:cube_iridescent>, <botania:petalblock>*8, 365000, 3000, false);
+	mods.thermalexpansion.Enchanter.addRecipe(<extrautils2:enderlilly>, <contenttweaker:cube_iridescent>, <twilightforest:huge_waterlily>*8, 365000, 3000, false);
+	mods.thermalexpansion.Enchanter.addRecipe(<botania:manaresource:5>, <contenttweaker:cube_iridescent>, <enderio:item_material:80>*8, 365000, 3000, false);
+	mods.thermalexpansion.Enchanter.addRecipe(<dcs_climate:dcs_food_petals:1>, <contenttweaker:cube_iridescent>, <botania:petalblock:15>*8, 365000, 3000, false);
 
 //Centrifugal Seperator
 	mods.thermalexpansion.Centrifuge.addRecipe([
@@ -124,6 +129,7 @@ print("Start loading thermal.zs ...");
 	mods.thermalexpansion.Transposer.addFillRecipe(<extrautils2:magicapple>, <minecraft:apple>, <liquid:xpjuice>*500, 1600);
 	mods.thermalexpansion.Transposer.addFillRecipe(<railcraft:tie:0>, <minecraft:wooden_slab:*>, <liquid:creosote>*250, 400);
 	mods.thermalexpansion.Transposer.addFillRecipe(<railcraft:creosote_block>, <minecraft:log:*>, <liquid:creosote>*500, 400);
+	mods.thermalexpansion.Transposer.addFillRecipe(<threng:material:5>, <appliedenergistics2:crystal_seed:1200>, <liquid:ender>*1000, 8000);
 
 	val mapFuel as ILiquidStack[] = [
 		<liquid:dcs.fuel_oil>,
@@ -155,6 +161,12 @@ print("Start loading thermal.zs ...");
 	mods.thermalexpansion.InductionSmelter.addRecipe(<appliedenergistics2:sky_stone_block>*8, <minecraft:obsidian>*8, <dcs_climate:dcs_gem_white:2>, 10000);
 	mods.thermalexpansion.InductionSmelter.addRecipe(<appliedenergistics2:sky_stone_block>*16, <minecraft:obsidian>*16, <dcs_climate:dcs_gem_white:4>, 10000);
 	mods.thermalexpansion.InductionSmelter.addRecipe(<contenttweaker:block_bedrockium>, <enderio:block_infinity:2>, <contenttweaker:ingot_rainbow>, 1000000);
+
+	mods.thermalexpansion.InductionSmelter.addRecipe(<dcs_climate:dcs_gem_red:2>*16, <dcs_climate:dcs_gem_red:2>, <contenttweaker:cube_iridescent>, 8000);
+	mods.thermalexpansion.InductionSmelter.addRecipe(<dcs_climate:dcs_gem_green:2>*16, <dcs_climate:dcs_gem_green:2>, <contenttweaker:cube_iridescent>, 8000);
+	mods.thermalexpansion.InductionSmelter.addRecipe(<dcs_climate:dcs_gem_blue:2>*16, <dcs_climate:dcs_gem_blue:2>, <contenttweaker:cube_iridescent>, 8000);
+	mods.thermalexpansion.InductionSmelter.addRecipe(<dcs_climate:dcs_gem_white:2>*16, <dcs_climate:dcs_gem_white:2>, <contenttweaker:cube_iridescent>, 8000);
+	mods.thermalexpansion.InductionSmelter.addRecipe(<dcs_climate:dcs_gem_black:2>*16, <dcs_climate:dcs_gem_black:2>, <contenttweaker:cube_iridescent>, 8000);
 
 //Photogenic Insolator
 	mods.thermalexpansion.Insolator.addRecipe(<botania:overgrowthseed>, <thermalfoundation:fertilizer:2>*16, <botania:grassseeds:0>, 12000, null, 0, 8000);

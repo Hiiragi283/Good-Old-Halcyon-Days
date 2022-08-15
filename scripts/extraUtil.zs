@@ -145,7 +145,15 @@ print("Start loading extraUtil.zs ...");
 		[<enderio:block_solar_panel:0>, <ore:ingotEnergeticAlloy>]: <enderio:block_solar_panel:1>,
 		[<enderio:block_solar_panel:1>, <ore:ingotPulsatingIron>]: <enderio:block_solar_panel:2>,
 		[<enderio:block_solar_panel:2>, <ore:ingotVibrantAlloy>]: <enderio:block_solar_panel:3>,
+		//Lazy AE2
+		[<appliedenergistics2:material:6>, <threng:material:1>]: <threng:material:7>,
 		//Mekanism
+		[<ore:alloyAdvanced>, <ore:dustOsmium>]: <mekanism:speedupgrade>,
+		[<ore:alloyAdvanced>, <ore:dustGold>]: <mekanism:energyupgrade>,
+		[<ore:alloyAdvanced>, <ore:dustTin>]: <mekanism:filterupgrade>,
+		[<ore:alloyAdvanced>, <ore:dustSteel>]: <mekanism:mufflingupgrade>,
+		[<ore:alloyAdvanced>, <ore:dustIron>]: <mekanism:gasupgrade>,
+		[<ore:alloyAdvanced>, <ore:dustDiamond>]: <mekanism:anchorupgrade>,
 		//Thermal
 		[<ore:plateGold>, <thermalfoundation:material:515>]: <thermalexpansion:augment:128>,
 		[<thermalfoundation:material:512>, <dcs_climate:dcs_rotaryblade:2>]: <thermalexpansion:augment:129>,

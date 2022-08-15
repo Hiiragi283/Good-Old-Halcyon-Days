@@ -4,7 +4,7 @@
 # 情報 : Script for Chisel
 #====================================================================
 
-#priority 98
+#priority 97
 
 //crafttweakerからclassをimport
 import crafttweaker.item.IItemStack;
