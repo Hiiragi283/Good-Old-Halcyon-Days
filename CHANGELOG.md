@@ -1,25 +1,42 @@
 # Changelog
 
-## v0.1.3
+## v0.2.0
+
+### `Magician's Dream`
+
+- Mod Configuration
+  - Add
+    - `appliedenergistics2-rv6-stable-7-extended_life-v0.53.0`
+      - Fork of AE2
+    - `lazy-ae2-1.12.2-1.1.26`
+      - Addon for AE2 to make it more confortable
+  - Remove
+    - `appliedenergistics2-rv6-stable-7`
+      - replaced with AE2 Unofficial
+  - Update
+    - `HadEnoughItems_1.12.2-4.22.0` -> `HadEnoughItems_1.12.2-4.23.0`
 
 - Added Magic Quest tab
-- Added new recipe for Mana Dust (Thermal)
+- Added new items!
+- Added new recipes
 - Added tooltip for Bedrock
 - Botania Update
-  - added Elven Pearl & Ephemerald
-  - added new agglomeration recipe for Terrasteel Ingpt
-  - change the directories for Dreaming Daisy&Orechid Terrestris
+  - added `Elven Pearl` & `Ephemerald`
+  - added new agglomeration recipe for `Terrasteel Ingpt`
+  - change the directories for `Dreaming Daisy` & `Orechid Terrestris`
   - tweak recipes for
-    - Dragon Stone
-    - Elementium Ingot
-    - Mana Lens
-    - Orechid
-    - Orechid Terrestris
-    - Pixie Dust
-  - fix livingwood purification
+    - `Dragon Stone`
+    - `Elementium Ingot`
+    - `Mana Lens`
+    - `Orechid Terrestris`
+    - `Pixie Dust`
+  - fix `Livingwood` purification
   - update credit for license
-- Disabled Soulbound (Cofh Core) Enchantment
-- Removed exchange recipe for Mythic Ticket -> Legendary Ticket
+- Changed the appearance and the recipe of `Workbench Plus`
+- Disabled `Soulbound (Cofh Core)` Enchantment
+- Disabled `Orechid`
+- Moved some scripts in `unification.zs` to `oreDict.zs`
+- Removed exchange recipe for `Mythic Ticket` -> `Legendary Ticket`
 - Update Quests
 
 ## v0.1.2
@@ -78,9 +95,7 @@
 
 ## v0.1.0
 
-### Subtitle
-
-- Beginning of The Reminiscence
+### `Beginning of The Reminiscence`
 
 ### Changes
 
