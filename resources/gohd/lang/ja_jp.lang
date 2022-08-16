@@ -1,14 +1,14 @@
 
 #custom Item Name
-gohd.custom.upstreaming_hang_glider.name=Upstreaming Hang Glider
-gohd.custom.travelers_sleeping_bag.name=Traveler's Sleeping Bag
-gohd.custom.spellbinding_book.name=Spellbinding Book
-gohd.custom.spade_of_the_gaia.name=Spade of the Gaia
-gohd.custom.rake_of_the_gaia.name=Rake of the Gaia
-gohd.custom.arrow_doomsday.name=§0Arrow of the Doomsday
-gohd.custom.spring_nightmare.name=§0Spring of Nightmare
-gohd.custom.track_neet.name=NEET Suit
-gohd.custom.gaia_executer.name=§cGaia Executer
+gohd.custom.upstreaming_hang_glider.name=アップストリームハンググライダー
+gohd.custom.travelers_sleeping_bag.name=旅人の寝袋
+gohd.custom.spellbinding_book.name=魔術書
+gohd.custom.spade_of_the_gaia.name=ガイアのシャベル
+gohd.custom.rake_of_the_gaia.name=ガイアの熊手
+gohd.custom.arrow_doomsday.name=§0終末の矢
+gohd.custom.spring_nightmare.name=§0悪夢の春
+gohd.custom.track_neet.name=ニートの服
+gohd.custom.gaia_executer.name=§cガイアの実行犯
 
 #Tooltips
 gohd.tooltip.hidden.name=§6JEIからは削除されている§rが§a存在する§r
@@ -26,7 +26,7 @@ gohd.tooltip.ezstorage_terminal.name=§aStorage Coreをクリックしなくて�
 gohd.tooltip.ezstorage_security.name=§6EZ Keyでのみ撤去できる
 gohd.tooltip.ezstorage_dolly.name=§aバニラチェストのみ移動可能
 gohd.tooltip.infinity_booster_card.name=§6ドロップはウィザー(30%)またはエンダードラゴン(100%)から
-gohd.tooltip.ingot_rainbow.name=§dあなたが§c私を§6オフハンド§eに§a持っていた§2ときには, §b私は§1あなたに§9ま§5る§dで§c夢§6の§eよ§aう§2な§b力を§1与える§fでしょう!
+gohd.tooltip.ingot_rainbow.name=§d私§cを§6オフハンド§eに§a持て§2ば, §b私は§1あなたに§9ま§5る§dで§c夢§6の§eよ§aう§2な§b力を§1与える§fでしょう!
 gohd.tooltip.bedrock.name=§a採掘レベルが4以上のツルハシで右クリックすることで回収できる.
 gohd.tooltip.cube_cyan.name=§b雨天時のみ作成可能
 gohd.tooltip.cube_magenta.name=§d夜間のみ作成可能
@@ -82,7 +82,7 @@ gohd.09d26429.a1433ad5.title=お口じゃりじゃり (笑)
 gohd.09d26429.efbbdf1d.desc.1=Unfired Casting Basinはグラウトを木の棒で1回クリックして入手.
 gohd.09d26429.efbbdf1d.desc.2=Unfired Casting Tableは2回
 gohd.09d26429.6cd694d7.desc.1=Unfired Casting Channelのための陶芸の道は3回必要
-gohd.09d26429.bf14d483.title=Bright but Cold?
+gohd.09d26429.bf14d483.title=明るいけど寒い?
 gohd.09d26429.048fe784.desc1=HaC機械の回転だけでなくツルハシとしても使うことができる.
 gohd.09d26429.6777b90d.desc1=ツルハシとしては使えないが, 耐久値は無限!
 ### Middle Age
@@ -160,7 +160,7 @@ gohd.bdb7cf70.d957309c.title=追加色だよ!
 gohd.utilities.title=便利系
 gohd.6b120fb2.7f470c3f.title=遠隔モニター
 gohd.6b120fb2.1cefae3a.title=Quarry PlusのWiki
-gohd.6b120fb2.414f78d0.subtitle=破壊不可ブロックは破壊不可.
+gohd.6b120fb2.414f78d0.subtitle=破壊不可ブロックは破壊可能.
 gohd.6b120fb2.5e9802c1.title=EZ Networkのインターフェース
 gohd.6b120fb2.8caedb3d.title=簡易ME Networkスターターキット
 gohd.6b120fb2.a3c67014.title=無線ME Networkスターターキット
@@ -204,7 +204,7 @@ gohd.0f73c1bb.0143a624.title="惑星へワープ"
 gohd.0f73c1bb.0143a624.desc1=Earthをartifactスロットへ.
 gohd.0f73c1bb.8867e772.desc1=ご存じの通りこれがこのパックの最後のクエストです.
 gohd.0f73c1bb.8867e772.desc2=思い返せば, 本当にたくさんのクエストがありました. そのほとんどは難しいものではありませんが, ここまでの道のりは決して楽なものではありませんでした. 何日も, 何週間も, 何カ月もかけて, もしかしたらここにたどり着いたかもしれません. それは誰にでもできることではありません. これまでGOHDをプレイしていただきありがとうございました!
-gohd.0f73c1bb.8867e772.desc3=ところで, このクエストをクリアするには好きな方法を選択できます. ひとつは"Minecraftのポータルを作る", もうひとつは"惑星にワープする"です. このクエストをクリアするには, "Minecraftのポータルを作る"方法と"惑星にワープする"方法があります.
+gohd.0f73c1bb.8867e772.desc3=ところで, このクエストをクリアするにはお好きな方をお選びください. ひとつは"Minecraftのポータルを作る", もうひとつは"惑星にワープする"です. このクエストをクリアするには, "Minecraftのポータルを作る"方法と"惑星にワープする"方法があります.
 gohd.0f73c1bb.8867e772.desc4=Good (Old) luck for you.
 gohd.0f73c1bb.8867e772.task1=惑星"Minecraft"への旅行
 gohd.0f73c1bb.8867e772.reward1=Goobye, my good old memories.
@@ -229,7 +229,7 @@ gohd.reward.color_picture.title=魔法の絵
 gohd.reward.creative_shop.title=クリエイティブ
 
 #Special Links
-link.youtu.be.SWI_4Sx2GtI=日常と非日常
-link.youtu.be.TG6yHxuK22g=キメラ
-link.youtu.be.Opce-MSEznY=炎の残り
+link.youtu.be.SWI_4Sx2GtI=日常非日常
+link.youtu.be.TG6yHxuK22g=嵌り合う体は
+link.youtu.be.Opce-MSEznY=火種
 link.youtu.be.2P2TC8Tlq7M=RGB
