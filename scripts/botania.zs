@@ -130,46 +130,19 @@ print("Start loading botania.zs ...");
 	mods.botania.ManaInfusion.addInfusion(<botania:manaresource:16>*3, <dcs_climate:dcs_synthetic:0>, 5000);
 	mods.botania.ManaInfusion.addInfusion(<botania:manaresource:16>*4, <dcs_climate:dcs_misc:8>, 5000);
 
-//Orechid
-	/*val removeOrechid as string[] = [
-		"oreAluminum",
-		"oreAmber",
-		"oreApatite",
-		"oreCoal",
-		"oreCopper",
-		"oreCertusQuartz",
-		"oreDiamond",
-		"oreGold",
-		"oreIron",
-		"oreLapis",
-		"oreLead",
-		"oreNickel",
-		"oreOsmium",
-		"orePlatinum",
-		"oreRuby",
-		"oreSapphire",
-		"oreSilver",
-		"oreSulfur",
-		"oreTin",
-		"oreZinc",
-	];
-	for i in removeOrechid {
-		mods.botania.Orechid.removeOre(i);
-	}*/
-
 //Orechid Ignem
 	mods.botania.OrechidIgnem.removeOre(<ore:oreQuartz>);
 
 //Orechid Terrestris
 	val orechid_terrestris = mods.morechids.Registry.getFlower("orechid_terrestris");
-	for i in 1 to 7 {
+	for i in 1 to 8 {
 		orechid_terrestris.addRecipe(<minecraft:stone>, <biomesoplenty:gem_ore>.definition.makeStack(i), 1.00);
 	}
 
 //Petal Apothecary
 	mods.botania.Apothecary.removeRecipe("orechid");
 
-	mods.botania.Apothecary.addRecipe("orechid_terrestris", [<ore:petalGreen>, <ore:petalYellow>, <ore:petalOrange>, <ore:petalLime>, <ore:petalPurple>, <ore:petalRed>, <ore:petalBlue>, <twilightforest:ore_magnet:*>]);
+	mods.botania.Apothecary.addRecipe("orechid_terrestris", [<ore:petalGreen>, <ore:petalYellow>, <ore:petalOrange>, <ore:petalLime>, <ore:petalPurple>, <ore:petalRed>, <ore:petalBlue>, <twilightforest:ore_magnet>]);
 
 //Pure Daisyによる加工
 	val toRemovePure as IIngredient[] = [
