@@ -1,0 +1,21 @@
+{
+	icon: "botania:vial",
+	x: 0.0d,
+	y: 0.0d,
+	shape: "square",
+	dependencies: [
+		"885c0e70"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "5bdbd824",
+		type: "checkmark",
+		title: "{gohd.chemistry.title}"
+	}],
+	rewards: [{
+		uid: "2c2e8626",
+		type: "item",
+		item: "dcs_climate:dcs_device_ibc",
+		count: 8
+	}]
+}

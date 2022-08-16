@@ -1,0 +1,19 @@
+{
+	x: 13.0d,
+	y: -3.5d,
+	dependencies: [
+		"763c3857"
+	],
+	tasks: [{
+		uid: "5e94b6f6",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_reagent 1 9"
+		}]
+	}],
+	rewards: [{
+		uid: "65033e66",
+		type: "item",
+		item: "dcs_climate:dcs_cont_fuel 1 1"
+	}]
+}

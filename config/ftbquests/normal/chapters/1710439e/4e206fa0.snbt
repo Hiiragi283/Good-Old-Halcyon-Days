@@ -1,0 +1,21 @@
+{
+	x: 10.0d,
+	y: -2.0d,
+	dependencies: [
+		"9bd3478f"
+	],
+	tasks: [{
+		uid: "8d626508",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_cartridge 1 1"
+		}],
+		count: 8L
+	}],
+	rewards: [{
+		uid: "a0ea12c1",
+		type: "item",
+		item: "dcs_climate:dcs_cartridge 1 1",
+		count: 8
+	}]
+}

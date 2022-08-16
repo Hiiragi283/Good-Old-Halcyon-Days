@@ -1,0 +1,20 @@
+{
+	x: 0.0d,
+	y: -2.0d,
+	dependencies: [
+		"209edd4f"
+	],
+	tasks: [{
+		uid: "9c38f575",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_device_reactor_ibc"
+		}]
+	}],
+	rewards: [{
+		uid: "b203cfc1",
+		type: "item",
+		item: "contenttweaker:ticket_uncommon",
+		count: 3
+	}]
+}

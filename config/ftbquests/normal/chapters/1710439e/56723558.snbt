@@ -1,18 +1,22 @@
 {
-	x: 5.5d,
+	x: -2.0d,
 	y: 1.0d,
 	dependencies: [
-		"8d0ffccf"
+		"209edd4f"
 	],
 	tasks: [{
-		uid: "8e177bc7",
+		uid: "d2e5e49f",
 		type: "item",
 		items: [{
-			item: "botania:runealtar"
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "refined_oil",
+				Amount: 1000
+			}
 		}]
 	}],
 	rewards: [{
-		uid: "5be60c3b",
+		uid: "5392462c",
 		type: "item",
 		item: "contenttweaker:ticket_uncommon"
 	}]

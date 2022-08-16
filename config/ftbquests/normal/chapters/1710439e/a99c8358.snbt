@@ -1,0 +1,61 @@
+{
+	icon: "dcs_climate:dcs_musket",
+	x: 12.0d,
+	y: 0.0d,
+	shape: "rsquare",
+	hide_dependency_lines: true,
+	dependencies: [
+		"4e206fa0",
+		"56ea3aeb",
+		"510a8ecf",
+		"4622d1fb",
+		"05df1625",
+		"68199db2",
+		"d2bca272"
+	],
+	optional: true,
+	tasks: [{
+		uid: "a9129c28",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_reagent 1 8"
+		}],
+		count: 64L
+	}],
+	rewards: [{
+		uid: "f0765761",
+		type: "item",
+		item: {
+			id: "dcs_climate:dcs_musket",
+			tag: {
+				ench: [{
+					lvl: 10s,
+					id: 48s
+				},
+				{
+					lvl: 5s,
+					id: 34s
+				},
+				{
+					lvl: 1s,
+					id: 30s
+				},
+				{
+					lvl: 1s,
+					id: 50s
+				},
+				{
+					lvl: 1s,
+					id: 28s
+				},
+				{
+					lvl: 5s,
+					id: 42s
+				}],
+				display: {
+					LocName: "gohd.custom.gun_devil.name"
+				}
+			}
+		}
+	}]
+}

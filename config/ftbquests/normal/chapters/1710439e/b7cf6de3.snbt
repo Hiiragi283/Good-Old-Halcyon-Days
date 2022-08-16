@@ -1,0 +1,21 @@
+{
+	x: 4.0d,
+	y: 5.5d,
+	shape: "diamond",
+	dependencies: [
+		"5029e91d"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "29aa6f5a",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_magnetic_hover"
+		}]
+	}],
+	rewards: [{
+		uid: "f4329d73",
+		type: "item",
+		item: "contenttweaker:ticket_legendary"
+	}]
+}

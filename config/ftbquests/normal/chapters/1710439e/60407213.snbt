@@ -1,0 +1,21 @@
+{
+	x: 7.0d,
+	y: 6.0d,
+	hide_dependency_lines: true,
+	dependencies: [
+		"167400c0"
+	],
+	tasks: [{
+		uid: "ccac1e7e",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_coating_tool 1 8"
+		}]
+	}],
+	rewards: [{
+		uid: "57643d3e",
+		type: "item",
+		item: "dcs_climate:dcs_coating_tool 1 8",
+		count: 3
+	}]
+}

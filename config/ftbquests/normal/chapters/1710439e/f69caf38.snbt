@@ -1,19 +1,19 @@
 {
-	x: 5.0d,
-	y: -2.0d,
+	x: 6.0d,
+	y: -5.0d,
 	dependencies: [
-		"5ebbbddf",
-		"fe39e5f6"
+		"d70e8df8",
+		"937c74cf"
 	],
 	tasks: [{
-		uid: "a32067dc",
+		uid: "0f9d5710",
 		type: "item",
 		items: [{
-			item: "botania:terraplate"
+			item: "dcs_climate:dcs_reagent 1 5"
 		}]
 	}],
 	rewards: [{
-		uid: "189aa815",
+		uid: "007b7e9a",
 		type: "item",
 		item: "contenttweaker:ticket_rare"
 	}]

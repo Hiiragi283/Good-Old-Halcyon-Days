@@ -19,5 +19,10 @@
 		items: [{
 			item: "botania:bifrostperm"
 		}]
+	}],
+	rewards: [{
+		uid: "40a5f05b",
+		type: "item",
+		item: "contenttweaker:ticket_epic"
 	}]
 }

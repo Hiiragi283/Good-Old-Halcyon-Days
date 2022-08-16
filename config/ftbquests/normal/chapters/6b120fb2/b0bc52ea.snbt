@@ -1,0 +1,20 @@
+{
+	x: 7.0d,
+	y: 1.0d,
+	dependencies: [
+		"cc4088f8"
+	],
+	tasks: [{
+		uid: "e60476c9",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_device_press_machine"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "5e117491",
+		type: "item",
+		item: "dcs_climate:dcs_mold"
+	}]
+}

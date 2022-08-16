@@ -1,0 +1,22 @@
+{
+	x: 11.0d,
+	y: -2.0d,
+	hide_dependency_lines: true,
+	dependencies: [
+		"9bd3478f"
+	],
+	tasks: [{
+		uid: "061364b6",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_cartridge 1 2"
+		}],
+		count: 8L
+	}],
+	rewards: [{
+		uid: "ae298111",
+		type: "item",
+		item: "dcs_climate:dcs_cartridge 1 2",
+		count: 8
+	}]
+}
