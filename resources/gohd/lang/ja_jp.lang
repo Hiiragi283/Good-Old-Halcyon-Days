@@ -1,0 +1,235 @@
+
+#custom Item Name
+gohd.custom.upstreaming_hang_glider.name=アップストリームハンググライダー
+gohd.custom.travelers_sleeping_bag.name=旅人の寝袋
+gohd.custom.spellbinding_book.name=魔術書
+gohd.custom.spade_of_the_gaia.name=ガイアのシャベル
+gohd.custom.rake_of_the_gaia.name=ガイアの熊手
+gohd.custom.arrow_doomsday.name=§0終末の矢
+gohd.custom.spring_nightmare.name=§0悪夢の春
+gohd.custom.track_neet.name=ニートの服
+gohd.custom.gaia_executer.name=§cガイアの処刑人
+
+#Tooltips
+gohd.tooltip.hidden.name=§6JEIからは削除されている§rが§a存在する§r
+gohd.tooltip.removed.name=§4レシピは削除されている!§r
+
+gohd.tooltip.burning_stick.name=§a火口を火に右クリックすることで入手
+gohd.tooltip.grout_forming.name=§a木の棒をグラウトに右クリックすることで入手
+gohd.tooltip.ezstorage_box_0.name=§aEZ Network下のブロックに隣接させることで容量が400アイテム増加
+gohd.tooltip.ezstorage_box_1.name=§aEZ Network下のブロックに隣接させることで容量が4,000アイテム増加
+gohd.tooltip.ezstorage_box_2.name=§aEZ Network下のブロックに隣接させることで容量が20,000アイテム増加
+gohd.tooltip.ezstorage_box_3.name=§aEZ Network下のブロックに隣接させることで容量が80,000アイテム増加
+gohd.tooltip.ezstorage_box_4.name=§aEZ Network下のブロックに隣接させることで容量が400,000アイテム増加
+gohd.tooltip.ezstorage_ejection.name=§aEZ Networkから真上のブロックに搬出
+gohd.tooltip.ezstorage_terminal.name=§aStorage CoreをクリックしなくてもEZ Networkにアクセスできる.
+gohd.tooltip.ezstorage_security.name=§6EZ Keyでのみ撤去できる
+gohd.tooltip.ezstorage_dolly.name=§aバニラチェストのみ移動可能
+gohd.tooltip.infinity_booster_card.name=§6ドロップはウィザー(30%)またはエンダードラゴン(100%)から
+gohd.tooltip.ingot_rainbow.name=§d私§cを§6オフハンド§eに§a持て§2ば, §b私は§1あなたに§9ま§5る§dで§c夢§6の§eよ§aう§2な§b力を§1与える§fでしょう!
+gohd.tooltip.bedrock.name=§a採掘レベルが4以上のツルハシで右クリックすることで回収できる.
+gohd.tooltip.cube_cyan.name=§b雨天時のみ作成可能
+gohd.tooltip.cube_magenta.name=§d夜間のみ作成可能
+gohd.tooltip.cube_yellow.name=§e黄昏の森でのみ作成可能
+
+gohd.tooltip.armor.common.name=§l普通の防具
+gohd.tooltip.armor.uncommon.name=§a§l少し珍しい防具
+gohd.tooltip.armor.rare.name=§9§lレアな防具
+gohd.tooltip.armor.epic.name=§d§l強力な防具
+gohd.tooltip.armor.legendary.name=§6§l伝説級の防具
+gohd.tooltip.armor.mythic.name=§c§l神話級の防具
+
+gohd.tooltip.tool.common.name=§l普通の道具
+gohd.tooltip.tool.uncommon.name=§a§l少し珍しい道具
+gohd.tooltip.tool.rare.name=§9§lレアな道具
+gohd.tooltip.tool.epic.name=§d§l強力な道具
+gohd.tooltip.tool.legendary.name=§6§l伝説級の道具
+gohd.tooltip.tool.mythic.name=§c§l神話級の道具
+
+#Quests
+## Main: gohd.09d26429.
+gohd.main.title=Good Old Halcyon Days!
+
+gohd.ingotIron.title=Tier 0: 鉄インゴット
+gohd.ingotBrass.title=Tier 1: 真鍮インゴット
+gohd.ingotBronze.title=Tier 1: 青銅インゴット
+gohd.ingotNickelsilver.title=Tier 2: 洋銀インゴット
+gohd.ingotSteel.title=Tier 2+: 鋼鉄インゴット
+gohd.ingotSUS.title=Tier 3: SUSインゴット
+gohd.ingotToolSteel.title=Tier 3: 工具鋼インゴット
+gohd.ingotTitanium.title=Tier 4: チタン合金インゴット
+gohd.ingotMangalloy.title=Tier 4: 高マンガン鋼インゴット
+gohd.ingotTungstensteel.title=Tier 5: タングステン鋼インゴット
+
+### Main
+gohd.main.title=メイン
+gohd.hac.tooltip=Heat And Climate (HaC)のHeat And Processing (HaP)についての情報はtooltipsまたはJEIのタブに記載されている.
+gohd.5f3109ce.648774ca.title=GOHDへようこそ!
+gohd.5f3109ce.648774ca.subtitle=Good Old Halcyon Days, 略して"GOHD"
+gohd.5f3109ce.648774ca.task1=楽しんで!
+gohd.09d26429.648774ca.title=冒険の始まり!
+gohd.09d26429.eedd4b0e.title=作者のTwitterリンク
+gohd.09d26429.d881497d.title=作者のGitHubリンク
+gohd.09d26429.8297ab4c.title=なぜ手だけで原木を切れないと思ったのか?
+gohd.09d26429.baa9cb1d.subtitle=オリジナル, だけど微妙
+gohd.09d26429.47a3fa84.subtitle=オリジナルの改良版
+gohd.09d26429.4fb7c614.title=Tinker's Toolへの第一歩
+gohd.09d26429.42aa3c8a.title=Dirty Deeds Done Dirt Cheap (汚れた行為で安く済ませる)
+gohd.09d26429.8e6a9cab.title=苗木から木の棒を
+gohd.09d26429.06357b7e.desc1=緑の鉱石はとーーーーっても見つけづらいから, ショップのタブで緑の金リングを購入することをおススメするよ.
+gohd.09d26429.52739832.desc.1=初めての火は木材を木の棒2本で右クリック
+gohd.09d26429.a1433ad5.title=お口じゃりじゃり (笑)
+gohd.09d26429.efbbdf1d.desc.1=Unfired Casting Basinはグラウトを木の棒で1回クリックして入手.
+gohd.09d26429.efbbdf1d.desc.2=Unfired Casting Tableは2回
+gohd.09d26429.6cd694d7.desc.1=Unfired Casting Channelのための陶芸の道は3回必要
+gohd.09d26429.bf14d483.title=明るいけど寒い?
+gohd.09d26429.048fe784.desc1=HaC機械の回転だけでなくツルハシとしても使うことができる.
+gohd.09d26429.6777b90d.desc1=ツルハシとしては使えないが, 耐久値は無限!
+### Middle Age
+gohd.middleAge.title=Middle Age
+gohd.09d26429.f9c67698.title=最初の上位気候製錬
+gohd.09d26429.01c0841d.subtitle=別の鉄入手法
+gohd.09d26429.8b4775e4.title=UHT気候製錬
+gohd.09d26429.8b4775e4.subtitle=UHTは"Ultra High Heat"のこと
+gohd.09d26429.2418ecab.subtitle=Bi2Sr2Ca2Cu3O10
+### Chemical Age:
+gohd.chemicalAge.title=Chemical Age
+gohd.09d26429.0edcbf3b.desc1=インフィニティの粒はエンドでのみ入手可能.
+### Industrial Age
+gohd.industrialAge.title=工業の時代
+gohd.09d26429.bc22061f.title=白金族の粉
+gohd.09d26429.6ab31c74.title=建造物のミニチュア化の時間だ!
+gohd.09d26429.6ab31c74.reward1=終わりを告げるドラゴンの声
+gohd.09d26429.7f89ed7b.title=デバイスを紛失した時に、別のデバイスを提供してくれるかもしれないクエスト.
+gohd.09d26429.7f89ed7b.task1=いいかい? もう無くすなよ?
+gohd.09d26429.a230052c.desc1=エンダーの欠片から作成することをおススメします
+
+### Minerals: gohd.cccede9d.
+gohd.minerals.title=鉱物資源
+gohd.cccede9d.b679e55a.title=HaCの鉱脈
+gohd.cccede9d.add5de61.title=赤鉱脈
+gohd.cccede9d.6ef83f24.title=緑鉱脈
+gohd.cccede9d.4b446108.title=青鉱脈
+gohd.cccede9d.94dd1723.title=白鉱脈
+gohd.cccede9d.fcea16fa.title=黒鉱脈
+gohd.cccede9d.d70f01cb.title=スカルン鉱床
+gohd.cccede9d.d70f01cb.desc1=スカルン鉱床は3つの種類があり, 様々なバイオームに§l稀に§r生成される.
+gohd.cccede9d.1313a69a.title=スカルン鉱床 (石)
+gohd.cccede9d.1313a69a.desc1=スカルン鉱床 (石) は森林系バイオームに§l稀に§r生成される.
+gohd.cccede9d.3634dbb2.title=スカルン鉱床 (石灰石)
+gohd.cccede9d.3634dbb2.desc1=スカルン鉱床 (石灰石) は平原系, 砂漠系及びサバンナ系バイオームに§l稀に§r生成される.
+gohd.cccede9d.cd18f633.title=スカルン鉱床 (ホルンフェルス)
+gohd.cccede9d.cd18f633.desc1=スカルン鉱床 (ホルンフェルス) は海洋系及び湿地系に§l稀に§r生成される.
+gohd.cccede9d.33f25c86.title=グアノ鉱脈
+gohd.cccede9d.33f25c86.desc1=グアノ鉱脈は海の下に生成される.
+gohd.cccede9d.bdc29cf2.desc1=湯の華は寒い山岳系バイオームに生成される温泉中に生成される.
+gohd.cccede9d.8ac28a20.title=Abyssal Geode
+gohd.cccede9d.8ac28a20.desc1=Abyssal Geodeは海洋バイオームの下に生成される.
+gohd.cccede9d.1a7f5909.subtitle=tile.railcraft.ore.magic.name
+gohd.cccede9d.1a7f5909.desc1=Firestone Oreはネザーの溶岩湖の下に生成される.
+gohd.cccede9d.5a6ee22b.desc1=Refined Firestoneは溶岩でチャージできる.
+gohd.cccede9d.5a6ee22b.desc2=Charged Refined Firestoneは固形燃料の他, 着火剤としても使うことができる.
+gohd.cccede9d.fed34783.task1=鉱石の塊 (3x)
+gohd.cccede9d.3aeb8033.task1=鉱石の欠片 (4x)
+gohd.cccede9d.c0d4a6c8.task1=鉱石の結晶 (5x)
+
+## Tools:
+gohd.tools.title=道具
+
+## Magic: gohd.bdb7cf70.
+gohd.magic.title=魔術
+gohd.bdb7cf70.d2595f85.desc1=神秘の花は鼻の肥料を使うことで入手.
+gohd.bdb7cf70.8d0ffccf.title=生きている!
+gohd.bdb7cf70.8d0ffccf.desc1=新レシピを確認してね!
+gohd.bdb7cf70.fe39e5f6.title=マナを注がれた者たち!
+gohd.bdb7cf70.dbe05e17.title=より安価な集結
+gohd.bdb7cf70.860c5647.title=夢見る者たち!
+gohd.bdb7cf70.52e48bc0.title=メタモルフォーゼ!
+gohd.bdb7cf70.6328f68d.title=神秘的な者たち!
+gohd.bdb7cf70.e5eb64a5.title=煌めいている者たち!
+gohd.bdb7cf70.4cbd8e5d.title=もっとも簡単な火薬の入手方法
+gohd.bdb7cf70.1f6861fc.title=元素パウダー
+gohd.bdb7cf70.b2fe2a22.title=元素の粉
+gohd.bdb7cf70.cac10bd4.title=色のしずく
+gohd.bdb7cf70.bbe39da4.title=抽出した色
+gohd.bdb7cf70.a539f485.title=不活性な色キューブ
+gohd.bdb7cf70.c895536e.title=活性化したぜ!
+gohd.bdb7cf70.d957309c.title=追加色だよ!
+
+## Utilities: gohd.6b120fb2.
+gohd.utilities.title=便利系
+gohd.6b120fb2.7f470c3f.title=遠隔モニター
+gohd.6b120fb2.1cefae3a.title=Quarry PlusのWiki
+gohd.6b120fb2.414f78d0.subtitle=破壊不可ブロックは破壊可能.
+gohd.6b120fb2.5e9802c1.title=EZ Networkのインターフェース
+gohd.6b120fb2.8caedb3d.title=簡易ME Networkスターターキット
+gohd.6b120fb2.a3c67014.title=無線ME Networkスターターキット
+gohd.6b120fb2.23189174.title=16 Inputs -> 6 Outputs
+gohd.6b120fb2.7c9e3fd5.title=Redstone Flux発電機
+gohd.6b120fb2.d005700a.title=武器
+gohd.6b120fb2.6a907d55.title=黄昏の武器たち
+gohd.6b120fb2.30317d20.title=黄昏の弓たち
+gohd.6b120fb2.cc9e5886.title=道具
+gohd.6b120fb2.c88285cd.title=マナスチール製の道具
+gohd.6b120fb2.d99e03b5.title=ダークスチール製の道具
+gohd.6b120fb2.1c92bac1.title=エンドスチール製の道具
+gohd.6b120fb2.00cb0ab9.title=工具鋼製の道具
+gohd.6b120fb2.bb71f376.title=高マンガン鋼製の道具
+gohd.6b120fb2.e79fb275.title=防具
+gohd.6b120fb2.83548cba.title=マナスチール防具
+gohd.6b120fb2.d81fd2e1.title=テラスチール防具
+gohd.6b120fb2.957aebd2.title=ダークスチール防具
+gohd.6b120fb2.c9353527.title=エンドスチール防具
+gohd.6b120fb2.fcab00e8.title=チタン合金防具
+gohd.6b120fb2.61b73c1d.title=HaCの魔道服
+gohd.6b120fb2.09e80f8b.title=精製黒曜石防具
+gohd.6b120fb2.27b9a91c.title=ナイトメタル防具
+gohd.6b120fb2.27b9a91c.subtitle=幸運をもたらす
+
+## Shop gohd.0290d76b.
+gohd.shop.title=クエストショップ
+gohd.shop.desc1=このページでは便利なアイテムを購入できます!
+gohd.shop.desc2=ここでの全てのお買い物にはクエスト報酬のTicketsが必要です.
+gohd.0290d76b.ff5f1169.title=冒険のスターターキット
+
+##End Game: gohd.0f73c1bb.
+gohd.end_game.title=Good Old Minecraft!
+
+gohd.0f73c1bb.4955912c.subtitle=Good Old Ages
+gohd.0f73c1bb.978f1566.subtitle=惑星 "Minecraft"
+
+gohd.0f73c1bb.73be3bc0.title="Minecraftポータルの作成"
+gohd.0f73c1bb.73be3bc0.desc1=MinecraftポータルのフレームをEarthでクリックすることで着火.
+gohd.0f73c1bb.0143a624.title="惑星へワープ"
+gohd.0f73c1bb.0143a624.desc1=Earthをartifactスロットへ.
+gohd.0f73c1bb.8867e772.desc1=ご存じの通りこれがこのパックの最後のクエストです.
+gohd.0f73c1bb.8867e772.desc2=思い返せば, 本当にたくさんのクエストがありました. そのほとんどは難しいものではありませんが, ここまでの道のりは決して楽なものではありませんでした. 何日も, 何週間も, 何カ月もかけて, もしかしたらここにたどり着いたかもしれません. それは誰にでもできることではありません. これまでGOHDをプレイしていただきありがとうございました!
+gohd.0f73c1bb.8867e772.desc3=ところで, このクエストをクリアするにはお好きな方をお選びください. ひとつは"Minecraftのポータルを作る", もうひとつは"惑星にワープする"です. このクエストをクリアするには, "Minecraftのポータルを作る"方法と"惑星にワープする"方法があります.
+gohd.0f73c1bb.8867e772.desc4=Good (Old) luck for you.
+gohd.0f73c1bb.8867e772.task1=惑星"Minecraft"への旅行
+gohd.0f73c1bb.8867e772.reward1=Goobye, my good old memories.
+
+## Reward Table
+gohd.reward.ring_gold.title=金リング
+gohd.reward.ring_silver.title=銀リング
+gohd.reward.pendant_gold.title=金ペンダント
+gohd.reward.pendant_silver.title=銀ペンダント
+
+gohd.reward.slimesling.title=Slimeslings
+gohd.reward.slime_boots.title=スライムブーツ
+gohd.reward.loot_magic_spell.title=魔法のカード
+
+gohd.reward.badge.title=バッジ
+gohd.reward.gauntlet_extract.title=ガントレット
+gohd.reward.coating_tool.title=Coating tools
+
+gohd.reward.gauntlet_cube.title=上位ガントレット
+gohd.reward.color_picture.title=魔法の絵
+
+gohd.reward.creative_shop.title=クリエイティブ
+
+#Special Links
+link.youtu.be.SWI_4Sx2GtI=日常非日常
+link.youtu.be.TG6yHxuK22g=嵌り合う体は
+link.youtu.be.Opce-MSEznY=火種
+link.youtu.be.2P2TC8Tlq7M=RGB
