@@ -7,8 +7,9 @@ gohd.custom.spade_of_the_gaia.name=Spade of the Gaia
 gohd.custom.rake_of_the_gaia.name=Rake of the Gaia
 gohd.custom.arrow_doomsday.name=§0Arrow of the Doomsday
 gohd.custom.spring_nightmare.name=§0Spring of Nightmare
-gohd.custom.track_neet.name=NEET Suit
+gohd.custom.track_neet.name=§6NEET Suit
 gohd.custom.gaia_executer.name=§cGaia Executer
+gohd.custom.gun_devil.name=§cMusket of the Gun Devil
 
 #Tooltips
 gohd.tooltip.hidden.name=§6Hide from JEI§r but §aavailable§r
@@ -24,13 +25,15 @@ gohd.tooltip.ezstorage_box_4.name=§aPlaced beside blocks in EZ Network, provide
 gohd.tooltip.ezstorage_ejection.name=§aEject items in EZ Network above blocks
 gohd.tooltip.ezstorage_terminal.name=§aAccess EZ Network without clicking Storage Core
 gohd.tooltip.ezstorage_security.name=§6Only broken by EZ Key
-gohd.tooltip.ezstorage_dolly.name=§aOnly transfers VANILLA chest
+gohd.tooltip.ezstorage_dolly.name=§aOnly transfers VANILLA chest or Storage Core
 gohd.tooltip.infinity_booster_card.name=§6Dropped from Wither (30%) or Ender Dragon (100%)
 gohd.tooltip.ingot_rainbow.name=§dWhen §cyou §6holding §eme §ain §2offhand, §bI'll §1give §9you §5a §dD§cR§6E§eA§aM§2I§bN§1G §fpower!
 gohd.tooltip.bedrock.name=§aHarvested by right-clicking on a pickaxe with Mining level 4 or higher
 gohd.tooltip.cube_cyan.name=§bOnly crafted in Raining
 gohd.tooltip.cube_magenta.name=§dOnly crafted in Night
 gohd.tooltip.cube_yellow.name=§eOnly crafted in Twilight Forest
+gohd.tooltip.dustblock.name=§aOnly smelted by using Conveyor Belt
+gohd.tooltip.only_crate.name=§6Only looted from Loot Crate!
 
 gohd.tooltip.armor.common.name=§lCommon Armor
 gohd.tooltip.armor.uncommon.name=§a§lUncommon Armor
@@ -135,6 +138,10 @@ gohd.cccede9d.c0d4a6c8.task1=Ore Crystals (5x)
 
 ## Tools:
 gohd.tools.title=Tools
+
+## Chemistry: gohd.1710439e.
+gohd.chemistry.title=Chemistry
+gohd.1710439e.52ab2cd5.title=Ore Washing
 
 ## Magic: gohd.bdb7cf70.
 gohd.magic.title=Magic

@@ -1,0 +1,58 @@
+
+#Items
+item.contenttweaker.assembly_parallel.name=並列プロセッサアセンブリ
+item.contenttweaker.assembly_speculative.name=思考プロセッサアセンブリ
+item.contenttweaker.elven_pearl.name=エルブンパール
+item.contenttweaker.ephemerald.name=エフェメラルド
+item.contenttweaker.gem_carbon.name=圧縮した炭素
+item.contenttweaker.grout_ball.name=グラウト玉
+item.contenttweaker.glyph_divide.name="除算のシジル"のグリフ
+item.contenttweaker.ingot_bedrockium.name=ベッドロッキウムインゴット
+item.contenttweaker.ingot_rainbow.name=虹インゴット
+item.contenttweaker.reagent_halogen.name=Halogen
+item.contenttweaker.ticket_common.name=らぎチケット (コモン)
+item.contenttweaker.ticket_uncommon.name=らぎチケット (§aアンコモン§r)
+item.contenttweaker.ticket_rare.name=らぎチケット (§9レア§r)
+item.contenttweaker.ticket_epic.name=らぎチケット (§dエピック§r)
+item.contenttweaker.ticket_legendary.name=らぎチケット (§6伝説§r)
+item.contenttweaker.ticket_mythic.name=らぎチケット (§c神話§r)
+
+item.contenttweaker.book_reloadevents.name=柊さんの愛読書 (イベントの再読み込み)
+item.contenttweaker.book_syntax.name=柊さんの愛読書 (文法チェック)
+item.contenttweaker.book_facing.name=柊さんの愛読書 (完璧な真正面を向きたい時ってあるよね？)
+
+#Blocks
+tile.contenttweaker.unfired_casting_channel.name=未焼成の鋳造樋
+tile.contenttweaker.unfired_casting_table.name=未焼成の鋳造台
+tile.contenttweaker.unfired_casting_basin.name=未焼成の鋳造鉢
+tile.contenttweaker.block_bedrockium.name=ベッドロッキウムブロック
+
+tile.contenttweaker.dustblock_alubrass.name=アルミ黄銅粉末ブロック
+tile.contenttweaker.dustblock_ardite.name=アーダイト粉末ブロック
+tile.contenttweaker.dustblock_cobalt.name=コバルト粉末ブロック
+tile.contenttweaker.dustblock_constantan.name=コンスタンタン粉末ブロック
+tile.contenttweaker.dustblock_electrum.name=エレクトラム粉末ブロック
+tile.contenttweaker.dustblock_invar.name=インバーr粉末ブロック
+tile.contenttweaker.dustblock_iridium.name=イリジウム粉末ブロック
+tile.contenttweaker.dustblock_lead.name=鉛粉末ブロック
+tile.contenttweaker.dustblock_manyullyn.name=マニュリン粉末ブロック
+tile.contenttweaker.dustblock_osmium.name=オスミウム粉末ブロック
+tile.contenttweaker.dustblock_platinum.name=白金粉末ブロック
+
+tile.contenttweaker.cube_yellow_inactive.name=不活性な黄キューブ
+tile.contenttweaker.cube_magenta_inactive.name=不活性なマゼンタキューブ
+tile.contenttweaker.cube_cyan_inactive.name=不活性なシアンキューブ
+tile.contenttweaker.cube_yellow.name=黄色の活性化キューブ
+tile.contenttweaker.cube_magenta.name=マゼンタ色の活性化キューブ
+tile.contenttweaker.cube_cyan.name=シアン色の活性化キューブ
+tile.contenttweaker.cube_iridescent.name=七色のキューブ
+
+# Fluids
+fluid.drop_red=抽出された赤のしずく
+fluid.drop_green=抽出された緑のしずく
+fluid.drop_blue=抽出された青のしずく
+fluid.drop_white=抽出された白のしずく
+fluid.drop_black=抽出された黒のしずく
+
+# Machine
+machine.crafttweaker:assembler=組立機

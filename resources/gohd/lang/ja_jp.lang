@@ -7,8 +7,9 @@ gohd.custom.spade_of_the_gaia.name=ガイアのシャベル
 gohd.custom.rake_of_the_gaia.name=ガイアの熊手
 gohd.custom.arrow_doomsday.name=§0終末の矢
 gohd.custom.spring_nightmare.name=§0悪夢の春
-gohd.custom.track_neet.name=ニートの服
+gohd.custom.track_neet.name=§6ニートの服
 gohd.custom.gaia_executer.name=§cガイアの処刑人
+gohd.custom.gun_devil.name=§c銃の悪魔のマスケット銃
 
 #Tooltips
 gohd.tooltip.hidden.name=§6JEIからは削除されている§rが§a存在する§r
@@ -24,13 +25,15 @@ gohd.tooltip.ezstorage_box_4.name=§aEZ Network下のブロックに隣接させ
 gohd.tooltip.ezstorage_ejection.name=§aEZ Networkから真上のブロックに搬出
 gohd.tooltip.ezstorage_terminal.name=§aStorage CoreをクリックしなくてもEZ Networkにアクセスできる.
 gohd.tooltip.ezstorage_security.name=§6EZ Keyでのみ撤去できる
-gohd.tooltip.ezstorage_dolly.name=§aバニラチェストのみ移動可能
+gohd.tooltip.ezstorage_dolly.name=§aバニラチェストかStorage Coreのみ移動可能
 gohd.tooltip.infinity_booster_card.name=§6ドロップはウィザー(30%)またはエンダードラゴン(100%)から
 gohd.tooltip.ingot_rainbow.name=§d私§cを§6オフハンド§eに§a持て§2ば, §b私は§1あなたに§9ま§5る§dで§c夢§6の§eよ§aう§2な§b力を§1与える§fでしょう!
 gohd.tooltip.bedrock.name=§a採掘レベルが4以上のツルハシで右クリックすることで回収できる.
 gohd.tooltip.cube_cyan.name=§b雨天時のみ作成可能
 gohd.tooltip.cube_magenta.name=§d夜間のみ作成可能
 gohd.tooltip.cube_yellow.name=§e黄昏の森でのみ作成可能
+gohd.tooltip.dustblock.name=§aコンベアベルト上のみで気候精錬が行える
+gohd.tooltip.only_crate.name=§6Loot Crateからしか手に入りません!
 
 gohd.tooltip.armor.common.name=§l普通の防具
 gohd.tooltip.armor.uncommon.name=§a§l少し珍しい防具
@@ -136,6 +139,10 @@ gohd.cccede9d.c0d4a6c8.task1=鉱石の結晶 (5x)
 ## Tools:
 gohd.tools.title=道具
 
+## Chemistry: gohd.1710439e.
+gohd.chemistry.title=Chemistry
+gohd.1710439e.52ab2cd5.title=鉱石洗浄
+
 ## Magic: gohd.bdb7cf70.
 gohd.magic.title=魔術
 gohd.bdb7cf70.d2595f85.desc1=神秘の花は鼻の肥料を使うことで入手.
@@ -151,7 +158,7 @@ gohd.bdb7cf70.4cbd8e5d.title=もっとも簡単な火薬の入手方法
 gohd.bdb7cf70.1f6861fc.title=元素パウダー
 gohd.bdb7cf70.b2fe2a22.title=元素の粉
 gohd.bdb7cf70.cac10bd4.title=色のしずく
-gohd.bdb7cf70.bbe39da4.title=抽出した色
+gohd.bdb7cf70.bbe39da4.title=色のエッセンス
 gohd.bdb7cf70.a539f485.title=不活性な色キューブ
 gohd.bdb7cf70.c895536e.title=活性化したぜ!
 gohd.bdb7cf70.d957309c.title=追加色だよ!
