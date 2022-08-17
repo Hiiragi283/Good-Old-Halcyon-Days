@@ -1,0 +1,20 @@
+{
+	x: 3.5d,
+	y: 1.0d,
+	dependencies: [
+		"517c1bc6"
+	],
+	tasks: [{
+		uid: "61cec539",
+		type: "item",
+		items: [{
+			item: "contenttweaker:feather_black"
+		}]
+	}],
+	rewards: [{
+		uid: "af7ea0d4",
+		type: "item",
+		item: "contenttweaker:feather_black",
+		count: 15
+	}]
+}

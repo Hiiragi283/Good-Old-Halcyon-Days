@@ -128,6 +128,18 @@
 	},
 	{
 		item: "dcs_climate:dcs_magic_card_m3 1 2"
+	},
+	{
+		item: "dcs_climate:dcs_magic_card_m3 1 1"
+	},
+	{
+		item: "dcs_climate:dcs_magic_card_m3"
+	},
+	{
+		item: "dcs_climate:dcs_magic_card_m3 1 3"
+	},
+	{
+		item: "dcs_climate:dcs_magic_card_m3 1 4"
 	}],
 	loot_crate: {
 		string_id: "gohd_reward_loot_magic_spell_title",

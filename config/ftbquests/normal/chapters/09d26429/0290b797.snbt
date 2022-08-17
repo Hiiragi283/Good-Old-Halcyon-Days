@@ -11,5 +11,10 @@
 			item: "minecraft:obsidian"
 		}],
 		count: 10L
+	}],
+	rewards: [{
+		uid: "c682210e",
+		type: "item",
+		item: "biomesoplenty:jar_filled 1 1"
 	}]
 }

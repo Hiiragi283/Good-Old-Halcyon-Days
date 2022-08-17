@@ -1,22 +1,22 @@
 {
 	x: -6.0d,
-	y: 1.0d,
+	y: -1.0d,
 	dependencies: [
-		"56723558"
+		"8252471c"
 	],
 	tasks: [{
-		uid: "c40f75a8",
+		uid: "d94410b6",
 		type: "item",
 		items: [{
 			id: "forge:bucketfilled",
 			tag: {
-				FluidName: "refined_fuel",
+				FluidName: "refined_biofuel",
 				Amount: 1000
 			}
 		}]
 	}],
 	rewards: [{
-		uid: "071e7a9a",
+		uid: "a1a65327",
 		type: "item",
 		item: "contenttweaker:ticket_uncommon",
 		count: 3

@@ -11,6 +11,11 @@
       "item": "contenttweaker:cube_iridescent",
       "data": 0,
       "count": 128
+    },
+		{
+      "item": "extrautils2:teleporter",
+      "data": 1,
+      "count": 1
     }
   ],
   "energy": 20111118.0,

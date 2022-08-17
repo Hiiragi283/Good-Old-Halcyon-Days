@@ -1,6 +1,7 @@
 {
 	x: 7.0d,
 	y: 6.0d,
+	shape: "square",
 	hide_dependency_lines: true,
 	dependencies: [
 		"167400c0"
@@ -17,9 +18,5 @@
 		type: "item",
 		item: "dcs_climate:dcs_coating_tool 1 8",
 		count: 3
-	},
-	{
-		uid: "cc8d350c",
-		type: "custom"
 	}]
 }

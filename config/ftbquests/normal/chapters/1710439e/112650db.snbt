@@ -1,0 +1,22 @@
+{
+	x: -2.0d,
+	y: 0.0d,
+	dependencies: [
+		"209edd4f"
+	],
+	tasks: [{
+		uid: "a845140b",
+		type: "item",
+		items: [{
+			item: "thermalexpansion:device 1 3"
+		},
+		{
+			item: "thermalexpansion:augment 1 288"
+		}]
+	}],
+	rewards: [{
+		uid: "62cbf0b7",
+		type: "item",
+		item: "contenttweaker:ticket_rare"
+	}]
+}

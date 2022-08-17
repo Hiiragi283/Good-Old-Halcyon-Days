@@ -1,7 +1,7 @@
 {
 	icon: "dcs_climate:dcs_food_pack 1 19",
 	x: 2.0d,
-	y: 5.5d,
+	y: 6.0d,
 	dependencies: [
 		"209edd4f"
 	],

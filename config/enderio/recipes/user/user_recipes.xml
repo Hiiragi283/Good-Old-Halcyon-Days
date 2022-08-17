@@ -58,8 +58,8 @@
 	</recipe>
 	<recipe name="Alloy: Fluix Steel Ingot" required="true">
 		<alloying energy="20000" exp="0.5">
-			<input name="dustFluix"/>
-			<input name="ingotSUS"/>
+			<input name="threng:material:1"/>
+			<input name="ingotElectricalSteel"/>
 			<input name="itemSilicon"/>
 			<output name="ingotFluixSteel"/>
 		</alloying>

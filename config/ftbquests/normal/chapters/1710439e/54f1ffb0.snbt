@@ -1,7 +1,6 @@
 {
-	icon: "appliedenergistics2:material 1 12",
-	x: -6.0d,
-	y: -5.0d,
+	x: -8.0d,
+	y: -3.0d,
 	dependencies: [
 		"2db55f80"
 	],
