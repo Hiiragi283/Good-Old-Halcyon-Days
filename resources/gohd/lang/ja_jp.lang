@@ -99,7 +99,7 @@ gohd.09d26429.2418ecab.subtitle=Bi2Sr2Ca2Cu3O10
 gohd.chemicalAge.title=Chemical Age
 gohd.09d26429.0edcbf3b.desc1=インフィニティの粒はエンドでのみ入手可能.
 ### Industrial Age
-gohd.industrialAge.title=工業の時代
+gohd.industrialAge.title=Industrial Age
 gohd.09d26429.bc22061f.title=白金族の粉
 gohd.09d26429.6ab31c74.title=建造物のミニチュア化の時間だ!
 gohd.09d26429.6ab31c74.reward1=終わりを告げるドラゴンの声
@@ -140,7 +140,7 @@ gohd.cccede9d.c0d4a6c8.task1=鉱石の結晶 (5x)
 gohd.tools.title=道具
 
 ## Chemistry: gohd.1710439e.
-gohd.chemistry.title=Chemistry
+gohd.chemistry.title=化学
 gohd.1710439e.52ab2cd5.title=鉱石洗浄
 
 ## Magic: gohd.bdb7cf70.
