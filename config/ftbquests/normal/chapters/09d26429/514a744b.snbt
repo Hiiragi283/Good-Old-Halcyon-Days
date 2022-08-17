@@ -1,0 +1,21 @@
+{
+	x: 13.0d,
+	y: 7.0d,
+	shape: "diamond",
+	dependencies: [
+		"6f068e57"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "5199f690",
+		type: "kill",
+		icon: "minecraft:skull 1 1",
+		entity: "minecraft:wither",
+		value: 1L
+	}],
+	rewards: [{
+		uid: "1f688fee",
+		type: "item",
+		item: "contenttweaker:ticket_epic"
+	}]
+}

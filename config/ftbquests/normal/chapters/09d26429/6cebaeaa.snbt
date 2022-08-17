@@ -1,7 +1,7 @@
 {
 	icon: "appliedenergistics2:sky_stone_block",
-	x: 23.0d,
-	y: -2.0d,
+	x: 21.0d,
+	y: 2.0d,
 	dependencies: [
 		"b26e2d9c"
 	],

@@ -5,10 +5,16 @@
 		"209edd4f"
 	],
 	tasks: [{
-		uid: "3a966a12",
+		uid: "225404f4",
 		type: "item",
 		items: [{
-			item: "minecraft:diamond"
+			item: "contenttweaker:gem_carbon"
 		}]
+	}],
+	rewards: [{
+		uid: "48f7ac0d",
+		type: "item",
+		item: "contenttweaker:gem_carbon",
+		count: 3
 	}]
 }

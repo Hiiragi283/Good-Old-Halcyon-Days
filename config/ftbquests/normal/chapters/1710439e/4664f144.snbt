@@ -12,9 +12,33 @@
 		}]
 	}],
 	rewards: [{
-		uid: "e4bb24b6",
+		uid: "c7f4f80d",
 		type: "item",
-		item: "dcs_climate:dcs_synthetic 1 1",
-		count: 4
+		item: {
+			id: "dcs_climate:dcs_leggins_track",
+			tag: {
+				ench: [{
+					lvl: 10s,
+					id: 0s
+				},
+				{
+					lvl: 10s,
+					id: 55s
+				},
+				{
+					lvl: 1s,
+					id: 11s
+				},
+				{
+					lvl: 1s,
+					id: 10s
+				}],
+				Unbreakable: 1b,
+				color: 14,
+				display: {
+					LocName: "gohd.custom.track_neet.name"
+				}
+			}
+		}
 	}]
 }

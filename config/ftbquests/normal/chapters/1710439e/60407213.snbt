@@ -17,5 +17,9 @@
 		type: "item",
 		item: "dcs_climate:dcs_coating_tool 1 8",
 		count: 3
+	},
+	{
+		uid: "cc8d350c",
+		type: "custom"
 	}]
 }

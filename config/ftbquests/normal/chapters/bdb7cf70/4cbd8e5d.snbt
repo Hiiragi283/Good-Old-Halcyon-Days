@@ -1,6 +1,6 @@
 {
 	title: "{gohd.bdb7cf70.4cbd8e5d.title}",
-	x: -1.0d,
+	x: 2.0d,
 	y: 2.0d,
 	dependencies: [
 		"a1433ad5"

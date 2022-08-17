@@ -43,33 +43,8 @@
 		ignore_nbt: 1b
 	}],
 	rewards: [{
-		uid: "3a91d37f",
+		uid: "424bc5f3",
 		type: "item",
-		item: {
-			id: "dcs_climate:dcs_leggins_track",
-			tag: {
-				ench: [{
-					lvl: 10s,
-					id: 0s
-				},
-				{
-					lvl: 10s,
-					id: 55s
-				},
-				{
-					lvl: 1s,
-					id: 11s
-				},
-				{
-					lvl: 1s,
-					id: 10s
-				}],
-				Unbreakable: 1b,
-				color: 14,
-				display: {
-					LocName: "gohd.custom.track_neet.name"
-				}
-			}
-		}
+		item: "contenttweaker:ticket_epic"
 	}]
 }

@@ -1,7 +1,7 @@
 {
 	title: "{gohd.bdb7cf70.c895536e.title}",
-	x: 6.0d,
-	y: 4.0d,
+	x: 4.5d,
+	y: 5.0d,
 	description: "{link.youtu.be.2P2TC8Tlq7M}",
 	dependencies: [
 		"a539f485"

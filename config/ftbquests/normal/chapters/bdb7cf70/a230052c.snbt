@@ -1,11 +1,11 @@
 {
-	x: 13.0d,
-	y: 6.0d,
+	x: 4.0d,
+	y: 4.0d,
 	text: [
 		"{gohd.09d26429.a230052c.desc1}"
 	],
 	dependencies: [
-		"6f068e57"
+		"bbe39da4"
 	],
 	tasks: [{
 		uid: "7156d465",

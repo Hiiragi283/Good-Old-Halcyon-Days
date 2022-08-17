@@ -5,7 +5,7 @@
 		"{gohd.hac.tooltip}"
 	],
 	dependencies: [
-		"cc4088f8",
+		"72b4363c",
 		"90e584bd",
 		"1b062df5"
 	],

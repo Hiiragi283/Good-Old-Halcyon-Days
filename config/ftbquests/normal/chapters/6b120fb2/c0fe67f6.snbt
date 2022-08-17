@@ -6,7 +6,7 @@
 	],
 	dependencies: [
 		"94f7d60f",
-		"cc4088f8"
+		"72b4363c"
 	],
 	tasks: [{
 		uid: "2688dd7c",
