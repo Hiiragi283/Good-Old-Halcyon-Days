@@ -52,6 +52,14 @@ print("Start loading chisel.zs ...");
 		"item_peridot": <ore:gemPeridot>.items,
 		"item_ruby": <ore:gemRuby>.items,
 		"item_sapphire": <ore:gemSapphire>.items,
+		"item_copper": <ore:ingotCopper>.items,
+		"item_tin": <ore:ingotTin>.items,
+		"item_silver": <ore:ingotSilver>.items,
+		"item_lead": <ore:ingotLead>.items,
+		"item_aluminum": <ore:ingotAluminum>.items,
+		"item_nickel": <ore:ingotNickel>.items,
+		"item_steel": <ore:ingotSteel>.items,
+		"item_bronze": <ore:ingotBronze>.items,
 	};
 	for i, j in chiselOreDict {
 		mods.chisel.Carving.addGroup(i);

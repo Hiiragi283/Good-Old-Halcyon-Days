@@ -100,6 +100,8 @@ print("Start loading botania.zs ...");
 	ElvenTrade.addRecipe([<contenttweaker:elven_pearl>], [<botania:manaresource:1>]);
 	ElvenTrade.addRecipe([<contenttweaker:ephemerald>], [<botania:manaresource:2>]);
 	ElvenTrade.addRecipe([<botania:specialflower>.withTag({type: "dreaming_daisy"})], [<botania:specialflower>.withTag({type: "puredaisy"})]);
+	ElvenTrade.addRecipe([<biomesoplenty:flower_1:5>], [<minecraft:double_plant:4>]);
+
 
 //Mana Infusion
 	val removePool as IItemStack[] = [
@@ -110,6 +112,7 @@ print("Start loading botania.zs ...");
 	}
 	mods.botania.ManaInfusion.addAlchemy(<ore:gemAquamarine>.firstItem, <ore:gemEmerald>, 10000);
 	mods.botania.ManaInfusion.addAlchemy(<ore:ingotSteeleaf>.firstItem, <twilightforest:hedge>, 10000);
+	mods.botania.ManaInfusion.addAlchemy(<twilightforest:raven_feather>, <contenttweaker:feather_black>, 10000);
 	//Manasteel ingot
 	mods.botania.ManaInfusion.addInfusion(<botania:manaresource:0>*2, <ore:ingotSteel>, 3000);
 	mods.botania.ManaInfusion.addInfusion(<botania:manaresource:0>*2, <twilightforest:steeleaf_ingot>, 3000);
@@ -129,6 +132,46 @@ print("Start loading botania.zs ...");
 	mods.botania.ManaInfusion.addInfusion(<botania:manaresource:16>*2, <dcs_climate:dcs_misc:6>, 5000);
 	mods.botania.ManaInfusion.addInfusion(<botania:manaresource:16>*3, <dcs_climate:dcs_synthetic:0>, 5000);
 	mods.botania.ManaInfusion.addInfusion(<botania:manaresource:16>*4, <dcs_climate:dcs_misc:8>, 5000);
+
+	//BOP's Corals
+	for i in 0 to 4 {
+		mods.botania.ManaInfusion.addAlchemy(<biomesoplenty:coral>.definition.makeStack(i+1), <biomesoplenty:coral>.definition.makeStack(i), 400);
+	}
+	mods.botania.ManaInfusion.addAlchemy(<biomesoplenty:seaweed>, <biomesoplenty:coral:4>, 400);
+	mods.botania.ManaInfusion.addAlchemy(<biomesoplenty:coral:0>, <biomesoplenty:seaweed>, 400);
+	//BOP's Lilies
+	for i in 0 to 3 {
+		mods.botania.ManaInfusion.addAlchemy(<biomesoplenty:waterlily>.definition.makeStack(i+1), <biomesoplenty:waterlily>.definition.makeStack(i), 400);
+	}
+	mods.botania.ManaInfusion.addAlchemy(<biomesoplenty:waterlily:0>, <biomesoplenty:waterlily:3>, 400);
+	//BOP's Plants
+	for i in 0 to 15 {
+		mods.botania.ManaInfusion.addAlchemy(<biomesoplenty:plant_0>.definition.makeStack(i+1), <biomesoplenty:plant_0>.definition.makeStack(i), 400);
+	}
+	mods.botania.ManaInfusion.addAlchemy(<biomesoplenty:plant_1:0>, <biomesoplenty:plant_0:15>, 400);
+	for i in 0 to 11 {
+		mods.botania.ManaInfusion.addAlchemy(<biomesoplenty:plant_1>.definition.makeStack(i+1), <biomesoplenty:plant_1>.definition.makeStack(i), 400);
+	}
+	mods.botania.ManaInfusion.addAlchemy(<biomesoplenty:plant_0:0>, <biomesoplenty:plant_1:11>, 400);
+	//BOP's Double Plants
+	for i in 0 to 3 {
+		mods.botania.ManaInfusion.addAlchemy(<biomesoplenty:double_plant>.definition.makeStack(i+1), <biomesoplenty:double_plant>.definition.makeStack(i), 400);
+	}
+	mods.botania.ManaInfusion.addAlchemy(<biomesoplenty:double_plant:0>, <biomesoplenty:double_plant:3>, 400);
+	//BOP's Mushrooms
+	for i in 0 to 5 {
+		mods.botania.ManaInfusion.addAlchemy(<biomesoplenty:mushroom>.definition.makeStack(i+1), <biomesoplenty:mushroom>.definition.makeStack(i), 400);
+	}
+	mods.botania.ManaInfusion.addAlchemy(<biomesoplenty:mushroom:0>, <biomesoplenty:mushroom:5>, 400);
+	//BOP's Flowers
+	for i in 0 to 15 {
+		mods.botania.ManaInfusion.addAlchemy(<biomesoplenty:flower_0>.definition.makeStack(i+1), <biomesoplenty:flower_0>.definition.makeStack(i), 400);
+	}
+	mods.botania.ManaInfusion.addAlchemy(<biomesoplenty:flower_1:0>, <biomesoplenty:flower_0:15>, 400);
+	for i in 0 to 5 {
+		mods.botania.ManaInfusion.addAlchemy(<biomesoplenty:flower_1>.definition.makeStack(i+1), <biomesoplenty:flower_1>.definition.makeStack(i), 400);
+	}
+	mods.botania.ManaInfusion.addAlchemy(<biomesoplenty:flower_0:0>, <biomesoplenty:flower_1:5>, 400);
 
 //Orechid Ignem
 	mods.botania.OrechidIgnem.removeOre(<ore:oreQuartz>);
@@ -198,20 +241,20 @@ print("Start loading botania.zs ...");
 		<ore:ingotFluixSteel>
 	], 1000000);
 	mods.botania.RuneAltar.addRecipe(<ore:ingotElementium>.firstItem,[
+		<ore:gemSchorl>,
+		<ore:gemSchorl>,
 		<ore:ingotManasteel>,
-		<ore:ingotManasteel>,
-		<ore:gemKunzite>,
 		<ore:dustMana>,
 	], 10000);
 	mods.botania.RuneAltar.addRecipe(<ore:elvenPixieDust>.firstItem,[
-		<biomesoplenty:flower_0:0>,
-		<biomesoplenty:flower_0:0>,
+		<twilightforest:raven_feather>,
+		<twilightforest:raven_feather>,
 		<ore:manaPearl>,
 		<ore:dustMana>,
 	], 10000);
 	mods.botania.RuneAltar.addRecipe(<ore:gemDragonStone>.firstItem,[
-		<minecraft:dragon_breath>,
-		<minecraft:dragon_breath>,
+		<botania:manaresource:15>,
+		<botania:manaresource:15>,
 		<ore:gemManaDiamond>,
 		<ore:dustMana>,
 	], 10000);

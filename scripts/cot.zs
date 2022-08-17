@@ -1,5 +1,5 @@
 #====================================================================
-# ファイル名 : _TEMPLATE.zs
+# ファイル名 : cot.zs
 # 作成者 : Hiiragi Russell Tsubasa: https://github.com/Hiiragi283
 # 情報 : Script for Content Tweaker
 #====================================================================
@@ -27,7 +27,7 @@ import mods.zenutils.HexHelper;
 import scripts.RussellUtils;
 
 //このscriptの読み込みの開始をログに出力
-print("Start loading _TEMPLATE.zs ...");
+print("Start loading cot.zs ...");
 
 //アイテムの登録
 	val items as string[] = [
@@ -52,6 +52,7 @@ print("Start loading _TEMPLATE.zs ...");
 	}
 
 	RussellUtils.addItemColored("grout_ball", "D0D1D6", "minecraft:items/snowball");
+	RussellUtils.addItemColored("feather_black", "181818", "minecraft:items/feather");
 
 	//Coin
 	val mapCoin as string[string] = {
@@ -149,4 +150,4 @@ print("Start loading _TEMPLATE.zs ...");
 	book_facing.register();
 
 //このscriptの読み込みの完了をログに出力
-print("_TEMPLATE.zs loaded!");
+print("cot.zs loaded!");

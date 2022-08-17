@@ -68,16 +68,21 @@ print("Start loading HaC.zs ...");
 	HiiragiUtils.addCraftingShaped(true, <dcs_climate:dcs_build_chandelier:3>, RecipePattern.init([" A ", "BCB", " B "]).map({A:<dcs_climate:dcs_build_chain:0>, B:<ore:stoneMarble>, C:<dcs_climate:dcs_build_challamp:1>}).ingredients, null, null);
 	HiiragiUtils.addCraftingShaped(true, <hap:reactor_advanced>, RecipePattern.init(["ABA", "CDE", "AFA"]).map({A:<ore:ingotTitanium>, B:<hap:compact_heater>, C:<thermaldynamics:duct_16:2>, D:<dcs_climate:dcs_device_reactor>, E:<thermaldynamics:duct_32>, F:<hap:compact_freezer>}).ingredients, null, null);
 
+	HiiragiUtils.addCraftingReplace(<ore:ingotSteel>, <ore:stickHDPE>, <dcs_climate:dcs_sword_toolsteel>);
+
 	HiiragiUtils.addCraftingReplace(<ore:ingotSteel>, <dcs_climate:dcs_ingot:11>, <hap:reactor_fluid_port>);
 	HiiragiUtils.addCraftingReplace(<ore:ingotSteel>, <dcs_climate:dcs_ingot:11>, <hap:reactor_storage>);
 
 	//新規
 	HiiragiUtils.addCraftingShaped(false, <contenttweaker:dustblock_alubrass>, RecipePattern.init(["AAA", "AAA", "ABB"]).map({A:<ore:dustAluminum>, B:<ore:dustCopper>}).ingredients, null, null);
+	HiiragiUtils.addCraftingShaped(false, <contenttweaker:dustblock_electrum>, RecipePattern.init(["AAA", "AAA", "AAA"]).map({A:<ore:dustElectrum>}).ingredients, null, null);
 	HiiragiUtils.addCraftingShaped(false, <contenttweaker:dustblock_ardite>, RecipePattern.init(["AAA", "AAA", "AAA"]).map({A:<ore:dustArdite>}).ingredients, null, null);
 	HiiragiUtils.addCraftingShaped(false, <contenttweaker:dustblock_cobalt>, RecipePattern.init(["AAA", "AAA", "AAA"]).map({A:<ore:dustCobalt>}).ingredients, null, null);
 	HiiragiUtils.addCraftingShaped(false, <contenttweaker:dustblock_constantan>, RecipePattern.init(["AAA", "ABC", "CCC"]).map({A:<ore:dustCopper>, B:<ore:dustCrystal>, C:<ore:dustNickel>}).ingredients, null, null);
+	HiiragiUtils.addCraftingShaped(false, <contenttweaker:dustblock_constantan>, RecipePattern.init(["AAA", "AAA", "AAA"]).map({A:<ore:dustConstantan>}).ingredients, null, null);
 	HiiragiUtils.addCraftingShaped(false, <contenttweaker:dustblock_electrum>, RecipePattern.init(["AAA", "ABC", "CCC"]).map({A:<ore:dustGold>, B:<ore:dustCrystal>, C:<ore:dustSilver>}).ingredients, null, null);
 	HiiragiUtils.addCraftingShaped(false, <contenttweaker:dustblock_invar>, RecipePattern.init(["AAA", "AAA", "BBB"]).map({A:<ore:dustIron>, B:<ore:dustNickel>}).ingredients, null, null);
+	HiiragiUtils.addCraftingShaped(false, <contenttweaker:dustblock_invar>, RecipePattern.init(["AAA", "AAA", "AAA"]).map({A:<ore:dustInvar>}).ingredients, null, null);
 	HiiragiUtils.addCraftingShaped(false, <contenttweaker:dustblock_iridium>, RecipePattern.init(["AAA", "AAA", "AAA"]).map({A:<ore:dustIridium>}).ingredients, null, null);
 	HiiragiUtils.addCraftingShaped(false, <contenttweaker:dustblock_lead>, RecipePattern.init(["AAA", "AAA", "AAA"]).map({A:<ore:dustLead>}).ingredients, null, null);
 	HiiragiUtils.addCraftingShaped(false, <contenttweaker:dustblock_manyullyn>, RecipePattern.init(["AAA", "ABC", "CCC"]).map({A:<ore:dustArdite>, B:<ore:dustCrystal>, C:<ore:dustCobalt>}).ingredients, null, null);

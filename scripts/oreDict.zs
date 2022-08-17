@@ -43,7 +43,7 @@ print("Start loading oreDict.zs ...");
 		<libvulpes:ore0>,
 
 	];
-	for i in 1 to 10 {
+	for i in 1 to 11 {
 		for j in removeLibVulpes {
 			HiiragiUtils.removeFromJEI(j.definition.makeStack(i));
 			HiiragiUtils.removeOreDict(j.definition.makeStack(i));
