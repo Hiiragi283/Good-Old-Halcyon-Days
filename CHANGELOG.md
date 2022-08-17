@@ -1,5 +1,35 @@
 # Changelog
 
+## v0.3.0
+
+### `Chemistry Madness`
+
+- Mod Configuration
+  - Add
+    - `UntranslatedItems-1.12.2-1.0.0`
+      - English and Japanese translation can be used at the same time
+  - Update
+    - `appliedenergistics2-rv6-stable-7-extended_life-v0.53.0` -> `appliedenergistics2-rv6-stable-7-extended_life-v0.53.1`
+    - `CraftTweaker2-1.12-4.1.20.678` -> `CraftTweaker2-1.12-4.1.20.679`
+
+- Added `resources/gohd/lang/ja_jp.lang`
+  - Thanks to [MrKono](https://github.com/MrKono)!
+  - and I did other japanese translation
+- Added new items and recipes!
+- Added new Chisel Groups for ingots
+- Changed the base block for obtaining Grains of Infinity
+- Changed the rank of some items
+- Disabled the recipes for Building Spell (Only looted from Loot Crate)
+- Fixed the recipe of Enchanted Ingot / Magical Apple / Magical Wood
+- Fixed Orechid Terrestris
+- Forced players to use  more Dust Blocks instead of Dusts
+- Make the recipe of Tool Steel Sword harder
+- Now plants from BOP is exchanged with Mana Infusion!
+- Removed unused scripts
+- Updated Quests
+  - added Chemistry Tab!
+  - new custom tool: `Musket of the Gun Devil`
+
 ## v0.2.0
 
 ### `Magician's Dream`
