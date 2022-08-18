@@ -2,7 +2,7 @@
 	title: "{gohd.reward.ring_gold.title}",
 	loot_size: 1,
 	rewards: [{
-		item: "dcs_climate:dcs_color_ring2"
+		item: "contenttweaker:dcs_color_ring2"
 	},
 	{
 		item: "dcs_climate:dcs_color_ring2 1 1"

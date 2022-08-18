@@ -52,7 +52,7 @@ events.onPlayerTick(function(event as PlayerTickEvent) {
 					player.addPotionEffect(<potion:minecraft:haste>.makePotionEffect(120, 7));
 					player.addPotionEffect(<potion:dcs_climate:dcs.potion.bird>.makePotionEffect(120, 7));
 					player.addPotionEffect(<potion:minecraft:luck>.makePotionEffect(120, 7));
-					player.addPotionEffect(<potion:dcs_climate:dcs.potion.reflexion>.makePotionEffect(120, 7));
+					player.addPotionEffect(<potion:dcs_lib:dcs.potion.freeze_res>.makePotionEffect(120, 7));
 					player.addPotionEffect(<potion:minecraft:night_vision>.makePotionEffect(120, 7));
 				}
 			}

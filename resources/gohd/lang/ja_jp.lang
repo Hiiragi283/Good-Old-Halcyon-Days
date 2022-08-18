@@ -12,8 +12,8 @@ gohd.custom.gaia_executer.name=§cガイアの処刑人
 gohd.custom.gun_devil.name=§c銃の悪魔のマスケット銃
 
 #Tooltips
-gohd.tooltip.hidden.name=§6JEIからは削除されている§rが§a存在する§r
-gohd.tooltip.removed.name=§4レシピは削除されている!§r
+gohd.tooltip.hidden.name=§6JEIからは削除されました§rが§a存在する§r
+gohd.tooltip.removed.name=§cレシピは削除されました!§r
 
 gohd.tooltip.burning_stick.name=§a火口を火に右クリックすることで入手
 gohd.tooltip.grout_forming.name=§a木の棒をグラウトに右クリックすることで入手
@@ -34,6 +34,8 @@ gohd.tooltip.cube_magenta.name=§d夜間のみ作成可能
 gohd.tooltip.cube_yellow.name=§e黄昏の森でのみ作成可能
 gohd.tooltip.dustblock.name=§aコンベアベルト上のみで気候精錬が行える
 gohd.tooltip.only_crate.name=§6Loot Crateからしか手に入りません!
+gohd.tooltip.cube_spell_green.name=§c既存のブロックを上書きします!
+gohd.tooltip.dcs_color_ring2.name=§b氷の加護
 
 gohd.tooltip.armor.common.name=§l普通の防具
 gohd.tooltip.armor.uncommon.name=§a§l少し珍しい防具

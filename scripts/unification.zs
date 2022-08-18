@@ -184,6 +184,8 @@ print("Start loading unification.zs ...");
 		[<ore:cubeBlue>, <ore:dustIridium>, <ore:cubeYellow>],
 		[<ore:cubeCyan>, <ore:cubeBlack>, <ore:cubeGreen>],
 	], null, null);
+	//青の金のリングの置き換え
+	HiiragiUtils.addCraftingShaped(false, <contenttweaker:dcs_color_ring2>, [[<ore:dustCrystal>], [<ore:dropBlue>], [<ore:ingotGold>]], null, null);
 
 	HiiragiUtils.addCraftingShaped(false, <artisanworktables:workstation:5>, RecipePattern.init(["ABA", " C ", "DDD"]).map({A:<tconstruct:seared_tank:*>, B: <ore:chest>, C:<ore:workbench>, D:<tconstruct:seared:3>}).ingredients, null, null);
 	HiiragiUtils.addCraftingShaped(false, <contenttweaker:glyph_divide>, RecipePattern.init([" A ", "BCB", " A "]).map({A:<minecraft:skull:1>, B:<ore:boneWithered>, C:<openblocks:generic:10>}).ingredients, null, null);
@@ -269,6 +271,7 @@ print("Start loading unification.zs ...");
 		<botania:specialflower>.withTag({type: "orechid"}),
 		<botania:floatingspecialflower>.withTag({type: "orechid"}),
 		//Heat And Climate
+		<dcs_climate:dcs_color_ring2>,
 		//<dcs_climate:dcs_gem:*>,
 		<dcs_climate:dcs_door_marble>,
 		<dcs_climate:dcs_door_greisen>,
@@ -377,6 +380,8 @@ print("Start loading unification.zs ...");
 		<contenttweaker:cube_magenta>: "gohd.tooltip.cube_magenta.name",
 		<contenttweaker:cube_yellow>: "gohd.tooltip.cube_yellow.name",
 		<dcs_climate:dcs_magic_card_m3:*>: "gohd.tooltip.only_crate.name",
+		<dcs_climate:dcs_magic_card:11>: "gohd.tooltip.cube_spell_green.name",
+		<contenttweaker:dcs_color_ring2>: "gohd.tooltip.dcs_color_ring2.name",
 	};
 	for i, j in mapTooltip {
 		i.addTooltip(I18n.format(j));

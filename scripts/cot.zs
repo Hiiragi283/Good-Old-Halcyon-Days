@@ -4,13 +4,14 @@
 # 情報 : Script for Content Tweaker
 #====================================================================
 
-#loader contenttweaker
 #priority 100
+#loader contenttweaker
 
 //crafttweakerからclassをimport
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 import crafttweaker.player.IPlayer;
+import crafttweaker.world.IWorld;
 
 //各種modからclassをimport
 import mods.contenttweaker.AxisAlignedBB;
@@ -21,6 +22,7 @@ import mods.contenttweaker.IBlockColorSupplier;
 import mods.contenttweaker.IItemRightClick;
 import mods.contenttweaker.ResourceLocation;
 import mods.contenttweaker.VanillaFactory;
+import mods.ctintegration.baubles.IBaubleInventory;
 import mods.zenutils.HexHelper;
 
 //scriptのimport
@@ -63,6 +65,20 @@ print("Start loading cot.zs ...");
 	for i, j in mapCoin {
 		RussellUtils.addItemColored(i, j, "thermalfoundation:items/material/coin_iron");
 	}
+
+//Baubleの登録
+	var ringGoldBlue = VanillaFactory.createBaubleItem("dcs_color_ring2");
+	ringGoldBlue.onWornTick = function(bauble, wearer) {
+		if(wearer instanceof IPlayer) {
+			var player as IPlayer = wearer;
+			var world as IWorld = player.world;
+			if (world.getWorldTime() % 20 == 0) {
+				player.addPotionEffect(<potion:dcs_lib:dcs.potion.freeze_res>.makePotionEffect(120, 0));
+			}
+		}
+	};
+	ringGoldBlue.baubleType = "RING";
+	ringGoldBlue.register();
 
 //ブロックの登録
 	RussellUtils.addBlock("unfired_casting_channel", <blockmaterial:grass>, 3.0, 0.5, "shovel", -1, <soundtype:ground>, false);
