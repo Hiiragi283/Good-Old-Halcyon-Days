@@ -36,6 +36,8 @@ gohd.tooltip.dustblock.name=§aコンベアベルト上のみで気候精錬が�
 gohd.tooltip.only_crate.name=§6Loot Crateからしか手に入りません!
 gohd.tooltip.cube_spell_green.name=§c既存のブロックを上書きします!
 gohd.tooltip.dcs_color_ring2.name=§b氷の加護
+gohd.tooltip.quantum_entangler.name=§a量子もつれデバイスを使うことでCompact Machineのデータをコピーできます!
+gohd.tooltip.tool_forge.name=§aTool Forgeの見た目を自由に変えることができます!
 
 gohd.tooltip.armor.common.name=§l普通の防具
 gohd.tooltip.armor.uncommon.name=§a§l少し珍しい防具

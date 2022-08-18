@@ -36,6 +36,8 @@ gohd.tooltip.dustblock.name=§aOnly smelted by using Conveyor Belt
 gohd.tooltip.only_crate.name=§6Only looted from Loot Crate!
 gohd.tooltip.cube_spell_green.name=§cOverride Existing Blocks!
 gohd.tooltip.dcs_color_ring2.name=§bBlessing of Flosts
+gohd.tooltip.quantum_entangler.name=§aQuanutum Entangler allows you to copy data of compact machines!
+gohd.tooltip.tool_forge.name=§aNow you can change the appearance of Tool Forge into what you like!
 
 gohd.tooltip.armor.common.name=§lCommon Armor
 gohd.tooltip.armor.uncommon.name=§a§lUncommon Armor

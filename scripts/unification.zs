@@ -186,6 +186,12 @@ print("Start loading unification.zs ...");
 	], null, null);
 	//青の金のリングの置き換え
 	HiiragiUtils.addCraftingShaped(false, <contenttweaker:dcs_color_ring2>, [[<ore:dustCrystal>], [<ore:dropBlue>], [<ore:ingotGold>]], null, null);
+	//Compact Machineのコピーレシピ
+	HiiragiUtils.addCraftingShapeless(false, <contenttweaker:quantum_entangler>, [<compactmachines3:psd>, <minecraft:nether_star>], null, null);
+	for i in 0 to 6 {
+		var machine = <compactmachines3:machine>.definition.makeStack(i);
+		HiiragiUtils.addCraftingShapeless(false, machine*2, [machine.marked("inherit"), <contenttweaker:quantum_entangler>.reuse(), machine], HiiragiUtils.inheritStatus(machine), null);
+	}
 
 	HiiragiUtils.addCraftingShaped(false, <artisanworktables:workstation:5>, RecipePattern.init(["ABA", " C ", "DDD"]).map({A:<tconstruct:seared_tank:*>, B: <ore:chest>, C:<ore:workbench>, D:<tconstruct:seared:3>}).ingredients, null, null);
 	HiiragiUtils.addCraftingShaped(false, <contenttweaker:glyph_divide>, RecipePattern.init([" A ", "BCB", " A "]).map({A:<minecraft:skull:1>, B:<ore:boneWithered>, C:<openblocks:generic:10>}).ingredients, null, null);
@@ -382,6 +388,8 @@ print("Start loading unification.zs ...");
 		<dcs_climate:dcs_magic_card_m3:*>: "gohd.tooltip.only_crate.name",
 		<dcs_climate:dcs_magic_card:11>: "gohd.tooltip.cube_spell_green.name",
 		<contenttweaker:dcs_color_ring2>: "gohd.tooltip.dcs_color_ring2.name",
+		<contenttweaker:quantum_entangler>: "gohd.tooltip.quantum_entangler.name",
+		<tconstruct:toolforge:0>: "gohd.tooltip.tool_forge.name",
 	};
 	for i, j in mapTooltip {
 		i.addTooltip(I18n.format(j));

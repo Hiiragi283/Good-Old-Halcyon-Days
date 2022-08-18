@@ -46,6 +46,17 @@ print("Start loading tic.zs ...");
 	HiiragiUtils.addCraftingShaped(true, <tconstruct:slimesling:5>, RecipePattern.init(["ABA", "C C", " C "]).map({A:<minecraft:string>, B:<tconstruct:slime_congealed:5>, C:<tconstruct:edible:5>}).ingredients, null, null);
 	HiiragiUtils.addCraftingShaped(true, <tconstruct:slime_boots:5>, RecipePattern.init(["A A", "B B"]).map({A:<tconstruct:edible:5>, B:<tconstruct:slime_congealed:5>}).ingredients, null, null);
 
+	//Tool Forgeのレシピの統合
+	recipes.remove(<tconstruct:toolforge>);
+	HiiragiUtils.addCraftingShaped(false, <tconstruct:toolforge>.withTag({textureBlock: {id: "tconstruct:dried_clay", Count: 1 as byte, Damage: 1 as short}}), RecipePattern.init(["AAA", "BCB", "B B"]).map({A:<ore:blockSeared>, B: <tconstruct:dried_clay:1>, C:<tconstruct:tooltables:3>}).ingredients, null, null);
+	HiiragiUtils.addCraftingShapeless(false, <tconstruct:toolforge>, [<tconstruct:toolforge>, <*>.marked("texture").reuse()], function(out, ins, cInfo) {
+		var owner as string = ins.texture.definition.owner;
+		var id as string = ins.texture.definition.id.split(":")[1];
+		var idMod as string = owner ~ ":" ~ id;
+		var meta as int = ins.texture.metadata;
+		return <tconstruct:toolforge>.withTag({textureBlock: {id: idMod, Count: 1 as byte, Damage: meta as short}});
+	}, null);
+
 //AWレシピの編集
 	//import
 	//新規

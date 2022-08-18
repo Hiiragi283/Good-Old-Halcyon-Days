@@ -58,6 +58,8 @@ print("Start loading cot.zs ...");
 	RussellUtils.addItemColored("grout_ball", "D0D1D6", "minecraft:items/snowball");
 	RussellUtils.addItemColored("feather_black", "181818", "minecraft:items/feather");
 
+	RussellUtils.addItemShimmer("quantum_entangler");
+
 	//Coin
 	val mapCoin as string[string] = {
 		"coin_manasteel":"81B6F8",
