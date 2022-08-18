@@ -1,9 +1,6 @@
 {
 	x: 4.0d,
 	y: 2.0d,
-	text: [
-		"{gohd.09d26429.52739832.desc.1}"
-	],
 	dependencies: [
 		"8e6a9cab"
 	],
@@ -15,10 +12,23 @@
 		}]
 	},
 	{
-		uid: "518ec5c9",
+		uid: "555586b5",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_tinder 1 2"
+		}]
+	},
+	{
+		uid: "14cd184e",
 		type: "item",
 		items: [{
 			item: "dcs_climate:dcs_tinder 1 1"
 		}]
+	}],
+	rewards: [{
+		uid: "221aeefe",
+		type: "item",
+		item: "dcs_climate:dcs_tinder 1 1",
+		count: 7
 	}]
 }

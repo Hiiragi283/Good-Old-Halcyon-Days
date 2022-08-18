@@ -34,11 +34,8 @@
 		count: 3
 	},
 	{
-		uid: "472f4b29",
-		type: "command",
-		title: "{gohd.09d26429.6ab31c74.reward1}",
-		icon: "bibliocraft:bell",
-		auto: "no_toast",
-		command: "/playsound minecraft:entity.enderdragon.ambient master @p"
+		uid: "4876ccb1",
+		type: "item",
+		item: "contenttweaker:quantum_entangler"
 	}]
 }

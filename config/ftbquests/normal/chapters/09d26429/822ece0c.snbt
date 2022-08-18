@@ -1,8 +1,8 @@
 {
-	x: 7.0d,
+	x: 8.0d,
 	y: 6.0d,
 	dependencies: [
-		"6c77c9cd"
+		"a3e12b21"
 	],
 	tasks: [{
 		uid: "99566b1a",
@@ -10,5 +10,11 @@
 		items: [{
 			item: "tcomplement:alloy_tank"
 		}]
+	}],
+	rewards: [{
+		uid: "4d5a590e",
+		type: "item",
+		item: "contenttweaker:ticket_common",
+		count: 3
 	}]
 }

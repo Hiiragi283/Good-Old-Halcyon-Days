@@ -30,5 +30,10 @@
 		items: [{
 			item: "minecraft:stick"
 		}]
+	}],
+	rewards: [{
+		uid: "35c13871",
+		type: "item",
+		item: "dcs_climate:dcs_handspindle"
 	}]
 }
