@@ -22,6 +22,7 @@ item.contenttweaker.ticket_mythic.name=Ragi Ticket (§cMythic§r)
 item.contenttweaker.book_reloadevents.name=Debugging Book (Reload Events)
 item.contenttweaker.book_syntax.name=Debugging Book (Syntax)
 item.contenttweaker.book_facing.name=Debugging Book (Teleport to spawn point)
+item.contenttweaker.book_data.name=Debugging Book (Print player data)
 
 #Blocks
 tile.contenttweaker.unfired_casting_channel.name=Unfired Casting Channel

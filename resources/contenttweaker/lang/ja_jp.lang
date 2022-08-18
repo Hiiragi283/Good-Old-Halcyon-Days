@@ -22,6 +22,7 @@ item.contenttweaker.ticket_mythic.name=らぎチケット (§c神話§r)
 item.contenttweaker.book_reloadevents.name=柊さんの愛読書 (イベントの再読み込み)
 item.contenttweaker.book_syntax.name=柊さんの愛読書 (文法チェック)
 item.contenttweaker.book_facing.name=柊さんの愛読書 (完璧な真正面を向きたい時ってあるよね？)
+item.contenttweaker.book_data.name=柊さんの愛読書 (貴方ノ全テガ此処ニ在ル)
 
 #Blocks
 tile.contenttweaker.unfired_casting_channel.name=未焼成の鋳造樋

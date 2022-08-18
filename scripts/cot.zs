@@ -8,6 +8,7 @@
 #loader contenttweaker
 
 //crafttweakerからclassをimport
+import crafttweaker.data.IData;
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 import crafttweaker.player.IPlayer;
@@ -23,6 +24,7 @@ import mods.contenttweaker.IItemRightClick;
 import mods.contenttweaker.ResourceLocation;
 import mods.contenttweaker.VanillaFactory;
 import mods.ctintegration.baubles.IBaubleInventory;
+import mods.ctintegration.data.DataUtil;
 import mods.zenutils.HexHelper;
 
 //scriptのimport
@@ -164,6 +166,16 @@ print("Start loading cot.zs ...");
 		return "Pass";
 	};
 	book_facing.register();
+
+	val book_data = mods.contenttweaker.VanillaFactory.createItem("book_data");
+	book_data.rarity = "epic";
+	book_data.itemRightClick = function(stack, world, player, hand) {
+		var data as IData = player.data;
+		var json as string = mods.ctintegration.data.DataUtil.toJson(data);
+		print(json);
+		return "Pass";
+	};
+	book_data.register();
 
 //このscriptの読み込みの完了をログに出力
 print("cot.zs loaded!");
