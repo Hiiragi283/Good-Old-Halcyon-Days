@@ -181,7 +181,7 @@ print("Start loading unification.zs ...");
 		HiiragiUtils.addCraftingShaped(false, <contenttweaker:cube_yellow>, RecipePattern.init(["AAA", "ABA", "AAA"]).map({A:<twilightforest:torchberries>, B:<contenttweaker:cube_yellow_inactive>}).ingredients, null, null);
 	HiiragiUtils.addCraftingShaped(false, <contenttweaker:cube_iridescent>, [
 		[<ore:cubeMagenta>, <ore:cubeWhite>, <ore:cubeRed>],
-		[<ore:cubeBlue>, <ore:dustIridium>, <ore:cubeYellow>],
+		[<ore:cubeBlue>, <minecraft:nether_star>, <ore:cubeYellow>],
 		[<ore:cubeCyan>, <ore:cubeBlack>, <ore:cubeGreen>],
 	], null, null);
 	//青の金のリングの置き換え

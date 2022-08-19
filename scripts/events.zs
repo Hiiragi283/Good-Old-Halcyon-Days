@@ -30,7 +30,7 @@ events.onPlayerTick(function(event as PlayerTickEvent) {
 	if (!world.remote) {
 		//20tickに1回処理を挟む
 		if (world.getWorldTime() % 20 == 0) {
-		//特定のアイテムを利き手に持っている際にイベントを起こす
+			//特定のアイテムを利き手に持っている際にイベントを起こす
 			if (!isNull(player.mainHandHeldItem)) {
 				var itemMain as IItemStack = player.mainHandHeldItem;
 				//Bedrockium Ingot
@@ -55,6 +55,22 @@ events.onPlayerTick(function(event as PlayerTickEvent) {
 					player.addPotionEffect(<potion:dcs_lib:dcs.potion.freeze_res>.makePotionEffect(120, 7));
 					player.addPotionEffect(<potion:minecraft:night_vision>.makePotionEffect(120, 7));
 				}
+			}
+			//温泉につかると再生バフを付与
+			if(world.getBlock(player.position).definition.id == "dcs_climate:dcs_fluidblock_hotspring") {
+				player.addPotionEffect(<potion:minecraft:regeneration>.makePotionEffect(220, 0));
+			}
+			//魔材につかると吐き気デバフを付与
+			if(world.getBlock(player.position).definition.id == "dcs_climate:dcs_fluidblock_mazai") {
+				player.addPotionEffect(<potion:minecraft:nausea>.makePotionEffect(220, 0));
+			}
+			//液体青スライムにつかると跳躍力上昇バフを付与
+			if(world.getBlock(player.position).definition.id == "tconstruct:blueslime") {
+				player.addPotionEffect(<potion:minecraft:jump_boost>.makePotionEffect(220, 2));
+			}
+			//液体紫スライムにつかると幸運バフを付与
+			if(world.getBlock(player.position).definition.id == "tconstruct:purpleslime") {
+				player.addPotionEffect(<potion:minecraft:luck>.makePotionEffect(220, 2));
 			}
 		}
 	}
