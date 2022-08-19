@@ -1,5 +1,28 @@
 # Changelog
 
+## v0.3.1
+
+- **HOTFIX**
+
+- Mod Configuration
+  - remove
+    - `InitialInventory-3.0.0`
+      - Replaced with FTB Utilities
+  - Update
+    - `HeatAndProcessing-1.12.2-1.3.5` -> `HeatAndProcessing-1.12.2-1.3.6`
+- Added new debug item
+- Added `Quantum Entangler`, allowing you to copy data of compact machines!
+- Added tooltip for Green Cube Spell
+- Change the appearance of Tool Forge into what you like!
+- Changed the effect Rainbow Ingot gives
+- Changed the way to give starter item
+- When you soaking in some liquids you can receive certain buffs.
+- Prevent HaC's INITIAL ore generation overriting dungeons
+  - after the second time, this feature DOESN'T work
+- Replaced Blue Gold Ring
+  - The old one allows players to duplicate ANY STACKABLE items
+  - New one gives players Freeze Resistance
+
 ## v0.3.0
 
 ### `Chemistry Madness`
