@@ -77,7 +77,7 @@ print("Start loading cot.zs ...");
 			var player as IPlayer = wearer;
 			var world as IWorld = player.world;
 			if (world.getWorldTime() % 20 == 0) {
-				player.addPotionEffect(<potion:dcs_lib:dcs.potion.freeze_res>.makePotionEffect(120, 0));
+				player.addPotionEffect(<potion:dcs_lib:dcs.potion.freeze_res>.makePotionEffect(220, 0));
 			}
 		}
 	};

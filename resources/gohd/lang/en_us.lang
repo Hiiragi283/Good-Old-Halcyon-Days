@@ -14,14 +14,12 @@ gohd.custom.gun_devil.name=§cMusket of the Gun Devil
 #Tooltips
 gohd.tooltip.hidden.name=§6Hide from JEI§r but §aavailable§r
 gohd.tooltip.removed.name=§cRecipe Removed!§r
+gohd.tooltip.armor.name=%s Armor
+gohd.tooltip.tool.name=%s Tool
 
 gohd.tooltip.burning_stick.name=§aObtained by right-clicking Fire with Tinder
 gohd.tooltip.grout_forming.name=§aObtained by right-clicking Grout with Wooden Stick
-gohd.tooltip.ezstorage_box_0.name=§aPlaced beside blocks in EZ Network, provides 400 item storage
-gohd.tooltip.ezstorage_box_1.name=§aPlaced beside blocks in EZ Network, provides 4,000 item storage
-gohd.tooltip.ezstorage_box_2.name=§aPlaced beside blocks in EZ Network, provides 20,000 item storage
-gohd.tooltip.ezstorage_box_3.name=§aPlaced beside blocks in EZ Network, provides 80,000 item storage
-gohd.tooltip.ezstorage_box_4.name=§aPlaced beside blocks in EZ Network, provides 400,000 item storage
+gohd.tooltip.ezstorage_box.name=§aPlaced beside blocks in EZ Network, provides %s item storage
 gohd.tooltip.ezstorage_ejection.name=§aEject items in EZ Network above blocks
 gohd.tooltip.ezstorage_terminal.name=§aAccess EZ Network without clicking Storage Core
 gohd.tooltip.ezstorage_security.name=§6Only broken by EZ Key
@@ -38,20 +36,6 @@ gohd.tooltip.cube_spell_green.name=§cOverride Existing Blocks!
 gohd.tooltip.dcs_color_ring2.name=§bBlessing of Flosts
 gohd.tooltip.quantum_entangler.name=§aQuanutum Entangler allows you to copy data of compact machines!
 gohd.tooltip.tool_forge.name=§aNow you can change the appearance of Tool Forge into what you like!
-
-gohd.tooltip.armor.common.name=§lCommon Armor
-gohd.tooltip.armor.uncommon.name=§a§lUncommon Armor
-gohd.tooltip.armor.rare.name=§9§lRare Armor
-gohd.tooltip.armor.epic.name=§d§lEpic Armor
-gohd.tooltip.armor.legendary.name=§6§lLegendary Armor
-gohd.tooltip.armor.mythic.name=§c§lMythic Armor
-
-gohd.tooltip.tool.common.name=§lCommon Tool
-gohd.tooltip.tool.uncommon.name=§a§lUncommon Tool
-gohd.tooltip.tool.rare.name=§9§lRare Tool
-gohd.tooltip.tool.epic.name=§d§lEpic Tool
-gohd.tooltip.tool.legendary.name=§6§lLegendary Tool
-gohd.tooltip.tool.mythic.name=§c§lMythic Tool
 
 #Quests
 ## Main: gohd.09d26429.

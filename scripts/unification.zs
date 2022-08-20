@@ -369,11 +369,6 @@ print("Start loading unification.zs ...");
 		<contenttweaker:unfired_casting_table>: "gohd.tooltip.grout_forming.name",
 		<contenttweaker:unfired_casting_basin>: "gohd.tooltip.grout_forming.name",
 		<dcs_climate:dcs_tinder:1>: "gohd.tooltip.burning_stick.name",
-		<ezstorage:storage_box>: "gohd.tooltip.ezstorage_box_0.name",
-		<ezstorage:condensed_storage_box>: "gohd.tooltip.ezstorage_box_1.name",
-		<ezstorage:super_storage_box>: "gohd.tooltip.ezstorage_box_2.name",
-		<ezstorage:ultra_storage_box>: "gohd.tooltip.ezstorage_box_3.name",
-		<ezstorage:hyper_storage_box>: "gohd.tooltip.ezstorage_box_4.name",
 		<ezstorage:output_port>: "gohd.tooltip.ezstorage_ejection.name",
 		<ezstorage:access_terminal>: "gohd.tooltip.ezstorage_terminal.name",
 		<ezstorage:security_box>: "gohd.tooltip.ezstorage_security.name",
@@ -393,6 +388,17 @@ print("Start loading unification.zs ...");
 	};
 	for i, j in mapTooltip {
 		i.addTooltip(I18n.format(j));
+	}
+
+	val mapStorage as string[IItemStack] = {
+		<ezstorage:storage_box>: "400",
+		<ezstorage:condensed_storage_box>: "4,000",
+		<ezstorage:super_storage_box>: "20,000",
+		<ezstorage:ultra_storage_box>: "80,000",
+		<ezstorage:hyper_storage_box>: "400,000",
+	};
+	for i, j in mapStorage {
+		i.addTooltip(I18n.format("gohd.tooltip.ezstorage_box.name", j));
 	}
 
 	val mapDustblock as IItemStack[] = itemUtils.getItemsByRegexRegistryName(".*dustblock_.*");

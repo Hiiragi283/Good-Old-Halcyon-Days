@@ -7,6 +7,7 @@
 #priority 90
 
 //crafttweakerからclassをimport
+import crafttweaker.api.IClient;
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 
@@ -27,8 +28,8 @@ print("Start loading tool.zs ...");
 		HiiragiUtils.removeCrafting(i);
 	}
 
-	val toolTier as IItemStack[][string] = {
-    "gohd.tooltip.tool.common.name": [
+	val toolTier as IItemStack[][string[]] = {
+    ["§lCommon", "§l普通の"]: [
 		<minecraft:carrot_on_a_stick>,
 		<minecraft:bow>,
 		<minecraft:wooden_sword>,
@@ -73,7 +74,7 @@ print("Start loading tool.zs ...");
 		<thermalfoundation:tool.hammer_gold>,
 		<thermalfoundation:tool.excavator_gold>,
 	],
-	"gohd.tooltip.tool.uncommon.name": [
+	["§a§lUncommon", "§a§l少し珍しい"]: [
 		<minecraft:flint_and_steel>,
 		<minecraft:iron_sword>,
 		<minecraft:iron_shovel>,
@@ -153,7 +154,7 @@ print("Start loading tool.zs ...");
 		<thermalfoundation:tool.hammer_iron>,
 		<thermalfoundation:tool.excavator_iron>,
 	],
-	"gohd.tooltip.tool.rare.name": [
+	["§9§lRare", "§9§lレアな"]: [
 		<minecraft:diamond_sword>,
 		<minecraft:diamond_shovel>,
 		<minecraft:diamond_pickaxe>,
@@ -229,7 +230,7 @@ print("Start loading tool.zs ...");
 		<thermalfoundation:tool.hammer_diamond>,
 		<thermalfoundation:tool.excavator_diamond>,
 	],
-	"gohd.tooltip.tool.epic.name": [
+	["§d§lEpic", "§d§l強力な"]: [
 		<aiotbotania:manasteelaiot>,
 		<aiotbotania:elementiumhoe>,
 		<botania:terrasword>,
@@ -283,7 +284,7 @@ print("Start loading tool.zs ...");
 		<twilightforest:ender_bow>,
 		<twilightforest:ice_sword>,
 	],
-	"gohd.tooltip.tool.legendary.name": [
+	["§6§lLegendary", "§6§l伝説級の"]: [
 		<aiotbotania:elementiumaiot>,
 		<minecraft:diamond_hoe>,
 		<advancedrocketry:jackhammer>,
@@ -316,7 +317,7 @@ print("Start loading tool.zs ...");
 		<twilightforest:glass_sword>,
 		<twilightforest:block_and_chain>,
 	],
-	"gohd.tooltip.tool.mythic.name": [
+	["§c§lMythic", "§c§l神話級の"]: [
 		<botania:terrapick>,
 		<botania:infinitefruit>,
 		<botania:kingkey>,
@@ -330,7 +331,11 @@ print("Start loading tool.zs ...");
 	};
 	for i, j in toolTier {
 		for k in j {
-			k.addTooltip(I18n.format(i));
+			if(client.language == "ja_jp") {
+				k.addTooltip(I18n.format("gohd.tooltip.tool.name", i[1]));
+			} else {
+				k.addTooltip(I18n.format("gohd.tooltip.tool.name", i[0]));
+			}
 		}
 	}
 

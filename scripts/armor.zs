@@ -9,6 +9,7 @@
 #priority 90
 
 //crafttweakerからclassをimport
+import crafttweaker.api.IClient;
 import crafttweaker.data.IData;
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
@@ -26,8 +27,8 @@ import scripts.HiiragiUtils;
 print("Start loading armor.zs ...");
 
 //変数の定義
-val armorTier as IItemStack[][string] = {
-	"gohd.tooltip.armor.common.name": [
+val armorTier as IItemStack[][string[]] = {
+	["§lCommon", "§l普通の"]: [
 		<minecraft:chainmail_helmet>,
 		<minecraft:chainmail_chestplate>,
 		<minecraft:chainmail_leggings>,
@@ -43,7 +44,7 @@ val armorTier as IItemStack[][string] = {
 		<twilightforest:arctic_leggings>,
 		<twilightforest:arctic_boots>
 	],
-	"gohd.tooltip.armor.uncommon.name": [
+	["§a§lUncommon", "§a§l少し珍しい"]: [
 		<dcs_climate:dcs_met_brass>,
 		<dcs_climate:dcs_plate_brass>,
 		<dcs_climate:dcs_leggins_brass>,
@@ -77,7 +78,7 @@ val armorTier as IItemStack[][string] = {
 		<twilightforest:ironwood_leggings>,
 		<twilightforest:ironwood_boots>,
 	],
-	"gohd.tooltip.armor.rare.name": [
+	["§9§lRare", "§9§lレアな"]: [
 		<dcs_climate:dcs_met_steel>,
 		<dcs_climate:dcs_plate_steel>,
 		<dcs_climate:dcs_leggins_steel>,
@@ -126,7 +127,7 @@ val armorTier as IItemStack[][string] = {
 		<twilightforest:knightmetal_leggings>,
 		<twilightforest:knightmetal_boots>
 	],
-	"gohd.tooltip.armor.epic.name": [
+	["§d§lEpic", "§d§l強力な"]: [
 		<minecraft:elytra>,
 		<dcs_climate:dcs_met_chalcedony>,
 		<dcs_climate:dcs_plate_chalcedony>,
@@ -165,7 +166,7 @@ val armorTier as IItemStack[][string] = {
 		<twilightforest:yeti_leggings>,
 		<twilightforest:yeti_boots>
 	],
-	"gohd.tooltip.armor.legendary.name": [
+	["§6§lLegendary", "§6§l伝説級の"]: [
 		<dcs_climate:dcs_gemboots_blue>,
 		<dcs_climate:dcs_gemboots_green>,
 		<enderio:item_end_steel_helmet>,
@@ -187,7 +188,7 @@ val armorTier as IItemStack[][string] = {
 		<twilightforest:phantom_helmet>,
 		<twilightforest:phantom_chestplate>
 	],
-	"gohd.tooltip.armor.mythic.name": [
+	["§c§lMythic", "§c§l神話級の"]: [
 		<openblocks:technicolor_glasses>, //It's joke
 		//<projecte:item.pe_gem_armor_3>,
 		//<projecte:item.pe_gem_armor_2>,
@@ -197,7 +198,11 @@ val armorTier as IItemStack[][string] = {
 };
 	for i, j in armorTier {
 		for k in j {
-			k.addTooltip(I18n.format(i));
+			if(client.language == "ja_jp") {
+				k.addTooltip(I18n.format("gohd.tooltip.armor.name", i[1]));
+			} else {
+				k.addTooltip(I18n.format("gohd.tooltip.armor.name", i[0]));
+			}
 		}
 	}
 
