@@ -163,10 +163,6 @@ print("Start loading thermal.zs ...");
 	Refinery.addRecipe(<liquid:drop_black>*250, <dcs_climate:dcs_color:8>%50, <liquid:dcs.date>*250, 2500);
 
 //Induction Smelter
-	mods.thermalexpansion.InductionSmelter.addRecipe(<appliedenergistics2:sky_stone_block>*4, <minecraft:obsidian>*4, <extrautils2:ingredients:5>, 10000);
-	mods.thermalexpansion.InductionSmelter.addRecipe(<appliedenergistics2:sky_stone_block>*8, <minecraft:obsidian>*8, <dcs_climate:dcs_gem_blue:2>, 10000);
-	mods.thermalexpansion.InductionSmelter.addRecipe(<appliedenergistics2:sky_stone_block>*8, <minecraft:obsidian>*8, <dcs_climate:dcs_gem_white:2>, 10000);
-	mods.thermalexpansion.InductionSmelter.addRecipe(<appliedenergistics2:sky_stone_block>*16, <minecraft:obsidian>*16, <dcs_climate:dcs_gem_white:4>, 10000);
 	mods.thermalexpansion.InductionSmelter.addRecipe(<contenttweaker:block_bedrockium>, <enderio:block_infinity:2>, <contenttweaker:ingot_rainbow>, 1000000);
 
 	mods.thermalexpansion.InductionSmelter.addRecipe(<dcs_climate:dcs_gem_red:2>*16, <dcs_climate:dcs_gem_red:2>, <contenttweaker:cube_iridescent>, 8000);
