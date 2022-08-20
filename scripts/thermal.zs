@@ -175,6 +175,9 @@ print("Start loading thermal.zs ...");
 	mods.thermalexpansion.InductionSmelter.addRecipe(<dcs_climate:dcs_gem_white:2>*16, <dcs_climate:dcs_gem_white:2>, <contenttweaker:cube_iridescent>, 8000);
 	mods.thermalexpansion.InductionSmelter.addRecipe(<dcs_climate:dcs_gem_black:2>*16, <dcs_climate:dcs_gem_black:2>, <contenttweaker:cube_iridescent>, 8000);
 
+	mods.thermalexpansion.InductionSmelter.removeRecipe(<tconstruct:ingots:1>, <tconstruct:ingots>);
+	mods.thermalexpansion.InductionSmelter.addRecipe(<tconstruct:ingots:2>*2, <tconstruct:ingots:1>, <tconstruct:ingots>, 9600);
+
 //Photogenic Insolator
 	mods.thermalexpansion.Insolator.addRecipe(<botania:overgrowthseed>, <thermalfoundation:fertilizer:2>*16, <botania:grassseeds:0>, 12000, null, 0, 8000);
 

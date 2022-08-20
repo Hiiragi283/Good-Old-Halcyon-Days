@@ -122,6 +122,11 @@ print("Start loading tic.zs ...");
 	HiiragiUtils.removeFromJEI(HiiragiUtils.castClay("chisel_head"));
 	mods.chisel.Carving.addVariation("cast", HiiragiUtils.castBrass("chisel_head"));
 
+//Alloyingレシピの編集
+	mods.tconstruct.Alloy.removeRecipe(<liquid:manyullyn>);
+
+	mods.tconstruct.Alloy.addRecipe(<liquid:manyullyn>*32, [<liquid:cobalt>*16, <liquid:ardite>*16]);
+
 //Castingレシピの編集
 	HiiragiUtils.addCasting("table", true, <enderio:item_material:11>, <ore:dustBedrock>, <liquid:steel>, 144, true, 5*20);
 	HiiragiUtils.addCasting("table", true, <enderio:item_material:73>, <enderio:item_material:11>, <liquid:dark_steel>, 144, true, 5*20);
@@ -136,7 +141,6 @@ print("Start loading tic.zs ...");
 	HiiragiUtils.addCasting("table", false, <thermalfoundation:material:640>, <thermalfoundation:material:512>, <liquid:electrum>, 144, true, 5*20);
 
 //Meltingレシピの編集
-	mods.tconstruct.Melting.removeRecipe(<liquid:sky_stone>, <appliedenergistics2:sky_stone_block>);
 
 //このscriptの読み込みの完了をログに出力
 print("tic.zs loaded!");
