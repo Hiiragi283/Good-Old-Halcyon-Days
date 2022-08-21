@@ -1,7 +1,7 @@
 #====================================================================
 # ファイル名 : botania.zs
 # 作成者 : Hiiragi Russell Tsubasa: https://github.com/Hiiragi283
-# 情報 : Script for Botania and its addons
+# 情報 : Scripts for Botania and its addons
 #====================================================================
 
 #priority 0
@@ -100,6 +100,17 @@ print("Start loading botania.zs ...");
 	ElvenTrade.addRecipe([<contenttweaker:elven_pearl>], [<botania:manaresource:1>]);
 	ElvenTrade.addRecipe([<contenttweaker:ephemerald>], [<botania:manaresource:2>]);
 	ElvenTrade.addRecipe([<botania:specialflower>.withTag({type: "dreaming_daisy"})], [<botania:specialflower>.withTag({type: "puredaisy"})]);
+	//BOP`s Corals
+	ElvenTrade.addRecipe([<biomesoplenty:coral:0>], [<minecraft:dye:15>]);
+	//BOP's Lilies
+	ElvenTrade.addRecipe([<biomesoplenty:waterlily:0>], [<minecraft:waterlily>]);
+	//BOP's Plants
+	ElvenTrade.addRecipe([<biomesoplenty:plant_0:0>], [<minecraft:tallgrass:1>]);
+	//BOP's Double Plants
+	ElvenTrade.addRecipe([<biomesoplenty:double_plant:0>], [<minecraft:double_plant:2>]);
+	//BOP's Mushrooms
+	ElvenTrade.addRecipe([<biomesoplenty:mushroom:4>], [<botania:mushroom:12>]);
+	//BOP`s Flowers
 	ElvenTrade.addRecipe([<biomesoplenty:flower_1:5>], [<minecraft:double_plant:4>]);
 
 
@@ -137,8 +148,7 @@ print("Start loading botania.zs ...");
 	for i in 0 to 4 {
 		mods.botania.ManaInfusion.addAlchemy(<biomesoplenty:coral>.definition.makeStack(i+1), <biomesoplenty:coral>.definition.makeStack(i), 400);
 	}
-	mods.botania.ManaInfusion.addAlchemy(<biomesoplenty:seaweed>, <biomesoplenty:coral:4>, 400);
-	mods.botania.ManaInfusion.addAlchemy(<biomesoplenty:coral:0>, <biomesoplenty:seaweed>, 400);
+	mods.botania.ManaInfusion.addAlchemy(<biomesoplenty:coral:0>, <biomesoplenty:coral:4>, 400);
 	//BOP's Lilies
 	for i in 0 to 3 {
 		mods.botania.ManaInfusion.addAlchemy(<biomesoplenty:waterlily>.definition.makeStack(i+1), <biomesoplenty:waterlily>.definition.makeStack(i), 400);
@@ -199,6 +209,7 @@ print("Start loading botania.zs ...");
 	PureDaisy.addRecipe(<extrautils2:compresseddirt:3>, <biomesoplenty:grass:5>);
 	PureDaisy.addRecipe(<twilightforest:twilight_sapling:9>, <biomesoplenty:sapling_1>);
 	PureDaisy.addRecipe(<dcs_climate:dcs_ore_gemblock:6>, <botania:livingrock>);
+	PureDaisy.addRecipe(<twilightforest:root:0>, <twilightforest:root:1>);
 	for i in 0 to 16 {
 		PureDaisy.addRecipe(<twilightforest:twilight_log>.definition.makeStack(i), <botania:livingwood>);
 		PureDaisy.addRecipe(<twilightforest:magic_log>.definition.makeStack(i), <botania:livingwood>);

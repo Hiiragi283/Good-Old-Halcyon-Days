@@ -1,7 +1,7 @@
 #====================================================================
 # ファイル名 : enderio.zs
 # 作成者 : Hiiragi Russell Tsubasa: https://github.com/Hiiragi283
-# 情報 : Script for Ender IO and its addons
+# 情報 : Scripts for Ender IO and its addons
 #====================================================================
 
 #priority 0

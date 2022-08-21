@@ -1,7 +1,7 @@
 #====================================================================
 # ファイル名 : ae2.zs
 # 作成者 : Hiiragi Russell Tsubasa: https://github.com/Hiiragi283
-# 情報 : Script for Applied Energistics 2
+# 情報 : Scripts for Applied Energistics 2
 #====================================================================
 
 #priority 0

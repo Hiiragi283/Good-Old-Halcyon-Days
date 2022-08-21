@@ -1,7 +1,7 @@
 #====================================================================
 # ファイル名 : cot.zs
 # 作成者 : Hiiragi Russell Tsubasa: https://github.com/Hiiragi283
-# 情報 : Script for Content Tweaker
+# 情報 : Scripts for Content Tweaker
 #====================================================================
 
 #priority 100
@@ -43,6 +43,7 @@ print("Start loading cot.zs ...");
 		"glyph_divide",
 		"ingot_bedrockium",
 		"ingot_rainbow",
+		"item_fire",
 		"reagent_halogen",
 		"ticket_common",
 		"ticket_uncommon",

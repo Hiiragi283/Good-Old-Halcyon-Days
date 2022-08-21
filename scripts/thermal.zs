@@ -1,7 +1,7 @@
 #====================================================================
 # ファイル名 : thermal.zs
 # 作成者 : Hiiragi Russell Tsubasa: https://github.com/Hiiragi283
-# 情報 : Script for mods made by Team Cofh
+# 情報 : Scripts for mods made by Team Cofh
 #====================================================================
 
 #priority 0

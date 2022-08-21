@@ -1,7 +1,7 @@
 #====================================================================
 # ファイル名 : setEffect.zs
 # 作成者 : Hiiragi Russell Tsubasa: https://github.com/Hiiragi283
-# 情報 : Script for Set Effect
+# 情報 : Scripts for Set Effect
 #====================================================================
 
 #priority 0

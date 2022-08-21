@@ -1,7 +1,7 @@
 #====================================================================
 # ファイル名 : unification.zs
 # 作成者 : Hiiragi Russell Tsubasa: https://github.com/Hiiragi283
-# 情報 : Script for unifing some conflicts and internal data
+# 情報 : Scripts for unifing some conflicts and internal data
 #====================================================================
 
 #priority 90
@@ -35,6 +35,7 @@ print("Start loading unification.zs ...");
 	val removeCrafting as IItemStack[] = [
 		<dcs_climate:dcs_magic_card_m3:*>,
 		<dcs_climate:dcs_ore_gemblock:4>,
+		<twilightforest:uncrafting_table>,
 	];
 	for i in removeCrafting {
 		HiiragiUtils.removeCrafting(i);
@@ -253,7 +254,7 @@ print("Start loading unification.zs ...");
 		<appliedenergistics2:material:24>: <appliedenergistics2:material:17>,
 		<appliedenergistics2:material:22>: <appliedenergistics2:material:18>,
 		<contenttweaker:ingot_bedrockium>*9: <ore:compressed8xCobblestone>,
-		<minecraft:torch>: <ore:stickWood>,
+		<dcs_climate:dcs_tinder:1>: <dcs_climate:dcs_tinder:0>,
 		<threng:material:6>: <contenttweaker:assembly_parallel>,
 		<threng:material:14>: <contenttweaker:assembly_speculative>,
 		<tconstruct:metal:5>: <contenttweaker:dustblock_alubrass>,

@@ -1,7 +1,7 @@
 #====================================================================
 # ファイル名 : advrocktery.zs
 # 作成者 : Hiiragi Russell Tsubasa: https://github.com/Hiiragi283
-# 情報 : Script for Advanced Rocktery
+# 情報 : Scripts for Advanced Rocktery
 #====================================================================
 
 #priority 0

@@ -1,7 +1,7 @@
 #====================================================================
 # ファイル名 : mekanism.zs
 # 作成者 : Hiiragi Russell Tsubasa: https://github.com/Hiiragi283
-# 情報 : Script for Mekanism and its addon
+# 情報 : Scripts for Mekanism and its addon
 #====================================================================
 
 #priority 0

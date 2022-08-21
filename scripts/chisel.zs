@@ -1,7 +1,7 @@
 #====================================================================
 # ファイル名 : chisel.zs
 # 作成者 : Hiiragi Russell Tsubasa: https://github.com/Hiiragi283
-# 情報 : Script for Chisel
+# 情報 : Scripts for Chisel
 #====================================================================
 
 #priority 97
@@ -60,6 +60,7 @@ print("Start loading chisel.zs ...");
 		"item_nickel": <ore:ingotNickel>.items,
 		"item_steel": <ore:ingotSteel>.items,
 		"item_bronze": <ore:ingotBronze>.items,
+		"item_cropSeaweed": <ore:cropSeaweed>.items,
 	};
 	for i, j in chiselOreDict {
 		mods.chisel.Carving.addGroup(i);

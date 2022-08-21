@@ -1,7 +1,7 @@
 #====================================================================
 # ファイル名 : bop.zs
 # 作成者 : Hiiragi Russell Tsubasa: https://github.com/Hiiragi283
-# 情報 : Script for Biomes O Plenty
+# 情報 : Scripts for Biomes O Plenty
 #====================================================================
 
 #priority 0

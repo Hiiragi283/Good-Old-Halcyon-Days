@@ -1,7 +1,7 @@
 #====================================================================
 # ファイル名 : compactMachines3.zs
 # 作成者 : Hiiragi Russell Tsubasa: https://github.com/Hiiragi283
-# 情報 : Script for Compact Machines 3
+# 情報 : Scripts for Compact Machines 3
 #====================================================================
 
 #priority 0

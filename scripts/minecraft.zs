@@ -1,7 +1,7 @@
 #====================================================================
 # ファイル名 : minecraft.zs
 # 作成者 : Hiiragi Russell Tsubasa: https://github.com/Hiiragi283
-# 情報 : Script for Minecraft
+# 情報 : Scripts for Minecraft
 #====================================================================
 
 #priority 0

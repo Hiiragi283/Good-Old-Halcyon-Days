@@ -1,7 +1,7 @@
 #====================================================================
 # ファイル名 : tool.zs
 # 作成者 : Hiiragi Russell Tsubasa: https://github.com/Hiiragi283
-# 情報 : Script for All Tools
+# 情報 : Scripts for All Tools
 #====================================================================
 
 #priority 90

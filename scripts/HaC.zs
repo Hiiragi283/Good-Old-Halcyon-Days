@@ -1,7 +1,7 @@
 #====================================================================
 # ファイル名 : HaC.zs
 # 作成者 : Hiiragi Russell Tsubasa: https://github.com/Hiiragi283
-# 情報 : Script for Heat And Climate and its addons
+# 情報 : Scripts for Heat And Climate and its addons
 #====================================================================
 
 #priority 0
@@ -57,21 +57,17 @@ print("Start loading HaC.zs ...");
 	}
 
 	//上書き
+	//Heat And Climate
 	HiiragiUtils.addCraftingShaped(true, <dcs_climate:dcs_device_lowchest_wood>, RecipePattern.init(["AAA", "BCB", "AAA"]).map({A:<ore:plankWood>, B:<ore:stickWood>, C:<ore:chest>}).ingredients, null, null);
-	//Gypsum Chandelier
-	HiiragiUtils.addCraftingShaped(true, <dcs_climate:dcs_build_chandelier>, RecipePattern.init([" A ", "BCB", " B "]).map({A:<dcs_climate:dcs_build_chain:0>, B:<ore:gemGypsum>, C:<dcs_climate:dcs_build_challamp:1>}).ingredients, null, null);
-	//Rock Salt Chandelier
-	HiiragiUtils.addCraftingShaped(true, <dcs_climate:dcs_build_chandelier:1>, RecipePattern.init([" A ", "BCB", " B "]).map({A:<dcs_climate:dcs_build_chain:2>, B:<ore:gemSalt>, C:<dcs_climate:dcs_build_challamp:1>}).ingredients, null, null);
-	//Chacedony Chandelier
-	HiiragiUtils.addCraftingShaped(true, <dcs_climate:dcs_build_chandelier:2>, RecipePattern.init([" A ", "BCB", " B "]).map({A:<dcs_climate:dcs_build_chain:1>, B:<ore:gemSalt>, C:<dcs_climate:dcs_build_challamp:2>}).ingredients, null, null);
-	//marble Chandelier
-	HiiragiUtils.addCraftingShaped(true, <dcs_climate:dcs_build_chandelier:3>, RecipePattern.init([" A ", "BCB", " B "]).map({A:<dcs_climate:dcs_build_chain:0>, B:<ore:stoneMarble>, C:<dcs_climate:dcs_build_challamp:1>}).ingredients, null, null);
-	HiiragiUtils.addCraftingShaped(true, <hap:reactor_advanced>, RecipePattern.init(["ABA", "CDE", "AFA"]).map({A:<ore:ingotTitanium>, B:<hap:compact_heater>, C:<thermaldynamics:duct_16:2>, D:<dcs_climate:dcs_device_reactor>, E:<thermaldynamics:duct_32>, F:<hap:compact_freezer>}).ingredients, null, null);
-
 	HiiragiUtils.addCraftingReplace(<ore:ingotSteel>, <ore:stickHDPE>, <dcs_climate:dcs_sword_toolsteel>);
 
-	HiiragiUtils.addCraftingReplace(<ore:ingotSteel>, <dcs_climate:dcs_ingot:11>, <hap:reactor_fluid_port>);
-	HiiragiUtils.addCraftingReplace(<ore:ingotSteel>, <dcs_climate:dcs_ingot:11>, <hap:reactor_storage>);
+	//Heat And Processing
+	HiiragiUtils.addCraftingShaped(true, <hap:reactor_advanced>, [
+		[<thermaldynamics:duct_32>, <hap:compact_freezer>, <hap:compact_heater>],
+		[<thermaldynamics:duct_16:2>, <dcs_climate:dcs_device_reactor>, <ore:ingotStainlessSteel>],
+		[<ore:ingotTitaniumAlloy>, <ore:gearDark>, <ore:ingotTitaniumAlloy>]], null, null);
+	HiiragiUtils.addCraftingShaped(true, <hap:reactor_fluid_port>, RecipePattern.init(["AAA", " B ", "CCC"]).map({A:<ore:gemSlate>, B:<thermalexpansion:device:6>, C:<ore:ingotStainlessSteel>}).ingredients, null, null);
+	HiiragiUtils.addCraftingShaped(true, <hap:reactor_storage>, RecipePattern.init(["AAA", " B ", "CCC"]).map({A:<ore:ingotCobalt>, B:<thermalexpansion:device:5>, C:<ore:ingotStainlessSteel>}).ingredients, null, null);
 
 	//新規
 	HiiragiUtils.addCraftingShaped(false, <contenttweaker:dustblock_alubrass>, RecipePattern.init(["AAA", "AAA", "ABB"]).map({A:<ore:dustAluminum>, B:<ore:dustCopper>}).ingredients, null, null);
