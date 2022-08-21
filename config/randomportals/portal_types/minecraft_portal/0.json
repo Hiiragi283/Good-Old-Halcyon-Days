@@ -30,7 +30,12 @@
 			{
 				"registryName": "biomesoplenty:leaves_2",
 				"meta": 4,
-				"minimumAmount": 10
+				"minimumAmount": 0
+			},
+			{
+				"registryName": "biomesoplenty:leaves_2",
+				"meta": 12,
+				"minimumAmount": 0
 			}
 		],
 		"requiredCorner": "ANY",
