@@ -25,7 +25,7 @@ gohd.tooltip.ezstorage_terminal.name=§aStorage Coreをクリックしなくて�
 gohd.tooltip.ezstorage_security.name=§6EZ Keyでのみ撤去できる
 gohd.tooltip.ezstorage_dolly.name=§aバニラチェストかStorage Coreのみ移動可能
 gohd.tooltip.infinity_booster_card.name=§6ドロップはウィザー(30%)またはエンダードラゴン(100%)から
-gohd.tooltip.ingot_rainbow.name=§d私§cを§6オフハンド§eに§a持て§2ば, §b私は§1あなたに§9ま§5る§dで§c夢§6の§eよ§aう§2な§b力を§1与える§fでしょう!
+gohd.tooltip.ingot_rainbow.name=§d私§cを§6オフハンド§eに§a持て§2ば，§b私は§1あなたに§9ま§5る§dで§c夢§6の§eよ§aう§2な§b力を§1与える§fでしょう!
 gohd.tooltip.bedrock.name=§a採掘レベルが4以上のツルハシで右クリックすることで回収できる.
 gohd.tooltip.cube_cyan.name=§b雨天時のみ作成可能
 gohd.tooltip.cube_magenta.name=§d夜間のみ作成可能
@@ -50,52 +50,46 @@ gohd.ingotSUS.title=Tier 3: SUSインゴット
 gohd.ingotToolSteel.title=Tier 3: 工具鋼インゴット
 gohd.ingotTitanium.title=Tier 4: チタン合金インゴット
 gohd.ingotMangalloy.title=Tier 4: 高マンガン鋼インゴット
-gohd.ingotTungstensteel.title=Tier 5: タングステン鋼インゴット
 
 ### Main
 gohd.main.title=メイン
-gohd.hac.tooltip=Heat And Climate (HaC)のHeat And Processing (HaP)についての情報はtooltipsまたはJEIのタブに記載されている.
-gohd.5f3109ce.648774ca.title=GOHDへようこそ!
-gohd.5f3109ce.648774ca.subtitle=Good Old Halcyon Days, 略して"GOHD"
-gohd.5f3109ce.648774ca.task1=楽しんで!
-gohd.09d26429.648774ca.title=冒険の始まり!
+gohd.hac.tooltip=Heat And Climate (HaC)とHeat And Processing (HaP) についての情報はtooltipsまたはJEIのタブに記載されている.
 gohd.09d26429.eedd4b0e.title=作者のTwitterリンク
 gohd.09d26429.d881497d.title=作者のGitHubリンク
+gohd.09d26429.ab5cc985.title=HaCのwiki
+
+gohd.5f3109ce.648774ca.title=GOHDへようこそ!
+gohd.5f3109ce.648774ca.subtitle=Good Old Halcyon Days、略して"GOHD"
+gohd.5f3109ce.648774ca.task1=楽しんで!
+gohd.5f3109ce.648774ca.desc1=このmodpackはHeat And Climateに関する知識が必要となります。
+gohd.5f3109ce.648774ca.desc2=なので初めてHaCを遊ぶ方は上のクエストにあるリンクから作者のwikiに飛び，読んでから遊ぶことをお勧めします。
 gohd.09d26429.8297ab4c.title=なぜ手だけで原木を切れないと思ったのか?
-gohd.09d26429.baa9cb1d.subtitle=オリジナル, だけど微妙
-gohd.09d26429.47a3fa84.subtitle=オリジナルの改良版
+gohd.09d26429.baa9cb1d.subtitle=オリジナル、だけど微妙
 gohd.09d26429.4fb7c614.title=Tinker's Toolへの第一歩
-gohd.09d26429.42aa3c8a.title=Dirty Deeds Done Dirt Cheap (汚れた行為で安く済ませる)
+gohd.09d26429.42aa3c8a.title=Dirty Deeds Done Dirt Cheap (いともたやすく行われるえげつない行為)
 gohd.09d26429.8e6a9cab.title=苗木から木の棒を
-gohd.09d26429.06357b7e.desc1=緑の鉱石はとーーーーっても見つけづらいから, ショップのタブで緑の金リングを購入することをおススメするよ.
-gohd.09d26429.52739832.desc.1=初めての火は木材を木の棒2本で右クリック
-gohd.09d26429.a1433ad5.title=お口じゃりじゃり (笑)
-gohd.09d26429.efbbdf1d.desc.1=Unfired Casting Basinはグラウトを木の棒で1回クリックして入手.
-gohd.09d26429.efbbdf1d.desc.2=Unfired Casting Tableは2回
-gohd.09d26429.6cd694d7.desc.1=Unfired Casting Channelのための陶芸の道は3回必要
-gohd.09d26429.bf14d483.title=明るいけど寒い?
+gohd.09d26429.a1433ad5.title=お口の中がじゃりじゃりする～wwwwwwwww
+gohd.09d26429.35314cfb.title=SMELTING気候精錬
 gohd.09d26429.048fe784.desc1=HaC機械の回転だけでなくツルハシとしても使うことができる.
-gohd.09d26429.6777b90d.desc1=ツルハシとしては使えないが, 耐久値は無限!
-### Middle Age
-gohd.middleAge.title=Middle Age
-gohd.09d26429.f9c67698.title=最初の上位気候製錬
-gohd.09d26429.01c0841d.subtitle=別の鉄入手法
+gohd.09d26429.6777b90d.desc1=ツルハシとしては使えないが、耐久値は無限!
 gohd.09d26429.8b4775e4.title=UHT気候製錬
 gohd.09d26429.8b4775e4.subtitle=UHTは"Ultra High Heat"のこと
 gohd.09d26429.2418ecab.subtitle=Bi2Sr2Ca2Cu3O10
-### Chemical Age:
-gohd.chemicalAge.title=Chemical Age
 gohd.09d26429.0edcbf3b.desc1=インフィニティの粒はエンドでのみ入手可能.
-### Industrial Age
-gohd.industrialAge.title=Industrial Age
 gohd.09d26429.bc22061f.title=白金族の粉
 gohd.09d26429.6ab31c74.title=建造物のミニチュア化の時間だ!
-gohd.09d26429.6ab31c74.reward1=終わりを告げるドラゴンの声
 gohd.09d26429.7f89ed7b.title=デバイスを紛失した時に、別のデバイスを提供してくれるかもしれないクエスト.
 gohd.09d26429.7f89ed7b.task1=いいかい? もう無くすなよ?
 gohd.09d26429.a230052c.desc1=エンダーの欠片から作成することをおススメします
 
-### Minerals: gohd.cccede9d.
+## Heat And Climate: gohd.b98d2902.
+gohd.hac.title=Heat And Climate
+gohd.b98d2902.bf14d483.title=明るいけど寒い?
+gohd.b98d2902.146a109c.desc1=高温や低温の場所にいるとダメージを受けます。
+gohd.b98d2902.146a109c.desc2=これらは適切な防具を着たり，火炎耐性や冷気耐性を得たり，別の熱源を置くことで温度を相殺したりすることで軽減あるいは無効化できます。
+gohd.b98d2902.85f1fb5d.title=Pattern Paper
+
+## Minerals: gohd.cccede9d.
 gohd.minerals.title=鉱物資源
 gohd.cccede9d.b679e55a.title=HaCの鉱脈
 gohd.cccede9d.add5de61.title=赤鉱脈
@@ -104,13 +98,13 @@ gohd.cccede9d.4b446108.title=青鉱脈
 gohd.cccede9d.94dd1723.title=白鉱脈
 gohd.cccede9d.fcea16fa.title=黒鉱脈
 gohd.cccede9d.d70f01cb.title=スカルン鉱床
-gohd.cccede9d.d70f01cb.desc1=スカルン鉱床は3つの種類があり, 様々なバイオームに§l稀に§r生成される.
-gohd.cccede9d.1313a69a.title=スカルン鉱床 (石)
-gohd.cccede9d.1313a69a.desc1=スカルン鉱床 (石) は森林系バイオームに§l稀に§r生成される.
-gohd.cccede9d.3634dbb2.title=スカルン鉱床 (石灰石)
-gohd.cccede9d.3634dbb2.desc1=スカルン鉱床 (石灰石) は平原系, 砂漠系及びサバンナ系バイオームに§l稀に§r生成される.
-gohd.cccede9d.cd18f633.title=スカルン鉱床 (ホルンフェルス)
-gohd.cccede9d.cd18f633.desc1=スカルン鉱床 (ホルンフェルス) は海洋系及び湿地系に§l稀に§r生成される.
+gohd.cccede9d.d70f01cb.desc1=スカルン鉱床は3つの種類があり、様々なバイオームに§l稀に§r生成される.
+gohd.cccede9d.1313a69a.title=スカルン鉱床(石)
+gohd.cccede9d.1313a69a.desc1=スカルン鉱床(石)は 森林系バイオームに§l稀に§r生成される.
+gohd.cccede9d.3634dbb2.title=スカルン鉱床(石灰石)
+gohd.cccede9d.3634dbb2.desc1=スカルン鉱床(石灰石)は 平原系、砂漠系及びサバンナ系バイオームに§l稀に§r生成される.
+gohd.cccede9d.cd18f633.title=スカルン鉱床(ホルンフェルス)
+gohd.cccede9d.cd18f633.desc1=スカルン鉱床(ホルンフェルス)は 海洋系及び湿地系に§l稀に§r生成される.
 gohd.cccede9d.33f25c86.title=グアノ鉱脈
 gohd.cccede9d.33f25c86.desc1=グアノ鉱脈は海の下に生成される.
 gohd.cccede9d.bdc29cf2.desc1=湯の華は寒い山岳系バイオームに生成される温泉中に生成される.
@@ -119,7 +113,7 @@ gohd.cccede9d.8ac28a20.desc1=Abyssal Geodeは海洋バイオームの下に生�
 gohd.cccede9d.1a7f5909.subtitle=tile.railcraft.ore.magic.name
 gohd.cccede9d.1a7f5909.desc1=Firestone Oreはネザーの溶岩湖の下に生成される.
 gohd.cccede9d.5a6ee22b.desc1=Refined Firestoneは溶岩でチャージできる.
-gohd.cccede9d.5a6ee22b.desc2=Charged Refined Firestoneは固形燃料の他, 着火剤としても使うことができる.
+gohd.cccede9d.5a6ee22b.desc2=Charged Refined Firestoneは固形燃料の他、着火剤としても使うことができる.
 gohd.cccede9d.fed34783.task1=鉱石の塊 (3x)
 gohd.cccede9d.3aeb8033.task1=鉱石の欠片 (4x)
 gohd.cccede9d.c0d4a6c8.task1=鉱石の結晶 (5x)
@@ -189,8 +183,6 @@ gohd.0290d76b.ff5f1169.title=冒険のスターターキット
 
 ##End Game: gohd.0f73c1bb.
 gohd.end_game.title=Good Old Minecraft!
-
-gohd.0f73c1bb.4955912c.subtitle=Good Old Ages
 gohd.0f73c1bb.978f1566.subtitle=惑星 "Minecraft"
 
 gohd.0f73c1bb.73be3bc0.title="Minecraftポータルの作成"
@@ -198,8 +190,8 @@ gohd.0f73c1bb.73be3bc0.desc1=MinecraftポータルのフレームをEarthでク�
 gohd.0f73c1bb.0143a624.title="惑星へワープ"
 gohd.0f73c1bb.0143a624.desc1=Earthをartifactスロットへ.
 gohd.0f73c1bb.8867e772.desc1=ご存じの通りこれがこのパックの最後のクエストです.
-gohd.0f73c1bb.8867e772.desc2=思い返せば, 本当にたくさんのクエストがありました. そのほとんどは難しいものではありませんが, ここまでの道のりは決して楽なものではありませんでした. 何日も, 何週間も, 何カ月もかけて, もしかしたらここにたどり着いたかもしれません. それは誰にでもできることではありません. これまでGOHDをプレイしていただきありがとうございました!
-gohd.0f73c1bb.8867e772.desc3=ところで, このクエストをクリアするにはお好きな方をお選びください. ひとつは"Minecraftのポータルを作る", もうひとつは"惑星にワープする"です. このクエストをクリアするには, "Minecraftのポータルを作る"方法と"惑星にワープする"方法があります.
+gohd.0f73c1bb.8867e772.desc2=思い返せば、本当にたくさんのクエストがありました。そのほとんどは難しいものではありませんが、ここまでの道のりは決して楽なものではありませんでした。何日も、何週間も、何カ月もかけて、もしかしたらここにたどり着いたかもしれません。それは誰にでもできることではありません。これまでGOHDをプレイしていただきありがとうございました!
+gohd.0f73c1bb.8867e772.desc3=ところで、このクエストをクリアするにはお好きな方をお選びください。ひとつは"Minecraftのポータルを作る"、もうひとつは"惑星にワープする"です。このクエストをクリアするには、"Minecraftのポータルを作る"方法と"惑星にワープする"方法があります.
 gohd.0f73c1bb.8867e772.desc4=Good (Old) luck for you.
 gohd.0f73c1bb.8867e772.task1=惑星"Minecraft"への旅行
 gohd.0f73c1bb.8867e772.reward1=Goobye, my good old memories.
