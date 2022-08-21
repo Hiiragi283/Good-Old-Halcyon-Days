@@ -1,5 +1,31 @@
 # Changelog
 
+## v0.3.2
+
+- Mod Configuration
+  - Add
+    - `mekatweaker-1.12-1.2.0`
+      - Tweak mekanism gas and infuser type
+    - `Requious Frakto-0.12`
+      - Useful for making modpack more comfortable
+  - Update
+    - `appliedenergistics2-rv6-stable-7-extended_life-v0.53.1` -> `appliedenergistics2-rv6-stable-7-extended_life-v0.53.2`
+    - `HeatAndClimateLib_1.12.2-3.9.2` -> `HeatAndClimateLib_1.12.2-3.9.3`
+    - `HeatAndClimateMod_1.12.2-3.9.7` -> `HeatAndClimateMod_1.12.2-3.9.8`
+    - `HeatAndProcessing-1.12.2-1.3.6` -> `HeatAndProcessing-1.12.2-1.3.7`
+
+- Add more materials for Artisan Worktables!
+- Edit some recipes
+- Fix incorrect translation
+- Fix the amount of Manyullyn Ingot for outputs
+- Fix the Minecraft Portal
+- More useful JEi Tab for Scavenge is added!
+  - Scavenge (added Block Output)
+- **Radical restructuring of the quest!**
+  - Add new quest tab: Heat And Climate
+  - Restyled Main Tab
+- Update translation system
+
 ## v0.3.1
 
 - **HOTFIX**
@@ -19,7 +45,7 @@
 - When you soaking in some liquids you can receive certain buffs.
 - Prevent HaC's INITIAL ore generation overriting dungeons
   - after the second time, this feature DOESN'T work
-- Replaced Blue Gold Ring
+- **Replaced Blue Gold Ring**
   - The old one allows players to duplicate ANY STACKABLE items
   - New one gives players Freeze Resistance
 
