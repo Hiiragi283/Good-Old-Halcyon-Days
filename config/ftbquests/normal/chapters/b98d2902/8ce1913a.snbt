@@ -1,22 +1,23 @@
 {
-	x: 20.0d,
-	y: -3.0d,
+	x: 8.0d,
+	y: 0.0d,
 	shape: "diamond",
 	text: [
 		"{gohd.hac.tooltip}"
 	],
 	dependencies: [
-		"b2567136"
+		"8edd9ae8"
 	],
+	size: 2.0d,
 	tasks: [{
-		uid: "ac513fbb",
+		uid: "cd3d7447",
 		type: "item",
 		items: [{
-			item: "hap:compact_heater"
+			item: "hap:compact_freezer"
 		}]
 	}],
 	rewards: [{
-		uid: "8d42a9ef",
+		uid: "99386d47",
 		type: "item",
 		item: "contenttweaker:ticket_epic"
 	}]

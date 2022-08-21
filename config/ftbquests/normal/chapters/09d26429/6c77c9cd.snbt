@@ -1,11 +1,12 @@
 {
 	title: "{gohd.ingotIron.title}",
-	x: 7.0d,
-	y: 3.0d,
+	x: 9.0d,
+	y: 2.0d,
 	shape: "diamond",
 	dependencies: [
-		"de863d39"
+		"0672501a"
 	],
+	size: 2.0d,
 	tasks: [{
 		uid: "318d9b13",
 		type: "item",

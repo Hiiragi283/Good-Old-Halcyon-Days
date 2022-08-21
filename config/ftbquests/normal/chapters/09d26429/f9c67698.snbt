@@ -1,19 +1,11 @@
 {
 	icon: "dcs_climate:dcs_ore_dustblock 1 5",
-	x: 12.0d,
+	x: 14.0d,
 	y: 1.0d,
-	description: "{gohd.09d26429.f9c67698.title}",
 	dependencies: [
-		"62b97ff1"
+		"35314cfb"
 	],
 	tasks: [{
-		uid: "ed4c539c",
-		type: "item",
-		items: [{
-			item: "dcs_climate:dcs_ore_dustblock 1 5"
-		}]
-	},
-	{
 		uid: "8bcb87fc",
 		type: "item",
 		items: [{
@@ -23,7 +15,7 @@
 	rewards: [{
 		uid: "f1d91785",
 		type: "item",
-		item: "dcs_climate:dcs_ore_dustblock 1 5",
+		item: "dcs_climate:dcs_ore_heatingmetal 1 2",
 		count: 3
 	}]
 }

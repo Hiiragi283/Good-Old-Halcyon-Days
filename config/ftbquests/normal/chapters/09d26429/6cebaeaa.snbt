@@ -1,9 +1,9 @@
 {
 	icon: "appliedenergistics2:sky_stone_block",
-	x: 21.0d,
-	y: 2.0d,
+	x: 22.0d,
+	y: 1.0d,
 	dependencies: [
-		"b26e2d9c"
+		"32f9f50d"
 	],
 	tasks: [{
 		uid: "b775851e",

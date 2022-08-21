@@ -5,8 +5,8 @@
 			icon: "dcs_climate:textures/items/magic/infernal_flame.png"
 		}
 	},
-	x: 11.0d,
-	y: 7.0d,
+	x: 14.0d,
+	y: -3.0d,
 	dependencies: [
 		"0290b797"
 	],

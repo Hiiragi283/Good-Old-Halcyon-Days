@@ -1,6 +1,6 @@
 {
 	title: "{gohd.09d26429.4fb7c614.title}",
-	x: 4.0d,
+	x: 6.0d,
 	y: 0.0d,
 	description: "{link.youtu.be.TG6yHxuK22g}",
 	dependencies: [
@@ -54,5 +54,10 @@
 		uid: "5b44a8f3",
 		type: "item",
 		item: "tconstruct:tooltables 1 5"
+	},
+	{
+		uid: "564d1e5c",
+		type: "item",
+		item: "dcs_climate:dcs_color_ring2 1 1"
 	}]
 }

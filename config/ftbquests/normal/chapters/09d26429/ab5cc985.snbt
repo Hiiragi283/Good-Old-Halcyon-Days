@@ -1,0 +1,8 @@
+{
+	title: "{gohd.09d26429.ab5cc985.title}",
+	icon: "dcs_climate:dcs_icons",
+	x: 0.5d,
+	y: -3.0d,
+	shape: "gear",
+	custom_click: "https://defeatedcrow.jp/modwiki/HeatAndClimate"
+}

@@ -1,7 +1,7 @@
 {
 	icon: "minecraft:wheat_seeds",
-	x: -2.0d,
-	y: 0.0d,
+	x: 2.0d,
+	y: -2.0d,
 	dependencies: [
 		"648774ca"
 	],

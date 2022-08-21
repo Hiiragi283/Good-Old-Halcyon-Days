@@ -1,0 +1,23 @@
+{
+	x: -2.0d,
+	y: 3.0d,
+	text: [
+		"{gohd.hac.tooltip}"
+	],
+	dependencies: [
+		"62b97ff1"
+	],
+	tasks: [{
+		uid: "b38dcf4b",
+		type: "item",
+		items: [{
+			item: "hap:coke_oven"
+		}]
+	}],
+	rewards: [{
+		uid: "addf9f7f",
+		type: "item",
+		item: "contenttweaker:ticket_uncommon",
+		count: 3
+	}]
+}

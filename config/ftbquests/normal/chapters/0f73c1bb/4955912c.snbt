@@ -2,7 +2,6 @@
 	x: 0.0d,
 	y: -2.75d,
 	shape: "square",
-	description: "{gohd.0f73c1bb.4955912c.subtitle}",
 	dependencies: [
 		"99f571cf",
 		"e608130b",
@@ -19,5 +18,10 @@
 		uid: "275e8c19",
 		type: "item",
 		item: "contenttweaker:ticket_mythic"
+	},
+	{
+		uid: "9f87b2eb",
+		type: "item",
+		item: "twilightforest:uncrafting_table"
 	}]
 }

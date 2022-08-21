@@ -22,16 +22,6 @@
 		items: [{
 			item: "dcs_climate:dcs_ore_stone_new 1 7"
 		}]
-	},
-	{
-		uid: "a0787980",
-		type: "item",
-		items: [{
-			item: "dcs_climate:dcs_layer_stone_new"
-		},
-		{
-			item: "dcs_climate:dcs_gem_layer"
-		}]
 	}],
 	rewards: [{
 		uid: "1091bf41",

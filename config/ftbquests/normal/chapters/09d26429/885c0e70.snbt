@@ -1,8 +1,7 @@
 {
-	title: "{gohd.chemicalAge.title}",
 	x: 19.0d,
-	y: 0.0d,
-	shape: "square",
+	y: -2.0d,
+	shape: "diamond",
 	text: [
 		"{gohd.hac.tooltip}"
 	],
@@ -10,7 +9,7 @@
 		"72b4363c",
 		"c3208b27"
 	],
-	size: 1.5d,
+	size: 2.0d,
 	tasks: [{
 		uid: "40fdd1cc",
 		type: "item",

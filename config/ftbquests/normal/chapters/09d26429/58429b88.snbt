@@ -1,11 +1,13 @@
 {
 	icon: "dcs_climate:dcs_ore_dustblock 1 4",
-	x: 7.0d,
-	y: -1.0d,
+	x: 10.0d,
+	y: 1.0d,
+	text: [
+		"{gohd.hac.tooltip}"
+	],
 	dependencies: [
-		"fa688434",
-		"3e86f317",
-		"6d90e11d"
+		"62043273",
+		"f99b1288"
 	],
 	tasks: [{
 		uid: "3550c147",

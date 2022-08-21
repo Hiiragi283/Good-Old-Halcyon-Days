@@ -1,0 +1,19 @@
+{
+	x: 0.0d,
+	y: -2.0d,
+	dependencies: [
+		"146a109c"
+	],
+	tasks: [{
+		uid: "288801ca",
+		type: "advancement",
+		advancement: "dcs_climate:climate_cooking1",
+		criterion: ""
+	}],
+	rewards: [{
+		uid: "cb433499",
+		type: "item",
+		item: "dcs_climate:dcs_food_stick 1 2",
+		count: 16
+	}]
+}

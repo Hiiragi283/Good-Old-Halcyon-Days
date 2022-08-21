@@ -1,15 +1,14 @@
 {
-	title: "{gohd.cccede9d.6ef83f24.title}",
 	icon: "dcs_climate:dcs_ore_stone_new 1 1",
 	x: 0.0d,
-	y: 7.0d,
-	shape: "diamond",
+	y: 5.0d,
+	shape: "rsquare",
 	hide_dependency_lines: true,
 	dependencies: [
 		"42aa3c8a"
 	],
 	hide: true,
-	size: 1.5d,
+	optional: true,
 	tasks: [{
 		uid: "b41ce79f",
 		type: "item",

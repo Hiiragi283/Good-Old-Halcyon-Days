@@ -1,8 +1,7 @@
 {
-	title: "{gohd.industrialAge.title}",
 	x: 21.0d,
-	y: 0.0d,
-	shape: "square",
+	y: -2.0d,
+	shape: "diamond",
 	text: [
 		"{gohd.hac.tooltip}"
 	],
@@ -10,6 +9,7 @@
 		"b2567136",
 		"885c0e70"
 	],
+	size: 2.0d,
 	tasks: [{
 		uid: "57f3732e",
 		type: "item",

@@ -1,0 +1,20 @@
+{
+	x: 4.0d,
+	y: 4.0d,
+	shape: "diamond",
+	dependencies: [
+		"45b04305"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "401b6cba",
+		type: "advancement",
+		advancement: "dcs_climate:climate_silk",
+		criterion: ""
+	}],
+	rewards: [{
+		uid: "a4c08d5e",
+		type: "item",
+		item: "contenttweaker:ticket_epic"
+	}]
+}

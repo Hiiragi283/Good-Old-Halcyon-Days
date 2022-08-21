@@ -2,9 +2,11 @@
 	title: "{gohd.09d26429.bc22061f.title}",
 	x: 23.0d,
 	y: 0.0d,
+	shape: "diamond",
 	dependencies: [
 		"6cebaeaa"
 	],
+	size: 2.0d,
 	tasks: [{
 		uid: "7516f42d",
 		type: "item",

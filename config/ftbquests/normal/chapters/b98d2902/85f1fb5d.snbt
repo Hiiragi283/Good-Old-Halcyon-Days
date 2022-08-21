@@ -1,0 +1,44 @@
+{
+	x: 0.0d,
+	y: 2.0d,
+	dependencies: [
+		"146a109c"
+	],
+	tasks: [{
+		uid: "b95f9a97",
+		type: "item",
+		title: "{gohd.b98d2902.85f1fb5d.title}",
+		items: [{
+			item: "dcs_climate:dcs_pattern_paper"
+		},
+		{
+			item: "dcs_climate:dcs_pattern_paper 1 1"
+		},
+		{
+			item: "dcs_climate:dcs_pattern_paper 1 2"
+		},
+		{
+			item: "dcs_climate:dcs_pattern_paper 1 3"
+		},
+		{
+			item: "dcs_climate:dcs_pattern_paper 1 4"
+		},
+		{
+			item: "dcs_climate:dcs_pattern_paper 1 5"
+		},
+		{
+			item: "dcs_climate:dcs_pattern_paper 1 6"
+		},
+		{
+			item: "dcs_climate:dcs_pattern_paper 1 7"
+		},
+		{
+			item: "dcs_climate:dcs_pattern_paper 1 8"
+		}]
+	}],
+	rewards: [{
+		uid: "b3e64749",
+		type: "item",
+		item: "contenttweaker:ticket_common"
+	}]
+}

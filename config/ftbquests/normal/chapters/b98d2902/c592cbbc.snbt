@@ -1,11 +1,11 @@
 {
-	x: 4.0d,
-	y: -2.0d,
+	x: 2.0d,
+	y: 0.0d,
 	text: [
 		"{gohd.hac.tooltip}"
 	],
 	dependencies: [
-		"a330ee6f"
+		"146a109c"
 	],
 	tasks: [{
 		uid: "5c9f45ad",
@@ -13,5 +13,10 @@
 		items: [{
 			item: "dcs_climate:dcs_device_swedish_torch"
 		}]
+	}],
+	rewards: [{
+		uid: "b2b522fe",
+		type: "item",
+		item: "dcs_climate:dcs_device_thermometer"
 	}]
 }

@@ -44,23 +44,6 @@
 				}
 			}
 		}]
-	},
-	{
-		uid: "9454bbfb",
-		type: "item",
-		items: [{
-			item: "dcs_climate:dcs_layer_stone_new 1 3"
-		},
-		{
-			item: "dcs_climate:dcs_gem_layer 1 2"
-		}]
-	},
-	{
-		uid: "2fcae2aa",
-		type: "item",
-		items: [{
-			item: "dcs_climate:dcs_layer_stone_new 1 1"
-		}]
 	}],
 	rewards: [{
 		uid: "31df30a2",

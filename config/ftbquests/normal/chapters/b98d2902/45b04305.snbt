@@ -1,0 +1,18 @@
+{
+	x: 2.0d,
+	y: 4.0d,
+	dependencies: [
+		"a8d90a1a"
+	],
+	tasks: [{
+		uid: "b594901d",
+		type: "advancement",
+		advancement: "dcs_climate:climate_wear2",
+		criterion: ""
+	}],
+	rewards: [{
+		uid: "daab02f9",
+		type: "item",
+		item: "contenttweaker:ticket_uncommon"
+	}]
+}

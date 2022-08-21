@@ -21,9 +21,6 @@
 		uid: "dbab060e",
 		type: "item",
 		items: [{
-			item: "dcs_climate:dcs_layer_skarn_ore 1 6"
-		},
-		{
 			item: "dcs_climate:dcs_gem_blue 1 4"
 		}]
 	},
@@ -31,9 +28,6 @@
 		uid: "bd416ad5",
 		type: "item",
 		items: [{
-			item: "dcs_climate:dcs_layer_skarn_ore 1 7"
-		},
-		{
 			item: "dcs_climate:dcs_gem_green 1 4"
 		}]
 	}],

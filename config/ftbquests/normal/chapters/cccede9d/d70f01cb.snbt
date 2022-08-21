@@ -21,9 +21,6 @@
 		uid: "637a4712",
 		type: "item",
 		items: [{
-			item: "dcs_climate:dcs_layer_skarn_ore 1 4"
-		},
-		{
 			item: "dcs_climate:dcs_gem_white 1 5"
 		}]
 	}],

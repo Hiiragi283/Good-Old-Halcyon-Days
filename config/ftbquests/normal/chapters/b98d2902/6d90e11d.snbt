@@ -1,11 +1,11 @@
 {
-	x: 6.0d,
-	y: 0.0d,
+	x: 3.0d,
+	y: -1.0d,
 	text: [
 		"{gohd.hac.tooltip}"
 	],
 	dependencies: [
-		"2fefc157"
+		"c592cbbc"
 	],
 	tasks: [{
 		uid: "40994173",

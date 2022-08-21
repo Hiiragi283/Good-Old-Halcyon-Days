@@ -1,15 +1,15 @@
 {
 	title: "{gohd.09d26429.6ab31c74.title}",
 	icon: "compactmachines3:fieldprojector",
-	x: 25.0d,
-	y: 0.0d,
-	shape: "square",
+	x: 23.0d,
+	y: 2.0d,
+	shape: "diamond",
 	dependencies: [
 		"c29b5fbb",
 		"bc22061f",
 		"38c6d533"
 	],
-	size: 1.5d,
+	size: 2.0d,
 	tasks: [{
 		uid: "9c71e82f",
 		type: "item",

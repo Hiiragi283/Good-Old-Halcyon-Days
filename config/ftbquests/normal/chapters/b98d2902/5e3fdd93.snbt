@@ -1,21 +1,23 @@
 {
-	x: 11.0d,
-	y: -2.0d,
+	x: 6.0d,
+	y: 0.0d,
+	shape: "diamond",
 	text: [
 		"{gohd.hac.tooltip}"
 	],
 	dependencies: [
 		"62b97ff1"
 	],
+	size: 2.0d,
 	tasks: [{
-		uid: "b38dcf4b",
+		uid: "47b63e0e",
 		type: "item",
 		items: [{
-			item: "hap:coke_oven"
+			item: "dcs_climate:dcs_device_heat_exchanger"
 		}]
 	}],
 	rewards: [{
-		uid: "addf9f7f",
+		uid: "477c57a5",
 		type: "item",
 		item: "contenttweaker:ticket_uncommon",
 		count: 3

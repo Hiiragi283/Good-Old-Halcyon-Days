@@ -1,8 +1,11 @@
 {
-	x: 15.0d,
-	y: 4.0d,
+	x: 18.0d,
+	y: 3.0d,
+	text: [
+		"{gohd.09d26429.0edcbf3b.desc1}"
+	],
 	dependencies: [
-		"6724c976"
+		"34596416"
 	],
 	tasks: [{
 		uid: "34bf5ba2",
@@ -11,5 +14,16 @@
 			item: "enderio:item_material 1 20"
 		}],
 		count: 8L
+	}],
+	rewards: [{
+		uid: "455ad324",
+		type: "item",
+		item: {
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "fire_water",
+				Amount: 1000
+			}
+		}
 	}]
 }

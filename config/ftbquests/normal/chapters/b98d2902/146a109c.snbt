@@ -1,18 +1,23 @@
 {
-	x: 2.0d,
-	y: -2.0d,
+	x: 0.0d,
+	y: 0.0d,
+	shape: "hexagon",
+	text: [
+		"{gohd.b98d2902.146a109c.desc1}",
+		"{gohd.b98d2902.146a109c.desc2}"
+	],
 	dependencies: [
 		"648774ca"
 	],
+	size: 2.0d,
 	tasks: [{
-		uid: "04911720",
+		uid: "c50d78d8",
 		type: "advancement",
-		icon: "dcs_climate:dcs_icons 1 1",
 		advancement: "dcs_climate:climate_damage",
 		criterion: ""
 	}],
 	rewards: [{
-		uid: "a8875b2f",
+		uid: "94606eb3",
 		type: "item",
 		item: "dcs_lib:dcs_checker",
 		count: 3

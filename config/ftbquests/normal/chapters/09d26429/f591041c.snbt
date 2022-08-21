@@ -1,9 +1,9 @@
 {
 	icon: "dcs_climate:dcs_ore_dustblock 1 12",
-	x: 19.0d,
-	y: -2.0d,
+	x: 17.0d,
+	y: 0.0d,
 	dependencies: [
-		"885c0e70"
+		"8b4775e4"
 	],
 	tasks: [{
 		uid: "6db35843",

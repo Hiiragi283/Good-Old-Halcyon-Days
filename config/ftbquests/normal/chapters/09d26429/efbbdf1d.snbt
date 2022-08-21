@@ -1,6 +1,6 @@
 {
 	x: 4.0d,
-	y: 6.0d,
+	y: 5.0d,
 	dependencies: [
 		"0caa24a5"
 	],
@@ -24,5 +24,10 @@
 		items: [{
 			item: "contenttweaker:unfired_casting_channel"
 		}]
+	}],
+	rewards: [{
+		uid: "5ed7dcbd",
+		type: "item",
+		item: "contenttweaker:ticket_common"
 	}]
 }

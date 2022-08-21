@@ -1,12 +1,21 @@
 {
 	title: "{gohd.09d26429.8b4775e4.title}",
-	icon: "dcs_climate:dcs_icons 1 1",
+	icon: {
+		id: "dcs_climate:dcs_icons",
+		tag: {
+			ench: [{
+				lvl: 1s,
+				id: 37s
+			}]
+		},
+		Damage: 1s
+	},
 	x: 15.0d,
 	y: 0.0d,
 	description: "{gohd.09d26429.8b4775e4.subtitle}",
 	dependencies: [
-		"df6648c3",
-		"9852117b"
+		"5a0bc24d",
+		"6724c976"
 	],
 	tasks: [{
 		uid: "342663cf",

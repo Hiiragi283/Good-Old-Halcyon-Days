@@ -1,44 +1,36 @@
 {
-	icon: "dcs_climate:dcs_ore_stone_new 1 2",
-	x: 5.0d,
-	y: -1.0d,
+	icon: "dcs_climate:dcs_oreitem 1 2",
+	x: 8.0d,
+	y: 1.0d,
+	text: [
+		"{gohd.hac.tooltip}"
+	],
 	dependencies: [
 		"4fb7c614"
 	],
 	tasks: [{
-		uid: "49d1d6c2",
+		uid: "e2433aed",
 		type: "item",
 		items: [{
 			item: "dcs_climate:dcs_ore_stone_new 1 2"
 		}]
 	},
 	{
-		uid: "1aee755e",
+		uid: "561a6c0b",
 		type: "item",
 		items: [{
 			item: "dcs_climate:dcs_oreitem 1 2"
 		}]
 	},
 	{
-		uid: "c6a67899",
+		uid: "05c40535",
 		type: "item",
 		items: [{
-			ForgeCaps: {
-				Parent: {
-					data: "dustZinc",
-					id: "ore"
-				}
-			},
-			id: "itemfilters:filter",
-			tag: {
-				display: {
-					Name: "Any dustZinc"
-				}
-			}
+			item: "dcs_climate:dcs_oredust 1 1"
 		}]
 	}],
 	rewards: [{
-		uid: "1aff6cf6",
+		uid: "2ea43a49",
 		type: "item",
 		item: "contenttweaker:ticket_common"
 	}]

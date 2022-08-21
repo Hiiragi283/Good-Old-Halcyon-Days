@@ -1,23 +1,24 @@
 {
-	x: 13.0d,
-	y: 0.0d,
+	x: 5.0d,
+	y: 3.0d,
 	text: [
 		"{gohd.hac.tooltip}"
 	],
 	dependencies: [
-		"62b97ff1",
-		"6724c976"
+		"62b97ff1"
 	],
 	tasks: [{
-		uid: "694503cb",
+		uid: "5052d32a",
 		type: "item",
 		items: [{
 			item: "dcs_climate:dcs_device_fuelstove"
-		}]
+		}],
+		ignore_nbt: 1b
 	}],
 	rewards: [{
-		uid: "7bfd3bf0",
+		uid: "2a92c8a2",
 		type: "item",
-		item: "contenttweaker:ticket_uncommon"
+		item: "contenttweaker:ticket_uncommon",
+		count: 3
 	}]
 }

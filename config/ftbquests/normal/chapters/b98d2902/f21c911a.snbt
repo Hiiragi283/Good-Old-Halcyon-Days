@@ -1,12 +1,11 @@
 {
-	x: 16.0d,
+	x: 7.0d,
 	y: 3.0d,
 	text: [
 		"{gohd.hac.tooltip}"
 	],
 	dependencies: [
-		"efd4198c",
-		"72b4363c"
+		"51d8e735"
 	],
 	tasks: [{
 		uid: "f9dc6cd9",
@@ -18,7 +17,6 @@
 	rewards: [{
 		uid: "1121c656",
 		type: "item",
-		item: "contenttweaker:ticket_rare",
-		count: 2
+		item: "contenttweaker:ticket_rare"
 	}]
 }

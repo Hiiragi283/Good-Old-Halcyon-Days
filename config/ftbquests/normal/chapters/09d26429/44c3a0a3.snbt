@@ -1,9 +1,9 @@
 {
 	icon: "tconstruct:cast",
-	x: 8.0d,
-	y: 3.0d,
+	x: 13.0d,
+	y: 2.0d,
 	dependencies: [
-		"25daeec3",
+		"7342c45c",
 		"af232189"
 	],
 	tasks: [{
@@ -14,44 +14,10 @@
 		}]
 	}],
 	rewards: [{
-		uid: "3dc054ed",
-		type: "item",
-		item: {
-			id: "tconstruct:cast",
-			tag: {
-				PartType: "tconstruct:pick_head"
-			}
-		}
-	},
-	{
-		uid: "fc0f1048",
-		type: "item",
-		item: {
-			id: "tconstruct:cast",
-			tag: {
-				PartType: "tconstruct:shovel_head"
-			}
-		}
-	},
-	{
-		uid: "2065c464",
-		type: "item",
-		item: {
-			id: "tconstruct:cast",
-			tag: {
-				PartType: "tconstruct:axe_head"
-			}
-		}
-	},
-	{
 		uid: "667ca511",
 		type: "item",
-		item: {
-			id: "tconstruct:cast",
-			tag: {
-				PartType: "tconstruct:sword_blade"
-			}
-		}
+		item: "tconstruct:cast",
+		count: 4
 	},
 	{
 		uid: "14109009",

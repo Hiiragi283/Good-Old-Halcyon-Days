@@ -1,17 +1,14 @@
 {
-	title: "{gohd.middleAge.title}",
-	x: 11.0d,
-	y: 0.0d,
-	shape: "square",
+	x: 5.0d,
+	y: 1.0d,
 	description: "{link.youtu.be.Opce-MSEznY}",
 	text: [
 		"{gohd.hac.tooltip}"
 	],
 	dependencies: [
 		"0c989db0",
-		"6d90e11d"
+		"2fefc157"
 	],
-	size: 1.5d,
 	tasks: [{
 		uid: "db85517d",
 		type: "item",
@@ -23,7 +20,6 @@
 	rewards: [{
 		uid: "7452258b",
 		type: "item",
-		item: "contenttweaker:ticket_uncommon",
-		count: 3
+		item: "contenttweaker:ticket_uncommon"
 	}]
 }
