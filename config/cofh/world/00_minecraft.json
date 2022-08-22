@@ -18,7 +18,9 @@
 				"restriction": "blacklist",
 				"value": [
 					-1,
-					1
+					1,
+					7,
+					2011
 				]
 			}
 		},
@@ -39,7 +41,9 @@
 				"restriction": "blacklist",
 				"value": [
 					-1,
-					1
+					1,
+					7,
+					2011
 				]
 			}
 		},
@@ -65,7 +69,9 @@
 				"restriction": "blacklist",
 				"value": [
 					-1,
-					1
+					1,
+					7,
+					2011
 				]
 			}
 		},
@@ -91,7 +97,9 @@
 				"restriction": "blacklist",
 				"value": [
 					-1,
-					1
+					1,
+					7,
+					2011
 				]
 			}
 		},
@@ -117,7 +125,9 @@
 				"restriction": "blacklist",
 				"value": [
 					-1,
-					1
+					1,
+					7,
+					2011
 				]
 			}
 		},
