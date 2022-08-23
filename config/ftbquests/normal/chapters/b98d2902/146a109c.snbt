@@ -13,6 +13,8 @@
 	tasks: [{
 		uid: "c50d78d8",
 		type: "advancement",
+		title: "{advancements.dcs_climate.climate_damage.title}",
+		icon: "dcs_climate:dcs_icons 1 1",
 		advancement: "dcs_climate:climate_damage",
 		criterion: ""
 	}],

@@ -3,6 +3,7 @@
 	icon: "botania:elementiumaxe",
 	x: 10.0d,
 	y: 2.0d,
+	can_repeat: true,
 	hide_dependency_lines: true,
 	dependencies: [
 		"63c2eae3",
@@ -15,6 +16,7 @@
 			item: "contenttweaker:ticket_legendary"
 		}],
 		count: 5L,
+		consume_items: true,
 		ignore_damage: true,
 		ignore_nbt: 1b
 	}],

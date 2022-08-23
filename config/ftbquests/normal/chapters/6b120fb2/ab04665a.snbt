@@ -10,6 +10,7 @@
 		type: "item",
 		items: [{
 			item: "enderio:block_impulse_hopper"
-		}]
+		}],
+		ignore_nbt: 1b
 	}]
 }

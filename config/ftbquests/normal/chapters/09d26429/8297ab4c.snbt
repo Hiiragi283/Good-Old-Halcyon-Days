@@ -23,5 +23,11 @@
 				}
 			}
 		}]
+	}],
+	rewards: [{
+		uid: "209ca5b9",
+		type: "item",
+		item: "minecraft:log",
+		count: 64
 	}]
 }

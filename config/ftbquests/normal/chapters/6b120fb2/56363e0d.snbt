@@ -12,7 +12,8 @@
 		type: "item",
 		items: [{
 			item: "dcs_climate:dcs_device_hopper_filter"
-		}]
+		}],
+		ignore_nbt: 1b
 	}],
 	rewards: [{
 		uid: "4809d9d4",

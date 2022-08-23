@@ -12,7 +12,8 @@
 		type: "item",
 		items: [{
 			item: "dcs_climate:dcs_device_hopper_gold"
-		}]
+		}],
+		ignore_nbt: 1b
 	}],
 	rewards: [{
 		uid: "ca1e02e6",

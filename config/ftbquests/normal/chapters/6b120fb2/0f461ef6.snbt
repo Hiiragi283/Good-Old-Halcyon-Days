@@ -14,7 +14,8 @@
 		type: "item",
 		items: [{
 			item: "dcs_climate:dcs_device_portal_manager"
-		}]
+		}],
+		ignore_nbt: 1b
 	}],
 	rewards: [{
 		uid: "231d2244",

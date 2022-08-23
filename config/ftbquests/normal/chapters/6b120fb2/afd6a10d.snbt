@@ -14,7 +14,8 @@
 		type: "item",
 		items: [{
 			item: "dcs_climate:dcs_device_player_panel"
-		}]
+		}],
+		ignore_nbt: 1b
 	}],
 	rewards: [{
 		uid: "7765f764",

@@ -1,4 +1,5 @@
 {
+	title: "Rank SS",
 	x: -2.5d,
 	y: 4.0d,
 	shape: "rsquare",
@@ -7,10 +8,16 @@
 	],
 	optional: true,
 	tasks: [{
-		uid: "1b93f22f",
-		type: "advancement",
-		advancement: "botania:challenge/rank_ss_pick",
-		criterion: ""
+		uid: "c13a9279",
+		type: "item",
+		items: [{
+			id: "botania:terrapick",
+			tag: {
+				mana: 2147483646
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 2b
 	}],
 	rewards: [{
 		uid: "23d6dd00",

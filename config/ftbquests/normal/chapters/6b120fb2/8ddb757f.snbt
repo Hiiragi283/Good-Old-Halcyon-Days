@@ -9,7 +9,8 @@
 		type: "item",
 		items: [{
 			item: "ezstorage:storage_core"
-		}]
+		}],
+		ignore_nbt: 1b
 	}],
 	rewards: [{
 		uid: "5122cdc2",

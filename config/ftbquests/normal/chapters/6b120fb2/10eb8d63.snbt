@@ -13,7 +13,8 @@
 		type: "item",
 		items: [{
 			item: "dcs_climate:dcs_device_hopper_fluid"
-		}]
+		}],
+		ignore_nbt: 1b
 	}],
 	rewards: [{
 		uid: "309066a5",
