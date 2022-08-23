@@ -206,7 +206,9 @@ function rainCheck(outFailed as IItemStack) as IRecipeFunction {
 //クラフトが行われた時間帯をチェックする
 function nightCheck(outFailed as IItemStack) as IRecipeFunction {
 	return function(out, ins, cInfo) as IItemStack{
-		if(!cInfo.world.dayTime) {
+		var timeTotal as long = cInfo.world.getWorldTime();
+		var time as long = timeTotal % 24000;
+		if(time >= 13000 && time <= 23000) {
 			return out as IItemStack;
 		} else {
 			return outFailed;

@@ -345,6 +345,10 @@ print("Start loading unification.zs ...");
 		<quarryplus:filler>,
 		<quarryplus:quarry_pickaxe>,
 		<quarryplus:replacer_module>,
+		//Tinkers Complement
+		<tcomplement:melter>,
+		<tcomplement:melter:8>,
+		<tcomplement:alloy_tank>,
 	];
 	for i in removeFromJEI {
 		HiiragiUtils.removeFromJEI(i);
