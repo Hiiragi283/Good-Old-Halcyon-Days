@@ -1,5 +1,28 @@
 # Changelog
 
+## v0.3.3
+
+- Mod Configuration
+  - Add
+    - `Born In A Barn V1.8-1.12-1.1`
+      - Fix village chunk loading issue
+    - `Chunk Pregenerator-V1.12-2.5.7`
+      - Improve chunk generation
+    - `phosphor-forge-mc1.12.2-0.2.7-universal`
+      - Improve lighting system
+    - `WorldGen-Block-Replacer-2.3.3+1.12.2`
+      - Replace blocks in world generation
+  - Update
+    - `HeatAndProcessing-1.12.2-1.3.7` -> `HeatAndProcessing-1.12.2-1.3.8`
+      - Fix the crash bug about Advanced Reactor
+    - `SmoothFont-mc1.12.2-2.1.3` -> `SmoothFont-mc1.12.2-2.1.4`
+
+- Disable generating other stone or dirt deposit in non-overworld dimensions
+- Disable mob climate damage (for performance improvement)
+- Remove `Melter` and `Alloy Tank`
+- Replace some blocks in Twilight Forest
+- Update Quests
+
 ## v0.3.2
 
 - Mod Configuration

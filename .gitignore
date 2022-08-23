@@ -53,6 +53,7 @@ optionsshaders.txt
 patchouli_data.json
 usercache.json
 usernamecache.json
+zs_export.json
 astralsorcery/gatewayFilter/worldFilter.dat
 config/AppliedEnergistics2/*.cfg
 !config/AppliedEnergistics2/AppliedEnergistics2.cfg
