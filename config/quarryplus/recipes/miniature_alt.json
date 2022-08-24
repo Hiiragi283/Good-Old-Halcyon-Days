@@ -1,0 +1,33 @@
+{
+	"id": "gohd:miniature_alt",
+	"type": "quarryplus:workbench_recipe",
+	"ingredients": [
+		{
+			"item": "minecraft:grass",
+			"data": 0,
+			"count": 256
+		},
+		{
+			"item": "biomesoplenty:flower_1",
+			"data": 5,
+			"count": 256
+		},
+		{
+			"item": "twilightforest:magic_map_focus",
+			"data": 0,
+			"count": 64
+		},
+		{
+			"item": "extrautils2:teleporter",
+			"data": 0,
+			"count": 1
+		}
+	],
+	"energy": 20111118.0,
+	"showInJEI": true,
+	"result": {
+		"item": "twilightforest:miniature_structure",
+		"data": 0,
+		"count": 1
+	}
+}

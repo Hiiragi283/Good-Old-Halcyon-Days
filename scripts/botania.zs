@@ -276,8 +276,8 @@ print("Start loading botania.zs ...");
 		.edge(<minecraft:diamond_block>)
 		.corner(<biomesoplenty:grass:5>);
 	val agglo_earth_polluting = AgglomerationMultiblock.create()
-		.center(<extrautils2:teleporter:0>)
-		.centerReplace(<extrautils2:teleporter:1>)
+		.center(<twilightforest:miniature_structure:0>)
+		.centerReplace(<minecraft:tnt:1>)
 		.edge(<minecraft:diamond_block>)
 		.edgeReplace(<minecraft:coal_block>)
 		.corner(<biomesoplenty:grass:5>)
