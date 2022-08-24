@@ -34,6 +34,7 @@ print("Start loading minecraft.zs ...");
 	HiiragiUtils.addCraftingShaped(true, <minecraft:trapdoor>*2, RecipePattern.init(["AAA", "AAA"]).map({A:<minecraft:planks:0>}).ingredients, null, null);
 	HiiragiUtils.addCraftingShaped(true, <minecraft:furnace>, RecipePattern.init(["AAA", "ABA", "AAA"]).map({A:<ore:cobblestone>, B:<dcs_climate:dcs_tinder:1>}).ingredients, null, null);
 	HiiragiUtils.addCraftingShaped(true, <minecraft:enchanting_table>, RecipePattern.init([" A ", "BCB", "DDD"]).map({A:<ore:book>, B:<ore:gemDiamond>, C:<ore:woolRed>, D:<ore:obsidian>}).ingredients, null, null);
+	HiiragiUtils.addCraftingShapeless(true, <minecraft:ender_eye>, [<ore:enderpearl>, <ore:dustMana>], null, null);
 	//新規
 	HiiragiUtils.addCraftingShapeless(false, <minecraft:stick>, [<ore:treeSapling>], null, null);
 
