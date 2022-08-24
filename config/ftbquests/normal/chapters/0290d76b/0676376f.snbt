@@ -21,28 +21,25 @@
 		ignore_nbt: 1b
 	}],
 	rewards: [{
-		uid: "f69093a1",
+		uid: "6e656417",
 		type: "item",
 		item: {
 			id: "botania:elementiumaxe",
 			tag: {
 				ench: [{
 					lvl: 13s,
-					id: 21s
-				},
-				{
-					lvl: 13s,
 					id: 16s
 				},
 				{
 					lvl: 13s,
 					id: 26s
+				},
+				{
+					lvl: 13s,
+					id: 35s
 				}],
 				display: {
 					LocName: "gohd.custom.gaia_executer.name"
-				},
-				pickletweaks: {
-					BlocksBroken: 3
 				},
 				AttributeModifiers: [{
 					UUIDMost: -1231187779937153781L,
