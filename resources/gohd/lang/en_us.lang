@@ -10,6 +10,7 @@ gohd.custom.spring_nightmare.name=§0Spring of Nightmare
 gohd.custom.track_neet.name=§6NEET Suit
 gohd.custom.gaia_executer.name=§cGaia Executer
 gohd.custom.gun_devil.name=§cMusket of the Gun Devil
+gohd.custom.rod_sea.name=§6Rod of the Sea
 
 #Tooltips
 gohd.tooltip.hidden.name=§6Hide from JEI§r but §aavailable§r
@@ -117,12 +118,49 @@ gohd.cccede9d.fed34783.task1=Ore Clumps (3x)
 gohd.cccede9d.3aeb8033.task1=Ore Shards (4x)
 gohd.cccede9d.c0d4a6c8.task1=Ore Crystals (5x)
 
-## Tools:
-gohd.tools.title=Tools
-
 ## Chemistry: gohd.1710439e.
 gohd.chemistry.title=Chemistry
 gohd.1710439e.52ab2cd5.title=Ore Washing
+
+## Crop: gohd.2e964474.
+gohd.crop.title=Crops
+gohd.2e964474.33c20e52.title=Soft and Wet
+gohd.2e964474.33c20e52.desc1=If the temperature of the Farmland is WARM and the humidity is WET, the crop will grow faster.
+gohd.2e964474.daaef901.desc1=Right-click on a water source in the Hand Net to obtain various items
+gohd.2e964474.8e5c606a.title=More and More Compression!
+
+gohd.2e964474.81e25c09.desc1=Green soy Beans is harvested before Soy Plant grow up.
+gohd.2e964474.78f46bf1.desc1=Seaweed is planted under water over 2 blocks depth.
+gohd.2e964474.4861d64b.desc1=Lotus Root is planted under water within 1 block depth.
+gohd.2e964474.4861d64b.desc2=From summer to Autumn, you can harverst Lotus blocks by right-clicking them any number of times. But in Winter, they wither and die.
+gohd.2e964474.c5d119bf.desc1=Black Petal is VERY RARELY looted from Lotus Block.
+gohd.2e964474.2c530cd0.title=Notes on growing vine crops
+gohd.2e964474.2c530cd0.desc1=Vine crops: WIsteria and Grape, need to be in contact with the wall in order to grow.
+gohd.2e964474.a2b582c7.desc1=Wisteria bloom from Spring to Summer, and bear fruit in Autumn.
+gohd.2e964474.a2b582c7.desc2=They can be used as a substitute for saplings.
+gohd.2e964474.b5766375.desc1=Grape VIne bloom and bear fruit from Summer to Autumn.
+
+## Food: gohd.f80fdeb8.
+gohd.food.title=Foods
+gohd.f80fdeb8.1ca61478.title=Placeable Foods!
+gohd.f80fdeb8.1ca61478.desc1=Almost all foods from HaC is placeable as a entity. Shift right-click them on a block to place!
+gohd.f80fdeb8.431e11ca.title=Gluttony Champion
+
+gohd.f80fdeb8.8644ca80.title=Nice Cream!
+gohd.f80fdeb8.8644ca80.desc1=All Ice Creams give you Fire Resistance for 30 sec.
+gohd.f80fdeb8.6d028c8d.title=Very Nice Parfait!
+gohd.f80fdeb8.6d028c8d.desc1=All Parfaits give you Fire Resistance for 3 min.
+gohd.f80fdeb8.0221230f.desc1=All cakes heal your health instantly.
+
+gohd.f80fdeb8.29b5ac18.title=Power of SOY
+gohd.f80fdeb8.a4eff7fb.desc1=Used as Cream Pack
+gohd.f80fdeb8.6d144bfd.desc1=Used as Flour
+gohd.f80fdeb8.7435702b.desc1=Used as Raw Meat
+
+gohd.f80fdeb8.e33a0690.title=Rare Foods
+
+## Tools:
+gohd.tools.title=Tools
 
 ## Magic: gohd.bdb7cf70.
 gohd.magic.title=Magic

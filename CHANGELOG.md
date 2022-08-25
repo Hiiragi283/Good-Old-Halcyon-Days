@@ -1,5 +1,19 @@
 # Changelog
 
+## v0.4.0
+
+### `Heavens of Satiety`
+
+- Add more compression pattern for Compacting Drawer
+- Enable hunger cost for HaC's magic
+- Fix `Gaia Executer`'s enchantment
+- Fix the bug: BOP's earth can't be crafted
+- Make the cost for `Eye of Ender` heavier
+- Remove uncraftable Tool Forge from JEI
+- Update Quests
+  - Add Crops and Foods Tab!
+  - New fishing rod: `Rod of the Sea`
+
 ## v0.3.3
 
 - Mod Configuration

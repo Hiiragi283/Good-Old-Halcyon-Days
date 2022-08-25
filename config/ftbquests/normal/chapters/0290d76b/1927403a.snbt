@@ -1,4 +1,5 @@
 {
+	title: "{gohd.custom.rod_sea.name}",
 	icon: {
 		id: "thermalfoundation:tool.fishing_rod_diamond",
 		tag: {

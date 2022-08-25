@@ -10,6 +10,7 @@ gohd.custom.spring_nightmare.name=§0悪夢の春
 gohd.custom.track_neet.name=§6ニートの服
 gohd.custom.gaia_executer.name=§cガイアの処刑人
 gohd.custom.gun_devil.name=§c銃の悪魔のマスケット銃
+gohd.custom.rod_sea.name=§6海幸彦之釣竿
 
 #Tooltips
 gohd.tooltip.hidden.name=§6JEIからは削除されました§rが§a存在する§r
@@ -89,6 +90,47 @@ gohd.b98d2902.146a109c.desc1=高温や低温の場所にいるとダメージを
 gohd.b98d2902.146a109c.desc2=これらは適切な防具を着たり，火炎耐性や冷気耐性を得たり，別の熱源を置くことで温度を相殺したりすることで軽減あるいは無効化できます。
 gohd.b98d2902.85f1fb5d.title=Pattern Paper
 
+## Chemistry: gohd.1710439e.
+gohd.chemistry.title=化学
+gohd.1710439e.52ab2cd5.title=鉱石洗浄
+
+## Crop: gohd.2e964474.
+gohd.crop.title=作物
+gohd.2e964474.33c20e52.title=柔らかくそして濡れている
+gohd.2e964474.33c20e52.desc1=耕地の温度がWARMで湿度がWETの場合，作物はより早く成長します。
+gohd.2e964474.daaef901.desc1=タモ網で水源を右クリックすると，さまざまなアイテムを入手することができます
+gohd.2e964474.8e5c606a.title=圧縮圧縮ゥ!
+
+gohd.2e964474.81e25c09.desc1=枝豆は大豆の苗が成長しきる前に収穫することができます。
+gohd.2e964474.78f46bf1.desc1=海藻は2ブロック以上の深さをもつ水中に植えられます。
+gohd.2e964474.4861d64b.desc1=蓮根は１ブロックの深さをもつ水中のみに植えられます。
+gohd.2e964474.4861d64b.desc2=夏から秋にかけて，蓮の実や花びらが何度でも収穫できます。しかし冬になると枯れてしまいます。
+gohd.2e964474.c5d119bf.desc1=黒い花びらは蓮の苗から極まれに収穫できます。
+gohd.2e964474.2c530cd0.title=蔦を育てる上での注意
+gohd.2e964474.2c530cd0.desc1=藤やブドウといった蔦を育てるには苗が壁に面している必要があります。
+gohd.2e964474.a2b582c7.desc1=藤は春から夏にかけて花が咲き，秋に実を結びます。
+gohd.2e964474.a2b582c7.desc2=そして藤の苗は苗木の代用品として使えます。
+gohd.2e964474.b5766375.desc1=ブドウの苗は夏から秋にかけて花が咲き，実を結びます。
+
+## Food: gohd.f80fdeb8.
+gohd.food.title=料理
+gohd.f80fdeb8.1ca61478.title=なんとこの料理，置けちゃうんです!
+gohd.f80fdeb8.1ca61478.desc1=HaCのほぼ全ての料理はエンティティとして設置することができます。設置するにはブロックに向けてシフト右クリックです。
+gohd.f80fdeb8.431e11ca.title=大食いチャンピオン
+
+gohd.f80fdeb8.8644ca80.title=ナイスクリーム!
+gohd.f80fdeb8.8644ca80.desc1=アイスクリームを食べると30秒の火炎耐性のバフが得られます。
+gohd.f80fdeb8.6d028c8d.title="ベリー"ナイスパフェ!
+gohd.f80fdeb8.6d028c8d.desc1=パフェを食べると3分の火炎耐性のバフが得られます。
+gohd.f80fdeb8.0221230f.desc1=ケーキ類は即時体力のバフを与えます。
+
+gohd.f80fdeb8.29b5ac18.title=SOYの力
+gohd.f80fdeb8.a4eff7fb.desc1=生クリームパックの代用品
+gohd.f80fdeb8.6d144bfd.desc1=小麦粉の代用品
+gohd.f80fdeb8.7435702b.desc1=生肉の代用品
+
+gohd.f80fdeb8.e33a0690.title=希少な食材
+
 ## Minerals: gohd.cccede9d.
 gohd.minerals.title=鉱物資源
 gohd.cccede9d.b679e55a.title=HaCの鉱脈
@@ -120,10 +162,6 @@ gohd.cccede9d.c0d4a6c8.task1=鉱石の結晶 (5x)
 
 ## Tools:
 gohd.tools.title=道具
-
-## Chemistry: gohd.1710439e.
-gohd.chemistry.title=化学
-gohd.1710439e.52ab2cd5.title=鉱石洗浄
 
 ## Magic: gohd.bdb7cf70.
 gohd.magic.title=魔術

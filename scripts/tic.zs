@@ -144,12 +144,16 @@ print("Start loading tic.zs ...");
 //不要なToolforgeをJEIから削除する
 	val toolForge as short[][string] = {
 		"botania:storage": [0,1,2],
+		"chisel:blockcobalt": [0],
+		"dcs_climate:dcs_ore_metal_alloy": [0,3,4,5,6,9],
+		"dcs_climate:dcs_ore_metal_new": [0],
 		"enderio:block_alloy": [0,1,2,3,4,5,6,7,8,9],
 		"libvulpes:metal0": [4,5,6,9,10,11],
 		"minecraft:glowstone": [0],
 		"minecraft:gold_block": [0],
 		"minecraft:iron_block": [0],
 		"minecraft:redstone_block": [0],
+		"mekanism:basicblock": [0,2,4],
 		"tconevo:metal_block": [4,5,6],
 		"tconstruct:metal": [0,1,2,3,4,5],
 		"thermalfoundation:storage": [0,1,2,3,4,5,6,7],
