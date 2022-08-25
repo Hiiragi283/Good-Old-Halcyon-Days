@@ -35,7 +35,6 @@ print("Start loading unification.zs ...");
 	val removeCrafting as IItemStack[] = [
 		<dcs_climate:dcs_magic_card_m3:*>,
 		<dcs_climate:dcs_ore_gemblock:4>,
-		<twilightforest:uncrafting_table>,
 	];
 	for i in removeCrafting {
 		HiiragiUtils.removeCrafting(i);
@@ -205,6 +204,8 @@ print("Start loading unification.zs ...");
 	HiiragiUtils.addCraftingShaped(false, <artisanworktables:mechanical_toolbox>, RecipePattern.init(["ABA", "BCB", "ABA"]).map({A:<ore:plateBronze>, B:<ore:gearSteel>, C:<artisanworktables:toolbox>}).ingredients, null, null);
 	HiiragiUtils.addCraftingShapeless(false, <contenttweaker:feather_black>, [<minecraft:feather>, <botania:dye:15>, <botania:dye:15>, <botania:dye:15>], null, null);
 
+	HiiragiUtils.addCraftingReplace(<twilightforest:maze_map_focus>, <contenttweaker:ticket_mythic>, <twilightforest:uncrafting_table>);
+
 //かまどレシピの編集
 	//削除
 	val removeFurnace as IItemStack[] = [
@@ -363,6 +364,7 @@ print("Start loading unification.zs ...");
 		<tconstruct:slime_congealed:5>,
 		<tconstruct:slimesling:5>,
 		<tconstruct:slime_boots:5>,
+		<tconstruct:toolforge>.withTag({textureBlock: {id: "tconstruct:dried_clay", Count: 1 as byte, Damage: 1 as short}}),
 	];
 	for i in mapJEI {
 		mods.jei.JEI.addItem(i);

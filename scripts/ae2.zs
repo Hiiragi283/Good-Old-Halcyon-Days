@@ -25,7 +25,9 @@ print("Start loading ae2.zs ...");
 
 //作業台レシピの編集
 	//削除
-	val removeCrafting as IItemStack[] = [];
+	val removeCrafting as IItemStack[] = [
+		<appliedenergistics2:material:9>,
+	];
 	for i in removeCrafting {
 		HiiragiUtils.removeCrafting(i);
 		}

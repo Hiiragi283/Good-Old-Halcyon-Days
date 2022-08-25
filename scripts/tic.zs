@@ -35,7 +35,6 @@ print("Start loading tic.zs ...");
 		HiiragiUtils.removeCrafting(i);
 	}
 	//上書き
-	//HiiragiUtils.addCraftingShaped(true, <tcomplement:melter>, RecipePattern.init(["ABA", "ACA", "ADA"]).map({A:<tconstruct:materials:0>, B:<minecraft:hopper>, C:<tconstruct:seared_tank:*>, D:<ore:ingotIron>}).ingredients, null, null);
 	HiiragiUtils.addCraftingShaped(true, <tconstruct:smeltery_controller>, RecipePattern.init(["ABA", "ACA", "ADA"]).map({A:<tconstruct:materials:0>, B:<tconstruct:seared_furnace_controller>, C:<tconstruct:tinker_tank_controller>, D:<dcs_climate:dcs_device_chamber>}).ingredients, null, null);
 	//新規
 	HiiragiUtils.addCraftingShaped(false, <tconstruct:seared:3>, RecipePattern.init(["AA", "AA"]).map({A:<tconstruct:materials:0>}).ingredients, null, null);
@@ -141,6 +140,27 @@ print("Start loading tic.zs ...");
 	HiiragiUtils.addCasting("table", false, <thermalfoundation:material:640>, <thermalfoundation:material:512>, <liquid:electrum>, 144, true, 5*20);
 
 //Meltingレシピの編集
+
+//不要なToolforgeをJEIから削除する
+	val toolForge as short[][string] = {
+		"botania:storage": [0,1,2],
+		"enderio:block_alloy": [0,1,2,3,4,5,6,7,8,9],
+		"libvulpes:metal0": [4,5,6,9,10,11],
+		"minecraft:glowstone": [0],
+		"minecraft:gold_block": [0],
+		"minecraft:iron_block": [0],
+		"minecraft:redstone_block": [0],
+		"tconevo:metal_block": [4,5,6],
+		"tconstruct:metal": [0,1,2,3,4,5],
+		"thermalfoundation:storage": [0,1,2,3,4,5,6,7],
+		"thermalfoundation:storage_alloy": [0,1,2,3,4,5,6,7],
+		"twilightforest:block_storage": [1,2]
+	};
+	for id, damage in toolForge {
+		for i in damage {
+			HiiragiUtils.removeFromJEI(<tconstruct:toolforge>.withTag({textureBlock: {id: id, Count: 1 as byte, Damage: i}}));
+		}
+	}
 
 //このscriptの読み込みの完了をログに出力
 print("tic.zs loaded!");
