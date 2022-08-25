@@ -1,0 +1,101 @@
+{
+	title: "{gohd.f80fdeb8.431e11ca.title}",
+	icon: "dcs_climate:dcs_food_plate_meat 1 1",
+	x: 7.0d,
+	y: -1.0d,
+	shape: "diamond",
+	dependencies: [
+		"dec3e6be"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "fa3033b5",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_food_plate_meat 1 1"
+		}]
+	},
+	{
+		uid: "21c409b9",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_food_plate_meat 1 3"
+		}]
+	},
+	{
+		uid: "38ad2bfb",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_food_plate_meat 1 5"
+		}]
+	},
+	{
+		uid: "695d97a1",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_food_plate_meat 1 7"
+		}]
+	},
+	{
+		uid: "e55d1035",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_food_plate_meat 1 9"
+		}]
+	},
+	{
+		uid: "cf3deb7d",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_food_plate_meat 1 11"
+		}]
+	},
+	{
+		uid: "d61485bd",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_food_plate_soup 1 1"
+		}]
+	},
+	{
+		uid: "3cf3feb1",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_food_plate_soup 1 3"
+		}]
+	},
+	{
+		uid: "898e5fdb",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_food_plate_soup 1 5"
+		}]
+	},
+	{
+		uid: "4260cb4d",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_food_plate_soup 1 7"
+		}]
+	},
+	{
+		uid: "59e6c033",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_food_plate_soup 1 9"
+		}]
+	},
+	{
+		uid: "c98ef750",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_food_plate_soup 1 11"
+		}]
+	}],
+	rewards: [{
+		uid: "139812cc",
+		type: "item",
+		item: "contenttweaker:ticket_legendary",
+		count: 3
+	}]
+}

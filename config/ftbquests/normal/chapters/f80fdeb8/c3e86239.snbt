@@ -1,0 +1,23 @@
+{
+	x: 11.0d,
+	y: 3.0d,
+	dependencies: [
+		"807824c0",
+		"4111c29b"
+	],
+	dependency_requirement: "one_completed",
+	tasks: [{
+		uid: "191b286a",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_fooddust"
+		}],
+		count: 16L
+	}],
+	rewards: [{
+		uid: "389ea637",
+		type: "item",
+		item: "dcs_climate:dcs_fooddust",
+		count: 16
+	}]
+}

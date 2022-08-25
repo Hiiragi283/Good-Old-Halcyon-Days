@@ -2,9 +2,11 @@
 	icon: "minecraft:wheat_seeds",
 	x: 2.0d,
 	y: -2.0d,
+	shape: "diamond",
 	dependencies: [
 		"648774ca"
 	],
+	size: 2.0d,
 	tasks: [{
 		uid: "c8b5ada7",
 		type: "item",

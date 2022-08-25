@@ -1,0 +1,19 @@
+{
+	x: 11.0d,
+	y: 0.0d,
+	dependencies: [
+		"807824c0",
+		"4111c29b"
+	],
+	tasks: [{
+		uid: "f3da7b27",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_animalfeed 1 2"
+		},
+		{
+			item: "dcs_climate:dcs_animalfeed 1 1"
+		}],
+		count: 16L
+	}]
+}

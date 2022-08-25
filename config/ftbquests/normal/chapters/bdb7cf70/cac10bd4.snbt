@@ -2,6 +2,9 @@
 	title: "{gohd.bdb7cf70.cac10bd4.title}",
 	x: 2.5d,
 	y: 3.0d,
+	dependencies: [
+		"648774ca"
+	],
 	tasks: [{
 		uid: "923996f7",
 		type: "item",

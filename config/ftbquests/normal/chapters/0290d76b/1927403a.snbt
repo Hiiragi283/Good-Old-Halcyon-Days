@@ -1,0 +1,62 @@
+{
+	icon: {
+		id: "thermalfoundation:tool.fishing_rod_diamond",
+		tag: {
+			ench: [{
+				lvl: 10s,
+				id: 62s
+			},
+			{
+				lvl: 10s,
+				id: 61s
+			}],
+			display: {
+				LocName: "gohd.custom.rod_sea.name"
+			}
+		}
+	},
+	x: 10.0d,
+	y: 3.0d,
+	can_repeat: true,
+	hide_dependency_lines: true,
+	dependencies: [
+		"06c5892b"
+	],
+	tasks: [{
+		uid: "07a534e2",
+		type: "item",
+		items: [{
+			item: "contenttweaker:ticket_legendary"
+		}],
+		count: 3L
+	},
+	{
+		uid: "30da4e97",
+		type: "item",
+		items: [{
+			item: "thermalfoundation:tool.fishing_rod_diamond"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "eb38fe10",
+		type: "item",
+		item: {
+			id: "thermalfoundation:tool.fishing_rod_diamond",
+			tag: {
+				ench: [{
+					lvl: 10s,
+					id: 62s
+				},
+				{
+					lvl: 10s,
+					id: 61s
+				}],
+				display: {
+					LocName: "gohd.custom.rod_sea.name"
+				}
+			}
+		}
+	}]
+}

@@ -1,0 +1,21 @@
+{
+	x: 9.0d,
+	y: 7.0d,
+	dependencies: [
+		"54457b10"
+	],
+	tasks: [{
+		uid: "418557b2",
+		type: "item",
+		items: [{
+			item: "minecraft:sugar"
+		}],
+		count: 16L
+	}],
+	rewards: [{
+		uid: "4ec5007b",
+		type: "item",
+		item: "minecraft:sugar",
+		count: 16
+	}]
+}

@@ -1,6 +1,6 @@
 {
 	x: -3.0d,
-	y: -5.0d,
+	y: -11.5d,
 	shape: "diamond",
 	text: [
 		"{gohd.hac.tooltip}"

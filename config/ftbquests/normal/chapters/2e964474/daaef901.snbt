@@ -1,0 +1,50 @@
+{
+	icon: "minecraft:fish",
+	x: 1.0d,
+	y: 0.0d,
+	shape: "rsquare",
+	text: [
+		"{gohd.2e964474.daaef901.desc1}"
+	],
+	dependencies: [
+		"9d597ab6"
+	],
+	tasks: [{
+		uid: "32c3d9ac",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_handnet"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "7b12c41a",
+		type: "item",
+		items: [{
+			item: "minecraft:fish"
+		},
+		{
+			item: "minecraft:fish 1 1"
+		},
+		{
+			item: "dcs_climate:dcs_food_meat 1 2"
+		},
+		{
+			item: "dcs_climate:dcs_food_meat 1 9"
+		}]
+	}],
+	rewards: [{
+		uid: "05bce0e8",
+		type: "item",
+		item: {
+			id: "dcs_climate:dcs_handnet",
+			tag: {
+				ench: [{
+					lvl: 5s,
+					id: 34s
+				}]
+			}
+		}
+	}]
+}

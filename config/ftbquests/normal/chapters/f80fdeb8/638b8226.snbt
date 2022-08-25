@@ -1,14 +1,14 @@
 {
-	x: 6.0d,
-	y: 8.0d,
+	x: 2.0d,
+	y: 0.0d,
 	text: [
 		"{gohd.hac.tooltip}"
 	],
 	dependencies: [
-		"c308fdf9"
+		"1ca61478"
 	],
 	tasks: [{
-		uid: "621c7e75",
+		uid: "4d2155ac",
 		type: "item",
 		items: [{
 			item: "dcs_climate:dcs_device_pottery_pot"
@@ -16,7 +16,7 @@
 		ignore_nbt: 1b
 	}],
 	rewards: [{
-		uid: "a54964ab",
+		uid: "1e85efdf",
 		type: "item",
 		item: "contenttweaker:ticket_common"
 	}]

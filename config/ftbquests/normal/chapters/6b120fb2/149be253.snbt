@@ -1,0 +1,14 @@
+{
+	x: -7.0d,
+	y: -7.5d,
+	dependencies: [
+		"b6df7c84"
+	],
+	tasks: [{
+		uid: "28ca74ef",
+		type: "item",
+		items: [{
+			item: "extrautils2:enderlilly"
+		}]
+	}]
+}

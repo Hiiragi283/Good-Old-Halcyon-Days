@@ -1,0 +1,39 @@
+{
+	x: 6.0d,
+	y: 2.0d,
+	text: [
+		"{gohd.f80fdeb8.6d028c8d.desc1}"
+	],
+	dependencies: [
+		"8644ca80"
+	],
+	tasks: [{
+		uid: "5814bb35",
+		type: "item",
+		title: "{gohd.f80fdeb8.6d028c8d.title}",
+		items: [{
+			item: "dcs_climate:dcs_food_icecream 1 6"
+		},
+		{
+			item: "dcs_climate:dcs_food_icecream 1 7"
+		},
+		{
+			item: "dcs_climate:dcs_food_icecream 1 8"
+		},
+		{
+			item: "dcs_climate:dcs_food_icecream 1 9"
+		}]
+	}],
+	rewards: [{
+		uid: "232bcbf4",
+		type: "item",
+		item: "dcs_climate:dcs_cont_cardboard 1 4",
+		count: 4
+	},
+	{
+		uid: "3bcbdb69",
+		type: "item",
+		item: "dcs_climate:dcs_cont_bags",
+		count: 4
+	}]
+}

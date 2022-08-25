@@ -1,0 +1,27 @@
+{
+	title: "{gohd.2e964474.8e5c606a.title}",
+	x: 6.5d,
+	y: 0.0d,
+	shape: "rsquare",
+	dependencies: [
+		"339a28fb",
+		"a259b102"
+	],
+	dependency_requirement: "one_completed",
+	tasks: [{
+		uid: "fe6f7a90",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_device_hopper_silver"
+		},
+		{
+			item: "storagedrawers:compdrawers"
+		}]
+	}],
+	rewards: [{
+		uid: "c936466d",
+		type: "item",
+		item: "contenttweaker:ticket_uncommon",
+		count: 3
+	}]
+}

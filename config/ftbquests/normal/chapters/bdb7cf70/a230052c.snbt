@@ -1,23 +1,19 @@
 {
-	x: 4.0d,
+	x: 5.0d,
 	y: 4.0d,
 	text: [
-		"{gohd.09d26429.a230052c.desc1}"
+		""
 	],
 	dependencies: [
-		"bbe39da4"
+		"b560ff44"
 	],
 	tasks: [{
-		uid: "7156d465",
+		uid: "37c75d14",
 		type: "item",
 		items: [{
-			item: "minecraft:ender_pearl"
+			item: "openblocks:golden_eye"
 		}],
-		count: 12L
-	}],
-	rewards: [{
-		uid: "5d00333c",
-		type: "item",
-		item: "openblocks:golden_eye"
+		ignore_damage: true,
+		ignore_nbt: 1b
 	}]
 }

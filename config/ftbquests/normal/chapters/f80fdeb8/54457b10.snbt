@@ -1,0 +1,22 @@
+{
+	x: 11.0d,
+	y: 7.0d,
+	shape: "square",
+	dependencies: [
+		"648774ca"
+	],
+	tasks: [{
+		uid: "7c45a23e",
+		type: "item",
+		items: [{
+			item: "minecraft:reeds"
+		}],
+		count: 16L
+	}],
+	rewards: [{
+		uid: "e8bc2268",
+		type: "item",
+		item: "dcs_climate:dcs_cont_crop 1 6",
+		count: 4
+	}]
+}

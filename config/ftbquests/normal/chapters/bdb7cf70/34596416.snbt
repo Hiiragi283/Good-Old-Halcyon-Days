@@ -1,6 +1,6 @@
 {
 	icon: "minecraft:end_stone",
-	x: 5.0d,
+	x: 6.0d,
 	y: 4.0d,
 	dependencies: [
 		"a230052c"

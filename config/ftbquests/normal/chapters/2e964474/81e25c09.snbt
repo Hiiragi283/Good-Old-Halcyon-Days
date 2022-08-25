@@ -1,0 +1,28 @@
+{
+	x: 2.0d,
+	y: 4.5d,
+	text: [
+		"{gohd.2e964474.81e25c09.desc1}"
+	],
+	dependencies: [
+		"c6244187"
+	],
+	tasks: [{
+		uid: "cdd480d6",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_food_crops 1 12"
+		}]
+	}],
+	rewards: [{
+		uid: "7460e937",
+		type: "item",
+		item: "dcs_climate:dcs_food_crops 1 12",
+		count: 15
+	},
+	{
+		uid: "f766fcb3",
+		type: "item",
+		item: "dcs_climate:dcs_food_wagashi 1 2"
+	}]
+}

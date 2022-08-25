@@ -1,14 +1,14 @@
 {
-	x: 7.0d,
-	y: 9.0d,
+	x: 2.0d,
+	y: -2.0d,
 	text: [
 		"{gohd.hac.tooltip}"
 	],
 	dependencies: [
-		"07d7486b"
+		"638b8226"
 	],
 	tasks: [{
-		uid: "a26d85bc",
+		uid: "343fad5d",
 		type: "item",
 		items: [{
 			item: "dcs_climate:dcs_device_steel_pot"
@@ -16,8 +16,9 @@
 		ignore_nbt: 1b
 	}],
 	rewards: [{
-		uid: "0940728e",
+		uid: "f3130a6f",
 		type: "item",
-		item: "contenttweaker:ticket_uncommon"
+		item: "contenttweaker:ticket_uncommon",
+		count: 3
 	}]
 }

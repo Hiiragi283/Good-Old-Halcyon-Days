@@ -1,11 +1,14 @@
 {
-	x: 4.0d,
-	y: 8.0d,
+	x: 3.0d,
+	y: -1.0d,
+	text: [
+		"{gohd.hac.tooltip}"
+	],
 	dependencies: [
-		"dc397ef5"
+		"638b8226"
 	],
 	tasks: [{
-		uid: "3fa8ffa4",
+		uid: "5dac23cc",
 		type: "item",
 		items: [{
 			item: "dcs_climate:dcs_food_teacup 1 2"
@@ -13,12 +16,12 @@
 		ignore_nbt: 1b
 	}],
 	rewards: [{
-		uid: "8dbcc8f9",
+		uid: "61ae6b2e",
 		type: "item",
 		item: "dcs_climate:dcs_food_teacup"
 	},
 	{
-		uid: "d8bdf3db",
+		uid: "a6616f13",
 		type: "item",
 		item: "dcs_climate:dcs_food_teacup 1 1"
 	}]

@@ -1,0 +1,27 @@
+{
+	x: 7.0d,
+	y: 5.0d,
+	shape: "diamond",
+	hide_dependency_lines: true,
+	dependencies: [
+		"8083fe92",
+		"0f9f541d",
+		"228ba021",
+		"dd775cc4",
+		"a4eff7fb",
+		"d781c99f"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "d55c83ce",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_food_cake 1 11"
+		}]
+	}],
+	rewards: [{
+		uid: "3fef0818",
+		type: "item",
+		item: "contenttweaker:ticket_legendary"
+	}]
+}

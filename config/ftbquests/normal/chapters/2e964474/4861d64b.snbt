@@ -1,0 +1,29 @@
+{
+	x: 1.0d,
+	y: 6.0d,
+	text: [
+		"{gohd.2e964474.4861d64b.desc1}",
+		"{gohd.2e964474.4861d64b.desc2}"
+	],
+	dependencies: [
+		"9d597ab6"
+	],
+	tasks: [{
+		uid: "f816642a",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_food_seeds 1 6"
+		}]
+	}],
+	rewards: [{
+		uid: "62342b88",
+		type: "item",
+		item: "dcs_climate:dcs_food_seeds 1 6",
+		count: 7
+	},
+	{
+		uid: "903b54a0",
+		type: "item",
+		item: "dcs_climate:dcs_food_bowl_stew 1 12"
+	}]
+}

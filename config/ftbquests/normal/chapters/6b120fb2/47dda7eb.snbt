@@ -1,0 +1,27 @@
+{
+	x: -2.5d,
+	y: -6.5d,
+	dependencies: [
+		"deb8b659"
+	],
+	tasks: [{
+		uid: "7065a816",
+		type: "item",
+		items: [{
+			id: "endertanks:ender_tank",
+			tag: {
+				code: "000"
+			}
+		}]
+	}],
+	rewards: [{
+		uid: "ac8c8359",
+		type: "item",
+		item: {
+			id: "endertanks:ender_bucket",
+			tag: {
+				code: "000"
+			}
+		}
+	}]
+}

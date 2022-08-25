@@ -1,0 +1,28 @@
+{
+	x: 0.0d,
+	y: 6.0d,
+	text: [
+		"{gohd.2e964474.78f46bf1.desc1}"
+	],
+	dependencies: [
+		"9d597ab6"
+	],
+	tasks: [{
+		uid: "9e024fb8",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_food_seeds 1 8"
+		}]
+	}],
+	rewards: [{
+		uid: "d44a3ded",
+		type: "item",
+		item: "dcs_climate:dcs_food_seeds 1 8",
+		count: 7
+	},
+	{
+		uid: "bc057591",
+		type: "item",
+		item: "dcs_climate:dcs_food_salad 1 3"
+	}]
+}

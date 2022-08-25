@@ -1,0 +1,29 @@
+{
+	x: 1.0d,
+	y: 4.5d,
+	dependencies: [
+		"7128be68"
+	],
+	tasks: [{
+		uid: "0ce94af5",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_misc 1 1"
+		}],
+		count: 64L
+	},
+	{
+		uid: "ab4dd6e1",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_misc 1 3"
+		}],
+		count: 16L
+	}],
+	rewards: [{
+		uid: "2cb7de8c",
+		type: "item",
+		item: "dcs_climate:dcs_cont_basket 1 5",
+		count: 8
+	}]
+}

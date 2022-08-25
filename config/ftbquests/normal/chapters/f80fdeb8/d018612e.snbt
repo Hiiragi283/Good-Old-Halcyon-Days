@@ -1,0 +1,14 @@
+{
+	x: 4.0d,
+	y: 8.0d,
+	dependencies: [
+		"07dcd8c6"
+	],
+	tasks: [{
+		uid: "da1b3db7",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_food_bowl_stew 1 11"
+		}]
+	}]
+}

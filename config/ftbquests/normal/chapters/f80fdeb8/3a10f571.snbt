@@ -1,14 +1,14 @@
 {
-	x: 5.0d,
-	y: 9.0d,
+	x: 4.0d,
+	y: -2.0d,
 	text: [
 		"{gohd.hac.tooltip}"
 	],
 	dependencies: [
-		"c308fdf9"
+		"405265f8"
 	],
 	tasks: [{
-		uid: "347006a9",
+		uid: "0dd88239",
 		type: "item",
 		items: [{
 			item: "dcs_climate:dcs_device_tea_pot"
@@ -16,13 +16,13 @@
 		ignore_nbt: 1b
 	}],
 	rewards: [{
-		uid: "1ff47a04",
+		uid: "f7122148",
 		type: "item",
 		item: "dcs_climate:dcs_food_pack 1 3",
 		count: 16
 	},
 	{
-		uid: "cbb086ed",
+		uid: "ca369b2d",
 		type: "item",
 		item: "biomesoplenty:filled_honeycomb",
 		count: 16

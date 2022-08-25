@@ -8,10 +8,10 @@
 		"2ab1ef8e"
 	],
 	tasks: [{
-		uid: "55abc81a",
+		uid: "91d8444b",
 		type: "item",
 		items: [{
-			item: "extrautils2:teleporter"
+			item: "twilightforest:miniature_structure"
 		}]
 	}],
 	rewards: [{

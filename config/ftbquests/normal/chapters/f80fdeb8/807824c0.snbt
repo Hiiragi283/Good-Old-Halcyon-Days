@@ -1,0 +1,22 @@
+{
+	x: 9.0d,
+	y: 3.0d,
+	shape: "square",
+	dependencies: [
+		"9d597ab6"
+	],
+	tasks: [{
+		uid: "75d63ae5",
+		type: "item",
+		items: [{
+			item: "minecraft:wheat"
+		}],
+		count: 16L
+	}],
+	rewards: [{
+		uid: "611b8593",
+		type: "item",
+		item: "minecraft:hay_block",
+		count: 4
+	}]
+}
