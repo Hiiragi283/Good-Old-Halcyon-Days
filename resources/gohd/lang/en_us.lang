@@ -128,6 +128,7 @@ gohd.2e964474.33c20e52.title=Soft and Wet
 gohd.2e964474.33c20e52.desc1=If the temperature of the Farmland is WARM and the humidity is WET, the crop will grow faster.
 gohd.2e964474.daaef901.desc1=Right-click on a water source in the Hand Net to obtain various items
 gohd.2e964474.8e5c606a.title=More and More Compression!
+gohd.2e964474.da7a26f4.title=How to automate tree crops
 
 gohd.2e964474.81e25c09.desc1=Green soy Beans is harvested before Soy Plant grow up.
 gohd.2e964474.78f46bf1.desc1=Seaweed is planted under water over 2 blocks depth.
@@ -159,39 +160,16 @@ gohd.f80fdeb8.7435702b.desc1=Used as Raw Meat
 
 gohd.f80fdeb8.e33a0690.title=Rare Foods
 
+## Microbe: gohd.68baec83.
+gohd.microbe.title=Microbe
+gohd.identify_microbe.desc=Right-click to identify!
+gohd.68baec83.3f15f898.desc1=To culture microbes, the agar or medium with microbes is placed in an incubator and allowed to stand for several days after being adjusted to the appropriate climate from GUI.
+
+## brewing: gohd.
+gohd.brewing.title=Brewing
+
 ## Tools:
 gohd.tools.title=Tools
-
-## Magic: gohd.bdb7cf70.
-gohd.magic.title=Magic
-gohd.bdb7cf70.d2595f85.desc1=You can get the first Mystical Flower using Floral Fertilizer.
-gohd.bdb7cf70.8d0ffccf.title=We are Living!
-gohd.bdb7cf70.8d0ffccf.desc1=Check out new recipes!
-gohd.bdb7cf70.fe39e5f6.title=We are Mana-Infused!
-gohd.bdb7cf70.dbe05e17.title=More Inexpensive Agglomeration
-gohd.bdb7cf70.860c5647.title=We are Dreaming!
-gohd.bdb7cf70.52e48bc0.title=We are Metamorphosed!
-gohd.bdb7cf70.6328f68d.title=We are Runic!
-gohd.bdb7cf70.e5eb64a5.title=We are Shimmering!
-gohd.bdb7cf70.4cbd8e5d.title=The most easiest way to get Gunpowder
-gohd.bdb7cf70.1f6861fc.title=Elemental Powders
-gohd.bdb7cf70.b2fe2a22.title=Elemental Dusts
-gohd.bdb7cf70.cac10bd4.title=Color Drops
-gohd.bdb7cf70.bbe39da4.title=Color Extracts
-gohd.bdb7cf70.a539f485.title=Inactive Color Cubes
-gohd.bdb7cf70.c895536e.title=We've been Activated!
-gohd.bdb7cf70.d957309c.title=We are Additional Cubes!
-
-## Utilities: gohd.6b120fb2.
-gohd.utilities.title=Utilities
-gohd.6b120fb2.7f470c3f.title=Remote Monitors
-gohd.6b120fb2.1cefae3a.title=Wiki for Quarry Plus
-gohd.6b120fb2.414f78d0.subtitle=Unbreakable Block is BREAKABLE.
-gohd.6b120fb2.5e9802c1.title=EZ Network Interfaces
-gohd.6b120fb2.8caedb3d.title=Starter Kit for simple ME Network
-gohd.6b120fb2.a3c67014.title=Starter Kit for wireless ME Network
-gohd.6b120fb2.23189174.title=16 Inputs -> 6 Outputs
-gohd.6b120fb2.7c9e3fd5.title=Redstone Flux Dynamos
 gohd.6b120fb2.d005700a.title=Weapons
 gohd.6b120fb2.6a907d55.title=Twilight Weapons
 gohd.6b120fb2.30317d20.title=Twilight Bows
@@ -211,6 +189,39 @@ gohd.6b120fb2.61b73c1d.title=Clothes for Climate Magicians
 gohd.6b120fb2.09e80f8b.title=Refined Odsidian Armors
 gohd.6b120fb2.27b9a91c.title=Knightslime Armors
 gohd.6b120fb2.27b9a91c.subtitle=Bring you luck
+
+## Magic: gohd.bdb7cf70.
+gohd.magic.title=Magic
+gohd.bdb7cf70.d2595f85.desc1=You can get the first Mystical Flower using Floral Fertilizer.
+gohd.bdb7cf70.8d0ffccf.title=We are Living!
+gohd.bdb7cf70.8d0ffccf.desc1=Check out new recipes!
+gohd.bdb7cf70.fe39e5f6.title=We are Mana-Infused!
+gohd.bdb7cf70.dbe05e17.title=More Inexpensive Agglomeration
+gohd.bdb7cf70.860c5647.title=We are Dreaming!
+gohd.bdb7cf70.ada80e44.desc1=Dreaming mana Pool is 2x as large as normal Mana Pool
+gohd.bdb7cf70.c8a5b256.desc1=Elven Altar accepts Spark!
+gohd.bdb7cf70.6328f68d.title=We are Runic!
+gohd.bdb7cf70.e5eb64a5.title=We are Shimmering!
+gohd.bdb7cf70.4cbd8e5d.title=The most easiest way to get Gunpowder
+gohd.bdb7cf70.1f6861fc.title=Elemental Powders
+gohd.bdb7cf70.b2fe2a22.title=Elemental Dusts
+gohd.bdb7cf70.cac10bd4.title=Color Drops
+gohd.bdb7cf70.bbe39da4.title=Color Extracts
+gohd.bdb7cf70.a539f485.title=Inactive Color Cubes
+gohd.bdb7cf70.c895536e.title=We've been Activated!
+gohd.bdb7cf70.d957309c.title=We are Additional Cubes!
+
+## Utilities: gohd.6b120fb2.
+gohd.utilities.title=Utilities
+gohd.6b120fb2.7f470c3f.title=Remote Monitors
+gohd.6b120fb2.1cefae3a.title=Wiki for Quarry Plus
+gohd.6b120fb2.414f78d0.subtitle=Make the unbreakable block BREAKABLE.
+gohd.6b120fb2.5e9802c1.title=EZ Network Interfaces
+gohd.6b120fb2.8caedb3d.title=Starter Kit for simple ME Network
+gohd.6b120fb2.a3c67014.title=Starter Kit for wireless ME Network
+gohd.6b120fb2.23189174.title=16 Inputs -> 6 Outputs
+gohd.6b120fb2.7c9e3fd5.title=Redstone Flux Dynamos
+gohd.6b120fb2.849036fe.title=Photovoltaic Cells
 
 ## Shop gohd.0290d76b.
 gohd.shop.title=Quest Shop

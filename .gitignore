@@ -44,7 +44,6 @@ config/tellme
 
 BotaniaVars.dat
 hei_bookmarks.ini
-icon.png
 icon_old.png
 minecraftinstance.json
 options.txt

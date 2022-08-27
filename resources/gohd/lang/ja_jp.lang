@@ -90,6 +90,35 @@ gohd.b98d2902.146a109c.desc1=高温や低温の場所にいるとダメージを
 gohd.b98d2902.146a109c.desc2=これらは適切な防具を着たり，火炎耐性や冷気耐性を得たり，別の熱源を置くことで温度を相殺したりすることで軽減あるいは無効化できます。
 gohd.b98d2902.85f1fb5d.title=Pattern Paper
 
+## Minerals: gohd.cccede9d.
+gohd.minerals.title=鉱物資源
+gohd.cccede9d.b679e55a.title=HaCの鉱脈
+gohd.cccede9d.add5de61.title=赤鉱脈
+gohd.cccede9d.6ef83f24.title=緑鉱脈
+gohd.cccede9d.4b446108.title=青鉱脈
+gohd.cccede9d.94dd1723.title=白鉱脈
+gohd.cccede9d.fcea16fa.title=黒鉱脈
+gohd.cccede9d.d70f01cb.title=スカルン鉱床
+gohd.cccede9d.d70f01cb.desc1=スカルン鉱床は3つの種類があり、様々なバイオームに§l稀に§r生成される.
+gohd.cccede9d.1313a69a.title=スカルン鉱床(石)
+gohd.cccede9d.1313a69a.desc1=スカルン鉱床(石)は 森林系バイオームに§l稀に§r生成される.
+gohd.cccede9d.3634dbb2.title=スカルン鉱床(石灰石)
+gohd.cccede9d.3634dbb2.desc1=スカルン鉱床(石灰石)は 平原系、砂漠系及びサバンナ系バイオームに§l稀に§r生成される.
+gohd.cccede9d.cd18f633.title=スカルン鉱床(ホルンフェルス)
+gohd.cccede9d.cd18f633.desc1=スカルン鉱床(ホルンフェルス)は 海洋系及び湿地系に§l稀に§r生成される.
+gohd.cccede9d.33f25c86.title=グアノ鉱脈
+gohd.cccede9d.33f25c86.desc1=グアノ鉱脈は海の下に生成される.
+gohd.cccede9d.bdc29cf2.desc1=湯の華は寒い山岳系バイオームに生成される温泉中に生成される.
+gohd.cccede9d.8ac28a20.title=Abyssal Geode
+gohd.cccede9d.8ac28a20.desc1=Abyssal Geodeは海洋バイオームの下に生成される.
+gohd.cccede9d.1a7f5909.subtitle=tile.railcraft.ore.magic.name
+gohd.cccede9d.1a7f5909.desc1=Firestone Oreはネザーの溶岩湖の下に生成される.
+gohd.cccede9d.5a6ee22b.desc1=Refined Firestoneは溶岩でチャージできる.
+gohd.cccede9d.5a6ee22b.desc2=Charged Refined Firestoneは固形燃料の他、着火剤としても使うことができる.
+gohd.cccede9d.fed34783.task1=鉱石の塊 (3x)
+gohd.cccede9d.3aeb8033.task1=鉱石の欠片 (4x)
+gohd.cccede9d.c0d4a6c8.task1=鉱石の結晶 (5x)
+
 ## Chemistry: gohd.1710439e.
 gohd.chemistry.title=化学
 gohd.1710439e.52ab2cd5.title=鉱石洗浄
@@ -100,6 +129,7 @@ gohd.2e964474.33c20e52.title=柔らかくそして濡れている
 gohd.2e964474.33c20e52.desc1=耕地の温度がWARMで湿度がWETの場合，作物はより早く成長します。
 gohd.2e964474.daaef901.desc1=タモ網で水源を右クリックすると，さまざまなアイテムを入手することができます
 gohd.2e964474.8e5c606a.title=圧縮圧縮ゥ!
+gohd.2e964474.da7a26f4.title=樹木の収穫を自動化する方法
 
 gohd.2e964474.81e25c09.desc1=枝豆は大豆の苗が成長しきる前に収穫することができます。
 gohd.2e964474.78f46bf1.desc1=海藻は2ブロック以上の深さをもつ水中に植えられます。
@@ -131,68 +161,16 @@ gohd.f80fdeb8.7435702b.desc1=生肉の代用品
 
 gohd.f80fdeb8.e33a0690.title=希少な食材
 
-## Minerals: gohd.cccede9d.
-gohd.minerals.title=鉱物資源
-gohd.cccede9d.b679e55a.title=HaCの鉱脈
-gohd.cccede9d.add5de61.title=赤鉱脈
-gohd.cccede9d.6ef83f24.title=緑鉱脈
-gohd.cccede9d.4b446108.title=青鉱脈
-gohd.cccede9d.94dd1723.title=白鉱脈
-gohd.cccede9d.fcea16fa.title=黒鉱脈
-gohd.cccede9d.d70f01cb.title=スカルン鉱床
-gohd.cccede9d.d70f01cb.desc1=スカルン鉱床は3つの種類があり、様々なバイオームに§l稀に§r生成される.
-gohd.cccede9d.1313a69a.title=スカルン鉱床(石)
-gohd.cccede9d.1313a69a.desc1=スカルン鉱床(石)は 森林系バイオームに§l稀に§r生成される.
-gohd.cccede9d.3634dbb2.title=スカルン鉱床(石灰石)
-gohd.cccede9d.3634dbb2.desc1=スカルン鉱床(石灰石)は 平原系、砂漠系及びサバンナ系バイオームに§l稀に§r生成される.
-gohd.cccede9d.cd18f633.title=スカルン鉱床(ホルンフェルス)
-gohd.cccede9d.cd18f633.desc1=スカルン鉱床(ホルンフェルス)は 海洋系及び湿地系に§l稀に§r生成される.
-gohd.cccede9d.33f25c86.title=グアノ鉱脈
-gohd.cccede9d.33f25c86.desc1=グアノ鉱脈は海の下に生成される.
-gohd.cccede9d.bdc29cf2.desc1=湯の華は寒い山岳系バイオームに生成される温泉中に生成される.
-gohd.cccede9d.8ac28a20.title=Abyssal Geode
-gohd.cccede9d.8ac28a20.desc1=Abyssal Geodeは海洋バイオームの下に生成される.
-gohd.cccede9d.1a7f5909.subtitle=tile.railcraft.ore.magic.name
-gohd.cccede9d.1a7f5909.desc1=Firestone Oreはネザーの溶岩湖の下に生成される.
-gohd.cccede9d.5a6ee22b.desc1=Refined Firestoneは溶岩でチャージできる.
-gohd.cccede9d.5a6ee22b.desc2=Charged Refined Firestoneは固形燃料の他、着火剤としても使うことができる.
-gohd.cccede9d.fed34783.task1=鉱石の塊 (3x)
-gohd.cccede9d.3aeb8033.task1=鉱石の欠片 (4x)
-gohd.cccede9d.c0d4a6c8.task1=鉱石の結晶 (5x)
+## Microbe: gohd.
+gohd.microbe.title=微生物
+gohd.identify_microbe.desc=微生物を右クリックすると種類を鑑定できます
+gohd.68baec83.3f15f898.desc1=微生物を培養するには微生物が付着した培地をインキュベーターに入れ，GUIから適切な気候に合わせた後数日間放置します。
+
+## brewing: gohd.
+gohd.brewing.title=醸造
 
 ## Tools:
 gohd.tools.title=道具
-
-## Magic: gohd.bdb7cf70.
-gohd.magic.title=魔術
-gohd.bdb7cf70.d2595f85.desc1=神秘の花は鼻の肥料を使うことで入手.
-gohd.bdb7cf70.8d0ffccf.title=生きている!
-gohd.bdb7cf70.8d0ffccf.desc1=新レシピを確認してね!
-gohd.bdb7cf70.fe39e5f6.title=マナを注がれた者たち!
-gohd.bdb7cf70.dbe05e17.title=より安価な集結
-gohd.bdb7cf70.860c5647.title=夢見る者たち!
-gohd.bdb7cf70.52e48bc0.title=メタモルフォーゼ!
-gohd.bdb7cf70.6328f68d.title=神秘的な者たち!
-gohd.bdb7cf70.e5eb64a5.title=煌めいている者たち!
-gohd.bdb7cf70.4cbd8e5d.title=もっとも簡単な火薬の入手方法
-gohd.bdb7cf70.1f6861fc.title=元素パウダー
-gohd.bdb7cf70.b2fe2a22.title=元素の粉
-gohd.bdb7cf70.cac10bd4.title=色のしずく
-gohd.bdb7cf70.bbe39da4.title=色のエッセンス
-gohd.bdb7cf70.a539f485.title=不活性な色キューブ
-gohd.bdb7cf70.c895536e.title=活性化したぜ!
-gohd.bdb7cf70.d957309c.title=追加色だよ!
-
-## Utilities: gohd.6b120fb2.
-gohd.utilities.title=便利系
-gohd.6b120fb2.7f470c3f.title=遠隔モニター
-gohd.6b120fb2.1cefae3a.title=Quarry PlusのWiki
-gohd.6b120fb2.414f78d0.subtitle=破壊不可ブロックは破壊可能.
-gohd.6b120fb2.5e9802c1.title=EZ Networkのインターフェース
-gohd.6b120fb2.8caedb3d.title=簡易ME Networkスターターキット
-gohd.6b120fb2.a3c67014.title=無線ME Networkスターターキット
-gohd.6b120fb2.23189174.title=16 Inputs -> 6 Outputs
-gohd.6b120fb2.7c9e3fd5.title=Redstone Flux発電機
 gohd.6b120fb2.d005700a.title=武器
 gohd.6b120fb2.6a907d55.title=黄昏の武器たち
 gohd.6b120fb2.30317d20.title=黄昏の弓たち
@@ -213,6 +191,39 @@ gohd.6b120fb2.09e80f8b.title=精製黒曜石防具
 gohd.6b120fb2.27b9a91c.title=ナイトメタル防具
 gohd.6b120fb2.27b9a91c.subtitle=幸運をもたらす
 
+## Magic: gohd.bdb7cf70.
+gohd.magic.title=魔術
+gohd.bdb7cf70.d2595f85.desc1=神秘の花は鼻の肥料を使うことで入手.
+gohd.bdb7cf70.8d0ffccf.title=生きている!
+gohd.bdb7cf70.8d0ffccf.desc1=新レシピを確認してね!
+gohd.bdb7cf70.fe39e5f6.title=マナを注がれた者たち!
+gohd.bdb7cf70.dbe05e17.title=より安価な集結
+gohd.bdb7cf70.860c5647.title=夢見る者たち!
+gohd.bdb7cf70.ada80e44.desc1=ドリーミングマナプールは通常のマナプールの２倍の容量があります!
+gohd.bdb7cf70.c8a5b256.desc1=エルブンアルターはSparkを受け付けます!
+gohd.bdb7cf70.6328f68d.title=神秘的な者たち!
+gohd.bdb7cf70.e5eb64a5.title=煌めいている者たち!
+gohd.bdb7cf70.4cbd8e5d.title=もっとも簡単な火薬の入手方法
+gohd.bdb7cf70.1f6861fc.title=元素パウダー
+gohd.bdb7cf70.b2fe2a22.title=元素の粉
+gohd.bdb7cf70.cac10bd4.title=色のしずく
+gohd.bdb7cf70.bbe39da4.title=色のエッセンス
+gohd.bdb7cf70.a539f485.title=不活性な色キューブ
+gohd.bdb7cf70.c895536e.title=活性化したぜ!
+gohd.bdb7cf70.d957309c.title=追加色だよ!
+
+## Utilities: gohd.6b120fb2.
+gohd.utilities.title=便利系
+gohd.6b120fb2.7f470c3f.title=遠隔モニター
+gohd.6b120fb2.1cefae3a.title=Quarry PlusのWiki
+gohd.6b120fb2.414f78d0.subtitle=(破壊)不可能を(破壊)可能に.
+gohd.6b120fb2.5e9802c1.title=EZ Networkのインターフェース
+gohd.6b120fb2.8caedb3d.title=簡易ME Networkスターターキット
+gohd.6b120fb2.a3c67014.title=無線ME Networkスターターキット
+gohd.6b120fb2.23189174.title=16 Inputs -> 6 Outputs
+gohd.6b120fb2.7c9e3fd5.title=Redstone Flux発電機
+gohd.6b120fb2.849036fe.title=太陽電池
+
 ## Shop gohd.0290d76b.
 gohd.shop.title=クエストショップ
 gohd.shop.desc1=このページでは便利なアイテムを購入できます!
@@ -228,7 +239,7 @@ gohd.0f73c1bb.73be3bc0.desc1=MinecraftポータルのフレームをEarthでク�
 gohd.0f73c1bb.0143a624.title="惑星へワープ"
 gohd.0f73c1bb.0143a624.desc1=Earthをartifactスロットへ.
 gohd.0f73c1bb.8867e772.desc1=ご存じの通りこれがこのパックの最後のクエストです.
-gohd.0f73c1bb.8867e772.desc2=思い返せば、本当にたくさんのクエストがありました。そのほとんどは難しいものではありませんが、ここまでの道のりは決して楽なものではありませんでした。何日も、何週間も、何カ月もかけて、もしかしたらここにたどり着いたかもしれません。それは誰にでもできることではありません。これまでGOHDをプレイしていただきありがとうございました!
+gohd.0f73c1bb.8867e772.desc2=思い返せば、本当にたくさんのクエストがありました。そのほとんどは難しいものではありませんが、ここまでの道のりは決して楽なものではありませんでした。何日も、何週間も、何ヶ月もかけて、もしかしたらここにたどり着いたかもしれません。それは誰にでもできることではありません。これまでGOHDをプレイしていただきありがとうございました!
 gohd.0f73c1bb.8867e772.desc3=ところで、このクエストをクリアするにはお好きな方をお選びください。ひとつは"Minecraftのポータルを作る"、もうひとつは"惑星にワープする"です。このクエストをクリアするには、"Minecraftのポータルを作る"方法と"惑星にワープする"方法があります.
 gohd.0f73c1bb.8867e772.desc4=Good (Old) luck for you.
 gohd.0f73c1bb.8867e772.task1=惑星"Minecraft"への旅行

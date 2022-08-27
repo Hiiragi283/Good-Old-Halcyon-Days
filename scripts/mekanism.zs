@@ -60,6 +60,7 @@ print("Start loading mekanism.zs ...");
 	//新規
 	HiiragiUtils.addCraftingShaped(false, <mekanism:basicblock:8>*2, RecipePattern.init(["ABA", "BCB", "ABA"]).map({A:<ore:ingotStainlessSteel>, B:<ore:ingotOsmium>, C:<thermalexpansion:frame:0>}).ingredients, null, null);
 	HiiragiUtils.addCraftingShaped(false, <mekanism:basicblock:8>*2, RecipePattern.init(["ABA", "BCB", "ABA"]).map({A:<ore:ingotStainlessSteel>, B:<ore:ingotOsmium>, C:<enderio:item_material:1>}).ingredients, null, null);
+	HiiragiUtils.addCraftingShapeless(false, <mekanism:biofuel>*4, [<ore:dustWood>|<ore:dustBran>|<ore:dustPlant>|<ore:dustSoycake>|<ore:foodSoypulp>, <ore:dustDraff>, <ore:dirt>], null, null);
 
 //AWレシピの編集
 	//import

@@ -1,5 +1,20 @@
 # Changelog
 
+## v0.5.0
+
+### `H.A.C. Interactions`
+
+- Mod Configuration
+  - Update
+    - `appliedenergistics2-rv6-stable-7-extended_life-v0.53.2` -> `appliedenergistics2-rv6-stable-7-extended_life-v0.53.4`
+    - `SkyTheoryLib-1.12.2-1.3.0` -> `SkyTheoryLib-1.12.2-1.3.1`
+
+- Add more recipe for HaC's Brewing
+- Change the title and icon of window
+- Remove Railcraft's `Blast Furnace Bricks` and Advanced Rocketry's machines
+- Update Quests
+  - Add new quest tab: Microbes and Brewing!
+
 ## v0.4.0
 
 ### `Heavens of Satiety`
