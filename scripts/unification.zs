@@ -62,7 +62,6 @@ print("Start loading unification.zs ...");
 		"enderio:wired_charger_upgrade",
 		"enderio:alloy_smelter_upgrade",
 		"enderio:crafter_upgrade",
-		//"extrautils2:machine_base",
 		"extrautils2:unstable_nugget",
 		"mekanism:machineblock_5",
 		"mekanism:machineblock_5_alt",
@@ -271,6 +270,13 @@ print("Start loading unification.zs ...");
 
 //JEIからエントリを完全に削除
 	val removeFromJEI as IItemStack[] = [
+		//Advanced Rocktry
+		<advancedrocketry:platepress>,
+		<advancedrocketry:arcfurnace>,
+		//<advancedrocketry:lathe>,
+		<advancedrocketry:crystallizer>,
+		<advancedrocketry:electrolyser>,
+		<advancedrocketry:centrifuge>,
 		//Applied Energistics 2
 		<appliedenergistics2:material:40>,
 		<appliedenergistics2:inscriber>,
@@ -346,6 +352,8 @@ print("Start loading unification.zs ...");
 		<quarryplus:filler>,
 		<quarryplus:quarry_pickaxe>,
 		<quarryplus:replacer_module>,
+		//Railcraft
+		<railcraft:blast_furnace>,
 		//Tinkers Complement
 		<tcomplement:melter>,
 		<tcomplement:melter:8>,

@@ -37,8 +37,8 @@ print("Start loading oreDict.zs ...");
 		<libvulpes:productboule>,
 		<libvulpes:productnugget>,
 		<libvulpes:productplate>,
-		<libvulpes:productrod>,
-		<libvulpes:productsheet>,
+		//<libvulpes:productrod>,
+		//<libvulpes:productsheet>,
 		<libvulpes:productgear>,
 		<libvulpes:ore0>,
 

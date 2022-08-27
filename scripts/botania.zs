@@ -272,7 +272,7 @@ print("Start loading botania.zs ...");
 
 //Terrestrial Agglomeratioによる加工
 	val agglo_earth_blessing = AgglomerationMultiblock.create()
-		.center(<extrautils2:teleporter:0>)
+		.center(<twilightforest:miniature_structure:0>)
 		.edge(<minecraft:diamond_block>)
 		.corner(<biomesoplenty:grass:5>);
 	val agglo_earth_polluting = AgglomerationMultiblock.create()

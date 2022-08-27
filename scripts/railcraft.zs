@@ -27,7 +27,6 @@ print("Start loading railcraft.zs ...");
 	//削除
 	val removeCrafting as IItemStack[] = [
 		<railcraft:tie:0>,
-		<railcraft:blast_furnace>,
 	];
 	for i in removeCrafting {
 		HiiragiUtils.removeCrafting(i);

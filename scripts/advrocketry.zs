@@ -32,17 +32,6 @@ print("Start loading advrocktery.zs ...");
 		HiiragiUtils.removeCrafting(i);
 	}
 	//上書き
-	//HiiragiUtils.addCraftingShapeless(true, <advancedrocketry:satelliteidchip>, [<techreborn:part:3>], null, null);
-	//HiiragiUtils.addCraftingShapeless(true, <advancedrocketry:carbonscrubbercartridge>, [<techreborn:dynamiccell>, <minecraft:iron_bars>], null, null);
-
-	HiiragiUtils.addCraftingReplace(<libvulpes:productsheet:1>, <ore:plateIron>, null);
-	HiiragiUtils.addCraftingReplace(<libvulpes:productsheet:4>, <ore:plateCopper>, null);
-	HiiragiUtils.addCraftingReplace(<libvulpes:productsheet:6>, <ore:plateSteel>, null);
-	HiiragiUtils.addCraftingReplace(<libvulpes:productsheet:7>, <ore:plateTitanium>, null);
-	//HiiragiUtils.addCraftingReplace(<advancedrocketry:ic:3>, <metaitem:circuit.quantum_processor>);
-	//HiiragiUtils.addCraftingReplace(<advancedrocketry:ic:4>, <metaitem:robot.arm.hv>);
-	//HiiragiUtils.addCraftingReplace(<advancedrocketry:ic:5>, <metaitem:fluid.regulator.hv>);
-	//HiiragiUtils.addCraftingReplace(<advancedrocketry:misc:0>, <techreborn:part:24>, null);
 	//新規
 
 //AWレシピの編集

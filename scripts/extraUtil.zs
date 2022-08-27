@@ -149,6 +149,7 @@ print("Start loading extraUtil.zs ...");
 		[<ore:alloyAdvanced>, <ore:dustSteel>]: <mekanism:mufflingupgrade>,
 		[<ore:alloyAdvanced>, <ore:dustIron>]: <mekanism:gasupgrade>,
 		[<ore:alloyAdvanced>, <ore:dustDiamond>]: <mekanism:anchorupgrade>,
+		[<ore:alloyAdvanced>, <botanicadds:rune_energy>]: <mekanism:electrolyticcore>,
 		//Thermal
 		[<ore:plateGold>, <thermalfoundation:material:515>]: <thermalexpansion:augment:128>,
 		[<thermalfoundation:material:512>, <dcs_climate:dcs_rotaryblade:2>]: <thermalexpansion:augment:129>,

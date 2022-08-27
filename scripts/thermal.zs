@@ -164,6 +164,8 @@ print("Start loading thermal.zs ...");
 
 //Induction Smelter
 	mods.thermalexpansion.InductionSmelter.addRecipe(<contenttweaker:block_bedrockium>, <enderio:block_infinity:2>, <contenttweaker:ingot_rainbow>, 1000000);
+	mods.thermalexpansion.InductionSmelter.addRecipe(<advancedrocketry:productingot:0>*10, <thermalfoundation:material:132>*7, <dcs_climate:dcs_ingot:11>*3, 18000);
+	mods.thermalexpansion.InductionSmelter.addRecipe(<advancedrocketry:productingot:1>*2, <thermalfoundation:material:135>, <dcs_climate:dcs_ingot:11>, 18000);
 
 	mods.thermalexpansion.InductionSmelter.addRecipe(<dcs_climate:dcs_gem_red:2>*16, <dcs_climate:dcs_gem_red:2>, <contenttweaker:cube_iridescent>, 8000);
 	mods.thermalexpansion.InductionSmelter.addRecipe(<dcs_climate:dcs_gem_green:2>*16, <dcs_climate:dcs_gem_green:2>, <contenttweaker:cube_iridescent>, 8000);

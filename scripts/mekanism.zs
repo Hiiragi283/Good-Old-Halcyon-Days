@@ -55,6 +55,8 @@ print("Start loading mekanism.zs ...");
 	}
 
 	HiiragiUtils.addCraftingReplace(<ore:ingotOsmium>, <mekanism:basicblock:8>, <mekanism:machineblock:8>);
+	HiiragiUtils.addCraftingReplace(<mekanismgenerators:solarpanel>, <enderio:item_material:3>, <mekanismgenerators:generator:1>);
+
 	//新規
 	HiiragiUtils.addCraftingShaped(false, <mekanism:basicblock:8>*2, RecipePattern.init(["ABA", "BCB", "ABA"]).map({A:<ore:ingotStainlessSteel>, B:<ore:ingotOsmium>, C:<thermalexpansion:frame:0>}).ingredients, null, null);
 	HiiragiUtils.addCraftingShaped(false, <mekanism:basicblock:8>*2, RecipePattern.init(["ABA", "BCB", "ABA"]).map({A:<ore:ingotStainlessSteel>, B:<ore:ingotOsmium>, C:<enderio:item_material:1>}).ingredients, null, null);
