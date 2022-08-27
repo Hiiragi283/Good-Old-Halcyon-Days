@@ -28,5 +28,121 @@
 			"amount": 500,
 			"fluid": "sample_fluid_input (removable)"
 		}
+	},
+	"add_neutrient": {
+		"recipe_type": "ADD",
+		"output_fluid": {
+			"amount": 1000,
+			"fluid": "nutrient_distillation"
+		},
+		"input_fluid": {
+			"amount": 1000,
+			"fluid": "dcs.stock"
+		},
+		"input": [
+			"mekanism:biofuel:0",
+			"dcs_climate:dcs_food_microbe_coliformes:0"
+		]
+	},
+	"add_neutrient1": {
+		"recipe_type": "ADD",
+		"output_fluid": {
+			"amount": 800,
+			"fluid": "nutrient_distillation"
+		},
+		"input_fluid": {
+			"amount": 1000,
+			"fluid": "dcs.vegetable_juice"
+		},
+		"input": [
+			"mekanism:biofuel:0",
+			"dcs_climate:dcs_food_microbe_coliformes:0"
+		]
+	},
+	"add_neutrient2": {
+		"recipe_type": "ADD",
+		"output_fluid": {
+			"amount": 600,
+			"fluid": "nutrient_distillation"
+		},
+		"input_fluid": {
+			"amount": 1000,
+			"fluid": "dcs.fermented_sugar"
+		},
+		"input": [
+			"mekanism:biofuel:0",
+			"dcs_climate:dcs_food_microbe_coliformes:0"
+		]
+	},
+	"add_neutrient3": {
+		"recipe_type": "ADD",
+		"output_fluid": {
+			"amount": 600,
+			"fluid": "nutrient_distillation"
+		},
+		"input_fluid": {
+			"amount": 1000,
+			"fluid": "dcs.fermented_potato"
+		},
+		"input": [
+			"mekanism:biofuel:0",
+			"dcs_climate:dcs_food_microbe_coliformes:0"
+		]
+	},
+	"add_rocket": {
+		"recipe_type": "ADD",
+		"output_fluid": {
+			"amount": 1000,
+			"fluid": "rocket_fuel"
+		},
+		"input_fluid": {
+			"amount": 1000,
+			"fluid": "hootch"
+		},
+		"input": [
+			"dcs_climate:dcs_food_microbe_yeast:2"
+		]
+	},
+	"add_rocket1": {
+		"recipe_type": "ADD",
+		"output_fluid": {
+			"amount": 750,
+			"fluid": "rocket_fuel"
+		},
+		"input_fluid": {
+			"amount": 1000,
+			"fluid": "hootch"
+		},
+		"input": [
+			"dcs_climate:dcs_food_microbe_methanogen:0"
+		]
+	},
+	"add_fire": {
+		"recipe_type": "ADD",
+		"output_fluid": {
+			"amount": 1000,
+			"fluid": "fire_water"
+		},
+		"input_fluid": {
+			"amount": 1000,
+			"fluid": "hootch"
+		},
+		"input": [
+			"dcs_climate:dcs_food_microbe_nether:1"
+		]
+	},
+	"add_fermented_eye": {
+		"recipe_type": "ADD",
+		"output": {
+			"item": "minecraft:fermented_spider_eye:0"
+		},
+		"input_fluid": {
+			"amount": 25,
+			"fluid": "dcs.fermented_sugar"
+		},
+		"input": [
+			"minecraft:spider_eye:0",
+			"dcs_climate:dcs_food_microbe_mushroom:0"
+		]
 	}
 }
