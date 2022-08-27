@@ -1,0 +1,35 @@
+{
+	x: 5.0d,
+	y: 0.0d,
+	dependencies: [
+		"3f15f898"
+	],
+	tasks: [{
+		uid: "e69fef2e",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_food_residue 1 4"
+		}],
+		count: 16L
+	},
+	{
+		uid: "24f08370",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_food_residue 1 5"
+		}],
+		count: 16L
+	}],
+	rewards: [{
+		uid: "24df2afe",
+		type: "item",
+		item: "dcs_climate:dcs_food_residue 1 4",
+		count: 16
+	},
+	{
+		uid: "82e14a6e",
+		type: "item",
+		item: "dcs_climate:dcs_food_residue 1 5",
+		count: 16
+	}]
+}

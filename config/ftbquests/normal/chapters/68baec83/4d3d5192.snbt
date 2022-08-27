@@ -1,0 +1,20 @@
+{
+	x: 8.5d,
+	y: 5.0d,
+	hide_dependency_lines: true,
+	dependencies: [
+		"50fde685"
+	],
+	tasks: [{
+		uid: "1019535c",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_food_microbe_nether 1 2"
+		}]
+	}],
+	rewards: [{
+		uid: "47411048",
+		type: "item",
+		item: "contenttweaker:ticket_rare"
+	}]
+}

@@ -1,0 +1,20 @@
+{
+	x: 2.0d,
+	y: 9.0d,
+	shape: "square",
+	text: [
+		"{gohd.identify_microbe.desc}"
+	],
+	hide_dependency_lines: true,
+	dependencies: [
+		"50fde685"
+	],
+	tasks: [{
+		uid: "895ffa35",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_food_unidentified"
+		}],
+		ignore_nbt: 1b
+	}]
+}

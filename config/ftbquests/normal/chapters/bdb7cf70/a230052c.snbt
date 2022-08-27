@@ -1,9 +1,6 @@
 {
 	x: 5.0d,
 	y: 4.0d,
-	text: [
-		""
-	],
 	dependencies: [
 		"b560ff44"
 	],
@@ -15,5 +12,10 @@
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "c3624251",
+		type: "item",
+		item: "contenttweaker:ticket_epic"
 	}]
 }

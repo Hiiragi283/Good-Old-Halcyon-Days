@@ -1,0 +1,22 @@
+{
+	x: 12.0d,
+	y: 7.0d,
+	shape: "diamond",
+	hide_dependency_lines: true,
+	dependencies: [
+		"f04d7148"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "273dee12",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_food_microbe_slime 1 2"
+		}]
+	}],
+	rewards: [{
+		uid: "7baa5d78",
+		type: "item",
+		item: "contenttweaker:ticket_rare"
+	}]
+}

@@ -1,0 +1,20 @@
+{
+	x: 0.0d,
+	y: 4.0d,
+	hide_dependency_lines: true,
+	dependencies: [
+		"4819d661"
+	],
+	tasks: [{
+		uid: "2780f761",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_food_broth 1 1"
+		}]
+	}],
+	rewards: [{
+		uid: "e7b5dfa2",
+		type: "item",
+		item: "contenttweaker:ticket_uncommon"
+	}]
+}

@@ -1,0 +1,20 @@
+{
+	x: 7.5d,
+	y: 9.0d,
+	hide_dependency_lines: true,
+	dependencies: [
+		"a18590c4"
+	],
+	tasks: [{
+		uid: "86e3f72d",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_food_microbe_methanogen 1 1"
+		}]
+	}],
+	rewards: [{
+		uid: "6d36247f",
+		type: "item",
+		item: "contenttweaker:ticket_uncommon"
+	}]
+}

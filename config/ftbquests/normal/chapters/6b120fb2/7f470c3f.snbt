@@ -1,7 +1,7 @@
 {
 	title: "{gohd.6b120fb2.7f470c3f.title}",
-	x: -6.0d,
-	y: -10.5d,
+	x: -5.0d,
+	y: -8.0d,
 	shape: "rsquare",
 	text: [
 		"{gohd.hac.tooltip}"

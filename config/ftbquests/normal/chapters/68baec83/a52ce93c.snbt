@@ -1,0 +1,21 @@
+{
+	x: 5.0d,
+	y: -1.5d,
+	dependencies: [
+		"3f15f898"
+	],
+	tasks: [{
+		uid: "b34b0530",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_food_antibiotic 1 1"
+		}],
+		count: 16L
+	}],
+	rewards: [{
+		uid: "aab330a5",
+		type: "item",
+		item: "dcs_climate:dcs_food_antibiotic 1 1",
+		count: 16
+	}]
+}

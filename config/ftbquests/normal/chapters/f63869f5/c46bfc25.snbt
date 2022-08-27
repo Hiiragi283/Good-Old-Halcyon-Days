@@ -1,0 +1,32 @@
+{
+	icon: "dcs_climate:dcs_liquor_bottle 1 5",
+	x: 5.0d,
+	y: -4.0d,
+	shape: "diamond",
+	dependencies: [
+		"dea135b9"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "0d81eda1",
+		type: "item",
+		items: [{
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "dcs.whisky",
+				Amount: 1000
+			}
+		}]
+	}],
+	rewards: [{
+		uid: "f530e249",
+		type: "item",
+		item: "dcs_climate:dcs_liquor_bottle 1 5",
+		count: 16
+	},
+	{
+		uid: "fdbb52c6",
+		type: "item",
+		item: "contenttweaker:ticket_rare"
+	}]
+}

@@ -1,0 +1,22 @@
+{
+	x: 3.5d,
+	y: -1.5d,
+	text: [
+		"{gohd.hac.tooltip}"
+	],
+	dependencies: [
+		"3f15f898"
+	],
+	tasks: [{
+		uid: "308ea888",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_food_chick"
+		}]
+	}],
+	rewards: [{
+		uid: "f756fade",
+		type: "item",
+		item: "dcs_climate:dcs_cont_cardboard 1 4"
+	}]
+}

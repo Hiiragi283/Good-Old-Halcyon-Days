@@ -1,6 +1,9 @@
 {
 	x: 6.5d,
 	y: 1.0d,
+	text: [
+		"{gohd.bdb7cf70.c8a5b256.desc1}"
+	],
 	dependencies: [
 		"0a051cab",
 		"860c5647"

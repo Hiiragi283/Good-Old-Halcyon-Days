@@ -1,8 +1,8 @@
 {
 	title: "{gohd.6b120fb2.1cefae3a.title}",
 	icon: "akashictome:tome",
-	x: 11.0d,
-	y: 5.0d,
+	x: 12.0d,
+	y: 6.0d,
 	shape: "gear",
 	custom_click: "https://github.com/Kotori316/QuarryPlus/wiki",
 	dependencies: [

@@ -2,9 +2,11 @@
 	x: 4.5d,
 	y: 3.0d,
 	dependencies: [
+		"78d45070",
 		"bbe39da4",
 		"04cf4508"
 	],
+	min_width: 2,
 	tasks: [{
 		uid: "2193f3fc",
 		type: "item",
@@ -18,5 +20,10 @@
 		items: [{
 			item: "minecraft:ender_eye"
 		}]
+	}],
+	rewards: [{
+		uid: "cf6b58dd",
+		type: "item",
+		item: "contenttweaker:ticket_rare"
 	}]
 }

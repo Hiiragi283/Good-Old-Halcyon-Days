@@ -1,0 +1,23 @@
+{
+	x: 4.0d,
+	y: -3.0d,
+	dependencies: [
+		"df39ff4e"
+	],
+	tasks: [{
+		uid: "6c82af6e",
+		type: "item",
+		items: [{
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "dcs.raw_brandy",
+				Amount: 1000
+			}
+		}]
+	}],
+	rewards: [{
+		uid: "49daeb7e",
+		type: "item",
+		item: "contenttweaker:ticket_uncommon"
+	}]
+}

@@ -1,0 +1,20 @@
+{
+	x: 5.0d,
+	y: 2.0d,
+	hide_dependency_lines: true,
+	dependencies: [
+		"3f4bacb4"
+	],
+	tasks: [{
+		uid: "99024b26",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_food_microbe_bacillus 1 2"
+		}]
+	}],
+	rewards: [{
+		uid: "0dc7a201",
+		type: "item",
+		item: "contenttweaker:ticket_rare"
+	}]
+}
