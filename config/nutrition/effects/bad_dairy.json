@@ -1,0 +1,10 @@
+{
+	"name": "bad_dairy",
+	"potion": "dcs_climate:dcs.potion.unrepair",
+	"amplifier": 1,
+	"minimum": 0,
+	"maximum": 20,
+	"detect": "average",
+	"nutrients": ["dairy"],
+	"enabled": true
+}

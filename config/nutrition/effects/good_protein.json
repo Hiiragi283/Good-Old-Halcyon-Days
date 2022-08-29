@@ -1,0 +1,10 @@
+{
+	"name": "good_protein",
+	"potion": "minecraft:strength",
+	"amplifier": 1,
+	"minimum": 80,
+	"maximum": 100,
+	"detect": "average",
+	"nutrients": ["grain", "protein"],
+	"enabled": true
+}
