@@ -57,6 +57,9 @@ gohd.hac.tooltip=Information about Heat And Climate (HaC) of Heat And Processing
 gohd.09d26429.eedd4b0e.title=Auther's Twitter Link
 gohd.09d26429.d881497d.title=Auther's GitHub Link
 gohd.09d26429.ab5cc985.title=Wiki for HaC
+gohd.09d26429.f631c01d.title=Nutrition
+gohd.09d26429.f631c01d.desc1=In this pack, there is the concept of nutrients.
+gohd.09d26429.f631c01d.desc2=A well-balanced diet provides a variety of benefits. On the other hand, a unbalanced diet provides a variety of debuffs.
 
 gohd.5f3109ce.648774ca.title=Welcome to GOHD!
 gohd.5f3109ce.648774ca.subtitle=Good Old Halcyon Days, in short "GOHD"
@@ -129,6 +132,8 @@ gohd.2e964474.33c20e52.desc1=If the temperature of the Farmland is WARM and the 
 gohd.2e964474.daaef901.desc1=Right-click on a water source in the Hand Net to obtain various items
 gohd.2e964474.8e5c606a.title=More and More Compression!
 gohd.2e964474.da7a26f4.title=How to automate tree crops
+gohd.2e964474.35dc07c3.subtitle=Thanks to §oPumpkin Melon§r!
+gohd.2e964474.35dc07c3.desc1=When broken, drop some seeds of Vanilla crops randomly!
 
 gohd.2e964474.81e25c09.desc1=Green soy Beans is harvested before Soy Plant grow up.
 gohd.2e964474.78f46bf1.desc1=Seaweed is planted under water over 2 blocks depth.

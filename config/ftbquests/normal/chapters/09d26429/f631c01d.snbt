@@ -1,0 +1,25 @@
+{
+	title: "{gohd.09d26429.f631c01d.title}",
+	icon: "minecraft:carrot",
+	x: -1.5d,
+	y: -2.0d,
+	shape: "gear",
+	text: [
+		"{gohd.09d26429.f631c01d.desc1}",
+		"{gohd.09d26429.f631c01d.desc2}"
+	],
+	hide_dependency_lines: true,
+	dependencies: [
+		"648774ca"
+	],
+	tasks: [{
+		uid: "fda642fc",
+		type: "checkmark"
+	}],
+	rewards: [{
+		uid: "9a2757f4",
+		type: "item",
+		item: "openblocks:tasty_clay",
+		count: 16
+	}]
+}

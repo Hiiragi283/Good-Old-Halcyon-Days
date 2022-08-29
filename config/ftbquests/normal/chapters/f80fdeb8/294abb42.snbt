@@ -1,0 +1,23 @@
+{
+	x: 6.0d,
+	y: -2.0d,
+	dependencies: [
+		"3a10f571"
+	],
+	tasks: [{
+		uid: "7c433ca7",
+		type: "item",
+		items: [{
+			id: "extrautils2:machine",
+			tag: {
+				Type: "crafttweaker:apiary"
+			}
+		}]
+	}],
+	rewards: [{
+		uid: "0e3d92b8",
+		type: "item",
+		item: "biomesoplenty:jar_filled",
+		count: 16
+	}]
+}

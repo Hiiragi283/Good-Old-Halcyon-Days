@@ -58,6 +58,9 @@ gohd.hac.tooltip=Heat And Climate (HaC)とHeat And Processing (HaP) について
 gohd.09d26429.eedd4b0e.title=作者のTwitterリンク
 gohd.09d26429.d881497d.title=作者のGitHubリンク
 gohd.09d26429.ab5cc985.title=HaCのwiki
+gohd.09d26429.f631c01d.title=Nutrition
+gohd.09d26429.f631c01d.desc1=このpackには「栄養素」の概念があります。
+gohd.09d26429.f631c01d.desc2=バランスの取れた食事は恩恵をもたらしますが，逆に偏った食事ではデバフを受けることになります。
 
 gohd.5f3109ce.648774ca.title=GOHDへようこそ!
 gohd.5f3109ce.648774ca.subtitle=Good Old Halcyon Days、略して"GOHD"
@@ -130,6 +133,8 @@ gohd.2e964474.33c20e52.desc1=耕地の温度がWARMで湿度がWETの場合，�
 gohd.2e964474.daaef901.desc1=タモ網で水源を右クリックすると，さまざまなアイテムを入手することができます
 gohd.2e964474.8e5c606a.title=圧縮圧縮ゥ!
 gohd.2e964474.da7a26f4.title=樹木の収穫を自動化する方法
+gohd.2e964474.35dc07c3.subtitle=カボチャメロン氏に感謝!
+gohd.2e964474.35dc07c3.desc1=破壊時にバニラ作物の種をランダムにドロップします!
 
 gohd.2e964474.81e25c09.desc1=枝豆は大豆の苗が成長しきる前に収穫することができます。
 gohd.2e964474.78f46bf1.desc1=海藻は2ブロック以上の深さをもつ水中に植えられます。

@@ -23,5 +23,10 @@
 		type: "item",
 		item: "dcs_lib:dcs_checker",
 		count: 3
+	},
+	{
+		uid: "9e9d293f",
+		type: "item",
+		item: "dcs_climate:dcs_color_changer"
 	}]
 }
