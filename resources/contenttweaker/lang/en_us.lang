@@ -2,6 +2,7 @@
 #Items
 item.contenttweaker.assembly_parallel.name=Parallel Processor Assemly
 item.contenttweaker.assembly_speculative.name=Speculative Processor Assembly
+item.contenttweaker.bee.name=Bee
 item.contenttweaker.dcs_color_ring2.name=Blue Gold Ring
 item.contenttweaker.elven_pearl.name=Elven Pearl
 item.contenttweaker.ephemerald.name=Ephemerald
@@ -27,10 +28,11 @@ item.contenttweaker.book_facing.name=Debugging Book (Teleport to spawn point)
 item.contenttweaker.book_data.name=Debugging Book (Print player data)
 
 #Blocks
+tile.contenttweaker.block_bedrockium.name=Block of Bedrockium
+tile.contenttweaker.pumpkin_melon.name=Pumpkin Melon
 tile.contenttweaker.unfired_casting_channel.name=Unfired Casting Channel
 tile.contenttweaker.unfired_casting_table.name=Unfired Casting Table
 tile.contenttweaker.unfired_casting_basin.name=Unfired Casting Basin
-tile.contenttweaker.block_bedrockium.name=Block of Bedrockium
 
 tile.contenttweaker.dustblock_alubrass.name=Aluminum Brass Dust Block
 tile.contenttweaker.dustblock_ardite.name=Ardite Dust Block
@@ -61,3 +63,4 @@ fluid.drop_black=Extracted Black Drop
 
 # Machine
 machine.crafttweaker:assembler=Assembler
+machine.crafttweaker:apiary=Apiary

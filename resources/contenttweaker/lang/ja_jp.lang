@@ -2,6 +2,7 @@
 #Items
 item.contenttweaker.assembly_parallel.name=並列プロセッサアセンブリ
 item.contenttweaker.assembly_speculative.name=思考プロセッサアセンブリ
+item.contenttweaker.bee.name=ハチ
 item.contenttweaker.dcs_color_ring2.name=青の金のリング
 item.contenttweaker.elven_pearl.name=エルブンパール
 item.contenttweaker.ephemerald.name=エフェメラルド
@@ -27,10 +28,11 @@ item.contenttweaker.book_facing.name=柊さんの愛読書 (完璧な真正面�
 item.contenttweaker.book_data.name=柊さんの愛読書 (貴方ノ全テガ此処ニ在ル)
 
 #Blocks
+tile.contenttweaker.block_bedrockium.name=ベッドロッキウムブロック
+tile.contenttweaker.pumpkin_melon.name=カボチャメロン
 tile.contenttweaker.unfired_casting_channel.name=未焼成の鋳造樋
 tile.contenttweaker.unfired_casting_table.name=未焼成の鋳造台
 tile.contenttweaker.unfired_casting_basin.name=未焼成の鋳造鉢
-tile.contenttweaker.block_bedrockium.name=ベッドロッキウムブロック
 
 tile.contenttweaker.dustblock_alubrass.name=アルミ黄銅粉末ブロック
 tile.contenttweaker.dustblock_ardite.name=アーダイト粉末ブロック
@@ -61,3 +63,4 @@ fluid.drop_black=抽出された黒のしずく
 
 # Machine
 machine.crafttweaker:assembler=組立機
+machine.crafttweaker:apiary=養蜂箱

@@ -37,5 +37,16 @@ print("Start loading preInit.zs ...");
 		"extrautils2:machine/assembler_on"
 	);
 
+//Apiaryの登録
+	extrautilities2.Tweaker.IMachineRegistry.createNewMachine(
+		"apiary",
+		0,
+		0,
+		[extrautilities2.Tweaker.IMachineSlot.newItemStackSlot("input"),],
+		[extrautilities2.Tweaker.IMachineSlot.newItemStackSlot("output")],
+		"extrautils2:machine/apiary_off",
+		"extrautils2:machine/apiary_on"
+	);
+
 //このscriptの読み込みの完了をログに出力
 print("preInit.zs loaded!");
