@@ -41,6 +41,8 @@ print("Start loading unification.zs ...");
 	}
 	val removeCraftingName as string[] = [
 		"minecraft:torch",
+		"buildinggadgets:buildingtool",
+		"buildinggadgets:destructiontool",
 		"dcs_climate:machine_advanced/dcs_torch_0",
 		"dcs_climate:machine_advanced/dcs_torch_0_2",
 		"dcs_climate:main/dcs_planks_0",
@@ -202,6 +204,10 @@ print("Start loading unification.zs ...");
 	HiiragiUtils.addCraftingShaped(false, <artisanworktables:toolbox>, RecipePattern.init(["ABA", "BCB", "ABA"]).map({A:<tconstruct:pattern:0>, B:<tconstruct:tough_tool_rod>.withTag({Material: "wood"}), C:<minecraft:chest>}).ingredients, null, null);
 	HiiragiUtils.addCraftingShaped(false, <artisanworktables:mechanical_toolbox>, RecipePattern.init(["ABA", "BCB", "ABA"]).map({A:<ore:plateBronze>, B:<ore:gearSteel>, C:<artisanworktables:toolbox>}).ingredients, null, null);
 	HiiragiUtils.addCraftingShapeless(false, <contenttweaker:feather_black>, [<minecraft:feather>, <botania:dye:15>, <botania:dye:15>, <botania:dye:15>], null, null);
+	HiiragiUtils.addCraftingShaped(false, <buildinggadgets:buildingtool>, RecipePattern.init(["ABA", "ACA", "ADA"]).map({A:<ore:plateIron>, B:<extrautils2:itemcreativebuilderswand>, C:<thermalfoundation:material:640>, D:<thermalfoundation:material:512>}).ingredients, null, null);
+	HiiragiUtils.addCraftingShaped(false, <buildinggadgets:destructiontool>, RecipePattern.init(["ABA", "ACA", "ADA"]).map({A:<ore:plateSteel>, B:<extrautils2:itemcreativedestructionwand>, C:<thermalfoundation:material:640>, D:<thermalfoundation:material:512>}).ingredients, null, null);
+	HiiragiUtils.addCraftingShaped(true, <contenttweaker:pumpkin_melon>, RecipePattern.init(["AAA", "BAC", "AAA"]).map({A:<ore:listAllseeds>, B:<minecraft:pumpkin>, C:<minecraft:melon_block>}).ingredients, null, null);
+
 
 	HiiragiUtils.addCraftingReplace(<twilightforest:maze_map_focus>, <contenttweaker:ticket_mythic>, <twilightforest:uncrafting_table>);
 
@@ -302,6 +308,8 @@ print("Start loading unification.zs ...");
 		<extrautils2:machine>.withTag({Type: "extrautils2:furnace"}),
 		<extrautils2:machine>.withTag({Type: "extrautils2:crusher"}),
 		<extrautils2:machine>.withTag({Type: "extrautils2:enchanter"}),
+		<extrautils2:itembuilderswand>,
+		<extrautils2:itemdestructionwand>,
 		//Inspirations
 		<inspirations:materials:8>,
 		//lazy AE2
@@ -434,7 +442,9 @@ print("Start loading unification.zs ...");
 	<mekanismtools:osmiumboots>.maxDamage = <thermalfoundation:armor.boots_platinum>.maxDamage;
 
 //スタック数の調整
+	<minecraft:cake>.maxStackSize = 16;
 	<forge:bucketfilled>.maxStackSize = 16;
+	<biomesoplenty:jar_filled:*>.maxStackSize = 64;
 
 //採掘レベルの調整
 	//<botania:platform:2>.definition.setHarvestLevel("axe", 4);

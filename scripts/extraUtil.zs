@@ -38,10 +38,14 @@ print("Start loading extraUtil.zs ...");
 	HiiragiUtils.addCraftingShaped(false, <extrautils2:machine>.withTag({Type: "crafttweaker:assembler"}), RecipePattern.init(["ABA", "CDC", "ABA"]).map({A:<ore:gearEnergized>, B:<enderio:item_basic_capacitor:1>, C:<hap:conveyor>, D:<enderio:block_crafter>}).ingredients, null, null);
 	HiiragiUtils.addCraftingShaped(false, <extrautils2:machine>.withTag({Type: "crafttweaker:assembler"}), RecipePattern.init(["ABA", "CDC", "ABA"]).map({A:<ore:alloyAdvanced>, B:<ore:circuitAdvanced>, C:<hap:conveyor>, D:<mekanism:machineblock3:5>}).ingredients, null, null);
 	HiiragiUtils.addCraftingShaped(false, <extrautils2:machine>.withTag({Type: "crafttweaker:assembler"}), RecipePattern.init(["ABA", "CDC", "ABA"]).map({A:<ore:gearSignalum>, B:<ore:plateSignalum>, C:<hap:conveyor>, D:<thermalexpansion:machine:11>}).ingredients, null, null);
+
+	HiiragiUtils.addCraftingShaped(false, <extrautils2:machine>.withTag({Type: "crafttweaker:apiary"}), RecipePattern.init(["AAA", "ABA", "CDC"]).map({A:<botania:livingwood:0>, B:<extrautils2:machine>, C:<biomesoplenty:filled_honeycomb>, D:<railcraft:equipment:2>}).ingredients, null, null);
+
 	HiiragiUtils.addCraftingShaped(true, <extrautils2:machine:0>, RecipePattern.init(["AAA", "ABA", "CCC"]).map({A:<ore:ingotInvar>, B:<ore:gemRedstone>, C:<ore:ingotSteel>}).ingredients, null, null);
 	HiiragiUtils.addCraftingShaped(false, <extrautils2:machine:0>*3, RecipePattern.init(["AAA", "ABA", "CCC"]).map({A:<ore:ingotToolSteel>, B:<ore:gemRedstone>, C:<ore:ingotStainlessSteel>}).ingredients, null, null);
-
 	HiiragiUtils.addCraftingShaped(false, <extrautils2:decorativesolid:8>*8, RecipePattern.init(["AAA", "ABA", "AAA"]).map({A:<extrautils2:decorativesolid:3>, B:<contenttweaker:ingot_rainbow>|<contenttweaker:cube_iridescent>}).ingredients, null, null);
+	HiiragiUtils.addCraftingShaped(false, <extrautils2:itemcreativebuilderswand>, [[null, <ore:ingotUnstable>], [<ore:obsidian>, null]], null, null);
+	HiiragiUtils.addCraftingShaped(false, <extrautils2:itemcreativedestructionwand>, [[<ore:ingotUnstable>, null], [null, <ore:obsidian>]], null, null);
 
 	HiiragiUtils.addCraftingShapeless(false, <extrautils2:creativeharvest>, [<extrautils2:creativeharvest>, <*>.marked("creative")], function(out, ins, cInfo) {
 		var owner as string = ins.creative.definition.owner;
@@ -100,7 +104,7 @@ print("Start loading extraUtil.zs ...");
 		.addOutput(<extrautils2:lawsword>)
 		.create();
 
-//ExU機械のレシピ
+//Assemblerのレシピ
 	static machineAssembler as IMachine = extrautilities2.Tweaker.IMachineRegistry.getMachine("assembler");
 
 	function addAssembler(input as IIngredient[], output as IIngredient) {
@@ -108,6 +112,9 @@ print("Start loading extraUtil.zs ...");
 	}
 
 	val mapAssembler as IIngredient[IIngredient[]] = {
+		//Building Gadgets
+		[<buildinggadgets:buildingtool>, <extrautils2:itemcreativedestructionwand>]:  <buildinggadgets:exchangertool>,
+		[<buildinggadgets:buildingtool>, <thermalfoundation:diagram_redprint>]:  <buildinggadgets:copypastetool>,
 		//Ender IO
 		[<ore:dustBedrock>, <ore:ingotCopper>]: <enderio:item_basic_capacitor:0>,
 		[<enderio:item_basic_capacitor:0>, <ore:ingotEnergeticAlloy>]: <enderio:item_basic_capacitor:1>,
@@ -196,10 +203,49 @@ print("Start loading extraUtil.zs ...");
 		[<ore:ingotRedstoneAlloy>, <ore:ingotSilver>]: <thermalfoundation:material:514>,
 		[<ore:ingotRedstoneAlloy>, <ore:ingotElectrum>]: <thermalfoundation:material:515>,
 		[<ore:ingotElectrum>, <thermalfoundation:material:512>]: <thermalfoundation:material:640>,
+		//Joke
+		[<minecraft:pumpkin>, <minecraft:melon_block>]:  <contenttweaker:pumpkin_melon>,
+
 	};
 
 	for input, output in mapAssembler{
 		addAssembler(input, output);
+	}
+
+//Apiaryのレシピ
+	static machineApiary as IMachine = extrautilities2.Tweaker.IMachineRegistry.getMachine("apiary");
+
+	function addApiary(input as IIngredient, output as WeightedItemStack) {
+		machineApiary.addRecipe({"input": input}, {"output": output}, 0, 1200);
+	}
+
+	val mapApiary as WeightedItemStack[IIngredient] = {
+		<minecraft:yellow_flower>: <biomesoplenty:filled_honeycomb>,
+		<minecraft:red_flower:*>: <biomesoplenty:filled_honeycomb>,
+		<minecraft:double_plant:*>: <biomesoplenty:filled_honeycomb>*2,
+		<biomesoplenty:plant_0:4>: <dcs_climate:dcs_food_antibiotic:3>,
+		<biomesoplenty:plant_0:5>: <twilightforest:torchberries>,
+		<biomesoplenty:plant_1:4>: <minecraft:wool:0>,
+		//<biomesoplenty:plant_1:6>:
+		//<biomesoplenty:plant_1:10>:
+		<biomesoplenty:double_plant:0>: <dcs_climate:dcs_food_drop_oil>,
+		<biomesoplenty:double_plant:2>: <minecraft:spider_eye>,
+		<biomesoplenty:flower_0:2>: <extrautils2:ingredients:10>,
+		<biomesoplenty:flower_0:3>: <minecraft:glowstone_dust>,
+		<biomesoplenty:flower_0:10>: <enderio:item_material:62>,
+		<biomesoplenty:flower_0:13>: <thermalfoundation:material:2051>,
+		<biomesoplenty:flower_0:15>: <minecraft:blaze_powder>,
+		<biomesoplenty:flower_1:1>: <minecraft:clay_ball>,
+		<biomesoplenty:flower_1:3>: <thermalfoundation:material:2053>,
+		<biomesoplenty:flower_1:4>: <thermalfoundation:material:2049>,
+		<biomesoplenty:flower_1:5>: <biomesoplenty:sapling_1>%1,
+		<botania:flower:*>: <botania:manaresource:23>,
+		<twilightforest:thorn_rose>: <dcs_climate:dcs_food_essential_oil>,
+		<twilightforest:huge_waterlily>: <dcs_climate:dcs_food_petals>,
+	};
+
+	for input, output in mapApiary{
+		addApiary(input, output);
 	}
 
 //このscriptの読み込みの完了をログに出力

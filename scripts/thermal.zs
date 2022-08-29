@@ -17,6 +17,7 @@ import mods.ctintegration.util.RecipePattern;
 import mods.thermalexpansion.Centrifuge;
 import mods.thermalexpansion.Compactor;
 import mods.thermalexpansion.Enchanter;
+import mods.thermalexpansion.Factorizer;
 import mods.thermalexpansion.Refinery;
 import mods.thermalexpansion.InductionSmelter;
 import mods.thermalexpansion.Transposer;
@@ -84,6 +85,9 @@ print("Start loading thermal.zs ...");
 		<thermalfoundation:material:770>
 	], <appliedenergistics2:material:45>, null, 10000);
 
+	mods.thermalexpansion.Centrifuge.addRecipe([<biomesoplenty:hive:1>], <biomesoplenty:hive:3>, <liquid:honey>*1000, 1000);
+	mods.thermalexpansion.Centrifuge.addRecipe([<biomesoplenty:honeycomb>], <biomesoplenty:filled_honeycomb>, <liquid:honey>*250, 1000);
+
 //Compactor
 	mods.thermalexpansion.Compactor.addPressRecipe(<enderio:item_material:71>, <ore:dustBedrock>.firstItem*5, 8000);
 	mods.thermalexpansion.Compactor.addPressRecipe(<ezstorage:condensed_storage_box>, <ezstorage:storage_box>*10, 1000);
@@ -134,10 +138,12 @@ print("Start loading thermal.zs ...");
 
 	mods.thermalexpansion.Transposer.addFillRecipe(<railcraft:tie:0>, <minecraft:wooden_slab:*>, <liquid:creosote>*250, 400);
 	mods.thermalexpansion.Transposer.addFillRecipe(<railcraft:creosote_block>, <minecraft:log:*>, <liquid:creosote>*500, 400);
-	mods.thermalexpansion.Transposer.addFillRecipe(<threng:material:5>, <appliedenergistics2:crystal_seed:1200>, <liquid:ender>*1000, 4000);
-	mods.thermalexpansion.Transposer.addFillRecipe(<appliedenergistics2:material:9>, <appliedenergistics2:crystal_seed:1200>, <liquid:dcs.chorus_liquor>*1000, 8000);
+	mods.thermalexpansion.Transposer.addFillRecipe(<threng:material:5>, <appliedenergistics2:crystal_seed:1200>.withTag({progress: 1200}), <liquid:ender>*1000, 4000);
+	mods.thermalexpansion.Transposer.addFillRecipe(<appliedenergistics2:material:9>, <appliedenergistics2:crystal_seed:1200>.withTag({progress: 1200}), <liquid:dcs.chorus_liquor>*1000, 8000);
 	mods.thermalexpansion.Transposer.addFillRecipe(<extrautils2:suncrystal:0>, <extrautils2:suncrystal:250>, <liquid:liquid_sunshine>*1000, 8000);
 
+	mods.thermalexpansion.Transposer.addFillRecipe(<biomesoplenty:jar_filled:0>, <biomesoplenty:jar_empty>, <liquid:honey>*1000, 400);
+	mods.thermalexpansion.Transposer.addExtractRecipe(<liquid:honey>*1000, <biomesoplenty:jar_filled:0>, 400, <biomesoplenty:jar_filled:0>);
 
 	val mapFuel as ILiquidStack[] = [
 		<liquid:dcs.fuel_oil>,
@@ -162,6 +168,10 @@ print("Start loading thermal.zs ...");
 	Refinery.addRecipe(<liquid:drop_blue>*250, <dcs_climate:dcs_color:5>%50, <liquid:dcs.tonic_water>*250, 2500);
 	Refinery.addRecipe(<liquid:drop_white>*250, <dcs_climate:dcs_color:9>%50, <liquid:dcs.beer>*250, 2500);
 	Refinery.addRecipe(<liquid:drop_black>*250, <dcs_climate:dcs_color:8>%50, <liquid:dcs.date>*250, 2500);
+
+//Factorizer
+	mods.thermalexpansion.Factorizer.addRecipeBoth(<biomesoplenty:hive:1>, <biomesoplenty:honeycomb>*4);
+	mods.thermalexpansion.Factorizer.addRecipeBoth(<biomesoplenty:hive:3>, <biomesoplenty:filled_honeycomb>*4);
 
 //Induction Smelter
 	mods.thermalexpansion.InductionSmelter.addRecipe(<contenttweaker:block_bedrockium>, <enderio:block_infinity:2>, <contenttweaker:ingot_rainbow>, 1000000);

@@ -17,6 +17,8 @@ import scripts.HiiragiUtils;
 print("Start loading oreDict.zs ...");
 
 //鉱石辞書の削除
+	<ore:dropHoney>.remove(<biomesoplenty:filled_honeycomb>);
+
 	<ore:dustWood>.remove(<dcs_climate:dcs_fooddust:7>);
 
 	<ore:dye>.remove([<minecraft:dye:0>, <minecraft:dye:3>, <minecraft:dye:4>, <minecraft:dye:15>]);
@@ -74,6 +76,8 @@ print("Start loading oreDict.zs ...");
 	<ore:cubeCyan>.add(<contenttweaker:cube_cyan>);
 	<ore:cubeMagenta>.add(<contenttweaker:cube_magenta>);
 	<ore:cubeYellow>.add(<contenttweaker:cube_yellow>);
+	<ore:cropPumpkin>.add(<contenttweaker:pumpkin_melon>);
+	<ore:cropMelon>.add(<contenttweaker:pumpkin_melon>);
 
 	<ore:dustSawDust>.add(<dcs_climate:dcs_miscdust:3>);
 	<ore:blockPeridot>.add(<dcs_climate:dcs_ore_gemblock:10>);

@@ -216,7 +216,7 @@ print("Start loading botania.zs ...");
 	}
 
 //Runic Altarによる加工
-	mods.botania.RuneAltar.addRecipe(<extrautils2:ingredients:17>,[
+	mods.botania.RuneAltar.addRecipe(<extrautils2:simpledecorative:2>,[
 		<ore:runeLustB>,
 		<ore:runeGluttonyB>,
 		<ore:runeGreedB>,
@@ -224,9 +224,9 @@ print("Start loading botania.zs ...");
 		<ore:runeWrathB>,
 		<ore:runeEnvyB>,
 		<ore:runePrideB>,
-		<ore:ingotEndSteel>,
-		<ore:dropofevil>,
-		<botanicadds:gaia_shard>,
+		<ore:blockEndSteel>,
+		<minecraft:skull:1>,
+		<ore:eternalLifeEssence>,
 	], 250000);
 	mods.botania.RuneAltar.addRecipe(<contenttweaker:ingot_rainbow>,[
 		//Red

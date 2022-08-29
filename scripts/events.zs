@@ -8,6 +8,9 @@
 #loader crafttweaker reloadableevents
 
 //crafttweakerからclassをimport
+import crafttweaker.block.IBlock;
+import crafttweaker.event.BlockHarvestDropsEvent;
+import crafttweaker.event.IBlockEvent;
 import crafttweaker.event.PlayerTickEvent;
 import crafttweaker.events.IEventManager;
 import crafttweaker.item.IItemStack;
@@ -27,26 +30,26 @@ print("Start loading events.zs ...");
 events.onPlayerTick(function(event as PlayerTickEvent) {
 	val player as IPlayer = event.player;
 	val world as IWorld = player.world;
-	if (!world.remote) {
+	if(!world.remote) {
 		//20tickに1回処理を挟む
-		if (world.getWorldTime() % 20 == 0) {
+		if(world.getWorldTime() % 20 == 0) {
 			//特定のアイテムを利き手に持っている際にイベントを起こす
-			if (!isNull(player.mainHandHeldItem)) {
+			if(!isNull(player.mainHandHeldItem)) {
 				var itemMain as IItemStack = player.mainHandHeldItem;
 				//Bedrockium Ingot
-				if (itemMain.matches(<contenttweaker:ingot_bedrockium>) || itemMain.matches(<contenttweaker:block_bedrockium>)) {
+				if(itemMain.matches(<contenttweaker:ingot_bedrockium>) || itemMain.matches(<contenttweaker:block_bedrockium>)) {
 					player.addPotionEffect(<potion:minecraft:slowness>.makePotionEffect(120, 4));
 				}
 				//Rainbow Stone
-				if (itemMain.matches(<extrautils2:decorativesolid:8>)) {
+				if(itemMain.matches(<extrautils2:decorativesolid:8>)) {
 					player.addPotionEffect(<potion:minecraft:glowing>.makePotionEffect(120, 36));
 				}
 			}
 			//特定のアイテムを利き手とは逆に持っている際にイベントを起こす
-			if (!isNull(player.offHandHeldItem)){
+			if(!isNull(player.offHandHeldItem)){
 				var itemOff as IItemStack = player.offHandHeldItem;
 				//Rainbow Ingot
-				if (itemOff.matches(<contenttweaker:ingot_rainbow>)) {
+				if(itemOff.matches(<contenttweaker:ingot_rainbow>)) {
 					player.addPotionEffect(<potion:minecraft:strength>.makePotionEffect(120, 7));
 					player.addPotionEffect(<potion:minecraft:fire_resistance>.makePotionEffect(120, 7));
 					player.addPotionEffect(<potion:minecraft:haste>.makePotionEffect(120, 7));
@@ -73,6 +76,21 @@ events.onPlayerTick(function(event as PlayerTickEvent) {
 				player.addPotionEffect(<potion:minecraft:luck>.makePotionEffect(220, 2));
 			}
 		}
+	}
+});
+
+events.onBlockHarvestDrops(function(event as BlockHarvestDropsEvent) {
+	if(event.isPlayer && event.block.definition.id == "contenttweaker:pumpkin_melon") {
+		event.drops = [
+			<minecraft:wheat_seeds>%100,
+			<minecraft:pumpkin_seeds>%50,
+			<minecraft:melon_seeds>%50,
+			<minecraft:beetroot_seeds>%50,
+			<inspirations:cactus_seeds>%25,
+			<inspirations:sugar_cane_seeds>%25,
+			<inspirations:carrot_seeds>%75,
+			<inspirations:potato_seeds>%75,
+		];
 	}
 });
 
