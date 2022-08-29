@@ -1,5 +1,23 @@
 # Changelog
 
+## v0.5.1
+
+- Mod Configuration
+  - Add
+    - `mod-director-launchwrapper-1.5.1-SNAPSHOT-all`
+      - To download below mod
+    - `Nutrition-1.12.2-4.9.0.jar`
+      - Bringing the Concept of Nutrition to Minecraft
+
+- Add `Apiary`
+  - Get many resources from flowers!
+- Add `Pumpkin Melon`
+  - Loot many kind of sesds!
+- Change the texture of `Builders/Destruction Wand`
+- Tweak recipes for Building Gadgets and `Builders/Destruction Wand`
+- Fix the bug: `Fluix Pearl` and `Resonating Crystal` can't be crafted
+- Update Quests
+
 ## v0.5.0
 
 ### `H.A.C. Interactions`
