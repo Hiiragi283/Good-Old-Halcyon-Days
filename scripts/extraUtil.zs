@@ -25,6 +25,9 @@ import scripts.HiiragiUtils;
 print("Start loading extraUtil.zs ...");
 
 //変数の定義
+val cap4x = <enderio:item_basic_capacitor:4>.withTag({eiocap: {level: 4.0 as float}, display: {LocName: "gohd.custom.capasitor_4x"}});
+val cap5x = <enderio:item_basic_capacitor:4>.withTag({eiocap: {level: 5.0 as float}, display: {LocName: "gohd.custom.capasitor_5x"}});
+val cap6x = <enderio:item_basic_capacitor:4>.withTag({eiocap: {level: 6.0 as float}, display: {LocName: "gohd.custom.capasitor_6x"}});
 
 //作業台レシピの編集
 	//削除
@@ -119,6 +122,9 @@ print("Start loading extraUtil.zs ...");
 		[<ore:dustBedrock>, <ore:ingotCopper>]: <enderio:item_basic_capacitor:0>,
 		[<enderio:item_basic_capacitor:0>, <ore:ingotEnergeticAlloy>]: <enderio:item_basic_capacitor:1>,
 		[<enderio:item_basic_capacitor:1>, <ore:ingotVibrantAlloy>]: <enderio:item_basic_capacitor:2>,
+		[<enderio:item_basic_capacitor:2>, <ore:ingotManasteel>]: cap4x,
+		[cap4x, <ore:ingotFluixSteel>]: cap5x,
+		[cap5x, <dcs_climate:dcs_mechanical:5>]: cap6x,
 		[<ore:dustBedrock>, <ore:ingotIron>]: <ore:gearIronInfinity>.firstItem,
 		[<ore:gearIronInfinity>, <ore:ingotDarkSteel>]: <ore:gearDark>.firstItem,
 		[<ore:gearIronInfinity>, <ore:ingotEnergeticAlloy>]: <ore:gearEnergized>.firstItem,

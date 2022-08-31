@@ -11,6 +11,9 @@ gohd.custom.track_neet.name=§6NEET Suit
 gohd.custom.gaia_executer.name=§cGaia Executer
 gohd.custom.gun_devil.name=§cMusket of the Gun Devil
 gohd.custom.rod_sea.name=§6Rod of the Sea
+gohd.custom.capasitor_4x=Mana Capasitor
+gohd.custom.capasitor_5x=Fluix Capasitor
+gohd.custom.capasitor_6x=SC Capasitor
 
 #Tooltips
 gohd.tooltip.hidden.name=§6Hide from JEI§r but §aavailable§r
@@ -37,6 +40,7 @@ gohd.tooltip.cube_spell_green.name=§cOverride Existing Blocks!
 gohd.tooltip.dcs_color_ring2.name=§bBlessing of Flosts
 gohd.tooltip.quantum_entangler.name=§aQuanutum Entangler allows you to copy data of compact machines!
 gohd.tooltip.tool_forge.name=§aNow you can change the appearance of Tool Forge into what you like!
+gohd.tooltip.identify_microbe.name=§aRight-click to identify!
 
 #Quests
 ## Main: gohd.09d26429.
@@ -68,6 +72,7 @@ gohd.5f3109ce.648774ca.desc1=This modpack requires knowledge of Heat And Climate
 gohd.5f3109ce.648774ca.desc2=If you are new to HaC, we recommend that you jump to the author's wiki from the link in the quest above and read it before playing.
 gohd.09d26429.8297ab4c.title=Why did you think you can't chop logs only with your hand?
 gohd.09d26429.baa9cb1d.subtitle=Original but Worst
+gohd.0290d76b.ff5f1169.title=Starter Kit for Travelers
 gohd.09d26429.4fb7c614.title=The first step for Tinker's Tool
 gohd.09d26429.42aa3c8a.title=Dirty Deeds Done Dirt Cheap
 gohd.09d26429.8e6a9cab.title=Wooden Sticks from Saplings
@@ -167,7 +172,6 @@ gohd.f80fdeb8.e33a0690.title=Rare Foods
 
 ## Microbe: gohd.68baec83.
 gohd.microbe.title=Microbe
-gohd.identify_microbe.desc=Right-click to identify!
 gohd.68baec83.3f15f898.desc1=To culture microbes, the agar or medium with microbes is placed in an incubator and allowed to stand for several days after being adjusted to the appropriate climate from GUI.
 
 ## brewing: gohd.
@@ -228,12 +232,6 @@ gohd.6b120fb2.23189174.title=16 Inputs -> 6 Outputs
 gohd.6b120fb2.7c9e3fd5.title=Redstone Flux Dynamos
 gohd.6b120fb2.849036fe.title=Photovoltaic Cells
 
-## Shop gohd.0290d76b.
-gohd.shop.title=Quest Shop
-gohd.shop.desc1=In this Quest Page, you can buy some useful items!
-gohd.shop.desc2=All you need to buy is Tickets, that are obtained from reward of Quests.
-gohd.0290d76b.ff5f1169.title=Starter Kit for Travelers
-
 ##End Game: gohd.0f73c1bb.
 gohd.end_game.title=Good Old Minecraft!
 gohd.0f73c1bb.978f1566.subtitle=Planet Minecraft
@@ -250,23 +248,11 @@ gohd.0f73c1bb.8867e772.task1=Travel to Planet "Minecraft"
 gohd.0f73c1bb.8867e772.reward1=Goobye, my good old memories.
 
 ## Reward Table
-gohd.reward.ring_gold.title=Gold Rings
-gohd.reward.ring_silver.title=Silver Rings
-gohd.reward.pendant_gold.title=Gold Pendants
-gohd.reward.pendant_silver.title=Silver Pendants
-
 gohd.reward.slimesling.title=Slimeslings
 gohd.reward.slime_boots.title=Slime Boots
 gohd.reward.loot_magic_spell.title=Magic Spell
-
-gohd.reward.badge.title=Color Badges
-gohd.reward.gauntlet_extract.title=Color Gauntlets
-gohd.reward.coating_tool.title=Coating tools
-
-gohd.reward.gauntlet_cube.title=Advanced Color Gauntlets
-gohd.reward.color_picture.title=Magic Pictures
-
 gohd.reward.creative_shop.title=Creative Utilities
+gohd.reward.loot_botania_rod.title=Botanical Rods
 
 #Special Links
 link.youtu.be.SWI_4Sx2GtI=The Everyday and The Extraordinary

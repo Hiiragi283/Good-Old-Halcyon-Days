@@ -29,6 +29,13 @@ import scripts.HiiragiUtils;
 print("Start loading unification.zs ...");
 
 //変数の定義
+val axeGaia = <botania:elementiumaxe>.withTag({ench: [{lvl: 13 as short, id: 16 as short}, {lvl: 13 as short, id: 26 as short}, {lvl: 13 as short, id: 35 as short}], display: {LocName: "gohd.custom.gaia_executer.name"}, AttributeModifiers: [{Amount: 6.0, Slot: "mainhand", AttributeName: "generic.reachDistance", Operation: 0, Name: "generic.reachDistance"}]});
+val gunDevil = <dcs_climate:dcs_musket>.withTag({ench: [{lvl: 10 as short, id: 48 as short}, {lvl: 5 as short, id: 34 as short}, {lvl: 1 as short, id: 30 as short}, {lvl: 1 as short, id: 50 as short}, {lvl: 1 as short, id: 28 as short}, {lvl: 5 as short, id: 42 as short}], display: {LocName: "gohd.custom.gun_devil.name"}});
+val rodSea = <thermalfoundation:tool.fishing_rod_diamond>.withTag({ench: [{lvl: 10 as short, id: 62 as short}, {lvl: 10 as short, id: 61 as short}], display: {LocName: "gohd.custom.rod_sea.name"}});
+
+val cap4x = <enderio:item_basic_capacitor:4>.withTag({eiocap: {level: 4.0 as float}, display: {LocName: "gohd.custom.capasitor_4x"}});
+val cap5x = <enderio:item_basic_capacitor:4>.withTag({eiocap: {level: 5.0 as float}, display: {LocName: "gohd.custom.capasitor_5x"}});
+val cap6x = <enderio:item_basic_capacitor:4>.withTag({eiocap: {level: 6.0 as float}, display: {LocName: "gohd.custom.capasitor_6x"}});
 
 //作業台レシピの編集
 	//削除
@@ -193,6 +200,37 @@ print("Start loading unification.zs ...");
 		var machine = <compactmachines3:machine>.definition.makeStack(i);
 		HiiragiUtils.addCraftingShapeless(false, machine*2, [machine.marked("inherit"), <contenttweaker:quantum_entangler>.reuse(), machine], HiiragiUtils.inheritStatus(machine), null);
 	}
+	//らぎチケットを利用したショップクエストの代替
+		//Gold Ring
+		HiiragiUtils.addCraftingShaped(false, <dcs_climate:dcs_color_ring2:2>, RecipePattern.init(["AB ", "B B", " B "]).map({A:<contenttweaker:ticket_common>, B:<ore:ingotBrass>}).ingredients, null, null);
+		HiiragiUtils.addCraftingShaped(false, <dcs_climate:dcs_color_ring2:1>, RecipePattern.init([" BA", "B B", " B "]).map({A:<contenttweaker:ticket_common>, B:<ore:ingotBrass>}).ingredients, null, null);
+		HiiragiUtils.addCraftingShaped(false, <contenttweaker:dcs_color_ring2>, RecipePattern.init([" B ", "BAB", " B "]).map({A:<contenttweaker:ticket_common>, B:<ore:ingotBrass>}).ingredients, null, null);
+		HiiragiUtils.addCraftingShaped(false, <dcs_climate:dcs_color_ring2:4>, RecipePattern.init([" B ", "B B", "AB "]).map({A:<contenttweaker:ticket_common>, B:<ore:ingotBrass>}).ingredients, null, null);
+		HiiragiUtils.addCraftingShaped(false, <dcs_climate:dcs_color_ring2:3>, RecipePattern.init([" B ", "B B", " BA"]).map({A:<contenttweaker:ticket_common>, B:<ore:ingotBrass>}).ingredients, null, null);
+		//Silver Ring
+		HiiragiUtils.addCraftingShaped(false, <dcs_climate:dcs_color_ring:2>, RecipePattern.init(["AB ", "B B", " B "]).map({A:<contenttweaker:ticket_common>, B:<ore:ingotIron>}).ingredients, null, null);
+		HiiragiUtils.addCraftingShaped(false, <dcs_climate:dcs_color_ring:1>, RecipePattern.init([" BA", "B B", " B "]).map({A:<contenttweaker:ticket_common>, B:<ore:ingotIron>}).ingredients, null, null);
+		HiiragiUtils.addCraftingShaped(false, <dcs_climate:dcs_color_ring:0>, RecipePattern.init([" B ", "BAB", " B "]).map({A:<contenttweaker:ticket_common>, B:<ore:ingotIron>}).ingredients, null, null);
+		HiiragiUtils.addCraftingShaped(false, <dcs_climate:dcs_color_ring:4>, RecipePattern.init([" B ", "B B", "AB "]).map({A:<contenttweaker:ticket_common>, B:<ore:ingotIron>}).ingredients, null, null);
+		HiiragiUtils.addCraftingShaped(false, <dcs_climate:dcs_color_ring:3>, RecipePattern.init([" B ", "B B", " BA"]).map({A:<contenttweaker:ticket_common>, B:<ore:ingotIron>}).ingredients, null, null);
+		//Gold Pendant
+		HiiragiUtils.addCraftingShaped(false, <dcs_climate:dcs_color_pendant2:2>, RecipePattern.init(["B B", "AB "]).map({A:<contenttweaker:ticket_uncommon>, B:<ore:ingotBrass>}).ingredients, null, null);
+		HiiragiUtils.addCraftingShaped(false, <dcs_climate:dcs_color_pendant2:1>, RecipePattern.init(["B B", " B ", "A  "]).map({A:<contenttweaker:ticket_uncommon>, B:<ore:ingotBrass>}).ingredients, null, null);
+		HiiragiUtils.addCraftingShaped(false, <dcs_climate:dcs_color_pendant2:0>, RecipePattern.init(["B B", " B ", " A "]).map({A:<contenttweaker:ticket_uncommon>, B:<ore:ingotBrass>}).ingredients, null, null);
+		HiiragiUtils.addCraftingShaped(false, <dcs_climate:dcs_color_pendant2:4>, RecipePattern.init(["B B", " B ", "  A"]).map({A:<contenttweaker:ticket_uncommon>, B:<ore:ingotBrass>}).ingredients, null, null);
+		HiiragiUtils.addCraftingShaped(false, <dcs_climate:dcs_color_pendant2:3>, RecipePattern.init(["B B", " BA"]).map({A:<contenttweaker:ticket_uncommon>, B:<ore:ingotBrass>}).ingredients, null, null);
+		//Silver Pendant
+		HiiragiUtils.addCraftingShaped(false, <dcs_climate:dcs_color_pendant:2>, RecipePattern.init(["B B", "AB "]).map({A:<contenttweaker:ticket_uncommon>, B:<ore:ingotIron>}).ingredients, null, null);
+		HiiragiUtils.addCraftingShaped(false, <dcs_climate:dcs_color_pendant:1>, RecipePattern.init(["B B", " B ", "A  "]).map({A:<contenttweaker:ticket_uncommon>, B:<ore:ingotIron>}).ingredients, null, null);
+		HiiragiUtils.addCraftingShaped(false, <dcs_climate:dcs_color_pendant:0>, RecipePattern.init(["B B", " B ", " A "]).map({A:<contenttweaker:ticket_uncommon>, B:<ore:ingotIron>}).ingredients, null, null);
+		HiiragiUtils.addCraftingShaped(false, <dcs_climate:dcs_color_pendant:4>, RecipePattern.init(["B B", " B ", "  A"]).map({A:<contenttweaker:ticket_uncommon>, B:<ore:ingotIron>}).ingredients, null, null);
+		HiiragiUtils.addCraftingShaped(false, <dcs_climate:dcs_color_pendant:3>, RecipePattern.init(["B B", " BA"]).map({A:<contenttweaker:ticket_uncommon>, B:<ore:ingotIron>}).ingredients, null, null);
+		//Loot Crate
+		HiiragiUtils.addCraftingShaped(false, <ftbquests:lootcrate>.withTag({type: "gohd_reward_loot_magic_spell_title"}), RecipePattern.init(["AA", "AB"]).map({A:<ore:paper>, B:<contenttweaker:ticket_uncommon>}).ingredients, null, null);
+		//Custom Tools
+		HiiragiUtils.addCraftingShaped(false, rodSea, RecipePattern.init(["ABC", "BDB", "CBA"]).map({A:<ore:gemPrismarine>, B:<contenttweaker:ticket_legendary>, C:<ore:dustPrismarine>, D:<thermalfoundation:tool.fishing_rod_diamond>}).ingredients, null, null);
+		HiiragiUtils.addCraftingShaped(false, axeGaia, RecipePattern.init(["ABA", "BCB", "ABA"]).map({A:<ore:dropofevil>, B:<contenttweaker:ticket_legendary>, C:<botania:elementiumaxe>}).ingredients, null, null);
+		HiiragiUtils.addCraftingShaped(false, gunDevil, RecipePattern.init(["ABC", "BAB", "CBD"]).map({A:<ore:barrelMortar>, B:<contenttweaker:ticket_legendary>, C:<dcs_climate:dcs_cont_fuel:2>, D:<dcs_climate:dcs_musket>}).ingredients, null, null);
 
 	HiiragiUtils.addCraftingShaped(false, <artisanworktables:workstation:5>, RecipePattern.init(["ABA", " C ", "DDD"]).map({A:<tconstruct:seared_tank:*>, B: <ore:chest>, C:<ore:workbench>, D:<tconstruct:seared:3>}).ingredients, null, null);
 	HiiragiUtils.addCraftingShaped(false, <contenttweaker:glyph_divide>, RecipePattern.init([" A ", "BCB", " A "]).map({A:<minecraft:skull:1>, B:<ore:boneWithered>, C:<openblocks:generic:10>}).ingredients, null, null);
@@ -374,6 +412,12 @@ print("Start loading unification.zs ...");
 
 //JEIへの新規登録
 	val mapJEI as IItemStack[] = [
+		axeGaia,
+		gunDevil,
+		rodSea,
+		cap4x,
+		cap5x,
+		cap6x,
 		<enderio:item_material:62>,
 		<tconstruct:edible:5>,
 		<tconstruct:slime:5>,
@@ -408,6 +452,7 @@ print("Start loading unification.zs ...");
 		<contenttweaker:dcs_color_ring2>: "gohd.tooltip.dcs_color_ring2.name",
 		<contenttweaker:quantum_entangler>: "gohd.tooltip.quantum_entangler.name",
 		<tconstruct:toolforge:0>: "gohd.tooltip.tool_forge.name",
+		<dcs_climate:dcs_food_unidentified:*>: "gohd.tooltip.identify_microbe.name",
 	};
 	for i, j in mapTooltip {
 		i.addTooltip(I18n.format(j));
