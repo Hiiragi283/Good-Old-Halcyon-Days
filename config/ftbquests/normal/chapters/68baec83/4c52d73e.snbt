@@ -1,9 +1,9 @@
 {
-	x: 3.0d,
-	y: 4.0d,
+	x: 3.5d,
+	y: 3.0d,
 	hide_dependency_lines: true,
 	dependencies: [
-		"a4cd1cba"
+		"09e0feeb"
 	],
 	tasks: [{
 		uid: "e90f55b2",
@@ -11,10 +11,19 @@
 		items: [{
 			item: "dcs_climate:dcs_food_microbe_cyano"
 		}]
-	}],
-	rewards: [{
-		uid: "c56ec102",
+	},
+	{
+		uid: "d08ae91a",
 		type: "item",
-		item: "contenttweaker:ticket_common"
+		items: [{
+			item: "dcs_climate:dcs_food_microbe_cyano 1 1"
+		}]
+	},
+	{
+		uid: "af0d5608",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_food_microbe_cyano 1 2"
+		}]
 	}]
 }

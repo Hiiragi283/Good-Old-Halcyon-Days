@@ -1,13 +1,13 @@
 {
 	title: "{gohd.reward.creative_shop.title}",
-	icon: "thermalfoundation:upgrade 1 256",
-	x: 12.0d,
-	y: 2.0d,
+	x: 25.0d,
+	y: 0.0d,
+	shape: "hexagon",
 	can_repeat: true,
-	hide_dependency_lines: true,
 	dependencies: [
-		"8151002d"
+		"6ab31c74"
 	],
+	size: 2.0d,
 	tasks: [{
 		uid: "aef5d37a",
 		type: "item",
@@ -19,6 +19,6 @@
 	rewards: [{
 		uid: "c3088142",
 		type: "choice",
-		table: 4
+		table: 2
 	}]
 }

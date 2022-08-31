@@ -1,0 +1,65 @@
+{
+	title: "{gohd.reward.loot_botania_rod.title}",
+	loot_size: 1,
+	rewards: [{
+		item: "botania:dirtrod",
+		weight: 4
+	},
+	{
+		item: {
+			id: "botania:tornadorod",
+			tag: {}
+		},
+		weight: 4
+	},
+	{
+		item: "botania:firerod",
+		weight: 4
+	},
+	{
+		item: "botania:waterrod",
+		weight: 4
+	},
+	{
+		item: "botania:terraformrod",
+		weight: 3
+	},
+	{
+		item: "botania:cobblerod",
+		weight: 3
+	},
+	{
+		item: "botania:smeltrod",
+		weight: 3
+	},
+	{
+		item: {
+			id: "botania:exchangerod",
+			tag: {}
+		},
+		weight: 3
+	},
+	{
+		item: "botania:skydirtrod",
+		weight: 2
+	},
+	{
+		item: "botania:gravityrod",
+		weight: 2
+	},
+	{
+		item: "botania:rainbowrod"
+	},
+	{
+		item: "botania:missilerod"
+	}],
+	loot_crate: {
+		string_id: "gohd_reward_loot_botania_rod_title",
+		color: 16777215,
+		drops: {
+			boss: 0,
+			passive: 0,
+			monster: 0
+		}
+	}
+}

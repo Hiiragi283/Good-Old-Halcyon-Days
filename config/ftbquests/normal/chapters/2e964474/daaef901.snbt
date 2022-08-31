@@ -6,9 +6,6 @@
 	text: [
 		"{gohd.2e964474.daaef901.desc1}"
 	],
-	dependencies: [
-		"9d597ab6"
-	],
 	tasks: [{
 		uid: "32c3d9ac",
 		type: "item",

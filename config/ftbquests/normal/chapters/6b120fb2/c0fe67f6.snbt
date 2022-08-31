@@ -14,10 +14,5 @@
 		items: [{
 			item: "dcs_climate:dcs_device_windmill_ex"
 		}]
-	}],
-	rewards: [{
-		uid: "2f565048",
-		type: "item",
-		item: "contenttweaker:ticket_epic"
 	}]
 }

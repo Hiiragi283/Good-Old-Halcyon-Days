@@ -17,7 +17,6 @@
 	rewards: [{
 		uid: "45ba45f2",
 		type: "item",
-		item: "contenttweaker:ticket_legendary",
-		count: 3
+		item: "contenttweaker:ticket_legendary"
 	}]
 }

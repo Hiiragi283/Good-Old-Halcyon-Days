@@ -1,6 +1,6 @@
 {
 	x: 6.5d,
-	y: 4.0d,
+	y: 3.0d,
 	hide_dependency_lines: true,
 	dependencies: [
 		"50fde685"
@@ -11,10 +11,19 @@
 		items: [{
 			item: "dcs_climate:dcs_food_microbe_skin"
 		}]
-	}],
-	rewards: [{
-		uid: "9eb36df9",
+	},
+	{
+		uid: "dc52a463",
 		type: "item",
-		item: "contenttweaker:ticket_common"
+		items: [{
+			item: "dcs_climate:dcs_food_microbe_skin 1 1"
+		}]
+	},
+	{
+		uid: "264e7fef",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_food_microbe_skin 1 2"
+		}]
 	}]
 }

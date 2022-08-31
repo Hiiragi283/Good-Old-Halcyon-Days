@@ -1,10 +1,6 @@
 {
 	x: 0.0d,
 	y: 0.0d,
-	dependencies: [
-		"6c77c9cd",
-		"9062b975"
-	],
 	dependency_requirement: "one_completed",
 	size: 2.0d,
 	tasks: [{

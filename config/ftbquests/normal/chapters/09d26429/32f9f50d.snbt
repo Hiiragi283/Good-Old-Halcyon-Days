@@ -17,11 +17,6 @@
 		}]
 	}],
 	rewards: [{
-		uid: "d21dfbee",
-		type: "item",
-		item: "contenttweaker:ticket_epic"
-	},
-	{
 		uid: "c0e2d0bb",
 		type: "item",
 		item: "enderio:item_yeta_wrench"

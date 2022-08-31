@@ -1,7 +1,7 @@
 {
 	icon: "railcraft:firestone_raw",
-	x: 10.5d,
-	y: 10.0d,
+	x: 14.0d,
+	y: 2.0d,
 	text: [
 		"{gohd.cccede9d.5a6ee22b.desc1}",
 		"{gohd.cccede9d.5a6ee22b.desc2}"

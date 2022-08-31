@@ -1,0 +1,123 @@
+{
+	title: "{advancements.dcs_climate.magic_all_gem.title}",
+	x: 2.0d,
+	y: 3.0d,
+	dependencies: [
+		"fcea16fa",
+		"add5de61",
+		"6ef83f24",
+		"4b446108",
+		"94dd1723"
+	],
+	dependency_requirement: "one_completed",
+	tasks: [{
+		uid: "b6f1e69e",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_gem_red"
+		}]
+	},
+	{
+		uid: "2958ced0",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_gem_red 1 1"
+		}]
+	},
+	{
+		uid: "e3412bca",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_gem_red 1 2"
+		}]
+	},
+	{
+		uid: "92062050",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_gem_green"
+		}]
+	},
+	{
+		uid: "fddde76d",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_gem_green 1 1"
+		}]
+	},
+	{
+		uid: "3ccaa219",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_gem_green 1 2"
+		}]
+	},
+	{
+		uid: "4eee9bb1",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_gem_blue"
+		}]
+	},
+	{
+		uid: "2d1bdd41",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_gem_blue 1 1"
+		}]
+	},
+	{
+		uid: "0daeeccd",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_gem_blue 1 2"
+		}]
+	},
+	{
+		uid: "0c46d741",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_gem_white"
+		}]
+	},
+	{
+		uid: "34118def",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_gem_white 1 1"
+		}]
+	},
+	{
+		uid: "11f7fd8b",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_gem_white 1 2"
+		}]
+	},
+	{
+		uid: "acf77db2",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_gem_black"
+		}]
+	},
+	{
+		uid: "3fca9e2a",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_gem_black 1 1"
+		}]
+	},
+	{
+		uid: "77a06567",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_gem_black 1 2"
+		}]
+	}],
+	rewards: [{
+		uid: "2dd39310",
+		type: "item",
+		item: "contenttweaker:ticket_epic"
+	}]
+}

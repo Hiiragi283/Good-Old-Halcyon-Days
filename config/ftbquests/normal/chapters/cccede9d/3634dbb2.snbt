@@ -1,14 +1,11 @@
 {
 	title: "{gohd.cccede9d.3634dbb2.title}",
 	icon: "dcs_climate:dcs_layer_stone_new 1 1",
-	x: 9.0d,
-	y: 3.0d,
+	x: 8.0d,
+	y: 1.0d,
 	shape: "square",
 	text: [
 		"{gohd.cccede9d.3634dbb2.desc1}"
-	],
-	dependencies: [
-		"d70f01cb"
 	],
 	tasks: [{
 		uid: "7cee1552",
@@ -22,20 +19,6 @@
 		type: "item",
 		items: [{
 			item: "dcs_climate:dcs_ore_gemblock 1 6"
-		}]
-	},
-	{
-		uid: "d632f576",
-		type: "item",
-		items: [{
-			item: "dcs_climate:dcs_gem_red 1 5"
-		}]
-	},
-	{
-		uid: "8b21c1f0",
-		type: "item",
-		items: [{
-			item: "dcs_climate:dcs_gem_blue 1 5"
 		}]
 	}],
 	rewards: [{

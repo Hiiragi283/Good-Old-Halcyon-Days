@@ -13,5 +13,22 @@
 			item: "tconstruct:tinker_tank_controller"
 		}],
 		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "38a4b69e",
+		type: "item",
+		item: "tconstruct:seared 1 3",
+		count: 20
+	},
+	{
+		uid: "31dd158a",
+		type: "item",
+		item: "tconstruct:seared_glass",
+		count: 4
+	},
+	{
+		uid: "80b09d97",
+		type: "item",
+		item: "tconstruct:smeltery_io"
 	}]
 }

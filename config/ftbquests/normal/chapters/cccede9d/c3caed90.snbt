@@ -1,6 +1,9 @@
 {
 	x: 4.0d,
-	y: 8.0d,
+	y: 6.0d,
+	text: [
+		"{gohd.hac.tooltip}"
+	],
 	dependencies: [
 		"d26abee9"
 	],
@@ -15,6 +18,16 @@
 	rewards: [{
 		uid: "43e462ab",
 		type: "item",
-		item: "contenttweaker:ticket_rare"
+		item: "dcs_climate:dcs_rotaryblade"
+	},
+	{
+		uid: "6ec693be",
+		type: "item",
+		item: "dcs_climate:dcs_rotaryblade 1 1"
+	},
+	{
+		uid: "948ea1fe",
+		type: "item",
+		item: "dcs_climate:dcs_rotaryblade 1 2"
 	}]
 }

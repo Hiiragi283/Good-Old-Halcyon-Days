@@ -5,12 +5,6 @@
 		item: "appliedenergistics2:creative_energy_cell"
 	},
 	{
-		item: "extrautils2:itemcreativebuilderswand"
-	},
-	{
-		item: "extrautils2:itemcreativedestructionwand"
-	},
-	{
 		item: "extrautils2:passivegenerator 1 6"
 	},
 	{

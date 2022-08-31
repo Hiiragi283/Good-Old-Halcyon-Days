@@ -7,9 +7,6 @@
 	text: [
 		"{gohd.f80fdeb8.1ca61478.desc1}"
 	],
-	dependencies: [
-		"648774ca"
-	],
 	size: 2.0d,
 	tasks: [{
 		uid: "79f0d456",

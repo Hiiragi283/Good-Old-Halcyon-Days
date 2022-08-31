@@ -16,10 +16,5 @@
 		uid: "a50f2fa2",
 		type: "item",
 		item: "mekanism:filterupgrade"
-	},
-	{
-		uid: "71c139a7",
-		type: "item",
-		item: "contenttweaker:ticket_epic"
 	}]
 }

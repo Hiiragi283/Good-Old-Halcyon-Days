@@ -28,6 +28,7 @@
 		title: "{gohd.0f73c1bb.8867e772.reward1}",
 		icon: "minecraft:writable_book",
 		auto: "no_toast",
-		command: "/playsound minecraft:entity.enderdragon.death master @p"
+		command: "/playsound minecraft:entity.enderdragon.death master @p",
+		player_command: true
 	}]
 }

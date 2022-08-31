@@ -4,16 +4,8 @@
 	x: -4.5d,
 	y: -3.0d,
 	shape: "square",
-	dependencies: [
-		"4fb7c614"
-	],
 	tasks: [{
 		uid: "bd068f0c",
 		type: "checkmark"
-	}],
-	rewards: [{
-		uid: "dbf054b7",
-		type: "item",
-		item: "minecraft:diamond_sword"
 	}]
 }

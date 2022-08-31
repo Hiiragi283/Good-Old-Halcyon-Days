@@ -24,10 +24,5 @@
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b
-	}],
-	rewards: [{
-		uid: "a4c08d5e",
-		type: "item",
-		item: "contenttweaker:ticket_epic"
 	}]
 }

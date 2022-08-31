@@ -1,6 +1,6 @@
 {
 	x: 6.5d,
-	y: 5.0d,
+	y: 4.0d,
 	hide_dependency_lines: true,
 	dependencies: [
 		"50fde685"
@@ -11,10 +11,19 @@
 		items: [{
 			item: "dcs_climate:dcs_food_microbe_nether"
 		}]
-	}],
-	rewards: [{
-		uid: "39e50c05",
+	},
+	{
+		uid: "1e7fdd16",
 		type: "item",
-		item: "contenttweaker:ticket_common"
+		items: [{
+			item: "dcs_climate:dcs_food_microbe_nether 1 1"
+		}]
+	},
+	{
+		uid: "89c323c7",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_food_microbe_nether 1 2"
+		}]
 	}]
 }

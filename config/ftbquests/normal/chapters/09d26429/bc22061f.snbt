@@ -12,38 +12,28 @@
 		type: "item",
 		items: [{
 			item: "mekanism:dust 1 2"
-		}]
+		}],
+		count: 16L
 	},
 	{
 		uid: "80fa58ec",
 		type: "item",
 		items: [{
 			item: "thermalfoundation:material 1 71"
-		}]
+		}],
+		count: 16L
 	},
 	{
 		uid: "83246cee",
 		type: "item",
 		items: [{
 			item: "thermalfoundation:material 1 70"
-		}]
+		}],
+		count: 16L
 	}],
 	rewards: [{
-		uid: "91053038",
+		uid: "3907c32f",
 		type: "item",
-		item: "mekanism:dust 1 2",
-		count: 15
-	},
-	{
-		uid: "062afb78",
-		type: "item",
-		item: "thermalfoundation:material 1 71",
-		count: 15
-	},
-	{
-		uid: "49be4a34",
-		type: "item",
-		item: "thermalfoundation:material 1 70",
-		count: 15
+		item: "contenttweaker:ticket_legendary"
 	}]
 }

@@ -11,10 +11,19 @@
 		items: [{
 			item: "dcs_climate:dcs_food_microbe_lab"
 		}]
-	}],
-	rewards: [{
-		uid: "818a7df0",
+	},
+	{
+		uid: "46a45fc2",
 		type: "item",
-		item: "contenttweaker:ticket_common"
+		items: [{
+			item: "dcs_climate:dcs_food_microbe_lab 1 1"
+		}]
+	},
+	{
+		uid: "27412957",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_food_microbe_lab 1 2"
+		}]
 	}]
 }

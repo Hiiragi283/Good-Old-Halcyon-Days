@@ -23,10 +23,5 @@
 		type: "item",
 		item: "dcs_climate:dcs_device_yardpart",
 		count: 25
-	},
-	{
-		uid: "e7ade4eb",
-		type: "item",
-		item: "contenttweaker:ticket_rare"
 	}]
 }

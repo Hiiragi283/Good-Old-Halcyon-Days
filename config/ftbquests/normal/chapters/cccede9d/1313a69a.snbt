@@ -1,34 +1,17 @@
 {
 	title: "{gohd.cccede9d.1313a69a.title}",
 	icon: "dcs_climate:dcs_layer_skarn",
-	x: 9.0d,
-	y: 2.0d,
+	x: 7.0d,
+	y: 1.0d,
 	shape: "square",
 	text: [
 		"{gohd.cccede9d.1313a69a.desc1}"
-	],
-	dependencies: [
-		"d70f01cb"
 	],
 	tasks: [{
 		uid: "c428fb06",
 		type: "item",
 		items: [{
 			item: "dcs_climate:dcs_layer_skarn"
-		}]
-	},
-	{
-		uid: "dbab060e",
-		type: "item",
-		items: [{
-			item: "dcs_climate:dcs_gem_blue 1 4"
-		}]
-	},
-	{
-		uid: "bd416ad5",
-		type: "item",
-		items: [{
-			item: "dcs_climate:dcs_gem_green 1 4"
 		}]
 	}],
 	rewards: [{

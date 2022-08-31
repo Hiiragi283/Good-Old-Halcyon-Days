@@ -13,10 +13,5 @@
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b
-	}],
-	rewards: [{
-		uid: "daab02f9",
-		type: "item",
-		item: "contenttweaker:ticket_uncommon"
 	}]
 }

@@ -6,9 +6,6 @@
 	text: [
 		"{dcs.tip.trade_only}"
 	],
-	dependencies: [
-		"9d597ab6"
-	],
 	size: 2.0d,
 	tasks: [{
 		uid: "84ba2a93",

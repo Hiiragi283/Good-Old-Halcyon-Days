@@ -1,11 +1,8 @@
 {
 	title: "{gohd.2e964474.da7a26f4.title}",
-	x: 5.5d,
+	x: 6.5d,
 	y: 0.0d,
 	shape: "rsquare",
-	dependencies: [
-		"9d597ab6"
-	],
 	tasks: [{
 		uid: "cfed40ab",
 		type: "item",

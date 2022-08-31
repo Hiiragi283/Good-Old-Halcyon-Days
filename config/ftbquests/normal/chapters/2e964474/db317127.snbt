@@ -2,9 +2,6 @@
 	icon: "dcs_climate:dcs_food_crops 1 14",
 	x: 6.0d,
 	y: 1.5d,
-	dependencies: [
-		"9d597ab6"
-	],
 	tasks: [{
 		uid: "f64d3ce0",
 		type: "item",

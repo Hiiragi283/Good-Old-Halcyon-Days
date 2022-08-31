@@ -15,11 +15,6 @@
 		}]
 	}],
 	rewards: [{
-		uid: "24ec9ea7",
-		type: "item",
-		item: "contenttweaker:ticket_epic"
-	},
-	{
 		uid: "4ec593fc",
 		type: "item",
 		item: "thermalfoundation:wrench"

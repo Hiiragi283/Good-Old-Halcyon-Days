@@ -19,10 +19,5 @@
 		type: "item",
 		item: "openblocks:vacuum_hopper",
 		count: 3
-	},
-	{
-		uid: "a14d14cc",
-		type: "item",
-		item: "contenttweaker:ticket_rare"
 	}]
 }

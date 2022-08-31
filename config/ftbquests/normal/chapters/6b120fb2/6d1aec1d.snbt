@@ -36,10 +36,5 @@
 		items: [{
 			item: "threng:big_assembler 1 2"
 		}]
-	}],
-	rewards: [{
-		uid: "801823dd",
-		type: "item",
-		item: "contenttweaker:ticket_legendary"
 	}]
 }

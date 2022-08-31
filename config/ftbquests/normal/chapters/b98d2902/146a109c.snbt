@@ -6,9 +6,6 @@
 		"{gohd.b98d2902.146a109c.desc1}",
 		"{gohd.b98d2902.146a109c.desc2}"
 	],
-	dependencies: [
-		"648774ca"
-	],
 	size: 2.0d,
 	tasks: [{
 		uid: "c50d78d8",

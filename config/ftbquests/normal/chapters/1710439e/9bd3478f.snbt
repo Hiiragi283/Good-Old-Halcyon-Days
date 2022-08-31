@@ -11,5 +11,10 @@
 		items: [{
 			item: "dcs_climate:dcs_reagent 1 8"
 		}]
+	}],
+	rewards: [{
+		uid: "ef19bfe1",
+		type: "item",
+		item: "dcs_climate:dcs_musket"
 	}]
 }

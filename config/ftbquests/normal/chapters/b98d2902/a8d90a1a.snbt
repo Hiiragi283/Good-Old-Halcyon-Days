@@ -13,11 +13,5 @@
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b
-	}],
-	rewards: [{
-		uid: "9ba8e95f",
-		type: "item",
-		item: "contenttweaker:ticket_common",
-		count: 3
 	}]
 }

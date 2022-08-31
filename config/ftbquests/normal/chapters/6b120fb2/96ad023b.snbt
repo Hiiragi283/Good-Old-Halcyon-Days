@@ -1,10 +1,8 @@
 {
 	icon: "minecraft:minecart",
-	x: 11.0d,
+	x: 9.0d,
 	y: -3.0d,
-	dependencies: [
-		"1e4e50e2"
-	],
+	shape: "square",
 	tasks: [{
 		uid: "ef0e46b2",
 		type: "item",

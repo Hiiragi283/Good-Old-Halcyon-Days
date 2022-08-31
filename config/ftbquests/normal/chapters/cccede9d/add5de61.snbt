@@ -6,9 +6,6 @@
 	text: [
 		"{dcs.info.desc.stone_r}"
 	],
-	dependencies: [
-		"4fb7c614"
-	],
 	tasks: [{
 		uid: "d4219b1a",
 		type: "item",
@@ -48,6 +45,13 @@
 	rewards: [{
 		uid: "31df30a2",
 		type: "item",
-		item: "contenttweaker:ticket_uncommon"
+		item: "dcs_climate:dcs_layer_stone_new 1 3",
+		count: 32
+	},
+	{
+		uid: "04ad58ff",
+		type: "item",
+		item: "dcs_climate:dcs_layer_stone_new 1 1",
+		count: 32
 	}]
 }

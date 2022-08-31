@@ -6,9 +6,6 @@
 	text: [
 		"{dcs.info.desc.milk}"
 	],
-	dependencies: [
-		"6c77c9cd"
-	],
 	tasks: [{
 		uid: "d0250e62",
 		type: "item",

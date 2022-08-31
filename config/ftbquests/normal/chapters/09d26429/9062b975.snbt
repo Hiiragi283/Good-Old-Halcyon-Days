@@ -29,12 +29,6 @@
 		count: 32
 	},
 	{
-		uid: "ce9704af",
-		type: "item",
-		item: "dcs_climate:dcs_layer_stone_new 1 4",
-		count: 16
-	},
-	{
 		uid: "e7f81977",
 		type: "item",
 		item: "minecraft:diamond"

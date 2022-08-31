@@ -1,13 +1,10 @@
 {
 	title: "{gohd.cccede9d.fcea16fa.title}",
 	icon: "dcs_climate:dcs_ore_stone_new 1 4",
-	x: 0.0d,
-	y: 5.0d,
+	x: 4.0d,
+	y: 1.0d,
 	text: [
 		"{dcs.info.desc.stone_b}"
-	],
-	dependencies: [
-		"4fb7c614"
 	],
 	tasks: [{
 		uid: "5972d499",
@@ -48,6 +45,7 @@
 	rewards: [{
 		uid: "4befb087",
 		type: "item",
-		item: "contenttweaker:ticket_uncommon"
+		item: "dcs_climate:dcs_layer_stone_new 1 4",
+		count: 32
 	}]
 }

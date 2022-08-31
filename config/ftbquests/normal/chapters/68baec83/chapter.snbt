@@ -2,6 +2,6 @@
 	title: "{gohd.microbe.title}",
 	icon: "dcs_climate:dcs_food_unidentified 1 1",
 	always_invisible: false,
-	group: 0,
+	group: 781599860,
 	default_quest_shape: ""
 }

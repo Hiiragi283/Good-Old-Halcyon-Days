@@ -14,10 +14,5 @@
 		items: [{
 			item: "dcs_climate:dcs_device_windmill_l"
 		}]
-	}],
-	rewards: [{
-		uid: "d68ebe42",
-		type: "item",
-		item: "contenttweaker:ticket_rare"
 	}]
 }

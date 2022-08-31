@@ -15,6 +15,6 @@
 		uid: "8ed414cf",
 		type: "item",
 		item: "minecraft:torch",
-		count: 32
+		count: 31
 	}]
 }

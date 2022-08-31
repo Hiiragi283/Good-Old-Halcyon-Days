@@ -39,11 +39,5 @@
 		type: "item",
 		item: "dcs_climate:dcs_ore_stone_new 1 6",
 		count: 32
-	},
-	{
-		uid: "e083548f",
-		type: "item",
-		item: "dcs_climate:dcs_layer_stone_new 1 6",
-		count: 16
 	}]
 }

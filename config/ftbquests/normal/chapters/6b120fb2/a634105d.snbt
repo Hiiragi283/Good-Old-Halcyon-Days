@@ -14,11 +14,6 @@
 		ignore_nbt: 1b
 	}],
 	rewards: [{
-		uid: "343f7be1",
-		type: "item",
-		item: "contenttweaker:ticket_uncommon"
-	},
-	{
 		uid: "e917f97f",
 		type: "item",
 		item: "dcs_climate:dcs_device_sink_half"

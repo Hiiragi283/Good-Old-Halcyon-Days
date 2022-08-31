@@ -1,20 +1,35 @@
 {
 	x: 9.5d,
-	y: 7.0d,
-	hide_dependency_lines: true,
+	y: 5.0d,
+	shape: "diamond",
 	dependencies: [
 		"f04d7148"
 	],
+	size: 2.0d,
 	tasks: [{
 		uid: "43624ef3",
 		type: "item",
 		items: [{
 			item: "dcs_climate:dcs_food_microbe_slime"
 		}]
+	},
+	{
+		uid: "414f4f6c",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_food_microbe_slime 1 1"
+		}]
+	},
+	{
+		uid: "b505de1d",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_food_microbe_slime 1 2"
+		}]
 	}],
 	rewards: [{
 		uid: "6d7c3fb9",
 		type: "item",
-		item: "contenttweaker:ticket_common"
+		item: "contenttweaker:ticket_rare"
 	}]
 }

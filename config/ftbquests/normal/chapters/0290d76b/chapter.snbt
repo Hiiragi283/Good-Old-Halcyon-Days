@@ -1,7 +1,0 @@
-{
-	title: "{gohd.shop.title}",
-	icon: "dcs_climate:dcs_device_display_vending_machine",
-	always_invisible: false,
-	group: 0,
-	default_quest_shape: "rsquare"
-}

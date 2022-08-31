@@ -1,6 +1,6 @@
 {
-	x: 6.5d,
-	y: 3.0d,
+	x: 7.5d,
+	y: 2.0d,
 	hide_dependency_lines: true,
 	dependencies: [
 		"50fde685"
@@ -11,10 +11,19 @@
 		items: [{
 			item: "dcs_climate:dcs_food_microbe_coliformes"
 		}]
-	}],
-	rewards: [{
-		uid: "10576ed1",
+	},
+	{
+		uid: "6987d61d",
 		type: "item",
-		item: "contenttweaker:ticket_common"
+		items: [{
+			item: "dcs_climate:dcs_food_microbe_coliformes 1 1"
+		}]
+	},
+	{
+		uid: "d03508d8",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_food_microbe_coliformes 1 2"
+		}]
 	}]
 }

@@ -14,11 +14,6 @@
 		}]
 	}],
 	rewards: [{
-		uid: "b5343e29",
-		type: "item",
-		item: "contenttweaker:ticket_epic"
-	},
-	{
 		uid: "28e75706",
 		type: "item",
 		item: {

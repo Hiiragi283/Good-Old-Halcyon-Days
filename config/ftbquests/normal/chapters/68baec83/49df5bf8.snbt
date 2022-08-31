@@ -5,10 +5,6 @@
 	text: [
 		"{gohd.hac.tooltip}"
 	],
-	dependencies: [
-		"807824c0",
-		"78f46bf1"
-	],
 	size: 2.0d,
 	tasks: [{
 		uid: "b42be9d5",

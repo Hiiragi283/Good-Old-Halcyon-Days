@@ -2,7 +2,7 @@
 	title: "{gohd.09d26429.7f89ed7b.title}",
 	icon: "compactmachines3:psd",
 	x: 24.0d,
-	y: 1.0d,
+	y: 3.0d,
 	shape: "rsquare",
 	can_repeat: true,
 	dependencies: [

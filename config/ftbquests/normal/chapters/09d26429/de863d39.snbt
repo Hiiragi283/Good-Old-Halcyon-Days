@@ -15,10 +15,5 @@
 		uid: "231cd255",
 		type: "item",
 		item: "dcs_climate:dcs_hat_leather"
-	},
-	{
-		uid: "f5859335",
-		type: "item",
-		item: "contenttweaker:ticket_common"
 	}]
 }

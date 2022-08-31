@@ -1,13 +1,10 @@
 {
-	x: 9.0d,
-	y: 10.0d,
+	x: 12.0d,
+	y: 2.0d,
 	shape: "square",
 	description: "{gohd.cccede9d.1a7f5909.subtitle}",
 	text: [
 		"{gohd.cccede9d.1a7f5909.desc1}"
-	],
-	dependencies: [
-		"6f068e57"
 	],
 	tasks: [{
 		uid: "80ec293f",

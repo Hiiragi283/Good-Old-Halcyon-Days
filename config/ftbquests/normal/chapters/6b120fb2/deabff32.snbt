@@ -15,11 +15,6 @@
 		ignore_nbt: 1b
 	}],
 	rewards: [{
-		uid: "8467ae98",
-		type: "item",
-		item: "contenttweaker:ticket_legendary"
-	},
-	{
 		uid: "dc868a4a",
 		type: "item",
 		item: "quarryplus:markerplus",

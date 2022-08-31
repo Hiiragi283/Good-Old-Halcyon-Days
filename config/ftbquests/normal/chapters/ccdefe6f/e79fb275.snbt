@@ -4,31 +4,13 @@
 	x: 1.5d,
 	y: 1.0d,
 	shape: "square",
-	dependencies: [
-		"4fb7c614"
-	],
 	tasks: [{
 		uid: "565dc5e1",
 		type: "checkmark"
 	}],
 	rewards: [{
-		uid: "d444ef6a",
+		uid: "bd75036e",
 		type: "item",
-		item: "minecraft:diamond_helmet"
-	},
-	{
-		uid: "89633e29",
-		type: "item",
-		item: "minecraft:diamond_chestplate"
-	},
-	{
-		uid: "1206fc74",
-		type: "item",
-		item: "minecraft:diamond_leggings"
-	},
-	{
-		uid: "890c119f",
-		type: "item",
-		item: "minecraft:diamond_boots"
+		item: "openblocks:technicolor_glasses"
 	}]
 }
