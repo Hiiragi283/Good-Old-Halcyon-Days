@@ -1,5 +1,15 @@
 # Changelog
 
+## v0.6.0
+
+### `Radical restructuring of the quest 2`
+
+- Add new Capacitors!
+- Update Quests
+  - Edit soooooooo many quests!
+  - Remove Shop Tab
+    - Rewards is moved to crafting recipe
+
 ## v0.5.1
 
 - Mod Configuration
