@@ -233,7 +233,7 @@ val cap6x = <enderio:item_basic_capacitor:4>.withTag({eiocap: {level: 6.0 as flo
 		HiiragiUtils.addCraftingShaped(false, gunDevil, RecipePattern.init(["ABC", "BAB", "CBD"]).map({A:<ore:barrelMortar>, B:<contenttweaker:ticket_legendary>, C:<dcs_climate:dcs_cont_fuel:2>, D:<dcs_climate:dcs_musket>}).ingredients, null, null);
 
 	HiiragiUtils.addCraftingShaped(false, <artisanworktables:workstation:5>, RecipePattern.init(["ABA", " C ", "DDD"]).map({A:<tconstruct:seared_tank:*>, B: <ore:chest>, C:<ore:workbench>, D:<tconstruct:seared:3>}).ingredients, null, null);
-	HiiragiUtils.addCraftingShaped(false, <contenttweaker:glyph_divide>, RecipePattern.init([" A ", "BCB", " A "]).map({A:<minecraft:skull:1>, B:<ore:boneWithered>, C:<openblocks:generic:10>}).ingredients, null, null);
+	//HiiragiUtils.addCraftingShaped(false, <contenttweaker:glyph_divide>, RecipePattern.init([" A ", "BCB", " A "]).map({A:<minecraft:skull:1>, B:<ore:boneWithered>, C:<openblocks:generic:10>}).ingredients, null, null);
 	HiiragiUtils.addCraftingShaped(true, <disenchanter:disenchantmenttable:0>, RecipePattern.init(["ABA", "CDC", "EEE"]).map({A:<botania:spellcloth>, B:<ore:book>, C:<ore:gemEmerald>, D:<ore:woolYellow>, E:<ore:obsidian>}).ingredients, null, null);
 	HiiragiUtils.addCraftingShaped(true, <storagedrawers:framingtable>, RecipePattern.init(["ABA", "C C"]).map({A:<ore:drawerTrim>, B:<minecraft:crafting_table>, C:<dcs_climate:dcs_squaretable_wood>}).ingredients, null, null);
 	HiiragiUtils.addCraftingShaped(true, <contenttweaker:ingot_bedrockium>, RecipePattern.init(["ABA", "BCB", "ABA"]).map({A:<ore:compressed3xCobblestone>, B:<ore:compressed4xCobblestone>, C:<ore:blockDiamond>}).ingredients, null, null);
@@ -453,6 +453,8 @@ val cap6x = <enderio:item_basic_capacitor:4>.withTag({eiocap: {level: 6.0 as flo
 		<contenttweaker:quantum_entangler>: "gohd.tooltip.quantum_entangler.name",
 		<tconstruct:toolforge:0>: "gohd.tooltip.tool_forge.name",
 		<dcs_climate:dcs_food_unidentified:*>: "gohd.tooltip.identify_microbe.name",
+		<contenttweaker:glyph_activated>: "gohd.tooltip.sigil_activated.name",
+		<contenttweaker:glyph_divide>: "gohd.tooltip.sigil_glyph.name",
 	};
 	for i, j in mapTooltip {
 		i.addTooltip(I18n.format(j));

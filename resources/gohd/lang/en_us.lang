@@ -41,6 +41,8 @@ gohd.tooltip.dcs_color_ring2.name=§bBlessing of Flosts
 gohd.tooltip.quantum_entangler.name=§aQuanutum Entangler allows you to copy data of compact machines!
 gohd.tooltip.tool_forge.name=§aNow you can change the appearance of Tool Forge into what you like!
 gohd.tooltip.identify_microbe.name=§aRight-click to identify!
+gohd.tooltip.sigil_activated.name=§6Dropped from Wither killed in the Moon!
+gohd.tooltip.sigil_glyph.name=§aDropped from Wither killed in Non-Moon dimensions
 
 #Quests
 ## Main: gohd.09d26429.

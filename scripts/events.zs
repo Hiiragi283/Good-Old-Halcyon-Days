@@ -9,8 +9,12 @@
 
 //crafttweakerからclassをimport
 import crafttweaker.block.IBlock;
+import crafttweaker.entity.IEntity;
+import crafttweaker.entity.IEntityDefinition;
+import crafttweaker.entity.IEntityLivingBase;
 import crafttweaker.event.BlockHarvestDropsEvent;
 import crafttweaker.event.IBlockEvent;
+import crafttweaker.event.ILivingEvent;
 import crafttweaker.event.PlayerTickEvent;
 import crafttweaker.events.IEventManager;
 import crafttweaker.item.IItemStack;
@@ -80,7 +84,9 @@ events.onPlayerTick(function(event as PlayerTickEvent) {
 });
 
 events.onBlockHarvestDrops(function(event as BlockHarvestDropsEvent) {
+	//eventの実行者がプレイヤーかつ破壊したブロックがカボチャメロンの場合
 	if(event.isPlayer && event.block.definition.id == "contenttweaker:pumpkin_melon") {
+		//ドロップリストを上書き
 		event.drops = [
 			<minecraft:wheat_seeds>%100,
 			<minecraft:pumpkin_seeds>%50,
@@ -92,6 +98,14 @@ events.onBlockHarvestDrops(function(event as BlockHarvestDropsEvent) {
 			<inspirations:potato_seeds>%75,
 		];
 	}
+});
+
+<entity:minecraft:wither>.addDropFunction(function(entity, damageSource) {
+	var dim as int = entity.dimension;
+	if(dim == 100) {
+		return <contenttweaker:glyph_activated>;
+	}
+	return <contenttweaker:glyph_divide>;
 });
 
 //このscriptの読み込みの完了をログに出力

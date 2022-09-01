@@ -36,12 +36,12 @@ val cap6x = <enderio:item_basic_capacitor:4>.withTag({eiocap: {level: 6.0 as flo
 		HiiragiUtils.removeCrafting(i);
 	}
 	//上書き
-	HiiragiUtils.addCraftingShaped(false, <extrautils2:unstableingots:1>, RecipePattern.init(["A", "B", "C"]).map({A:<ore:nuggetIron>, B:<contenttweaker:glyph_divide>.reuse(), C:<ore:gemDiamond>}).ingredients, null, null);
+	HiiragiUtils.addCraftingShaped(true, <extrautils2:lawsword>, RecipePattern.init(["  A", " A ", "B  "]).map({A:<extrautils2:unstableingots:2>, B:<ore:ingotBedrockium>}).ingredients, null, null);
+	HiiragiUtils.addCraftingShaped(true, <extrautils2:compoundbow>, RecipePattern.init([" AB", "C B", " AB"]).map({A:<extrautils2:unstableingots:2>, B: <dcs_climate:dcs_synthetic:0>, C:<ore:ingotBedrockium>}).ingredients, null, null);
 	//新規
 	HiiragiUtils.addCraftingShaped(false, <extrautils2:machine>.withTag({Type: "crafttweaker:assembler"}), RecipePattern.init(["ABA", "CDC", "ABA"]).map({A:<ore:gearEnergized>, B:<enderio:item_basic_capacitor:1>, C:<hap:conveyor>, D:<enderio:block_crafter>}).ingredients, null, null);
 	HiiragiUtils.addCraftingShaped(false, <extrautils2:machine>.withTag({Type: "crafttweaker:assembler"}), RecipePattern.init(["ABA", "CDC", "ABA"]).map({A:<ore:alloyAdvanced>, B:<ore:circuitAdvanced>, C:<hap:conveyor>, D:<mekanism:machineblock3:5>}).ingredients, null, null);
 	HiiragiUtils.addCraftingShaped(false, <extrautils2:machine>.withTag({Type: "crafttweaker:assembler"}), RecipePattern.init(["ABA", "CDC", "ABA"]).map({A:<ore:gearSignalum>, B:<ore:plateSignalum>, C:<hap:conveyor>, D:<thermalexpansion:machine:11>}).ingredients, null, null);
-
 	HiiragiUtils.addCraftingShaped(false, <extrautils2:machine>.withTag({Type: "crafttweaker:apiary"}), RecipePattern.init(["AAA", "ABA", "CDC"]).map({A:<botania:livingwood:0>, B:<extrautils2:machine>, C:<biomesoplenty:filled_honeycomb>, D:<railcraft:equipment:2>}).ingredients, null, null);
 
 	HiiragiUtils.addCraftingShaped(true, <extrautils2:machine:0>, RecipePattern.init(["AAA", "ABA", "CCC"]).map({A:<ore:ingotInvar>, B:<ore:gemRedstone>, C:<ore:ingotSteel>}).ingredients, null, null);
@@ -49,6 +49,8 @@ val cap6x = <enderio:item_basic_capacitor:4>.withTag({eiocap: {level: 6.0 as flo
 	HiiragiUtils.addCraftingShaped(false, <extrautils2:decorativesolid:8>*8, RecipePattern.init(["AAA", "ABA", "AAA"]).map({A:<extrautils2:decorativesolid:3>, B:<contenttweaker:ingot_rainbow>|<contenttweaker:cube_iridescent>}).ingredients, null, null);
 	HiiragiUtils.addCraftingShaped(false, <extrautils2:itemcreativebuilderswand>, [[null, <ore:ingotUnstable>], [<ore:obsidian>, null]], null, null);
 	HiiragiUtils.addCraftingShaped(false, <extrautils2:itemcreativedestructionwand>, [[<ore:ingotUnstable>, null], [null, <ore:obsidian>]], null, null);
+	HiiragiUtils.addCraftingShaped(false, <extrautils2:unstableingots:1>, RecipePattern.init(["A", "B", "C"]).map({A:<ore:nuggetIron>, B:<contenttweaker:glyph_divide>.reuse(), C:<ore:gemDiamond>}).ingredients, null, null);
+	HiiragiUtils.addCraftingShaped(false, <extrautils2:unstableingots:2>, [[<ore:ingotIron>], [<contenttweaker:glyph_activated>], [<ore:gemDiamond>]], null, null);
 
 	HiiragiUtils.addCraftingShapeless(false, <extrautils2:creativeharvest>, [<extrautils2:creativeharvest>, <*>.marked("creative")], function(out, ins, cInfo) {
 		var owner as string = ins.creative.definition.owner;
@@ -61,51 +63,6 @@ val cap6x = <enderio:item_basic_capacitor:4>.withTag({eiocap: {level: 6.0 as flo
 //AWレシピの編集
 	//import
 	//新規
-	RecipeBuilder.get("basic")
-		.setShaped(RecipePattern.init([
-			"ABB C",
-			"D  E ",
-			" DC B",
-			"  D B",
-			"   AB"
-		]).map({
-			A:<dcs_climate:dcs_mechanical:5>,
-			B:<tconstruct:bow_limb>.withTag({Material: "polyethylene"}),
-			C:<enderio:item_material:71>,
-			D:<dcs_climate:dcs_synthetic>,
-			E:<dcs_climate:dcs_crossbow:*>}).ingredients)
-		.setSecondaryIngredients([
-			<botania:livingwoodbow>,
-			<botania:crystalbow>,
-			<enderio:item_dark_steel_bow>,
-			<enderio:item_end_steel_bow>,
-			<mekanism:electricbow>,
-			<twilightforest:triple_bow>,
-			<twilightforest:seeker_bow>,
-			<twilightforest:ice_bow>,
-			<twilightforest:ender_bow>])
-		.addOutput(<extrautils2:compoundbow>)
-		.create();
-	RecipeBuilder.get("basic")
-		.setShaped([
-		[<contenttweaker:ingot_bedrockium>],
-		[<contenttweaker:ingot_bedrockium>],
-		[<contenttweaker:ingot_bedrockium>],
-		[<tconstruct:wide_guard>.withTag({Material: "iridium"})],
-		[<tconstruct:tool_rod>.withTag({Material: "xu_magical_wood"})]])
-		.setSecondaryIngredients([
-			<botania:terrasword>,
-			<botania:starsword>,
-			<botania:thundersword>,
-			<enderio:item_dark_steel_sword>,
-			<enderio:item_end_steel_sword>,
-			<dcs_climate:dcs_sword_toolsteel>,
-			<mekanismtools:obsidiansword>,
-			<twilightforest:glass_sword>,
-			<twilightforest:giant_sword>
-		])
-		.addOutput(<extrautils2:lawsword>)
-		.create();
 
 //Assemblerのレシピ
 	static machineAssembler as IMachine = extrautilities2.Tweaker.IMachineRegistry.getMachine("assembler");

@@ -41,6 +41,8 @@ gohd.tooltip.dcs_color_ring2.name=§b氷の加護
 gohd.tooltip.quantum_entangler.name=§a量子もつれデバイスを使うことでCompact Machineのデータをコピーできます!
 gohd.tooltip.tool_forge.name=§aTool Forgeの見た目を自由に変えることができます!
 gohd.tooltip.identify_microbe.name=§a微生物を右クリックすると種類を鑑定できます
+gohd.tooltip.sigil_activated.name=§6ウィザーを月面で倒すとドロップします!
+gohd.tooltip.sigil_glyph.name=§aウィザーを月面以外の世界で倒すとドロップする
 
 #Quests
 ## Main: gohd.09d26429.
