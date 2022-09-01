@@ -12,10 +12,5 @@
 		icon: "minecraft:skull 1 1",
 		entity: "minecraft:wither",
 		value: 1L
-	}],
-	rewards: [{
-		uid: "1f688fee",
-		type: "item",
-		item: "contenttweaker:glyph_divide"
 	}]
 }

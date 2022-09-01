@@ -55,7 +55,7 @@
 	}],
 	loot_crate: {
 		string_id: "gohd_reward_loot_botania_rod_title",
-		color: 16777215,
+		color: 3020816,
 		drops: {
 			boss: 0,
 			passive: 0,

@@ -1,0 +1,14 @@
+{
+	x: 17.0d,
+	y: -4.0d,
+	dependencies: [
+		"514a744b"
+	],
+	tasks: [{
+		uid: "ff46d7f4",
+		type: "item",
+		items: [{
+			item: "contenttweaker:glyph_activated"
+		}]
+	}]
+}

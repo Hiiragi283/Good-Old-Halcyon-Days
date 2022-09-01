@@ -126,6 +126,7 @@ print("Start loading thermal.zs ...");
 	mods.thermalexpansion.Compactor.addPressRecipe(<contenttweaker:ticket_rare>, <contenttweaker:ticket_uncommon>*4, 16000);
 	mods.thermalexpansion.Compactor.addPressRecipe(<contenttweaker:ticket_epic>, <contenttweaker:ticket_rare>*4, 32000);
 	mods.thermalexpansion.Compactor.addPressRecipe(<contenttweaker:ticket_legendary>, <contenttweaker:ticket_epic>*4, 64000);
+	mods.thermalexpansion.Compactor.addPressRecipe(<ftbquests:lootcrate>.withTag({type: "gohd_reward_loot_mythic_title"}), <contenttweaker:ticket_legendary>*8, 128000);
 
 
 //Fluid Transposer

@@ -227,6 +227,7 @@ val cap6x = <enderio:item_basic_capacitor:4>.withTag({eiocap: {level: 6.0 as flo
 		HiiragiUtils.addCraftingShaped(false, <dcs_climate:dcs_color_pendant:3>, RecipePattern.init(["B B", " BA"]).map({A:<contenttweaker:ticket_uncommon>, B:<ore:ingotIron>}).ingredients, null, null);
 		//Loot Crate
 		HiiragiUtils.addCraftingShaped(false, <ftbquests:lootcrate>.withTag({type: "gohd_reward_loot_magic_spell_title"}), RecipePattern.init(["AA", "AB"]).map({A:<ore:paper>, B:<contenttweaker:ticket_uncommon>}).ingredients, null, null);
+		HiiragiUtils.addCraftingShaped(false, <ftbquests:lootcrate>.withTag({type: "gohd_reward_loot_botania_rod_title"}), RecipePattern.init(["  A", " B ", "B  "]).map({A:<contenttweaker:ticket_rare>, B:<ore:livingwoodTwig>}).ingredients, null, null);
 		//Custom Tools
 		HiiragiUtils.addCraftingShaped(false, rodSea, RecipePattern.init(["ABC", "BDB", "CBA"]).map({A:<ore:gemPrismarine>, B:<contenttweaker:ticket_legendary>, C:<ore:dustPrismarine>, D:<thermalfoundation:tool.fishing_rod_diamond>}).ingredients, null, null);
 		HiiragiUtils.addCraftingShaped(false, axeGaia, RecipePattern.init(["ABA", "BCB", "ABA"]).map({A:<ore:dropofevil>, B:<contenttweaker:ticket_legendary>, C:<botania:elementiumaxe>}).ingredients, null, null);
