@@ -15,6 +15,7 @@
 	rewards: [{
 		uid: "007b7e9a",
 		type: "item",
-		item: "contenttweaker:ticket_rare"
+		item: "dcs_climate:dcs_reagent 1 5",
+		count: 15
 	}]
 }

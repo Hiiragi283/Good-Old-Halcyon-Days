@@ -29,7 +29,6 @@
 	rewards: [{
 		uid: "165ce8a1",
 		type: "item",
-		item: "contenttweaker:ticket_legendary",
-		count: 3
+		item: "contenttweaker:ticket_legendary"
 	}]
 }

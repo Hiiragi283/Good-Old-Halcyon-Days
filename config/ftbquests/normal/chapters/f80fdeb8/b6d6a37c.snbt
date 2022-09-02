@@ -12,5 +12,10 @@
 		items: [{
 			item: "dcs_climate:dcs_food_drink 1 8"
 		}]
+	}],
+	rewards: [{
+		uid: "3d5dab29",
+		type: "item",
+		item: "contenttweaker:ticket_epic"
 	}]
 }

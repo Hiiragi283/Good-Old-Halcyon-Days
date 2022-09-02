@@ -20,11 +20,5 @@
 		type: "item",
 		item: "hap:shaft_straight_steel",
 		count: 24
-	},
-	{
-		uid: "db015d49",
-		type: "item",
-		item: "contenttweaker:ticket_epic",
-		count: 3
 	}]
 }

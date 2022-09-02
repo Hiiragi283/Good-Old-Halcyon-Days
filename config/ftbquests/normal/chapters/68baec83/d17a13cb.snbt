@@ -25,5 +25,10 @@
 		items: [{
 			item: "dcs_climate:dcs_food_microbe_coliformes 1 2"
 		}]
+	}],
+	rewards: [{
+		uid: "bd39e9fe",
+		type: "item",
+		item: "contenttweaker:ticket_uncommon"
 	}]
 }

@@ -18,6 +18,6 @@
 	rewards: [{
 		uid: "122b91b0",
 		type: "item",
-		item: "contenttweaker:ticket_uncommon"
+		item: "contenttweaker:ticket_common"
 	}]
 }

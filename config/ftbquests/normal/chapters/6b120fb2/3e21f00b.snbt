@@ -20,11 +20,5 @@
 		type: "item",
 		item: "hap:shaft_straight_sus",
 		count: 24
-	},
-	{
-		uid: "6acafb90",
-		type: "item",
-		item: "contenttweaker:ticket_legendary",
-		count: 3
 	}]
 }

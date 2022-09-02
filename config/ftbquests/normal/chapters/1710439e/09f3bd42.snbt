@@ -14,7 +14,6 @@
 	rewards: [{
 		uid: "b203cfc1",
 		type: "item",
-		item: "contenttweaker:ticket_uncommon",
-		count: 3
+		item: "contenttweaker:ticket_uncommon"
 	}]
 }

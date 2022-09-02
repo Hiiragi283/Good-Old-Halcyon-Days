@@ -14,10 +14,5 @@
 				Amount: 1000
 			}
 		}]
-	}],
-	rewards: [{
-		uid: "0d56e488",
-		type: "item",
-		item: "contenttweaker:ticket_uncommon"
 	}]
 }

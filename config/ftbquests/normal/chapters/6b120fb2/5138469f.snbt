@@ -14,6 +14,6 @@
 	rewards: [{
 		uid: "33bc04a7",
 		type: "item",
-		item: "contenttweaker:ticket_epic"
+		item: "contenttweaker:ticket_rare"
 	}]
 }

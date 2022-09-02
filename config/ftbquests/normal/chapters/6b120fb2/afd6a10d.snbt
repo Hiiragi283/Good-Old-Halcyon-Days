@@ -20,7 +20,6 @@
 	rewards: [{
 		uid: "7765f764",
 		type: "item",
-		item: "contenttweaker:ticket_epic",
-		count: 3
+		item: "contenttweaker:ticket_epic"
 	}]
 }

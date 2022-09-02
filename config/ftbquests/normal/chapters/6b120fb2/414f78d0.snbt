@@ -22,8 +22,9 @@
 		ignore_nbt: 1b
 	}],
 	rewards: [{
-		uid: "7ad485eb",
+		uid: "be3b55ff",
 		type: "item",
-		item: "contenttweaker:ticket_legendary"
+		item: "minecraft:bedrock",
+		count: 16
 	}]
 }

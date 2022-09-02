@@ -36,5 +36,10 @@
 		items: [{
 			item: "threng:big_assembler 1 2"
 		}]
+	}],
+	rewards: [{
+		uid: "32955c6c",
+		type: "item",
+		item: "contenttweaker:ticket_epic"
 	}]
 }

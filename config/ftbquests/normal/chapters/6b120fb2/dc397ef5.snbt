@@ -12,7 +12,6 @@
 	rewards: [{
 		uid: "8794f5c5",
 		type: "item",
-		item: "contenttweaker:ticket_common",
-		count: 3
+		item: "contenttweaker:ticket_common"
 	}]
 }

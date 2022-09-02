@@ -25,5 +25,10 @@
 		items: [{
 			item: "dcs_climate:dcs_food_microbe_cyano 1 2"
 		}]
+	}],
+	rewards: [{
+		uid: "ee4345cc",
+		type: "item",
+		item: "contenttweaker:ticket_common"
 	}]
 }

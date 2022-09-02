@@ -24,10 +24,5 @@
 		items: [{
 			item: "contenttweaker:unfired_casting_channel"
 		}]
-	}],
-	rewards: [{
-		uid: "5ed7dcbd",
-		type: "item",
-		item: "contenttweaker:ticket_common"
 	}]
 }

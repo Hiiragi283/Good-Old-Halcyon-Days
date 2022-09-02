@@ -3,7 +3,8 @@
 	y: 3.0d,
 	dependencies: [
 		"bbe39da4",
-		"04cf4508"
+		"04cf4508",
+		"80667981"
 	],
 	min_width: 2,
 	tasks: [{

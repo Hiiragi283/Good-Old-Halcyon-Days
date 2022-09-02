@@ -12,7 +12,8 @@
 			tag: {
 				code: "000"
 			}
-		}]
+		}],
+		ignore_nbt: 1b
 	}],
 	rewards: [{
 		uid: "ac8c8359",

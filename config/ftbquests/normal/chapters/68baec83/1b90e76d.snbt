@@ -25,5 +25,10 @@
 		items: [{
 			item: "dcs_climate:dcs_food_microbe_oryzae 1 2"
 		}]
+	}],
+	rewards: [{
+		uid: "89ae2051",
+		type: "item",
+		item: "contenttweaker:ticket_common"
 	}]
 }

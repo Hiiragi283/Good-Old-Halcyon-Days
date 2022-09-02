@@ -22,6 +22,6 @@
 	rewards: [{
 		uid: "3fef0818",
 		type: "item",
-		item: "contenttweaker:ticket_legendary"
+		item: "contenttweaker:ticket_epic"
 	}]
 }

@@ -25,5 +25,10 @@
 		items: [{
 			item: "dcs_climate:dcs_food_microbe_skin 1 2"
 		}]
+	}],
+	rewards: [{
+		uid: "ccc0a00f",
+		type: "item",
+		item: "contenttweaker:ticket_uncommon"
 	}]
 }

@@ -10,5 +10,11 @@
 		items: [{
 			item: "extrautils2:enderlilly"
 		}]
+	}],
+	rewards: [{
+		uid: "7a80f859",
+		type: "item",
+		item: "extrautils2:enderlilly",
+		count: 3
 	}]
 }

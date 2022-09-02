@@ -28,8 +28,8 @@
 		ignore_nbt: 1b
 	}],
 	rewards: [{
-		uid: "22973941",
+		uid: "62953b50",
 		type: "item",
-		item: "contenttweaker:ticket_rare"
+		item: "thermalfoundation:upgrade 1 35"
 	}]
 }

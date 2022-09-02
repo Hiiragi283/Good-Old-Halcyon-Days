@@ -41,5 +41,11 @@
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "08e09b4c",
+		type: "item",
+		item: "botania:thornchakram",
+		count: 6
 	}]
 }

@@ -27,13 +27,13 @@
 	rewards: [{
 		uid: "7b4b1b5c",
 		type: "item",
-		item: "botania:manaresource",
-		count: 16
+		item: "botania:manaresource 1 2",
+		count: 8
 	},
 	{
 		uid: "6270c5bc",
 		type: "item",
-		item: "botania:manaresource 1 16",
-		count: 16
+		item: "botania:manaresource 1 1",
+		count: 8
 	}]
 }

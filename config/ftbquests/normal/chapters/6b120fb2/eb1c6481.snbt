@@ -20,7 +20,7 @@
 	rewards: [{
 		uid: "d03a0e99",
 		type: "item",
-		item: "contenttweaker:ticket_uncommon",
+		item: "dcs_climate:dcs_device_hopper_filter_gold",
 		count: 3
 	}]
 }

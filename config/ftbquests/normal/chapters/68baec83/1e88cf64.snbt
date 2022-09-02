@@ -25,5 +25,10 @@
 		items: [{
 			item: "dcs_climate:dcs_food_microbe_yeast 1 2"
 		}]
+	}],
+	rewards: [{
+		uid: "fc607dae",
+		type: "item",
+		item: "contenttweaker:ticket_common"
 	}]
 }

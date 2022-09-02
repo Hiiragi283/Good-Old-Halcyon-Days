@@ -11,10 +11,5 @@
 			item: "enderio:item_xp_transfer"
 		}],
 		ignore_nbt: 1b
-	}],
-	rewards: [{
-		uid: "4fb180b3",
-		type: "item",
-		item: "contenttweaker:ticket_rare"
 	}]
 }

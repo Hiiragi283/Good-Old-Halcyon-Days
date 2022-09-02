@@ -10,5 +10,10 @@
 		items: [{
 			item: "botania:alchemycatalyst"
 		}]
+	}],
+	rewards: [{
+		uid: "8ef14ec5",
+		type: "item",
+		item: "contenttweaker:ticket_uncommon"
 	}]
 }

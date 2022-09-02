@@ -19,7 +19,6 @@
 	rewards: [{
 		uid: "05095e19",
 		type: "item",
-		item: "contenttweaker:ticket_uncommon",
-		count: 3
+		item: "dcs_climate:dcs_device_hopper_chest"
 	}]
 }
