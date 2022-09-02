@@ -22,12 +22,23 @@ item.contenttweaker.ticket_epic.name=Ragi Ticket (§dEpic§r)
 item.contenttweaker.ticket_legendary.name=Ragi Ticket (§6Legendary§r)
 item.contenttweaker.ticket_mythic.name=Ragi Ticket (§cMythic§r)
 
+item.contenttweaker.plate_titanium.name=Titanium Plate
+
+item.contenttweaker.stick_tial.name=Titanium Aluminide Stick
+item.contenttweaker.stick_tiir.name=Titanium Iridium Stick
+item.contenttweaker.stick_iron.name=Iron Stick
+item.contenttweaker.stick_copper.name=Copper Stick
+item.contenttweaker.stick_steel.name=Steel Stick
+item.contenttweaker.stick_titanium.name=Titanium Stick
+item.contenttweaker.stick_iridium.name=iridium Stick
+
 item.contenttweaker.book_reloadevents.name=Debugging Book (Reload Events)
 item.contenttweaker.book_syntax.name=Debugging Book (Syntax)
 item.contenttweaker.book_facing.name=Debugging Book (Teleport to spawn point)
 item.contenttweaker.book_data.name=Debugging Book (Print player data)
 
 #Blocks
+tile.contenttweaker.advstructuremachine.name=Advanced Machine Structure
 tile.contenttweaker.block_bedrockium.name=Block of Bedrockium
 tile.contenttweaker.pumpkin_melon.name=Pumpkin Melon
 tile.contenttweaker.unfired_casting_channel.name=Unfired Casting Channel

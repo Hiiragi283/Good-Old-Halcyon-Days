@@ -72,6 +72,28 @@ print("Start loading cot.zs ...");
 		RussellUtils.addItemColored(i, j, "thermalfoundation:items/material/coin_iron");
 	}
 
+	//Plate
+	val mapPlate as string[string] = {
+		"plate_titanium":"AE9169",
+	};
+		for i, j in mapPlate {
+		RussellUtils.addItemColored(i, j, "thermalfoundation:items/material/plate_iron");
+	}
+
+	//Stick
+	val mapStick as string[string] = {
+		"stick_tial":"BDBCDA",
+		"stick_tiir":"EDEAF1",
+		"stick_iron":"C8C8C8",
+		"stick_copper":"FF6400",
+		"stick_steel":"808080",
+		"stick_titanium":"AE9169",
+		"stick_iridium":"EDEAF1",
+	};
+	for i, j in mapStick {
+		RussellUtils.addItemColored(i, j, "mekanism:items/plastick");
+	}
+
 //Baubleの登録
 	var ringGoldBlue = VanillaFactory.createBaubleItem("dcs_color_ring2");
 	ringGoldBlue.onWornTick = function(bauble, wearer) {
@@ -92,6 +114,8 @@ print("Start loading cot.zs ...");
 	RussellUtils.addBlock("unfired_casting_basin", <blockmaterial:grass>, 3.0, 0.5, "shovel", -1, <soundtype:ground>, false);
 	RussellUtils.addBlock("block_bedrockium", <blockmaterial:rock>, 1000.0, 18000000.0, "pickaxe", 8, <soundtype:stone>, true);
 	RussellUtils.addBlock("pumpkin_melon", <blockmaterial:wood>, 1.0, 1.0, "axe", -1, <soundtype:wood>, true); //Pumpkin Melon (@PumpkinMelon4) 氏に感謝!
+
+	RussellUtils.addBlockColored("advstructuremachine", <blockmaterial:rock>, 3.0, 15.0, "pickaxe", 4, <soundtype:stone>, "AE9169");
 
 //粉末ブロックの登録
 	val registerDustBlock as string[string] = {

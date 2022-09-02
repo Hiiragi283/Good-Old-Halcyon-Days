@@ -34,12 +34,20 @@ print("Start loading oreDict.zs ...");
 	HiiragiUtils.removeOreDict(<dcs_climate:dcs_synthetic:2>);
 
 	val removeLibVulpes as IItemStack[] = [
+		<advancedrocketry:productdust>,
+		<advancedrocketry:productingot>,
+		<advancedrocketry:metal0>,
+		<advancedrocketry:productnugget>,
+		<advancedrocketry:productplate>,
+		<advancedrocketry:productrod>,
+		<advancedrocketry:productsheet>,
+		<advancedrocketry:productgear>,
 		<libvulpes:productdust>,
 		<libvulpes:productingot>,
-		<libvulpes:productboule>,
+		//<libvulpes:productboule>,
 		<libvulpes:productnugget>,
 		<libvulpes:productplate>,
-		//<libvulpes:productrod>,
+		<libvulpes:productrod>,
 		//<libvulpes:productsheet>,
 		<libvulpes:productgear>,
 		<libvulpes:ore0>,
@@ -78,6 +86,15 @@ print("Start loading oreDict.zs ...");
 	<ore:cubeYellow>.add(<contenttweaker:cube_yellow>);
 	<ore:cropPumpkin>.add(<contenttweaker:pumpkin_melon>);
 	<ore:cropMelon>.add(<contenttweaker:pumpkin_melon>);
+
+	<ore:plateTitanium>.add(<contenttweaker:plate_titanium>);
+	<ore:stickTitaniumAluminide>.add(<contenttweaker:stick_tial>);
+	<ore:stickTitaniumIridium>.add(<contenttweaker:stick_tiir>);
+	<ore:stickIron>.add(<contenttweaker:stick_iron>);
+	<ore:stickCopper>.add(<contenttweaker:stick_copper>);
+	<ore:stickSteel>.add(<contenttweaker:stick_steel>);
+	<ore:stickTitanium>.add(<contenttweaker:stick_titanium>);
+	<ore:stickIridium>.add(<contenttweaker:stick_iridium>);
 
 	<ore:dustSawDust>.add(<dcs_climate:dcs_miscdust:3>);
 	<ore:blockPeridot>.add(<dcs_climate:dcs_ore_gemblock:10>);
