@@ -47,7 +47,6 @@ print("Start loading ae2.zs ...");
 	HiiragiUtils.addCraftingShaped(false, <contenttweaker:assembly_speculative>, RecipePattern.init([" A ", "BCB", " D "]).map({A:HiiragiUtils.toolInput(<appliedenergistics2:certus_quartz_cutting_knife>, 1), B:<ore:dustRedstone>, C:<threng:material:13>, D:<ore:itemSilicon>}).ingredients, null, null);
 
 //AWレシピの編集
-	//import
 	//新規
 
 //Inscriberのレシピ

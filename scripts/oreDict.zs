@@ -68,6 +68,8 @@ print("Start loading oreDict.zs ...");
 	}
 
 //鉱石辞書の追加
+	<ore:stoneBasalt>.add(<advancedrocketry:basalt>);
+
 	<ore:gemManaDiamond>.add(<botania:manaresource:2>);
 	<ore:gemDragonStone>.add(<botania:manaresource:9>);
 	<ore:itemCloth>.add(<botania:manaresource:22>);
@@ -118,7 +120,6 @@ print("Start loading oreDict.zs ...");
 	<ore:gemSlag>.add(<thermalfoundation:material:864>);
 
 	<ore:blockIronwood>.add(<twilightforest:block_storage:0>);
-
 
 //このscriptの読み込みの完了をログに出力
 print("oreDict.zs loaded!");

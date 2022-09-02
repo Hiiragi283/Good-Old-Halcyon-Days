@@ -44,7 +44,6 @@ print("Start loading buildings.zs ...");
 		}
 
 //AWレシピの編集
-	//import
 	//新規
 
 //Slabのレシピを抜本的に改変

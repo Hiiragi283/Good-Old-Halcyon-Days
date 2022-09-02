@@ -39,7 +39,6 @@ print("Start loading minecraft.zs ...");
 	HiiragiUtils.addCraftingShapeless(false, <minecraft:stick>, [<ore:treeSapling>], null, null);
 
 //AWレシピの編集
-	//import
 	//新規
 
 //このscriptの読み込みの完了をログに出力

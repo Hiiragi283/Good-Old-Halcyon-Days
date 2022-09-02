@@ -32,7 +32,7 @@ print("Start loading _TEMPLATE.zs ...");
 	//新規
 
 //AWレシピの編集
-	//import
+
 	//新規
 
 //このscriptの読み込みの完了をログに出力

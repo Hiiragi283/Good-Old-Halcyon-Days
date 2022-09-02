@@ -119,8 +119,7 @@ print("Start loading HiiragiUtils.zs ...");
 		item.addTooltip(I18n.format("gohd.tooltip.removed.name"));
 	}
 
-//レシピ名を自動的に生成しつつレシピを登録する関数
-	//static recipeID as int = 0;
+//レシピを登録する関数
 	function removeCrafting (output as IItemStack) {
 		recipes.remove(output, true);
 	}
@@ -140,14 +139,14 @@ print("Start loading HiiragiUtils.zs ...");
 	}
 
 //アイテムの等価交換を実装するレシピ
-	function addCraftingConv (item1, item2) {
-		recipes.addShapeless(item1 as IItemStack, [item2 as IIngredient]);
-		recipes.addShapeless(item2  as IItemStack, [item1 as IIngredient]);
+	function addCraftingConv (item1 as IItemStack, item2 as IItemStack) {
+		addCraftingShapeless(false, item1, [item2], null, null);
+		addCraftingShapeless(false, item2, [item1], null, null);
 	}
 
 	function addCraftingConvOre (item1 as IOreDictEntry, item2 as IOreDictEntry) {
-		recipes.addShapeless(item1.firstItem, [item2]);
-		recipes.addShapeless(item2.firstItem, [item1]);
+		addCraftingShapeless(false, item1.firstItem, [item2], null, null);
+		addCraftingShapeless(false, item2.firstItem, [item1], null, null);
 	}
 
 //レシピ上のアイテムを置換する関数

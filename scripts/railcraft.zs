@@ -43,7 +43,6 @@ print("Start loading railcraft.zs ...");
 	HiiragiUtils.addCraftingShaped(false, <railcraft:locomotive_electric>, RecipePattern.init(["ABB", "CDC", "EFE"]).map({A:<minecraft:redstone_lamp>, B:<ore:ingotStainlessSteel>, C:<railcraft:charge:5>, D:<dcs_climate:dcs_mechanical>, E:<ore:gearToolSteel>, F:<minecraft:minecart>}).ingredients, null, null);
 
 //AWレシピの編集
-	//import
 	//新規
 	RecipeBuilder.get("basic")
 	.setShaped(RecipePattern.init(["AA"]).map({A:<ore:slabWood>}).ingredients)

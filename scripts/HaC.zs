@@ -89,7 +89,6 @@ print("Start loading HaC.zs ...");
 	HiiragiUtils.addCraftingShaped(false, <dcs_climate:dcs_rake_earth>.withTag({ench: [{lvl: 10 as short, id: 34 as short}, {lvl: 1 as short, id: 33 as short}], display: {LocName: "gohd.custom.rake_of_the_gaia.name"}}), RecipePattern.init(["AAA", "ABA", "AAA"]).map({A:<railcraft:jaded_stone>, B:<dcs_climate:dcs_rake_earth:*>}).ingredients, null, null);
 
 //AWレシピの編集
-	//import
 	//新規
 
 //このscriptの読み込みの完了をログに出力

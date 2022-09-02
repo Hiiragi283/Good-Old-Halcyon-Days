@@ -35,7 +35,6 @@ print("Start loading compactMachines3.zs ...");
 	//新規
 
 //AWレシピの編集
-	//import
 	//新規
 	RecipeBuilder.get("basic")
 		.setShaped([

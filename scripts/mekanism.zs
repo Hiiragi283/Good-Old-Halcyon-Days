@@ -63,7 +63,6 @@ print("Start loading mekanism.zs ...");
 	HiiragiUtils.addCraftingShapeless(false, <mekanism:biofuel>*4, [<ore:dustWood>|<ore:dustBran>|<ore:dustPlant>|<ore:dustSoycake>|<ore:foodSoypulp>, <ore:dustDraff>, <ore:dirt>], null, null);
 
 //AWレシピの編集
-	//import
 	//新規
 
 //Metallurgic Infuser

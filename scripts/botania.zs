@@ -75,8 +75,7 @@ print("Start loading botania.zs ...");
 	//新規
 
 //AWレシピの編集
-//import
-//新規
+	//新規
 
 //Dreaming Daisyによる加工
 	val dreaming_daisy = mods.morechids.Registry.getFlower("dreaming_daisy");

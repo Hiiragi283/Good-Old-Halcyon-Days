@@ -57,7 +57,6 @@ print("Start loading tic.zs ...");
 	}, null);
 
 //AWレシピの編集
-	//import
 	//新規
 	RecipeBuilder.get("basic")
 		.setShapeless([<tconstruct:channel>])

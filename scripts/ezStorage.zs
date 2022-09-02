@@ -46,7 +46,6 @@ print("Start loading ezStorage.zs ...");
 		HiiragiUtils.addCraftingShaped(true, <ezstorage:security_box>, RecipePattern.init(["AB"]).map({A:<ezstorage:key>, B:<ezstorage:blank_box>}).ingredients, null, null);
 
 //AWレシピの編集
-	//import
 	//新規
 
 //このscriptの読み込みの完了をログに出力
