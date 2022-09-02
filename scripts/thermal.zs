@@ -100,14 +100,6 @@ print("Start loading thermal.zs ...");
 	mods.thermalexpansion.Compactor.addPressRecipe(<contenttweaker:gem_carbon>, <dcs_climate:dcs_reagent:13>*64, 32000);
 
 	//Mint
-	//mods.thermalexpansion.Compactor.addMintRecipe(<ore:sheetTitaniumAluminide>.firstItem*2, <ore:plateTitaniumAluminide>.firstItem, 4000);
-	//mods.thermalexpansion.Compactor.addMintRecipe(<ore:sheetTitaniumIridium>.firstItem*2, <ore:plateTitaniumIridium>.firstItem, 4000);
-	mods.thermalexpansion.Compactor.addMintRecipe(<ore:sheetIron>.firstItem*2, <thermalfoundation:material:32>, 4000);
-	//mods.thermalexpansion.Compactor.addMintRecipe(<ore:sheetCopper>.firstItem*2, <thermalfoundation:material:320>, 4000);
-	mods.thermalexpansion.Compactor.addMintRecipe(<ore:sheetSteel>.firstItem*2, <thermalfoundation:material:352>, 4000);
-	mods.thermalexpansion.Compactor.addMintRecipe(<ore:sheetTitanium>.firstItem*2, <contenttweaker:plate_titanium>, 4000);
-	//mods.thermalexpansion.Compactor.addMintRecipe(<ore:sheetAluminum>.firstItem*2, <thermalfoundation:material:324>, 4000);
-
 	mods.thermalexpansion.Compactor.addMintRecipe(<advancedrocketry:wafer:0>, <appliedenergistics2:material:5>*4, 4000);
 
 	//Ragi Tickets

@@ -1,5 +1,30 @@
 # Changelog
 
+## v0.7.0
+
+### `Evolution: Above & Beyond`
+
+- Mod Configuration
+  - Add
+    - `mia-1.12.2-0.2.2a`
+      - Add minor integration for various mods
+  - Update
+    - `HadEnoughItems_1.12.2-4.23.0` -> `HadEnoughItems_1.12.2-4.24.0`
+    - `HeatAndClimateMod_1.12.2-3.9.8` -> `HeatAndClimateMod_1.12.2-3.9.9`
+    - `zenutils-1.11.2` -> `zenutils-1.11.3`
+
+- Add `Division Sigil`
+  - Dropped from Withre killed in the Moon
+- Add new dimension: `Moon`, `Mars`, `Venus`
+- Add new loot crates
+- Move the location for icon.png
+- Nerf magic cost for HaC by half
+- Refined the recipes for `Advanced Rocketry`
+- Replace some items and blocks from LibVulpes with new one
+- Some mobs can live in space area
+- Update Quests
+  - Nerf quest rewards
+
 ## v0.6.0
 
 ### `Radical restructuring of the quest 2`

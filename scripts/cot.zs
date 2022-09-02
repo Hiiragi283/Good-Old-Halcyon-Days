@@ -44,6 +44,7 @@ print("Start loading cot.zs ...");
 		"ingot_bedrockium",
 		"ingot_rainbow",
 		"item_fire",
+		"plate_titanium",
 		"reagent_halogen",
 		"ticket_common",
 		"ticket_uncommon",
@@ -75,14 +76,6 @@ print("Start loading cot.zs ...");
 	};
 	for i, j in mapCoin {
 		RussellUtils.addItemColored(i, j, "thermalfoundation:items/material/coin_iron");
-	}
-
-	//Plate
-	val mapPlate as string[string] = {
-		"plate_titanium":"AE9169",
-	};
-		for i, j in mapPlate {
-		RussellUtils.addItemColored(i, j, "thermalfoundation:items/material/plate_iron");
 	}
 
 	//Stick
