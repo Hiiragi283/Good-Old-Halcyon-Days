@@ -304,13 +304,13 @@ val cap6x = <enderio:item_basic_capacitor:4>.withTag({eiocap: {level: 6.0 as flo
 		<threng:material:14>: <contenttweaker:assembly_speculative>,
 		<tconstruct:metal:5>: <contenttweaker:dustblock_alubrass>,
 		<thermalfoundation:storage:3>: <contenttweaker:dustblock_lead>,
+		<extrautils2:ingredients:5>: <ore:turfMoon>
 	};
 	for output, input in addFurnace {
 		HiiragiUtils.addFurnace(false, output, input);
 	}
 
 //AWレシピの編集
-	//import
 	//新規
 
 //JEIからエントリを完全に削除
@@ -318,9 +318,14 @@ val cap6x = <enderio:item_basic_capacitor:4>.withTag({eiocap: {level: 6.0 as flo
 		//Advanced Rocktry
 		<advancedrocketry:platepress>,
 		<advancedrocketry:arcfurnace>,
-		//<advancedrocketry:lathe>,
+		<advancedrocketry:rollingmachine>,
+		<advancedrocketry:lathe>,
 		<advancedrocketry:crystallizer>,
+		<advancedrocketry:cuttingmachine>,
+		<advancedrocketry:precisionassemblingmachine>,
 		<advancedrocketry:electrolyser>,
+		<advancedrocketry:chemicalreactor>,
+		<advancedrocketry:precisionlaseretcher>,
 		<advancedrocketry:centrifuge>,
 		//Applied Energistics 2
 		<appliedenergistics2:material:40>,
@@ -357,7 +362,10 @@ val cap6x = <enderio:item_basic_capacitor:4>.withTag({eiocap: {level: 6.0 as flo
 		<threng:machine:2>,
 		<threng:machine:5>,
 		<threng:material:2>,
+		//LibVulpes
+		<libvulpes:advstructuremachine>,
 		//Mekanism
+		<mekanismgenerators:solarpanel>,
 		<mekanismtools:woodpaxel>,
 		<mekanismtools:stonepaxel>,
 		<mekanismtools:ironpaxel>,

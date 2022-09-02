@@ -33,7 +33,7 @@ print("Start loading oreDict.zs ...");
 	HiiragiUtils.removeOreDict(<dcs_climate:dcs_gem_layer:4>);
 	HiiragiUtils.removeOreDict(<dcs_climate:dcs_synthetic:2>);
 
-	val removeLibVulpes as IItemStack[] = [
+	val removeAdvRocketry as IItemStack[] = [
 		<advancedrocketry:productdust>,
 		<advancedrocketry:productingot>,
 		<advancedrocketry:metal0>,
@@ -42,16 +42,23 @@ print("Start loading oreDict.zs ...");
 		<advancedrocketry:productrod>,
 		<advancedrocketry:productsheet>,
 		<advancedrocketry:productgear>,
+	];
+	for i in 0 to 2 {
+		for j in removeAdvRocketry {
+			HiiragiUtils.removeFromJEI(j.definition.makeStack(i));
+			HiiragiUtils.removeOreDict(j.definition.makeStack(i));
+		}
+	}
+
+	val removeLibVulpes as IItemStack[] = [
 		<libvulpes:productdust>,
 		<libvulpes:productingot>,
-		//<libvulpes:productboule>,
 		<libvulpes:productnugget>,
 		<libvulpes:productplate>,
 		<libvulpes:productrod>,
-		//<libvulpes:productsheet>,
+		<libvulpes:productsheet>,
 		<libvulpes:productgear>,
 		<libvulpes:ore0>,
-
 	];
 	for i in 1 to 11 {
 		for j in removeLibVulpes {

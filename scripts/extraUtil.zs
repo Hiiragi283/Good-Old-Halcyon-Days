@@ -61,17 +61,36 @@ val cap6x = <enderio:item_basic_capacitor:4>.withTag({eiocap: {level: 6.0 as flo
 	}, null);
 
 //AWレシピの編集
-	//import
 	//新規
 
 //Assemblerのレシピ
 	static machineAssembler as IMachine = extrautilities2.Tweaker.IMachineRegistry.getMachine("assembler");
 
-	function addAssembler(input as IIngredient[], output as IIngredient) {
+	function addAssembler(input as IIngredient[], output as WeightedItemStack) {
 		machineAssembler.addRecipe({"input1": input[0], "input2": input[1]}, {"output": output}, 5000, 200);
 	}
 
-	val mapAssembler as IIngredient[IIngredient[]] = {
+	val mapAssembler as WeightedItemStack[IIngredient[]] = {
+		//Advanced Rocktery
+		[<ore:fusedQuartz>, <advancedrocketry:lens>]: <advancedrocketry:blocklens>,
+		[<ore:waferSilicon>, <ore:dustCoal>]: <advancedrocketry:itemcircuitplate:0>,
+		[<ore:waferSilicon>, <ore:gemEmerald>]: <advancedrocketry:itemcircuitplate:1>,
+		[<ore:waferSilicon>, <ore:gemOlivine>]: <advancedrocketry:itemcircuitplate:1>*2,
+		[<advancedrocketry:ic:2>, <ore:pearlEnderEye>]: <advancedrocketry:ic:1>,
+		[<thermalfoundation:material:512>, <ore:plateIron>]: <advancedrocketry:ic:3>,
+		[<thermalfoundation:material:512>, <ore:plateGold>]: <advancedrocketry:ic:4>,
+		[<thermalfoundation:material:512>, <ore:plateLead>]: <advancedrocketry:ic:5>,
+		[<advancedrocketry:ic:0>, <ore:gemEmerald>]: <advancedrocketry:dataunit>,
+		[<advancedrocketry:ic:0>, <ore:gemOlivine>]: <advancedrocketry:dataunit>*2,
+		[<advancedrocketry:ic:2>, <extrautils2:biomemarker>]: <advancedrocketry:satelliteprimaryfunction:5>,
+		[<botania:lens:4>, <advancedrocketry:ic:3>]: <advancedrocketry:itemupgrade:0>,
+		[<botania:lens:2>, <advancedrocketry:ic:3>]: <advancedrocketry:itemupgrade:1>,
+		[<ore:blockMotor>, <advancedrocketry:ic:3>]: <advancedrocketry:itemupgrade:2>,
+		[<minecraft:leather_boots>, <advancedrocketry:ic:3>]: <advancedrocketry:itemupgrade:3>,
+		[<pickletweaks:nightvision_goggles>, <advancedrocketry:ic:3>]: <advancedrocketry:itemupgrade:4>,
+		[<advancedrocketry:itemupgrade:4>, <advancedrocketry:ic:1>]: <advancedrocketry:beaconfinder>,
+		[<advancedrocketry:misc:0>, <advancedrocketry:ic:1>]: <advancedrocketry:biomechanger>,
+		[<advancedrocketry:misc:0>, <advancedrocketry:lens>]: <advancedrocketry:atmanalyser>,
 		//Building Gadgets
 		[<buildinggadgets:buildingtool>, <extrautils2:itemcreativedestructionwand>]:  <buildinggadgets:exchangertool>,
 		[<buildinggadgets:buildingtool>, <thermalfoundation:diagram_redprint>]:  <buildinggadgets:copypastetool>,
@@ -167,7 +186,7 @@ val cap6x = <enderio:item_basic_capacitor:4>.withTag({eiocap: {level: 6.0 as flo
 		[<ore:ingotRedstoneAlloy>, <ore:ingotElectrum>]: <thermalfoundation:material:515>,
 		[<ore:ingotElectrum>, <thermalfoundation:material:512>]: <thermalfoundation:material:640>,
 		//Joke
-		[<minecraft:pumpkin>, <minecraft:melon_block>]:  <contenttweaker:pumpkin_melon>,
+		[<minecraft:pumpkin>, <minecraft:melon_block>]:  <contenttweaker:pumpkin_melon>*2,
 
 	};
 

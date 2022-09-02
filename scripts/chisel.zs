@@ -38,7 +38,6 @@ print("Start loading chisel.zs ...");
 	//新規
 
 //AWレシピの編集
-	//import
 	//新規
 
 //OreDict
@@ -84,6 +83,10 @@ print("Start loading chisel.zs ...");
 		HiiragiUtils.removeCrafting(i);
 		mods.chisel.Carving.addVariation("bedrock", i);
 	}
+
+//Advanced Rocktery
+	//Basalt
+	mods.chisel.Carving.addVariation("basalt", <advancedrocketry:basalt>);
 
 //Biblio Craft
 	//Fancy lantern (Gold)

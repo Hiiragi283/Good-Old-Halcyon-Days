@@ -20,6 +20,7 @@ import mods.thermalexpansion.Enchanter;
 import mods.thermalexpansion.Factorizer;
 import mods.thermalexpansion.Refinery;
 import mods.thermalexpansion.InductionSmelter;
+import mods.thermalexpansion.Sawmill;
 import mods.thermalexpansion.Transposer;
 
 //scriptのimport
@@ -67,15 +68,9 @@ print("Start loading thermal.zs ...");
 	//新規
 
 //AWレシピの編集
-	//import
 	//新規
 
 //Arcane Ensorcellator
-	mods.thermalexpansion.Enchanter.addRecipe(<dcs_climate:dcs_food_petals:0>, <contenttweaker:cube_iridescent>, <botania:petalblock:0>*8, 365000, 3000, false);
-	//mods.thermalexpansion.Enchanter.addRecipe(<dcs_climate:dcs_food_petals>, <contenttweaker:cube_iridescent>, <botania:petalblock>*8, 365000, 3000, false);
-	mods.thermalexpansion.Enchanter.addRecipe(<extrautils2:enderlilly>, <contenttweaker:cube_iridescent>, <twilightforest:huge_waterlily>*8, 365000, 3000, false);
-	mods.thermalexpansion.Enchanter.addRecipe(<botania:manaresource:5>, <contenttweaker:cube_iridescent>, <enderio:item_material:80>*8, 365000, 3000, false);
-	mods.thermalexpansion.Enchanter.addRecipe(<dcs_climate:dcs_food_petals:1>, <contenttweaker:cube_iridescent>, <botania:petalblock:15>*8, 365000, 3000, false);
 
 //Centrifugal Seperator
 	mods.thermalexpansion.Centrifuge.addRecipe([
@@ -89,15 +84,33 @@ print("Start loading thermal.zs ...");
 	mods.thermalexpansion.Centrifuge.addRecipe([<biomesoplenty:honeycomb>], <biomesoplenty:filled_honeycomb>, <liquid:honey>*250, 1000);
 
 //Compactor
+	//Press
 	mods.thermalexpansion.Compactor.addPressRecipe(<enderio:item_material:71>, <ore:dustBedrock>.firstItem*5, 8000);
 	mods.thermalexpansion.Compactor.addPressRecipe(<ezstorage:condensed_storage_box>, <ezstorage:storage_box>*10, 1000);
 	mods.thermalexpansion.Compactor.addPressRecipe(<ezstorage:super_storage_box>, <ezstorage:condensed_storage_box>*4, 4000);
 	mods.thermalexpansion.Compactor.addPressRecipe(<ezstorage:ultra_storage_box>, <ezstorage:super_storage_box>*4, 16000);
 	mods.thermalexpansion.Compactor.addPressRecipe(<ezstorage:hyper_storage_box>, <ezstorage:ultra_storage_box>*5, 64000);
 
+	mods.thermalexpansion.Compactor.addPressRecipe(<advancedrocketry:pressuretank:0>, <ore:plateIron>.firstItem*8, 16000);
+	mods.thermalexpansion.Compactor.addPressRecipe(<advancedrocketry:pressuretank:1>, <ore:plateSteel>.firstItem*8, 16000);
+	mods.thermalexpansion.Compactor.addPressRecipe(<advancedrocketry:pressuretank:2>, <ore:plateAluminum>.firstItem*8, 16000);
+	mods.thermalexpansion.Compactor.addPressRecipe(<advancedrocketry:pressuretank:3>, <ore:plateTitanium>.firstItem*8, 16000);
+
 	mods.thermalexpansion.Compactor.addPressRecipe(<railcraft:charge:1>, <dcs_climate:dcs_ingot:4>*4, 4000);
 	mods.thermalexpansion.Compactor.addPressRecipe(<contenttweaker:gem_carbon>, <dcs_climate:dcs_reagent:13>*64, 32000);
 
+	//Mint
+	//mods.thermalexpansion.Compactor.addMintRecipe(<ore:sheetTitaniumAluminide>.firstItem*2, <ore:plateTitaniumAluminide>.firstItem, 4000);
+	//mods.thermalexpansion.Compactor.addMintRecipe(<ore:sheetTitaniumIridium>.firstItem*2, <ore:plateTitaniumIridium>.firstItem, 4000);
+	mods.thermalexpansion.Compactor.addMintRecipe(<ore:sheetIron>.firstItem*2, <thermalfoundation:material:32>, 4000);
+	//mods.thermalexpansion.Compactor.addMintRecipe(<ore:sheetCopper>.firstItem*2, <thermalfoundation:material:320>, 4000);
+	mods.thermalexpansion.Compactor.addMintRecipe(<ore:sheetSteel>.firstItem*2, <thermalfoundation:material:352>, 4000);
+	mods.thermalexpansion.Compactor.addMintRecipe(<ore:sheetTitanium>.firstItem*2, <contenttweaker:plate_titanium>, 4000);
+	//mods.thermalexpansion.Compactor.addMintRecipe(<ore:sheetAluminum>.firstItem*2, <thermalfoundation:material:324>, 4000);
+
+	mods.thermalexpansion.Compactor.addMintRecipe(<advancedrocketry:wafer:0>, <appliedenergistics2:material:5>*4, 4000);
+
+	//Ragi Tickets
 	val mapTicket as int[IItemStack] = {
 		<thermalfoundation:coin:0>: 1,
 		<thermalfoundation:coin:1>:2,
@@ -190,6 +203,10 @@ print("Start loading thermal.zs ...");
 
 //Photogenic Insolator
 	mods.thermalexpansion.Insolator.addRecipe(<botania:overgrowthseed>, <thermalfoundation:fertilizer:2>*16, <botania:grassseeds:0>, 12000, null, 0, 8000);
+
+//Sawmill
+	mods.thermalexpansion.Sawmill.addRecipe(<advancedrocketry:ic:0>*4, <advancedrocketry:itemcircuitplate:0>, 16000);
+	mods.thermalexpansion.Sawmill.addRecipe(<advancedrocketry:ic:2>*4, <advancedrocketry:itemcircuitplate:1>, 16000);
 
 //このscriptの読み込みの完了をログに出力
 print("thermal.zs loaded!");
