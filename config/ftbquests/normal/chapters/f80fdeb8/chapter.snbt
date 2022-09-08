@@ -1,7 +1,0 @@
-{
-	title: "{gohd.food.title}",
-	icon: "dcs_climate:dcs_food_dish_sq 1 3",
-	always_invisible: false,
-	group: 781599860,
-	default_quest_shape: ""
-}

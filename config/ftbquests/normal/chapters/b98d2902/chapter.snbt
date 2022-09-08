@@ -1,7 +1,0 @@
-{
-	title: "{gohd.hac.title}",
-	icon: "dcs_climate:dcs_icons",
-	always_invisible: false,
-	group: 0,
-	default_quest_shape: ""
-}
