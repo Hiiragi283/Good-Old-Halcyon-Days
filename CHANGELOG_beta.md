@@ -1,5 +1,30 @@
 # Changelog
 
+## v0.8.0
+
+- Mod Configuration
+  - Add
+    - `BetterQuesting-3.5.329`
+      - Alternative mod for `FTB Quests`
+    - `mechanics-1.1`
+      - Add some misc
+    - `multiblocked-0.7.2`
+      - Mod for creating ULTRA flexible multiblock
+    - `questbook-3.1.1-1.12`
+      - Add Questbook for `Better Questing`
+    - `railcraft-tweaker-0.2.0`
+      - Addon for `Crafttweaker` and `Railcraft`
+    - `StandardExpansion-3.4.173`
+      - Addon for `Better Questing`
+  - Update
+    - `appliedenergistics2-rv6-stable-7-extended_life-v0.53.4` -> `appliedenergistics2-rv6-stable-7-extended_life-v0.53.5`
+    - `CraftTweaker2-1.12-4.1.20.679` -> `CraftTweaker2-1.12-4.1.20.680`
+    - `HeatAndProcessing-1.12.2-1.3.8` -> `HeatAndProcessing-1.12.2-1.4.0`
+    - `zenutils-1.11.3` -> `zenutils-1.11.5`
+
+- **Major modification of Scripts**
+  - Hanc marginis exiguitas non caperet.
+
 ## v0.7.0
 
 ### `Evolution: Above & Beyond`
