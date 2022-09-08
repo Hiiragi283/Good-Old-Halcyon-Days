@@ -38,6 +38,7 @@ config/biomesoplenty/biomes/defaults
 config/dimensionalcontrol/documentation
 config/dimensionalcontrol/presets
 config/enderio/recipes/examples
+config/jei
 config/tellme
 
 #特定のファイル
@@ -60,10 +61,6 @@ config/artisanintegrations/module.botania.Tools-Generated.json
 config/artisanworktables/module.Tools.Materials.Generated.json
 config/compactmachines3/recipes/*.txt
 config/enderio/recipes/*.pdf
-config/jei/itemBlacklist.cfg
-config/jei/jei.cfg
-config/jei/worldSettings.cfg
-config/jei/bookmarks.ini
 config/InvTweaks.cfg
 config/scavenge/*.txt
 config/tinker_ore_dict_melting_cache.dat
