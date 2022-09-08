@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "mekanism:items/plastick"
+    "layer0": "contenttweaker:items/tome_ancient"
   }
 }

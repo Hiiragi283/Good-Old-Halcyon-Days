@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "extrautils2:demon_block",
+		"layer1": "contenttweaker:items/glyph_divide_overlay"
+  }
+}

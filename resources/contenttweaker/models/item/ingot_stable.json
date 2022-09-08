@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+		"layer0": "extrautils2:unstable_ingot_interior",
+    "layer1": "extrautils2:unstable_ingot_outline"
+  }
+}
