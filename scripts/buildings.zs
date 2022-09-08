@@ -1,14 +1,14 @@
 #====================================================================
 # ファイル名 : buildings.zs
 # 作成者 : Hiiragi Russell Tsubasa: https://github.com/Hiiragi283
-# 情報 : このファイルについて書く
+# 情報 : Tweak the recipes for building blocks
 #====================================================================
 
 #priority 90
 
 //crafttweakerからclassをimport
-import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
+import crafttweaker.item.IItemStack;
 
 //各種modからclassをimport
 import mods.artisanworktables.builder.RecipeBuilder;
@@ -19,32 +19,6 @@ import scripts.HiiragiUtils;
 
 //このscriptの読み込みの開始をログに出力
 print("Start loading buildings.zs ...");
-
-//変数の定義
-
-//作業台レシピの編集
-	//削除
-		val removeCrafting as IItemStack[] = [];
-		for i in removeCrafting {
-			HiiragiUtils.removeCrafting(i);
-		}
-	//上書き
-	//新規
-
-//かまどレシピの編集
-	//削除
-		val removeFurnace as IItemStack[] = [];
-		for i in removeFurnace {
-			HiiragiUtils.removeFurnace(i);
-		}
-	//新規
-		val addFurnace as IIngredient[IItemStack] = {};
-		for output, input in addFurnace {
-			HiiragiUtils.addFurnace(false, output, input);
-		}
-
-//AWレシピの編集
-	//新規
 
 //Slabのレシピを抜本的に改変
 	val mapSlabs as IItemStack[IItemStack] = {

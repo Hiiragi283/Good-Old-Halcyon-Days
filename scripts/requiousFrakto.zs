@@ -7,11 +7,10 @@
 #priority 0
 
 //crafttweakerからclassをimport
-import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
+import crafttweaker.item.IItemStack;
 
 //各種modからclassをimport
-import mods.artisanworktables.builder.RecipeBuilder;
 import mods.ctintegration.util.RecipePattern;
 import mods.requious.AssemblyRecipe;
 import mods.requious.ComponentFace;
@@ -106,14 +105,6 @@ var unfiredFinish = AssemblyRecipe.create(function(container) {
 			.requireItem("itemMain", <minecraft:stick>)
 			.requireItem("blockFrom", <contenttweaker:unfired_casting_channel>);
 		<assembly:info_scavenge>.addJEIRecipe(unfiredFinish);
-
-var stickBurning = AssemblyRecipe.create(function(container) {
-				container.addItemOutput("blockTo", <dcs_climate:dcs_tinder:1>);
-			}).requireItem("iconLeft", <openblocks:glyph:76>)
-			.requireItem("iconRight", <openblocks:glyph:82>)
-			.requireItem("itemMain", <dcs_climate:dcs_tinder:0>)
-			.requireItem("blockFrom", <contenttweaker:item_fire>);
-		<assembly:info_scavenge>.addJEIRecipe(stickBurning);
 
 //このscriptの読み込みの完了をログに出力
 print("requiousFrakto.zs loaded!");

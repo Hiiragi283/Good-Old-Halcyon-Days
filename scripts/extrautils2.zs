@@ -1,5 +1,5 @@
 #====================================================================
-# ファイル名 : extraUtil.zs
+# ファイル名 : extrautils2.zs
 # 作成者 : Hiiragi Russell Tsubasa: https://github.com/Hiiragi283
 # 情報 : Scripts for Extra Utilities 2
 #====================================================================
@@ -7,12 +7,11 @@
 #priority 0
 
 //crafttweakerからclassをimport
-import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
+import crafttweaker.item.IItemStack;
 import crafttweaker.item.WeightedItemStack;
 
 //各種modからclassをimport
-import mods.artisanworktables.builder.RecipeBuilder;
 import mods.ctintegration.util.RecipePattern;
 import extrautilities2.Tweaker.IMachine;
 import extrautilities2.Tweaker.IMachineRegistry;
@@ -20,14 +19,10 @@ import extrautilities2.Tweaker.IMachineSlot;
 
 //scriptのimport
 import scripts.HiiragiUtils;
+import scripts.jei;
 
 //このscriptの読み込みの開始をログに出力
-print("Start loading extraUtil.zs ...");
-
-//変数の定義
-val cap4x = <enderio:item_basic_capacitor:4>.withTag({eiocap: {level: 4.0 as float}, display: {LocName: "gohd.custom.capasitor_4x"}});
-val cap5x = <enderio:item_basic_capacitor:4>.withTag({eiocap: {level: 5.0 as float}, display: {LocName: "gohd.custom.capasitor_5x"}});
-val cap6x = <enderio:item_basic_capacitor:4>.withTag({eiocap: {level: 6.0 as float}, display: {LocName: "gohd.custom.capasitor_6x"}});
+print("Start loading extrautils2.zs ...");
 
 //作業台レシピの編集
 	//削除
@@ -44,13 +39,12 @@ val cap6x = <enderio:item_basic_capacitor:4>.withTag({eiocap: {level: 6.0 as flo
 	HiiragiUtils.addCraftingShaped(false, <extrautils2:machine>.withTag({Type: "crafttweaker:assembler"}), RecipePattern.init(["ABA", "CDC", "ABA"]).map({A:<ore:gearSignalum>, B:<ore:plateSignalum>, C:<hap:conveyor>, D:<thermalexpansion:machine:11>}).ingredients, null, null);
 	HiiragiUtils.addCraftingShaped(false, <extrautils2:machine>.withTag({Type: "crafttweaker:apiary"}), RecipePattern.init(["AAA", "ABA", "CDC"]).map({A:<botania:livingwood:0>, B:<extrautils2:machine>, C:<biomesoplenty:filled_honeycomb>, D:<railcraft:equipment:2>}).ingredients, null, null);
 
+
 	HiiragiUtils.addCraftingShaped(true, <extrautils2:machine:0>, RecipePattern.init(["AAA", "ABA", "CCC"]).map({A:<ore:ingotInvar>, B:<ore:gemRedstone>, C:<ore:ingotSteel>}).ingredients, null, null);
 	HiiragiUtils.addCraftingShaped(false, <extrautils2:machine:0>*3, RecipePattern.init(["AAA", "ABA", "CCC"]).map({A:<ore:ingotToolSteel>, B:<ore:gemRedstone>, C:<ore:ingotStainlessSteel>}).ingredients, null, null);
 	HiiragiUtils.addCraftingShaped(false, <extrautils2:decorativesolid:8>*8, RecipePattern.init(["AAA", "ABA", "AAA"]).map({A:<extrautils2:decorativesolid:3>, B:<contenttweaker:ingot_rainbow>|<contenttweaker:cube_iridescent>}).ingredients, null, null);
-	HiiragiUtils.addCraftingShaped(false, <extrautils2:itemcreativebuilderswand>, [[null, <ore:ingotUnstable>], [<ore:obsidian>, null]], null, null);
-	HiiragiUtils.addCraftingShaped(false, <extrautils2:itemcreativedestructionwand>, [[<ore:ingotUnstable>, null], [null, <ore:obsidian>]], null, null);
-	HiiragiUtils.addCraftingShaped(false, <extrautils2:unstableingots:1>, RecipePattern.init(["A", "B", "C"]).map({A:<ore:nuggetIron>, B:<contenttweaker:glyph_divide>.reuse(), C:<ore:gemDiamond>}).ingredients, null, null);
-	HiiragiUtils.addCraftingShaped(false, <extrautils2:unstableingots:2>, [[<ore:ingotIron>], [<contenttweaker:glyph_activated>], [<ore:gemDiamond>]], null, null);
+	recipes.addShaped(<extrautils2:itemcreativebuilderswand>, [[null, <ore:ingotUnstable>], [<ore:obsidian>, null]]);
+	recipes.addShaped(<extrautils2:itemcreativedestructionwand>, [[<ore:ingotStable>, null], [null, <ore:obsidian>]]);
 
 	HiiragiUtils.addCraftingShapeless(false, <extrautils2:creativeharvest>, [<extrautils2:creativeharvest>, <*>.marked("creative")], function(out, ins, cInfo) {
 		var owner as string = ins.creative.definition.owner;
@@ -98,9 +92,9 @@ val cap6x = <enderio:item_basic_capacitor:4>.withTag({eiocap: {level: 6.0 as flo
 		[<ore:dustBedrock>, <ore:ingotCopper>]: <enderio:item_basic_capacitor:0>,
 		[<enderio:item_basic_capacitor:0>, <ore:ingotEnergeticAlloy>]: <enderio:item_basic_capacitor:1>,
 		[<enderio:item_basic_capacitor:1>, <ore:ingotVibrantAlloy>]: <enderio:item_basic_capacitor:2>,
-		[<enderio:item_basic_capacitor:2>, <ore:ingotManasteel>]: cap4x,
-		[cap4x, <ore:ingotFluixSteel>]: cap5x,
-		[cap5x, <dcs_climate:dcs_mechanical:5>]: cap6x,
+		[<enderio:item_basic_capacitor:2>, <ore:ingotManasteel>]: jei.cap4x,
+		[jei.cap4x, <ore:ingotFluixSteel>]: jei.cap5x,
+		[jei.cap5x, <dcs_climate:dcs_mechanical:5>]: jei.cap6x,
 		[<ore:dustBedrock>, <ore:ingotIron>]: <ore:gearIronInfinity>.firstItem,
 		[<ore:gearIronInfinity>, <ore:ingotDarkSteel>]: <ore:gearDark>.firstItem,
 		[<ore:gearIronInfinity>, <ore:ingotEnergeticAlloy>]: <ore:gearEnergized>.firstItem,
@@ -231,4 +225,4 @@ val cap6x = <enderio:item_basic_capacitor:4>.withTag({eiocap: {level: 6.0 as flo
 	}
 
 //このscriptの読み込みの完了をログに出力
-print("extraUtil.zs loaded!");
+print("extrautils2.zs loaded!");

@@ -11,8 +11,8 @@
 //crafttweakerからclassをimport
 import crafttweaker.api.IClient;
 import crafttweaker.data.IData;
-import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
+import crafttweaker.item.IItemStack;
 import crafttweaker.recipes.IRecipeFunction;
 
 //各種modからclassをimport
@@ -26,7 +26,7 @@ import scripts.HiiragiUtils;
 //このscriptの読み込みの開始をログに出力
 print("Start loading armor.zs ...");
 
-//変数の定義
+//装備のTierを定義
 val armorTier as IItemStack[][string[]] = {
 	["§lCommon", "§l普通の"]: [
 		<minecraft:chainmail_helmet>,

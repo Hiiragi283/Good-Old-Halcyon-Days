@@ -8,11 +8,10 @@
 
 //crafttweakerからclassをimport
 import crafttweaker.data.IData;
-import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
+import crafttweaker.item.IItemStack;
 
 //各種modからclassをimport
-import mods.artisanworktables.builder.RecipeBuilder;
 import mods.botania.Apothecary;
 import mods.botania.ElvenTrade;
 import mods.botania.ManaInfusion;
@@ -21,9 +20,8 @@ import mods.botania.OrechidIgnem;
 import mods.botania.PureDaisy;
 import mods.botania.RuneAltar;
 import mods.botaniatweaks.Agglomeration;
-import mods.botaniatweaks.AgglomerationRecipe;
 import mods.botaniatweaks.AgglomerationMultiblock;
-import mods.chisel.Carving;
+import mods.botaniatweaks.AgglomerationRecipe;
 import mods.ctintegration.util.RecipePattern;
 import mods.zenutils.I18n;
 
@@ -33,18 +31,11 @@ import scripts.HiiragiUtils;
 //このscriptの読み込みの開始をログに出力
 print("Start loading botania.zs ...");
 
-//変数の定義
-
 //作業台レシピの編集
-	//削除
-	val removeCrafting as IItemStack[] = [];
-	for i in removeCrafting {
-		HiiragiUtils.removeCrafting(i);
-	}
 	//上書き
 	//Botania
 	HiiragiUtils.addCraftingShaped(true, <botania:lexicon>, RecipePattern.init(["AA ", "AB ", "   "]).map({A:<minecraft:paper>, B:<twilightforest:naga_scale>}).ingredients, null, null);
-	HiiragiUtils.addCraftingShaped(false, <botania:crystalbow>, RecipePattern.init([" AD", "BCD", " AD"]).map({A:<botania:manaresource:13>, B:<botania:manaresource:3>, C:<botania:livingwoodbow>.marked("inherit"), D:<ore:manaString>}).ingredients, HiiragiUtils.inheritStatus(<botania:crystalbow>), null);
+	HiiragiUtils.addCraftingShaped(false, <botania:crystalbow>, RecipePattern.init([" AD", "BCD", " AD"]).map({A:<botania:manaresource:13>, B:<botania:manaresource:3>, C:<botania:livingwoodbow>.marked("move"), D:<ore:manaString>}).ingredients, HiiragiUtils.moveNBT(<botania:crystalbow>), null);
 	HiiragiUtils.addCraftingShaped(true, <botania:rfgenerator>, RecipePattern.init(["ABA", "BCB", "ABA"]).map({A:<botania:livingrock>, B:<thermalfoundation:material:514>, C:<botanicadds:rune_energy>}).ingredients, null, null);
 	HiiragiUtils.addCraftingShapeless(true, <botania:lens:7>, [<botania:lens:0>, <thermalfoundation:material:656>], null, null);
 	HiiragiUtils.addCraftingShapeless(true, <botania:lens:10>, [<botania:lens:0>, <ore:ingotMagnet>], null, null);
@@ -65,16 +56,13 @@ print("Start loading botania.zs ...");
 		HiiragiUtils.addCraftingShaped(true, output, RecipePattern.init(["ABC"]).map({A:<contenttweaker:casing_livingrock>, B:<botania:manaresource:12>, C:input}).ingredients, null, null);
 	}*/
 
-	HiiragiUtils.addCraftingReplace(<ore:blockLapis>, <tconstruct:large_plate>.withTag({Material: "manasteel"}), <botania:terraplate>);
-	HiiragiUtils.addCraftingReplace(<botania:storage:0>, <biomesoplenty:terrestrial_artifact>, <botania:terraplate>);
+	HiiragiUtils.recipeReplace(<ore:blockLapis>, <tconstruct:large_plate>.withTag({Material: "manasteel"}), <botania:terraplate>);
+	HiiragiUtils.recipeReplace(<botania:storage:0>, <biomesoplenty:terrestrial_artifact>, <botania:terraplate>);
 
 	//Botanic Adds
 	HiiragiUtils.addCraftingShaped(true, <botanicadds:pool_dreaming>, RecipePattern.init(["A A", "AAA"]).map({A:<botanicadds:dreamrock>}).ingredients, null, null);
-	HiiragiUtils.addCraftingShaped(true, <botanicadds:mana_stealer_sword>, RecipePattern.init(["A", "A", "B"]).map({A:<botanicadds:gaiasteel_ingot>, B:<botania:terrasword>.marked("inherit")}).ingredients, HiiragiUtils.inheritStatus(<botanicadds:mana_stealer_sword>), null);
+	HiiragiUtils.addCraftingShaped(true, <botanicadds:mana_stealer_sword>, RecipePattern.init(["A", "A", "B"]).map({A:<botanicadds:gaiasteel_ingot>, B:<botania:terrasword>.marked("move")}).ingredients, HiiragiUtils.moveNBT(<botanicadds:mana_stealer_sword>), null);
 
-	//新規
-
-//AWレシピの編集
 	//新規
 
 //Dreaming Daisyによる加工
@@ -250,7 +238,7 @@ print("Start loading botania.zs ...");
 		<ore:ingotRefinedObsidian>,
 		<ore:ingotFluixSteel>
 	], 1000000);
-	mods.botania.RuneAltar.addRecipe(<ore:ingotElementium>.firstItem,[
+	mods.botania.RuneAltar.addRecipe(<ore:ingotElvenElementium>.firstItem,[
 		<ore:gemSchorl>,
 		<ore:gemSchorl>,
 		<ore:ingotManasteel>,

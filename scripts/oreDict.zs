@@ -4,11 +4,11 @@
 # 情報 : Scripts for tweaking Ore Dictionary
 #====================================================================
 
-#priority 98
+#priority 97
 
 //crafttweakerからclassをimport
-import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
+import crafttweaker.item.IItemStack;
 
 //scriptのimport
 import scripts.HiiragiUtils;
@@ -16,110 +16,57 @@ import scripts.HiiragiUtils;
 //このscriptの読み込みの開始をログに出力
 print("Start loading oreDict.zs ...");
 
-//鉱石辞書の削除
-	<ore:dropHoney>.remove(<biomesoplenty:filled_honeycomb>);
+//鉱石辞書の編集
+	HiiragiUtils.tweakOreDict(<dcs_climate:dcs_gem_layer:4>, [<ore:all>], []);
+	HiiragiUtils.tweakOreDict(<dcs_climate:dcs_synthetic:2>, [<ore:all>], []);
 
-	<ore:dustWood>.remove(<dcs_climate:dcs_fooddust:7>);
+	HiiragiUtils.tweakOreDict(<biomesoplenty:filled_honeycomb>, [<ore:dropHoney>], []);
+	HiiragiUtils.tweakOreDict(<dcs_climate:dcs_fooddust:7>, [<ore:dustWood>], []);
+	HiiragiUtils.tweakOreDict(<minecraft:gold_block>, [<ore:blockWarpCoreCore>], []);
+	//HiiragiUtils.tweakOreDict(<libvulpes:metal0:7>, [<ore:blockWarpCoreRim>], []);
 
-	<ore:dye>.remove([<minecraft:dye:0>, <minecraft:dye:3>, <minecraft:dye:4>, <minecraft:dye:15>]);
-	//<ore:dyeBlack>.remove(<minecraft:dye:0>); //Printing press can't copy books without ink sak
-	<ore:dyeBrown>.remove(<minecraft:dye:3>);
-	<ore:dyeBlue>.remove(<minecraft:dye:4>);
-	<ore:dyeWhite>.remove(<minecraft:dye:15>);
+	HiiragiUtils.tweakOreDict(<dcs_climate:dcs_ore_metal_alloy:2>, [<ore:all>], [<ore:blockWroughtIron>]);
 
-	<ore:blockWarpCoreCore>.remove(<minecraft:gold_block>);
-	<ore:blockWarpCoreRim>.remove(<libvulpes:metal0:7>);
-
-	HiiragiUtils.removeOreDict(<dcs_climate:dcs_gem_layer:4>);
-	HiiragiUtils.removeOreDict(<dcs_climate:dcs_synthetic:2>);
-
-	val removeAdvRocketry as IItemStack[] = [
-		<advancedrocketry:productdust>,
-		<advancedrocketry:productingot>,
-		<advancedrocketry:metal0>,
-		<advancedrocketry:productnugget>,
-		<advancedrocketry:productplate>,
-		<advancedrocketry:productrod>,
-		<advancedrocketry:productsheet>,
-		<advancedrocketry:productgear>,
-	];
-	for i in 0 to 2 {
-		for j in removeAdvRocketry {
-			HiiragiUtils.removeFromJEI(j.definition.makeStack(i));
-			HiiragiUtils.removeOreDict(j.definition.makeStack(i));
-		}
-	}
-
-	val removeLibVulpes as IItemStack[] = [
-		<libvulpes:productdust>,
-		<libvulpes:productingot>,
-		<libvulpes:productnugget>,
-		<libvulpes:productplate>,
-		<libvulpes:productrod>,
-		<libvulpes:productsheet>,
-		<libvulpes:productgear>,
-		<libvulpes:ore0>,
-	];
-	for i in 1 to 11 {
-		for j in removeLibVulpes {
-			HiiragiUtils.removeFromJEI(j.definition.makeStack(i));
-			HiiragiUtils.removeOreDict(j.definition.makeStack(i));
-		}
-	}
-
-//鉱石辞書の追加
-	<ore:stoneBasalt>.add(<advancedrocketry:basalt>);
-
-	<ore:gemManaDiamond>.add(<botania:manaresource:2>);
-	<ore:gemDragonStone>.add(<botania:manaresource:9>);
-	<ore:itemCloth>.add(<botania:manaresource:22>);
-	//<ore:itemMagicCloth>.add(<botania:manaresource:22>);
-	<ore:ingotElementium>.add(<botania:manaresource:7>);
-	<ore:nuggetElementium>.add(<botania:manaresource:19>);
-	<ore:blockManasteel>.add(<botania:storage:0>);
-	<ore:blockTerrasteel>.add(<botania:storage:1>);
-	<ore:blockElementium>.add(<botania:storage:2>);
-	<ore:blockManaDiamond>.add(<botania:storage:3>);
-	<ore:blockDragonstone>.add(<botania:storage:4>);
-
-	<ore:gemManalapis>.add(<botanicadds:mana_lapis>);
-	<ore:gemElvenlapis>.add(<botanicadds:elven_lapis>);
-	<ore:blockManalapis>.add(<botanicadds:mana_lapis_block>);
-	<ore:blockElvenlapis>.add(<botanicadds:elven_lapis_block>);
-
-	<ore:dustHalogen>.add(<contenttweaker:reagent_halogen>);
-	<ore:blockBedrockium>.add(<contenttweaker:block_bedrockium>);
-	<ore:ingotBedrockium>.add(<contenttweaker:ingot_bedrockium>);
-	<ore:cubeCyan>.add(<contenttweaker:cube_cyan>);
-	<ore:cubeMagenta>.add(<contenttweaker:cube_magenta>);
-	<ore:cubeYellow>.add(<contenttweaker:cube_yellow>);
-	<ore:cropPumpkin>.add(<contenttweaker:pumpkin_melon>);
-	<ore:cropMelon>.add(<contenttweaker:pumpkin_melon>);
-
-	<ore:plateTitanium>.add(<contenttweaker:plate_titanium>);
-	<ore:stickTitaniumAluminide>.add(<contenttweaker:stick_tial>);
-	<ore:stickTitaniumIridium>.add(<contenttweaker:stick_tiir>);
-	<ore:stickIron>.add(<contenttweaker:stick_iron>);
-	<ore:stickCopper>.add(<contenttweaker:stick_copper>);
-	<ore:stickSteel>.add(<contenttweaker:stick_steel>);
-	<ore:stickTitanium>.add(<contenttweaker:stick_titanium>);
-	<ore:stickIridium>.add(<contenttweaker:stick_iridium>);
-
-	<ore:dustSawDust>.add(<dcs_climate:dcs_miscdust:3>);
-	<ore:blockPeridot>.add(<dcs_climate:dcs_ore_gemblock:10>);
-	<ore:blockGlassHardened>.add(<dcs_climate:dcs_synthetic:2>);
-	<ore:fusedQuartz>.add(<dcs_climate:dcs_synthetic:2>);
-	<ore:blockWarpCoreCore>.add(<dcs_climate:dcs_ore_metal_alloy:8>);
-	<ore:blockWarpCoreRim>.add(<dcs_climate:dcs_ore_metal_alloy:7>);
-
-	<ore:blockFuelCoke>.add(<railcraft:generic:6>);
-
-	<ore:blockCoke>.add(<thermalfoundation:storage_resource:1>);
-	<ore:dropRosin>.add(<thermalfoundation:material:832>);
-	<ore:dropCoaltar>.add(<thermalfoundation:material:833>);
-	<ore:gemSlag>.add(<thermalfoundation:material:864>);
-
-	<ore:blockIronwood>.add(<twilightforest:block_storage:0>);
+	HiiragiUtils.tweakOreDict(<advancedrocketry:basalt>, [], [<ore:stoneBasalt>]);
+	HiiragiUtils.tweakOreDict(<botania:manaresource:2>, [], [<ore:gemManaDiamond>]);
+	HiiragiUtils.tweakOreDict(<botania:manaresource:9>, [], [<ore:gemDragonStone>]);
+	HiiragiUtils.tweakOreDict(<botania:manaresource:22>, [], [<ore:itemCloth>]);
+	//HiiragiUtils.tweakOreDict(<botania:manaresource:22>, [], [<ore:itemMagicCloth>]);
+	//HiiragiUtils.tweakOreDict(<botania:manaresource:7>, [], [<ore:ingotElementium>]);
+	HiiragiUtils.tweakOreDict(<botania:manaresource:19>, [], [<ore:nuggetElvenElementium>]);
+	HiiragiUtils.tweakOreDict(<botania:storage:0>, [], [<ore:blockManasteel>]);
+	HiiragiUtils.tweakOreDict(<botania:storage:1>, [], [<ore:blockTerrasteel>]);
+	HiiragiUtils.tweakOreDict(<botania:storage:2>, [], [<ore:blockElvenElementium>]);
+	HiiragiUtils.tweakOreDict(<botania:storage:3>, [], [<ore:blockManaDiamond>]);
+	HiiragiUtils.tweakOreDict(<botania:storage:4>, [], [<ore:blockDragonstone>]);
+	HiiragiUtils.tweakOreDict(<botanicadds:mana_lapis>, [], [<ore:gemManalapis>]);
+	HiiragiUtils.tweakOreDict(<botanicadds:elven_lapis>, [], [<ore:gemElvenlapis>]);
+	HiiragiUtils.tweakOreDict(<botanicadds:mana_lapis_block>, [], [<ore:blockManalapis>]);
+	HiiragiUtils.tweakOreDict(<botanicadds:elven_lapis_block>, [], [<ore:blockElvenlapis>]);
+	HiiragiUtils.tweakOreDict(<contenttweaker:reagent_halogen>, [], [<ore:dustHalogen>]);
+	HiiragiUtils.tweakOreDict(<contenttweaker:block_bedrockium>, [], [<ore:blockBedrockium>]);
+	HiiragiUtils.tweakOreDict(<contenttweaker:ingot_bedrockium>, [], [<ore:ingotBedrockium>]);
+	HiiragiUtils.tweakOreDict(<contenttweaker:cube_cyan>, [], [<ore:cubeCyan>]);
+	HiiragiUtils.tweakOreDict(<contenttweaker:cube_magenta>, [], [<ore:cubeMagenta>]);
+	HiiragiUtils.tweakOreDict(<contenttweaker:cube_yellow>, [], [<ore:cubeYellow>]);
+	HiiragiUtils.tweakOreDict(<contenttweaker:pumpkin_melon>, [], [<ore:listAllveggie>]);
+	//HiiragiUtils.tweakOreDict(<contenttweaker:plate_titanium>, [], [<ore:plateTitanium>]);
+	//HiiragiUtils.tweakOreDict(<contenttweaker:stick_iron>, [], [<ore:stickIron>]);
+	//HiiragiUtils.tweakOreDict(<contenttweaker:stick_copper>, [], [<ore:stickCopper>]);
+	//HiiragiUtils.tweakOreDict(<contenttweaker:stick_steel>, [], [<ore:stickSteel>]);
+	//HiiragiUtils.tweakOreDict(<contenttweaker:stick_titanium>, [], [<ore:stickTitanium>]);
+	//HiiragiUtils.tweakOreDict(<contenttweaker:stick_iridium>, [], [<ore:stickIridium>]);
+	HiiragiUtils.tweakOreDict(<dcs_climate:dcs_miscdust:3>, [], [<ore:dustSawDust>]);
+	HiiragiUtils.tweakOreDict(<dcs_climate:dcs_ore_gemblock:10>, [], [<ore:blockPeridot>]);
+	HiiragiUtils.tweakOreDict(<dcs_climate:dcs_synthetic:2>, [], [<ore:blockGlassHardened>, <ore:fusedQuartz>]);
+	HiiragiUtils.tweakOreDict(<dcs_climate:dcs_ore_metal_alloy:8>, [], [<ore:blockWarpCoreCore>]);
+	HiiragiUtils.tweakOreDict(<dcs_climate:dcs_ore_metal_alloy:7>, [], [<ore:blockWarpCoreRim>]);
+	HiiragiUtils.tweakOreDict(<railcraft:generic:6>, [], [<ore:blockFuelCoke>]);
+	HiiragiUtils.tweakOreDict(<thermalfoundation:storage_resource:1>, [], [<ore:blockCoke>]);
+	HiiragiUtils.tweakOreDict(<thermalfoundation:material:832>, [], [<ore:dropRosin>]);
+	HiiragiUtils.tweakOreDict(<thermalfoundation:material:833>, [], [<ore:dropCoaltar>]);
+	HiiragiUtils.tweakOreDict(<thermalfoundation:material:864>, [], [<ore:gemSlag>]);
+	HiiragiUtils.tweakOreDict(<twilightforest:block_storage:0>, [], [<ore:blockIronwood>]);
 
 //このscriptの読み込みの完了をログに出力
 print("oreDict.zs loaded!");

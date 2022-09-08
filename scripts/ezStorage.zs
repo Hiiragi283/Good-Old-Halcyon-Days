@@ -7,11 +7,10 @@
 #priority 0
 
 //crafttweakerからclassをimport
-import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
+import crafttweaker.item.IItemStack;
 
 //各種modからclassをimport
-import mods.artisanworktables.builder.RecipeBuilder;
 import mods.ctintegration.util.RecipePattern;
 
 //scriptのimport
@@ -20,14 +19,7 @@ import scripts.HiiragiUtils;
 //このscriptの読み込みの開始をログに出力
 print("Start loading ezStorage.zs ...");
 
-//変数の定義
-
 //作業台レシピの編集
-	//削除
-	val removeCrafting as IItemStack[] = [];
-	for i in removeCrafting {
-		HiiragiUtils.removeCrafting(i);
-	}
 	//上書き
 	//新規
 		HiiragiUtils.addCraftingShaped(true, <ezstorage:blank_box>, RecipePattern.init(["ABA", "BCB", "ABA"]).map({A:<ore:logWood>, B:<ore:plankWood>, C:<ore:gearWood>}).ingredients, null, null);
@@ -44,9 +36,6 @@ print("Start loading ezStorage.zs ...");
 		HiiragiUtils.addCraftingShaped(true, <ezstorage:sort_box>, RecipePattern.init(["AB"]).map({A:<ore:bookshelf>, B:<ezstorage:blank_box>}).ingredients, null, null);
 		HiiragiUtils.addCraftingShaped(true, <ezstorage:access_terminal>, RecipePattern.init(["ABA"]).map({A:<ore:pearlEnderEye>, B:<ezstorage:storage_core>}).ingredients, null, null);
 		HiiragiUtils.addCraftingShaped(true, <ezstorage:security_box>, RecipePattern.init(["AB"]).map({A:<ezstorage:key>, B:<ezstorage:blank_box>}).ingredients, null, null);
-
-//AWレシピの編集
-	//新規
 
 //このscriptの読み込みの完了をログに出力
 print("ezStorage.zs loaded!");

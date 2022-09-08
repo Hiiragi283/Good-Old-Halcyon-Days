@@ -7,11 +7,10 @@
 #priority 0
 
 //crafttweakerからclassをimport
-import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
+import crafttweaker.item.IItemStack;
 
 //各種modからclassをimport
-import mods.artisanworktables.builder.RecipeBuilder;
 import mods.ctintegration.util.RecipePattern;
 import mods.mekanism.infuser;
 
@@ -21,23 +20,7 @@ import scripts.HiiragiUtils;
 //このscriptの読み込みの開始をログに出力
 print("Start loading mekanism.zs ...");
 
-//変数の定義
-
 //作業台レシピの編集
-	//削除
-	val removeCrafting as IItemStack[] = [
-		<mekanism:controlcircuit:*>,
-		<mekanism:basicblock:8>,
-		<mekanism:speedupgrade>,
-		<mekanism:energyupgrade>,
-		<mekanism:filterupgrade>,
-		<mekanism:mufflingupgrade>,
-		<mekanism:gasupgrade>,
-		<mekanism:anchorupgrade>,
-	];
-	for i in removeCrafting {
-		HiiragiUtils.removeCrafting(i);
-	}
 	//上書き
 	HiiragiUtils.addCraftingShaped(true, <mekanism:basicblock:15>, RecipePattern.init([" A ", "ABA", " A "]).map({A:<mekanism:basicblock2>, B:<minecraft:iron_bars>}).ingredients, null, null);
 	HiiragiUtils.addCraftingShaped(true, <mekanism:basicblock2:0>, RecipePattern.init([" A ", "ABA", " A "]).map({A:<ore:ingotBronze>, B:<ore:ingotCopper>}).ingredients, null, null);
@@ -54,16 +37,13 @@ print("Start loading mekanism.zs ...");
 		HiiragiUtils.addCraftingShaped(true, <mekanism:tierinstaller>.definition.makeStack(i+1), RecipePattern.init(["ABA", "BCB", "ABA"]).map({A:<ore:sheetHDPE>, B:oreDict["alloy" ~ installer[i]], C:oreDict["circuit" ~ installer[i]]}).ingredients, null, null);
 	}
 
-	HiiragiUtils.addCraftingReplace(<ore:ingotOsmium>, <mekanism:basicblock:8>, <mekanism:machineblock:8>);
-	HiiragiUtils.addCraftingReplace(<mekanismgenerators:solarpanel>, <enderio:item_material:3>, <mekanismgenerators:generator:1>);
+	HiiragiUtils.recipeReplace(<ore:ingotOsmium>, <mekanism:basicblock:8>, <mekanism:machineblock:8>);
+	HiiragiUtils.recipeReplace(<mekanismgenerators:solarpanel>, <enderio:item_material:3>, <mekanismgenerators:generator:1>);
 
 	//新規
 	HiiragiUtils.addCraftingShaped(false, <mekanism:basicblock:8>*2, RecipePattern.init(["ABA", "BCB", "ABA"]).map({A:<ore:ingotStainlessSteel>, B:<ore:ingotOsmium>, C:<thermalexpansion:frame:0>}).ingredients, null, null);
 	HiiragiUtils.addCraftingShaped(false, <mekanism:basicblock:8>*2, RecipePattern.init(["ABA", "BCB", "ABA"]).map({A:<ore:ingotStainlessSteel>, B:<ore:ingotOsmium>, C:<enderio:item_material:1>}).ingredients, null, null);
 	HiiragiUtils.addCraftingShapeless(false, <mekanism:biofuel>*4, [<ore:dustWood>|<ore:dustBran>|<ore:dustPlant>|<ore:dustSoycake>|<ore:foodSoypulp>, <ore:dustDraff>, <ore:dirt>], null, null);
-
-//AWレシピの編集
-	//新規
 
 //Metallurgic Infuser
 	mods.mekanism.infuser.removeRecipe(<ore:ingotBronze>);

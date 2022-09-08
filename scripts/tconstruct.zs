@@ -1,5 +1,5 @@
 #====================================================================
-# ファイル名 : tic.zs
+# ファイル名 : tconstruct.zs
 # 作成者 : Hiiragi Russell Tsubasa: https://github.com/Hiiragi283
 # 情報 : Scripts for Tinkers Construct and its addons
 #====================================================================
@@ -11,7 +11,6 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 
 //各種modからclassをimport
-import mods.artisanworktables.builder.RecipeBuilder;
 import mods.chisel.Carving;
 import mods.ctintegration.util.RecipePattern;
 import mods.tconstruct.Casting;
@@ -20,20 +19,12 @@ import mods.zenutils.I18n;
 
 //scriptのimport
 import scripts.HiiragiUtils;
+import scripts.jei;
 
 //このscriptの読み込みの開始をログに出力
-print("Start loading tic.zs ...");
+print("Start loading tconstruct.zs ...");
 
 //作業台レシピの編集
-	//削除
-	val removeCrafting as IItemStack[] = [
-		<tconstruct:faucet>,
-		<tconstruct:channel>,
-		<tconstruct:casting:*>,
-	];
-	for i in removeCrafting {
-		HiiragiUtils.removeCrafting(i);
-	}
 	//上書き
 	HiiragiUtils.addCraftingShaped(true, <tconstruct:smeltery_controller>, RecipePattern.init(["ABA", "ACA", "ADA"]).map({A:<tconstruct:materials:0>, B:<tconstruct:seared_furnace_controller>, C:<tconstruct:tinker_tank_controller>, D:<dcs_climate:dcs_device_chamber>}).ingredients, null, null);
 	//新規
@@ -47,22 +38,15 @@ print("Start loading tic.zs ...");
 
 	//Tool Forgeのレシピの統合
 	recipes.remove(<tconstruct:toolforge>);
-	HiiragiUtils.addCraftingShaped(false, <tconstruct:toolforge>.withTag({textureBlock: {id: "tconstruct:dried_clay", Count: 1 as byte, Damage: 1 as short}}), RecipePattern.init(["AAA", "BCB", "B B"]).map({A:<ore:blockSeared>, B: <tconstruct:dried_clay:1>, C:<tconstruct:tooltables:3>}).ingredients, null, null);
+	HiiragiUtils.addCraftingShaped(false, jei.toolForge, RecipePattern.init(["AAA", "BCB", "B B"]).map({A:<ore:blockSeared>, B:<dcs_climate:dcs_ore_heatingmetal:2>, C:<tconstruct:tooltables:3>}).ingredients, null, null);
+	//Tool Forgeの見た目を変えるレシピ
 	HiiragiUtils.addCraftingShapeless(false, <tconstruct:toolforge>, [<tconstruct:toolforge>, <*>.marked("texture").reuse()], function(out, ins, cInfo) {
 		var owner as string = ins.texture.definition.owner;
 		var id as string = ins.texture.definition.id.split(":")[1];
-		var idMod as string = owner ~ ":" ~ id;
+		//var idMod as string = owner ~ ":" ~ id;
 		var meta as int = ins.texture.metadata;
-		return <tconstruct:toolforge>.withTag({textureBlock: {id: idMod, Count: 1 as byte, Damage: meta as short}});
+		return <tconstruct:toolforge>.withTag({textureBlock: {id: id, Count: 1 as byte, Damage: meta as short}});
 	}, null);
-
-//AWレシピの編集
-	//新規
-	RecipeBuilder.get("basic")
-		.setShapeless([<tconstruct:channel>])
-		.addTool(<ore:artisansHandsaw>, 1)
-		.addOutput(<tconstruct:faucet>*2)
-		.create();
 
 //Castの統一
 	mods.chisel.Carving.addGroup("cast");
@@ -108,7 +92,7 @@ print("Start loading tic.zs ...");
 	}
 	for i in castPattern {
 		//Clay Castの無効化
-		HiiragiUtils.removeFromJEI(HiiragiUtils.castClay(i));
+		jei.removeJEI(HiiragiUtils.castClay(i), false);
 		mods.tconstruct.Casting.removeTableRecipe(HiiragiUtils.castClay(i));
 		//Brass Castを全てchiselから作るように改変
 		mods.tconstruct.Casting.removeTableRecipe(HiiragiUtils.castBrass(i));
@@ -117,7 +101,7 @@ print("Start loading tic.zs ...");
 
 	mods.tconstruct.Casting.removeTableRecipe(HiiragiUtils.castBrass("chisel_head"));
 	mods.tconstruct.Casting.removeTableRecipe(HiiragiUtils.castClay("chisel_head"));
-	HiiragiUtils.removeFromJEI(HiiragiUtils.castClay("chisel_head"));
+	jei.removeJEI(HiiragiUtils.castClay("chisel_head"), false);
 	mods.chisel.Carving.addVariation("cast", HiiragiUtils.castBrass("chisel_head"));
 
 //Alloyingレシピの編集
@@ -126,6 +110,7 @@ print("Start loading tic.zs ...");
 	mods.tconstruct.Alloy.addRecipe(<liquid:manyullyn>*32, [<liquid:cobalt>*16, <liquid:ardite>*16]);
 
 //Castingレシピの編集
+	HiiragiUtils.addCasting("basin", false, <railcraft:bloodstained:2>, <minecraft:sandstone:2>, <liquid:blood>, 40, true, 5*20);
 	HiiragiUtils.addCasting("table", true, <enderio:item_material:11>, <ore:dustBedrock>, <liquid:steel>, 144, true, 5*20);
 	HiiragiUtils.addCasting("table", true, <enderio:item_material:73>, <enderio:item_material:11>, <liquid:dark_steel>, 144, true, 5*20);
 	HiiragiUtils.addCasting("table", true, <enderio:item_material:12>, <enderio:item_material:11>, <liquid:energetic_alloy>, 144, true, 5*20);
@@ -140,30 +125,5 @@ print("Start loading tic.zs ...");
 
 //Meltingレシピの編集
 
-//不要なToolforgeをJEIから削除する
-	val toolForge as short[][string] = {
-		"botania:storage": [0,1,2],
-		"chisel:blockcobalt": [0],
-		"dcs_climate:dcs_ore_metal_alloy": [0,3,4,5,6,9],
-		"dcs_climate:dcs_ore_metal_new": [0],
-		"enderio:block_alloy": [0,1,2,3,4,5,6,7,8,9],
-		"libvulpes:metal0": [4,5,6,9,10,11],
-		"minecraft:glowstone": [0],
-		"minecraft:gold_block": [0],
-		"minecraft:iron_block": [0],
-		"minecraft:redstone_block": [0],
-		"mekanism:basicblock": [0,2,4],
-		"tconevo:metal_block": [4,5,6],
-		"tconstruct:metal": [0,1,2,3,4,5],
-		"thermalfoundation:storage": [0,1,2,3,4,5,6,7],
-		"thermalfoundation:storage_alloy": [0,1,2,3,4,5,6,7],
-		"twilightforest:block_storage": [1,2]
-	};
-	for id, damage in toolForge {
-		for i in damage {
-			HiiragiUtils.removeFromJEI(<tconstruct:toolforge>.withTag({textureBlock: {id: id, Count: 1 as byte, Damage: i}}));
-		}
-	}
-
 //このscriptの読み込みの完了をログに出力
-print("tic.zs loaded!");
+print("tconstruct.zs loaded!");

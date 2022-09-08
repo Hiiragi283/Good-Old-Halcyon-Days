@@ -7,12 +7,11 @@
 #priority 0
 
 //crafttweakerからclassをimport
-import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
+import crafttweaker.item.IItemStack;
 
 //各種modからclassをimport
 import mods.artisanworktables.builder.RecipeBuilder;
-import mods.appliedenergistics2.Inscriber;
 import mods.ctintegration.util.RecipePattern;
 
 //scriptのimport
@@ -21,16 +20,7 @@ import scripts.HiiragiUtils;
 //このscriptの読み込みの開始をログに出力
 print("Start loading ae2.zs ...");
 
-//変数の定義
-
 //作業台レシピの編集
-	//削除
-	val removeCrafting as IItemStack[] = [
-		<appliedenergistics2:material:9>,
-	];
-	for i in removeCrafting {
-		HiiragiUtils.removeCrafting(i);
-		}
 	//上書き
 	//AE2
 	HiiragiUtils.addCraftingShapeless(true, <appliedenergistics2:material>*4, [<appliedenergistics2:quartz_block:0>], null, null);
@@ -45,11 +35,6 @@ print("Start loading ae2.zs ...");
 	//Lazy AE2
 	HiiragiUtils.addCraftingShaped(false, <contenttweaker:assembly_parallel>, RecipePattern.init([" A ", "BCB", " D "]).map({A:HiiragiUtils.toolInput(<appliedenergistics2:certus_quartz_cutting_knife>, 1), B:<ore:dustRedstone>, C:<threng:material:5>, D:<ore:itemSilicon>}).ingredients, null, null);
 	HiiragiUtils.addCraftingShaped(false, <contenttweaker:assembly_speculative>, RecipePattern.init([" A ", "BCB", " D "]).map({A:HiiragiUtils.toolInput(<appliedenergistics2:certus_quartz_cutting_knife>, 1), B:<ore:dustRedstone>, C:<threng:material:13>, D:<ore:itemSilicon>}).ingredients, null, null);
-
-//AWレシピの編集
-	//新規
-
-//Inscriberのレシピ
 
 //このscriptの読み込みの完了をログに出力
 print("ae2.zs loaded!");

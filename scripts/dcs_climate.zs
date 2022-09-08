@@ -1,5 +1,5 @@
 #====================================================================
-# ファイル名 : HaC.zs
+# ファイル名 : dcs_climate.zs
 # 作成者 : Hiiragi Russell Tsubasa: https://github.com/Hiiragi283
 # 情報 : Scripts for Heat And Climate and its addons
 #====================================================================
@@ -7,8 +7,8 @@
 #priority 0
 
 //crafttweakerからclassをimport
-import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
+import crafttweaker.item.IItemStack;
 
 //各種modからclassをimport
 import mods.artisanworktables.builder.RecipeBuilder;
@@ -19,47 +19,16 @@ import mods.tconstruct.Casting;
 import scripts.HiiragiUtils;
 
 //このscriptの読み込みの開始をログに出力
-print("Start loading HaC.zs ...");
+print("Start loading dcs_climate.zs ...");
 
 //変数の定義
 
 //作業台レシピの編集
-	//削除
-	val removeCrafting as IItemStack[] = [
-		<dcs_climate:dcs_device_shaft_l>,
-		<dcs_climate:dcs_device_shaft_ta>,
-		<dcs_climate:dcs_device_shaft_tb>,
-		<dcs_climate:dcs_device_shaft_x>,
-		<dcs_climate:dcs_device_shaft_switch>,
-		<dcs_climate:dcs_device_shaft_l_steel>,
-		<dcs_climate:dcs_device_shaft_ta_steel>,
-		<dcs_climate:dcs_device_shaft_tb_steel>,
-		<dcs_climate:dcs_device_shaft_x_steel>,
-		<dcs_climate:dcs_device_shaft_switch_steel>,
-		<dcs_climate:dcs_device_shaft_l_sus>,
-		<dcs_climate:dcs_device_shaft_ta_sus>,
-		<dcs_climate:dcs_device_shaft_tb_sus>,
-		<dcs_climate:dcs_device_shaft_x_sus>,
-
-		<hap:shaft_l_shaped_steel>,
-		<hap:shaft_bifurcated_steel>,
-		<hap:shaft_perpendicular_steel>,
-		<hap:shaft_t_shaped_steel>,
-		<hap:shaft_x_shaped_steel>,
-		<hap:shaft_l_shaped_sus>,
-		<hap:shaft_bifurcated_sus>,
-		<hap:shaft_perpendicular_sus>,
-		<hap:shaft_t_shaped_sus>,
-		<hap:shaft_x_shaped_sus>,
-	];
-	for i in removeCrafting {
-		HiiragiUtils.removeCrafting(i);
-	}
 
 	//上書き
 	//Heat And Climate
 	HiiragiUtils.addCraftingShaped(true, <dcs_climate:dcs_device_lowchest_wood>, RecipePattern.init(["AAA", "BCB", "AAA"]).map({A:<ore:plankWood>, B:<ore:stickWood>, C:<ore:chest>}).ingredients, null, null);
-	HiiragiUtils.addCraftingReplace(<ore:ingotSteel>, <ore:stickHDPE>, <dcs_climate:dcs_sword_toolsteel>);
+	HiiragiUtils.recipeReplace(<ore:ingotSteel>, <ore:stickHDPE>, <dcs_climate:dcs_sword_toolsteel>);
 
 	//Heat And Processing
 	HiiragiUtils.addCraftingShaped(true, <hap:reactor_advanced>, [
@@ -88,8 +57,5 @@ print("Start loading HaC.zs ...");
 	HiiragiUtils.addCraftingShaped(false, <dcs_climate:dcs_spade_earth>.withTag({ench: [{lvl: 10 as short, id: 34 as short}, {lvl: 1 as short, id: 33 as short}], display: {LocName: "gohd.custom.spade_of_the_gaia.name"}}), RecipePattern.init(["AAA", "ABA", "AAA"]).map({A:<railcraft:jaded_stone>, B:<dcs_climate:dcs_spade_earth:*>}).ingredients, null, null);
 	HiiragiUtils.addCraftingShaped(false, <dcs_climate:dcs_rake_earth>.withTag({ench: [{lvl: 10 as short, id: 34 as short}, {lvl: 1 as short, id: 33 as short}], display: {LocName: "gohd.custom.rake_of_the_gaia.name"}}), RecipePattern.init(["AAA", "ABA", "AAA"]).map({A:<railcraft:jaded_stone>, B:<dcs_climate:dcs_rake_earth:*>}).ingredients, null, null);
 
-//AWレシピの編集
-	//新規
-
 //このscriptの読み込みの完了をログに出力
-print("HaC.zs loaded!");
+print("dcs_climate.zs loaded!");

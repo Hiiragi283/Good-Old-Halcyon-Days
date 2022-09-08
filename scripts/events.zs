@@ -4,7 +4,7 @@
 # 情報 : Scripts for tweaking events
 #====================================================================
 
-#priority 98
+#priority 97
 #loader crafttweaker reloadableevents
 
 //crafttweakerからclassをimport
@@ -103,9 +103,9 @@ events.onBlockHarvestDrops(function(event as BlockHarvestDropsEvent) {
 <entity:minecraft:wither>.addDropFunction(function(entity, damageSource) {
 	var dim as int = entity.dimension;
 	if(dim == 100) {
-		return <contenttweaker:glyph_activated>;
+		return <contenttweaker:division_sigil>;
 	}
-	return <contenttweaker:glyph_divide>;
+	return null;
 });
 
 //このscriptの読み込みの完了をログに出力

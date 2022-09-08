@@ -7,12 +7,12 @@
 #priority 0
 
 //crafttweakerからclassをimport
-import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
+import crafttweaker.item.IItemStack;
 
 //各種modからclassをimport
-import mods.artisanworktables.builder.RecipeBuilder;
 import mods.ctintegration.util.RecipePattern;
+import mods.railcraft.BlastFurnace;
 import mods.tconstruct.Casting;
 
 //scriptのimport
@@ -21,16 +21,7 @@ import scripts.HiiragiUtils;
 //このscriptの読み込みの開始をログに出力
 print("Start loading railcraft.zs ...");
 
-//変数の定義
-
 //作業台レシピの編集
-	//削除
-	val removeCrafting as IItemStack[] = [
-		<railcraft:tie:0>,
-	];
-	for i in removeCrafting {
-		HiiragiUtils.removeCrafting(i);
-	}
 	//上書き
 	//新規
 	HiiragiUtils.addCraftingShaped(false, <railcraft:frostbound:2>*8, RecipePattern.init(["AAA", "ABA", "AAA"]).map({A:<minecraft:packed_ice>, B:<ore:dropBlue>}).ingredients, null, null);
@@ -40,23 +31,9 @@ print("Start loading railcraft.zs ...");
 	HiiragiUtils.addCraftingShaped(false, <railcraft:pearlized:2>*8, RecipePattern.init(["AAA", "ABA", "AAA"]).map({A:<minecraft:end_stone>, B:<ore:dropGreen>}).ingredients, null, null);
 	HiiragiUtils.addCraftingShaped(false, <railcraft:infernal:2>*8, RecipePattern.init(["AAA", "ABA", "AAA"]).map({A:<minecraft:soul_sand>, B:<ore:dropBlack>}).ingredients, null, null);
 	HiiragiUtils.addCraftingShaped(false, <railcraft:locomotive_steam_solid>, RecipePattern.init([" AB", "CCB", "DEE"]).map({A:<railcraft:equipment:3>, B:<railcraft:boiler_firebox_solid>, C:<railcraft:boiler_tank_pressure_high>, D:<ore:barsIron>, E:<minecraft:minecart>}).ingredients, null, null);
-	HiiragiUtils.addCraftingShaped(false, <railcraft:locomotive_electric>, RecipePattern.init(["ABB", "CDC", "EFE"]).map({A:<minecraft:redstone_lamp>, B:<ore:ingotStainlessSteel>, C:<railcraft:charge:5>, D:<dcs_climate:dcs_mechanical>, E:<ore:gearToolSteel>, F:<minecraft:minecart>}).ingredients, null, null);
 
-//AWレシピの編集
-	//新規
-	RecipeBuilder.get("basic")
-	.setShaped(RecipePattern.init(["AA"]).map({A:<ore:slabWood>}).ingredients)
-	.setFluid(<liquid:creosote>*500)
-	.addOutput(<railcraft:tie>*2)
-	.create();
-	RecipeBuilder.get("basic")
-	.setShaped([[<ore:logWood>]])
-	.setFluid(<liquid:creosote>*500)
-	.addOutput(<railcraft:creosote_block>)
-	.create();
-
-//Castingレシピの追加
-	mods.tconstruct.Casting.addBasinRecipe(<railcraft:bloodstained:2>, <minecraft:sandstone:2>, <liquid:blood>, 40, true);
+//Blast Furnaceのレシピの編集
+	mods.railcraft.BlastFurnace.addRecipe("gohd:block_steel", <thermalfoundation:storage_alloy>, <dcs_climate:dcs_ore_metal_alloy:2>, 60, 0);
 
 //このscriptの読み込みの完了をログに出力
 print("railcraft.zs loaded!");

@@ -8,8 +8,8 @@
 
 //crafttweakerからclassをimport
 import crafttweaker.api.IClient;
-import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
+import crafttweaker.item.IItemStack;
 
 //各種modからclassをimport
 import mods.artisanworktables.builder.RecipeBuilder;
@@ -22,12 +22,7 @@ import scripts.HiiragiUtils;
 //このscriptの読み込みの開始をログに出力
 print("Start loading tool.zs ...");
 
-//変数の定義
-	val toRemove as IItemStack[] = [];
-	for i in toRemove {
-		HiiragiUtils.removeCrafting(i);
-	}
-
+//道具のTierを定義
 	val toolTier as IItemStack[][string[]] = {
     ["§lCommon", "§l普通の"]: [
 		<minecraft:carrot_on_a_stick>,

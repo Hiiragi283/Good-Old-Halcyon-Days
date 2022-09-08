@@ -7,8 +7,8 @@
 #priority 97
 
 //crafttweakerからclassをimport
-import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
+import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDictEntry;
 
 //各種modからclassをimport
@@ -19,26 +19,6 @@ import scripts.HiiragiUtils;
 
 //このscriptの読み込みの開始をログに出力
 print("Start loading chisel.zs ...");
-
-//変数の定義
-	//chisel（道具）に鉱石辞書を付与する
-	<ore:artisansChisel>.add([
-		<chisel:chisel_iron>,
-		<chisel:chisel_diamond>,
-		<chisel:chisel_hitech>,
-	]);
-
-//作業台レシピの編集
-	//削除
-	val removeCrafting as IItemStack[] = [];
-	for i in removeCrafting {
-		HiiragiUtils.removeCrafting(i);
-	}
-	//上書き
-	//新規
-
-//AWレシピの編集
-	//新規
 
 //OreDict
 	val chiselOreDict as IItemStack[][string] = {
