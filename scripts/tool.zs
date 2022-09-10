@@ -322,6 +322,7 @@ print("Start loading tool.zs ...");
 		<extrautils2:lawsword>,
 		<mekanism:atomicdisassembler>,
 		<mekanismtools:obsidianpaxel>,
+		<projecte:item.pe_rm_morning_star>,
 	],
 	};
 	for i, j in toolTier {

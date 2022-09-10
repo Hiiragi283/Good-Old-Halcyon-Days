@@ -177,23 +177,23 @@ val armorTier as IItemStack[][string[]] = {
 		<mekanismtools:obsidianchestplate>,
 		<mekanismtools:obsidianleggings>,
 		<mekanismtools:obsidianboots>,
-		//<projecte:item.pe_dm_armor_3>,
-		//<projecte:item.pe_dm_armor_2>,
-		//<projecte:item.pe_dm_armor_1>,
-		//<projecte:item.pe_dm_armor_0>,
-		//<projecte:item.pe_rm_armor_3>,
-		//<projecte:item.pe_rm_armor_2>,
-		//<projecte:item.pe_rm_armor_1>,
-		//<projecte:item.pe_rm_armor_0>,
+		<projecte:item.pe_dm_armor_3>,
+		<projecte:item.pe_dm_armor_2>,
+		<projecte:item.pe_dm_armor_1>,
+		<projecte:item.pe_dm_armor_0>,
+		<projecte:item.pe_rm_armor_3>,
+		<projecte:item.pe_rm_armor_2>,
+		<projecte:item.pe_rm_armor_1>,
+		<projecte:item.pe_rm_armor_0>,
 		<twilightforest:phantom_helmet>,
 		<twilightforest:phantom_chestplate>
 	],
 	["§c§lMythic", "§c§l神話級の"]: [
 		<openblocks:technicolor_glasses>, //It's joke
-		//<projecte:item.pe_gem_armor_3>,
-		//<projecte:item.pe_gem_armor_2>,
-		//<projecte:item.pe_gem_armor_1>,
-		//<projecte:item.pe_gem_armor_0>,
+		<projecte:item.pe_gem_armor_3>,
+		<projecte:item.pe_gem_armor_2>,
+		<projecte:item.pe_gem_armor_1>,
+		<projecte:item.pe_gem_armor_0>,
 	]
 };
 	for i, j in armorTier {
