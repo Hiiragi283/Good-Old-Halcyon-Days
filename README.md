@@ -14,5 +14,9 @@
 ) by delta-nos !
 
 - `resources/botania/textures/*.png`
-  - The textures are licensed under [Botania License](https://botaniamod.net/license.php)
+  - These textures are licensed under [Botania License](https://botaniamod.net/license.php)
   - Thanks to [Botanita](https://github.com/Vazkii](https://github.com/VazkiiMods/Botania)) by Vazkii !
+
+- `resources/minecraft/textures/gui/*`
+  - These textures are licensed under [Creative Commons — Attribution-NonCommercial-ShareAlike 4.0 International — CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+  - Thanks to [Halcyon Days 3D](https://www.planetminecraft.com/texture-pack/162152-halcyon-days-resource-pack-32x/) by ikezou !

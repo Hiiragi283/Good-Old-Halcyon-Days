@@ -16,3 +16,7 @@
 - `resources/botania/textures/*.png`
   - これらのテクスチャは[Botania License](https://botaniamod.net/license.php)の下で使用しています
   - [Botanita](https://github.com/Vazkii](https://github.com/VazkiiMods/Botania)) by Vazkiiに感謝！
+
+- `resources/minecraft/textures/gui/*`
+  - これらのテクスチャは[Creative Commons — Attribution-NonCommercial-ShareAlike 4.0 International — CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)の下で使用しています
+  - [Halcyon Days 3D](https://www.planetminecraft.com/texture-pack/162152-halcyon-days-resource-pack-32x/) by ikezouに感謝！

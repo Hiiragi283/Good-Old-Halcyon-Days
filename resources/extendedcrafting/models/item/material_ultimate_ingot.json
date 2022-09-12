@@ -1,0 +1,7 @@
+{
+  "parent":"item/generated",
+  "textures": {
+    "layer0": "extendedcrafting:items/material_ultimate_ingot",
+		"layer1": "contenttweaker:items/ingot_rainbow_overlay"
+  }
+}

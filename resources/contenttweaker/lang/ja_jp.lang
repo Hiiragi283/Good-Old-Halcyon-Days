@@ -15,17 +15,12 @@ item.contenttweaker.ingot_rainbow.name=虹インゴット
 item.contenttweaker.item_fire.name=火
 item.contenttweaker.quantum_entangler.name=量子もつれデバイス
 item.contenttweaker.reagent_halogen.name=Halogen
-item.contenttweaker.ticket_common.name=らぎチケット (コモン)
-item.contenttweaker.ticket_uncommon.name=らぎチケット (§aアンコモン§r)
-item.contenttweaker.ticket_rare.name=らぎチケット (§9レア§r)
-item.contenttweaker.ticket_epic.name=らぎチケット (§dエピック§r)
-item.contenttweaker.ticket_legendary.name=らぎチケット (§6伝説§r)
-item.contenttweaker.ticket_mythic.name=らぎチケット (§c神話§r)
+item.contenttweaker.ragi_ticket.name=§cらぎチケット
 
 item.contenttweaker.book_reloadevents.name=柊さんの愛読書 (イベントの再読み込み)
 item.contenttweaker.book_syntax.name=柊さんの愛読書 (文法チェック)
 item.contenttweaker.book_facing.name=柊さんの愛読書 (完璧な真正面を向きたい時ってあるよね？)
-item.contenttweaker.book_data.name=柊さんの愛読書 (貴方ノ全テガ此処ニ在ル)
+item.contenttweaker.book_save.name=柊さんの愛読書 (BQのセーブ用)
 
 #Blocks
 tile.contenttweaker.block_bedrockium.name=ベッドロッキウムブロック

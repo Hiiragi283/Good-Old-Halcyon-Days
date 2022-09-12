@@ -2,8 +2,8 @@
   "forge_marker": 1,
   "defaults": {
     "textures": {
-      "texture": "chisel:blocks/coal/coal/circular",
-      "particle": "chisel:blocks/coal/coal/circular"
+      "texture": "extrautils2:panel_indexer_side",
+      "particle": "extrautils2:panel_indexer_side"
     },
     "model": "base:storage",
     "uvlock": true,
