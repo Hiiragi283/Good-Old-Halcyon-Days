@@ -33,7 +33,31 @@ print("Start loading railcraft.zs ...");
 	HiiragiUtils.addCraftingShaped(false, <railcraft:locomotive_steam_solid>, RecipePattern.init([" AB", "CCB", "DEE"]).map({A:<railcraft:equipment:3>, B:<railcraft:boiler_firebox_solid>, C:<railcraft:boiler_tank_pressure_high>, D:<ore:barsIron>, E:<minecraft:minecart>}).ingredients, null, null);
 
 //Blast Furnaceのレシピの編集
-	mods.railcraft.BlastFurnace.addRecipe("gohd:block_steel", <thermalfoundation:storage_alloy>, <dcs_climate:dcs_ore_metal_alloy:2>, 60, 0);
+	val mapBlast as string[] = [
+		"ingot",
+		"bucket",
+		"helmet",
+		"chestplate",
+		"leggings",
+		"boots",
+		"horse_armor",
+		"sword",
+		"shovel",
+		"pickaxe",
+		"axe",
+		"hoe",
+		"shears",
+		"crowbar",
+		"door",
+		"trapdoor",
+		"plate",
+		"boiler_tank",
+		"iron_tank",
+	];
+	for i in mapBlast {
+		mods.railcraft.BlastFurnace.removeRecipe("railcraft:smelt_" ~ i);
+	}
+	mods.railcraft.BlastFurnace.addRecipe("gohd:block_steel", <thermalfoundation:storage_alloy>, <dcs_climate:dcs_ore_metal_alloy:2>, 60*20, 0);
 
 //このscriptの読み込みの完了をログに出力
 print("railcraft.zs loaded!");

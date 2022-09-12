@@ -30,7 +30,7 @@ print("Start loading twilightforest.zs ...");
 	HiiragiUtils.addCraftingShaped(false, <twilightforest:castle_door:3>, RecipePattern.init(["ABA", "BCB", "ABA"]).map({A:<ore:dustVoid>, B:<appliedenergistics2:paint_ball:29>, C:<botania:quartztypedark:1>}).ingredients, null, null);
 	HiiragiUtils.addCraftingShaped(true, <twilightforest:trophy_pedestal>, RecipePattern.init(["ABA", "BCB", "ABA"]).map({A:<ore:ingotSteeleaf>, B:<twilightforest:trophy:*>, C:<twilightforest:stone_twist_thin>}).ingredients, null, null);
 	//置換
-	HiiragiUtils.recipeReplace(<twilightforest:maze_map_focus>, <contenttweaker:ticket_mythic>, <twilightforest:uncrafting_table>);
+	HiiragiUtils.recipeReplace(<twilightforest:maze_map_focus>, <contenttweaker:ragi_ticket>, <twilightforest:uncrafting_table>);
 
 //このscriptの読み込みの完了をログに出力
 print("twilightforest.zs loaded!");

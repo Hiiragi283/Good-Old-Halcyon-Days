@@ -83,6 +83,7 @@ print("Start loading unification.zs ...");
 		<enderio:block_reservoir>,
 		<enderio:block_omni_reservoir>,
 		<enderio:block_solar_panel:*>,
+		<mechanics:heavy_mesh>,
 		<mekanism:controlcircuit:*>,
 		<mekanism:basicblock:8>,
 		<mekanism:speedupgrade>,
@@ -122,6 +123,16 @@ print("Start loading unification.zs ...");
 		"dcs_climate:main_build/dcs_desktop_accessories_8",
 		"dcs_climate:main_container/dcs_gem_blue_1",
 		"dcs_climate:magic/dcs_glowstone_dust_0",
+		"dcs_climate:main_yagen/dcs_oreitem_0",
+		"dcs_climate:main_yagen/dcs_oreitem_1",
+		"dcs_climate:main_yagen/dcs_oreitem_2",
+		"dcs_climate:main_yagen/dcs_oreitem_3",
+		"dcs_climate:main_yagen/dcs_oreitem_4",
+		"dcs_climate:main_yagen/dcs_oreitem_5",
+		"dcs_climate:main_yagen/dcs_oreitem_6",
+		"dcs_climate:main_yagen/dcs_oreitem_7",
+		"dcs_climate:main_yagen/dcs_oreitem_8",
+		"dcs_climate:main_yagen/dcs_oreitem_9",
 		"dcs_climate:main_yagen/dcs_gem_layer_1",
 		"dcs_climate:main_yagen/dcs_gem_layer_4",
 		"enderio:s_a_g_mill_upgrade",
@@ -212,10 +223,10 @@ print("Start loading unification.zs ...");
 		HiiragiUtils.addCraftingShaped(true, <railcraft:coke_block>, RecipePattern.init(["AAA", "AAA", "AAA"]).map({A:<railcraft:fuel_coke>}).ingredients, null, null);
 		HiiragiUtils.addCraftingShaped(true, <thermalfoundation:storage_resource:1>, RecipePattern.init(["AAA", "AAA", "AAA"]).map({A:<thermalfoundation:material:802>}).ingredients, null, null);
 		//Ragi Ticketの分解レシピ
-			HiiragiUtils.addCraftingShapeless(false, <contenttweaker:ticket_common>*4, [<contenttweaker:ticket_uncommon>], null, null);
+			/*HiiragiUtils.addCraftingShapeless(false, <contenttweaker:ticket_common>*4, [<contenttweaker:ticket_uncommon>], null, null);
 			HiiragiUtils.addCraftingShapeless(false, <contenttweaker:ticket_uncommon>*4, [<contenttweaker:ticket_rare>], null, null);
 			HiiragiUtils.addCraftingShapeless(false, <contenttweaker:ticket_rare>*4, [<contenttweaker:ticket_epic>], null, null);
-			HiiragiUtils.addCraftingShapeless(false, <contenttweaker:ticket_epic>*4, [<contenttweaker:ticket_legendary>], null, null);
+			HiiragiUtils.addCraftingShapeless(false, <contenttweaker:ticket_epic>*4, [<contenttweaker:ticket_legendary>], null, null);*/
 		//解釈違いの新たなキューブ
 		HiiragiUtils.addCraftingShapeless(false, <contenttweaker:cube_cyan>, [<ore:blockElestial>, <ore:gemManaDiamond>, <ore:itemPulsatingPowder>], HiiragiUtils.rainCheck(<contenttweaker:cube_cyan_inactive>), null);
 		HiiragiUtils.addCraftingShaped(false, <contenttweaker:cube_cyan>, RecipePattern.init(["AAA", "ABA", "AAA"]).map({A:<minecraft:ghast_tear>, B:<contenttweaker:cube_cyan_inactive>}).ingredients, null, null);
@@ -234,9 +245,9 @@ print("Start loading unification.zs ...");
 		//HiiragiUtils.addCraftingShaped(false, <ftbquests:lootcrate>.withTag({type: "gohd_reward_loot_magic_spell_title"}), RecipePattern.init(["AA", "AB"]).map({A:<ore:paper>, B:<contenttweaker:ticket_uncommon>}).ingredients, null, null);
 		//HiiragiUtils.addCraftingShaped(false, <ftbquests:lootcrate>.withTag({type: "gohd_reward_loot_botania_rod_title"}), RecipePattern.init(["  A", " B ", "B  "]).map({A:<contenttweaker:ticket_rare>, B:<ore:livingwoodTwig>}).ingredients, null, null);
 		//Custom Tools
-		HiiragiUtils.addCraftingShaped(false, jei.axeGaia, RecipePattern.init(["ABA", "BCB", "ABA"]).map({A:<ore:dropofevil>, B:<contenttweaker:ticket_legendary>, C:<botania:elementiumaxe>}).ingredients, null, null);
-		HiiragiUtils.addCraftingShaped(false, jei.gunDevil, RecipePattern.init(["ABC", "BAB", "CBD"]).map({A:<ore:barrelMortar>, B:<contenttweaker:ticket_legendary>, C:<dcs_climate:dcs_cont_fuel:2>, D:<dcs_climate:dcs_musket>}).ingredients, null, null);
-		HiiragiUtils.addCraftingShaped(false, jei.rodSea, RecipePattern.init(["ABC", "BDB", "CBA"]).map({A:<ore:gemPrismarine>, B:<contenttweaker:ticket_legendary>, C:<ore:dustPrismarine>, D:<thermalfoundation:tool.fishing_rod_diamond>}).ingredients, null, null);
+		HiiragiUtils.addCraftingShaped(false, jei.axeGaia, RecipePattern.init(["ABA", "BCB", "ABA"]).map({A:<ore:dropofevil>, B:<contenttweaker:ragi_ticket>, C:<botania:elementiumaxe>}).ingredients, null, null);
+		HiiragiUtils.addCraftingShaped(false, jei.gunDevil, RecipePattern.init(["ABC", "BAB", "CBD"]).map({A:<ore:barrelMortar>, B:<contenttweaker:ragi_ticket>, C:<dcs_climate:dcs_cont_fuel:2>, D:<dcs_climate:dcs_musket>}).ingredients, null, null);
+		HiiragiUtils.addCraftingShaped(false, jei.rodSea, RecipePattern.init(["ABC", "BDB", "CBA"]).map({A:<ore:gemPrismarine>, B:<contenttweaker:ragi_ticket>, C:<ore:dustPrismarine>, D:<thermalfoundation:tool.fishing_rod_diamond>}).ingredients, null, null);
 
 	HiiragiUtils.addCraftingShaped(true, <disenchanter:disenchantmenttable:0>, RecipePattern.init(["ABA", "CDC", "EEE"]).map({A:<botania:spellcloth>, B:<ore:book>, C:<ore:gemEmerald>, D:<ore:woolYellow>, E:<ore:obsidian>}).ingredients, null, null);
 	HiiragiUtils.addCraftingShaped(true, <storagedrawers:framingtable>, RecipePattern.init(["ABA", "C C"]).map({A:<ore:drawerTrim>, B:<minecraft:crafting_table>, C:<dcs_climate:dcs_squaretable_wood>}).ingredients, null, null);
@@ -288,20 +299,20 @@ print("Start loading unification.zs ...");
 	}
 	//新規
 	val addFurnace as IIngredient[IItemStack] = {
-		<tconstruct:channel>: <contenttweaker:unfired_casting_channel>,
-		<tconstruct:casting>: <contenttweaker:unfired_casting_table>,
-		<tconstruct:casting:1>: <contenttweaker:unfired_casting_basin>,
-		<thermalfoundation:rockwool:7>: <ore:dustAsbest>,
 		<appliedenergistics2:material:23>: <appliedenergistics2:material:16>,
 		<appliedenergistics2:material:24>: <appliedenergistics2:material:17>,
 		<appliedenergistics2:material:22>: <appliedenergistics2:material:18>,
 		<contenttweaker:ingot_bedrockium>*9: <ore:compressed8xCobblestone>,
 		<dcs_climate:dcs_tinder:1>: <dcs_climate:dcs_tinder:0>,
+		<mechanics:heavy_block>: <extrautils2:compressedcobblestone:1>,
+		<tconstruct:casting>: <contenttweaker:unfired_casting_table>,
+		<tconstruct:casting:1>: <contenttweaker:unfired_casting_basin>,
+		<tconstruct:channel>: <contenttweaker:unfired_casting_channel>,
+		<tconstruct:metal:5>: <contenttweaker:dustblock_alubrass>,
+		<thermalfoundation:rockwool:7>: <ore:dustAsbest>,
+		<thermalfoundation:storage:3>: <contenttweaker:dustblock_lead>,
 		<threng:material:6>: <contenttweaker:assembly_parallel>,
 		<threng:material:14>: <contenttweaker:assembly_speculative>,
-		<tconstruct:metal:5>: <contenttweaker:dustblock_alubrass>,
-		<thermalfoundation:storage:3>: <contenttweaker:dustblock_lead>,
-		<extrautils2:ingredients:5>: <ore:turfMoon>
 	};
 	for output, input in addFurnace {
 		furnace.addRecipe(output, input);
@@ -314,39 +325,17 @@ val mapTooltip as string[IItemStack] = {
 	<contenttweaker:cube_magenta>: "gohd.tooltip.cube_magenta.name",
 	<contenttweaker:cube_yellow>: "gohd.tooltip.cube_yellow.name",
 	<contenttweaker:dcs_color_ring2>: "gohd.tooltip.dcs_color_ring2.name",
-	//<contenttweaker:glyph_activated>: "gohd.tooltip.sigil_activated.name",
-	//<contenttweaker:glyph_divide>: "gohd.tooltip.sigil_glyph.name",
 	<contenttweaker:ingot_rainbow>: "gohd.tooltip.ingot_rainbow.name",
 	<contenttweaker:quantum_entangler>: "gohd.tooltip.quantum_entangler.name",
-	<contenttweaker:unfired_casting_basin>: "gohd.tooltip.grout_forming.name",
-	<contenttweaker:unfired_casting_channel>: "gohd.tooltip.grout_forming.name",
-	<contenttweaker:unfired_casting_table>: "gohd.tooltip.grout_forming.name",
 	<dcs_climate:dcs_food_unidentified:*>: "gohd.tooltip.identify_microbe.name",
 	<dcs_climate:dcs_magic_card:11>: "gohd.tooltip.cube_spell_green.name",
 	<dcs_climate:dcs_magic_card_m3:*>: "gohd.tooltip.only_crate.name",
-	<dcs_climate:dcs_tinder:1>: "gohd.tooltip.burning_stick.name",
-	<ezstorage:output_port>: "gohd.tooltip.ezstorage_ejection.name",
-	<ezstorage:access_terminal>: "gohd.tooltip.ezstorage_terminal.name",
-	<ezstorage:security_box>: "gohd.tooltip.ezstorage_security.name",
-	<ezstorage:dolly>: "gohd.tooltip.ezstorage_dolly.name",
-	<ezstorage:dolly_super>: "gohd.tooltip.ezstorage_dolly.name",
 	<minecraft:bedrock>: "gohd.tooltip.bedrock.name",
 	<tconstruct:toolforge:0>: "gohd.tooltip.tool_forge.name",
 };
 for i, j in mapTooltip {
 	i.addTooltip(I18n.format(j));
 }
-	//EZ StorageへのTooltipの追加
-	val mapStorage as string[IItemStack] = {
-		<ezstorage:storage_box>: "400",
-		<ezstorage:condensed_storage_box>: "4,000",
-		<ezstorage:super_storage_box>: "20,000",
-		<ezstorage:ultra_storage_box>: "80,000",
-		<ezstorage:hyper_storage_box>: "400,000",
-	};
-	for i, j in mapStorage {
-		i.addTooltip(I18n.format("gohd.tooltip.ezstorage_box.name", j));
-	}
 	//粉末ブロックへのTooltipの追加
 	val mapDustblock as IItemStack[] = itemUtils.getItemsByRegexRegistryName(".*dustblock_.*");
 	for i in mapDustblock {

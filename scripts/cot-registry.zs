@@ -137,12 +137,7 @@ print("Start loading cot-registry.zs ...");
 		"ingot_unstable",
 		//"item_fire",
 		"reagent_halogen",
-		"ticket_common",
-		"ticket_uncommon",
-		"ticket_rare",
-		"ticket_epic",
-		"ticket_legendary",
-		"ticket_mythic",
+		"ragi_ticket",
 	];
 	for i in mapItems {
 		addItem(i);
@@ -266,15 +261,13 @@ print("Start loading cot-registry.zs ...");
 	};
 	book_facing.register();
 
-	val book_data = mods.contenttweaker.VanillaFactory.createItem("book_data");
-	book_data.rarity = "epic";
-	book_data.itemRightClick = function(stack, world, player, hand) {
-		var data as IData = player.data;
-		var json as string = mods.ctintegration.data.DataUtil.toJson(data);
-		print(json);
+	val book_save = mods.contenttweaker.VanillaFactory.createItem("book_save");
+	book_save.rarity = "epic";
+	book_save.itemRightClick = function(stack, world, player, hand) {
+		Commands.call("bq_admin default save", player, world);
 		return "Pass";
 	};
-	book_data.register();
+	book_save.register();
 
 //このscriptの読み込みの完了をログに出力
 print("cot-registry.zs loaded!");

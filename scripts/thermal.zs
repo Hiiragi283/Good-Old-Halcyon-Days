@@ -69,11 +69,11 @@ print("Start loading thermal.zs ...");
 
 //Compactor
 	//Press
-	mods.thermalexpansion.Compactor.addPressRecipe(<enderio:item_material:71>, <ore:dustBedrock>.firstItem*5, 8000);
-	mods.thermalexpansion.Compactor.addPressRecipe(<ezstorage:condensed_storage_box>, <ezstorage:storage_box>*10, 1000);
-	mods.thermalexpansion.Compactor.addPressRecipe(<ezstorage:super_storage_box>, <ezstorage:condensed_storage_box>*4, 4000);
-	mods.thermalexpansion.Compactor.addPressRecipe(<ezstorage:ultra_storage_box>, <ezstorage:super_storage_box>*4, 16000);
-	mods.thermalexpansion.Compactor.addPressRecipe(<ezstorage:hyper_storage_box>, <ezstorage:ultra_storage_box>*5, 64000);
+	//mods.thermalexpansion.Compactor.addPressRecipe(<enderio:item_material:71>, <ore:dustBedrock>.firstItem*5, 8000);
+	//mods.thermalexpansion.Compactor.addPressRecipe(<ezstorage:condensed_storage_box>, <ezstorage:storage_box>*10, 1000);
+	//mods.thermalexpansion.Compactor.addPressRecipe(<ezstorage:super_storage_box>, <ezstorage:condensed_storage_box>*4, 4000);
+	//mods.thermalexpansion.Compactor.addPressRecipe(<ezstorage:ultra_storage_box>, <ezstorage:super_storage_box>*4, 16000);
+	//mods.thermalexpansion.Compactor.addPressRecipe(<ezstorage:hyper_storage_box>, <ezstorage:ultra_storage_box>*5, 64000);
 
 	mods.thermalexpansion.Compactor.addPressRecipe(<advancedrocketry:pressuretank:0>, <ore:plateIron>.firstItem*8, 16000);
 	mods.thermalexpansion.Compactor.addPressRecipe(<advancedrocketry:pressuretank:1>, <ore:plateSteel>.firstItem*8, 16000);
@@ -87,7 +87,7 @@ print("Start loading thermal.zs ...");
 	mods.thermalexpansion.Compactor.addMintRecipe(<advancedrocketry:wafer:0>, <appliedenergistics2:material:5>*4, 4000);
 
 	//Ragi Tickets
-	val mapTicket as int[IItemStack] = {
+	/*val mapTicket as int[IItemStack] = {
 		<thermalfoundation:coin:0>: 1,
 		<thermalfoundation:coin:1>:2,
 		<thermalfoundation:coin:64>: 1,
@@ -115,7 +115,7 @@ print("Start loading thermal.zs ...");
 	mods.thermalexpansion.Compactor.addPressRecipe(<contenttweaker:ticket_rare>, <contenttweaker:ticket_uncommon>*4, 16000);
 	mods.thermalexpansion.Compactor.addPressRecipe(<contenttweaker:ticket_epic>, <contenttweaker:ticket_rare>*4, 32000);
 	mods.thermalexpansion.Compactor.addPressRecipe(<contenttweaker:ticket_legendary>, <contenttweaker:ticket_epic>*4, 64000);
-	//mods.thermalexpansion.Compactor.addPressRecipe(<ftbquests:lootcrate>.withTag({type: "gohd_reward_loot_mythic_title"}), <contenttweaker:ticket_legendary>*8, 128000);
+	mods.thermalexpansion.Compactor.addPressRecipe(<ftbquests:lootcrate>.withTag({type: "gohd_reward_loot_mythic_title"}), <contenttweaker:ticket_legendary>*8, 128000);*/
 
 
 //Fluid Transposer

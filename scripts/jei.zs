@@ -205,6 +205,7 @@ for i, j in mapRemove {
 		];
 		for i in removeTrack {
 			removeJEI(<railcraft:track_outfitted>.withTag({railcraft: {rail: "railcraft_electric", kit: i}}), false);
+			removeJEI(<railcraft:track_outfitted>.withTag({railcraft: {rail: "railcraft_high_speed_electric", kit: "i"}}), false);
 		}
 	//不要なStencil TableをJEIから削除
 		/*val removeStencil as short[][string] = {
