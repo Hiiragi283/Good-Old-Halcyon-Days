@@ -1,7 +1,7 @@
 {
 	"images": {
 		"title": {
-			"image": "custommainmenu:textures/gui/minecraft.png",
+			"image": "minecraft:textures/gui/title/minecraft.png",
 			"posX": -137,
 			"posY": 30,
 			"width": 512,
@@ -77,7 +77,7 @@
 		},
 		"refresh": {
 			"text": "",
-			"posX": -154,
+			"posX": 104,
 			"posY": 132,
 			"width": 20,
 			"height": 20,
