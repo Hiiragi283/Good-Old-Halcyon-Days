@@ -64,10 +64,6 @@ print("Start loading chisel.zs ...");
 		mods.chisel.Carving.addVariation("bedrock", i);
 	}
 
-//Advanced Rocktery
-	//Basalt
-	mods.chisel.Carving.addVariation("basalt", <advancedrocketry:basalt>);
-
 //Biblio Craft
 	//Fancy lantern (Gold)
 	mods.chisel.Carving.addGroup("biblio_fancy_lantern_gold");
@@ -343,7 +339,7 @@ print("Start loading chisel.zs ...");
 	}
 
 //Tinker's Contruct / Complement
-	/*//Scorched Block
+	//Scorched Block
 	for i in 0 to 11 {
 		HiiragiUtils.removeCrafting(<tcomplement:scorched_block>.definition.makeStack(i));
 	}
@@ -354,7 +350,7 @@ print("Start loading chisel.zs ...");
 	}
 	for i in 0 to 3 {
 		mods.chisel.Carving.addVariation("scorched_slab", <tcomplement:scorched_slab2>.definition.makeStack(i));
-	}*/
+	}
 	//Seared Block
 	for i in 0 to 11 {
 		HiiragiUtils.removeCrafting(<tconstruct:seared>.definition.makeStack(i));

@@ -35,7 +35,7 @@ print("Start loading artisanworktables.zs ...");
 		.addTool(<ore:artisansHandsaw>, 1)
 		.addOutput(<tconstruct:faucet>*2)
 		.create();
-	RecipeBuilder.get("basic")
+	RecipeBuilder.get("blacksmith")
 		.setShaped([
 			[null, <ore:pearlFluix>, null, <ore:pearlFluix>],
 			[null, null, <appliedenergistics2:material:41>, null],

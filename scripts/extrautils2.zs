@@ -31,31 +31,27 @@ print("Start loading extrautils2.zs ...");
 		HiiragiUtils.removeCrafting(i);
 	}
 	//上書き
-	HiiragiUtils.addCraftingShaped(true, <extrautils2:lawsword>, RecipePattern.init(["  A", " A ", "B  "]).map({A:<extrautils2:unstableingots:2>, B:<ore:ingotBedrockium>}).ingredients, null, null);
-	HiiragiUtils.addCraftingShaped(true, <extrautils2:compoundbow>, RecipePattern.init([" AB", "C B", " AB"]).map({A:<extrautils2:unstableingots:2>, B: <dcs_climate:dcs_synthetic:0>, C:<ore:ingotBedrockium>}).ingredients, null, null);
+	HiiragiUtils.addCraftingShaped(true, <extrautils2:lawsword>, RecipePattern.init(["  A", " A ", "B  "]).map({A:<ore:ingotStable>, B:<ore:ingotBedrockium>}).ingredients, null, null);
+	HiiragiUtils.addCraftingShaped(true, <extrautils2:compoundbow>, RecipePattern.init([" AB", "C B", " AB"]).map({A:<ore:ingotStable>, B: <dcs_climate:dcs_synthetic:0>, C:<ore:ingotBedrockium>}).ingredients, null, null);
 	//新規
 	HiiragiUtils.addCraftingShaped(false, <extrautils2:machine>.withTag({Type: "crafttweaker:assembler"}), RecipePattern.init(["ABA", "CDC", "ABA"]).map({A:<ore:gearEnergized>, B:<enderio:item_basic_capacitor:1>, C:<hap:conveyor>, D:<enderio:block_crafter>}).ingredients, null, null);
 	HiiragiUtils.addCraftingShaped(false, <extrautils2:machine>.withTag({Type: "crafttweaker:assembler"}), RecipePattern.init(["ABA", "CDC", "ABA"]).map({A:<ore:alloyAdvanced>, B:<ore:circuitAdvanced>, C:<hap:conveyor>, D:<mekanism:machineblock3:5>}).ingredients, null, null);
 	HiiragiUtils.addCraftingShaped(false, <extrautils2:machine>.withTag({Type: "crafttweaker:assembler"}), RecipePattern.init(["ABA", "CDC", "ABA"]).map({A:<ore:gearSignalum>, B:<ore:plateSignalum>, C:<hap:conveyor>, D:<thermalexpansion:machine:11>}).ingredients, null, null);
 	HiiragiUtils.addCraftingShaped(false, <extrautils2:machine>.withTag({Type: "crafttweaker:apiary"}), RecipePattern.init(["AAA", "ABA", "CDC"]).map({A:<botania:livingwood:0>, B:<extrautils2:machine>, C:<biomesoplenty:filled_honeycomb>, D:<railcraft:equipment:2>}).ingredients, null, null);
 
-
 	HiiragiUtils.addCraftingShaped(true, <extrautils2:machine:0>, RecipePattern.init(["AAA", "ABA", "CCC"]).map({A:<ore:ingotInvar>, B:<ore:gemRedstone>, C:<ore:ingotSteel>}).ingredients, null, null);
 	HiiragiUtils.addCraftingShaped(false, <extrautils2:machine:0>*3, RecipePattern.init(["AAA", "ABA", "CCC"]).map({A:<ore:ingotToolSteel>, B:<ore:gemRedstone>, C:<ore:ingotStainlessSteel>}).ingredients, null, null);
 	HiiragiUtils.addCraftingShaped(false, <extrautils2:decorativesolid:8>*8, RecipePattern.init(["AAA", "ABA", "AAA"]).map({A:<extrautils2:decorativesolid:3>, B:<contenttweaker:ingot_rainbow>|<contenttweaker:cube_iridescent>}).ingredients, null, null);
-	recipes.addShaped(<extrautils2:itemcreativebuilderswand>, [[null, <ore:ingotUnstable>], [<ore:obsidian>, null]]);
-	recipes.addShaped(<extrautils2:itemcreativedestructionwand>, [[<ore:ingotStable>, null], [null, <ore:obsidian>]]);
+	HiiragiUtils.addCraftingShaped(false, <extrautils2:itemcreativebuilderswand>, [[null, <ore:ingotUnstable>], [<ore:obsidian>, null]], null, null);
+	HiiragiUtils.addCraftingShaped(false, <extrautils2:itemcreativedestructionwand>, [[<ore:ingotStable>, null], [null, <ore:obsidian>]], null, null);
 
 	HiiragiUtils.addCraftingShapeless(false, <extrautils2:creativeharvest>, [<extrautils2:creativeharvest>, <*>.marked("creative")], function(out, ins, cInfo) {
-		var owner as string = ins.creative.definition.owner;
-		var id as string = ins.creative.definition.id.split(":")[1];
-		var idMod as string = owner ~ ":" ~ id;
+		var id as string = ins.creative.definition.id;
 		var meta as int = ins.creative.metadata;
-		return <extrautils2:creativeharvest>.withTag({creative_block: {meta: meta, block: idMod}, display_stack: {id: idMod, Count: 1 as byte, Damage: meta as short}});
+		return <extrautils2:creativeharvest>.withTag({creative_block: {meta: meta, block: id}, display_stack: {id: id, Count: 1 as byte, Damage: meta as short}});
 	}, null);
 
-//AWレシピの編集
-	//新規
+	HiiragiUtils.recipeReplace(<minecraft:gold_ingot>, <ore:ingotEnergeticAlloy>, <extrautils2:grocket:6>);
 
 //Assemblerのレシピ
 	static machineAssembler as IMachine = extrautilities2.Tweaker.IMachineRegistry.getMachine("assembler");
@@ -65,26 +61,6 @@ print("Start loading extrautils2.zs ...");
 	}
 
 	val mapAssembler as WeightedItemStack[IIngredient[]] = {
-		//Advanced Rocktery
-		[<ore:fusedQuartz>, <advancedrocketry:lens>]: <advancedrocketry:blocklens>,
-		[<ore:waferSilicon>, <ore:dustCoal>]: <advancedrocketry:itemcircuitplate:0>,
-		[<ore:waferSilicon>, <ore:gemEmerald>]: <advancedrocketry:itemcircuitplate:1>,
-		[<ore:waferSilicon>, <ore:gemOlivine>]: <advancedrocketry:itemcircuitplate:1>*2,
-		[<advancedrocketry:ic:2>, <ore:pearlEnderEye>]: <advancedrocketry:ic:1>,
-		[<thermalfoundation:material:512>, <ore:plateIron>]: <advancedrocketry:ic:3>,
-		[<thermalfoundation:material:512>, <ore:plateGold>]: <advancedrocketry:ic:4>,
-		[<thermalfoundation:material:512>, <ore:plateLead>]: <advancedrocketry:ic:5>,
-		[<advancedrocketry:ic:0>, <ore:gemEmerald>]: <advancedrocketry:dataunit>,
-		[<advancedrocketry:ic:0>, <ore:gemOlivine>]: <advancedrocketry:dataunit>*2,
-		[<advancedrocketry:ic:2>, <extrautils2:biomemarker>]: <advancedrocketry:satelliteprimaryfunction:5>,
-		[<botania:lens:4>, <advancedrocketry:ic:3>]: <advancedrocketry:itemupgrade:0>,
-		[<botania:lens:2>, <advancedrocketry:ic:3>]: <advancedrocketry:itemupgrade:1>,
-		[<ore:blockMotor>, <advancedrocketry:ic:3>]: <advancedrocketry:itemupgrade:2>,
-		[<minecraft:leather_boots>, <advancedrocketry:ic:3>]: <advancedrocketry:itemupgrade:3>,
-		[<pickletweaks:nightvision_goggles>, <advancedrocketry:ic:3>]: <advancedrocketry:itemupgrade:4>,
-		[<advancedrocketry:itemupgrade:4>, <advancedrocketry:ic:1>]: <advancedrocketry:beaconfinder>,
-		[<advancedrocketry:misc:0>, <advancedrocketry:ic:1>]: <advancedrocketry:biomechanger>,
-		[<advancedrocketry:misc:0>, <advancedrocketry:lens>]: <advancedrocketry:atmanalyser>,
 		//Building Gadgets
 		[<buildinggadgets:buildingtool>, <extrautils2:itemcreativedestructionwand>]:  <buildinggadgets:exchangertool>,
 		[<buildinggadgets:buildingtool>, <thermalfoundation:diagram_redprint>]:  <buildinggadgets:copypastetool>,

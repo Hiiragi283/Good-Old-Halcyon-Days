@@ -9,12 +9,16 @@
 
 //crafttweakerからclassをimport
 import crafttweaker.block.IBlock;
+import crafttweaker.data.IData;
 import crafttweaker.entity.IEntity;
+import crafttweaker.entity.IEntityCreature;
 import crafttweaker.entity.IEntityDefinition;
 import crafttweaker.entity.IEntityLivingBase;
 import crafttweaker.event.BlockHarvestDropsEvent;
 import crafttweaker.event.IBlockEvent;
 import crafttweaker.event.ILivingEvent;
+import crafttweaker.event.PlayerAttackEntityEvent;
+import crafttweaker.event.PlayerDeathDropsEvent;
 import crafttweaker.event.PlayerTickEvent;
 import crafttweaker.events.IEventManager;
 import crafttweaker.item.IItemStack;
@@ -39,7 +43,7 @@ events.onPlayerTick(function(event as PlayerTickEvent) {
 		if(world.getWorldTime() % 20 == 0) {
 			//特定のアイテムを利き手に持っている際にイベントを起こす
 			if(!isNull(player.mainHandHeldItem)) {
-				var itemMain as IItemStack = player.mainHandHeldItem;
+				val itemMain as IItemStack = player.mainHandHeldItem;
 				//Bedrockium Ingot
 				if(itemMain.matches(<contenttweaker:ingot_bedrockium>) || itemMain.matches(<contenttweaker:block_bedrockium>)) {
 					player.addPotionEffect(<potion:minecraft:slowness>.makePotionEffect(120, 4));
@@ -51,7 +55,7 @@ events.onPlayerTick(function(event as PlayerTickEvent) {
 			}
 			//特定のアイテムを利き手とは逆に持っている際にイベントを起こす
 			if(!isNull(player.offHandHeldItem)){
-				var itemOff as IItemStack = player.offHandHeldItem;
+				val itemOff as IItemStack = player.offHandHeldItem;
 				//Rainbow Ingot
 				if(itemOff.matches(<contenttweaker:ingot_rainbow>)) {
 					player.addPotionEffect(<potion:minecraft:strength>.makePotionEffect(120, 7));
@@ -100,12 +104,14 @@ events.onBlockHarvestDrops(function(event as BlockHarvestDropsEvent) {
 	}
 });
 
+//プレイヤーが死ぬと魂のかけらをドロップする
+events.onPlayerDeathDrops(function(event as PlayerDeathDropsEvent) {
+	event.addItem(<contenttweaker:drop_soul>);
+});
+
+//ウィザーが死ぬと除算のシジルを確定でドロップする
 <entity:minecraft:wither>.addDropFunction(function(entity, damageSource) {
-	var dim as int = entity.dimension;
-	if(dim == 100) {
-		return <contenttweaker:division_sigil>;
-	}
-	return null;
+	return <contenttweaker:division_sigil>;
 });
 
 //このscriptの読み込みの完了をログに出力

@@ -4,14 +4,17 @@
 # 情報 : Registry new feature with Content Tweaker
 #====================================================================
 
-#priority 100
+#priority 999
 #loader contenttweaker
 
 //crafttweakerからclassをimport
 import crafttweaker.data.IData;
+import crafttweaker.entity.IEntityCreature;
+import crafttweaker.entity.IEntityDefinition;
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 import crafttweaker.player.IPlayer;
+import crafttweaker.util.IRandom;
 import crafttweaker.world.IBlockAccess;
 import crafttweaker.world.IWorld;
 
@@ -22,8 +25,11 @@ import mods.contenttweaker.BlockState;
 import mods.contenttweaker.BlockPos;
 import mods.contenttweaker.Color;
 import mods.contenttweaker.Commands;
+import mods.contenttweaker.enchantments.EnchantmentBuilder;
 import mods.contenttweaker.IBlockColorSupplier;
 import mods.contenttweaker.IItemRightClick;
+import mods.contenttweaker.MaterialBuilder;
+import mods.contenttweaker.MaterialSystem;
 import mods.contenttweaker.ResourceLocation;
 import mods.contenttweaker.SoundType;
 import mods.contenttweaker.VanillaFactory;
@@ -96,30 +102,39 @@ print("Start loading cot-registry.zs ...");
 		};
 		block.register();
 	}
-	//活性済みキューブを登録する関数
+	//魔法のキューブを登録する関数
 	function addCube (id as string, material as BlockMaterial, hardness as float, resistance as float, tool as string, toolLevel as int, sound as SoundType, isFull as bool) {
-		var block = VanillaFactory.createBlock(id, material);
-		block.setBlockHardness(hardness);
-		block.setBlockResistance(resistance);
-		block.setToolClass(tool);
-		block.setToolLevel(toolLevel);
-		block.setBlockSoundType(sound);
-		block.fullBlock = isFull;
-		block.axisAlignedBB = AxisAlignedBB.create(0.25, 0.25, 0.25, 0.75, 0.75, 0.75);
-		block.register();
+		var cubeAct = VanillaFactory.createBlock(id, material);
+		cubeAct.setBlockHardness(hardness);
+		cubeAct.setBlockResistance(resistance);
+		cubeAct.setToolClass(tool);
+		cubeAct.setToolLevel(toolLevel);
+		cubeAct.setBlockSoundType(sound);
+		cubeAct.fullBlock = isFull;
+		cubeAct.axisAlignedBB = AxisAlignedBB.create(0.25, 0.25, 0.25, 0.75, 0.75, 0.75);
+		cubeAct.register();
+		var cubeInact = VanillaFactory.createBlock(id ~ "_inactive", material);
+		cubeInact.setBlockHardness(hardness);
+		cubeInact.setBlockResistance(resistance);
+		cubeInact.setToolClass(tool);
+		cubeInact.setToolLevel(toolLevel);
+		cubeInact.setBlockSoundType(sound);
+		cubeInact.fullBlock = isFull;
+		cubeInact.axisAlignedBB = AxisAlignedBB.create(0.25, 0.00, 0.25, 0.75, 0.50, 0.75);
+		cubeInact.register();
 	}
 	//不活性なキューブを登録する関数
-	function addCubeInactive (id as string, material as BlockMaterial, hardness as float, resistance as float, tool as string, toolLevel as int, sound as SoundType, isFull as bool) {
-		var block = VanillaFactory.createBlock(id, material);
-		block.setBlockHardness(hardness);
-		block.setBlockResistance(resistance);
-		block.setToolClass(tool);
-		block.setToolLevel(toolLevel);
-		block.setBlockSoundType(sound);
-		block.fullBlock = isFull;
-		block.axisAlignedBB = AxisAlignedBB.create(0.25, 0.00, 0.25, 0.75, 0.50, 0.75);
-		block.register();
-	}
+	/*function addCubeInactive (id as string, material as BlockMaterial, hardness as float, resistance as float, tool as string, toolLevel as int, sound as SoundType, isFull as bool) {
+		var cubeInact = VanillaFactory.createBlock(id, material);
+		cubeInact.setBlockHardness(hardness);
+		cubeInact.setBlockResistance(resistance);
+		cubeInact.setToolClass(tool);
+		cubeInact.setToolLevel(toolLevel);
+		cubeInact.setBlockSoundType(sound);
+		cubeInact.fullBlock = isFull;
+		cubeInact.axisAlignedBB = AxisAlignedBB.create(0.25, 0.00, 0.25, 0.75, 0.50, 0.75);
+		cubeInact.register();
+	}*/
 
 //アイテムの登録処理
 	//ただのアイテムの登録
@@ -131,6 +146,7 @@ print("Start loading cot-registry.zs ...");
 		"gem_carbon",
 		//"glyph_divide",
 		"division_sigil",
+		//"dust_shadestone",
 		"ingot_bedrockium",
 		"ingot_rainbow",
 		"ingot_stable",
@@ -138,14 +154,19 @@ print("Start loading cot-registry.zs ...");
 		//"item_fire",
 		"reagent_halogen",
 		"ragi_ticket",
+		"symbol_cross",
+		"symbol_nocraft",
+		"symbol_tick",
 	];
 	for i in mapItems {
 		addItem(i);
 	}
 	//色付きアイテムの登録処理
 	val mapItemColor as string[string][string] = {
-		"grout_ball": {"D0D1D6": "minecraft:items/snowball"},
+		"drop_soul": {"FFCCFF": "dcs_climate:items/food/drop_cream"},
 		"feather_black": {"181818": "minecraft:items/feather"},
+		"grout_ball": {"D0D1D6": "minecraft:items/snowball"},
+		"dust_shadestone": {"2D2D2D": "minecraft:items/sugar"}
 	};
 	for i, j in mapItemColor {
 		for k, l in j {
@@ -192,37 +213,25 @@ print("Start loading cot-registry.zs ...");
 
 //ブロックの登録
 	//機能をもたないブロック
+	addBlock("block_bedrockium", <blockmaterial:rock>, 1000.0, 18000000.0, "pickaxe", 8, <soundtype:stone>, true);
+	addBlock("block_shadestone", <blockmaterial:glass>, 0.3, 0.3, "pickaxe", -1, <soundtype:glass>, true);
+	addBlock("dummy_collector", <blockmaterial:rock>, 0.3, 0.3, "pickaxe", -1, <soundtype:stone>, true);
+	addBlock("dummy_link", <blockmaterial:rock>, 0.3, 0.3, "pickaxe", -1, <soundtype:stone>, true);
+	addBlock("dummy_relay", <blockmaterial:rock>, 0.3, 0.3, "pickaxe", -1, <soundtype:stone>, true);
 	addBlock("unfired_casting_channel", <blockmaterial:grass>, 3.0, 0.5, "shovel", -1, <soundtype:ground>, false);
 	addBlock("unfired_casting_table", <blockmaterial:grass>, 3.0, 0.5, "shovel", -1, <soundtype:ground>, false);
 	addBlock("unfired_casting_basin", <blockmaterial:grass>, 3.0, 0.5, "shovel", -1, <soundtype:ground>, false);
-	addBlock("block_bedrockium", <blockmaterial:rock>, 1000.0, 18000000.0, "pickaxe", 8, <soundtype:stone>, true);
+
 	addBlock("pumpkin_melon", <blockmaterial:wood>, 1.0, 1.0, "axe", -1, <soundtype:wood>, true); //Pumpkin Melon (@PumpkinMelon4) 氏に感謝!
-	addBlockColored("advstructuremachine", <blockmaterial:rock>, 3.0, 15.0, "pickaxe", 4, <soundtype:stone>, "AE9169");
+
 	//粉末ブロックの登録
-	val registerDustBlock as string[string] = {
-		"alubrass": "F3D367",
-		"ardite": "C44712",
-		"cobalt": "5050FA",
-		"constantan": "D1A35B",
-		"electrum": "BE9A45",
-		"invar": "818D88",
-		"iridium": "C6C4E2",
-		"lead": "605E6A",
-		"manyullyn": "A681E1",
-		"osmium": "ABBDCF",
-		"platinum": "C2D0D8",
-	};
-	for i, j in registerDustBlock {
-		addBlockColored("dustblock_" ~ i, <blockmaterial:rock>, 1.5, 15.0, "shovel", 0, <soundtype:stone>, j);
-	}
+	addBlockColored("dustblock_lead", <blockmaterial:rock>, 1.5, 15.0, "shovel", 0, <soundtype:stone>, "605E6A");
 
 	//HaCのキューブを追加
-	addCubeInactive("cube_yellow_inactive", <blockmaterial:rock>, 1.0, 15.0, "pickaxe", -1, <soundtype:stone>, false);
-	addCubeInactive("cube_magenta_inactive", <blockmaterial:rock>, 1.0, 15.0, "pickaxe", -1, <soundtype:stone>, false);
-	addCubeInactive("cube_cyan_inactive", <blockmaterial:rock>, 1.0, 15.0, "pickaxe", -1, <soundtype:stone>, false);
 	addCube("cube_yellow", <blockmaterial:rock>, 1.0, 15.0, "pickaxe", -1, <soundtype:stone>, false);
 	addCube("cube_magenta", <blockmaterial:rock>, 1.0, 15.0, "pickaxe", -1, <soundtype:stone>, false);
 	addCube("cube_cyan", <blockmaterial:rock>, 1.0, 15.0, "pickaxe", -1, <soundtype:stone>, false);
+
 	var block = VanillaFactory.createBlock("cube_iridescent", <blockmaterial:glass>);
 	block.setBlockHardness(1.0);
 	block.setBlockResistance(15.0);
@@ -230,9 +239,8 @@ print("Start loading cot-registry.zs ...");
 	block.setToolLevel(4);
 	block.setBlockSoundType(<soundtype:glass>);
 	block.fullBlock = false;
-	//block.lightOpacity = 0;
 	block.lightValue = 1;
-	//block.translucent = true;
+	block.translucent = true;
 	block.axisAlignedBB = AxisAlignedBB.create(0.25, 0.25, 0.25, 0.75, 0.75, 0.75);
 	block.register();
 
@@ -240,7 +248,7 @@ print("Start loading cot-registry.zs ...");
 	val book_reloadEvents = mods.contenttweaker.VanillaFactory.createItem("book_reloadevents");
 	book_reloadEvents.rarity = "epic";
 	book_reloadEvents.itemRightClick = function(stack, world, player, hand) {
-		Commands.call("ct reloadevents", player, world);
+		Commands.call("ct reload", player, world);
 		return "Pass";
 	};
 	book_reloadEvents.register();
@@ -268,6 +276,20 @@ print("Start loading cot-registry.zs ...");
 		return "Pass";
 	};
 	book_save.register();
+
+//エンチャントの登録
+
+//溶融錬鉄の登録
+val materialWroughtIron = MaterialSystem.getMaterialBuilder()
+	.setName("Wrought Iron")
+	.setColor(HexHelper.toDecInteger("2e2e2e"))
+	.build()
+	.registerPart("molten" as string).getData();
+	materialWroughtIron.addDataValue("luminosity", "10");
+	materialWroughtIron.addDataValue("density", "2000");
+	materialWroughtIron.addDataValue("temperature", "769");
+	materialWroughtIron.addDataValue("viscosity", "10000");
+	materialWroughtIron.addDataValue("vaporize", "false");
 
 //このscriptの読み込みの完了をログに出力
 print("cot-registry.zs loaded!");

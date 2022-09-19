@@ -57,7 +57,7 @@ print("Start loading railcraft.zs ...");
 	for i in mapBlast {
 		mods.railcraft.BlastFurnace.removeRecipe("railcraft:smelt_" ~ i);
 	}
-	mods.railcraft.BlastFurnace.addRecipe("gohd:block_steel", <thermalfoundation:storage_alloy>, <dcs_climate:dcs_ore_metal_alloy:2>, 60*20, 0);
+	mods.railcraft.BlastFurnace.addRecipe("gohd:block_steel", <thermalfoundation:storage_alloy>, <dcs_climate:dcs_ore_metal_alloy:2>, 60*20, 9);
 
 //このscriptの読み込みの完了をログに出力
 print("railcraft.zs loaded!");

@@ -24,8 +24,21 @@ print("Start loading projecte.zs ...");
 
 //作業台レシピの編集
 recipes.removeByMod("projectex");
-	//上書き
 	//新規
+	HiiragiUtils.addCraftingShaped(false, <projectex:energy_link>, RecipePattern.init(["ABA", "CDC", "ABA"]).map({A:<ore:ingotBedrockium>, B:<ore:blockDarkMatter>, C:<contenttweaker:drop_soul>, D:<projecte:transmutation_table>}).ingredients, null, null);
+	HiiragiUtils.addCraftingShaped(false, <projectex:personal_link>, RecipePattern.init(["ABA", "BCB", "ADA"]).map({A:<ore:blockDarkMatter>, B:<ore:hopper>, C:<projecte:condenser_mk2>, D:<dcs_climate:dcs_device_hopper_filter>}).ingredients, null, null);
+	HiiragiUtils.addCraftingShapeless(false, <projectex:refined_link>, [<projectex:personal_link>, <appliedenergistics2:interface>, <ore:itemRedMatter>], null, null);
+	HiiragiUtils.addCraftingShapeless(false, <projectex:arcane_tablet>, [<projecte:item.pe_transmutation_tablet>, <projecte:item.pe_klein_star:5>, <tconstruct:tooltables>], null, null);
+
+	HiiragiUtils.addCraftingConv(<projecte:collector_mk3>, <contenttweaker:dummy_collector>);
+	HiiragiUtils.addCraftingConv(<projecte:relay_mk3>, <contenttweaker:dummy_relay>);
+	HiiragiUtils.addCraftingConv(<projectex:energy_link>, <contenttweaker:dummy_link>);
+
+	//置換
+	//HiiragiUtils.recipeReplace(<ore:blockDiamond>, <ore:compressed5xCobblestone>, <projecte:item.pe_matter>);
+	HiiragiUtils.recipeReplace(<ore:obsidian>, <contenttweaker:block_shadestone>, <projecte:relay_mk1>);
+	HiiragiUtils.recipeReplace(<ore:obsidian>, <contenttweaker:block_shadestone>, <projecte:relay_mk2>);
+	HiiragiUtils.recipeReplace(<ore:obsidian>, <contenttweaker:block_shadestone>, <projecte:relay_mk3>);
 
 //EMCの編集
 	//EMCの読み込み
@@ -35,19 +48,22 @@ recipes.removeByMod("projectex");
 	val mapEMC as long[IItemStack] = {
 		//Stone
 		<minecraft:cobblestone>: 1,
-		<extrautils2:compressedcobblestone:0>: 9,
+		/*<extrautils2:compressedcobblestone:0>: 9,
 		<extrautils2:compressedcobblestone:1>: 81,
 		<extrautils2:compressedcobblestone:2>: 729,
 		<extrautils2:compressedcobblestone:3>: 6561,
 		<extrautils2:compressedcobblestone:4>: 59049,
 		<extrautils2:compressedcobblestone:5>: 531441,
 		<extrautils2:compressedcobblestone:6>: 4782969,
-		<extrautils2:compressedcobblestone:7>: 43046721,
+		<extrautils2:compressedcobblestone:7>: 43046721,*/
 		<minecraft:stone:0>: 1,
 		<minecraft:stone:1>: 1,
 		<minecraft:stone:3>: 1,
 		<minecraft:stone:5>: 1,
 		<minecraft:mossy_cobblestone>: 2,
+		<minecraft:netherrack>: 2,
+		/*<extrautils2:compressednetherrack:0>: 18,
+		<extrautils2:compressednetherrack:1>: 162,*/
 		<minecraft:end_stone>: 4,
 		<chisel:basalt2:7>: 1,
 		<chisel:limestone2:7>: 1,
@@ -57,6 +73,16 @@ recipes.removeByMod("projectex");
 		<dcs_climate:dcs_layer_skarn:1>: 1,
 		<dcs_climate:dcs_layer_skarn:2>: 1,
 		<dcs_climate:dcs_ore_gemblock:6>: 1,
+		<railcraft:abyssal_stone>: 1,
+		<railcraft:jaded_stone>: 1,
+		<railcraft:quarried_stone>: 1,
+		<twilightforest:maze_stone>: 1,
+		<twilightforest:naga_stone>: 1,
+		<twilightforest:underbrick>: 2,
+		<twilightforest:deadrock:2>: 4,
+		<twilightforest:trollsteinn>: 4,
+		<twilightforest:castle_brick>: 4,
+		<twilightforest:castle_rune_brick:*>: 8,
 		//Color Ore
 		<dcs_climate:dcs_ore_stone_new:0>: 1024,
 		<dcs_climate:dcs_ore_stone_new:1>: 1024,
@@ -70,30 +96,36 @@ recipes.removeByMod("projectex");
 		<dcs_climate:dcs_ore_stone_new:9>: 2048,
 		//Dirt
 		<minecraft:dirt>: 1,
-		<extrautils2:compresseddirt:0>: 9,
+		/*<extrautils2:compresseddirt:0>: 9,
 		<extrautils2:compresseddirt:1>: 81,
 		<extrautils2:compresseddirt:2>: 729,
-		<extrautils2:compresseddirt:3>: 6561,
+		<extrautils2:compresseddirt:3>: 6561,*/
 		<biomesoplenty:dirt:0>: 1,
 		<biomesoplenty:dirt:1>: 1,
 		<biomesoplenty:dirt:2>: 1,
+		<twilightforest:uberous_soil>: 4,
+		<tconstruct:slime_dirt:*>: 2,
+		<tconstruct:slime_grass:*>: 2,
 		//Gravel
 		<minecraft:gravel>: 1,
-		<extrautils2:compressedgravel:0>: 9,
-		<extrautils2:compressedgravel:1>: 81,
-		//Netherrack
-		<minecraft:netherrack>: 2,
-		<extrautils2:compressednetherrack:0>: 18,
-		<extrautils2:compressednetherrack:1>: 162,
+		/*<extrautils2:compressedgravel:0>: 9,
+		<extrautils2:compressedgravel:1>: 81,*/
+		//Gem
+		<minecraft:coal:0>: 64,
+		<minecraft:diamond>: 8192,
 		//Sand
 		<minecraft:sand>: 1,
-		<extrautils2:compressedsand:0>: 9,
-		<extrautils2:compressedsand:1>: 81,
+		/*<extrautils2:compressedsand:0>: 9,
+		<extrautils2:compressedsand:1>: 81,*/
 		<biomesoplenty:white_sand>: 1,
 		<biomesoplenty:dried_sand>: 1,
 		<chisel:brownstone>: 2,
 		//Other
 		<minecraft:dragon_egg>: 32768,
+		<projecte:item.pe_matter:1>: 466944,
+		<twilightforest:aurora_block>: 2,
+		<twilightforest:wispy_cloud>: 4,
+		<twilightforest:fluffy_cloud>: 4,
 	};
 	for i, j in mapEMC {
 		EMCManager.setEMC(i, j);

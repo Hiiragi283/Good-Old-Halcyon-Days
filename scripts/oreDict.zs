@@ -22,12 +22,9 @@ print("Start loading oreDict.zs ...");
 
 	HiiragiUtils.tweakOreDict(<biomesoplenty:filled_honeycomb>, [<ore:dropHoney>], []);
 	HiiragiUtils.tweakOreDict(<dcs_climate:dcs_fooddust:7>, [<ore:dustWood>], []);
-	HiiragiUtils.tweakOreDict(<minecraft:gold_block>, [<ore:blockWarpCoreCore>], []);
-	//HiiragiUtils.tweakOreDict(<libvulpes:metal0:7>, [<ore:blockWarpCoreRim>], []);
 
 	HiiragiUtils.tweakOreDict(<dcs_climate:dcs_ore_metal_alloy:2>, [<ore:all>], [<ore:blockWroughtIron>]);
 
-	HiiragiUtils.tweakOreDict(<advancedrocketry:basalt>, [], [<ore:stoneBasalt>]);
 	HiiragiUtils.tweakOreDict(<botania:manaresource:2>, [], [<ore:gemManaDiamond>]);
 	HiiragiUtils.tweakOreDict(<botania:manaresource:9>, [], [<ore:gemDragonStone>]);
 	HiiragiUtils.tweakOreDict(<botania:manaresource:22>, [], [<ore:itemCloth>]);
@@ -46,16 +43,12 @@ print("Start loading oreDict.zs ...");
 	HiiragiUtils.tweakOreDict(<contenttweaker:reagent_halogen>, [], [<ore:dustHalogen>]);
 	HiiragiUtils.tweakOreDict(<contenttweaker:block_bedrockium>, [], [<ore:blockBedrockium>]);
 	HiiragiUtils.tweakOreDict(<contenttweaker:ingot_bedrockium>, [], [<ore:ingotBedrockium>]);
+	HiiragiUtils.tweakOreDict(<contenttweaker:ingot_stable>, [], [<ore:ingotStable>, <ore:ingotUnstable>]);
+	HiiragiUtils.tweakOreDict(<contenttweaker:ingot_unstable>, [], [<ore:ingotUnstable>]);
 	HiiragiUtils.tweakOreDict(<contenttweaker:cube_cyan>, [], [<ore:cubeCyan>]);
 	HiiragiUtils.tweakOreDict(<contenttweaker:cube_magenta>, [], [<ore:cubeMagenta>]);
 	HiiragiUtils.tweakOreDict(<contenttweaker:cube_yellow>, [], [<ore:cubeYellow>]);
 	HiiragiUtils.tweakOreDict(<contenttweaker:pumpkin_melon>, [], [<ore:listAllveggie>]);
-	//HiiragiUtils.tweakOreDict(<contenttweaker:plate_titanium>, [], [<ore:plateTitanium>]);
-	//HiiragiUtils.tweakOreDict(<contenttweaker:stick_iron>, [], [<ore:stickIron>]);
-	//HiiragiUtils.tweakOreDict(<contenttweaker:stick_copper>, [], [<ore:stickCopper>]);
-	//HiiragiUtils.tweakOreDict(<contenttweaker:stick_steel>, [], [<ore:stickSteel>]);
-	//HiiragiUtils.tweakOreDict(<contenttweaker:stick_titanium>, [], [<ore:stickTitanium>]);
-	//HiiragiUtils.tweakOreDict(<contenttweaker:stick_iridium>, [], [<ore:stickIridium>]);
 	HiiragiUtils.tweakOreDict(<dcs_climate:dcs_miscdust:3>, [], [<ore:dustSawDust>]);
 	HiiragiUtils.tweakOreDict(<dcs_climate:dcs_ore_gemblock:10>, [], [<ore:blockPeridot>]);
 	HiiragiUtils.tweakOreDict(<dcs_climate:dcs_synthetic:2>, [], [<ore:blockGlassHardened>, <ore:fusedQuartz>]);

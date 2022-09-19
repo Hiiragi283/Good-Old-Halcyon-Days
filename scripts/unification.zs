@@ -31,9 +31,6 @@ print("Start loading unification.zs ...");
 //作業台レシピの編集
 	//削除
 	val removeCrafting as IItemStack[] = [
-		<advancedrocketry:concrete>,
-		<advancedrocketry:ic:*>,
-		<advancedrocketry:productgear:*>,
 		<appliedenergistics2:material:9>,
 		<compactmachines3:psd>,
 		<dcs_climate:dcs_magic_card_m3:*>,
@@ -122,7 +119,9 @@ print("Start loading unification.zs ...");
 		"dcs_climate:main_build/dcs_desktop_accessories_7",
 		"dcs_climate:main_build/dcs_desktop_accessories_8",
 		"dcs_climate:main_container/dcs_gem_blue_1",
-		"dcs_climate:magic/dcs_glowstone_dust_0",
+		"dcs_climate:main_container/dcs_ore_metal_alloy_2",
+		//"dcs_climate:magic/dcs_glowstone_dust_0",
+		"dcs_climate:magic/dcs_blaze_powder_0",
 		"dcs_climate:main_yagen/dcs_oreitem_0",
 		"dcs_climate:main_yagen/dcs_oreitem_1",
 		"dcs_climate:main_yagen/dcs_oreitem_2",
@@ -168,6 +167,15 @@ print("Start loading unification.zs ...");
 		"mekanism:machineblock_7_alt_alt_alt_alt_alt_alt",
 		"mekanism:machineblock_7_alt_alt_alt_alt_alt_alt_alt",
 		"mekanism:machineblock_7_alt_alt_alt_alt_alt_alt_alt_alt",
+		"projecte:conversions/emerald_to_diamond",
+		"projecte:conversions/diamond_to_emerald",
+		"projecte:conversions/diamond_to_gold",
+		"projecte:conversions/gold_to_diamond",
+		"projecte:conversions/gold_to_iron",
+		"projecte:conversions/iron_to_ender_pearl",
+		"projecte:conversions/iron_to_gold",
+		"projecte:item.pe_matter_1",
+		"projecte:item.pe_matter_1_alt",
 		"railcraft:block_creosote",
 		"railcraft:minecraft_torch$1",
 		"railcraft:minecraft_torch$2",
@@ -193,16 +201,18 @@ print("Start loading unification.zs ...");
 		recipes.removeByRecipeName("dcs_lib:balloon_" ~ i ~ "_dcs");
 	}
 	//追加
-		//HaCの色のしずく/エッセンスによる粉末の変換
+		//HaCの色のしずくによる素材の変換
+		HiiragiUtils.addCraftingShapeless(false, <ore:dustRedstone>.firstItem, [<ore:dropRed>, <ore:dustGunpowder>], null, null);
 		HiiragiUtils.addCraftingShapeless(false, <minecraft:slime_ball>, [<ore:dropGreen>, <ore:dustGunpowder>], null, null);
-		HiiragiUtils.addCraftingShapeless(false, <ore:dustBlizz>.firstItem, [<ore:dropBlue>, <ore:dustGunpowder>], null, null);
-		HiiragiUtils.addCraftingShapeless(false, <ore:dustBlitz>.firstItem, [<ore:dropWhite>, <ore:dustGunpowder>], null, null);
-		HiiragiUtils.addCraftingShapeless(false, <ore:dustBasalz>.firstItem, [<ore:dropBlack>, <ore:dustGunpowder>], null, null);
-		HiiragiUtils.addCraftingShapeless(false, <ore:dustPyrotheum>.firstItem, [<ore:extractRed>, <ore:dustBlaze>], null, null);
+		HiiragiUtils.addCraftingShapeless(false, <ore:dustBorax>.firstItem, [<ore:dropBlue>, <ore:dustGunpowder>], null, null);
+		//HiiragiUtils.addCraftingShapeless(false, <ore:dustGlowstone>.firstItem, [<ore:dropWhite>, <ore:dustGunpowder>], null, null);
+		HiiragiUtils.addCraftingShapeless(false, <ore:dustCoal>.firstItem, [<ore:dropBlack>, <ore:dustGunpowder>], null, null);
+		//HaCの色のエッセンスによる素材の変換
+		HiiragiUtils.addCraftingShapeless(false, <ore:dustBlaze>.firstItem, [<ore:extractRed>, <ore:dustGunpowder>], null, null);
 		HiiragiUtils.addCraftingShapeless(false, <enderio:item_material:62>, [<ore:extractGreen>, <ore:slimeball>], null, null);
-		HiiragiUtils.addCraftingShapeless(false, <ore:dustCryotheum>.firstItem, [<ore:extractBlue>, <ore:dustBlizz>], null, null);
-		HiiragiUtils.addCraftingShapeless(false, <ore:dustAerotheum>.firstItem, [<ore:extractWhite>, <ore:dustBlitz>], null, null);
-		HiiragiUtils.addCraftingShapeless(false, <ore:dustPetrotheum>.firstItem, [<ore:extractBlack>, <ore:dustBasalz>], null, null);
+		HiiragiUtils.addCraftingShapeless(false, <ore:dustBlizz>.firstItem, [<ore:extractBlue>, <ore:dustGunpowder>], null, null);
+		HiiragiUtils.addCraftingShapeless(false, <ore:dustBlitz>.firstItem, [<ore:extractWhite>, <ore:dustGunpowder>], null, null);
+		HiiragiUtils.addCraftingShapeless(false, <ore:dustBasalz>.firstItem, [<ore:extractBlack>, <ore:dustGunpowder>], null, null);
 		//松明のレシピの調整
 		val mapTinder as IOreDictEntry[] = [
 			<ore:coal>,
@@ -222,11 +232,6 @@ print("Start loading unification.zs ...");
 		HiiragiUtils.addCraftingShaped(true, <dcs_climate:dcs_cont_fuel>, RecipePattern.init(["AAA", "AAA", "AAA"]).map({A:<dcs_climate:dcs_reagent:13>}).ingredients, null, null);
 		HiiragiUtils.addCraftingShaped(true, <railcraft:coke_block>, RecipePattern.init(["AAA", "AAA", "AAA"]).map({A:<railcraft:fuel_coke>}).ingredients, null, null);
 		HiiragiUtils.addCraftingShaped(true, <thermalfoundation:storage_resource:1>, RecipePattern.init(["AAA", "AAA", "AAA"]).map({A:<thermalfoundation:material:802>}).ingredients, null, null);
-		//Ragi Ticketの分解レシピ
-			/*HiiragiUtils.addCraftingShapeless(false, <contenttweaker:ticket_common>*4, [<contenttweaker:ticket_uncommon>], null, null);
-			HiiragiUtils.addCraftingShapeless(false, <contenttweaker:ticket_uncommon>*4, [<contenttweaker:ticket_rare>], null, null);
-			HiiragiUtils.addCraftingShapeless(false, <contenttweaker:ticket_rare>*4, [<contenttweaker:ticket_epic>], null, null);
-			HiiragiUtils.addCraftingShapeless(false, <contenttweaker:ticket_epic>*4, [<contenttweaker:ticket_legendary>], null, null);*/
 		//解釈違いの新たなキューブ
 		HiiragiUtils.addCraftingShapeless(false, <contenttweaker:cube_cyan>, [<ore:blockElestial>, <ore:gemManaDiamond>, <ore:itemPulsatingPowder>], HiiragiUtils.rainCheck(<contenttweaker:cube_cyan_inactive>), null);
 		HiiragiUtils.addCraftingShaped(false, <contenttweaker:cube_cyan>, RecipePattern.init(["AAA", "ABA", "AAA"]).map({A:<minecraft:ghast_tear>, B:<contenttweaker:cube_cyan_inactive>}).ingredients, null, null);
@@ -241,13 +246,25 @@ print("Start loading unification.zs ...");
 		], null, null);
 		//青の金のリングの置き換え
 		HiiragiUtils.addCraftingShaped(false, <contenttweaker:dcs_color_ring2>, [[<ore:dustCrystal>], [<ore:dropBlue>], [<ore:ingotGold>]], null, null);
-		//Loot Crate
-		//HiiragiUtils.addCraftingShaped(false, <ftbquests:lootcrate>.withTag({type: "gohd_reward_loot_magic_spell_title"}), RecipePattern.init(["AA", "AB"]).map({A:<ore:paper>, B:<contenttweaker:ticket_uncommon>}).ingredients, null, null);
-		//HiiragiUtils.addCraftingShaped(false, <ftbquests:lootcrate>.withTag({type: "gohd_reward_loot_botania_rod_title"}), RecipePattern.init(["  A", " B ", "B  "]).map({A:<contenttweaker:ticket_rare>, B:<ore:livingwoodTwig>}).ingredients, null, null);
 		//Custom Tools
 		HiiragiUtils.addCraftingShaped(false, jei.axeGaia, RecipePattern.init(["ABA", "BCB", "ABA"]).map({A:<ore:dropofevil>, B:<contenttweaker:ragi_ticket>, C:<botania:elementiumaxe>}).ingredients, null, null);
 		HiiragiUtils.addCraftingShaped(false, jei.gunDevil, RecipePattern.init(["ABC", "BAB", "CBD"]).map({A:<ore:barrelMortar>, B:<contenttweaker:ragi_ticket>, C:<dcs_climate:dcs_cont_fuel:2>, D:<dcs_climate:dcs_musket>}).ingredients, null, null);
 		HiiragiUtils.addCraftingShaped(false, jei.rodSea, RecipePattern.init(["ABC", "BDB", "CBA"]).map({A:<ore:gemPrismarine>, B:<contenttweaker:ragi_ticket>, C:<ore:dustPrismarine>, D:<thermalfoundation:tool.fishing_rod_diamond>}).ingredients, null, null);
+		///クモ糸の置換
+		val replaceString as IItemStack[] = [
+			<extrautils2:goldenlasso>,
+			<minecraft:book>,
+			<tconstruct:slimesling:0>,
+			<tconstruct:slimesling:1>,
+			<tconstruct:slimesling:2>,
+			<tconstruct:slimesling:3>,
+			<tconstruct:slimesling:4>,
+			<tconstruct:slimesling:5>,
+			<tconstruct:materials:15>,
+		];
+		for i in replaceString {
+			HiiragiUtils.recipeReplace(<minecraft:string>, <ore:string>, i);
+		}
 
 	HiiragiUtils.addCraftingShaped(true, <disenchanter:disenchantmenttable:0>, RecipePattern.init(["ABA", "CDC", "EEE"]).map({A:<botania:spellcloth>, B:<ore:book>, C:<ore:gemEmerald>, D:<ore:woolYellow>, E:<ore:obsidian>}).ingredients, null, null);
 	HiiragiUtils.addCraftingShaped(true, <storagedrawers:framingtable>, RecipePattern.init(["ABA", "C C"]).map({A:<ore:drawerTrim>, B:<minecraft:crafting_table>, C:<dcs_climate:dcs_squaretable_wood>}).ingredients, null, null);
@@ -267,15 +284,9 @@ print("Start loading unification.zs ...");
 		<dcs_climate:dcs_ingot:11>,
 		<dcs_climate:dcs_reagent:3>,
 		<threng:material:0>,
-		<libvulpes:productingot:4>,
-		<libvulpes:productingot:5>,
-		<libvulpes:productingot:6>,
-		<libvulpes:productingot:7>,
-		<libvulpes:productingot:9>,
-		<libvulpes:productingot:10>,
-		<mekanism:ingot:1>,
+		//<mekanism:ingot:1>,
 		<minecraft:clay_ball>,
-		<minecraft:gold_ingot>,
+		/*<minecraft:gold_ingot>,
 		<minecraft:iron_ingot>,
 		<thermalfoundation:material:128>,
 		<thermalfoundation:material:129>,
@@ -292,7 +303,7 @@ print("Start loading unification.zs ...");
 		<thermalfoundation:material:163>,
 		<thermalfoundation:material:164>,
 		<tconstruct:ingots:0>,
-		<tconstruct:ingots:1>,
+		<tconstruct:ingots:1>,*/
 	];
 	for i in removeFurnace {
 		furnace.remove(i);
@@ -308,7 +319,6 @@ print("Start loading unification.zs ...");
 		<tconstruct:casting>: <contenttweaker:unfired_casting_table>,
 		<tconstruct:casting:1>: <contenttweaker:unfired_casting_basin>,
 		<tconstruct:channel>: <contenttweaker:unfired_casting_channel>,
-		<tconstruct:metal:5>: <contenttweaker:dustblock_alubrass>,
 		<thermalfoundation:rockwool:7>: <ore:dustAsbest>,
 		<thermalfoundation:storage:3>: <contenttweaker:dustblock_lead>,
 		<threng:material:6>: <contenttweaker:assembly_parallel>,
@@ -331,7 +341,11 @@ val mapTooltip as string[IItemStack] = {
 	<dcs_climate:dcs_magic_card:11>: "gohd.tooltip.cube_spell_green.name",
 	<dcs_climate:dcs_magic_card_m3:*>: "gohd.tooltip.only_crate.name",
 	<minecraft:bedrock>: "gohd.tooltip.bedrock.name",
-	<tconstruct:toolforge:0>: "gohd.tooltip.tool_forge.name",
+	<contenttweaker:drop_soul>: "gohd.jei.drop_soul.name",
+	<tconstruct:rack:*>: "gohd.tooltip.tcon_appear.name",
+	<tconstruct:tooltables:1>: "gohd.tooltip.tcon_appear.name",
+	<tconstruct:tooltables:2>: "gohd.tooltip.tcon_appear.name",
+	<tconstruct:toolforge:0>: "gohd.tooltip.tcon_appear.name",
 };
 for i, j in mapTooltip {
 	i.addTooltip(I18n.format(j));

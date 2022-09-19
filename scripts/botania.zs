@@ -87,19 +87,6 @@ print("Start loading botania.zs ...");
 	ElvenTrade.addRecipe([<contenttweaker:elven_pearl>], [<botania:manaresource:1>]);
 	ElvenTrade.addRecipe([<contenttweaker:ephemerald>], [<botania:manaresource:2>]);
 	ElvenTrade.addRecipe([<botania:specialflower>.withTag({type: "dreaming_daisy"})], [<botania:specialflower>.withTag({type: "puredaisy"})]);
-	//BOP`s Corals
-	ElvenTrade.addRecipe([<biomesoplenty:coral:0>], [<minecraft:dye:15>]);
-	//BOP's Lilies
-	ElvenTrade.addRecipe([<biomesoplenty:waterlily:0>], [<minecraft:waterlily>]);
-	//BOP's Plants
-	ElvenTrade.addRecipe([<biomesoplenty:plant_0:0>], [<minecraft:tallgrass:1>]);
-	//BOP's Double Plants
-	ElvenTrade.addRecipe([<biomesoplenty:double_plant:0>], [<minecraft:double_plant:2>]);
-	//BOP's Mushrooms
-	ElvenTrade.addRecipe([<biomesoplenty:mushroom:4>], [<botania:mushroom:12>]);
-	//BOP`s Flowers
-	ElvenTrade.addRecipe([<biomesoplenty:flower_1:5>], [<minecraft:double_plant:4>]);
-
 
 //Mana Infusion
 	val removePool as IItemStack[] = [
@@ -131,45 +118,6 @@ print("Start loading botania.zs ...");
 	mods.botania.ManaInfusion.addInfusion(<botania:manaresource:16>*3, <dcs_climate:dcs_synthetic:0>, 5000);
 	mods.botania.ManaInfusion.addInfusion(<botania:manaresource:16>*4, <dcs_climate:dcs_misc:8>, 5000);
 
-	//BOP's Corals
-	for i in 0 to 4 {
-		mods.botania.ManaInfusion.addAlchemy(<biomesoplenty:coral>.definition.makeStack(i+1), <biomesoplenty:coral>.definition.makeStack(i), 400);
-	}
-	mods.botania.ManaInfusion.addAlchemy(<biomesoplenty:coral:0>, <biomesoplenty:coral:4>, 400);
-	//BOP's Lilies
-	for i in 0 to 3 {
-		mods.botania.ManaInfusion.addAlchemy(<biomesoplenty:waterlily>.definition.makeStack(i+1), <biomesoplenty:waterlily>.definition.makeStack(i), 400);
-	}
-	mods.botania.ManaInfusion.addAlchemy(<biomesoplenty:waterlily:0>, <biomesoplenty:waterlily:3>, 400);
-	//BOP's Plants
-	for i in 0 to 15 {
-		mods.botania.ManaInfusion.addAlchemy(<biomesoplenty:plant_0>.definition.makeStack(i+1), <biomesoplenty:plant_0>.definition.makeStack(i), 400);
-	}
-	mods.botania.ManaInfusion.addAlchemy(<biomesoplenty:plant_1:0>, <biomesoplenty:plant_0:15>, 400);
-	for i in 0 to 11 {
-		mods.botania.ManaInfusion.addAlchemy(<biomesoplenty:plant_1>.definition.makeStack(i+1), <biomesoplenty:plant_1>.definition.makeStack(i), 400);
-	}
-	mods.botania.ManaInfusion.addAlchemy(<biomesoplenty:plant_0:0>, <biomesoplenty:plant_1:11>, 400);
-	//BOP's Double Plants
-	for i in 0 to 3 {
-		mods.botania.ManaInfusion.addAlchemy(<biomesoplenty:double_plant>.definition.makeStack(i+1), <biomesoplenty:double_plant>.definition.makeStack(i), 400);
-	}
-	mods.botania.ManaInfusion.addAlchemy(<biomesoplenty:double_plant:0>, <biomesoplenty:double_plant:3>, 400);
-	//BOP's Mushrooms
-	for i in 0 to 5 {
-		mods.botania.ManaInfusion.addAlchemy(<biomesoplenty:mushroom>.definition.makeStack(i+1), <biomesoplenty:mushroom>.definition.makeStack(i), 400);
-	}
-	mods.botania.ManaInfusion.addAlchemy(<biomesoplenty:mushroom:0>, <biomesoplenty:mushroom:5>, 400);
-	//BOP's Flowers
-	for i in 0 to 15 {
-		mods.botania.ManaInfusion.addAlchemy(<biomesoplenty:flower_0>.definition.makeStack(i+1), <biomesoplenty:flower_0>.definition.makeStack(i), 400);
-	}
-	mods.botania.ManaInfusion.addAlchemy(<biomesoplenty:flower_1:0>, <biomesoplenty:flower_0:15>, 400);
-	for i in 0 to 5 {
-		mods.botania.ManaInfusion.addAlchemy(<biomesoplenty:flower_1>.definition.makeStack(i+1), <biomesoplenty:flower_1>.definition.makeStack(i), 400);
-	}
-	mods.botania.ManaInfusion.addAlchemy(<biomesoplenty:flower_0:0>, <biomesoplenty:flower_1:5>, 400);
-
 //Orechid Ignem
 	mods.botania.OrechidIgnem.removeOre(<ore:oreQuartz>);
 
@@ -197,7 +145,7 @@ print("Start loading botania.zs ...");
 	PureDaisy.addRecipe(<twilightforest:twilight_sapling:9>, <biomesoplenty:sapling_1>);
 	PureDaisy.addRecipe(<dcs_climate:dcs_ore_gemblock:6>, <botania:livingrock>);
 	PureDaisy.addRecipe(<twilightforest:root:0>, <twilightforest:root:1>);
-	for i in 0 to 16 {
+	for i in 0 to 4 {
 		PureDaisy.addRecipe(<twilightforest:twilight_log>.definition.makeStack(i), <botania:livingwood>);
 		PureDaisy.addRecipe(<twilightforest:magic_log>.definition.makeStack(i), <botania:livingwood>);
 	}
@@ -283,11 +231,11 @@ print("Start loading botania.zs ...");
 		.corner(<minecraft:red_nether_brick>);
 	val agglo_workshop = AgglomerationMultiblock.create()
 		.center(<artisanworktables:workstation:5>)
-		.centerReplace(<artisanworktables:workshop:5>)
+		.centerReplace(<artisanworktables:workshop:3>)
 		.edge(<tconstruct:tooltables:0>)
 		.edgeReplace(<dcs_climate:dcs_squaretable_wood>)
-		.corner(<tconstruct:seared_tank:1>)
-		.cornerReplace(<tconstruct:seared_glass:0>);
+		.corner(<enderio:block_tank:1>)
+		.cornerReplace(<enderio:block_decoration2:12>);
 
 	Agglomeration.addRecipe(AgglomerationRecipe.create()
 		.output(<extrautils2:snowglobe:1>)
@@ -345,11 +293,11 @@ print("Start loading botania.zs ...");
 		.manaCost(250000)
 		.multiblock(agglo_elven));
 	Agglomeration.addRecipe(AgglomerationRecipe.create()
-		.output(<extrautils2:contract>)
+		.output(<extrautils2:wrench>)
 		.inputs([
-			<minecraft:paper>,
-			<inspirations:dyed_bottle:0>,
-			<twilightforest:magic_map_focus>,
+			<thermalfoundation:wrench>,
+			<enderio:item_yeta_wrench>,
+			<mekanism:configurator>,
 		])
 		.manaCost(50000)
 		.multiblock(agglo_workshop));

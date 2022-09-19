@@ -69,56 +69,12 @@ print("Start loading thermal.zs ...");
 
 //Compactor
 	//Press
-	//mods.thermalexpansion.Compactor.addPressRecipe(<enderio:item_material:71>, <ore:dustBedrock>.firstItem*5, 8000);
-	//mods.thermalexpansion.Compactor.addPressRecipe(<ezstorage:condensed_storage_box>, <ezstorage:storage_box>*10, 1000);
-	//mods.thermalexpansion.Compactor.addPressRecipe(<ezstorage:super_storage_box>, <ezstorage:condensed_storage_box>*4, 4000);
-	//mods.thermalexpansion.Compactor.addPressRecipe(<ezstorage:ultra_storage_box>, <ezstorage:super_storage_box>*4, 16000);
-	//mods.thermalexpansion.Compactor.addPressRecipe(<ezstorage:hyper_storage_box>, <ezstorage:ultra_storage_box>*5, 64000);
-
-	mods.thermalexpansion.Compactor.addPressRecipe(<advancedrocketry:pressuretank:0>, <ore:plateIron>.firstItem*8, 16000);
-	mods.thermalexpansion.Compactor.addPressRecipe(<advancedrocketry:pressuretank:1>, <ore:plateSteel>.firstItem*8, 16000);
-	mods.thermalexpansion.Compactor.addPressRecipe(<advancedrocketry:pressuretank:2>, <ore:plateAluminum>.firstItem*8, 16000);
-	mods.thermalexpansion.Compactor.addPressRecipe(<advancedrocketry:pressuretank:3>, <ore:plateTitanium>.firstItem*8, 16000);
-
-	//mods.thermalexpansion.Compactor.addPressRecipe(<railcraft:charge:1>, <dcs_climate:dcs_ingot:4>*4, 4000);
-	mods.thermalexpansion.Compactor.addPressRecipe(<contenttweaker:gem_carbon>, <dcs_climate:dcs_reagent:13>*64, 32000);
-
+	mods.thermalexpansion.Compactor.addPressRecipe(<projectex:compressed_refined_link>, <projectex:refined_link>*6, 128000);
+	mods.thermalexpansion.Compactor.addPressRecipe(<contenttweaker:gem_carbon>, <dcs_climate:dcs_reagent:13>*32, 8000);
 	//Mint
-	mods.thermalexpansion.Compactor.addMintRecipe(<advancedrocketry:wafer:0>, <appliedenergistics2:material:5>*4, 4000);
-
-	//Ragi Tickets
-	/*val mapTicket as int[IItemStack] = {
-		<thermalfoundation:coin:0>: 1,
-		<thermalfoundation:coin:1>:2,
-		<thermalfoundation:coin:64>: 1,
-		<thermalfoundation:coin:65>: 1,
-		<thermalfoundation:coin:66>: 2,
-		<thermalfoundation:coin:67>: 1,
-		<thermalfoundation:coin:68>: 2,
-		<thermalfoundation:coin:69>: 2,
-		<thermalfoundation:coin:70>: 16,
-		<thermalfoundation:coin:71>: 16,
-		<thermalfoundation:coin:72>: 16,
-		<thermalfoundation:coin:96>: 4,
-		<thermalfoundation:coin:97>: 4,
-		<thermalfoundation:coin:98>: 4,
-		<thermalfoundation:coin:99>: 2,
-		<thermalfoundation:coin:100>: 4,
-		<thermalfoundation:coin:101>: 8,
-		<thermalfoundation:coin:102>: 8,
-		<thermalfoundation:coin:103>: 16,
-	};
-	for i, j in mapTicket {
-		mods.thermalexpansion.Compactor.addMintRecipe(<contenttweaker:ticket_common>*j, i*3, 4000);
-	}
-	mods.thermalexpansion.Compactor.addPressRecipe(<contenttweaker:ticket_uncommon>, <contenttweaker:ticket_common>*4, 8000);
-	mods.thermalexpansion.Compactor.addPressRecipe(<contenttweaker:ticket_rare>, <contenttweaker:ticket_uncommon>*4, 16000);
-	mods.thermalexpansion.Compactor.addPressRecipe(<contenttweaker:ticket_epic>, <contenttweaker:ticket_rare>*4, 32000);
-	mods.thermalexpansion.Compactor.addPressRecipe(<contenttweaker:ticket_legendary>, <contenttweaker:ticket_epic>*4, 64000);
-	mods.thermalexpansion.Compactor.addPressRecipe(<ftbquests:lootcrate>.withTag({type: "gohd_reward_loot_mythic_title"}), <contenttweaker:ticket_legendary>*8, 128000);*/
-
 
 //Fluid Transposer
+	//Fill
 	mods.thermalexpansion.Transposer.addFillRecipe(<extrautils2:decorativesolidwood:1>, <minecraft:bookshelf>, <liquid:xpjuice>*500, 1600);
 	mods.thermalexpansion.Transposer.addFillRecipe(<extrautils2:ingredients:12>, <minecraft:gold_ingot>, <liquid:xpjuice>*500, 1600);
 	mods.thermalexpansion.Transposer.addFillRecipe(<extrautils2:magicapple>, <minecraft:apple>, <liquid:xpjuice>*500, 1600);
@@ -131,9 +87,12 @@ print("Start loading thermal.zs ...");
 	mods.thermalexpansion.Transposer.addFillRecipe(<threng:material:5>, <appliedenergistics2:crystal_seed:1200>.withTag({progress: 1200}), <liquid:ender>*1000, 4000);
 	mods.thermalexpansion.Transposer.addFillRecipe(<appliedenergistics2:material:9>, <appliedenergistics2:crystal_seed:1200>.withTag({progress: 1200}), <liquid:dcs.chorus_liquor>*1000, 8000);
 	mods.thermalexpansion.Transposer.addFillRecipe(<extrautils2:suncrystal:0>, <extrautils2:suncrystal:250>, <liquid:liquid_sunshine>*1000, 8000);
-
 	mods.thermalexpansion.Transposer.addFillRecipe(<biomesoplenty:jar_filled:0>, <biomesoplenty:jar_empty>, <liquid:honey>*1000, 400);
+	mods.thermalexpansion.Transposer.addFillRecipe(<contenttweaker:dust_shadestone>, <minecraft:glowstone_dust>, <liquid:obsidian>*72, 8000);
+	//Extract
 	mods.thermalexpansion.Transposer.addExtractRecipe(<liquid:honey>*1000, <biomesoplenty:jar_filled:0>, 400, <biomesoplenty:jar_filled:0>);
+	mods.thermalexpansion.Transposer.addExtractRecipe(<liquid:honey>*1000, <biomesoplenty:jar_filled:0>, 400, <biomesoplenty:jar_filled:0>);
+
 
 	val mapFuel as ILiquidStack[] = [
 		<liquid:dcs.fuel_oil>,
@@ -160,8 +119,6 @@ print("Start loading thermal.zs ...");
 
 //Induction Smelter
 	mods.thermalexpansion.InductionSmelter.addRecipe(<contenttweaker:block_bedrockium>, <enderio:block_infinity:2>, <contenttweaker:ingot_rainbow>, 1000000);
-	mods.thermalexpansion.InductionSmelter.addRecipe(<advancedrocketry:productingot:0>*10, <thermalfoundation:material:132>*7, <dcs_climate:dcs_ingot:11>*3, 18000);
-	mods.thermalexpansion.InductionSmelter.addRecipe(<advancedrocketry:productingot:1>*2, <thermalfoundation:material:135>, <dcs_climate:dcs_ingot:11>, 18000);
 
 	mods.thermalexpansion.InductionSmelter.addRecipe(<dcs_climate:dcs_gem_red:2>*16, <dcs_climate:dcs_gem_red:2>, <contenttweaker:cube_iridescent>, 8000);
 	mods.thermalexpansion.InductionSmelter.addRecipe(<dcs_climate:dcs_gem_green:2>*16, <dcs_climate:dcs_gem_green:2>, <contenttweaker:cube_iridescent>, 8000);
@@ -176,8 +133,6 @@ print("Start loading thermal.zs ...");
 	mods.thermalexpansion.Insolator.addRecipe(<botania:overgrowthseed>, <thermalfoundation:fertilizer:2>*16, <botania:grassseeds:0>, 12000, null, 0, 8000);
 
 //Sawmill
-	mods.thermalexpansion.Sawmill.addRecipe(<advancedrocketry:ic:0>*4, <advancedrocketry:itemcircuitplate:0>, 16000);
-	mods.thermalexpansion.Sawmill.addRecipe(<advancedrocketry:ic:2>*4, <advancedrocketry:itemcircuitplate:1>, 16000);
 
 //このscriptの読み込みの完了をログに出力
 print("thermal.zs loaded!");

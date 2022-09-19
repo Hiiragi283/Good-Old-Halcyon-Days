@@ -29,6 +29,7 @@ print("Start loading twilightforest.zs ...");
 	HiiragiUtils.addCraftingShaped(false, <twilightforest:castle_door:2>, RecipePattern.init(["ABA", "BCB", "ABA"]).map({A:<ore:dustVoid>, B:<appliedenergistics2:paint_ball:22>, C:<botania:quartztypedark:1>}).ingredients, null, null);
 	HiiragiUtils.addCraftingShaped(false, <twilightforest:castle_door:3>, RecipePattern.init(["ABA", "BCB", "ABA"]).map({A:<ore:dustVoid>, B:<appliedenergistics2:paint_ball:29>, C:<botania:quartztypedark:1>}).ingredients, null, null);
 	HiiragiUtils.addCraftingShaped(true, <twilightforest:trophy_pedestal>, RecipePattern.init(["ABA", "BCB", "ABA"]).map({A:<ore:ingotSteeleaf>, B:<twilightforest:trophy:*>, C:<twilightforest:stone_twist_thin>}).ingredients, null, null);
+	HiiragiUtils.addCraftingShaped(false, <twilightforest:root>, RecipePattern.init(["AA", "AA"]).map({A:<twilightforest:twilight_plant:8>|<biomesoplenty:plant_1:9>}).ingredients, null, null);
 	//置換
 	HiiragiUtils.recipeReplace(<twilightforest:maze_map_focus>, <contenttweaker:ragi_ticket>, <twilightforest:uncrafting_table>);
 
