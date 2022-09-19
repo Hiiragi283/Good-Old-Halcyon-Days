@@ -1,0 +1,17 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "model": "projecte:orientable_horizontal",
+    "textures": {
+      "top": "projecte:blocks/relays/top_3",
+      "front": "projecte:blocks/relays/front",
+      "side": "projecte:blocks/relays/other",
+      "bottom": "projecte:blocks/relays/other"
+    },
+    "transform": "forge:default-block"
+  },
+  "variants": {
+    "normal": [{}],
+    "inventory": [{}]
+  }
+}

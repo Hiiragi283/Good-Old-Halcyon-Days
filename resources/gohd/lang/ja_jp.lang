@@ -1,0 +1,32 @@
+
+# Lang Key from other Mods
+
+## Applied Energistics 2
+item.appliedenergistics2.material.engineering_processor_print.name=上級プロセッサアセンブリ
+item.appliedenergistics2.material.calculation_processor_print.name=発展プロセッサアセンブリ
+item.appliedenergistics2.material.logic_processor_print.name=基本プロセッサアセンブリ
+
+## Better Questing
+item.bq_standard.loot_chest.name=らぎガチャ
+
+## Ender IO
+item.item_basic_capacitor.activated.name=エナジェティックコンデンサ
+item.item_basic_capacitor.ender.name=ヴァイブラントコンデンサ
+enderio.activated.name=エナジェティックコンデンサ
+enderio.ender.name=ヴァイブラントコンデンサ
+
+
+## Heat and Climate
+tile.dcs_metal_alloy_steel.name=錬鉄ブロック
+tile.dcs_heatingmetal_steel_heating.name=赤熱した鉄ブロック
+tile.dcs_heatingmetal_steel_cooling.name=冷却された鉄ブロック
+tile.dcs_heatingmetal_steel_fail.name=脆い錬鉄ブロック
+
+## Railcraft
+tile.railcraft.ore.magic.name=ファイアストーン鉱石
+
+## Thermal Foundation
+item.thermalfoundation.material.dustMana.name=元素を統べるマナの粉
+
+## Tinkers Construct
+tile.tconstruct.seared.tooltip=§cこれはタイルエンティティです!\n装飾には向いていません!

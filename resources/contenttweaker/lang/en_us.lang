@@ -1,22 +1,29 @@
 
 #Items
-item.contenttweaker.assembly_parallel.name=Parallel Processor Assemly
+item.contenttweaker.assembly_parallel.name=Parallel Processor Assembly
 item.contenttweaker.assembly_speculative.name=Speculative Processor Assembly
 item.contenttweaker.dcs_color_ring2.name=Blue Gold Ring
+item.contenttweaker.drop_soul.name=Soul Fragment
 item.contenttweaker.elven_pearl.name=Elven Pearl
 item.contenttweaker.ephemerald.name=Ephemerald
 item.contenttweaker.division_sigil.name=Division Sigil
 item.contenttweaker.division_sigil_temp.name=Activated Division Sigil
 item.contenttweaker.division_sigil_perm.name=Pseudo-Inversion Sigil
+item.contenttweaker.dust_shadestone.name=Shadestone Dust
 item.contenttweaker.feather_black.name=Blackened Feathter
 item.contenttweaker.gem_carbon.name=Compressed Carbon
 item.contenttweaker.grout_ball.name=Grout Ball
 item.contenttweaker.ingot_bedrockium.name=bedrockium Ingot
 item.contenttweaker.ingot_rainbow.name=Rainbow Ingot
+item.contenttweaker.ingot_stable.name=Visibility-Stable Ingot
+item.contenttweaker.ingot_unstable.name=Visibility-Unstable Ingot
 item.contenttweaker.item_fire.name=Fire
 item.contenttweaker.quantum_entangler.name=Quantum Entangler
 item.contenttweaker.reagent_halogen.name=Halogen
 item.contenttweaker.ragi_ticket.name=§cRagi Ticket
+item.contenttweaker.symbol_cross.name=Symbol (Out)
+item.contenttweaker.symbol_nocraft.name=Symbol (No)
+item.contenttweaker.symbol_tick.name=Symbol (Check)
 
 item.contenttweaker.book_reloadevents.name=Debugging Book (Reload Events)
 item.contenttweaker.book_syntax.name=Debugging Book (Syntax)
@@ -24,32 +31,26 @@ item.contenttweaker.book_facing.name=Debugging Book (Teleport to spawn point)
 item.contenttweaker.book_save.name=Debugging Book (Save Better Questing)
 
 #Blocks
-tile.contenttweaker.advstructuremachine.name=Advanced Machine Structure
 tile.contenttweaker.block_bedrockium.name=Block of Bedrockium
-tile.contenttweaker.pumpkin_melon.name=Pumpkin Melon
-tile.contenttweaker.unfired_casting_channel.name=Unfired Casting Channel
-tile.contenttweaker.unfired_casting_table.name=Unfired Casting Table
-tile.contenttweaker.unfired_casting_basin.name=Unfired Casting Basin
-
-tile.contenttweaker.dustblock_alubrass.name=Aluminum Brass Dust Block
-tile.contenttweaker.dustblock_ardite.name=Ardite Dust Block
-tile.contenttweaker.dustblock_cobalt.name=Cobalt Dust Block
-tile.contenttweaker.dustblock_constantan.name=Constantan Dust Block
-tile.contenttweaker.dustblock_electrum.name=Electrum Dust Block
-tile.contenttweaker.dustblock_invar.name=Invar Dust Block
-tile.contenttweaker.dustblock_iridium.name=Iridium Dust Block
-tile.contenttweaker.dustblock_lead.name=Lead Dust Block
-tile.contenttweaker.dustblock_manyullyn.name=Manyullyn Dust Block
-tile.contenttweaker.dustblock_osmium.name=Osmium Dust Block
-tile.contenttweaker.dustblock_platinum.name=Platinum Dust Block
-
+tile.contenttweaker.block_shadestone.name=Shadestone
 tile.contenttweaker.cube_yellow_inactive.name=Inactive Yellow Cube
 tile.contenttweaker.cube_magenta_inactive.name=Inactive Magenta Cube
 tile.contenttweaker.cube_cyan_inactive.name=Inactive Cyan Cube
 tile.contenttweaker.cube_yellow.name=Activated Yellow Cube
 tile.contenttweaker.cube_magenta.name=Activated Magenta Cube
 tile.contenttweaker.cube_cyan.name=Activated Cyan Cube
-tile.contenttweaker.cube_iridescent.name=Iridesccent Cube
+tile.contenttweaker.cube_iridescent.name=Iridescent Cube
+tile.contenttweaker.dummy_collector.name=EMC Collector MK3 (Imitaion)
+tile.contenttweaker.dummy_link.name=Base Energy EMC Link (Imitaion)
+tile.contenttweaker.dummy_relay.name=Anti-Matter Relay MK3 (Imitaion)
+tile.contenttweaker.dustblock_lead.name=Lead Dust Block
+tile.contenttweaker.pumpkin_melon.name=Pumpkin Melon
+tile.contenttweaker.unfired_casting_channel.name=Unfired Casting Channel
+tile.contenttweaker.unfired_casting_table.name=Unfired Casting Table
+tile.contenttweaker.unfired_casting_basin.name=Unfired Casting Basin
+
+# Enchantments
+enchantment.desire_drive=Desire Drive
 
 # Fluids
 

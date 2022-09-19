@@ -1,11 +1,8 @@
 {
   "forge_marker": 1,
   "defaults": {
-    "textures": {
-      "texture": "libvulpes:blocks/structureblock",
-      "particle": "libvulpes:blocks/structureblock"
-    },
-    "model": "base:storage",
+    "textures": {},
+    "model": "projectex:energy_link",
     "uvlock": true,
     "transform": "forge:default-block"
   },
