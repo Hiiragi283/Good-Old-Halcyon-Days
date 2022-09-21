@@ -7,9 +7,8 @@ gohd.custom.desire_driver.name=Desire Driver
 # JEi Description
 gohd.jei.*.name
 
-gohd.jei.drop_soul.name=Obtained by suicide, or dropped from mob killed with Desire Drive enchantment (1%).
+gohd.jei.drop_soul.name=Obtained by suicide, or crafted with Kikoku.
 gohd.jei.tinder.name=To ignite the Tinder, you must right-click on a heat source with a temperature above KILN.
-gohd.jei.tome_ancient.name=Right-click this, you can return your home immediately.\nAlso this is used for igniting the portal of Twilight Forest.
 
 # Quests
 gohd.quest.info_jei.title=The information about this is written in JEI Description pages.
@@ -33,7 +32,7 @@ gohd.quest.ingot_bronze=Tier 1: Bronze Ingot
 gohd.quest.ingot_iron=Tier 1: Iron Ingot
 gohd.quest.spindle_brass.desc=Adjustable Wrench is also used as pickaxe!
 gohd.quest.shaft_brass.title=Brass Shaft
-gohd.quest.shaft.desc=Shaft is used to transmit Torque Power, that is needed to activate Torque Devices. The input side is blue and the output side is red. When transmit with Shaft, the power will be x0.98 per block.
+gohd.quest.shaft.desc=Shaft is used to transmit Torque Power, that is needed to activate Torque Devices. The input side is blue and the output side is red. When transmit with Shaft, the power will be 98% per block.
 gohd.quest.spinning_machine.desc=Spinning Machine allows you to make strings more efficiently.
 gohd.quest.diamond.title=The Best Material
 gohd.quest.philo_stone.title=Philosophers' Dream
@@ -61,11 +60,12 @@ gohd.quest.beautiful_world.desc=The gate of the world for Biomes O' Plenty!
 gohd.quest.tank_yard.title=Tank Yard
 gohd.quest.kitchen.title=Kitchen Kit
 gohd.quest.too_tool_steel.title=Tool Steel Tool
+gohd.quest.twilight_miniature.title=It's time to come back to the day.
 
 ## 3. Chemistry Madness
 gohd.quest.chemistry_mad.title=3. Chemistry Madness
 gohd.quest.chemistry_mad.desc=No more complex recipe chart...
-gohd.quest.nitric_compound.title=Nitroc Compound
+gohd.quest.nitric_compound.title=Nitric Compound
 gohd.quest.dynamite.title=Volga Dynamite
 
 ## 4. Industrial Update
@@ -102,11 +102,19 @@ gohd.quest.cube_activated.title=We are Activated!
 gohd.quest.cube_iridescent.title=I am Iridescent.
 gohd.quest.armor_gem.title=Gem Armor
 gohd.quest.emc_link.title=What the alchemists really wanted:
-gohd.quest.emc_flower.title=Alchemical Flower
+gohd.quest.emc_flower.title=When Flower Bloom
+gohd.quest.division_sigil.desc=Division Sigil is activated by right-clickng Enchantment Table with it and consuming 30 Level.
 
-## challenges: gohd.f1907181.
-gohd.challenges.title=§dChallenges
-gohd.f1907181.7dad001d.title=§dGrand Finale
+## End Game
+gohd.quest.end_game.title=Good Old Halcyon Days
+gohd.quest.end_game.desc=The Beginning and the End, or "Knockin' on Heaven's Door"
+gohd.quest.fake_recipe.desc=§oImitation and Brilliant Gray
+
+gohd.quest.ingot_black.title=Lotus Eater
+gohd.quest.recipe_book.desc=Good Old Irony Recipe
+gohd.quest.trophy_open.title=Creepus Explodus
+gohd.quest.gohd.title=Good Old Minecraft
+gohd.quest.gohd.desc=Thank you for playing GOHD!
 
 # Tooltips
 gohd.tooltip.bedrock.name=§aHarvested by right-clicking on a pickaxe with Mining level 4 or higher
@@ -122,7 +130,7 @@ gohd.tooltip.infinity_booster_card.name=§6Dropped from Wither (30%) or Ender Dr
 gohd.tooltip.ingot_rainbow.name=§dWhen §cyou §6holding §eme §ain §2offhand, §bI'll §1give §9you §5a §dD§cR§6E§eA§aM§2I§bN§1G §fpower!
 gohd.tooltip.quantum_entangler.name=§aQuanutum Entangler allows you to copy data of compact machines!
 gohd.tooltip.removed.name=§cRecipe Removed!§r
-gohd.tooltip.tcon_appear.name=§aNow you can change the appearance of Tool Forge into what you like!
+gohd.tooltip.tcon_appear.name=§aNow you can change the appearance of me into what you like!
 
 # Lang Key from other Mods
 
