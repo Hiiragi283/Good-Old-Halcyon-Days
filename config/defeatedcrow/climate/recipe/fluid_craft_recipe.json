@@ -37,5 +37,22 @@
 		"climate_temperature": "KILN (If this is removed, it will be forced to NORMAL.)",
 		"climate_humidity": "DRY (If this is removed, it will be forced to NORMAL.)",
 		"climate_airflow": "TIGHT (If this is removed, it will be forced to NORMAL.)"
+	},
+	"add_red_matter": {
+		"recipe_type": "ADD",
+		"output_primary": {
+			"item": "projecte:item.pe_matter:1"
+		},
+		"climate_temperature": "INFERNO",
+		"climate_humidity": "DRY",
+		"climate_airflow": "WIND",
+		"input_fluid": {
+			"amount": 1296,
+			"fluid": "iron"
+		},
+		"input": [
+			"projecte:item.pe_matter:0",
+			"contenttweaker:drop_soul:0"
+		]
 	}
 }

@@ -17,6 +17,7 @@
 	<recipe name="Alloy: Manyullyn" disabled="true"></recipe>
 
 <!--Add Recipes-->
+	<!--Alloy Smelter-->
 	<recipe name="Alloy: Calculation Processor" required="true">
 		<alloying energy="10000" exp="0">
 			<input name="appliedenergistics2:material:16"/>
@@ -93,5 +94,22 @@
 			<output name="blockSkyStone" amount="16"/>
 		</alloying>
 	</recipe>
+
+	<!--Enchanter-->
+	<!--<recipe name="Enchanter: contenttweaker:desire_drive" required="true">
+		<enchanting>
+			<input name="contenttweaker:drop_soul" amount="3"/>
+			<enchantment name="contenttweaker:desire_drive" costMultiplier="1"/>
+		</enchanting>
+	</recipe>-->
+
+	<!--Soul Binder-->
+	<!--<recipe name="Soul Binder: Crow's Drill" required="true">
+		<soulbinding energy="128000" levels="30">
+			<input name="item:thermalfoundation:material:656" />
+			<soul name="dcs_climate:dcs.magic.dcs_crowdoll" />
+			<output name="item:dcs_climate:dcs_creative_drill" />
+		</soulbinding>
+	</recipe>-->
 
 </enderio:recipes>

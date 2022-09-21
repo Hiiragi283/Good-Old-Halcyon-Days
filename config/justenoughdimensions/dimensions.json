@@ -1,6 +1,32 @@
 {
 	"dimensions": [
 		{
+			"dim": 255,
+			"dimensiontype": {
+				"id": 255,
+				"name": "Beautiful Nether",
+				"suffix": "dim_255",
+				"keeploaded": false,
+				"worldprovider": "WorldProviderHellJED"
+			},
+			"worldinfo_onetime": {
+				"generatorName": "BIOMESOP"
+			}
+		},
+		{
+			"dim": 256,
+			"dimensiontype": {
+				"id": 256,
+				"name": "Beautiful World",
+				"suffix": "dim_256",
+				"keeploaded": false,
+				"worldprovider": "WorldProviderSurfaceJED"
+			},
+			"worldinfo_onetime": {
+				"generatorName": "BIOMESOP"
+			}
+		},
+		{
 			"dim": 2011,
 			"biome": "biomesoplenty:origin_island",
 			"dimensiontype": {

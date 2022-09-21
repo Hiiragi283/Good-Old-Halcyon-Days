@@ -1,7 +1,7 @@
 {
 	"images": {
 		"title": {
-			"image": "minecraft:textures/gui/title/minecraft.png",
+			"image": "custommainmenu:textures/gui/minecraft.png",
 			"posX": -137,
 			"posY": 30,
 			"width": 512,
@@ -117,7 +117,7 @@
 			"texts": "file:minecraft:texts/splashes.txt"
 		},
 		"panorama": {
-			"images": "minecraft:textures/gui/title/background/panorama_%c.png",
+			"images": "gohd:textures/gui/title/background/panorama_%c.png",
 			"animate": true,
 			"animationSpeed": 1,
 			"blur": false,

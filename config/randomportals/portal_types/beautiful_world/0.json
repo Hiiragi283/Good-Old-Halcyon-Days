@@ -1,0 +1,106 @@
+{
+	"frame": {
+		"type": "LATERAL_OR_VERTICAL",
+		"size": {
+			"lateral": {
+				"minWidth": 5,
+				"maxWidth": 5,
+				"minHeight": 5,
+				"maxHeight": 5
+			},
+			"verticalX": {
+				"minWidth": 5,
+				"maxWidth": 5,
+				"minHeight": 5,
+				"maxHeight": 5
+			},
+			"verticalZ": {
+				"minWidth": 5,
+				"maxWidth": 5,
+				"minHeight": 5,
+				"maxHeight": 5
+			}
+		},
+		"blocks": [
+			{
+				"registryName": "botania:dreamwood",
+				"meta": 0,
+				"minimumAmount": 8
+			},
+			{
+				"registryName": "botania:dreamwood",
+				"meta": 5,
+				"minimumAmount": 3
+			},
+			{
+				"registryName": "botania:dreamwood",
+				"meta": 4,
+				"minimumAmount": 1
+			}
+		],
+		"requiredCorner": "ANY",
+		"cornerBlocksContributeToMinimumAmount": true,
+		"doGeneratedFramesDrop": true
+	},
+	"activation": {
+		"canBeActivatedByFire": false,
+		"activators": [
+			{
+				"registryName": "biomesoplenty:terrestrial_artifact",
+				"meta": 0
+			}
+		],
+		"activatorConsumeBehavior": "CONSUME",
+		"spawnFireBeforeActivating": true,
+		"activationSounds": []
+	},
+	"color": {
+		"colors": [
+			"CYAN"
+		],
+		"dyeBehavior": "ENABLE"
+	},
+	"destination": {
+		"dimensionID": 256,
+		"locationDetectionBehavior": "IGNORE_INITIAL",
+		"initialLocation": {
+			"x": 0,
+			"y": 0,
+			"z": 0,
+			"useTopSolidY": false
+		},
+		"coordinateMultiplier": 1.0,
+		"teleportToPortal": true,
+		"oneWay": false,
+		"ensureReturnToSameDimension": false,
+		"generatePortalIfNotFound": true,
+		"portalGenerationBehavior": "CLONE",
+		"generatedFrameType": "SAME",
+		"generatedFrameSize": {
+			"lateral": {
+				"minWidth": 5,
+				"maxWidth": 5,
+				"minHeight": 5,
+				"maxHeight": 5
+			},
+			"verticalX": {
+				"minWidth": 5,
+				"maxWidth": 5,
+				"minHeight": 5,
+				"maxHeight": 5
+			},
+			"verticalZ": {
+				"minWidth": 5,
+				"maxWidth": 5,
+				"minHeight": 5,
+				"maxHeight": 5
+			}
+		}
+	},
+	"teleportationDelay": {
+		"lateral": 0,
+		"verticalX": 0,
+		"verticalZ": 0
+	},
+	"decorative": false
+}
