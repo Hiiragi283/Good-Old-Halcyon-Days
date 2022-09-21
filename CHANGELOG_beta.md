@@ -1,29 +1,50 @@
 # Changelog
 
-## v0.8.0
+## RC-1
 
 - Mod Configuration
   - Add
     - `BetterQuesting-3.5.329`
       - Alternative mod for `FTB Quests`
+    - `ExtendedCrafting-Nomifactory-Edition-1.7.0`
+      - Fork ver. of `Extended Crafting`
+    - `LootTweaker-0.3.1+MC1.12.2`
+      - Tweak loottables
     - `mechanics-1.1`
       - Add some misc
     - `multiblocked-0.7.2`
       - Mod for creating ULTRA flexible multiblock
+    - `ProjectE-1.12.2-PE1.4.1`
+      - The most famous alchemiy mod
+    - `ProjectEX-1.2.0.40`
+      - Addon for `ProjectE`
     - `questbook-3.1.1-1.12`
       - Add Questbook for `Better Questing`
     - `railcraft-tweaker-0.2.0`
       - Addon for `Crafttweaker` and `Railcraft`
     - `StandardExpansion-3.4.173`
       - Addon for `Better Questing`
+    - `SimpleStorageNetwork-1.12.2-1.8.3`
+      - Alternative mod for `EZ Storage`
+  - Remove
+    - `AdvancedRocketry-1.12.2-2.0.0-13`
+    - `ezstorage-2.5.0-[1.12.2].jar`
+    - `LibVulpes-1.12.2-0.4.2-25-universal`
+    - `FTBQuests-1202.9.0.15.jar`
+    - `RealisticItemDrops-1.2.14.jar`
+      - For FPS improvements
+    - `seteffect-1.12.2-2.4.1.jar`
+    - `StorageDrawersExtras-1.12-3.1.0.jar`
+      - Not used
   - Update
-    - `appliedenergistics2-rv6-stable-7-extended_life-v0.53.4` -> `appliedenergistics2-rv6-stable-7-extended_life-v0.53.5`
+    - `appliedenergistics2-rv6-stable-7-extended_life-v0.53.4` -> `appliedenergistics2-rv6-stable-7-extended_life-v0.53.7b`
     - `CraftTweaker2-1.12-4.1.20.679` -> `CraftTweaker2-1.12-4.1.20.680`
+    - `foamfix-0.10.14-1.12.2` -> `foamfix-0.10.15-1.12.2`
     - `HeatAndProcessing-1.12.2-1.3.8` -> `HeatAndProcessing-1.12.2-1.4.0`
-    - `zenutils-1.11.3` -> `zenutils-1.11.5`
+    - `multiblocked-0.7.2` -> `multiblocked-0.7.3`
+    - `zenutils-1.11.3` -> `zenutils-1.12.0`
 
-- **Major modification of Scripts**
-  - Hanc marginis exiguitas non caperet.
+- ***There're too many updates to write one by one.***
 
 ## v0.7.0
 
