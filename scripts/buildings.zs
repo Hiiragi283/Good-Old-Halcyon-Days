@@ -204,6 +204,7 @@ print("Start loading buildings.zs ...");
 			.setShapeless([full])
 			.addTool(<ore:artisansHandsaw>, 1)
 			.addOutput(slab* 2)
+			.setMaximumTier(1)
 			.create();
 		HiiragiUtils.addCraftingShaped(false, full, RecipePattern.init(["A", "A"]).map({A:slab}).ingredients, null, null);
 		}
@@ -248,6 +249,7 @@ print("Start loading buildings.zs ...");
 			.setShapeless([full])
 			.addTool(<ore:artisansChisel>, 1)
 			.addOutput(chiseled)
+			.setMaximumTier(1)
 			.create();
 		HiiragiUtils.addCraftingShapeless(false, full, [chiseled], null, null);
 	}
@@ -271,6 +273,7 @@ print("Start loading buildings.zs ...");
 			.setShaped(RecipePattern.init(["A", "A"]).map({A:full}).ingredients)
 			.addTool(<ore:artisansChisel>, 1)
 			.addOutput(pillar* 2)
+			.setMaximumTier(1)
 			.create();
 		HiiragiUtils.addCraftingShapeless(false, full, [pillar], null, null);
 	}
@@ -456,6 +459,7 @@ print("Start loading buildings.zs ...");
 			.setShaped(RecipePattern.init(["A ", "AA"]).map({A:full}).ingredients)
 			.addTool(<ore:artisansHandsaw>, 1)
 			.addOutput(stair* 4)
+			.setMaximumTier(1)
 			.create();
 		HiiragiUtils.addCraftingShaped(false, full*3, RecipePattern.init(["AA", "AA"]).map({A:stair}).ingredients, null, null);
 	}
@@ -478,6 +482,7 @@ print("Start loading buildings.zs ...");
 			.setShaped(RecipePattern.init(["A ", "AA"]).map({A:full}).ingredients)
 			.addTool(<ore:artisansHandsaw>, 1)
 			.addOutput(stair* 4)
+			.setMaximumTier(1)
 			.create();
 	}
 

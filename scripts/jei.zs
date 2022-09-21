@@ -78,6 +78,26 @@ val mapRemove as bool[IItemStack] = {
 	<enderio:block_simple_stirling_generator>: false,
 	<enderio:block_simple_sag_mill>: false,
 	<enderio:block_simple_wired_charger>: false,
+	//Extended Crafting
+	<extendedcrafting:storage:3>: true,
+	<extendedcrafting:storage:5>: true,
+	<extendedcrafting:storage:7>: true,
+	<extendedcrafting:material:1>: true,
+	<extendedcrafting:material:3>: false,
+	<extendedcrafting:material:8>: false,
+	<extendedcrafting:material:9>: false,
+	<extendedcrafting:material:11>: false,
+	<extendedcrafting:material:12>: false,
+	<extendedcrafting:material:14>: false,
+	<extendedcrafting:material:15>: false,
+	<extendedcrafting:material:17>: false,
+	<extendedcrafting:material:18>: false,
+	<extendedcrafting:material:24>: true,
+	<extendedcrafting:material:25>: true,
+	<extendedcrafting:material:36>: true,
+	<extendedcrafting:material:37>: true,
+	<extendedcrafting:material:48>: true,
+	<extendedcrafting:material:49>: true,
 	//Extra Utilities 2
 	<extrautils2:machine>.withTag({Type: "extrautils2:furnace"}): false,
 	<extrautils2:machine>.withTag({Type: "extrautils2:crusher"}): false,
@@ -119,6 +139,15 @@ val mapRemove as bool[IItemStack] = {
 	<mekanismtools:lapislazulichestplate>: false,
 	<mekanismtools:lapislazulileggings>: false,
 	<mekanismtools:lapislazuliboots>: false,
+	//Minecraft
+	<minecraft:wooden_shovel>: false,
+	<minecraft:wooden_pickaxe>: false,
+	<minecraft:wooden_axe>: false,
+	<minecraft:wooden_hoe>: false,
+	<minecraft:stone_shovel>: false,
+	<minecraft:stone_pickaxe>: false,
+	<minecraft:stone_axe>: false,
+	<minecraft:stone_hoe>: false,
 	//Pickle Tweaks
 	<pickletweaks:aluminum_paxel>: false,
 	<pickletweaks:copper_paxel>: false,
@@ -260,6 +289,16 @@ for i, j in mapRemove {
 			}
 		}
 
+//JEIタブの削除
+val removeCategory as string[] = [
+	"drying",
+	"alloying",
+	"railcraft.rock.crusher",
+];
+for i in removeCategory {
+	//mods.jei.JEI.hideCategory(i);
+}
+
 //JEIへの新規登録
 function addJEI(item as IItemStack) {
 	mods.jei.JEI.addItem(item);
@@ -289,7 +328,7 @@ function addDesc(items as IItemStack[], desc as string[]) {
 }
 
 addDesc([<dcs_climate:dcs_tinder:0>, <dcs_climate:dcs_tinder:1>], [I18n.format("gohd.jei.tinder.name")]);
-//addDesc([<contenttweaker:tome_ancient>], [I18n.format("gohd.jei.tome_ancient.name")]);
+addDesc([<contenttweaker:drop_soul>],[I18n.format("gohd.jei.drop_soul.name")]);
 
 //このscriptの読み込みの完了をログに出力
 print("jei.zs loaded!");

@@ -55,6 +55,7 @@ print("Start loading thermal.zs ...");
 	//新規
 
 //Arcane Ensorcellator
+mods.thermalexpansion.Enchanter.addRecipe(<extendedcrafting:material>, <botania:blacklotus:1>, <minecraft:iron_ingot>, 128000, 5000, false);
 
 //Centrifugal Seperator
 	mods.thermalexpansion.Centrifuge.addRecipe([
@@ -118,8 +119,6 @@ print("Start loading thermal.zs ...");
 	mods.thermalexpansion.Factorizer.addRecipeBoth(<biomesoplenty:hive:3>, <biomesoplenty:filled_honeycomb>*4);
 
 //Induction Smelter
-	mods.thermalexpansion.InductionSmelter.addRecipe(<contenttweaker:block_bedrockium>, <enderio:block_infinity:2>, <contenttweaker:ingot_rainbow>, 1000000);
-
 	mods.thermalexpansion.InductionSmelter.addRecipe(<dcs_climate:dcs_gem_red:2>*16, <dcs_climate:dcs_gem_red:2>, <contenttweaker:cube_iridescent>, 8000);
 	mods.thermalexpansion.InductionSmelter.addRecipe(<dcs_climate:dcs_gem_green:2>*16, <dcs_climate:dcs_gem_green:2>, <contenttweaker:cube_iridescent>, 8000);
 	mods.thermalexpansion.InductionSmelter.addRecipe(<dcs_climate:dcs_gem_blue:2>*16, <dcs_climate:dcs_gem_blue:2>, <contenttweaker:cube_iridescent>, 8000);

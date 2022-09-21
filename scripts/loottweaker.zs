@@ -33,11 +33,24 @@ print("Start loading loottweaker.zs ...");
 	function addLoot(lootTable as string, tableName as string, rollMin as int, rollMax as int, bonusMin as int, bonusMax as int, item as IItemStack, weight as int) {
 		LootTweaker.getTable(lootTable).addPool(tableName, rollMin, rollMax, bonusMin, bonusMax).addItemEntry(item, weight);
 	}
+	//
 
 //Loottableの削除
 removeLoot("minecraft:entities/wither_skeleton", "inspirations", "inspirations");
+removeLoot("twilightforest:structures/hill_2/rare", "main", "twilightforest:uncrafting_table");
 
 //Loottableの追加
+
+//生垣迷路のLoottableをスポナー部屋ものに置き換える
+	//Loottableの指定
+	val lootHedge = LootTweaker.getTable("twilightforest:structures/hedge_maze/hedge_maze");
+	//既存のPoolの削除
+	lootHedge.removePool("common");
+	lootHedge.removePool("uncommon");
+	lootHedge.removePool("rare");
+	//スポナー部屋のPoolの追加
+	lootHedge.addPool("minecraft:chests/simple_dungeon", 1.0, 1.0, 0, 0)
+		.addLootTableEntry("minecraft:chests/simple_dungeon", 1, 0);
 
 //このscriptの読み込みの完了をログに出力
 print("loottweaker.zs loaded!");

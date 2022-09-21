@@ -19,6 +19,8 @@ import crafttweaker.event.IBlockEvent;
 import crafttweaker.event.ILivingEvent;
 import crafttweaker.event.PlayerAttackEntityEvent;
 import crafttweaker.event.PlayerDeathDropsEvent;
+import crafttweaker.event.PlayerInteractBlockEvent;
+import crafttweaker.event.PlayerInteractEvent;
 import crafttweaker.event.PlayerTickEvent;
 import crafttweaker.events.IEventManager;
 import crafttweaker.item.IItemStack;
@@ -57,7 +59,7 @@ events.onPlayerTick(function(event as PlayerTickEvent) {
 			if(!isNull(player.offHandHeldItem)){
 				val itemOff as IItemStack = player.offHandHeldItem;
 				//Rainbow Ingot
-				if(itemOff.matches(<contenttweaker:ingot_rainbow>)) {
+				if(itemOff.matches(<extendedcrafting:material:32>)) {
 					player.addPotionEffect(<potion:minecraft:strength>.makePotionEffect(120, 7));
 					player.addPotionEffect(<potion:minecraft:fire_resistance>.makePotionEffect(120, 7));
 					player.addPotionEffect(<potion:minecraft:haste>.makePotionEffect(120, 7));
@@ -112,6 +114,20 @@ events.onPlayerDeathDrops(function(event as PlayerDeathDropsEvent) {
 //ウィザーが死ぬと除算のシジルを確定でドロップする
 <entity:minecraft:wither>.addDropFunction(function(entity, damageSource) {
 	return <contenttweaker:division_sigil>;
+});
+
+//除算のシジルの一時的な活性化レシピ
+events.onPlayerInteractBlock(function(event as PlayerInteractBlockEvent) {
+	if(!event.world.remote && !isNull(event.block) && !isNull(event.item)) {
+		if(event.block.definition.id == "minecraft:enchanting_table" && event.item.matches(<contenttweaker:division_sigil>)) {
+			event.cancel();
+			if(event.player.xp >= 30) {
+				event.player.xp -= 30;
+				event.item.mutable().shrink(1);
+				event.player.give(<contenttweaker:division_sigil_temp>);
+			}
+		}
+	}
 });
 
 //このscriptの読み込みの完了をログに出力

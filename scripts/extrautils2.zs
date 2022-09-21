@@ -41,7 +41,7 @@ print("Start loading extrautils2.zs ...");
 
 	HiiragiUtils.addCraftingShaped(true, <extrautils2:machine:0>, RecipePattern.init(["AAA", "ABA", "CCC"]).map({A:<ore:ingotInvar>, B:<ore:gemRedstone>, C:<ore:ingotSteel>}).ingredients, null, null);
 	HiiragiUtils.addCraftingShaped(false, <extrautils2:machine:0>*3, RecipePattern.init(["AAA", "ABA", "CCC"]).map({A:<ore:ingotToolSteel>, B:<ore:gemRedstone>, C:<ore:ingotStainlessSteel>}).ingredients, null, null);
-	HiiragiUtils.addCraftingShaped(false, <extrautils2:decorativesolid:8>*8, RecipePattern.init(["AAA", "ABA", "AAA"]).map({A:<extrautils2:decorativesolid:3>, B:<contenttweaker:ingot_rainbow>|<contenttweaker:cube_iridescent>}).ingredients, null, null);
+	HiiragiUtils.addCraftingShaped(false, <extrautils2:decorativesolid:8>*8, RecipePattern.init(["AAA", "ABA", "AAA"]).map({A:<extrautils2:decorativesolid:3>, B:<extendedcrafting:material:32>|<contenttweaker:cube_iridescent>}).ingredients, null, null);
 	HiiragiUtils.addCraftingShaped(false, <extrautils2:itemcreativebuilderswand>, [[null, <ore:ingotUnstable>], [<ore:obsidian>, null]], null, null);
 	HiiragiUtils.addCraftingShaped(false, <extrautils2:itemcreativedestructionwand>, [[<ore:ingotStable>, null], [null, <ore:obsidian>]], null, null);
 

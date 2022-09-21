@@ -29,6 +29,7 @@ recipes.removeByMod("projectex");
 	HiiragiUtils.addCraftingShaped(false, <projectex:personal_link>, RecipePattern.init(["ABA", "BCB", "ADA"]).map({A:<ore:blockDarkMatter>, B:<ore:hopper>, C:<projecte:condenser_mk2>, D:<dcs_climate:dcs_device_hopper_filter>}).ingredients, null, null);
 	HiiragiUtils.addCraftingShapeless(false, <projectex:refined_link>, [<projectex:personal_link>, <appliedenergistics2:interface>, <ore:itemRedMatter>], null, null);
 	HiiragiUtils.addCraftingShapeless(false, <projectex:arcane_tablet>, [<projecte:item.pe_transmutation_tablet>, <projecte:item.pe_klein_star:5>, <tconstruct:tooltables>], null, null);
+	HiiragiUtils.addCraftingShapeless(false, <projecte:item.pe_tome>, [<thermalfoundation:tome_experience>, <extendedcrafting:singularity_ultimate>.reuse()], null, null);
 
 	HiiragiUtils.addCraftingConv(<projecte:collector_mk3>, <contenttweaker:dummy_collector>);
 	HiiragiUtils.addCraftingConv(<projecte:relay_mk3>, <contenttweaker:dummy_relay>);
@@ -48,22 +49,12 @@ recipes.removeByMod("projectex");
 	val mapEMC as long[IItemStack] = {
 		//Stone
 		<minecraft:cobblestone>: 1,
-		/*<extrautils2:compressedcobblestone:0>: 9,
-		<extrautils2:compressedcobblestone:1>: 81,
-		<extrautils2:compressedcobblestone:2>: 729,
-		<extrautils2:compressedcobblestone:3>: 6561,
-		<extrautils2:compressedcobblestone:4>: 59049,
-		<extrautils2:compressedcobblestone:5>: 531441,
-		<extrautils2:compressedcobblestone:6>: 4782969,
-		<extrautils2:compressedcobblestone:7>: 43046721,*/
 		<minecraft:stone:0>: 1,
 		<minecraft:stone:1>: 1,
 		<minecraft:stone:3>: 1,
 		<minecraft:stone:5>: 1,
 		<minecraft:mossy_cobblestone>: 2,
 		<minecraft:netherrack>: 2,
-		/*<extrautils2:compressednetherrack:0>: 18,
-		<extrautils2:compressednetherrack:1>: 162,*/
 		<minecraft:end_stone>: 4,
 		<chisel:basalt2:7>: 1,
 		<chisel:limestone2:7>: 1,
@@ -96,10 +87,6 @@ recipes.removeByMod("projectex");
 		<dcs_climate:dcs_ore_stone_new:9>: 2048,
 		//Dirt
 		<minecraft:dirt>: 1,
-		/*<extrautils2:compresseddirt:0>: 9,
-		<extrautils2:compresseddirt:1>: 81,
-		<extrautils2:compresseddirt:2>: 729,
-		<extrautils2:compresseddirt:3>: 6561,*/
 		<biomesoplenty:dirt:0>: 1,
 		<biomesoplenty:dirt:1>: 1,
 		<biomesoplenty:dirt:2>: 1,
@@ -108,15 +95,14 @@ recipes.removeByMod("projectex");
 		<tconstruct:slime_grass:*>: 2,
 		//Gravel
 		<minecraft:gravel>: 1,
-		/*<extrautils2:compressedgravel:0>: 9,
-		<extrautils2:compressedgravel:1>: 81,*/
 		//Gem
 		<minecraft:coal:0>: 64,
+		<projecte:item.pe_fuel:0>: 256,
+		<projecte:item.pe_fuel:1>: 1024,
+		<projecte:item.pe_fuel:2>: 4096,
 		<minecraft:diamond>: 8192,
 		//Sand
 		<minecraft:sand>: 1,
-		/*<extrautils2:compressedsand:0>: 9,
-		<extrautils2:compressedsand:1>: 81,*/
 		<biomesoplenty:white_sand>: 1,
 		<biomesoplenty:dried_sand>: 1,
 		<chisel:brownstone>: 2,

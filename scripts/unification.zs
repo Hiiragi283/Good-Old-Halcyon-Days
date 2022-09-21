@@ -19,6 +19,7 @@ import crafttweaker.world.IWorld;
 
 //各種modからclassをimport
 import mods.ctintegration.util.RecipePattern;
+import mods.quarryplus.WorkbenchPlus;
 import mods.zenutils.I18n;
 
 //scriptのimport
@@ -139,6 +140,11 @@ print("Start loading unification.zs ...");
 		"enderio:wired_charger_upgrade",
 		"enderio:alloy_smelter_upgrade",
 		"enderio:crafter_upgrade",
+		"extendedcrafting:black_iron_ingot",
+		"extendedcrafting:black_iron_ingot_to",
+		"extendedcrafting:black_iron_slate",
+		"extendedcrafting:compressor",
+		"extendedcrafting:crafting_core",
 		"extrautils2:unstable_nugget",
 		"mekanism:machineblock_5",
 		"mekanism:machineblock_5_alt",
@@ -284,26 +290,7 @@ print("Start loading unification.zs ...");
 		<dcs_climate:dcs_ingot:11>,
 		<dcs_climate:dcs_reagent:3>,
 		<threng:material:0>,
-		//<mekanism:ingot:1>,
 		<minecraft:clay_ball>,
-		/*<minecraft:gold_ingot>,
-		<minecraft:iron_ingot>,
-		<thermalfoundation:material:128>,
-		<thermalfoundation:material:129>,
-		<thermalfoundation:material:130>,
-		<thermalfoundation:material:131>,
-		<thermalfoundation:material:132>,
-		<thermalfoundation:material:133>,
-		<thermalfoundation:material:134>,
-		<thermalfoundation:material:135>,
-		<thermalfoundation:material:136>,
-		<thermalfoundation:material:160>,
-		<thermalfoundation:material:161>,
-		<thermalfoundation:material:162>,
-		<thermalfoundation:material:163>,
-		<thermalfoundation:material:164>,
-		<tconstruct:ingots:0>,
-		<tconstruct:ingots:1>,*/
 	];
 	for i in removeFurnace {
 		furnace.remove(i);
@@ -335,13 +322,12 @@ val mapTooltip as string[IItemStack] = {
 	<contenttweaker:cube_magenta>: "gohd.tooltip.cube_magenta.name",
 	<contenttweaker:cube_yellow>: "gohd.tooltip.cube_yellow.name",
 	<contenttweaker:dcs_color_ring2>: "gohd.tooltip.dcs_color_ring2.name",
-	<contenttweaker:ingot_rainbow>: "gohd.tooltip.ingot_rainbow.name",
+	<extendedcrafting:material:32>: "gohd.tooltip.ingot_rainbow.name",
 	<contenttweaker:quantum_entangler>: "gohd.tooltip.quantum_entangler.name",
 	<dcs_climate:dcs_food_unidentified:*>: "gohd.tooltip.identify_microbe.name",
 	<dcs_climate:dcs_magic_card:11>: "gohd.tooltip.cube_spell_green.name",
 	<dcs_climate:dcs_magic_card_m3:*>: "gohd.tooltip.only_crate.name",
 	<minecraft:bedrock>: "gohd.tooltip.bedrock.name",
-	<contenttweaker:drop_soul>: "gohd.jei.drop_soul.name",
 	<tconstruct:rack:*>: "gohd.tooltip.tcon_appear.name",
 	<tconstruct:tooltables:1>: "gohd.tooltip.tcon_appear.name",
 	<tconstruct:tooltables:2>: "gohd.tooltip.tcon_appear.name",
@@ -370,11 +356,34 @@ for i, j in mapTooltip {
 
 //スタック数の調整
 	<minecraft:cake>.maxStackSize = 16;
+	<minecraft:knowledge_book>.maxStackSize = 64;
+	<minecraft:saddle>.maxStackSize = 16;
 	<forge:bucketfilled>.maxStackSize = 16;
 	<biomesoplenty:jar_filled:*>.maxStackSize = 64;
+	<biomesoplenty:terrestrial_artifact>.maxStackSize = 64;
 
 //採掘レベルの調整
 	//<botania:platform:2>.definition.setHarvestLevel("axe", 4);
+
+//Workbench Plusレシピの編集
+WorkbenchPlus.addRecipe([
+	<minecraft:knowledge_book>*8,
+	<ae2wtlib:infinity_booster_card>*8,
+	<biomesoplenty:terrestrial_artifact>*128,
+	<botania:gaiahead>*3,
+	<extendedcrafting:singularity_ultimate>,
+	<extrautils2:lawsword>,
+	<contenttweaker:cube_iridescent>*128,
+	<mekanism:basicblock2:4>.withTag({tier: 3})*8,
+	<openblocks:trophy>.withTag({entity_id: "minecraft:pig"}),
+	<openblocks:trophy>.withTag({entity_id: "minecraft:creeper"}),
+	<projecte:item.pe_philosophers_stone>,
+	<projecte:item.pe_klein_star:5>.withTag({StoredEMC: 51200000 as long}),
+	<railcraft:firestone_refined>,
+	<twilightforest:miniature_structure:0>,
+	<thermalfoundation:material:1028>,
+	<tconstruct:materials:50>*3,
+	], <biomesoplenty:earth>, 20111118.0);
 
 //このscriptの読み込みの完了をログに出力
 print("unification.zs loaded!");

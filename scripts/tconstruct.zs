@@ -33,6 +33,7 @@ print("Start loading tconstruct.zs ...");
 	HiiragiUtils.addCraftingShaped(false, <tconstruct:seared:3>, RecipePattern.init(["AA", "AA"]).map({A:<tconstruct:materials:0>}).ingredients, null, null);
 	HiiragiUtils.addCraftingShaped(false, <tconstruct:soil>, RecipePattern.init(["AA", "AA"]).map({A:<contenttweaker:grout_ball>}).ingredients, null, null);
 	HiiragiUtils.addCraftingShaped(false, <tconstruct:materials:16>, RecipePattern.init([" A ", "ABA", " A "]).map({A:<ore:itemSilkCloth>, B:<ore:gemEmerald>}).ingredients, null, null);
+	HiiragiUtils.addCraftingShaped(false, <tconstruct:materials:50>, RecipePattern.init([" A ", "ABA", " A "]).map({A:<minecraft:golden_apple:1>, B:<minecraft:skull:3>}).ingredients, null, null);
 		//吐き気スライム周りの追加
 		HiiragiUtils.addCraftingShaped(true, <tconstruct:slime:5>, RecipePattern.init(["AAA", "AAA", "AAA"]).map({A:<tconstruct:edible:5>}).ingredients, null, null);
 		HiiragiUtils.addCraftingShaped(true, 	<tconstruct:slime_congealed:5>, RecipePattern.init(["AA", "AA"]).map({A:<tconstruct:edible:5>}).ingredients, null, null);

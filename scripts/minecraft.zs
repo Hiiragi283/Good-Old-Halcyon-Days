@@ -30,6 +30,8 @@ print("Start loading minecraft.zs ...");
 	HiiragiUtils.recipeReplace(<minecraft:blaze_powder>, <ore:dustMana>, <minecraft:ender_eye>);
 	//新規
 	HiiragiUtils.addCraftingShapeless(false, <minecraft:stick>, [<ore:treeSapling>], null, null);
+	HiiragiUtils.addCraftingShaped(false, <minecraft:golden_apple:1>, RecipePattern.init(["AAA", "ABA", "AAA"]).map({A:<ore:blockGold>, B:<extrautils2:magicapple>}).ingredients, null, null);
+	HiiragiUtils.addCraftingShaped(false, <minecraft:knowledge_book>, RecipePattern.init(["AAA", "ABA", "AAA"]).map({A:<ore:netherStar>, B:<minecraft:dragon_egg>}).ingredients, null, null);
 
 //このscriptの読み込みの完了をログに出力
 print("minecraft.zs loaded!");

@@ -79,7 +79,6 @@ val itemEmpty = <openblocks:generic:10>.withTag({display: {Name: "Empty"}});
 			.requireItem("blockFrom", <tconstruct:soil:0>)
 			.requireItem("itemDrop_5_1", <contenttweaker:grout_ball>);
 		<assembly:info_scavenge>.addJEIRecipe(unfiredTable);
-
 		var unfiredBasin = AssemblyRecipe.create(function(container) {
 				container.addItemOutput("blockTo", <contenttweaker:unfired_casting_basin>);
 			}).requireItem("iconLeft", <openblocks:glyph:76>)
@@ -88,8 +87,7 @@ val itemEmpty = <openblocks:generic:10>.withTag({display: {Name: "Empty"}});
 			.requireItem("blockFrom", <contenttweaker:unfired_casting_table>)
 			.requireItem("itemDrop_5_1", <contenttweaker:grout_ball>);
 		<assembly:info_scavenge>.addJEIRecipe(unfiredBasin);
-
-var unfiredChannel = AssemblyRecipe.create(function(container) {
+		var unfiredChannel = AssemblyRecipe.create(function(container) {
 				container.addItemOutput("blockTo", <contenttweaker:unfired_casting_channel>);
 			}).requireItem("iconLeft", <openblocks:glyph:76>)
 			.requireItem("iconRight", <openblocks:glyph:82>)
@@ -97,14 +95,21 @@ var unfiredChannel = AssemblyRecipe.create(function(container) {
 			.requireItem("blockFrom", <contenttweaker:unfired_casting_basin>)
 			.requireItem("itemDrop_5_1", <contenttweaker:grout_ball>);
 		<assembly:info_scavenge>.addJEIRecipe(unfiredChannel);
-
-var unfiredFinish = AssemblyRecipe.create(function(container) {
+		var unfiredFinish = AssemblyRecipe.create(function(container) {
 				container.addItemOutput("blockTo", <contenttweaker:grout_ball>);
 			}).requireItem("iconLeft", <openblocks:glyph:76>)
 			.requireItem("iconRight", <openblocks:glyph:82>)
 			.requireItem("itemMain", <minecraft:stick>)
 			.requireItem("blockFrom", <contenttweaker:unfired_casting_channel>);
 		<assembly:info_scavenge>.addJEIRecipe(unfiredFinish);
+		var sigilActivate = AssemblyRecipe.create(function(container) {
+				container.addItemOutput("blockTo", <minecraft:enchanting_table>);
+			}).requireItem("iconLeft", <openblocks:glyph:76>)
+			.requireItem("iconRight", <openblocks:glyph:82>)
+			.requireItem("itemMain", <contenttweaker:division_sigil>)
+			.requireItem("blockFrom", <minecraft:enchanting_table>)
+			.requireItem("itemDrop_5_1", <contenttweaker:division_sigil_temp>);
+		<assembly:info_scavenge>.addJEIRecipe(sigilActivate);
 
 //このscriptの読み込みの完了をログに出力
 print("requiousFrakto.zs loaded!");

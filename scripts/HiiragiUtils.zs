@@ -27,6 +27,7 @@ import mods.zenutils.I18n;
 print("Start loading HiiragiUtils.zs ...");
 
 //定数の定義
+	//染料
 	static dyeList as IOreDictEntry[] = [
 		<ore:dyeBlack>,
 		<ore:dyeRed>,
@@ -45,25 +46,34 @@ print("Start loading HiiragiUtils.zs ...");
 		<ore:dyeOrange>,
 		<ore:dyeWhite>,
 	];
-
-	static dyeLiquid as ILiquidStack[] = [
-		<liquid:black>,
-		<liquid:red>,
-		<liquid:green>,
-		<liquid:brown>,
-		<liquid:blue>,
-		<liquid:purple>,
-		<liquid:cyan>,
-		<liquid:light_gray>,
-		<liquid:gray>,
-		<liquid:pink>,
-		<liquid:lime>,
-		<liquid:yellow>,
-		<liquid:light_blue>,
-		<liquid:magenta>,
-		<liquid:orange>,
-		<liquid:white>,
+	//レコード
+	static listDisc as IItemStack[] = [
+		<minecraft:record_13>,
+		<minecraft:record_cat>,
+		<minecraft:record_blocks>,
+		<minecraft:record_chirp>,
+		<minecraft:record_far>,
+		<minecraft:record_mall>,
+		<minecraft:record_mellohi>,
+		<minecraft:record_stal>,
+		<minecraft:record_strad>,
+		<minecraft:record_ward>,
+		<minecraft:record_11>,
+		<minecraft:record_wait>,
 	];
+	//BOPが読み込まれている時
+	if(loadedMods.contains("biomesoplenty") && !isNull(<biomesoplenty:record_wanderer>)) {
+		listDisc += <biomesoplenty:record_wanderer>;
+	}
+	//Botaniaが読みこまれているとき
+	if(loadedMods.contains("botania") && !isNull(<botania:recordgaia1>) && !isNull(<botania:recordgaia2>)) {
+		listDisc += <botania:recordgaia1>;
+		listDisc += <botania:recordgaia2>;
+	}
+	//レコードの最大スタック数を変更
+	for i in listDisc {
+		i.maxStackSize = 16;
+	}
 
 //代入されたIItemStackから名前を生成する関数
 function getNameItem(item as IItemStack) as string {

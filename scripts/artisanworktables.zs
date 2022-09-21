@@ -34,6 +34,7 @@ print("Start loading artisanworktables.zs ...");
 		.setShapeless([<tconstruct:channel>])
 		.addTool(<ore:artisansHandsaw>, 1)
 		.addOutput(<tconstruct:faucet>*2)
+		.setMaximumTier(1)
 		.create();
 	RecipeBuilder.get("blacksmith")
 		.setShaped([
@@ -44,6 +45,42 @@ print("Start loading artisanworktables.zs ...");
 			[<openblocks:glyph:99>, <openblocks:glyph:117>, <openblocks:glyph:116>, <openblocks:glyph:101>]])
 		.setSecondaryIngredients([<mekanism:portableteleporter>, <thermalfoundation:material:359> * 32, <mekanism:controlcircuit:3> * 8, <mekanism:atomicalloy> * 8, <enderio:item_material:16> * 4])
 		.addOutput(<compactmachines3:psd>)
+		.create();
+	RecipeBuilder.get("blacksmith")
+		.setShaped(RecipePattern.init([
+			"ABCBA",
+			"BDEDB",
+			"CEFEC",
+			"BDEDB",
+			"ABCBA"])
+		.map({
+			A:<extendedcrafting:trimmed:2>,
+			B:<ore:plateIridium>,
+			C:<ore:platePlatinum>,
+			D:<ore:gearDiamond>,
+			E:<extendedcrafting:material:10>,
+			F:<extendedcrafting:frame>
+		}).ingredients)
+		.setSecondaryIngredients([<ore:circuitElite>*64, <ore:alloyElite>*64, <appliedenergistics2:material:47>])
+		.addOutput(<extendedcrafting:compressor>)
+		.create();
+	RecipeBuilder.get("blacksmith")
+		.setShaped(RecipePattern.init([
+			"ABCBA",
+			"BDEDB",
+			"CEFEC",
+			"BDEDB",
+			"ABCBA"])
+		.map({
+			A:<extendedcrafting:trimmed:2>,
+			B:<ore:platePlatinum>,
+			C:<ore:plateIridium>,
+			D:<ore:gearDiamond>,
+			E:<extendedcrafting:material:10>,
+			F:<extendedcrafting:frame>
+		}).ingredients)
+		.setSecondaryIngredients([<ore:circuitElite>*64, <ore:alloyElite>*64, <appliedenergistics2:material:47>])
+		.addOutput(<extendedcrafting:crafting_core>)
 		.create();
 
 //このscriptの読み込みの完了をログに出力

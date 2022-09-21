@@ -152,8 +152,8 @@ print("Start loading cot-registry.zs ...");
 		"ingot_stable",
 		"ingot_unstable",
 		//"item_fire",
-		"reagent_halogen",
 		"ragi_ticket",
+		"reagent_halogen",
 		"symbol_cross",
 		"symbol_nocraft",
 		"symbol_tick",
@@ -176,7 +176,11 @@ print("Start loading cot-registry.zs ...");
 	//エンチャント効果を持つアイテムを登録
 	val mapItemShimmer as string[] = [
 		"division_sigil_perm",
-		"quantum_entangler"
+		"quantum_entangler",
+		"rune_fire",
+		"rune_earth",
+		"rune_water",
+		"rune_air",
 	];
 	for i in mapItemShimmer {
 		addItemShimmer(i);
