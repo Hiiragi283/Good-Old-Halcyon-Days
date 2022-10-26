@@ -22,11 +22,11 @@
     - `zenutils-1.12.0` -> `zenutils-1.12.1`
 
   - Issue fix
-    - #37
-    - #38
-    - #39
-    - #40
-    - #41
+    - [#37](https://github.com/Hiiragi283/Good-Old-Halcyon-Days/issues/37)
+    - [#38](https://github.com/Hiiragi283/Good-Old-Halcyon-Days/issues/38)
+    - [#39](https://github.com/Hiiragi283/Good-Old-Halcyon-Days/issues/39)
+    - [#40](https://github.com/Hiiragi283/Good-Old-Halcyon-Days/issues/40)
+    - [#41](https://github.com/Hiiragi283/Good-Old-Halcyon-Days/issues/41)
 
 ## RC-1
 
