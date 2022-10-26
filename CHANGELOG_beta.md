@@ -1,5 +1,33 @@
 # Changelog
 
+## RC-2
+
+- Mod Configuration
+  - Add
+    - `ForgeMultipart-1.12.2-2.6.2.83-universal`
+    - `FTBQuests-1202.9.0.15`
+      - The problem with lag when saving edits has been resolved!!
+      - Thanks to [Quarri6343](https://github.com/Quarri6343)!
+  - Remove
+    - `aiotbotania-0.7.1`
+    - `BetterQuesting-3.5.329`
+    - `multiblocked-0.7.3`
+    - `probe-0.1.24`
+    - `questbook-3.1.1-1.12`
+    - `StandardExpansion-3.4.173`
+  - Update
+    - `appliedenergistics2-rv6-stable-7-extended_life-v0.53.7b` -> `appliedenergistics2-rv6-stable-7-extended_life-v0.53.8b`
+    - `CraftTweaker2-1.12-4.1.20.680` -> `CraftTweaker2-1.12-4.1.20.681`
+    - `FastWorkbench-1.12.2-1.7.3` -> `FastWorkbench-1.12.2-1.7.4`
+    - `zenutils-1.12.0` -> `zenutils-1.12.1`
+
+  - Issue fix
+    - #37
+    - #38
+    - #39
+    - #40
+    - #41
+
 ## RC-1
 
 - Mod Configuration
@@ -28,13 +56,14 @@
       - Alternative mod for `EZ Storage`
   - Remove
     - `AdvancedRocketry-1.12.2-2.0.0-13`
-    - `ezstorage-2.5.0-[1.12.2].jar`
+    - `Chunk Pregenerator-V1.12-2.5.7`
+    - `ezstorage-2.5.0-[1.12.2]`
     - `LibVulpes-1.12.2-0.4.2-25-universal`
-    - `FTBQuests-1202.9.0.15.jar`
-    - `RealisticItemDrops-1.2.14.jar`
+    - `FTBQuests-1202.9.0.15`
+    - `RealisticItemDrops-1.2.14`
       - For FPS improvements
-    - `seteffect-1.12.2-2.4.1.jar`
-    - `StorageDrawersExtras-1.12-3.1.0.jar`
+    - `seteffect-1.12.2-2.4.1`
+    - `StorageDrawersExtras-1.12-3.1.0`
       - Not used
   - Update
     - `appliedenergistics2-rv6-stable-7-extended_life-v0.53.4` -> `appliedenergistics2-rv6-stable-7-extended_life-v0.53.7b`

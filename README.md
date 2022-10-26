@@ -6,6 +6,9 @@
 
 ## Credits
 
+- Thanks to [Quarri6343](https://github.com/Quarri6343)!
+  - fixed the lag when saving edit on FTB Quests
+
 - `scripts/HiiragiUtils.zs`
   - Thanks to [grassUtils](https://github.com/friendlyhj/GrassUtils) by friendlyhj !
 

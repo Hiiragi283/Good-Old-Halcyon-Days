@@ -6,6 +6,9 @@
 
 ## クレジット
 
+- [くぁーりぃ](https://github.com/Quarri6343)氏に感謝!
+  - FTB Questsを編集する際のラグを防止してくださった
+
 - `scripts/HiiragiUtils.zs`
   - [grassUtils](https://github.com/friendlyhj/GrassUtils) by friendlyhj に感謝！
 
