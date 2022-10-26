@@ -122,19 +122,36 @@ print("Start loading unification.zs ...");
 		"dcs_climate:main_container/dcs_gem_blue_1",
 		"dcs_climate:main_container/dcs_ore_metal_alloy_2",
 		//"dcs_climate:magic/dcs_glowstone_dust_0",
-		"dcs_climate:magic/dcs_blaze_powder_0",
-		"dcs_climate:main_yagen/dcs_oreitem_0",
-		"dcs_climate:main_yagen/dcs_oreitem_1",
-		"dcs_climate:main_yagen/dcs_oreitem_2",
-		"dcs_climate:main_yagen/dcs_oreitem_3",
-		"dcs_climate:main_yagen/dcs_oreitem_4",
-		"dcs_climate:main_yagen/dcs_oreitem_5",
-		"dcs_climate:main_yagen/dcs_oreitem_6",
-		"dcs_climate:main_yagen/dcs_oreitem_7",
-		"dcs_climate:main_yagen/dcs_oreitem_8",
-		"dcs_climate:main_yagen/dcs_oreitem_9",
+		"dcs_climate:main_yagen/dcs_blaze_powder_0",
+		"dcs_climate:main_yagen/dcs_blaze_powder_0_2",
+		"dcs_climate:main_yagen/dcs_dye_15",
+		"dcs_climate:main_yagen/dcs_flint_0",
+		"dcs_climate:main_yagen/dcs_food_drop_oil_0",
+		"dcs_climate:main_yagen/dcs_food_materials_1",
+		"dcs_climate:main_yagen/dcs_food_materials_1_2",
+		"dcs_climate:main_yagen/dcs_food_materials_2",
+		"dcs_climate:main_yagen/dcs_gem_green_3",
+		"dcs_climate:main_yagen/dcs_gem_layer_0",
 		"dcs_climate:main_yagen/dcs_gem_layer_1",
+		"dcs_climate:main_yagen/dcs_gem_layer_2",
+		"dcs_climate:main_yagen/dcs_gem_layer_3",
 		"dcs_climate:main_yagen/dcs_gem_layer_4",
+		"dcs_climate:main_yagen/dcs_miscdust_1",
+		"dcs_climate:main_yagen/dcs_miscdust_1_2",
+		"dcs_climate:main_yagen/dcs_miscdust_2",
+		"dcs_climate:main_yagen/dcs_miscdust_6",
+		"dcs_climate:main_yagen/dcs_miscdust_8",
+		"dcs_climate:main_yagen/dcs_miscdust_9",
+		"dcs_climate:main_yagen/dcs_miscdust_9_2",
+		"dcs_climate:main_yagen/dcs_miscdust_11",
+		"dcs_climate:main_yagen/dcs_miscdust_12",
+		"dcs_climate:main_yagen/dcs_oreitem_4",
+		"dcs_climate:main_yagen/dcs_oredust_7",
+		"dcs_climate:main_yagen/dcs_oredust_9",
+		"dcs_climate:main_yagen/dcs_oredust_12",
+		"dcs_climate:main_yagen/dcs_oredust_12_2",
+		"dcs_climate:main_yagen/dcs_oredust_15",
+		"dcs_climate:main_yagen/dcs_string_0",
 		"enderio:s_a_g_mill_upgrade",
 		"enderio:stirling_generator_upgrade",
 		"enderio:wired_charger_upgrade",
@@ -252,10 +269,6 @@ print("Start loading unification.zs ...");
 		], null, null);
 		//青の金のリングの置き換え
 		HiiragiUtils.addCraftingShaped(false, <contenttweaker:dcs_color_ring2>, [[<ore:dustCrystal>], [<ore:dropBlue>], [<ore:ingotGold>]], null, null);
-		//Custom Tools
-		HiiragiUtils.addCraftingShaped(false, jei.axeGaia, RecipePattern.init(["ABA", "BCB", "ABA"]).map({A:<ore:dropofevil>, B:<contenttweaker:ragi_ticket>, C:<botania:elementiumaxe>}).ingredients, null, null);
-		HiiragiUtils.addCraftingShaped(false, jei.gunDevil, RecipePattern.init(["ABC", "BAB", "CBD"]).map({A:<ore:barrelMortar>, B:<contenttweaker:ragi_ticket>, C:<dcs_climate:dcs_cont_fuel:2>, D:<dcs_climate:dcs_musket>}).ingredients, null, null);
-		HiiragiUtils.addCraftingShaped(false, jei.rodSea, RecipePattern.init(["ABC", "BDB", "CBA"]).map({A:<ore:gemPrismarine>, B:<contenttweaker:ragi_ticket>, C:<ore:dustPrismarine>, D:<thermalfoundation:tool.fishing_rod_diamond>}).ingredients, null, null);
 		///クモ糸の置換
 		val replaceString as IItemStack[] = [
 			<extrautils2:goldenlasso>,
@@ -280,6 +293,7 @@ print("Start loading unification.zs ...");
 	HiiragiUtils.addCraftingShaped(false, <buildinggadgets:buildingtool>, RecipePattern.init(["ABA", "ACA", "ADA"]).map({A:<ore:plateIron>, B:<extrautils2:itemcreativebuilderswand>, C:<thermalfoundation:material:640>, D:<thermalfoundation:material:512>}).ingredients, null, null);
 	HiiragiUtils.addCraftingShaped(false, <buildinggadgets:destructiontool>, RecipePattern.init(["ABA", "ACA", "ADA"]).map({A:<ore:plateSteel>, B:<extrautils2:itemcreativedestructionwand>, C:<thermalfoundation:material:640>, D:<thermalfoundation:material:512>}).ingredients, null, null);
 	HiiragiUtils.addCraftingShaped(true, <contenttweaker:pumpkin_melon>, RecipePattern.init(["AAA", "BAC", "AAA"]).map({A:<ore:listAllseeds>, B:<minecraft:pumpkin>, C:<minecraft:melon_block>}).ingredients, null, null);
+	HiiragiUtils.addCraftingShapeless(false, <storagedrawers:upgrade_creative>, [<storagedrawers:upgrade_storage:4>, <extendedcrafting:singularity_ultimate>.reuse()], null, null);
 
 //かまどレシピの編集
 	//削除

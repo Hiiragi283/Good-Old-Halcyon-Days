@@ -29,17 +29,9 @@ print("Start loading mechanics.zs ...");
 //Crushing Blockのレシピの編集
 	//追加
 		//Color Ores
-		mods.mechanics.addCrushingBlockRecipe([<dcs_climate:dcs_ore_stone_new:0>], [<dcs_climate:dcs_oreitem:0>], [1.0]);
-		mods.mechanics.addCrushingBlockRecipe([<dcs_climate:dcs_ore_stone_new:1>], [<dcs_climate:dcs_oreitem:1>], [1.0]);
-		mods.mechanics.addCrushingBlockRecipe([<dcs_climate:dcs_ore_stone_new:2>], [<dcs_climate:dcs_oreitem:2>], [1.0]);
-		mods.mechanics.addCrushingBlockRecipe([<dcs_climate:dcs_ore_stone_new:3>], [<dcs_climate:dcs_oreitem:3>], [1.0]);
-		mods.mechanics.addCrushingBlockRecipe([<dcs_climate:dcs_ore_stone_new:4>], [<dcs_climate:dcs_oreitem:4>], [1.0]);
-		//Large Color Ores
-		mods.mechanics.addCrushingBlockRecipe([<dcs_climate:dcs_ore_stone_new:5>], [<dcs_climate:dcs_oreitem:5>], [1.0]);
-		mods.mechanics.addCrushingBlockRecipe([<dcs_climate:dcs_ore_stone_new:6>], [<dcs_climate:dcs_oreitem:6>], [1.0]);
-		mods.mechanics.addCrushingBlockRecipe([<dcs_climate:dcs_ore_stone_new:7>], [<dcs_climate:dcs_oreitem:7>], [1.0]);
-		mods.mechanics.addCrushingBlockRecipe([<dcs_climate:dcs_ore_stone_new:8>], [<dcs_climate:dcs_oreitem:8>], [1.0]);
-		mods.mechanics.addCrushingBlockRecipe([<dcs_climate:dcs_ore_stone_new:9>], [<dcs_climate:dcs_oreitem:9>], [1.0]);
+		for i in 0 to 10 {
+			mods.mechanics.addCrushingBlockRecipe([<dcs_climate:dcs_ore_stone_new>.definition.makeStack(i)], [<dcs_climate:dcs_oreitem:0>.definition.makeStack(i)], [1.0]);
+		}
 		//Non-Colored Ores
 		mods.mechanics.addCrushingBlockRecipe([<dcs_climate:dcs_layer_stone_new:0>], [<dcs_climate:dcs_gem:3>], [1.0]);
 		mods.mechanics.addCrushingBlockRecipe([<dcs_climate:dcs_layer_stone_new:1>], [<dcs_climate:dcs_miscdust:2>], [1.0]);
@@ -48,6 +40,10 @@ print("Start loading mechanics.zs ...");
 		mods.mechanics.addCrushingBlockRecipe([<dcs_climate:dcs_layer_stone_new:4>], [<dcs_climate:dcs_gem_layer:3>], [1.0]);
 		mods.mechanics.addCrushingBlockRecipe([<dcs_climate:dcs_layer_stone_new:5>], [<dcs_climate:dcs_gem_layer:1>], [1.0]);
 		mods.mechanics.addCrushingBlockRecipe([<dcs_climate:dcs_layer_stone_new:6>], [<dcs_climate:dcs_gem_green:3>], [1.0]);
+		//Metal Dusts
+		for i in 0 to 10 {
+			mods.mechanics.addCrushingBlockRecipe([<dcs_climate:dcs_oreitem>.definition.makeStack(i)], [<dcs_climate:dcs_oredust:0>.definition.makeStack(i)], [1.0]);
+		}
 
 //このscriptの読み込みの完了をログに出力
 print("mechanics.zs loaded!");

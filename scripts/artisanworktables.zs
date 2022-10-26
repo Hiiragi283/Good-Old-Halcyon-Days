@@ -82,6 +82,21 @@ print("Start loading artisanworktables.zs ...");
 		.setSecondaryIngredients([<ore:circuitElite>*64, <ore:alloyElite>*64, <appliedenergistics2:material:47>])
 		.addOutput(<extendedcrafting:crafting_core>)
 		.create();
+	RecipeBuilder.get("blacksmith")
+		.setShaped(RecipePattern.init([
+			"ABA",
+			"CDC",
+			"AEA"])
+		.map({
+			A:<extrautils2:decorativesolid:3>,
+			B:<extendedcrafting:singularity_ultimate>.reuse(),
+			C:<projecte:item.pe_klein_star:5>.withTag({StoredEMC: 51200000 as long}).reuse(),
+			D:<ore:gearRedstone>,
+			E:<botania:flugeleye>
+		}).ingredients)
+		.setSecondaryIngredients([<minecraft:dragon_egg>*20, <extrautils2:passivegenerator:8>*20])
+		.addOutput(<extrautils2:passivegenerator:6>)
+		.create();
 
 //このscriptの読み込みの完了をログに出力
 print("artisanworktables.zs loaded!");

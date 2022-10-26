@@ -7,6 +7,9 @@
 #priority 99
 
 //crafttweakerからclassをimport
+import crafttweaker.enchantments.IEnchantment;
+import crafttweaker.enchantments.IEnchantmentDefinition;
+import crafttweaker.data.IData;
 import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDictEntry;
@@ -20,15 +23,13 @@ import scripts.HiiragiUtils;
 //このscriptの読み込みの開始をログに出力
 print("Start loading jei.zs ...");
 
-static axeGaia as IItemStack = <botania:elementiumaxe>.withTag({ench: [{lvl: 13 as short, id: 16 as short}, {lvl: 13 as short, id: 26 as short}, {lvl: 13 as short, id: 35 as short}], display: {LocName: "gohd.custom.gaia_executer.name"}, AttributeModifiers: [{Amount: 6.0, Slot: "mainhand", AttributeName: "generic.reachDistance", Operation: 0, Name: "generic.reachDistance"}]});
-static cap4x as IItemStack = <enderio:item_basic_capacitor:4>.withTag({eiocap: {level: 4.0 as float}, display: {LocName: "gohd.custom.capasitor_4x"}});
-static cap5x as IItemStack = <enderio:item_basic_capacitor:4>.withTag({eiocap: {level: 5.0 as float}, display: {LocName: "gohd.custom.capasitor_5x"}});
-static cap6x as IItemStack = <enderio:item_basic_capacitor:4>.withTag({eiocap: {level: 6.0 as float}, display: {LocName: "gohd.custom.capasitor_6x"}});
-static gunDevil as IItemStack = <dcs_climate:dcs_musket>.withTag({ench: [{lvl: 10 as short, id: 48 as short}, {lvl: 5 as short, id: 34 as short}, {lvl: 1 as short, id: 30 as short}, {lvl: 1 as short, id: 50 as short}, {lvl: 1 as short, id: 28 as short}, {lvl: 5 as short, id: 42 as short}], display: {LocName: "gohd.custom.gun_devil.name"}});
-static rodSea as IItemStack = <thermalfoundation:tool.fishing_rod_diamond>.withTag({ench: [{lvl: 10 as short, id: 62 as short}, {lvl: 10 as short, id: 61 as short}], display: {LocName: "gohd.custom.rod_sea.name"}});
-static tableStencil as IItemStack = <tconstruct:tooltables:1>.withTag({textureBlock: {id: "twilightforest:twilight_oak_planks", Count: 1 as byte, Damage: 0 as short}});
-static tablePart as IItemStack = <tconstruct:tooltables:2>.withTag({textureBlock: {id: "twilightforest:twilight_log", Count: 1 as byte, Damage: 0 as short}});
-static toolForge as IItemStack = <tconstruct:toolforge>.withTag({textureBlock: {id: "dcs_climate:dcs_ore_heatingmetal", Count: 1 as byte, Damage: 2 as short}});
+//特殊アイテムの定義
+	//SC Capasitor
+	static cap6x as IItemStack = <enderio:item_basic_capacitor:4>.withTag({eiocap: {level: 6.0 as float}, display: {LocName: "gohd.custom.capasitor_6x"}});
+	//TCon Tables
+	static tableStencil as IItemStack = <tconstruct:tooltables:1>.withTag({textureBlock: {id: "twilightforest:twilight_oak_planks", Count: 1 as byte, Damage: 0 as short}});
+	static tablePart as IItemStack = <tconstruct:tooltables:2>.withTag({textureBlock: {id: "twilightforest:twilight_log", Count: 1 as byte, Damage: 0 as short}});
+	static toolForge as IItemStack = <tconstruct:toolforge>.withTag({textureBlock: {id: "dcs_climate:dcs_ore_heatingmetal", Count: 1 as byte, Damage: 2 as short}});
 
 //JEIからの登録を削除
 function hideJEI(item as IItemStack, oreDict as bool) {
@@ -300,33 +301,23 @@ for i in removeCategory {
 }
 
 //JEIへの新規登録
-function addJEI(item as IItemStack) {
-	mods.jei.JEI.addItem(item);
-}
-
 val mapAdd as IItemStack[] = [
 		<tconstruct:edible:5>,
 		<tconstruct:slime:5>,
 		<tconstruct:slime_congealed:5>,
 		<tconstruct:slimesling:5>,
 		<tconstruct:slime_boots:5>,
-		axeGaia,
-		cap4x,
-		cap5x,
 		cap6x,
-		gunDevil,
-		rodSea,
 		toolForge,
 ];
 for i in mapAdd {
-	addJEI(i);
+	mods.jei.JEI.addItem(i);
 }
 
 //説明ページの追加
 function addDesc(items as IItemStack[], desc as string[]) {
 	mods.jei.JEI.addDescription(items, desc);
 }
-
 addDesc([<dcs_climate:dcs_tinder:0>, <dcs_climate:dcs_tinder:1>], [I18n.format("gohd.jei.tinder.name")]);
 addDesc([<contenttweaker:drop_soul>],[I18n.format("gohd.jei.drop_soul.name")]);
 

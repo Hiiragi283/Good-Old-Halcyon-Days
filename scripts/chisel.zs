@@ -40,6 +40,9 @@ print("Start loading chisel.zs ...");
 		"item_steel": <ore:ingotSteel>.items,
 		"item_bronze": <ore:ingotBronze>.items,
 		"item_cropSeaweed": <ore:cropSeaweed>.items,
+		"item_malachite": <ore:gemMalachite>.items,
+		"item_topaz": <ore:gemTopaz>.items,
+		"item_amethyst": <ore:gemAmethyst>.items,
 	};
 	for i, j in chiselOreDict {
 		mods.chisel.Carving.addGroup(i);

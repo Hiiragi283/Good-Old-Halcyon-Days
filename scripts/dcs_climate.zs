@@ -17,6 +17,7 @@ import mods.tconstruct.Casting;
 
 //scriptのimport
 import scripts.HiiragiUtils;
+import scripts.jei;
 
 //このscriptの読み込みの開始をログに出力
 print("Start loading dcs_climate.zs ...");
@@ -40,8 +41,7 @@ print("Start loading dcs_climate.zs ...");
 	HiiragiUtils.addCraftingShaped(true, <hap:reactor_storage>, RecipePattern.init(["AAA", " B ", "CCC"]).map({A:<ore:ingotCobalt>, B:<thermalexpansion:device:5>, C:<ore:ingotStainlessSteel>}).ingredients, null, null);
 
 	//新規
-	HiiragiUtils.addCraftingShaped(false, <dcs_climate:dcs_spade_earth>.withTag({ench: [{lvl: 10 as short, id: 34 as short}, {lvl: 1 as short, id: 33 as short}], display: {LocName: "gohd.custom.spade_of_the_gaia.name"}}), RecipePattern.init(["AAA", "ABA", "AAA"]).map({A:<railcraft:jaded_stone>, B:<dcs_climate:dcs_spade_earth:*>}).ingredients, null, null);
-	HiiragiUtils.addCraftingShaped(false, <dcs_climate:dcs_rake_earth>.withTag({ench: [{lvl: 10 as short, id: 34 as short}, {lvl: 1 as short, id: 33 as short}], display: {LocName: "gohd.custom.rake_of_the_gaia.name"}}), RecipePattern.init(["AAA", "ABA", "AAA"]).map({A:<railcraft:jaded_stone>, B:<dcs_climate:dcs_rake_earth:*>}).ingredients, null, null);
+	HiiragiUtils.addCraftingShaped(false, <dcs_climate:dcs_device_creative_box>, RecipePattern.init(["ABA", "ACA", "DDD"]).map({A:<dcs_climate:dcs_mechanical:5>, B:<dcs_climate:dcs_magic_card_m>, C:<extendedcrafting:singularity_ultimate>.reuse(), D:<ore:ingotBedrockium>}).ingredients, null, null);
 
 //このscriptの読み込みの完了をログに出力
 print("dcs_climate.zs loaded!");

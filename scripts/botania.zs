@@ -243,8 +243,8 @@ print("Start loading botania.zs ...");
 	val agglo_workshop = AgglomerationMultiblock.create()
 		.center(<artisanworktables:workstation:5>)
 		.centerReplace(<artisanworktables:workshop:3>)
-		.edge(<tconstruct:tooltables:0>)
-		.edgeReplace(<dcs_climate:dcs_squaretable_wood>)
+		.edge(<enderio:block_crafter>)
+		.edgeReplace(<enderio:block_decoration2:5>)
 		.corner(<enderio:block_tank:1>)
 		.cornerReplace(<enderio:block_decoration2:12>);
 

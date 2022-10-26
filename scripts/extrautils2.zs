@@ -44,6 +44,7 @@ print("Start loading extrautils2.zs ...");
 	HiiragiUtils.addCraftingShaped(false, <extrautils2:decorativesolid:8>*8, RecipePattern.init(["AAA", "ABA", "AAA"]).map({A:<extrautils2:decorativesolid:3>, B:<extendedcrafting:material:32>|<contenttweaker:cube_iridescent>}).ingredients, null, null);
 	HiiragiUtils.addCraftingShaped(false, <extrautils2:itemcreativebuilderswand>, [[null, <ore:ingotUnstable>], [<ore:obsidian>, null]], null, null);
 	HiiragiUtils.addCraftingShaped(false, <extrautils2:itemcreativedestructionwand>, [[<ore:ingotStable>, null], [null, <ore:obsidian>]], null, null);
+	HiiragiUtils.addCraftingShaped(false, <extrautils2:spike_creative>, RecipePattern.init([" A ", "ABA", "CDC"]).map({A:<extrautils2:lawsword>, B:<extendedcrafting:singularity_ultimate>.reuse(), C:<ore:gemDragonStone>, D:<ore:blockGaiasteel>}).ingredients, null, null);
 
 	HiiragiUtils.addCraftingShapeless(false, <extrautils2:creativeharvest>, [<extrautils2:creativeharvest>, <*>.marked("creative")], function(out, ins, cInfo) {
 		var id as string = ins.creative.definition.id;
@@ -68,9 +69,7 @@ print("Start loading extrautils2.zs ...");
 		[<ore:dustBedrock>, <ore:ingotCopper>]: <enderio:item_basic_capacitor:0>,
 		[<enderio:item_basic_capacitor:0>, <ore:ingotEnergeticAlloy>]: <enderio:item_basic_capacitor:1>,
 		[<enderio:item_basic_capacitor:1>, <ore:ingotVibrantAlloy>]: <enderio:item_basic_capacitor:2>,
-		[<enderio:item_basic_capacitor:2>, <ore:ingotManasteel>]: jei.cap4x,
-		[jei.cap4x, <ore:ingotFluixSteel>]: jei.cap5x,
-		[jei.cap5x, <dcs_climate:dcs_mechanical:5>]: jei.cap6x,
+		[<enderio:item_basic_capacitor:2>, <dcs_climate:dcs_mechanical:5>]: jei.cap6x,
 		[<ore:dustBedrock>, <ore:ingotIron>]: <ore:gearIronInfinity>.firstItem,
 		[<ore:gearIronInfinity>, <ore:ingotDarkSteel>]: <ore:gearDark>.firstItem,
 		[<ore:gearIronInfinity>, <ore:ingotEnergeticAlloy>]: <ore:gearEnergized>.firstItem,

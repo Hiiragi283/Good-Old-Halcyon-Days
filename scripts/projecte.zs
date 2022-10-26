@@ -45,6 +45,12 @@ recipes.removeByMod("projectex");
 	//EMCの読み込み
 	EMCManager.mapEMC();
 	//EMCの削除
+	val removeEMC as IItemStack[] = [
+		<minecraft:flint>,
+	];
+	for i in removeEMC {
+		i.emc = 0;
+	}
 	//EMCの追加
 	val mapEMC as long[IItemStack] = {
 		//Stone
