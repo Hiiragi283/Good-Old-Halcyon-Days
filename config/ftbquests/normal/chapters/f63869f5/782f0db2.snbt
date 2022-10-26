@@ -1,0 +1,56 @@
+{
+	x: 0.0d,
+	y: 4.5d,
+	shape: "diamond",
+	dependencies: [
+		"e4251fd2"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "46b5d26e",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_food_essential_oil"
+		}]
+	},
+	{
+		uid: "c4ddd41b",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_food_essential_oil 1 1"
+		}]
+	},
+	{
+		uid: "c4b01bfc",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_food_essential_oil 1 2"
+		}]
+	},
+	{
+		uid: "5ab3f5e3",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_food_essential_oil 1 3"
+		}]
+	},
+	{
+		uid: "e58a27e3",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_food_essential_oil 1 4"
+		}]
+	},
+	{
+		uid: "9f8c5da4",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_food_essential_oil 1 5"
+		}]
+	}],
+	rewards: [{
+		uid: "42b8614f",
+		type: "item",
+		item: "contenttweaker:ticket_epic"
+	}]
+}

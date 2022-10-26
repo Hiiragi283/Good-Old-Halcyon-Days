@@ -1,0 +1,39 @@
+{
+	title: "{gohd.09d26429.bc22061f.title}",
+	x: 23.0d,
+	y: 0.0d,
+	shape: "diamond",
+	dependencies: [
+		"6cebaeaa"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "7516f42d",
+		type: "item",
+		items: [{
+			item: "mekanism:dust 1 2"
+		}],
+		count: 16L
+	},
+	{
+		uid: "80fa58ec",
+		type: "item",
+		items: [{
+			item: "thermalfoundation:material 1 71"
+		}],
+		count: 16L
+	},
+	{
+		uid: "83246cee",
+		type: "item",
+		items: [{
+			item: "thermalfoundation:material 1 70"
+		}],
+		count: 16L
+	}],
+	rewards: [{
+		uid: "3907c32f",
+		type: "item",
+		item: "contenttweaker:ticket_legendary"
+	}]
+}

@@ -1,0 +1,41 @@
+{
+	x: 5.5d,
+	y: -1.0d,
+	dependencies: [
+		"8d0ffccf",
+		"d11fc7ac"
+	],
+	tasks: [{
+		uid: "e6d8337f",
+		type: "item",
+		items: [{
+			item: "botania:alfheimportal"
+		}]
+	},
+	{
+		uid: "6c2a1557",
+		type: "item",
+		items: [{
+			item: "botania:livingwood 1 5"
+		}],
+		count: 3L
+	},
+	{
+		uid: "18ec53a5",
+		type: "item",
+		items: [{
+			item: "botania:pylon 1 1"
+		}],
+		count: 2L
+	}],
+	rewards: [{
+		uid: "98070f91",
+		type: "item",
+		item: {
+			id: "botania:manatablet",
+			tag: {
+				mana: 500000
+			}
+		}
+	}]
+}

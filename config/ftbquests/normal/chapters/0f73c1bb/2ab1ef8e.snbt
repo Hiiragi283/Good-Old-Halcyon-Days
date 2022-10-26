@@ -1,0 +1,17 @@
+{
+	x: 2.75d,
+	y: -2.75d,
+	shape: "square",
+	tasks: [{
+		uid: "6b23b357",
+		type: "item",
+		items: [{
+			item: "contenttweaker:cube_iridescent"
+		}]
+	}],
+	rewards: [{
+		uid: "de063189",
+		type: "item",
+		item: "contenttweaker:ticket_mythic"
+	}]
+}

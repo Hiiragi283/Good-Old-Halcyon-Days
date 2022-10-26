@@ -1,0 +1,7 @@
+{
+	title: "{gohd.minerals.title}",
+	icon: "minecraft:diamond_ore",
+	always_invisible: false,
+	group: -1181931262,
+	default_quest_shape: "square"
+}

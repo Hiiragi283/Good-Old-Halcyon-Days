@@ -1,0 +1,11 @@
+{
+	title: "{gohd.6b120fb2.d005700a.title}",
+	icon: "minecraft:diamond_sword",
+	x: -4.5d,
+	y: -3.0d,
+	shape: "square",
+	tasks: [{
+		uid: "bd068f0c",
+		type: "checkmark"
+	}]
+}

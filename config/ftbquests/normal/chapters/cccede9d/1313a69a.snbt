@@ -1,0 +1,22 @@
+{
+	title: "{gohd.cccede9d.1313a69a.title}",
+	icon: "dcs_climate:dcs_layer_skarn",
+	x: 7.0d,
+	y: 1.0d,
+	shape: "square",
+	text: [
+		"{gohd.cccede9d.1313a69a.desc1}"
+	],
+	tasks: [{
+		uid: "c428fb06",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_layer_skarn"
+		}]
+	}],
+	rewards: [{
+		uid: "6e4d16bc",
+		type: "item",
+		item: "contenttweaker:ticket_rare"
+	}]
+}

@@ -1,0 +1,33 @@
+{
+	x: 1.0d,
+	y: 1.0d,
+	text: [
+		"{gohd.hac.tooltip}"
+	],
+	dependencies: [
+		"219d3269"
+	],
+	tasks: [{
+		uid: "f5761288",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_device_spinning_machine"
+		}]
+	}],
+	rewards: [{
+		uid: "73cea092",
+		type: "item",
+		item: "dcs_climate:dcs_device_silkworm_box"
+	},
+	{
+		uid: "82cb9aca",
+		type: "item",
+		item: "dcs_climate:dcs_silkworm",
+		count: 9
+	},
+	{
+		uid: "b47c0c2b",
+		type: "item",
+		item: "dcs_climate:dcs_crop_sapling 1 3"
+	}]
+}

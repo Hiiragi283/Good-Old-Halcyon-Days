@@ -1,0 +1,36 @@
+{
+	x: 1.0d,
+	y: -3.0d,
+	dependencies: [
+		"3389527b"
+	],
+	tasks: [{
+		uid: "b795b14b",
+		type: "item",
+		title: "{advancements.dcs_climate.climate_cooking2.title}",
+		items: [{
+			item: "dcs_climate:dcs_food_stick 1 1"
+		},
+		{
+			item: "dcs_climate:dcs_food_stick 1 3"
+		},
+		{
+			item: "dcs_climate:dcs_food_stick 1 5"
+		},
+		{
+			item: "dcs_climate:dcs_food_stick 1 7"
+		},
+		{
+			item: "dcs_climate:dcs_food_stick 1 9"
+		},
+		{
+			item: "dcs_climate:dcs_food_stick 1 11"
+		}]
+	}],
+	rewards: [{
+		uid: "2da245a1",
+		type: "item",
+		item: "dcs_climate:dcs_food_stick 1 3",
+		count: 16
+	}]
+}

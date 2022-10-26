@@ -1,0 +1,44 @@
+{
+	x: 8.0d,
+	y: 6.0d,
+	dependencies: [
+		"c0072305"
+	],
+	tasks: [{
+		uid: "b0b92f22",
+		type: "item",
+		title: "{gohd.cccede9d.fed34783.task1}",
+		items: [{
+			item: "mekanism:clump"
+		},
+		{
+			item: "mekanism:clump 1 1"
+		},
+		{
+			item: "mekanism:clump 1 2"
+		},
+		{
+			item: "mekanism:clump 1 3"
+		},
+		{
+			item: "mekanism:clump 1 4"
+		},
+		{
+			item: "mekanism:clump 1 5"
+		},
+		{
+			item: "mekanism:clump 1 6"
+		},
+		{
+			item: "dcs_climate:dcs_metal 1 2"
+		},
+		{
+			item: "dcs_climate:dcs_metal 1 6"
+		}]
+	}],
+	rewards: [{
+		uid: "e64286b7",
+		type: "item",
+		item: "contenttweaker:ticket_rare"
+	}]
+}

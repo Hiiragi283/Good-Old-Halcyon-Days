@@ -1,0 +1,23 @@
+{
+	x: 0.0d,
+	y: -2.0d,
+	text: [
+		"{gohd.hac.tooltip}"
+	],
+	dependencies: [
+		"49df5bf8"
+	],
+	tasks: [{
+		uid: "3d18a77c",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_device_brewing_under"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "5eac88e4",
+		type: "item",
+		item: "contenttweaker:ticket_rare"
+	}]
+}

@@ -1,0 +1,24 @@
+{
+	x: 11.0d,
+	y: 1.0d,
+	text: [
+		"{gohd.hac.tooltip}"
+	],
+	dependencies: [
+		"0fee6a5a"
+	],
+	tasks: [{
+		uid: "abdccd91",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_device_dynamo"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "9dd1406e",
+		type: "item",
+		item: "dcs_climate:dcs_device_dynamo",
+		count: 3
+	}]
+}

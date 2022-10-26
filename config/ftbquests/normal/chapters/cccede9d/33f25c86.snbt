@@ -1,0 +1,22 @@
+{
+	title: "{gohd.cccede9d.33f25c86.title}",
+	icon: "dcs_climate:dcs_layer_stone_new 1 2",
+	x: 11.0d,
+	y: 1.0d,
+	shape: "square",
+	text: [
+		"{gohd.cccede9d.33f25c86.desc1}"
+	],
+	tasks: [{
+		uid: "cf42c01c",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_gem_layer 1 6"
+		}]
+	}],
+	rewards: [{
+		uid: "93d60d8d",
+		type: "item",
+		item: "contenttweaker:ticket_common"
+	}]
+}

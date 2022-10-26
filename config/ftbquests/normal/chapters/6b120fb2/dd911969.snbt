@@ -1,0 +1,22 @@
+{
+	x: 3.0d,
+	y: 5.0d,
+	dependencies: [
+		"dc397ef5"
+	],
+	tasks: [{
+		uid: "cf120f8e",
+		type: "item",
+		items: [{
+			item: "openblocks:tank"
+		}],
+		count: 8L,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "3c8fd633",
+		type: "item",
+		item: "openblocks:tank",
+		count: 8
+	}]
+}

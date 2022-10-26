@@ -1,0 +1,22 @@
+{
+	x: -1.5d,
+	y: -2.0d,
+	hide_dependency_lines: true,
+	dependencies: [
+		"d005700a"
+	],
+	tasks: [{
+		uid: "748355e6",
+		type: "item",
+		items: [{
+			item: "mekanismtools:obsidiansword"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "a088e81d",
+		type: "item",
+		item: "contenttweaker:ticket_legendary"
+	}]
+}

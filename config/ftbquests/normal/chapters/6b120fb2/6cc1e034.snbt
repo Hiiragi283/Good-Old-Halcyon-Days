@@ -1,0 +1,15 @@
+{
+	x: 8.0d,
+	y: -2.0d,
+	dependencies: [
+		"d28227d5"
+	],
+	tasks: [{
+		uid: "62197601",
+		type: "item",
+		items: [{
+			item: "railcraft:steam_oven"
+		}],
+		count: 8L
+	}]
+}

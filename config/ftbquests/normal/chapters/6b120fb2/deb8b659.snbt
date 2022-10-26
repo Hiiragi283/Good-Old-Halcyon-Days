@@ -1,0 +1,21 @@
+{
+	x: -5.0d,
+	y: -4.0d,
+	dependencies: [
+		"b6df7c84"
+	],
+	tasks: [{
+		uid: "ad7833f8",
+		type: "item",
+		items: [{
+			item: "enderstorage:ender_storage 1 1"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "3c57c7c2",
+		type: "item",
+		item: "enderstorage:ender_storage 1 1",
+		count: 3
+	}]
+}

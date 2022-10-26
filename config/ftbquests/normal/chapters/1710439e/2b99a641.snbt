@@ -1,0 +1,20 @@
+{
+	x: -8.0d,
+	y: -3.0d,
+	dependencies: [
+		"2db55f80"
+	],
+	tasks: [{
+		uid: "207d9d6d",
+		type: "item",
+		items: [{
+			item: "threng:material 1 5"
+		}]
+	}],
+	rewards: [{
+		uid: "bf1433f0",
+		type: "item",
+		item: "threng:material 1 5",
+		count: 7
+	}]
+}

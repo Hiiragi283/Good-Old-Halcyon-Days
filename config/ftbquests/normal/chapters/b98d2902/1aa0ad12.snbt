@@ -1,0 +1,19 @@
+{
+	x: 5.0d,
+	y: -1.0d,
+	dependencies: [
+		"6d90e11d"
+	],
+	tasks: [{
+		uid: "d91892ea",
+		type: "item",
+		items: [{
+			item: "hap:heat_block"
+		}]
+	}],
+	rewards: [{
+		uid: "5ced8542",
+		type: "item",
+		item: "contenttweaker:ticket_rare"
+	}]
+}

@@ -1,0 +1,20 @@
+{
+	x: 5.0d,
+	y: -2.0d,
+	dependencies: [
+		"5ebbbddf",
+		"fe39e5f6"
+	],
+	tasks: [{
+		uid: "a32067dc",
+		type: "item",
+		items: [{
+			item: "botania:terraplate"
+		}]
+	}],
+	rewards: [{
+		uid: "189aa815",
+		type: "item",
+		item: "contenttweaker:ticket_uncommon"
+	}]
+}

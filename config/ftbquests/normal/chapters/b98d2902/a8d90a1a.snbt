@@ -1,0 +1,17 @@
+{
+	title: "{advancements.dcs_climate.climate_wear.title}",
+	x: 1.0d,
+	y: 3.0d,
+	dependencies: [
+		"85f1fb5d"
+	],
+	tasks: [{
+		uid: "cfa37938",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_leggins_linen"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

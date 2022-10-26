@@ -1,0 +1,27 @@
+{
+	icon: "tconstruct:cast",
+	x: 13.0d,
+	y: 2.0d,
+	dependencies: [
+		"7342c45c",
+		"af232189"
+	],
+	tasks: [{
+		uid: "e8b6ba3c",
+		type: "item",
+		items: [{
+			item: "tconstruct:cast"
+		}]
+	}],
+	rewards: [{
+		uid: "667ca511",
+		type: "item",
+		item: "tconstruct:cast",
+		count: 4
+	},
+	{
+		uid: "14109009",
+		type: "item",
+		item: "chisel:chisel_iron"
+	}]
+}

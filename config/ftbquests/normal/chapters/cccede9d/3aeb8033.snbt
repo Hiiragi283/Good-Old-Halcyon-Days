@@ -1,0 +1,44 @@
+{
+	x: 10.0d,
+	y: 6.0d,
+	dependencies: [
+		"fed34783"
+	],
+	tasks: [{
+		uid: "288204c9",
+		type: "item",
+		title: "{gohd.cccede9d.3aeb8033.task1}",
+		items: [{
+			item: "mekanism:shard"
+		},
+		{
+			item: "mekanism:shard 1 1"
+		},
+		{
+			item: "mekanism:shard 1 2"
+		},
+		{
+			item: "mekanism:shard 1 3"
+		},
+		{
+			item: "mekanism:shard 1 4"
+		},
+		{
+			item: "mekanism:shard 1 5"
+		},
+		{
+			item: "mekanism:shard 1 6"
+		},
+		{
+			item: "dcs_climate:dcs_metal 1 1"
+		},
+		{
+			item: "dcs_climate:dcs_metal 1 5"
+		}]
+	}],
+	rewards: [{
+		uid: "19e03195",
+		type: "item",
+		item: "contenttweaker:ticket_epic"
+	}]
+}

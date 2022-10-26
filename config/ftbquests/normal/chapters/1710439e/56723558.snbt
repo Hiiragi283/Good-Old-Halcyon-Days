@@ -1,0 +1,18 @@
+{
+	x: -4.0d,
+	y: 1.0d,
+	dependencies: [
+		"0eeacbf2"
+	],
+	tasks: [{
+		uid: "d2e5e49f",
+		type: "item",
+		items: [{
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "refined_oil",
+				Amount: 1000
+			}
+		}]
+	}]
+}

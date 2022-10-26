@@ -1,0 +1,19 @@
+{
+	title: "{gohd.2e964474.2c530cd0.title}",
+	icon: "minecraft:fence",
+	x: 5.0d,
+	y: 7.0d,
+	text: [
+		"{gohd.2e964474.2c530cd0.desc1}"
+	],
+	tasks: [{
+		uid: "18044c2b",
+		type: "checkmark"
+	}],
+	rewards: [{
+		uid: "9a148e5c",
+		type: "item",
+		item: "dcs_climate:dcs_fence_rattan",
+		count: 64
+	}]
+}

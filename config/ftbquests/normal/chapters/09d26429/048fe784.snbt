@@ -1,0 +1,19 @@
+{
+	x: 12.0d,
+	y: 3.0d,
+	text: [
+		"{gohd.09d26429.048fe784.desc1}"
+	],
+	dependencies: [
+		"af232189"
+	],
+	tasks: [{
+		uid: "a4aa2fb9",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_wrench"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

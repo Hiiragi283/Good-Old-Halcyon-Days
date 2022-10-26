@@ -1,0 +1,28 @@
+{
+	x: 4.0d,
+	y: 5.0d,
+	dependencies: [
+		"0caa24a5"
+	],
+	tasks: [{
+		uid: "77081576",
+		type: "item",
+		items: [{
+			item: "contenttweaker:unfired_casting_table"
+		}]
+	},
+	{
+		uid: "86ebcd07",
+		type: "item",
+		items: [{
+			item: "contenttweaker:unfired_casting_basin"
+		}]
+	},
+	{
+		uid: "eb11f11e",
+		type: "item",
+		items: [{
+			item: "contenttweaker:unfired_casting_channel"
+		}]
+	}]
+}

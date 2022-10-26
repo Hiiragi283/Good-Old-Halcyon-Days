@@ -1,0 +1,22 @@
+{
+	x: 0.0d,
+	y: 2.0d,
+	hide_dependency_lines: true,
+	dependencies: [
+		"d6875eae"
+	],
+	tasks: [{
+		uid: "ed66b88c",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_crop_fertilizer"
+		}],
+		count: 16L
+	}],
+	rewards: [{
+		uid: "63ae5c46",
+		type: "item",
+		item: "dcs_climate:dcs_crop_fertilizer",
+		count: 16
+	}]
+}

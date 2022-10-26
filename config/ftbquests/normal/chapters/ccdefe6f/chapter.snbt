@@ -1,0 +1,7 @@
+{
+	title: "{gohd.tools.title}",
+	icon: "minecraft:iron_pickaxe",
+	always_invisible: false,
+	group: 1796345778,
+	default_quest_shape: ""
+}

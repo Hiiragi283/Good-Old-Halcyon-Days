@@ -1,0 +1,69 @@
+{
+	title: "{gohd.0f73c1bb.0143a624.title}",
+	icon: "minecraft:end_portal",
+	x: 2.75d,
+	y: 2.75d,
+	shape: "square",
+	text: [
+		"{gohd.0f73c1bb.0143a624.desc1}"
+	],
+	hide_dependency_lines: true,
+	dependencies: [
+		"978f1566"
+	],
+	tasks: [{
+		uid: "eb7921fc",
+		type: "item",
+		items: [{
+			item: "advancedrocketry:warpmonitor"
+		}]
+	},
+	{
+		uid: "c44545d5",
+		type: "item",
+		items: [{
+			item: "advancedrocketry:warpcore"
+		}]
+	},
+	{
+		uid: "2b34111c",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_ore_metal_alloy 1 7"
+		}],
+		count: 15L
+	},
+	{
+		uid: "9ab7518e",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_ore_metal_alloy 1 8"
+		}],
+		count: 2L
+	},
+	{
+		uid: "2db0b8fa",
+		type: "item",
+		items: [{
+			item: "libvulpes:structuremachine"
+		}],
+		count: 4L
+	},
+	{
+		uid: "bdf4146a",
+		type: "item",
+		items: [{
+			item: "libvulpes:hatch"
+		}]
+	}],
+	rewards: [{
+		uid: "06e1a3f5",
+		type: "item",
+		item: "biomesoplenty:earth"
+	},
+	{
+		uid: "815eb4c6",
+		type: "item",
+		item: "libvulpes:holoprojector"
+	}]
+}

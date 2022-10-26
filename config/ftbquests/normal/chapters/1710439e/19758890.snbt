@@ -1,0 +1,21 @@
+{
+	x: 6.0d,
+	y: 4.0d,
+	dependencies: [
+		"167400c0"
+	],
+	tasks: [{
+		uid: "3986ed99",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_synthetic"
+		}],
+		count: 4L
+	}],
+	rewards: [{
+		uid: "32668632",
+		type: "item",
+		item: "dcs_climate:dcs_synthetic",
+		count: 16
+	}]
+}

@@ -1,0 +1,45 @@
+{
+	x: 8.0d,
+	y: -7.0d,
+	shape: "diamond",
+	dependencies: [
+		"23189174"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "efb204ef",
+		type: "item",
+		items: [{
+			item: "threng:big_assembler"
+		}],
+		count: 32L
+	},
+	{
+		uid: "2592f769",
+		type: "item",
+		items: [{
+			item: "threng:big_assembler 1 1"
+		}],
+		count: 23L
+	},
+	{
+		uid: "9e662810",
+		type: "item",
+		items: [{
+			item: "threng:big_assembler"
+		}],
+		count: 8L
+	},
+	{
+		uid: "bd84f4ba",
+		type: "item",
+		items: [{
+			item: "threng:big_assembler 1 2"
+		}]
+	}],
+	rewards: [{
+		uid: "32955c6c",
+		type: "item",
+		item: "contenttweaker:ticket_epic"
+	}]
+}

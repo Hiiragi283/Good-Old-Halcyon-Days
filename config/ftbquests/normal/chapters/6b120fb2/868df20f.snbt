@@ -1,0 +1,39 @@
+{
+	x: 10.0d,
+	y: -2.0d,
+	dependencies: [
+		"96ad023b",
+		"d28227d5"
+	],
+	tasks: [{
+		uid: "7dcf05fe",
+		type: "item",
+		items: [{
+			id: "railcraft:locomotive_steam_solid",
+			tag: {
+				model: "railcraft:default"
+			}
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "4879deaa",
+		type: "item",
+		item: "railcraft:manipulator 1 4"
+	},
+	{
+		uid: "94bf0598",
+		type: "item",
+		item: {
+			id: "railcraft:locomotive_steam_solid",
+			tag: {
+				display: {
+					Name: "Thomas Jefferson"
+				},
+				primaryColor: "blue",
+				model: "railcraft:default",
+				secondaryColor: "red"
+			}
+		}
+	}]
+}

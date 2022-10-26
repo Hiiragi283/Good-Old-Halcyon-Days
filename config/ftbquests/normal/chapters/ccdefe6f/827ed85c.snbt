@@ -1,0 +1,35 @@
+{
+	x: -1.5d,
+	y: 3.0d,
+	text: [
+		"{gohd.hac.tooltip}"
+	],
+	hide_dependency_lines: true,
+	dependencies: [
+		"cc9e5886"
+	],
+	tasks: [{
+		uid: "e957b03c",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_spade_earth"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "b1c7fdb3",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_rake_earth"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "38050add",
+		type: "item",
+		item: "railcraft:jaded_stone",
+		count: 16
+	}]
+}

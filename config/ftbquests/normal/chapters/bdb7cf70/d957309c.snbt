@@ -1,0 +1,34 @@
+{
+	title: "{gohd.bdb7cf70.d957309c.title}",
+	x: 6.5d,
+	y: 5.0d,
+	dependencies: [
+		"c895536e"
+	],
+	tasks: [{
+		uid: "d721dca0",
+		type: "item",
+		items: [{
+			item: "contenttweaker:cube_cyan"
+		}]
+	},
+	{
+		uid: "96e94888",
+		type: "item",
+		items: [{
+			item: "contenttweaker:cube_magenta"
+		}]
+	},
+	{
+		uid: "1cb49148",
+		type: "item",
+		items: [{
+			item: "contenttweaker:cube_yellow"
+		}]
+	}],
+	rewards: [{
+		uid: "165ce8a1",
+		type: "item",
+		item: "contenttweaker:ticket_legendary"
+	}]
+}

@@ -1,0 +1,25 @@
+{
+	x: 6.0d,
+	y: 7.0d,
+	text: [
+		"{gohd.2e964474.a2b582c7.desc1}",
+		"{gohd.2e964474.a2b582c7.desc2}"
+	],
+	dependencies: [
+		"2c530cd0"
+	],
+	tasks: [{
+		uid: "25d1d223",
+		type: "item",
+		icon: "dcs_climate:dcs_crop_wisteria",
+		items: [{
+			item: "dcs_climate:dcs_food_seeds 1 14"
+		}]
+	}],
+	rewards: [{
+		uid: "1742c7ff",
+		type: "item",
+		item: "dcs_climate:dcs_crop_wisteria 1 2",
+		count: 7
+	}]
+}

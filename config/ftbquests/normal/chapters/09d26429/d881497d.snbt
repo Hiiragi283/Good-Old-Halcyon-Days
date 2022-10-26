@@ -1,0 +1,8 @@
+{
+	title: "{gohd.09d26429.d881497d.title}",
+	icon: "extrautils2:contract",
+	x: -0.5d,
+	y: -3.0d,
+	shape: "gear",
+	custom_click: "https://github.com/Hiiragi283/Good-Old-Halcyon-Days"
+}

@@ -1,0 +1,22 @@
+{
+	x: -2.5d,
+	y: -3.0d,
+	hide_dependency_lines: true,
+	dependencies: [
+		"d005700a"
+	],
+	tasks: [{
+		uid: "15e269e5",
+		type: "item",
+		items: [{
+			item: "enderio:item_dark_steel_sword"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "f29b175a",
+		type: "item",
+		item: "botania:enderdagger"
+	}]
+}

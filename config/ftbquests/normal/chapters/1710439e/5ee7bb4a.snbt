@@ -1,0 +1,20 @@
+{
+	x: -4.0d,
+	y: 4.0d,
+	dependencies: [
+		"763c3857"
+	],
+	tasks: [{
+		uid: "225404f4",
+		type: "item",
+		items: [{
+			item: "contenttweaker:gem_carbon"
+		}]
+	}],
+	rewards: [{
+		uid: "48f7ac0d",
+		type: "item",
+		item: "contenttweaker:gem_carbon",
+		count: 3
+	}]
+}

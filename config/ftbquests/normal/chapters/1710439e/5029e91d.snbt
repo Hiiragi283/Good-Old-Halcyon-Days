@@ -1,0 +1,36 @@
+{
+	icon: "dcs_climate:dcs_food_pack 1 19",
+	x: 2.0d,
+	y: 6.0d,
+	dependencies: [
+		"209edd4f"
+	],
+	tasks: [{
+		uid: "b0ae68f3",
+		type: "item",
+		items: [{
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "dcs.nitrogen",
+				Amount: 1000
+			}
+		}]
+	},
+	{
+		uid: "1a8a9836",
+		type: "item",
+		items: [{
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "dcs.oxygen",
+				Amount: 1000
+			}
+		}]
+	}],
+	rewards: [{
+		uid: "09fff965",
+		type: "item",
+		item: "dcs_climate:dcs_food_pack 1 19",
+		count: 16
+	}]
+}

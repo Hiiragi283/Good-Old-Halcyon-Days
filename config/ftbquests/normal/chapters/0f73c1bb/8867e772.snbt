@@ -1,0 +1,34 @@
+{
+	title: "{gohd.end_game.title}",
+	x: 0.0d,
+	y: 2.75d,
+	shape: "hexagon",
+	text: [
+		"{gohd.0f73c1bb.8867e772.desc1}",
+		"{gohd.0f73c1bb.8867e772.desc2}",
+		"{gohd.0f73c1bb.8867e772.desc3}",
+		"{gohd.0f73c1bb.8867e772.desc4}"
+	],
+	dependencies: [
+		"73be3bc0",
+		"0143a624"
+	],
+	dependency_requirement: "one_completed",
+	size: 2.0d,
+	tasks: [{
+		uid: "dc67725e",
+		type: "dimension",
+		title: "{gohd.0f73c1bb.8867e772.task1}",
+		icon: "biomesoplenty:grass 1 5",
+		dim: 2011
+	}],
+	rewards: [{
+		uid: "932836ab",
+		type: "command",
+		title: "{gohd.0f73c1bb.8867e772.reward1}",
+		icon: "minecraft:writable_book",
+		auto: "no_toast",
+		command: "/playsound minecraft:entity.enderdragon.death master @p",
+		player_command: true
+	}]
+}

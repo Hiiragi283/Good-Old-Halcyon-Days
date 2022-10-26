@@ -1,0 +1,32 @@
+{
+	x: -4.0d,
+	y: -3.0d,
+	dependencies: [
+		"b6df7c84"
+	],
+	tasks: [{
+		uid: "84c1a2dc",
+		type: "item",
+		items: [{
+			item: "extrautils2:interactionproxy"
+		}]
+	}],
+	rewards: [{
+		uid: "da797da6",
+		type: "item",
+		item: "extrautils2:user",
+		count: 4
+	},
+	{
+		uid: "eaa85b1d",
+		type: "item",
+		item: "extrautils2:scanner",
+		count: 4
+	},
+	{
+		uid: "068ad10e",
+		type: "item",
+		item: "extrautils2:miner",
+		count: 4
+	}]
+}

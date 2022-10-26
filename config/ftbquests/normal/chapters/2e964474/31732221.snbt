@@ -1,0 +1,23 @@
+{
+	icon: "dcs_climate:dcs_food_crops 1 17",
+	x: 10.0d,
+	y: 3.5d,
+	tasks: [{
+		uid: "581e12c8",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_crop_sapling2 1 1"
+		}]
+	}],
+	rewards: [{
+		uid: "7e32b831",
+		type: "item",
+		item: "dcs_climate:dcs_crop_sapling2 1 1",
+		count: 3
+	},
+	{
+		uid: "a47f7bf0",
+		type: "item",
+		item: "dcs_climate:dcs_food_noentity 1 1"
+	}]
+}

@@ -1,0 +1,38 @@
+{
+	title: "{gohd.09d26429.a1433ad5.title}",
+	x: 2.0d,
+	y: 2.0d,
+	dependencies: [
+		"648774ca"
+	],
+	tasks: [{
+		uid: "a290da75",
+		type: "item",
+		items: [{
+			item: "minecraft:sand"
+		}],
+		count: 32L
+	},
+	{
+		uid: "2b178837",
+		type: "item",
+		items: [{
+			item: "minecraft:gravel"
+		}],
+		count: 32L
+	},
+	{
+		uid: "55cf148f",
+		type: "item",
+		items: [{
+			item: "minecraft:clay_ball"
+		}],
+		count: 64L
+	}],
+	rewards: [{
+		uid: "8221438d",
+		type: "item",
+		item: "contenttweaker:ticket_common",
+		count: 3
+	}]
+}

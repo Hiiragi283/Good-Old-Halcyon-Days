@@ -1,0 +1,34 @@
+{
+	title: "{gohd.ingotSteel.title}",
+	icon: "thermalfoundation:material 1 160",
+	x: 15.0d,
+	y: 2.0d,
+	shape: "diamond",
+	dependencies: [
+		"f9c67698"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "51dd9f5c",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "ingotSteel",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any ingotSteel"
+				}
+			}
+		}]
+	}],
+	rewards: [{
+		uid: "4c085987",
+		type: "item",
+		item: "contenttweaker:ticket_rare"
+	}]
+}

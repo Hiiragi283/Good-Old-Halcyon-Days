@@ -1,0 +1,28 @@
+{
+	icon: "appliedenergistics2:sky_stone_block",
+	x: 22.0d,
+	y: 1.0d,
+	dependencies: [
+		"32f9f50d"
+	],
+	tasks: [{
+		uid: "b775851e",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:sky_stone_block"
+		}]
+	},
+	{
+		uid: "b373cd73",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:material 1 45"
+		}]
+	}],
+	rewards: [{
+		uid: "8e99d100",
+		type: "item",
+		item: "appliedenergistics2:sky_stone_block",
+		count: 31
+	}]
+}

@@ -1,0 +1,28 @@
+{
+	title: "{gohd.bdb7cf70.dbe05e17.title}",
+	x: 6.0d,
+	y: -2.0d,
+	dependencies: [
+		"53018868"
+	],
+	tasks: [{
+		uid: "fb22ed82",
+		type: "item",
+		items: [{
+			item: "contenttweaker:ephemerald"
+		}]
+	},
+	{
+		uid: "a30c0e1c",
+		type: "item",
+		items: [{
+			item: "contenttweaker:elven_pearl"
+		}]
+	}],
+	rewards: [{
+		uid: "60772b48",
+		type: "item",
+		item: "botania:manaresource 1 4",
+		count: 4
+	}]
+}

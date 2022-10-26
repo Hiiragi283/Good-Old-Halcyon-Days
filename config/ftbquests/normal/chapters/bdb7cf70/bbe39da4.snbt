@@ -1,0 +1,48 @@
+{
+	title: "{gohd.bdb7cf70.bbe39da4.title}",
+	x: 3.5d,
+	y: 3.0d,
+	dependencies: [
+		"cac10bd4"
+	],
+	tasks: [{
+		uid: "96dfb408",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_color 1 7"
+		}]
+	},
+	{
+		uid: "1f0fbcf0",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_color 1 6"
+		}]
+	},
+	{
+		uid: "adf441df",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_color 1 5"
+		}]
+	},
+	{
+		uid: "576d2faf",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_color 1 9"
+		}]
+	},
+	{
+		uid: "4c000f16",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_color 1 8"
+		}]
+	}],
+	rewards: [{
+		uid: "a2f39d3c",
+		type: "item",
+		item: "contenttweaker:ticket_rare"
+	}]
+}

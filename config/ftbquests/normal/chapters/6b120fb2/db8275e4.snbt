@@ -1,0 +1,23 @@
+{
+	x: 0.0d,
+	y: -2.0d,
+	shape: "diamond",
+	dependencies: [
+		"2b33da2c",
+		"e850a937"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "b6b5d2e2",
+		type: "item",
+		items: [{
+			item: "openblocks:vacuum_hopper"
+		}]
+	}],
+	rewards: [{
+		uid: "14ccec31",
+		type: "item",
+		item: "openblocks:vacuum_hopper",
+		count: 3
+	}]
+}

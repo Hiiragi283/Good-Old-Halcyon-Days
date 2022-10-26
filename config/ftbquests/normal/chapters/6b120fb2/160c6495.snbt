@@ -1,0 +1,19 @@
+{
+	x: -2.0d,
+	y: 0.0d,
+	shape: "rsquare",
+	dependencies: [
+		"88f70c00"
+	],
+	optional: true,
+	tasks: [{
+		uid: "09b860e1",
+		type: "item",
+		items: [{
+			id: "thermalfoundation:tome_experience",
+			tag: {}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

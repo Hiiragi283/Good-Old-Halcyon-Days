@@ -1,0 +1,26 @@
+{
+	x: 0.0d,
+	y: -2.75d,
+	shape: "square",
+	dependencies: [
+		"99f571cf",
+		"2ab1ef8e"
+	],
+	tasks: [{
+		uid: "91d8444b",
+		type: "item",
+		items: [{
+			item: "twilightforest:miniature_structure"
+		}]
+	}],
+	rewards: [{
+		uid: "275e8c19",
+		type: "item",
+		item: "contenttweaker:ticket_mythic"
+	},
+	{
+		uid: "9f87b2eb",
+		type: "item",
+		item: "twilightforest:uncrafting_table"
+	}]
+}

@@ -1,0 +1,27 @@
+{
+	x: 8.5d,
+	y: 7.0d,
+	shape: "diamond",
+	text: [
+		"{gohd.hac.tooltip}"
+	],
+	dependencies: [
+		"72b4363c",
+		"59f06e32"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "5960410a",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_device_tankyard"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "ba5c9bd2",
+		type: "item",
+		item: "dcs_climate:dcs_device_yardpart",
+		count: 25
+	}]
+}

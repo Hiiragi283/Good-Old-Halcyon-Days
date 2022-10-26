@@ -1,0 +1,22 @@
+{
+	title: "{gohd.ingotNickelsilver.title}",
+	x: 15.0d,
+	y: -2.0d,
+	shape: "diamond",
+	dependencies: [
+		"ae72043e"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "b491d0f7",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_ingot 1 6"
+		}]
+	}],
+	rewards: [{
+		uid: "7b0a0c8a",
+		type: "item",
+		item: "contenttweaker:ticket_rare"
+	}]
+}

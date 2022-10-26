@@ -1,0 +1,33 @@
+{
+	x: 6.5d,
+	y: 6.0d,
+	dependencies: [
+		"50fde685"
+	],
+	tasks: [{
+		uid: "973620df",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_food_microbe_methanogen"
+		}]
+	},
+	{
+		uid: "304e9069",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_food_microbe_methanogen 1 1"
+		}]
+	},
+	{
+		uid: "dbdf9123",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_food_microbe_methanogen 1 2"
+		}]
+	}],
+	rewards: [{
+		uid: "add93799",
+		type: "item",
+		item: "contenttweaker:ticket_uncommon"
+	}]
+}

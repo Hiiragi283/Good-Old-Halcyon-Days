@@ -1,0 +1,19 @@
+{
+	icon: "dcs_climate:dcs_food_pack 1 9",
+	x: 7.0d,
+	y: 5.5d,
+	dependencies: [
+		"a0f687f7"
+	],
+	tasks: [{
+		uid: "8d464fa4",
+		type: "item",
+		items: [{
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "dcs.black_tea",
+				Amount: 1000
+			}
+		}]
+	}]
+}

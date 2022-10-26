@@ -1,0 +1,25 @@
+{
+	icon: "dcs_climate:dcs_liquor_bottle 1 7",
+	x: 3.0d,
+	y: -2.0d,
+	dependencies: [
+		"df39ff4e"
+	],
+	tasks: [{
+		uid: "e26604aa",
+		type: "item",
+		items: [{
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "dcs.pomace_brandy",
+				Amount: 1000
+			}
+		}]
+	}],
+	rewards: [{
+		uid: "f4abbdac",
+		type: "item",
+		item: "dcs_climate:dcs_liquor_bottle 1 7",
+		count: 16
+	}]
+}

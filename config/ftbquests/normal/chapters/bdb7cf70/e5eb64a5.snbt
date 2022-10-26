@@ -1,0 +1,36 @@
+{
+	title: "{gohd.bdb7cf70.e5eb64a5.title}",
+	x: 7.5d,
+	y: 3.0d,
+	dependencies: [
+		"62bd5500"
+	],
+	tasks: [{
+		uid: "6e37df60",
+		type: "item",
+		items: [{
+			item: "botania:shimmerwoodplanks"
+		}],
+		count: 16L
+	},
+	{
+		uid: "c8a17db9",
+		type: "item",
+		items: [{
+			item: "botania:shimmerrock"
+		}],
+		count: 16L
+	}],
+	rewards: [{
+		uid: "d3d5714f",
+		type: "item",
+		item: "botania:shimmerwoodplanks",
+		count: 16
+	},
+	{
+		uid: "8a37ba8c",
+		type: "item",
+		item: "botania:shimmerrock",
+		count: 16
+	}]
+}

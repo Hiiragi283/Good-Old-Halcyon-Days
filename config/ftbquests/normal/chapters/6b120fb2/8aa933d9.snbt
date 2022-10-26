@@ -1,0 +1,20 @@
+{
+	x: 7.0d,
+	y: -8.0d,
+	dependencies: [
+		"9cac191e"
+	],
+	tasks: [{
+		uid: "eb9c8f9f",
+		type: "item",
+		items: [{
+			item: "enderio:item_inventory_remote"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "55af5259",
+		type: "item",
+		item: "contenttweaker:ticket_rare"
+	}]
+}

@@ -1,0 +1,58 @@
+{
+	icon: {
+		id: "storagedrawers:basicdrawers",
+		tag: {
+			material: "oak"
+		}
+	},
+	x: 6.0d,
+	y: -5.0d,
+	dependencies: [
+		"d427c913"
+	],
+	tasks: [{
+		uid: "4c6cfc8c",
+		type: "item",
+		items: [{
+			item: "storagedrawers:framingtable"
+		}]
+	},
+	{
+		uid: "19e49153",
+		type: "item",
+		items: [{
+			item: "storagedrawers:customdrawers"
+		},
+		{
+			item: "storagedrawers:customdrawers 1 1"
+		},
+		{
+			item: "storagedrawers:customdrawers 1 2"
+		},
+		{
+			item: "storagedrawers:customtrim"
+		}]
+	}],
+	rewards: [{
+		uid: "6dbed450",
+		type: "item",
+		item: "storagedrawers:controller"
+	},
+	{
+		uid: "4115b7c5",
+		type: "item",
+		item: "storagedrawers:compdrawers",
+		count: 4
+	},
+	{
+		uid: "5f75701f",
+		type: "item",
+		item: "storagedrawers:upgrade_template",
+		count: 16
+	},
+	{
+		uid: "b959d499",
+		type: "item",
+		item: "storagedrawers:drawer_key"
+	}]
+}

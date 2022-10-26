@@ -1,0 +1,33 @@
+{
+	x: 4.0d,
+	y: 2.0d,
+	text: [
+		"{gohd.hac.tooltip}"
+	],
+	dependencies: [
+		"ead0b171",
+		"af232189",
+		"cdb72fb9"
+	],
+	dependency_requirement: "one_completed",
+	tasks: [{
+		uid: "72e9d11c",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_device_bellow"
+		},
+		{
+			item: "dcs_climate:dcs_device_fan"
+		}]
+	}],
+	rewards: [{
+		uid: "8ac65066",
+		type: "item",
+		item: "contenttweaker:ticket_uncommon"
+	},
+	{
+		uid: "8a8cad9e",
+		type: "item",
+		item: "dcs_climate:dcs_torque_checker"
+	}]
+}

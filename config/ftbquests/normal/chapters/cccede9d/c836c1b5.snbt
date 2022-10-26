@@ -1,0 +1,22 @@
+{
+	x: 8.0d,
+	y: 7.0d,
+	shape: "rsquare",
+	dependencies: [
+		"bf9ec0d2"
+	],
+	optional: true,
+	tasks: [{
+		uid: "0ccdd8d6",
+		type: "item",
+		items: [{
+			item: "enderio:block_enhanced_sag_mill"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "aef71639",
+		type: "item",
+		item: "contenttweaker:ticket_epic"
+	}]
+}

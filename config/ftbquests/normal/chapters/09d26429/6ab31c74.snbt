@@ -1,0 +1,41 @@
+{
+	title: "{gohd.09d26429.6ab31c74.title}",
+	icon: "compactmachines3:fieldprojector",
+	x: 23.0d,
+	y: 2.0d,
+	shape: "diamond",
+	dependencies: [
+		"c29b5fbb",
+		"bc22061f",
+		"38c6d533"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "9c71e82f",
+		type: "item",
+		items: [{
+			item: "compactmachines3:psd"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "99947aad",
+		type: "item",
+		items: [{
+			item: "compactmachines3:fieldprojector"
+		}],
+		count: 4L
+	}],
+	rewards: [{
+		uid: "e95a7873",
+		type: "item",
+		item: "contenttweaker:ticket_legendary",
+		count: 3
+	},
+	{
+		uid: "4876ccb1",
+		type: "item",
+		item: "contenttweaker:quantum_entangler"
+	}]
+}

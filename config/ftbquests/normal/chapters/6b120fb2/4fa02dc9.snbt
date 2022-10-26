@@ -1,0 +1,25 @@
+{
+	x: 4.0d,
+	y: 2.0d,
+	text: [
+		"{gohd.hac.tooltip}"
+	],
+	dependencies: [
+		"72b4363c",
+		"90e584bd",
+		"1b062df5"
+	],
+	tasks: [{
+		uid: "9f95b5c1",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_device_faucet_sus"
+		}]
+	}],
+	rewards: [{
+		uid: "33ca3882",
+		type: "item",
+		item: "dcs_climate:dcs_device_faucet_sus",
+		count: 3
+	}]
+}

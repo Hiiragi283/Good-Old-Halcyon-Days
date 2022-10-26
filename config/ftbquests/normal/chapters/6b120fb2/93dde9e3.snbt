@@ -1,0 +1,19 @@
+{
+	x: -3.0d,
+	y: -1.0d,
+	dependencies: [
+		"88f70c00"
+	],
+	tasks: [{
+		uid: "6494b7d0",
+		type: "item",
+		items: [{
+			item: "minecraft:anvil"
+		}]
+	}],
+	rewards: [{
+		uid: "fea4e084",
+		type: "item",
+		item: "railcraft:anvil"
+	}]
+}

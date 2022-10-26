@@ -1,0 +1,7 @@
+{
+	title: "{gohd.magic.title}",
+	icon: "twilightforest:magic_map_focus",
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: "hexagon"
+}

@@ -1,0 +1,20 @@
+{
+	x: 11.0d,
+	y: 5.0d,
+	dependencies: [
+		"e608130b"
+	],
+	tasks: [{
+		uid: "7b967494",
+		type: "item",
+		items: [{
+			item: "quarryplus:miningwellplus"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "85183887",
+		type: "item",
+		item: "contenttweaker:ticket_rare"
+	}]
+}

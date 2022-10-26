@@ -1,0 +1,7 @@
+{
+	title: "{gohd.chemistry.title}",
+	icon: "botania:vial",
+	always_invisible: false,
+	group: -1181931262,
+	default_quest_shape: ""
+}

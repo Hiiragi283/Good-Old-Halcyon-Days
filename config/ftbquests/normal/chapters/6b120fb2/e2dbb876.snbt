@@ -1,0 +1,19 @@
+{
+	x: 15.0d,
+	y: 7.0d,
+	dependencies: [
+		"deabff32"
+	],
+	tasks: [{
+		uid: "fce5f8fd",
+		type: "item",
+		items: [{
+			item: "quarryplus:torch_module"
+		}]
+	}],
+	rewards: [{
+		uid: "cbeb6ac3",
+		type: "item",
+		item: "contenttweaker:ticket_rare"
+	}]
+}

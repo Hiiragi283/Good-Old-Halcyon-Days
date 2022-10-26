@@ -1,0 +1,22 @@
+{
+	x: 4.0d,
+	y: 1.5d,
+	tasks: [{
+		uid: "cfd0792e",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_food_seeds 1 10"
+		}]
+	}],
+	rewards: [{
+		uid: "7868b3ce",
+		type: "item",
+		item: "dcs_climate:dcs_food_seeds 1 10",
+		count: 7
+	},
+	{
+		uid: "2f4abf46",
+		type: "item",
+		item: "dcs_climate:dcs_food_bread 1 31"
+	}]
+}

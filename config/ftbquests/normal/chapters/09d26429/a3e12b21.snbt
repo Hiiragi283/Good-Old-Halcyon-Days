@@ -1,0 +1,47 @@
+{
+	x: 5.0d,
+	y: 5.0d,
+	dependencies: [
+		"efbbdf1d",
+		"de863d39"
+	],
+	tasks: [{
+		uid: "92447edb",
+		type: "item",
+		items: [{
+			item: "tconstruct:casting"
+		}]
+	},
+	{
+		uid: "99248d12",
+		type: "item",
+		items: [{
+			item: "tconstruct:casting 1 1"
+		}]
+	},
+	{
+		uid: "48eb2e87",
+		type: "item",
+		items: [{
+			item: "tconstruct:channel"
+		}]
+	}],
+	rewards: [{
+		uid: "d52c68ab",
+		type: "item",
+		item: {
+			id: "tconstruct:seared_tank",
+			tag: {
+				FluidName: "lava",
+				Amount: 4000
+			},
+			Damage: 1s
+		}
+	},
+	{
+		uid: "1e094488",
+		type: "item",
+		item: "tconstruct:faucet",
+		count: 2
+	}]
+}

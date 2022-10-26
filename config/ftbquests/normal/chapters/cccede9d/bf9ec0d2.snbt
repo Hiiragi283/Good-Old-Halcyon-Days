@@ -1,0 +1,21 @@
+{
+	x: 6.0d,
+	y: 7.0d,
+	dependencies: [
+		"c3caed90"
+	],
+	tasks: [{
+		uid: "15261673",
+		type: "item",
+		items: [{
+			item: "enderio:block_sag_mill"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "90f53577",
+		type: "item",
+		item: "enderio:item_alloy_ball 1 8",
+		count: 16
+	}]
+}

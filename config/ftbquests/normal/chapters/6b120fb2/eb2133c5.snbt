@@ -1,0 +1,20 @@
+{
+	x: 15.5d,
+	y: 6.0d,
+	dependencies: [
+		"deabff32"
+	],
+	tasks: [{
+		uid: "3b02d4f7",
+		type: "item",
+		items: [{
+			item: "quarryplus:tool 1 3"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "8631a0db",
+		type: "item",
+		item: "contenttweaker:ticket_rare"
+	}]
+}

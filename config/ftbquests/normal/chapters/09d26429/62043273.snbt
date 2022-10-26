@@ -1,0 +1,37 @@
+{
+	icon: "dcs_climate:dcs_oreitem",
+	x: 8.0d,
+	y: 0.0d,
+	text: [
+		"{gohd.hac.tooltip}"
+	],
+	dependencies: [
+		"4fb7c614"
+	],
+	tasks: [{
+		uid: "cacadd0e",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_ore_stone_new"
+		}]
+	},
+	{
+		uid: "9996a2fc",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_oreitem"
+		}]
+	},
+	{
+		uid: "5a3bf511",
+		type: "item",
+		items: [{
+			item: "thermalfoundation:material 1 64"
+		}]
+	}],
+	rewards: [{
+		uid: "776df422",
+		type: "item",
+		item: "contenttweaker:ticket_common"
+	}]
+}

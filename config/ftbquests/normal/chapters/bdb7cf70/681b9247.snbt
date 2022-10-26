@@ -1,0 +1,17 @@
+{
+	x: 0.0d,
+	y: 0.0d,
+	dependency_requirement: "one_completed",
+	size: 2.0d,
+	tasks: [{
+		uid: "ac5ab436",
+		type: "dimension",
+		icon: "twilightforest:miniature_structure",
+		dim: 7
+	}],
+	rewards: [{
+		uid: "e87e173f",
+		type: "item",
+		item: "twilightforest:magic_map_empty"
+	}]
+}

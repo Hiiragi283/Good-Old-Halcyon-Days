@@ -1,0 +1,28 @@
+{
+	x: 3.0d,
+	y: 9.0d,
+	dependencies: [
+		"dc397ef5"
+	],
+	tasks: [{
+		uid: "9ea5dfc4",
+		type: "item",
+		items: [{
+			item: "thermalexpansion:reservoir"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "03f5afd8",
+		type: "item",
+		item: {
+			id: "minecraft:enchanted_book",
+			tag: {
+				StoredEnchantments: [{
+					lvl: 10s,
+					id: 12s
+				}]
+			}
+		}
+	}]
+}

@@ -1,0 +1,29 @@
+{
+	title: "{gui.railcraft.steam.boiler}",
+	icon: "dcs_climate:dcs_fluidblock_steam",
+	x: 9.0d,
+	y: -1.0d,
+	shape: "square",
+	tasks: [{
+		uid: "056e8d02",
+		type: "item",
+		items: [{
+			item: "railcraft:boiler_firebox_solid"
+		},
+		{
+			item: "railcraft:boiler_firebox_fluid"
+		}],
+		count: 4L
+	},
+	{
+		uid: "a311a447",
+		type: "item",
+		items: [{
+			item: "railcraft:boiler_tank_pressure_low"
+		},
+		{
+			item: "railcraft:boiler_tank_pressure_high"
+		}],
+		count: 8L
+	}]
+}

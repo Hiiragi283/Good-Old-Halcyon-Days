@@ -1,0 +1,49 @@
+{
+	title: "{gohd.0290d76b.ff5f1169.title}",
+	icon: {
+		id: "patchouli:guide_book",
+		tag: {
+			"patchouli:book": "twilightforest:guide"
+		}
+	},
+	x: 3.0d,
+	y: -1.0d,
+	shape: "rsquare",
+	can_repeat: true,
+	dependencies: [
+		"8297ab4c"
+	],
+	tasks: [{
+		uid: "b8ad5155",
+		type: "item",
+		items: [{
+			item: "contenttweaker:ticket_uncommon"
+		}],
+		count: 3L
+	}],
+	rewards: [{
+		uid: "631b136d",
+		type: "item",
+		item: "thermalexpansion:satchel 1 4"
+	},
+	{
+		uid: "613cf78a",
+		type: "item",
+		item: "openblocks:hang_glider"
+	},
+	{
+		uid: "34333164",
+		type: "item",
+		item: "openblocks:sleeping_bag"
+	},
+	{
+		uid: "2f93f4c6",
+		type: "choice",
+		table: 0
+	},
+	{
+		uid: "d897d10e",
+		type: "choice",
+		table: 1
+	}]
+}

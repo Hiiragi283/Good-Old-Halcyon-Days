@@ -1,0 +1,21 @@
+{
+	x: 13.0d,
+	y: 5.0d,
+	dependencies: [
+		"1b2ed916",
+		"c3e86239",
+		"19695f1a"
+	],
+	tasks: [{
+		uid: "4cbadbda",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_food_noentity 1 7"
+		}]
+	}],
+	rewards: [{
+		uid: "b1b2142a",
+		type: "item",
+		item: "contenttweaker:ticket_uncommon"
+	}]
+}

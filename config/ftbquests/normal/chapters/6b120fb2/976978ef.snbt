@@ -1,0 +1,27 @@
+{
+	x: 6.0d,
+	y: -3.0d,
+	dependencies: [
+		"339a28fb"
+	],
+	tasks: [{
+		uid: "4c1551c7",
+		type: "item",
+		items: [{
+			id: "thermalexpansion:cache",
+			tag: {
+				Facing: 3b,
+				Level: 0b
+			}
+		},
+		{
+			item: "mekanism:basicblock 1 6"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "ca06e625",
+		type: "item",
+		item: "contenttweaker:ticket_uncommon"
+	}]
+}

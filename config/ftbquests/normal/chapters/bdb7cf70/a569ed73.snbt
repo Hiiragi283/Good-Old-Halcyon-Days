@@ -1,0 +1,28 @@
+{
+	x: 4.0d,
+	y: 0.0d,
+	dependencies: [
+		"f6f700b4"
+	],
+	tasks: [{
+		uid: "8f370da0",
+		type: "item",
+		items: [{
+			id: "botania:specialflower",
+			tag: {
+				type: "puredaisy"
+			}
+		}]
+	}],
+	rewards: [{
+		uid: "bdb3eeed",
+		type: "item",
+		item: {
+			id: "botania:specialflower",
+			tag: {
+				type: "puredaisy"
+			}
+		},
+		count: 3
+	}]
+}

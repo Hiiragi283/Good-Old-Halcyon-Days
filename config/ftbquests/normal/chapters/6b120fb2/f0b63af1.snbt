@@ -1,0 +1,19 @@
+{
+	x: 6.0d,
+	y: 6.0d,
+	dependencies: [
+		"90e584bd"
+	],
+	tasks: [{
+		uid: "ec4ba64a",
+		type: "item",
+		items: [{
+			item: "extrautils2:ingredients 1 8"
+		}]
+	}],
+	rewards: [{
+		uid: "775b8b39",
+		type: "item",
+		item: "extrautils2:grocket 1 2"
+	}]
+}

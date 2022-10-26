@@ -1,0 +1,19 @@
+{
+	icon: "minecraft:end_stone",
+	x: 6.0d,
+	y: 4.0d,
+	dependencies: [
+		"a230052c"
+	],
+	tasks: [{
+		uid: "6919a4e2",
+		type: "dimension",
+		icon: "minecraft:end_gateway",
+		dim: 1
+	}],
+	rewards: [{
+		uid: "6031d1ed",
+		type: "item",
+		item: "biomesoplenty:terrarium 1 15"
+	}]
+}

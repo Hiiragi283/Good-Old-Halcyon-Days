@@ -1,0 +1,39 @@
+{
+	title: "{gohd.6b120fb2.7f470c3f.title}",
+	x: -5.0d,
+	y: -8.0d,
+	shape: "rsquare",
+	text: [
+		"{gohd.hac.tooltip}"
+	],
+	dependencies: [
+		"d9c31ec7"
+	],
+	optional: true,
+	tasks: [{
+		uid: "772d3450",
+		type: "item",
+		title: "{gohd.6b120fb2.7f470c3f.title}",
+		items: [{
+			item: "dcs_climate:dcs_device_monitor_torque"
+		},
+		{
+			item: "dcs_climate:dcs_device_monitor_rf"
+		},
+		{
+			item: "dcs_climate:dcs_device_monitor_fluid"
+		},
+		{
+			item: "dcs_climate:dcs_device_monitor_item"
+		},
+		{
+			item: "dcs_climate:dcs_device_monitor_temp"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "058ae5cf",
+		type: "item",
+		item: "dcs_climate:dcs_device_entity_panel"
+	}]
+}

@@ -1,0 +1,55 @@
+{
+	title: "{gohd.bdb7cf70.6328f68d.title}",
+	x: 6.0d,
+	y: 2.0d,
+	text: [
+		"{gohd.bdb7cf70.8d0ffccf.desc1}"
+	],
+	dependencies: [
+		"0a051cab",
+		"04cf4508",
+		"34596416"
+	],
+	tasks: [{
+		uid: "4d894cb7",
+		type: "item",
+		items: [{
+			item: "botania:manaresource 1 7"
+		}],
+		count: 4L
+	},
+	{
+		uid: "ff582988",
+		type: "item",
+		items: [{
+			item: "botania:manaresource 1 9"
+		}],
+		count: 8L
+	},
+	{
+		uid: "de8c98c3",
+		type: "item",
+		items: [{
+			item: "botania:manaresource 1 8"
+		}],
+		count: 8L
+	}],
+	rewards: [{
+		uid: "b10f71cc",
+		type: "item",
+		item: "botania:manaresource 1 7",
+		count: 12
+	},
+	{
+		uid: "b7c08d43",
+		type: "item",
+		item: "botania:manaresource 1 9",
+		count: 8
+	},
+	{
+		uid: "01d89954",
+		type: "item",
+		item: "botania:manaresource 1 8",
+		count: 8
+	}]
+}

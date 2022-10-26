@@ -1,0 +1,19 @@
+{
+	x: 8.0d,
+	y: 4.0d,
+	dependencies: [
+		"ac130ae2"
+	],
+	tasks: [{
+		uid: "85aa079e",
+		type: "item",
+		items: [{
+			item: "artisanworktables:workstation 1 5"
+		}]
+	}],
+	rewards: [{
+		uid: "a27d36d6",
+		type: "item",
+		item: "artisanworktables:toolbox"
+	}]
+}

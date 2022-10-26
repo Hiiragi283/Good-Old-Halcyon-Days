@@ -1,0 +1,22 @@
+{
+	x: 3.0d,
+	y: -1.0d,
+	text: [
+		"{gohd.hac.tooltip}"
+	],
+	dependencies: [
+		"c592cbbc"
+	],
+	tasks: [{
+		uid: "40994173",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_device_firestand"
+		}]
+	}],
+	rewards: [{
+		uid: "ebfaa0e5",
+		type: "item",
+		item: "dcs_climate:dcs_device_igniter"
+	}]
+}

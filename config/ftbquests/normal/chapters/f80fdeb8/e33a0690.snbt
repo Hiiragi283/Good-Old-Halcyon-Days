@@ -1,0 +1,49 @@
+{
+	title: "{gohd.f80fdeb8.e33a0690.title}",
+	x: 16.0d,
+	y: 4.0d,
+	shape: "diamond",
+	text: [
+		"{dcs.tip.trade_only}"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "84ba2a93",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_food_spice"
+		}]
+	},
+	{
+		uid: "ea4dd8c8",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_food_spice 1 1"
+		}]
+	},
+	{
+		uid: "02c5b976",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_food_spice 1 2"
+		}]
+	}],
+	rewards: [{
+		uid: "83b23a1f",
+		type: "item",
+		item: "dcs_climate:dcs_food_spice",
+		count: 31
+	},
+	{
+		uid: "4e19bc13",
+		type: "item",
+		item: "dcs_climate:dcs_food_spice 1 1",
+		count: 31
+	},
+	{
+		uid: "9306824c",
+		type: "item",
+		item: "dcs_climate:dcs_food_spice 1 2",
+		count: 31
+	}]
+}

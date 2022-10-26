@@ -1,0 +1,82 @@
+{
+	x: 10.0d,
+	y: 2.0d,
+	dependencies: [
+		"04b1f6ab"
+	],
+	tasks: [{
+		uid: "9e636aaa",
+		type: "item",
+		title: "{gohd.6b120fb2.7c9e3fd5.title}",
+		items: [{
+			id: "thermalexpansion:dynamo",
+			tag: {
+				RSControl: 0b,
+				Facing: 1b,
+				Energy: 0,
+				Level: 0b
+			}
+		},
+		{
+			id: "thermalexpansion:dynamo",
+			tag: {
+				RSControl: 0b,
+				Facing: 1b,
+				Energy: 0,
+				Level: 0b
+			},
+			Damage: 1s
+		},
+		{
+			id: "thermalexpansion:dynamo",
+			tag: {
+				RSControl: 0b,
+				Facing: 1b,
+				Energy: 0,
+				Level: 0b
+			},
+			Damage: 2s
+		},
+		{
+			id: "thermalexpansion:dynamo",
+			tag: {
+				RSControl: 0b,
+				Facing: 1b,
+				Energy: 0,
+				Level: 0b
+			},
+			Damage: 3s
+		},
+		{
+			id: "thermalexpansion:dynamo",
+			tag: {
+				RSControl: 0b,
+				Facing: 1b,
+				Energy: 0,
+				Level: 0b
+			},
+			Damage: 4s
+		},
+		{
+			id: "thermalexpansion:dynamo",
+			tag: {
+				RSControl: 0b,
+				Facing: 1b,
+				Energy: 0,
+				Level: 0b
+			},
+			Damage: 5s
+		}]
+	}],
+	rewards: [{
+		uid: "83ef34f3",
+		type: "item",
+		item: "thermalfoundation:upgrade 1 35"
+	},
+	{
+		uid: "00d26129",
+		type: "item",
+		item: "thermalexpansion:augment 1 512",
+		count: 4
+	}]
+}

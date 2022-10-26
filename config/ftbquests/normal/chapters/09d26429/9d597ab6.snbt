@@ -1,0 +1,21 @@
+{
+	icon: "minecraft:wheat_seeds",
+	x: 2.0d,
+	y: -2.0d,
+	dependencies: [
+		"648774ca"
+	],
+	tasks: [{
+		uid: "c8b5ada7",
+		type: "item",
+		items: [{
+			item: "minecraft:wheat_seeds"
+		}],
+		count: 64L
+	}],
+	rewards: [{
+		uid: "16454b21",
+		type: "item",
+		item: "minecraft:diamond_hoe"
+	}]
+}

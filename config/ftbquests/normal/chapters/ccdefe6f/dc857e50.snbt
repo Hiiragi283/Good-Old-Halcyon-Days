@@ -1,0 +1,28 @@
+{
+	title: "Rank SS",
+	x: -2.5d,
+	y: 4.0d,
+	shape: "rsquare",
+	dependencies: [
+		"efc2f62c"
+	],
+	optional: true,
+	tasks: [{
+		uid: "c13a9279",
+		type: "item",
+		items: [{
+			id: "botania:terrapick",
+			tag: {
+				mana: 2147483646
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 2b
+	}],
+	rewards: [{
+		uid: "23d6dd00",
+		type: "item",
+		item: "contenttweaker:ticket_mythic",
+		count: 3
+	}]
+}

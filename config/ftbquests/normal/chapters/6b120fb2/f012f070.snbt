@@ -1,0 +1,25 @@
+{
+	x: 4.0d,
+	y: -9.5d,
+	dependencies: [
+		"8ddb757f"
+	],
+	tasks: [{
+		uid: "7a59febf",
+		type: "item",
+		items: [{
+			item: "extrautils2:indexer"
+		}]
+	}],
+	rewards: [{
+		uid: "6ea514fc",
+		type: "item",
+		item: "extrautils2:pipe",
+		count: 64
+	},
+	{
+		uid: "2d8124ed",
+		type: "item",
+		item: "extrautils2:indexerremote"
+	}]
+}

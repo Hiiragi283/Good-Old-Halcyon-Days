@@ -1,0 +1,20 @@
+{
+	x: 14.0d,
+	y: 3.0d,
+	text: [
+		"{gohd.09d26429.6777b90d.desc1}"
+	],
+	dependencies: [
+		"6724c976",
+		"048fe784"
+	],
+	tasks: [{
+		uid: "bcbf3501",
+		type: "item",
+		items: [{
+			item: "hap:wrench"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

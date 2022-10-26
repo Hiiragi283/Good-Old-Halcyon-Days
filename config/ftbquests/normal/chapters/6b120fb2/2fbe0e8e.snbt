@@ -1,0 +1,25 @@
+{
+	x: -5.0d,
+	y: -10.0d,
+	shape: "rsquare",
+	text: [
+		"{gohd.hac.tooltip}"
+	],
+	dependencies: [
+		"d9c31ec7"
+	],
+	optional: true,
+	tasks: [{
+		uid: "7b4f4937",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_device_monitor_rs"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "7665afe1",
+		type: "item",
+		item: "dcs_climate:dcs_device_monitor_cm"
+	}]
+}

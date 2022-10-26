@@ -1,0 +1,29 @@
+{
+	title: "{gohd.brewing.title}",
+	icon: "dcs_climate:dcs_device_aging_barrel",
+	x: 0.0d,
+	y: 0.0d,
+	shape: "square",
+	size: 2.0d,
+	tasks: [{
+		uid: "738c058d",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_device_aging_barrel"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "b7857a1e",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_device_distillator"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "6616ba0a",
+		type: "item",
+		item: "contenttweaker:ticket_rare"
+	}]
+}

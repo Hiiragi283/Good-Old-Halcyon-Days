@@ -1,0 +1,22 @@
+{
+	title: "{gohd.chemistry.title}",
+	icon: "botania:vial",
+	x: 0.0d,
+	y: 0.0d,
+	shape: "square",
+	size: 2.0d,
+	tasks: [{
+		uid: "182d4649",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_device_reactor"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "2c2e8626",
+		type: "item",
+		item: "dcs_climate:dcs_device_ibc",
+		count: 8
+	}]
+}

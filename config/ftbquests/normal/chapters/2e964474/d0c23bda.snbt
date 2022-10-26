@@ -1,0 +1,23 @@
+{
+	icon: "dcs_climate:dcs_food_crops 1 19",
+	x: 8.0d,
+	y: 1.5d,
+	tasks: [{
+		uid: "2aa98284",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_food_seeds 1 15"
+		}]
+	}],
+	rewards: [{
+		uid: "ec4b532f",
+		type: "item",
+		item: "dcs_climate:dcs_food_seeds 1 15",
+		count: 7
+	},
+	{
+		uid: "a175d3c1",
+		type: "item",
+		item: "dcs_climate:dcs_food_drink"
+	}]
+}

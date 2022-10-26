@@ -1,0 +1,20 @@
+{
+	x: 8.0d,
+	y: 4.0d,
+	dependencies: [
+		"f1f3df3e"
+	],
+	tasks: [{
+		uid: "f284c6df",
+		type: "item",
+		items: [{
+			item: "mekanism:machineblock 1 12"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "a50f2fa2",
+		type: "item",
+		item: "mekanism:filterupgrade"
+	}]
+}

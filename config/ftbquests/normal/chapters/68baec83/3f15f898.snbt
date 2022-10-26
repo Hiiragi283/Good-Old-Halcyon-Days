@@ -1,0 +1,23 @@
+{
+	x: 3.5d,
+	y: 0.0d,
+	text: [
+		"{gohd.68baec83.3f15f898.desc1}"
+	],
+	dependencies: [
+		"09e0feeb"
+	],
+	tasks: [{
+		uid: "0c91f4ac",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_device_incubator"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "0a2765c1",
+		type: "item",
+		item: "contenttweaker:ticket_rare"
+	}]
+}

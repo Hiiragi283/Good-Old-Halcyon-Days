@@ -1,0 +1,50 @@
+{
+	title: "{gohd.6b120fb2.bb71f376.title}",
+	x: -1.5d,
+	y: 2.0d,
+	text: [
+		"{gohd.hac.tooltip}"
+	],
+	hide_dependency_lines: true,
+	dependencies: [
+		"cc9e5886"
+	],
+	tasks: [{
+		uid: "72e2787c",
+		type: "item",
+		items: [{
+			id: "dcs_climate:dcs_pickaxe_mangalloy",
+			tag: {
+				ench: [{
+					lvl: 1s,
+					id: 33s
+				}]
+			}
+		},
+		{
+			id: "dcs_climate:dcs_spade_mangalloy",
+			tag: {
+				ench: [{
+					lvl: 1s,
+					id: 33s
+				}]
+			}
+		},
+		{
+			id: "dcs_climate:dcs_axe_mangalloy",
+			tag: {
+				ench: [{
+					lvl: 1s,
+					id: 33s
+				}]
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "1e598df0",
+		type: "item",
+		item: "dcs_climate:dcs_rotaryblade 1 3"
+	}]
+}

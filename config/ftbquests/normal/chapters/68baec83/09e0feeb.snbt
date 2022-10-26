@@ -1,0 +1,24 @@
+{
+	x: 2.0d,
+	y: 0.0d,
+	text: [
+		"{gohd.hac.tooltip}"
+	],
+	dependencies: [
+		"49df5bf8"
+	],
+	tasks: [{
+		uid: "b0e7ff6e",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_food_medium"
+		}],
+		count: 16L
+	}],
+	rewards: [{
+		uid: "c7887431",
+		type: "item",
+		item: "dcs_climate:dcs_food_medium",
+		count: 16
+	}]
+}

@@ -1,0 +1,22 @@
+{
+	title: "{gohd.ingotBrass.title}",
+	x: 11.0d,
+	y: 2.0d,
+	shape: "diamond",
+	dependencies: [
+		"58429b88"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "dac5777b",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_ingot 1 4"
+		}]
+	}],
+	rewards: [{
+		uid: "2061fd71",
+		type: "item",
+		item: "contenttweaker:ticket_uncommon"
+	}]
+}

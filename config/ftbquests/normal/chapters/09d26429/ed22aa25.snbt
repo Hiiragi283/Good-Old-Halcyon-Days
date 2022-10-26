@@ -1,0 +1,28 @@
+{
+	x: 23.0d,
+	y: -2.0d,
+	shape: "diamond",
+	dependencies: [
+		"bc22061f"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "0ea85dc4",
+		type: "item",
+		items: [{
+			item: "mekanism:basicblock 1 8"
+		}]
+	}],
+	rewards: [{
+		uid: "28e75706",
+		type: "item",
+		item: {
+			id: "mekanism:configurator",
+			tag: {
+				mekData: {
+					energyStored: 60000.0d
+				}
+			}
+		}
+	}]
+}

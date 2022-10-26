@@ -1,0 +1,57 @@
+{
+	title: "{gohd.cccede9d.add5de61.title}",
+	icon: "dcs_climate:dcs_ore_stone_new",
+	x: 0.0d,
+	y: 1.0d,
+	text: [
+		"{dcs.info.desc.stone_r}"
+	],
+	tasks: [{
+		uid: "d4219b1a",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "oreRed",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any oreRed"
+				}
+			}
+		}]
+	},
+	{
+		uid: "dd0b3938",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "oreLargeRed",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any oreLargeRed"
+				}
+			}
+		}]
+	}],
+	rewards: [{
+		uid: "31df30a2",
+		type: "item",
+		item: "dcs_climate:dcs_layer_stone_new 1 3",
+		count: 32
+	},
+	{
+		uid: "04ad58ff",
+		type: "item",
+		item: "dcs_climate:dcs_layer_stone_new 1 1",
+		count: 32
+	}]
+}

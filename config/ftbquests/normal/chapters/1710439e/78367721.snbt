@@ -1,0 +1,21 @@
+{
+	x: 8.0d,
+	y: -4.0d,
+	dependencies: [
+		"24de9f04"
+	],
+	tasks: [{
+		uid: "040ea531",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_dynamite 1 2"
+		}],
+		count: 8L
+	}],
+	rewards: [{
+		uid: "0b2903e6",
+		type: "item",
+		item: "dcs_climate:dcs_dynamite 1 2",
+		count: 8
+	}]
+}

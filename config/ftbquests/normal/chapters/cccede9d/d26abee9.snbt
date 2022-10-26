@@ -1,0 +1,23 @@
+{
+	x: 2.0d,
+	y: 6.0d,
+	text: [
+		"{gohd.hac.tooltip}"
+	],
+	dependencies: [
+		"4895296f"
+	],
+	tasks: [{
+		uid: "7623851f",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_device_stonemill"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "21b9ea8b",
+		type: "item",
+		item: "contenttweaker:ticket_uncommon"
+	}]
+}

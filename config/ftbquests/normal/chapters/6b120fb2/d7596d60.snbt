@@ -1,0 +1,24 @@
+{
+	x: 5.0d,
+	y: 1.0d,
+	text: [
+		"{gohd.hac.tooltip}"
+	],
+	dependencies: [
+		"5ecfe9d7"
+	],
+	tasks: [{
+		uid: "f4be6822",
+		type: "item",
+		items: [{
+			item: "hap:shaft_straight_steel"
+		}],
+		count: 8L
+	}],
+	rewards: [{
+		uid: "9daaefdc",
+		type: "item",
+		item: "hap:shaft_straight_steel",
+		count: 24
+	}]
+}

@@ -1,0 +1,24 @@
+{
+	x: 0.5d,
+	y: -2.0d,
+	dependencies: [
+		"32566b48"
+	],
+	tasks: [{
+		uid: "f40a256c",
+		type: "item",
+		items: [{
+			item: "botania:crystalbow"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "e4ce5097",
+		type: "item",
+		item: {
+			id: "botania:manaringgreater",
+			tag: {}
+		}
+	}]
+}

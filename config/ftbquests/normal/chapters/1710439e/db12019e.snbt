@@ -1,0 +1,23 @@
+{
+	x: -6.0d,
+	y: -1.0d,
+	dependencies: [
+		"8252471c"
+	],
+	tasks: [{
+		uid: "d94410b6",
+		type: "item",
+		items: [{
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "refined_biofuel",
+				Amount: 1000
+			}
+		}]
+	}],
+	rewards: [{
+		uid: "a1a65327",
+		type: "item",
+		item: "contenttweaker:ticket_uncommon"
+	}]
+}

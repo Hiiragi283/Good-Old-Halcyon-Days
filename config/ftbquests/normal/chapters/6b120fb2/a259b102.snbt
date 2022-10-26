@@ -1,0 +1,19 @@
+{
+	x: -1.0d,
+	y: -4.0d,
+	text: [
+		"{gohd.hac.tooltip}"
+	],
+	hide_dependency_lines: true,
+	dependencies: [
+		"1e590e85"
+	],
+	tasks: [{
+		uid: "60ef7563",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_device_hopper_silver"
+		}],
+		ignore_nbt: 1b
+	}]
+}

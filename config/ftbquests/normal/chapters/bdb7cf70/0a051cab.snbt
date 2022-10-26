@@ -1,0 +1,19 @@
+{
+	x: 5.5d,
+	y: 1.0d,
+	dependencies: [
+		"8d0ffccf"
+	],
+	tasks: [{
+		uid: "8e177bc7",
+		type: "item",
+		items: [{
+			item: "botania:runealtar"
+		}]
+	}],
+	rewards: [{
+		uid: "5be60c3b",
+		type: "item",
+		item: "contenttweaker:ticket_uncommon"
+	}]
+}

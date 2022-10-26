@@ -1,0 +1,22 @@
+{
+	x: 5.5d,
+	y: 1.0d,
+	hide_dependency_lines: true,
+	dependencies: [
+		"e79fb275"
+	],
+	tasks: [{
+		uid: "6368a8ad",
+		type: "item",
+		items: [{
+			item: "mekanism:armoredjetpack"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "0d198a67",
+		type: "item",
+		item: "mekanism:freerunners"
+	}]
+}

@@ -1,0 +1,35 @@
+{
+	x: 6.0d,
+	y: 5.0d,
+	dependencies: [
+		"ac130ae2"
+	],
+	tasks: [{
+		uid: "2e78644b",
+		type: "item",
+		items: [{
+			id: "tconstruct:toolforge",
+			tag: {
+				textureBlock: {
+					id: "tconstruct:dried_clay",
+					Count: 1b,
+					Damage: 1s
+				}
+			}
+		}]
+	}],
+	rewards: [{
+		uid: "479958ce",
+		type: "item",
+		item: {
+			id: "tconstruct:toolforge",
+			tag: {
+				textureBlock: {
+					id: "enderio:block_decoration1",
+					Count: 1b,
+					Damage: 15s
+				}
+			}
+		}
+	}]
+}

@@ -1,0 +1,28 @@
+{
+	x: 13.0d,
+	y: 9.0d,
+	shape: "rsquare",
+	dependencies: [
+		"5138469f"
+	],
+	optional: true,
+	tasks: [{
+		uid: "82f3ded6",
+		type: "item",
+		items: [{
+			item: "quarryplus:chunkdestroyer"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "a5f82ffa",
+		type: "item",
+		item: "quarryplus:fuel_module_creative"
+	},
+	{
+		uid: "d2664bb7",
+		type: "item",
+		item: "contenttweaker:ticket_legendary",
+		count: 3
+	}]
+}

@@ -1,0 +1,22 @@
+{
+	x: 3.0d,
+	y: 3.0d,
+	dependencies: [
+		"dd911969"
+	],
+	tasks: [{
+		uid: "25e6276f",
+		type: "item",
+		items: [{
+			item: "enderio:block_omni_reservoir"
+		}],
+		count: 4L,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "fef45125",
+		type: "item",
+		item: "enderio:block_omni_reservoir",
+		count: 4
+	}]
+}

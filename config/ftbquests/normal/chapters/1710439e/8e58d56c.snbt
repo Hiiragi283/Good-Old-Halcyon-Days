@@ -1,0 +1,23 @@
+{
+	x: 10.0d,
+	y: 6.0d,
+	shape: "diamond",
+	dependencies: [
+		"ace568fc",
+		"60407213"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "73a948dc",
+		type: "item",
+		items: [{
+			item: "enderio:item_material 1 51"
+		}]
+	}],
+	rewards: [{
+		uid: "4fae54eb",
+		type: "item",
+		item: "enderio:item_material 1 51",
+		count: 3
+	}]
+}

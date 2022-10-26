@@ -1,0 +1,23 @@
+{
+	x: 3.0d,
+	y: 1.0d,
+	text: [
+		"{gohd.hac.tooltip}"
+	],
+	dependencies: [
+		"c592cbbc"
+	],
+	tasks: [{
+		uid: "db97510d",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_device_shitirin"
+		}]
+	}],
+	rewards: [{
+		uid: "732762bd",
+		type: "item",
+		item: "minecraft:coal 1 1",
+		count: 8
+	}]
+}

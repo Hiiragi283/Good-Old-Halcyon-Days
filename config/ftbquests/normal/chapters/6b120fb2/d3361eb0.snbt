@@ -1,0 +1,21 @@
+{
+	x: -7.0d,
+	y: -6.0d,
+	dependencies: [
+		"16d4ca1d"
+	],
+	tasks: [{
+		uid: "fff28835",
+		type: "item",
+		items: [{
+			item: "enderstorage:ender_pouch"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "90bb148f",
+		type: "item",
+		item: "contenttweaker:ticket_epic"
+	}]
+}

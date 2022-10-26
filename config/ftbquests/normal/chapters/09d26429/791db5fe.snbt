@@ -1,0 +1,25 @@
+{
+	x: 10.0d,
+	y: 3.0d,
+	dependencies: [
+		"6c77c9cd",
+		"de863d39"
+	],
+	tasks: [{
+		uid: "26b0dba1",
+		type: "item",
+		items: [{
+			item: "morefurnaces:furnaceblock"
+		}]
+	}],
+	rewards: [{
+		uid: "e98ca502",
+		type: "item",
+		item: "morefurnaces:upgrade 1 2"
+	},
+	{
+		uid: "be1db192",
+		type: "item",
+		item: "morefurnaces:upgrade 1 4"
+	}]
+}
