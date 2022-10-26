@@ -161,7 +161,11 @@ tile.railcraft.ore.magic.name=Firestone Ore
 item.thermalfoundation.material.dustMana.name=Elemental Mana Dust
 
 ## Tinkers Complement
-tile.tcomplement.scorched_block.tooltip=§cI'm a tile entity!/nNOT safety for decoration!
+tile.tcomplement.scorched_block.tooltip=§cI'm a tile entity! NOT safety for decoration!
 
 ## Tinkers Construct
-tile.tconstruct.seared.tooltip=§cI'm a tile entity!/nNOT safety for decoration!
+tile.tconstruct.seared.tooltip=§cI'm a tile entity! NOT safety for decoration!
+
+## Twilight Forest
+tile.twilightforest.StonePillar.name=Stone Pillar
+tile.twilightforest.StonePillarThin.name=Stone Pillar (Thin)

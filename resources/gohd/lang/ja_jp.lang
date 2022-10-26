@@ -8,7 +8,7 @@ gohd.custom.desire_driver.name=デザイアドライバー
 gohd.jei.*.name
 
 gohd.jei.drop_soul.name=自殺か鬼哭を単体クラフトすることで得られます。
-gohd.jei.tinder.name=火口を着火するには, KILN以上の熱源を右クリックします。
+gohd.jei.tinder.name=火口を着火するには，KILN以上の熱源を右クリックします。
 
 # Quests
 gohd.quest.info_jei.title=詳しい情報はJEIの説明タブに書かれています。
@@ -20,19 +20,19 @@ gohd.quest.drop_soul.title=みんな死ぬしかないじゃない!
 gohd.quest.romance_dawn.title=1. 冒険の夜明け
 gohd.quest.romance_dawn.desc=古き良きあの頃へ...
 gohd.quest.welcome.title=GOHDへようこそ!
-gohd.quest.welcome.desc=Good Old Halcyon Days, 略して"GOHD"
+gohd.quest.welcome.desc=Good Old Halcyon Days，略して"GOHD"
 gohd.quest.log_wood.title=そんなことより木を殴れ!
 gohd.quest.workbench.title=古き良き作業台
 gohd.quest.workbench.desc=でも改良作業台のほうが便利だよ。
 gohd.quest.tool_flint.title=火打石製の道具
-gohd.quest.tool_flint.desc=木製や石製の道具は作れないため, 最初の道具は火打石から作る必要があります。
+gohd.quest.tool_flint.desc=木製や石製の道具は作れないため，最初の道具は火打石から作る必要があります。
 gohd.quest.crushing_block.title=位置エネルギークラッシャー
 gohd.quest.ingot_brass=Tier 1: 真鍮インゴット
 gohd.quest.ingot_bronze=Tier 1: 青銅インゴット
 gohd.quest.ingot_iron=Tier 1: 鉄インゴット
 gohd.quest.spindle_brass.desc=真鍮のスパナはツルハシとしても使えます!
 gohd.quest.shaft_brass.title=真鍮のシャフト
-gohd.quest.shaft.desc=シャフトはトルク機器を動かすのに必要なトルクエネルギーを伝達します。青い面が入力面で赤い面が出力面です。また伝達の際には ,1ブロックごとに2%のロスが発生します。
+gohd.quest.shaft.desc=シャフトはトルク機器を動かすのに必要なトルクエネルギーを伝達します。青い面が入力面で赤い面が出力面です。また伝達の際には，1ブロックごとに2%のロスが発生します。
 gohd.quest.spinning_machine.desc=ガラ紡績はより効率的に糸を作れます。
 gohd.quest.diamond.title=最高の素材
 gohd.quest.philo_stone.title=賢者の夢
@@ -47,7 +47,7 @@ gohd.quest.faucet.title=Climateな蛇口
 
 ## 2. Twilight Reminiscences
 gohd.quest.twilight_remini.title=2. 黄昏の忘却
-gohd.quest.twilight_remini.desc=黄昏の森に入るには, ダイヤモンドではなく賢者の石を投げ込む必要があります。
+gohd.quest.twilight_remini.desc=黄昏の森に入るには，ダイヤモンドではなく賢者の石を投げ込む必要があります。
 gohd.quest.twilight_remini.desc2=あの懐かしい森を彷徨い歩く...
 gohd.quest.tcon_tables.title=Tinker Toolsへの第一歩
 gohd.quest.block_wrought_iron.title=錬鉄ブロックだとぉ!?
@@ -59,7 +59,7 @@ gohd.quest.dcs_device_part.title=Tier 3 Device Parts
 gohd.quest.beautiful_world.desc=Biomes O' Plenty世界への扉を開けよう!
 gohd.quest.tank_yard.title=タンクヤード
 gohd.quest.kitchen.title=キッチン：キット
-gohd.quest.too_tool_steel.title=Tool Steel Tool, つまりTST!
+gohd.quest.too_tool_steel.title=Tool Steel Tool，つまりTST!
 gohd.quest.twilight_miniature.title=現実から目を背けるな。
 
 ## 3. Chemistry Madness
@@ -83,7 +83,7 @@ gohd.quest.air.desc=HaCには4段階の空調が存在します。: TIGHT, NORMA
 gohd.quest.hum.desc=HaCには14段階の湿度が存在します。: DRY, NORMAL, HUM
 gohd.quest.wind_mill.desc=WIND空調下でトルク出力が2倍になります。
 gohd.quest.tinder.title=はじめてのひあそび
-gohd.quest.uht_source.title=燃え盛るパイロジウム, お前だったのか... 設置するだけでいつもUHTの熱源として機能していたのは
+gohd.quest.uht_source.title=燃え盛るパイロジウム，お前だったのか... 設置するだけでいつもUHTの熱源として機能していたのは
 gohd.quest.cold_source.title=冷たい"熱"源
 gohd.quest.cold_lamp.title=明るくて冷たい?
 
@@ -103,11 +103,11 @@ gohd.quest.cube_iridescent.title=ワタシこそがキューブで虹色
 gohd.quest.armor_gem.title=ジェム装備
 gohd.quest.emc_link.title=錬金術師が本当に欲しかったもの↓
 gohd.quest.emc_flower.title=錬金術の花が咲くころに
-gohd.quest.division_sigil.desc=除算のシジルを持ったままエンチャント台を右クリックし, 経験値を30レベル消費すると活性化できます。
+gohd.quest.division_sigil.desc=除算のシジルを持ったままエンチャント台を右クリックし，経験値を30レベル消費すると活性化できます。
 
 ## End Game
 gohd.quest.end_game.title=Good Old Halcyon Days
-gohd.quest.end_game.desc=始まりと終わり, もしくは"天国の扉をたたく"
+gohd.quest.end_game.desc=始まりと終わり，もしくは"天国の扉をたたく"
 gohd.quest.fake_recipe.desc=イミテーションと極彩色のグレー
 
 gohd.quest.ingot_black.title=Lotus Eater
@@ -163,3 +163,7 @@ item.thermalfoundation.material.dustMana.name=元素を統べるマナの粉
 
 ## Tinkers Construct
 tile.tconstruct.seared.tooltip=§cこれはタイルエンティティです!\n装飾には向いていません!
+
+## twilight Forest
+tile.twilightforest.StonePillar.name=石の柱
+tile.twilightforest.StonePillarThin.name=細い石の柱
