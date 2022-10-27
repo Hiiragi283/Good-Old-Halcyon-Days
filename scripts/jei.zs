@@ -59,34 +59,29 @@ function removeJEI(item as IItemStack, oreDict as bool) {
 
 val mapRemove as bool[IItemStack] = {
 	//Applied Energistics 2
-	<appliedenergistics2:material:40>: true,
-	<appliedenergistics2:inscriber>: false,
 	<appliedenergistics2:charger>: false,
+	<appliedenergistics2:inscriber>: false,
+	<appliedenergistics2:material:40>: true,
 	//Botania
-	<botania:specialflower>.withTag({type: "orechid"}): false,
 	<botania:floatingspecialflower>.withTag({type: "orechid"}): false,
+	<botania:specialflower>.withTag({type: "orechid"}): false,
 	//Heat And Climate
-	<dcs_climate:dcs_color_ring2>: false,
 	//<dcs_climate:dcs_gem:*>,
-	<dcs_climate:dcs_door_marble>: false,
+	<dcs_climate:dcs_color_ring2>: false,
 	<dcs_climate:dcs_door_greisen>: false,
 	<dcs_climate:dcs_door_gypsum>: false,
+	<dcs_climate:dcs_door_marble>: false,
 	<dcs_climate:dcs_door_steel>: false,
+	<dcs_climate:dcs_gem:*>: true,
 	//Ender IO
-	<enderio:block_simple_crafter>: false,
 	<enderio:block_simple_alloy_smelter>: false,
+	<enderio:block_simple_crafter>: false,
 	<enderio:block_simple_furnace>: false,
-	<enderio:block_simple_stirling_generator>: false,
 	<enderio:block_simple_sag_mill>: false,
+	<enderio:block_simple_stirling_generator>: false,
 	<enderio:block_simple_wired_charger>: false,
 	//Extended Crafting
-	<extendedcrafting:storage:3>: true,
-	<extendedcrafting:storage:5>: true,
-	<extendedcrafting:storage:7>: true,
 	<extendedcrafting:material:1>: true,
-	<extendedcrafting:material:3>: false,
-	<extendedcrafting:material:8>: false,
-	<extendedcrafting:material:9>: false,
 	<extendedcrafting:material:11>: false,
 	<extendedcrafting:material:12>: false,
 	<extendedcrafting:material:14>: false,
@@ -95,16 +90,22 @@ val mapRemove as bool[IItemStack] = {
 	<extendedcrafting:material:18>: false,
 	<extendedcrafting:material:24>: true,
 	<extendedcrafting:material:25>: true,
+	<extendedcrafting:material:3>: false,
 	<extendedcrafting:material:36>: true,
 	<extendedcrafting:material:37>: true,
 	<extendedcrafting:material:48>: true,
 	<extendedcrafting:material:49>: true,
+	<extendedcrafting:material:8>: false,
+	<extendedcrafting:material:9>: false,
+	<extendedcrafting:storage:3>: true,
+	<extendedcrafting:storage:5>: true,
+	<extendedcrafting:storage:7>: true,
 	//Extra Utilities 2
-	<extrautils2:machine>.withTag({Type: "extrautils2:furnace"}): false,
-	<extrautils2:machine>.withTag({Type: "extrautils2:crusher"}): false,
-	<extrautils2:machine>.withTag({Type: "extrautils2:enchanter"}): false,
 	<extrautils2:itembuilderswand>: false,
 	<extrautils2:itemdestructionwand>: false,
+	<extrautils2:machine>.withTag({Type: "extrautils2:crusher"}): false,
+	<extrautils2:machine>.withTag({Type: "extrautils2:enchanter"}): false,
+	<extrautils2:machine>.withTag({Type: "extrautils2:furnace"}): false,
 	<extrautils2:unstableingots:0>: true,
 	<extrautils2:unstableingots:1>: true,
 	<extrautils2:unstableingots:2>: true,
@@ -120,71 +121,71 @@ val mapRemove as bool[IItemStack] = {
 	<mechanics:heavy_mesh>: false,
 	//Mekanism
 	<mekanismgenerators:solarpanel>: false,
-	<mekanismtools:woodpaxel>: false,
-	<mekanismtools:stonepaxel>: false,
-	<mekanismtools:ironpaxel>: false,
+	<mekanismtools:bronzeboots>: false,
+	<mekanismtools:bronzechestplate>: false,
+	<mekanismtools:bronzehelmet>: false,
+	<mekanismtools:bronzeleggings>: false,
+	<mekanismtools:bronzepaxel>: false,
 	<mekanismtools:diamondpaxel>: false,
 	<mekanismtools:goldpaxel>: false,
-	<mekanismtools:bronzepaxel>: false,
-	<mekanismtools:bronzehelmet>: false,
-	<mekanismtools:bronzechestplate>: false,
-	<mekanismtools:bronzeleggings>: false,
-	<mekanismtools:bronzeboots>: false,
-	<mekanismtools:lapislazulipickaxe>: false,
+	<mekanismtools:ironpaxel>: false,
 	<mekanismtools:lapislazuliaxe>: false,
-	<mekanismtools:lapislazulishovel>: false,
-	<mekanismtools:lapislazulihoe>: false,
-	<mekanismtools:lapislazulisword>: false,
-	<mekanismtools:lapislazulipaxel>: false,
-	<mekanismtools:lapislazulihelmet>: false,
-	<mekanismtools:lapislazulichestplate>: false,
-	<mekanismtools:lapislazulileggings>: false,
 	<mekanismtools:lapislazuliboots>: false,
+	<mekanismtools:lapislazulichestplate>: false,
+	<mekanismtools:lapislazulihelmet>: false,
+	<mekanismtools:lapislazulihoe>: false,
+	<mekanismtools:lapislazulileggings>: false,
+	<mekanismtools:lapislazulipaxel>: false,
+	<mekanismtools:lapislazulipickaxe>: false,
+	<mekanismtools:lapislazulishovel>: false,
+	<mekanismtools:lapislazulisword>: false,
+	<mekanismtools:stonepaxel>: false,
+	<mekanismtools:woodpaxel>: false,
 	//Minecraft
-	<minecraft:wooden_shovel>: false,
-	<minecraft:wooden_pickaxe>: false,
-	<minecraft:wooden_axe>: false,
-	<minecraft:wooden_hoe>: false,
-	<minecraft:stone_shovel>: false,
-	<minecraft:stone_pickaxe>: false,
 	<minecraft:stone_axe>: false,
 	<minecraft:stone_hoe>: false,
+	<minecraft:stone_pickaxe>: false,
+	<minecraft:stone_shovel>: false,
+	<minecraft:wooden_axe>: false,
+	<minecraft:wooden_hoe>: false,
+	<minecraft:wooden_pickaxe>: false,
+	<minecraft:wooden_shovel>: false,
 	//Pickle Tweaks
 	<pickletweaks:aluminum_paxel>: false,
-	<pickletweaks:copper_paxel>: false,
-	<pickletweaks:tin_paxel>: false,
-	<pickletweaks:silver_paxel>: false,
-	<pickletweaks:nickel_paxel>: false,
 	<pickletweaks:constantan_paxel>: false,
+	<pickletweaks:copper_paxel>: false,
 	<pickletweaks:electrum_paxel>: false,
+	<pickletweaks:nickel_paxel>: false,
 	<pickletweaks:platinum_paxel>: false,
+	<pickletweaks:silver_paxel>: false,
+	<pickletweaks:tin_paxel>: false,
 	//ProjectE
 	//ProjectEX
 	<projectex:collector:*>: false,
 	<projectex:compressed_collector:*>: false,
-	<projectex:matter:*>: false,
 	<projectex:final_star_shard>: false,
+	<projectex:matter:*>: false,
 	//Quarry Plus
-	<quarryplus:quarryplus>: false,
-	<quarryplus:plainpipe>: false,
-	<quarryplus:quarryframe>: false,
-	<quarryplus:spawnercontroller>: false,
-	<quarryplus:enchantmoverfrombook>: false,
-	<quarryplus:solidquarry>: false,
 	<quarryplus:dummyblock>: false,
-	<quarryplus:quarryreplacer>: false,
+	<quarryplus:enchantmoverfrombook>: false,
 	<quarryplus:filler>: false,
+	<quarryplus:plainpipe>: false,
 	<quarryplus:quarry_pickaxe>: false,
+	<quarryplus:quarryframe>: false,
+	<quarryplus:quarryplus>: false,
+	<quarryplus:quarryreplacer>: false,
 	<quarryplus:replacer_module>: false,
+	<quarryplus:solidquarry>: false,
+	<quarryplus:spawnercontroller>: false,
 	//Railcraft
 	//Simple Storage Network
 	<storagenetwork:remote:0>: false,
 	//Tinkers Complement
-	<tcomplement:melter>: false,
-	<tcomplement:melter:8>: false,
-	<tcomplement:alloy_tank>: false,
 	<extrautils2:itembuilderswand>: false,
 	<extrautils2:itemdestructionwand>: false,
+	<tcomplement:alloy_tank>: false,
+	<tcomplement:melter:8>: false,
+	<tcomplement:melter>: false,
 };
 for i, j in mapRemove {
 	removeJEI(i, j);
@@ -194,7 +195,7 @@ for i, j in mapRemove {
 		removeJEI(<projectex:power_flower>.definition.makeStack(i), false);
 	}
 	//Electric TrackをJEIから削除
-		val removeTrack as string[] = [
+		/*val removeTrack as string[] = [
 		"railcraft_activator",
 		"railcraft_control",
 		"railcraft_throttle",
@@ -219,27 +220,26 @@ for i, j in mapRemove {
 		for i in removeTrack {
 			removeJEI(<railcraft:track_outfitted>.withTag({railcraft:{rail:"railcraft_electric", kit:i}}), false);
 			removeJEI(<railcraft:track_outfitted>.withTag({railcraft:{rail:"railcraft_high_speed_electric", kit:i}}), false);
-		}
+		}*/
 	//不要なStencil TableをJEIから削除
 		val removeStencil as short[][string] = {
 			"biomesoplenty:planks_0": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+			"chisel:planks-acacia": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14],
+			"chisel:planks-birch": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14],
+			"chisel:planks-dark-oak": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14],
+			"chisel:planks-jungle": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14],
 			"chisel:planks-oak": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14],
 			"chisel:planks-spruce": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14],
-			"chisel:planks-birch": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14],
-			"chisel:planks-jungle": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14],
-			"chisel:planks-acacia": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14],
-			"chisel:planks-dark-oak": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14],
 			"extrautils2:ironwood_planks": [0,1],
 			"minecraft:planks": [0,1,2,3,4,5],
-			//"twilightforest:twilight_oak_planks": [0],
 			"twilightforest:canopy_planks": [0],
-			"twilightforest:mangrove_planks": [0],
 			"twilightforest:dark_planks": [0],
-			"twilightforest:time_planks": [0],
-			"twilightforest:trans_planks": [0],
+			"twilightforest:mangrove_planks": [0],
 			"twilightforest:mine_planks": [0],
 			"twilightforest:sort_planks": [0],
+			"twilightforest:time_planks": [0],
 			"twilightforest:tower_wood": [0,1,2,3,4],
+			"twilightforest:trans_planks": [0],
 		};
 		for id, damage in removeStencil {
 			for i in damage {
@@ -257,8 +257,8 @@ for i, j in mapRemove {
 			"extrautils2:ironwood_log": [0,1],
 			"minecraft:log": [0,1,2,3],
 			"minecraft:log2": [0,1],
-			"twilightforest:twilight_log": [/*0,*/1,2,3],
 			"twilightforest:magic_log": [0,1,2,3],
+			"twilightforest:twilight_log": [1,2,3],
 		};
 		for id, damage in removePart {
 			for i in damage {
@@ -272,16 +272,16 @@ for i, j in mapRemove {
 			"dcs_climate:dcs_ore_metal_alloy": [0,3,4,5,6,9],
 			"dcs_climate:dcs_ore_metal_new": [0],
 			"enderio:block_alloy": [0,1,2,3,4,5,6,7,8,9],
+			"mekanism:basicblock": [0,2,4],
 			"minecraft:glowstone": [0],
 			"minecraft:gold_block": [0],
 			"minecraft:iron_block": [0],
 			"minecraft:redstone_block": [0],
-			"mekanism:basicblock": [0,2,4],
 			"projecte:matter_block": [0,1],
 			"tconevo:metal_block": [4,5,6],
 			"tconstruct:metal": [0,1,2,3,4,5],
-			"thermalfoundation:storage": [0,1,2,3,4,5,6,7],
 			"thermalfoundation:storage_alloy": [0,1,2,3,4,5,6,7],
+			"thermalfoundation:storage": [0,1,2,3,4,5,6,7],
 			"twilightforest:block_storage": [1,2]
 		};
 		for id, damage in removeForge {
@@ -292,8 +292,8 @@ for i, j in mapRemove {
 
 //JEIタブの削除
 val removeCategory as string[] = [
-	"drying",
 	"alloying",
+	"drying",
 	"railcraft.rock.crusher",
 ];
 for i in removeCategory {
@@ -303,10 +303,10 @@ for i in removeCategory {
 //JEIへの新規登録
 val mapAdd as IItemStack[] = [
 		<tconstruct:edible:5>,
-		<tconstruct:slime:5>,
-		<tconstruct:slime_congealed:5>,
-		<tconstruct:slimesling:5>,
 		<tconstruct:slime_boots:5>,
+		<tconstruct:slime_congealed:5>,
+		<tconstruct:slime:5>,
+		<tconstruct:slimesling:5>,
 		cap6x,
 		toolForge,
 ];
@@ -318,8 +318,8 @@ for i in mapAdd {
 function addDesc(items as IItemStack[], desc as string[]) {
 	mods.jei.JEI.addDescription(items, desc);
 }
-addDesc([<dcs_climate:dcs_tinder:0>, <dcs_climate:dcs_tinder:1>], [I18n.format("gohd.jei.tinder.name")]);
 addDesc([<contenttweaker:drop_soul>],[I18n.format("gohd.jei.drop_soul.name")]);
+addDesc([<dcs_climate:dcs_tinder:0>, <dcs_climate:dcs_tinder:1>], [I18n.format("gohd.jei.tinder.name")]);
 
 //このscriptの読み込みの完了をログに出力
 print("jei.zs loaded!");

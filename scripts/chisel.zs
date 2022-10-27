@@ -23,26 +23,26 @@ print("Start loading chisel.zs ...");
 //OreDict
 	val chiselOreDict as IItemStack[][string] = {
 		//blocks
-		"block_titanium": <ore:blockTitanium>.items,
 		"block_peridot": <ore:blockPeridot>.items,
 		"block_ruby": <ore:blockRuby>.items,
 		"block_sapphire": <ore:blockSapphire>.items,
+		"block_titanium": <ore:blockTitanium>.items,
 		//items
+		"item_aluminum": <ore:ingotAluminum>.items,
+		"item_amethyst": <ore:gemAmethyst>.items,
+		"item_bronze": <ore:ingotBronze>.items,
+		"item_copper": <ore:ingotCopper>.items,
+		"item_cropSeaweed": <ore:cropSeaweed>.items,
+		"item_lead": <ore:ingotLead>.items,
+		"item_malachite": <ore:gemMalachite>.items,
+		"item_nickel": <ore:ingotNickel>.items,
 		"item_peridot": <ore:gemPeridot>.items,
 		"item_ruby": <ore:gemRuby>.items,
 		"item_sapphire": <ore:gemSapphire>.items,
-		"item_copper": <ore:ingotCopper>.items,
-		"item_tin": <ore:ingotTin>.items,
 		"item_silver": <ore:ingotSilver>.items,
-		"item_lead": <ore:ingotLead>.items,
-		"item_aluminum": <ore:ingotAluminum>.items,
-		"item_nickel": <ore:ingotNickel>.items,
 		"item_steel": <ore:ingotSteel>.items,
-		"item_bronze": <ore:ingotBronze>.items,
-		"item_cropSeaweed": <ore:cropSeaweed>.items,
-		"item_malachite": <ore:gemMalachite>.items,
+		"item_tin": <ore:ingotTin>.items,
 		"item_topaz": <ore:gemTopaz>.items,
-		"item_amethyst": <ore:gemAmethyst>.items,
 	};
 	for i, j in chiselOreDict {
 		mods.chisel.Carving.addGroup(i);
@@ -55,18 +55,18 @@ print("Start loading chisel.zs ...");
 	//Bedrock
 	mods.chisel.Carving.addGroup("bedrock");
 	val bedrock as IItemStack[] = [
-		<minecraft:bedrock>,
+		<dcs_climate:dcs_build_bricks:3>,
+		<dcs_climate:dcs_ore_gemblock:12>,
 		<extrautils2:decorativebedrock:0>,
 		<extrautils2:decorativebedrock:1>,
 		<extrautils2:decorativebedrock:2>,
-		<dcs_climate:dcs_ore_gemblock:12>,
-		<dcs_climate:dcs_build_bricks:3>,
+		<minecraft:bedrock>,
 	];
 	for i in bedrock {
 		HiiragiUtils.removeCrafting(i);
 		mods.chisel.Carving.addVariation("bedrock", i);
 	}
-
+/*
 //Biblio Craft
 	//Fancy lantern (Gold)
 	mods.chisel.Carving.addGroup("biblio_fancy_lantern_gold");
@@ -104,7 +104,7 @@ print("Start loading chisel.zs ...");
 		HiiragiUtils.removeCrafting(<bibliocraft:swordpedestal>.definition.makeStack(i));
 		mods.chisel.Carving.addVariation("biblio_sword_pedestal", <bibliocraft:swordpedestal>.definition.makeStack(i));
 	}
-
+*/
 //Botania
 	//Azulejo
 	mods.chisel.Carving.addGroup("botania_azulejo");

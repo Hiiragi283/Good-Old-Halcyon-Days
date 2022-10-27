@@ -27,30 +27,31 @@ print("Start loading tconstruct.zs ...");
 
 //作業台レシピの編集
 	//上書き
-	HiiragiUtils.addCraftingShaped(true, <tconstruct:smeltery_controller>, RecipePattern.init(["ABA", "ACA", "ADA"]).map({A:<tconstruct:materials:0>, B:<tconstruct:seared_furnace_controller>, C:<tconstruct:tinker_tank_controller>, D:<dcs_climate:dcs_device_chamber>}).ingredients, null, null);
 	HiiragiUtils.addCraftingShaped(true, <tcomplement:high_oven_controller>, RecipePattern.init(["AAA", "ABA", "AAA"]).map({A:<tcomplement:materials:1>, B:<tconstruct:smeltery_controller>}).ingredients, null, null);
+	HiiragiUtils.addCraftingShaped(true, <tconstruct:smeltery_controller>, RecipePattern.init(["ABA", "ACA", "ADA"]).map({A:<tconstruct:materials:0>, B:<tconstruct:seared_furnace_controller>, C:<tconstruct:tinker_tank_controller>, D:<dcs_climate:dcs_device_chamber>}).ingredients, null, null);
+	HiiragiUtils.addCraftingShapeless(true, <tconstruct:faucet>*2, [<tconstruct:channel>, HiiragiUtils.toolInput(<microblockcbe:saw_stone>, 1)|HiiragiUtils.toolInput(<microblockcbe:saw_iron>, 1)|HiiragiUtils.toolInput(<microblockcbe:saw_diamond>, 1)], null, null);
 	//新規
-	HiiragiUtils.addCraftingShaped(false, <tconstruct:seared:3>, RecipePattern.init(["AA", "AA"]).map({A:<tconstruct:materials:0>}).ingredients, null, null);
-	HiiragiUtils.addCraftingShaped(false, <tconstruct:soil>, RecipePattern.init(["AA", "AA"]).map({A:<contenttweaker:grout_ball>}).ingredients, null, null);
 	HiiragiUtils.addCraftingShaped(false, <tconstruct:materials:16>, RecipePattern.init([" A ", "ABA", " A "]).map({A:<ore:itemSilkCloth>, B:<ore:gemEmerald>}).ingredients, null, null);
 	HiiragiUtils.addCraftingShaped(false, <tconstruct:materials:50>, RecipePattern.init([" A ", "ABA", " A "]).map({A:<minecraft:golden_apple:1>, B:<minecraft:skull:3>}).ingredients, null, null);
+	HiiragiUtils.addCraftingShaped(false, <tconstruct:seared:3>, RecipePattern.init(["AA", "AA"]).map({A:<tconstruct:materials:0>}).ingredients, null, null);
+	HiiragiUtils.addCraftingShaped(false, <tconstruct:soil>, RecipePattern.init(["AA", "AA"]).map({A:<contenttweaker:grout_ball>}).ingredients, null, null);
 		//吐き気スライム周りの追加
-		HiiragiUtils.addCraftingShaped(true, <tconstruct:slime:5>, RecipePattern.init(["AAA", "AAA", "AAA"]).map({A:<tconstruct:edible:5>}).ingredients, null, null);
 		HiiragiUtils.addCraftingShaped(true, 	<tconstruct:slime_congealed:5>, RecipePattern.init(["AA", "AA"]).map({A:<tconstruct:edible:5>}).ingredients, null, null);
-		HiiragiUtils.addCraftingShaped(true, <tconstruct:slimesling:5>, RecipePattern.init(["ABA", "C C", " C "]).map({A:<minecraft:string>, B:<tconstruct:slime_congealed:5>, C:<tconstruct:edible:5>}).ingredients, null, null);
 		HiiragiUtils.addCraftingShaped(true, <tconstruct:slime_boots:5>, RecipePattern.init(["A A", "B B"]).map({A:<tconstruct:edible:5>, B:<tconstruct:slime_congealed:5>}).ingredients, null, null);
+		HiiragiUtils.addCraftingShaped(true, <tconstruct:slime:5>, RecipePattern.init(["AAA", "AAA", "AAA"]).map({A:<tconstruct:edible:5>}).ingredients, null, null);
+		HiiragiUtils.addCraftingShaped(true, <tconstruct:slimesling:5>, RecipePattern.init(["ABA", "C C", " C "]).map({A:<minecraft:string>, B:<tconstruct:slime_congealed:5>, C:<tconstruct:edible:5>}).ingredients, null, null);
 		//道具関連のレシピの統合
-		HiiragiUtils.addCraftingShaped(false, jei.tableStencil, RecipePattern.init(["A", "B"]).map({A:<tconstruct:pattern>, B:<twilightforest:twilight_oak_planks>}).ingredients, null ,null);
 		HiiragiUtils.addCraftingShaped(false, jei.tablePart, RecipePattern.init(["A", "B"]).map({A:<tconstruct:pattern>, B:<twilightforest:twilight_log>}).ingredients, null ,null);
+		HiiragiUtils.addCraftingShaped(false, jei.tableStencil, RecipePattern.init(["A", "B"]).map({A:<tconstruct:pattern>, B:<twilightforest:twilight_oak_planks>}).ingredients, null ,null);
 		HiiragiUtils.addCraftingShaped(false, jei.toolForge, RecipePattern.init(["AAA", "BCB", "B B"]).map({A:<ore:blockSeared>, B:<dcs_climate:dcs_ore_heatingmetal:2>, C:<tconstruct:tooltables:3>}).ingredients, null, null);
 
 	//見た目を変えるレシピ
 	val mapAppear as IItemStack[] = [
 		<tconstruct:rack:0>,
 		<tconstruct:rack:1>,
+		<tconstruct:toolforge>,
 		<tconstruct:tooltables:1>,
 		<tconstruct:tooltables:2>,
-		<tconstruct:toolforge>,
 	];
 	for i in mapAppear {
 		HiiragiUtils.addCraftingShapeless(false, i, [i, <*>.marked("texture").reuse()], function(out, ins, cInfo) {
@@ -69,33 +70,33 @@ print("Start loading tconstruct.zs ...");
 	HiiragiUtils.addCasting("table", false, <tconstruct:cast>, null, <liquid:alubrass>, 144, true, 1*20);
 
 	val castPattern as string[] = [
-		"pick_head",
-		"arrow_shaft",
-		"sign_head",
 		"arrow_head",
-		"tool_rod",
-		"large_plate",
-		"bow_string",
-		"binding",
-		"cross_guard",
-		"sharpening_kit",
-		"sword_blade",
+		"arrow_shaft",
 		"axe_head",
-		"broad_axe_head",
-		"scythe_head",
-		"kama_head",
-		"pan_head",
-		"tough_tool_rod",
-		"knife_blade",
+		"binding",
 		"bow_limb",
-		"wide_guard",
+		"bow_string",
+		"broad_axe_head",
+		"cross_guard",
 		"excavator_head",
 		"hammer_head",
-		"large_sword_blade",
-		"shovel_head",
 		"hand_guard",
+		"kama_head",
+		"knife_blade",
+		"large_plate",
+		"large_sword_blade",
+		"pan_head",
+		"pick_head",
+		"scythe_head",
 		"shard",
-		"tough_binding"
+		"sharpening_kit",
+		"shovel_head",
+		"sign_head",
+		"sword_blade",
+		"tool_rod",
+		"tough_binding",
+		"tough_tool_rod",
+		"wide_guard",
 	];
 
 	for i in 0 to 5 {
@@ -125,20 +126,21 @@ print("Start loading tconstruct.zs ...");
 
 //Castingレシピの編集
 	HiiragiUtils.addCasting("basin", false, <railcraft:bloodstained:2>, <minecraft:sandstone:2>, <liquid:blood>, 40, true, 5*20);
-	HiiragiUtils.addCasting("table", true, <enderio:item_material:11>, <ore:dustBedrock>, <liquid:steel>, 144, true, 5*20);
-	HiiragiUtils.addCasting("table", true, <enderio:item_material:73>, <enderio:item_material:11>, <liquid:dark_steel>, 144, true, 5*20);
-	HiiragiUtils.addCasting("table", true, <enderio:item_material:12>, <enderio:item_material:11>, <liquid:energetic_alloy>, 144, true, 5*20);
-	HiiragiUtils.addCasting("table", true, <enderio:item_material:13>, <enderio:item_material:11>, <liquid:vibrant_alloy>, 144, true, 5*20);
-	HiiragiUtils.addCasting("table", true, <enderio:item_material:14>, <ore:gemDiamond>, <liquid:pulsating_iron>, 144, true, 5*20);
-	HiiragiUtils.addCasting("table", true, <enderio:item_material:15>, <ore:gemEmerald>, <liquid:vibrant_alloy>, 144, true, 5*20);
 	HiiragiUtils.addCasting("table", false, <thermalfoundation:material:512>, <ore:plateIron>, <liquid:redstone>, 100, true, 5*20);
 	HiiragiUtils.addCasting("table", false, <thermalfoundation:material:513>, <ore:plateGold>, <liquid:redstone>, 100, true, 5*20);
 	HiiragiUtils.addCasting("table", false, <thermalfoundation:material:514>, <ore:plateSilver>, <liquid:redstone>, 100, true, 5*20);
 	HiiragiUtils.addCasting("table", false, <thermalfoundation:material:515>, <ore:plateElectrum>, <liquid:redstone>, 100, true, 5*20);
 	HiiragiUtils.addCasting("table", false, <thermalfoundation:material:640>, <thermalfoundation:material:512>, <liquid:electrum>, 144, true, 5*20);
+	HiiragiUtils.addCasting("table", true, <enderio:item_material:11>, <ore:dustBedrock>, <liquid:steel>, 144, true, 5*20);
+	HiiragiUtils.addCasting("table", true, <enderio:item_material:12>, <enderio:item_material:11>, <liquid:energetic_alloy>, 144, true, 5*20);
+	HiiragiUtils.addCasting("table", true, <enderio:item_material:13>, <enderio:item_material:11>, <liquid:vibrant_alloy>, 144, true, 5*20);
+	HiiragiUtils.addCasting("table", true, <enderio:item_material:14>, <ore:gemDiamond>, <liquid:pulsating_iron>, 144, true, 5*20);
+	HiiragiUtils.addCasting("table", true, <enderio:item_material:15>, <ore:gemEmerald>, <liquid:vibrant_alloy>, 144, true, 5*20);
+	HiiragiUtils.addCasting("table", true, <enderio:item_material:73>, <enderio:item_material:11>, <liquid:dark_steel>, 144, true, 5*20);
 
 //Meltingレシピの編集
 	mods.tconstruct.Melting.removeRecipe(<liquid:steel>, <dcs_climate:dcs_ore_metal_alloy:2>);
+
 	mods.tconstruct.Melting.addRecipe(<liquid:wrought_iron>*1296, <dcs_climate:dcs_ore_metal_alloy:2>);
 
 //High Ovenのレシピの編集

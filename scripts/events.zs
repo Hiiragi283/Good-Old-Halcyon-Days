@@ -9,6 +9,8 @@
 
 //crafttweakerからclassをimport
 import crafttweaker.block.IBlock;
+import crafttweaker.command.ICommand;
+import crafttweaker.command.ICommandManager;
 import crafttweaker.data.IData;
 import crafttweaker.entity.IEntity;
 import crafttweaker.entity.IEntityCreature;
@@ -21,13 +23,15 @@ import crafttweaker.event.PlayerAttackEntityEvent;
 import crafttweaker.event.PlayerDeathDropsEvent;
 import crafttweaker.event.PlayerInteractBlockEvent;
 import crafttweaker.event.PlayerInteractEvent;
+import crafttweaker.event.PlayerLoggedInEvent;
 import crafttweaker.event.PlayerTickEvent;
 import crafttweaker.events.IEventManager;
-import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
+import crafttweaker.item.IItemStack;
 import crafttweaker.player.IPlayer;
 import crafttweaker.potions.IPotion;
 import crafttweaker.potions.IPotionEffect;
+import crafttweaker.text.ITextComponent;
 import crafttweaker.world.IWorld;
 
 //scriptのimport
@@ -36,7 +40,54 @@ import crafttweaker.world.IWorld;
 //このscriptの読み込みの開始をログに出力
 print("Start loading events.zs ...");
 
-//変数の定義
+//ブロックが破壊された際に呼び出す
+events.onBlockHarvestDrops(function(event as BlockHarvestDropsEvent) {
+	//eventの実行者がプレイヤーかつ破壊したブロックがカボチャメロンの場合
+	if(event.isPlayer && event.block.definition.id == "contenttweaker:pumpkin_melon") {
+		//ドロップリストを上書き
+		event.drops = [
+			<minecraft:wheat_seeds>%100,
+			<minecraft:pumpkin_seeds>%50,
+			<minecraft:melon_seeds>%50,
+			<minecraft:beetroot_seeds>%50,
+			<inspirations:cactus_seeds>%25,
+			<inspirations:sugar_cane_seeds>%25,
+			<inspirations:carrot_seeds>%75,
+			<inspirations:potato_seeds>%75,
+		];
+	}
+});
+
+//プレイヤーが死ぬと呼び出す
+events.onPlayerDeathDrops(function(event as PlayerDeathDropsEvent) {
+	//魂のかけらをドロップ
+	event.addItem(<contenttweaker:drop_soul>);
+});
+
+//除算のシジルの一時的な活性化レシピ
+events.onPlayerInteractBlock(function(event as PlayerInteractBlockEvent) {
+	if(!event.world.remote && !isNull(event.block) && !isNull(event.item)) {
+		if(event.block.definition.id == "minecraft:enchanting_table" && event.item.matches(<contenttweaker:division_sigil>)) {
+			event.cancel();
+			if(event.player.xp >= 30) {
+				event.player.xp -= 30;
+				event.item.mutable().shrink(1);
+				event.player.give(<contenttweaker:division_sigil_temp>);
+			}
+		}
+	}
+});
+
+//
+events.onPlayerLoggedIn(function(event as PlayerLoggedInEvent) {
+	val player as IPlayer = event.player;
+	player.sendRichTextStatusMessage(ITextComponent.fromString("============================================="), false);
+	player.sendRichTextStatusMessage(ITextComponent.fromTranslation("ragicraft.text.welcome"), false);
+	player.sendRichTextStatusMessage(ITextComponent.fromString("============================================="), false);
+	server.commandManager.executeCommand(server, "projecte reloadEMC");
+});
+
+//プレイヤーに対して毎tickごとに呼び出す
 events.onPlayerTick(function(event as PlayerTickEvent) {
 	val player as IPlayer = event.player;
 	val world as IWorld = player.world;
@@ -89,45 +140,9 @@ events.onPlayerTick(function(event as PlayerTickEvent) {
 	}
 });
 
-events.onBlockHarvestDrops(function(event as BlockHarvestDropsEvent) {
-	//eventの実行者がプレイヤーかつ破壊したブロックがカボチャメロンの場合
-	if(event.isPlayer && event.block.definition.id == "contenttweaker:pumpkin_melon") {
-		//ドロップリストを上書き
-		event.drops = [
-			<minecraft:wheat_seeds>%100,
-			<minecraft:pumpkin_seeds>%50,
-			<minecraft:melon_seeds>%50,
-			<minecraft:beetroot_seeds>%50,
-			<inspirations:cactus_seeds>%25,
-			<inspirations:sugar_cane_seeds>%25,
-			<inspirations:carrot_seeds>%75,
-			<inspirations:potato_seeds>%75,
-		];
-	}
-});
-
-//プレイヤーが死ぬと魂のかけらをドロップする
-events.onPlayerDeathDrops(function(event as PlayerDeathDropsEvent) {
-	event.addItem(<contenttweaker:drop_soul>);
-});
-
 //ウィザーが死ぬと除算のシジルを確定でドロップする
 <entity:minecraft:wither>.addDropFunction(function(entity, damageSource) {
 	return <contenttweaker:division_sigil>;
-});
-
-//除算のシジルの一時的な活性化レシピ
-events.onPlayerInteractBlock(function(event as PlayerInteractBlockEvent) {
-	if(!event.world.remote && !isNull(event.block) && !isNull(event.item)) {
-		if(event.block.definition.id == "minecraft:enchanting_table" && event.item.matches(<contenttweaker:division_sigil>)) {
-			event.cancel();
-			if(event.player.xp >= 30) {
-				event.player.xp -= 30;
-				event.item.mutable().shrink(1);
-				event.player.give(<contenttweaker:division_sigil_temp>);
-			}
-		}
-	}
 });
 
 //このscriptの読み込みの完了をログに出力

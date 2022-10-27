@@ -197,16 +197,9 @@ print("Start loading buildings.zs ...");
 		<tconstruct:brownstone_slab2:2>: <tconstruct:brownstone:10>,
 		<tconstruct:brownstone_slab2:3>: <tconstruct:brownstone:11>,
 	};
-
 	for slab, full in mapSlabs {
-		HiiragiUtils.removeCrafting(slab);
-		RecipeBuilder.get("basic")
-			.setShapeless([full])
-			.addTool(<ore:artisansHandsaw>, 1)
-			.addOutput(slab* 2)
-			.setMaximumTier(1)
-			.create();
-		HiiragiUtils.addCraftingShaped(false, full, RecipePattern.init(["A", "A"]).map({A:slab}).ingredients, null, null);
+		HiiragiUtils.addCraftingShaped(true, slab*2, [[full, HiiragiUtils.toolInput(<microblockcbe:saw_stone>, 1)|HiiragiUtils.toolInput(<microblockcbe:saw_iron>, 1)|HiiragiUtils.toolInput(<microblockcbe:saw_diamond>, 1)]], null, null);
+		HiiragiUtils.addCraftingShapeless(false, full, [slab, slab], null, null);
 		}
 
 //重複したレシピの削除
@@ -244,13 +237,7 @@ print("Start loading buildings.zs ...");
 		<railcraft:sandy:3>: <railcraft:sandy:0>,
 	};
 	for chiseled, full in removeChiseled {
-		HiiragiUtils.removeCrafting(chiseled);
-		RecipeBuilder.get("basic")
-			.setShapeless([full])
-			.addTool(<ore:artisansChisel>, 1)
-			.addOutput(chiseled)
-			.setMaximumTier(1)
-			.create();
+		HiiragiUtils.addCraftingShaped(true, chiseled, [[full, HiiragiUtils.toolInput(<chisel:chisel_iron>, 1)|HiiragiUtils.toolInput(<chisel:chisel_diamond>, 1)|HiiragiUtils.toolInput(<chisel:chisel_hitech>, 1)]], null, null);
 		HiiragiUtils.addCraftingShapeless(false, full, [chiseled], null, null);
 	}
 
@@ -268,13 +255,7 @@ print("Start loading buildings.zs ...");
 		<twilightforest:aurora_pillar>: <twilightforest:aurora_block>,
 	};
 	for pillar, full in removePillar {
-		HiiragiUtils.removeCrafting(pillar);
-		RecipeBuilder.get("basic")
-			.setShaped(RecipePattern.init(["A", "A"]).map({A:full}).ingredients)
-			.addTool(<ore:artisansChisel>, 1)
-			.addOutput(pillar* 2)
-			.setMaximumTier(1)
-			.create();
+		HiiragiUtils.addCraftingShaped(true, pillar, [[HiiragiUtils.toolInput(<chisel:chisel_iron>, 1)|HiiragiUtils.toolInput(<chisel:chisel_diamond>, 1)|HiiragiUtils.toolInput(<chisel:chisel_hitech>, 1)], [full]], null, null);
 		HiiragiUtils.addCraftingShapeless(false, full, [pillar], null, null);
 	}
 
@@ -452,16 +433,9 @@ print("Start loading buildings.zs ...");
 		<tconstruct:brownstone_stairs_tile>: <tconstruct:brownstone:10>,
 		<tconstruct:brownstone_stairs_creeper>: <tconstruct:brownstone:11>,
 	};
-
 	for stair, full in mapStair {
-		HiiragiUtils.removeCrafting(stair);
-		RecipeBuilder.get("basic")
-			.setShaped(RecipePattern.init(["A ", "AA"]).map({A:full}).ingredients)
-			.addTool(<ore:artisansHandsaw>, 1)
-			.addOutput(stair* 4)
-			.setMaximumTier(1)
-			.create();
-		HiiragiUtils.addCraftingShaped(false, full*3, RecipePattern.init(["AA", "AA"]).map({A:stair}).ingredients, null, null);
+		HiiragiUtils.addCraftingShaped(true, stair*4, [[full, HiiragiUtils.toolInput(<microblockcbe:saw_stone>, 1)|HiiragiUtils.toolInput(<microblockcbe:saw_iron>, 1)|HiiragiUtils.toolInput(<microblockcbe:saw_diamond>, 1)], [full, full]], null, null);
+		HiiragiUtils.addCraftingShapeless(false, full*3, [stair, stair, stair, stair], null, null);
 	}
 
 	val mapStairTwilight as IItemStack[IItemStack] = {
@@ -477,13 +451,7 @@ print("Start loading buildings.zs ...");
 	};
 
 	for stair, full in mapStairTwilight {
-		HiiragiUtils.removeCrafting(stair);
-		RecipeBuilder.get("basic")
-			.setShaped(RecipePattern.init(["A ", "AA"]).map({A:full}).ingredients)
-			.addTool(<ore:artisansHandsaw>, 1)
-			.addOutput(stair* 4)
-			.setMaximumTier(1)
-			.create();
+		HiiragiUtils.addCraftingShaped(true, stair*4, [[full, HiiragiUtils.toolInput(<microblockcbe:saw_stone>, 1)|HiiragiUtils.toolInput(<microblockcbe:saw_iron>, 1)|HiiragiUtils.toolInput(<microblockcbe:saw_diamond>, 1)], [full, full]], null, null);
 	}
 
 //このscriptの読み込みの完了をログに出力

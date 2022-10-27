@@ -141,22 +141,22 @@ print("Start loading cot-registry.zs ...");
 	val mapItems as string[] = [
 		"assembly_parallel",
 		"assembly_speculative",
+		"division_sigil",
 		"elven_pearl",
 		"ephemerald",
 		"gem_carbon",
-		//"glyph_divide",
-		"division_sigil",
-		//"dust_shadestone",
 		"ingot_bedrockium",
 		"ingot_rainbow",
 		"ingot_stable",
 		"ingot_unstable",
-		//"item_fire",
 		"ragi_ticket",
 		"reagent_halogen",
 		"symbol_cross",
 		"symbol_nocraft",
 		"symbol_tick",
+		//"dust_shadestone",
+		//"glyph_divide",
+		//"item_fire",
 	];
 	for i in mapItems {
 		addItem(i);
@@ -164,9 +164,9 @@ print("Start loading cot-registry.zs ...");
 	//色付きアイテムの登録処理
 	val mapItemColor as string[string][string] = {
 		"drop_soul": {"FFCCFF": "dcs_climate:items/food/drop_cream"},
+		"dust_shadestone": {"2D2D2D": "minecraft:items/sugar"},
 		"feather_black": {"181818": "minecraft:items/feather"},
 		"grout_ball": {"D0D1D6": "minecraft:items/snowball"},
-		"dust_shadestone": {"2D2D2D": "minecraft:items/sugar"}
 	};
 	for i, j in mapItemColor {
 		for k, l in j {
@@ -177,10 +177,10 @@ print("Start loading cot-registry.zs ...");
 	val mapItemShimmer as string[] = [
 		"division_sigil_perm",
 		"quantum_entangler",
-		"rune_fire",
-		"rune_earth",
-		"rune_water",
 		"rune_air",
+		"rune_earth",
+		"rune_fire",
+		"rune_water",
 	];
 	for i in mapItemShimmer {
 		addItemShimmer(i);
@@ -222,19 +222,18 @@ print("Start loading cot-registry.zs ...");
 	addBlock("dummy_collector", <blockmaterial:rock>, 0.3, 0.3, "pickaxe", -1, <soundtype:stone>, true);
 	addBlock("dummy_link", <blockmaterial:rock>, 0.3, 0.3, "pickaxe", -1, <soundtype:stone>, true);
 	addBlock("dummy_relay", <blockmaterial:rock>, 0.3, 0.3, "pickaxe", -1, <soundtype:stone>, true);
+	addBlock("pumpkin_melon", <blockmaterial:wood>, 1.0, 1.0, "axe", -1, <soundtype:wood>, true); //Pumpkin Melon (@PumpkinMelon4) 氏に感謝!
+	addBlock("unfired_casting_basin", <blockmaterial:grass>, 3.0, 0.5, "shovel", -1, <soundtype:ground>, false);
 	addBlock("unfired_casting_channel", <blockmaterial:grass>, 3.0, 0.5, "shovel", -1, <soundtype:ground>, false);
 	addBlock("unfired_casting_table", <blockmaterial:grass>, 3.0, 0.5, "shovel", -1, <soundtype:ground>, false);
-	addBlock("unfired_casting_basin", <blockmaterial:grass>, 3.0, 0.5, "shovel", -1, <soundtype:ground>, false);
-
-	addBlock("pumpkin_melon", <blockmaterial:wood>, 1.0, 1.0, "axe", -1, <soundtype:wood>, true); //Pumpkin Melon (@PumpkinMelon4) 氏に感謝!
 
 	//粉末ブロックの登録
 	addBlockColored("dustblock_lead", <blockmaterial:rock>, 1.5, 15.0, "shovel", 0, <soundtype:stone>, "605E6A");
 
 	//HaCのキューブを追加
-	addCube("cube_yellow", <blockmaterial:rock>, 1.0, 15.0, "pickaxe", -1, <soundtype:stone>, false);
-	addCube("cube_magenta", <blockmaterial:rock>, 1.0, 15.0, "pickaxe", -1, <soundtype:stone>, false);
 	addCube("cube_cyan", <blockmaterial:rock>, 1.0, 15.0, "pickaxe", -1, <soundtype:stone>, false);
+	addCube("cube_magenta", <blockmaterial:rock>, 1.0, 15.0, "pickaxe", -1, <soundtype:stone>, false);
+	addCube("cube_yellow", <blockmaterial:rock>, 1.0, 15.0, "pickaxe", -1, <soundtype:stone>, false);
 
 	var block = VanillaFactory.createBlock("cube_iridescent", <blockmaterial:glass>);
 	block.setBlockHardness(1.0);
@@ -261,6 +260,7 @@ print("Start loading cot-registry.zs ...");
 	book_syntax.rarity = "epic";
 	book_syntax.itemRightClick = function(stack, world, player, hand) {
 		Commands.call("ct syntax", player, world);
+		Commands.call("ct reload", player, world);
 		return "Pass";
 	};
 	book_syntax.register();
@@ -273,13 +273,13 @@ print("Start loading cot-registry.zs ...");
 	};
 	book_facing.register();
 
-	val book_save = mods.contenttweaker.VanillaFactory.createItem("book_save");
+	/*val book_save = mods.contenttweaker.VanillaFactory.createItem("book_save");
 	book_save.rarity = "epic";
 	book_save.itemRightClick = function(stack, world, player, hand) {
 		Commands.call("bq_admin default save", player, world);
 		return "Pass";
 	};
-	book_save.register();
+	book_save.register();*/
 
 //エンチャントの登録
 
@@ -289,11 +289,11 @@ val materialWroughtIron = MaterialSystem.getMaterialBuilder()
 	.setColor(HexHelper.toDecInteger("2e2e2e"))
 	.build()
 	.registerPart("molten" as string).getData();
-	materialWroughtIron.addDataValue("luminosity", "10");
 	materialWroughtIron.addDataValue("density", "2000");
+	materialWroughtIron.addDataValue("luminosity", "10");
 	materialWroughtIron.addDataValue("temperature", "769");
-	materialWroughtIron.addDataValue("viscosity", "10000");
 	materialWroughtIron.addDataValue("vaporize", "false");
+	materialWroughtIron.addDataValue("viscosity", "10000");
 
 //このscriptの読み込みの完了をログに出力
 print("cot-registry.zs loaded!");

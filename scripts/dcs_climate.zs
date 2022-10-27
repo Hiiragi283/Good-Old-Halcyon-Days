@@ -11,7 +11,6 @@ import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 
 //各種modからclassをimport
-import mods.artisanworktables.builder.RecipeBuilder;
 import mods.ctintegration.util.RecipePattern;
 import mods.tconstruct.Casting;
 
@@ -28,10 +27,9 @@ print("Start loading dcs_climate.zs ...");
 
 	//上書き
 	//Heat And Climate
-	HiiragiUtils.addCraftingShaped(true, <dcs_climate:dcs_device_lowchest_wood>, RecipePattern.init(["AAA", "BCB", "AAA"]).map({A:<ore:plankWood>, B:<ore:stickWood>, C:<ore:chest>}).ingredients, null, null);
 	HiiragiUtils.addCraftingShaped(true, <dcs_climate:dcs_device_chamber>, RecipePattern.init(["ABA", "BCB", "ABA"]).map({A:<minecraft:blaze_rod>, B:<ore:dustRedstone>, C:<minecraft:furnace>}).ingredients, null, null);
+	HiiragiUtils.addCraftingShaped(true, <dcs_climate:dcs_device_lowchest_wood>, RecipePattern.init(["AAA", "BCB", "AAA"]).map({A:<ore:plankWood>, B:<ore:stickWood>, C:<ore:chest>}).ingredients, null, null);
 	HiiragiUtils.recipeReplace(<ore:ingotSteel>, <ore:stickHDPE>, <dcs_climate:dcs_sword_toolsteel>);
-
 	//Heat And Processing
 	HiiragiUtils.addCraftingShaped(true, <hap:reactor_advanced>, [
 		[<thermaldynamics:duct_32>, <hap:compact_freezer>, <hap:compact_heater>],
