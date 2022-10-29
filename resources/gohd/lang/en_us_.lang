@@ -1,0 +1,220 @@
+
+# FTB Quests
+gohd.main.title=Good Old Halcyon Days!
+
+gohd.ingotIron.title=Tier 0: Iron Ingot
+gohd.ingotBrass.title=Tier 1: Brass Ingot
+gohd.ingotBronze.title=Tier 1: Bronze Ingot
+gohd.ingotNickelsilver.title=Tier 2: Nickel Silver Ingot
+gohd.ingotSteel.title=Tier 2+: Steel Ingot
+gohd.ingotSUS.title=Tier 3: Stainless Steel Ingot
+gohd.ingotToolSteel.title=Tier 3: Tool Steel Ingot
+gohd.ingotTitanium.title=Tier 4: Titanium Alloy Ingot
+gohd.ingotMangalloy.title=Tier 4: Mangalloy Ingot
+
+## Main: gohd.09d26429.
+gohd.main.title=Main
+gohd.hac.tooltip=Information about Heat And Climate (HaC) of Heat And Processing (HaP) is written in tooltips or JEI tabs.
+gohd.09d26429.eedd4b0e.title=Auther's Twitter Link
+gohd.09d26429.d881497d.title=Auther's GitHub Link
+gohd.09d26429.ab5cc985.title=Wiki for HaC
+gohd.09d26429.f631c01d.title=Nutrition
+gohd.09d26429.f631c01d.desc1=In this pack, there is the concept of nutrients.
+gohd.09d26429.f631c01d.desc2=A well-balanced diet provides a variety of benefits. On the other hand, a unbalanced diet provides a variety of debuffs.
+
+gohd.5f3109ce.648774ca.title=Welcome to GOHD!
+gohd.5f3109ce.648774ca.subtitle=Good Old Halcyon Days, in short "GOHD"
+gohd.5f3109ce.648774ca.task1=Let's Enjoy!
+gohd.5f3109ce.648774ca.desc1=This modpack requires knowledge of Heat And Climate.
+gohd.5f3109ce.648774ca.desc2=If you are new to HaC, we recommend that you jump to the author's wiki from the link in the quest above and read it before playing.
+gohd.09d26429.8297ab4c.title=Why did you think you can't chop logs only with your hand?
+gohd.09d26429.baa9cb1d.subtitle=Original but Worst
+gohd.0290d76b.ff5f1169.title=Starter Kit for Travelers
+gohd.09d26429.4fb7c614.title=The first step for Tinker's Tool
+gohd.09d26429.42aa3c8a.title=Dirty Deeds Done Dirt Cheap
+gohd.09d26429.8e6a9cab.title=Wooden Sticks from Saplings
+gohd.09d26429.a1433ad5.title=My mouth is gravelly-gravelly lol
+gohd.09d26429.35314cfb.title=SMELTING Climate Smelting
+gohd.09d26429.048fe784.desc1=Not only turning HaC devices, but also using as Pickaxe
+gohd.09d26429.6777b90d.desc1=Not using as Pickaxe but having INFINITY durability!
+gohd.09d26429.8b4775e4.title=UHT Climate Smelting
+gohd.09d26429.8b4775e4.subtitle=UHT may means "Ultra High Heat"
+gohd.09d26429.2418ecab.subtitle=Bi2Sr2Ca2Cu3O10
+gohd.09d26429.0edcbf3b.desc1=Grains of Infinity is produced only in The End
+gohd.09d26429.bc22061f.title=Platinum Group Dusts
+gohd.09d26429.6ab31c74.title=It's time to miniaturize your buildings!
+gohd.09d26429.7f89ed7b.title=The quest that might provide another device when you lost it
+gohd.09d26429.7f89ed7b.task1=Don't lost again, okay?
+gohd.09d26429.a230052c.desc1=I recommend you to craft it from Ender Fragment
+
+## Heat And Climate: gohd.b98d2902.
+gohd.hac.title=Heat And Climate
+gohd.b98d2902.bf14d483.title=Bright but Cold?
+gohd.b98d2902.146a109c.desc1=Being in too high or low temperatures can damage it.
+gohd.b98d2902.146a109c.desc2=These can be reduced or nullified by wearing appropriate armor or clothes, effected by Fire Resistance or Freeze Resistance, or offsetting the temperature by placing another climate source block.
+gohd.b98d2902.85f1fb5d.title=Pattern Paper
+
+## Minerals: gohd.cccede9d.
+gohd.minerals.title=Minerals
+gohd.cccede9d.b679e55a.title=HaC Veins
+gohd.cccede9d.add5de61.title=Red Vein
+gohd.cccede9d.6ef83f24.title=Green Vein
+gohd.cccede9d.4b446108.title=Blue Vein
+gohd.cccede9d.94dd1723.title=White vein
+gohd.cccede9d.fcea16fa.title=Black Vein
+gohd.cccede9d.d70f01cb.title=Skarn Deposit
+gohd.cccede9d.d70f01cb.desc1=Skarn deposit §lRARELY§r spawn many biomes and have three types.
+gohd.cccede9d.1313a69a.title=Skarn Deposit (Stone)
+gohd.cccede9d.1313a69a.desc1=Skarn Deposit (Stone) §lRARELY§r spawns under the Forest.
+gohd.cccede9d.3634dbb2.title=Skarn Deposit (Lime)
+gohd.cccede9d.3634dbb2.desc1=Skarn Deposit (Stone) §lRARELY§r spawns under the Desert, Plains and Savanna.
+gohd.cccede9d.cd18f633.title=Skarn Deposit (Hornfels)
+gohd.cccede9d.cd18f633.desc1=Skarn Deposit (Stone) §lRARELY§r spawns under the Sea and Swamp.
+gohd.cccede9d.33f25c86.title=Guano Vein
+gohd.cccede9d.33f25c86.desc1=Guano spawns at the bottom of the Sea.
+gohd.cccede9d.bdc29cf2.desc1=Travertine is generated in the Hot Spring that spawns in the Cold Mountaion.
+gohd.cccede9d.8ac28a20.title=Abyssal Geode
+gohd.cccede9d.8ac28a20.desc1=Abyssal Geode spawns at the bottom of the Sea.
+gohd.cccede9d.1a7f5909.subtitle=tile.railcraft.ore.magic.name
+gohd.cccede9d.1a7f5909.desc1=Firestone Ore spawns under the Lava Ocean in the Nether.
+gohd.cccede9d.5a6ee22b.desc1=Refined Firestone is charged in Lava.
+gohd.cccede9d.5a6ee22b.desc2=Charged Refined Firestone is used as solid fuel, or used to ignite fire in world.
+gohd.cccede9d.fed34783.task1=Ore Clumps (3x)
+gohd.cccede9d.3aeb8033.task1=Ore Shards (4x)
+gohd.cccede9d.c0d4a6c8.task1=Ore Crystals (5x)
+
+## Chemistry: gohd.1710439e.
+gohd.chemistry.title=Chemistry
+gohd.1710439e.52ab2cd5.title=Ore Washing
+
+## Crop: gohd.2e964474.
+gohd.crop.title=Crops
+gohd.2e964474.33c20e52.title=Soft and Wet
+gohd.2e964474.33c20e52.desc1=If the temperature of the Farmland is WARM and the humidity is WET, the crop will grow faster.
+gohd.2e964474.daaef901.desc1=Right-click on a water source in the Hand Net to obtain various items
+gohd.2e964474.8e5c606a.title=More and More Compression!
+gohd.2e964474.da7a26f4.title=How to automate tree crops
+gohd.2e964474.35dc07c3.subtitle=Thanks to §oPumpkin Melon§r!
+gohd.2e964474.35dc07c3.desc1=When broken, drop some seeds of Vanilla crops randomly!
+
+gohd.2e964474.81e25c09.desc1=Green soy Beans is harvested before Soy Plant grow up.
+gohd.2e964474.78f46bf1.desc1=Seaweed is planted under water over 2 blocks depth.
+gohd.2e964474.4861d64b.desc1=Lotus Root is planted under water within 1 block depth.
+gohd.2e964474.4861d64b.desc2=From summer to Autumn, you can harverst Lotus blocks by right-clicking them any number of times. But in Winter, they wither and die.
+gohd.2e964474.c5d119bf.desc1=Black Petal is VERY RARELY looted from Lotus Block.
+gohd.2e964474.2c530cd0.title=Notes on growing vine crops
+gohd.2e964474.2c530cd0.desc1=Vine crops: WIsteria and Grape, need to be in contact with the wall in order to grow.
+gohd.2e964474.a2b582c7.desc1=Wisteria bloom from Spring to Summer, and bear fruit in Autumn.
+gohd.2e964474.a2b582c7.desc2=They can be used as a substitute for saplings.
+gohd.2e964474.b5766375.desc1=Grape VIne bloom and bear fruit from Summer to Autumn.
+
+## Food: gohd.f80fdeb8.
+gohd.food.title=Foods
+gohd.f80fdeb8.1ca61478.title=Placeable Foods!
+gohd.f80fdeb8.1ca61478.desc1=Almost all foods from HaC is placeable as a entity. Shift right-click them on a block to place!
+gohd.f80fdeb8.431e11ca.title=Gluttony Champion
+
+gohd.f80fdeb8.8644ca80.title=Nice Cream!
+gohd.f80fdeb8.8644ca80.desc1=All Ice Creams give you Fire Resistance for 30 sec.
+gohd.f80fdeb8.6d028c8d.title=Very Nice Parfait!
+gohd.f80fdeb8.6d028c8d.desc1=All Parfaits give you Fire Resistance for 3 min.
+gohd.f80fdeb8.0221230f.desc1=All cakes heal your health instantly.
+
+gohd.f80fdeb8.29b5ac18.title=Power of SOY
+gohd.f80fdeb8.a4eff7fb.desc1=Used as Cream Pack
+gohd.f80fdeb8.6d144bfd.desc1=Used as Flour
+gohd.f80fdeb8.7435702b.desc1=Used as Raw Meat
+
+gohd.f80fdeb8.e33a0690.title=Rare Foods
+
+## Microbe: gohd.68baec83.
+gohd.microbe.title=Microbe
+gohd.68baec83.3f15f898.desc1=To culture microbes, the agar or medium with microbes is placed in an incubator and allowed to stand for several days after being adjusted to the appropriate climate from GUI.
+
+## brewing: gohd.
+gohd.brewing.title=Brewing
+
+## Tools:
+gohd.tools.title=Tools
+gohd.6b120fb2.d005700a.title=Weapons
+gohd.6b120fb2.6a907d55.title=Twilight Weapons
+gohd.6b120fb2.30317d20.title=Twilight Bows
+gohd.6b120fb2.cc9e5886.title=Tools
+gohd.6b120fb2.c88285cd.title=Manasteel Tools
+gohd.6b120fb2.d99e03b5.title=Dark Steel Tools
+gohd.6b120fb2.1c92bac1.title=End Steel Tools
+gohd.6b120fb2.00cb0ab9.title=Tool Steel Tools
+gohd.6b120fb2.bb71f376.title=Mangalloy Tools
+gohd.6b120fb2.e79fb275.title=Armors
+gohd.6b120fb2.83548cba.title=Manasteel Armors
+gohd.6b120fb2.d81fd2e1.title=Terrasteel Armors
+gohd.6b120fb2.957aebd2.title=Dark Steel Armors
+gohd.6b120fb2.c9353527.title=End Steel Armors
+gohd.6b120fb2.fcab00e8.title=Titanium Armors
+gohd.6b120fb2.61b73c1d.title=Clothes for Climate Magicians
+gohd.6b120fb2.09e80f8b.title=Refined Odsidian Armors
+gohd.6b120fb2.27b9a91c.title=Knightslime Armors
+gohd.6b120fb2.27b9a91c.subtitle=Bring you luck
+
+## Magic: gohd.bdb7cf70.
+gohd.magic.title=Magic
+gohd.bdb7cf70.d2595f85.desc1=You can get the first Mystical Flower using Floral Fertilizer.
+gohd.bdb7cf70.8d0ffccf.title=We are Living!
+gohd.bdb7cf70.8d0ffccf.desc1=Check out new recipes!
+gohd.bdb7cf70.fe39e5f6.title=We are Mana-Infused!
+gohd.bdb7cf70.dbe05e17.title=More Inexpensive Agglomeration
+gohd.bdb7cf70.860c5647.title=We are Dreaming!
+gohd.bdb7cf70.ada80e44.desc1=Dreaming mana Pool is 2x as large as normal Mana Pool
+gohd.bdb7cf70.c8a5b256.desc1=Elven Altar accepts Spark!
+gohd.bdb7cf70.6328f68d.title=We are Runic!
+gohd.bdb7cf70.e5eb64a5.title=We are Shimmering!
+gohd.bdb7cf70.4cbd8e5d.title=The most easiest way to get Gunpowder
+gohd.bdb7cf70.1f6861fc.title=Elemental Powders
+gohd.bdb7cf70.b2fe2a22.title=Elemental Dusts
+gohd.bdb7cf70.cac10bd4.title=Color Drops
+gohd.bdb7cf70.bbe39da4.title=Color Extracts
+gohd.bdb7cf70.a539f485.title=Inactive Color Cubes
+gohd.bdb7cf70.c895536e.title=We've been Activated!
+gohd.bdb7cf70.d957309c.title=We are Additional Cubes!
+gohd.bdb7cf70.156b5bea.title=Cosmetic Shop
+
+## Utilities: gohd.6b120fb2.
+gohd.utilities.title=Utilities
+gohd.6b120fb2.7f470c3f.title=Remote Monitors
+gohd.6b120fb2.1cefae3a.title=Wiki for Quarry Plus
+gohd.6b120fb2.414f78d0.subtitle=Make the unbreakable block BREAKABLE.
+gohd.6b120fb2.5e9802c1.title=EZ Network Interfaces
+gohd.6b120fb2.8caedb3d.title=Starter Kit for simple ME Network
+gohd.6b120fb2.a3c67014.title=Starter Kit for wireless ME Network
+gohd.6b120fb2.23189174.title=16 Inputs -> 6 Outputs
+gohd.6b120fb2.7c9e3fd5.title=Redstone Flux Dynamos
+gohd.6b120fb2.849036fe.title=Photovoltaic Cells
+
+##End Game: gohd.0f73c1bb.
+gohd.end_game.title=Good Old Minecraft!
+gohd.0f73c1bb.978f1566.subtitle=Planet Minecraft
+
+gohd.0f73c1bb.73be3bc0.title="Create the Minecraft portal"
+gohd.0f73c1bb.73be3bc0.desc1=Right-click the frame of Minecraft Portal with earth to ignite.
+gohd.0f73c1bb.0143a624.title="Warp to the planet"
+gohd.0f73c1bb.0143a624.desc1=Insert Earth in artifact slot.
+gohd.0f73c1bb.8867e772.desc1=As you know, this is the last quest in this pack.
+gohd.0f73c1bb.8867e772.desc2=Thinking back, there were so many quests. Almost all of them is not difficult but the road to this point was not an easy one. For days, weeks or months, perhaps you have reached here. That is not everyone can't do. Thank you for playing GOHD so far!
+gohd.0f73c1bb.8867e772.desc3=By the way, to complete this quest, you can choice the way you like. One of them is "Create the Minecraft portal", the other is "Warp to the planet". Choice the best one for you.
+gohd.0f73c1bb.8867e772.desc4=Good (Old) luck for you.
+gohd.0f73c1bb.8867e772.task1=Travel to Planet "Minecraft"
+gohd.0f73c1bb.8867e772.reward1=Goobye, my good old memories.
+
+## Reward Table
+gohd.reward.slimesling.title=Slimeslings
+gohd.reward.slime_boots.title=Slime Boots
+gohd.reward.loot_magic_spell.title=Magic Spell
+gohd.reward.creative_shop.title=Creative Utilities
+gohd.reward.loot_botania_rod.title=Botanical Rods
+gohd.reward.loot_mythic.title=Ragi Ticket
+
+# Special Links
+link.youtu.be.SWI_4Sx2GtI=The Everyday and The Extraordinary
+link.youtu.be.TG6yHxuK22g=The Kimera
+link.youtu.be.Opce-MSEznY=Remains of Fire
+link.youtu.be.2P2TC8Tlq7M=RGB
