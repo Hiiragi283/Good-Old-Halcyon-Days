@@ -56,7 +56,7 @@ tile.railcraft.ore.magic.name=ファイアストーン鉱石
 item.thermalfoundation.material.dustMana.name=元素を統べるマナの粉
 
 ## Tinkers Construct
-tile.tconstruct.seared.tooltip=§cこれはタイルエンティティです!\n装飾には向いていません!
+tile.tconstruct.seared.tooltip=§cこれはタイルエンティティです!\n§c装飾には向いていません!
 
 ## twilight Forest
 tile.twilightforest.StonePillar.name=石の柱
