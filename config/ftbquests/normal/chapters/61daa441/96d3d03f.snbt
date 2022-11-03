@@ -1,0 +1,25 @@
+{
+	icon: "dcs_climate:dcs_ore_heatingmetal 1 2",
+	x: 10.0d,
+	y: 2.0d,
+	description: "{gohd.61daa441.96d3d03f.subtitle}",
+	dependencies: [
+		"cbd2590e",
+		"40202af7"
+	],
+	or_tasks: true,
+	tasks: [{
+		uid: "bf167a5d",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_ore_dustblock 1 5"
+		}]
+	},
+	{
+		uid: "171057da",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_ore_heatingmetal 1 2"
+		}]
+	}]
+}

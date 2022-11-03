@@ -1,7 +1,0 @@
-{
-	title: "{gohd.brewing.title}",
-	icon: "dcs_climate:dcs_device_aging_barrel",
-	always_invisible: false,
-	group: 781599860,
-	default_quest_shape: ""
-}

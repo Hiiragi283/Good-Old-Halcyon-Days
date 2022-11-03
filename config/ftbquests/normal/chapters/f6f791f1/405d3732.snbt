@@ -1,0 +1,22 @@
+{
+	x: 4.0d,
+	y: 0.0d,
+	dependencies: [
+		"96d3d03f",
+		"d5403a57"
+	],
+	tasks: [{
+		uid: "222d812c",
+		type: "item",
+		items: [{
+			id: "tconstruct:toolforge",
+			tag: {
+				textureBlock: {
+					id: "dcs_climate:dcs_ore_heatingmetal",
+					Count: 1b,
+					Damage: 2s
+				}
+			}
+		}]
+	}]
+}

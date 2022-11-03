@@ -1,0 +1,14 @@
+{
+	x: 4.0d,
+	y: 2.0d,
+	dependencies: [
+		"9cc94bfe"
+	],
+	tasks: [{
+		uid: "8ee7c9c3",
+		type: "item",
+		items: [{
+			item: "tcomplement:high_oven_io 1 1"
+		}]
+	}]
+}

@@ -1,0 +1,31 @@
+{
+	title: "{gohd.955c06b4.7717ddde.title}",
+	icon: "dcs_climate:dcs_icons",
+	x: 0.0d,
+	y: 2.0d,
+	text: [
+		"{gohd.955c06b4.7717ddde.text.1}",
+		"{gohd.955c06b4.7717ddde.text.2}",
+		"{gohd.955c06b4.7717ddde.text.3}"
+	],
+	dependencies: [
+		"267a9acd"
+	],
+	tasks: [{
+		uid: "1e87e64b",
+		type: "checkmark"
+	}],
+	rewards: [{
+		uid: "e69a8a75",
+		type: "item",
+		item: {
+			id: "railcraft:tool_crowbar_steel",
+			Damage: 500s,
+			tag: {
+				display: {
+					LocName: "gohd.custom.defeated_crowbar.name"
+				}
+			}
+		}
+	}]
+}

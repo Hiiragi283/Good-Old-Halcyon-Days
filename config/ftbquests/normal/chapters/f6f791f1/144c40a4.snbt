@@ -1,0 +1,30 @@
+{
+	title: "{gohd.f6f791f1.144c40a4.title}",
+	x: 2.0d,
+	y: -3.0d,
+	description: "{gohd.f6f791f1.144c40a4.subtitle}",
+	dependencies: [
+		"fd5707d9"
+	],
+	tasks: [{
+		uid: "5ebd0955",
+		type: "item",
+		items: [{
+			item: "contenttweaker:unfired_casting_table"
+		}]
+	},
+	{
+		uid: "c0a12932",
+		type: "item",
+		items: [{
+			item: "contenttweaker:unfired_casting_basin"
+		}]
+	},
+	{
+		uid: "68b0346e",
+		type: "item",
+		items: [{
+			item: "contenttweaker:unfired_casting_channel"
+		}]
+	}]
+}

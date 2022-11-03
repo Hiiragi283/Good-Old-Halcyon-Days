@@ -1,0 +1,22 @@
+{
+	icon: "dcs_climate:dcs_ingot 1 4",
+	x: 12.0d,
+	y: 0.0d,
+	shape: "square",
+	dependencies: [
+		"d362ac76"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "5669a0d3",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_ingot 1 4"
+		}]
+	}],
+	rewards: [{
+		uid: "0773141f",
+		type: "item",
+		item: "contenttweaker:ragi_ticket"
+	}]
+}

@@ -1,0 +1,26 @@
+{
+	title: "{gohd.61daa441.e8c1dcb5.title}",
+	icon: "minecraft:tallgrass 1 1",
+	x: 2.0d,
+	y: 0.0d,
+	dependencies: [
+		"5c541bdc"
+	],
+	tasks: [{
+		uid: "6a0e35c6",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_scythe_stone"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "ba2613ae",
+		type: "item",
+		items: [{
+			item: "minecraft:tallgrass 1 1"
+		}],
+		count: 8L
+	}]
+}

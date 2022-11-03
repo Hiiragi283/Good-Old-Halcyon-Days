@@ -1,0 +1,71 @@
+{
+	title: "{gohd.f6f791f1.fd5707d9.title}",
+	icon: "tconstruct:soil",
+	x: 0.0d,
+	y: -2.0d,
+	shape: "square",
+	dependencies: [
+		"955c06b4"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "9487df02",
+		type: "item",
+		items: [{
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any sand"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "sand"
+				}
+			}
+		}],
+		count: 16L
+	},
+	{
+		uid: "92a9459d",
+		type: "item",
+		items: [{
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any gravel"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "gravel"
+				}
+			}
+		}],
+		count: 16L
+	},
+	{
+		uid: "c0370fc2",
+		type: "item",
+		items: [{
+			item: "minecraft:clay_ball"
+		}],
+		count: 16L
+	},
+	{
+		uid: "ea5b604c",
+		type: "item",
+		items: [{
+			item: "tconstruct:soil"
+		}],
+		count: 32L
+	}],
+	rewards: [{
+		uid: "40964c8c",
+		type: "item",
+		item: "tconstruct:soil",
+		count: 3
+	}]
+}

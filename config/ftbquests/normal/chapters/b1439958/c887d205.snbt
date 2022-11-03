@@ -1,0 +1,34 @@
+{
+	x: 0.0d,
+	y: -2.0d,
+	shape: "square",
+	dependencies: [
+		"955c06b4"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "aa0ffb76",
+		type: "item",
+		items: [{
+			item: "storagedrawers:framingtable"
+		}]
+	}],
+	rewards: [{
+		uid: "d8eee0a3",
+		type: "item",
+		item: {
+			id: "storagedrawers:customtrim",
+			tag: {
+				MatS: {
+					id: "minecraft:diamond_block",
+					Count: 1b,
+					Damage: 3s
+				},
+				display: {
+					LocName: "tile.blockDiamond.name"
+				}
+			}
+		},
+		count: 64
+	}]
+}

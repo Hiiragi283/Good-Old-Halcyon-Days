@@ -1,0 +1,67 @@
+{
+	title: "{gohd.61daa441.5c541bdc.title}",
+	icon: "minecraft:log",
+	x: 0.0d,
+	y: 0.0d,
+	shape: "square",
+	dependencies: [
+		"955c06b4"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "8556280d",
+		type: "item",
+		items: [{
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any logWood"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "logWood"
+				}
+			}
+		}]
+	},
+	{
+		uid: "7e8b72a4",
+		type: "item",
+		items: [{
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any plankWood"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "plankWood"
+				}
+			}
+		}],
+		count: 4L
+	},
+	{
+		uid: "cb2c42a4",
+		type: "item",
+		items: [{
+			item: "minecraft:crafting_table"
+		}]
+	},
+	{
+		uid: "6bbf4387",
+		type: "item",
+		items: [{
+			item: "tconstruct:tooltables"
+		}]
+	}],
+	rewards: [{
+		uid: "1ce3e4b9",
+		type: "item",
+		item: "extendedcrafting:handheld_table"
+	}]
+}

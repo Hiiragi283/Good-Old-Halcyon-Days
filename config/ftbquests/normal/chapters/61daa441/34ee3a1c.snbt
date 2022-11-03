@@ -1,0 +1,21 @@
+{
+	x: 12.0d,
+	y: 2.0d,
+	shape: "square",
+	dependencies: [
+		"96d3d03f"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "d820760c",
+		type: "item",
+		items: [{
+			item: "minecraft:iron_ingot"
+		}]
+	}],
+	rewards: [{
+		uid: "8248a7a4",
+		type: "item",
+		item: "contenttweaker:ragi_ticket"
+	}]
+}

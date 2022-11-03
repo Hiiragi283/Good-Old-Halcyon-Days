@@ -1,0 +1,27 @@
+{
+	x: 0.0d,
+	y: 2.0d,
+	shape: "square",
+	dependencies: [
+		"955c06b4"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "c3a3b7ee",
+		type: "item",
+		items: [{
+			item: "bibliocraft:furniturepaneler 1 6"
+		}]
+	}],
+	rewards: [{
+		uid: "b296f5ae",
+		type: "item",
+		item: {
+			id: "bibliocraft:framedchest",
+			Damage: 6s,
+			tag: {
+				renderTexture: "tconstruct:blocks/connected/clear_glass/normal"
+			}
+		}
+	}]
+}

@@ -1,0 +1,39 @@
+{
+	x: 2.0d,
+	y: 4.0d,
+	dependencies: [
+		"3be95afe"
+	],
+	tasks: [{
+		uid: "75529141",
+		type: "item",
+		items: [{
+			item: "bibliocraft:typesettingtable"
+		}]
+	},
+	{
+		uid: "29ec0b35",
+		type: "item",
+		items: [{
+			item: "bibliocraft:printingpress"
+		}]
+	},
+	{
+		uid: "7ba47865",
+		type: "item",
+		items: [{
+			item: "bibliocraft:bibliochase"
+		}]
+	}],
+	rewards: [{
+		uid: "f1efb325",
+		type: "item",
+		item: "minecraft:book",
+		count: 3
+	},
+	{
+		uid: "48d775ba",
+		type: "item",
+		item: "minecraft:dye"
+	}]
+}

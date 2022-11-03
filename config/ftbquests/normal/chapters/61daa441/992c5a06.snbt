@@ -1,0 +1,22 @@
+{
+	icon: "thermalfoundation:material 1 163",
+	x: 12.0d,
+	y: -2.0d,
+	shape: "square",
+	dependencies: [
+		"1daab0ac"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "b4c0e52e",
+		type: "item",
+		items: [{
+			item: "thermalfoundation:material 1 163"
+		}]
+	}],
+	rewards: [{
+		uid: "bdade9e9",
+		type: "item",
+		item: "contenttweaker:ragi_ticket"
+	}]
+}

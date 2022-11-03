@@ -1,0 +1,16 @@
+{
+	x: -2.0d,
+	y: 2.0d,
+	dependencies: [
+		"3be95afe"
+	],
+	tasks: [{
+		uid: "4d3056a2",
+		type: "item",
+		items: [{
+			item: "bibliocraft:tapemeasure"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

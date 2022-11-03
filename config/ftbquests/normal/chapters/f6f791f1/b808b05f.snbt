@@ -1,0 +1,23 @@
+{
+	x: 10.0d,
+	y: 0.0d,
+	shape: "square",
+	dependencies: [
+		"e0c9fd96",
+		"d7e37634"
+	],
+	dependency_requirement: "one_completed",
+	size: 2.0d,
+	tasks: [{
+		uid: "889da386",
+		type: "item",
+		items: [{
+			item: "thermalfoundation:material 1 160"
+		}]
+	}],
+	rewards: [{
+		uid: "df82cf43",
+		type: "item",
+		item: "contenttweaker:ragi_ticket"
+	}]
+}

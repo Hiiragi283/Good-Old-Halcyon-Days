@@ -1,0 +1,38 @@
+{
+	title: "{dcs.info.title.stone_g}",
+	icon: "dcs_climate:dcs_oreitem 1 1",
+	x: 8.0d,
+	y: -1.0d,
+	text: [
+		"{dcs.info.desc.stone_g}"
+	],
+	dependencies: [
+		"f4628ad4"
+	],
+	tasks: [{
+		uid: "71cb0bb3",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_ore_stone_new 1 1"
+		}]
+	},
+	{
+		uid: "074e2708",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_oreitem 1 1"
+		}]
+	},
+	{
+		uid: "b47970d9",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_oredust 1 8"
+		}]
+	}],
+	rewards: [{
+		uid: "17797e42",
+		type: "item",
+		item: "dcs_climate:dcs_oredust 1 8"
+	}]
+}

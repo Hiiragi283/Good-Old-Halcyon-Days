@@ -1,0 +1,22 @@
+{
+	x: 2.0d,
+	y: -2.0d,
+	dependencies: [
+		"3d45df2d",
+		"fd5707d9"
+	],
+	tasks: [{
+		uid: "030c98c5",
+		type: "item",
+		items: [{
+			item: "tconstruct:materials"
+		}],
+		count: 32L
+	}],
+	rewards: [{
+		uid: "8013d41d",
+		type: "item",
+		item: "tconstruct:materials",
+		count: 32
+	}]
+}

@@ -1,0 +1,7 @@
+{
+	title: "{gohd.61daa441.title}",
+	icon: "minecraft:log",
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: ""
+}

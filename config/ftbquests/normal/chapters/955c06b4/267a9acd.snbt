@@ -1,0 +1,17 @@
+{
+	title: "{gohd.955c06b4.267a9acd.title}",
+	icon: "minecraft:grass",
+	x: 0.0d,
+	y: 0.0d,
+	description: "{gohd.955c06b4.267a9acd.subtitle}",
+	size: 2.0d,
+	tasks: [{
+		uid: "eebaf09f",
+		type: "checkmark"
+	}],
+	rewards: [{
+		uid: "f8b327c8",
+		type: "item",
+		item: "biomesoplenty:terrarium 1 13"
+	}]
+}

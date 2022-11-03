@@ -1,0 +1,27 @@
+{
+	x: 4.0d,
+	y: -2.0d,
+	dependencies: [
+		"b589158d",
+		"3d45df2d"
+	],
+	tasks: [{
+		uid: "29612022",
+		type: "item",
+		items: [{
+			item: "tconstruct:seared_furnace_controller"
+		}]
+	}],
+	rewards: [{
+		uid: "323d83c5",
+		type: "item",
+		item: {
+			id: "tconstruct:seared_tank",
+			Damage: 1s,
+			tag: {
+				FluidName: "lava",
+				Amount: 4000
+			}
+		}
+	}]
+}

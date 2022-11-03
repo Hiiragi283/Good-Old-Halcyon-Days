@@ -1,0 +1,23 @@
+{
+	x: 6.0d,
+	y: 0.0d,
+	shape: "square",
+	dependencies: [
+		"96d3d03f"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "99401df1",
+		type: "item",
+		items: [{
+			item: "railcraft:blast_furnace"
+		}],
+		count: 32L
+	}],
+	rewards: [{
+		uid: "7358b31b",
+		type: "item",
+		item: "railcraft:blast_furnace",
+		count: 2
+	}]
+}

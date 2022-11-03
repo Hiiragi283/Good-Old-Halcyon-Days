@@ -1,0 +1,38 @@
+{
+	title: "{gohd.61daa441.3d45df2d.title}",
+	icon: "minecraft:furnace",
+	x: 4.0d,
+	y: 0.0d,
+	dependencies: [
+		"113612c5"
+	],
+	tasks: [{
+		uid: "85b9b69b",
+		type: "item",
+		items: [{
+			item: "minecraft:stone_pickaxe"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "49683d4a",
+		type: "item",
+		items: [{
+			item: "minecraft:cobblestone"
+		}],
+		count: 8L
+	},
+	{
+		uid: "06c6c1d0",
+		type: "item",
+		items: [{
+			item: "minecraft:furnace"
+		}]
+	}],
+	rewards: [{
+		uid: "aa3e05ea",
+		type: "item",
+		item: "morefurnaces:furnaceblock 1 2"
+	}]
+}

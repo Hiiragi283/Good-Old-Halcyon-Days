@@ -1,7 +1,0 @@
-{
-	title: "{gohd.main.title}",
-	icon: "minecraft:grass",
-	always_invisible: false,
-	group: 0,
-	default_quest_shape: "circle"
-}

@@ -1,0 +1,22 @@
+{
+	x: 0.0d,
+	y: 0.0d,
+	shape: "square",
+	size: 2.0d,
+	tasks: [{
+		uid: "e626b39c",
+		type: "dimension",
+		icon: "twilightforest:miniature_structure",
+		dim: 7
+	}],
+	rewards: [{
+		uid: "c39ab8a2",
+		type: "item",
+		item: {
+			id: "patchouli:guide_book",
+			tag: {
+				"patchouli:book": "twilightforest:guide"
+			}
+		}
+	}]
+}

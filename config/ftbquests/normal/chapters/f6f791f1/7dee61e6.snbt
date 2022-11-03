@@ -1,0 +1,18 @@
+{
+	x: 6.0d,
+	y: -2.0d,
+	shape: "square",
+	dependencies: [
+		"55bfd526",
+		"7e1b2799",
+		"e9401292"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "bca7d5cd",
+		type: "item",
+		items: [{
+			item: "tconstruct:smeltery_controller"
+		}]
+	}]
+}

@@ -1,0 +1,55 @@
+{
+	title: "{gohd.f6f791f1.d5403a57.title}",
+	x: 2.0d,
+	y: 0.0d,
+	dependencies: [
+		"2654d81b"
+	],
+	tasks: [{
+		uid: "cf65a7b4",
+		type: "item",
+		items: [{
+			id: "tconstruct:tooltables",
+			Damage: 1s,
+			tag: {
+				textureBlock: {
+					id: "twilightforest:twilight_oak_planks",
+					Count: 1b,
+					Damage: 0s
+				}
+			}
+		}]
+	},
+	{
+		uid: "1c6d0a07",
+		type: "item",
+		items: [{
+			id: "tconstruct:tooltables",
+			Damage: 2s,
+			tag: {
+				textureBlock: {
+					id: "twilightforest:twilight_log",
+					Count: 1b,
+					Damage: 0s
+				}
+			}
+		}]
+	},
+	{
+		uid: "cff768db",
+		type: "item",
+		items: [{
+			item: "tconstruct:tooltables 1 3"
+		}]
+	}],
+	rewards: [{
+		uid: "3f33ffd0",
+		type: "item",
+		item: "tconstruct:tooltables 1 4"
+	},
+	{
+		uid: "5e8c5129",
+		type: "item",
+		item: "tconstruct:tooltables 1 5"
+	}]
+}

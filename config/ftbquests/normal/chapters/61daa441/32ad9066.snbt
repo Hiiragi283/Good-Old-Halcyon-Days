@@ -1,0 +1,31 @@
+{
+	title: "{gohd.61daa441.32ad9066.title}",
+	icon: "dcs_climate:dcs_handspindle",
+	x: 3.0d,
+	y: -1.0d,
+	description: "{gohd.61daa441.32ad9066.subtitle}",
+	dependencies: [
+		"e8c1dcb5"
+	],
+	tasks: [{
+		uid: "c2e53a64",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_handspindle"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "56c4a38e",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_misc"
+		}]
+	}],
+	rewards: [{
+		uid: "f1cdd97c",
+		type: "item",
+		item: "dcs_climate:dcs_leggins_linen"
+	}]
+}

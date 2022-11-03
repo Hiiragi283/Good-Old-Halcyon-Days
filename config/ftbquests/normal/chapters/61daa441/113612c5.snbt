@@ -1,0 +1,38 @@
+{
+	title: "{gohd.61daa441.113612c5.title}",
+	icon: "dcs_climate:dcs_tinder 1 1",
+	x: 3.0d,
+	y: 1.0d,
+	dependencies: [
+		"e8c1dcb5",
+		"32ad9066"
+	],
+	dependency_requirement: "one_completed",
+	tasks: [{
+		uid: "57411912",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_tinder"
+		}]
+	},
+	{
+		uid: "0fcef7b1",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_tinder 1 2"
+		}]
+	},
+	{
+		uid: "77d0ce6a",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_tinder 1 1"
+		}]
+	}],
+	rewards: [{
+		uid: "a0f3e52d",
+		type: "item",
+		item: "minecraft:torch",
+		count: 16
+	}]
+}

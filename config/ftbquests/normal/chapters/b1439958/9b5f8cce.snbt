@@ -1,0 +1,35 @@
+{
+	x: 2.0d,
+	y: 0.0d,
+	shape: "square",
+	dependencies: [
+		"955c06b4"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "94782103",
+		type: "item",
+		items: [{
+			item: "chisel:chisel_iron"
+		},
+		{
+			id: "chisel:chisel_diamond",
+			tag: {
+				chiseldata: {}
+			}
+		},
+		{
+			id: "chisel:chisel_hitech",
+			tag: {
+				chiseldata: {}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "9ecae6ee",
+		type: "item",
+		item: "chisel:auto_chisel"
+	}]
+}

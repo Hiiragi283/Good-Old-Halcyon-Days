@@ -1,0 +1,51 @@
+{
+	x: 0.0d,
+	y: 4.0d,
+	dependencies: [
+		"3be95afe"
+	],
+	tasks: [{
+		uid: "9db0dc94",
+		type: "item",
+		items: [{
+			item: "bibliocraft:biblioglasses"
+		},
+		{
+			item: "bibliocraft:biblioglasses 1 1"
+		},
+		{
+			item: "bibliocraft:biblioglasses 1 2"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "c9d813dd",
+		type: "item",
+		item: {
+			id: "openblocks:technicolor_glasses",
+			tag: {
+				Unbreakable: 1b,
+				ench: [{
+					id: 0s,
+					lvl: 7s
+				},
+				{
+					id: 5s,
+					lvl: 7s
+				},
+				{
+					id: 6s,
+					lvl: 1s
+				},
+				{
+					id: 26s,
+					lvl: 7s
+				},
+				{
+					id: 39s,
+					lvl: 1s
+				}]
+			}
+		}
+	}]
+}

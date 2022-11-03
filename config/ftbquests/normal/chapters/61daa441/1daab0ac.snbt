@@ -1,0 +1,32 @@
+{
+	icon: "dcs_climate:dcs_ore_metal_alloy 1 1",
+	x: 10.0d,
+	y: -2.0d,
+	text: [
+		"{dcs.info.desc.metal_dust}"
+	],
+	dependencies: [
+		"83030b15",
+		"7c7eed6d"
+	],
+	tasks: [{
+		uid: "c3f216ad",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_ore_dustblock 1 9"
+		}]
+	},
+	{
+		uid: "b4e5937b",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_ore_metal_alloy 1 1"
+		}]
+	}],
+	rewards: [{
+		uid: "3d458c7b",
+		type: "item",
+		item: "dcs_climate:dcs_ore_dustblock 1 9",
+		count: 3
+	}]
+}

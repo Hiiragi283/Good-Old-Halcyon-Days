@@ -1,0 +1,19 @@
+{
+	x: 4.0d,
+	y: 1.0d,
+	dependencies: [
+		"9cc94bfe"
+	],
+	tasks: [{
+		uid: "46bdaa16",
+		type: "item",
+		items: [{
+			item: "tcomplement:high_oven_io"
+		}]
+	}],
+	rewards: [{
+		uid: "e3d6342a",
+		type: "item",
+		item: "tcomplement:high_oven_io"
+	}]
+}

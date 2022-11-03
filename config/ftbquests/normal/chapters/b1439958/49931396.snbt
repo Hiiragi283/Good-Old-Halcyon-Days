@@ -1,0 +1,14 @@
+{
+	x: 2.0d,
+	y: -2.0d,
+	dependencies: [
+		"c887d205"
+	],
+	tasks: [{
+		uid: "b606729d",
+		type: "item",
+		items: [{
+			item: "storagedrawers:drawer_key"
+		}]
+	}]
+}

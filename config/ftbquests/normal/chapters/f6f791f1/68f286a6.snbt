@@ -1,0 +1,25 @@
+{
+	x: 8.0d,
+	y: -1.0d,
+	dependencies: [
+		"7dee61e6",
+		"96d3d03f"
+	],
+	tasks: [{
+		uid: "32274a56",
+		type: "item",
+		items: [{
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "wrought_iron",
+				Amount: 1000
+			}
+		}]
+	}],
+	rewards: [{
+		uid: "e06d1457",
+		type: "item",
+		item: "dcs_climate:dcs_miscdust 1 2",
+		count: 4
+	}]
+}

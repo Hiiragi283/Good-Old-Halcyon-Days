@@ -1,0 +1,30 @@
+{
+	title: "{gohd.f6f791f1.144c40a4.subtitle}",
+	x: 2.0d,
+	y: 3.0d,
+	description: "{gohd.f6f791f1.144c40a4.subtitle}",
+	dependencies: [
+		"a50ab130"
+	],
+	tasks: [{
+		uid: "ecbb90bf",
+		type: "item",
+		items: [{
+			item: "contenttweaker:unfired_scorched_table"
+		}]
+	},
+	{
+		uid: "459d5909",
+		type: "item",
+		items: [{
+			item: "contenttweaker:unfired_scorched_basin"
+		}]
+	},
+	{
+		uid: "2cbadc24",
+		type: "item",
+		items: [{
+			item: "contenttweaker:unfired_scorched_channel"
+		}]
+	}]
+}

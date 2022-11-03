@@ -1,0 +1,23 @@
+{
+	title: "{gohd.61daa441.f4628ad4.title}",
+	x: 6.0d,
+	y: 0.0d,
+	description: "{gohd.61daa441.f4628ad4.subtitle}",
+	dependencies: [
+		"3d45df2d"
+	],
+	tasks: [{
+		uid: "bf466844",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_yagen_stone"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "81198687",
+		type: "item",
+		item: "dcs_climate:dcs_yagen_brass"
+	}]
+}

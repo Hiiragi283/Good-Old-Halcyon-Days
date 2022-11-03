@@ -1,0 +1,20 @@
+{
+	x: 2.0d,
+	y: 2.0d,
+	dependencies: [
+		"3be95afe"
+	],
+	tasks: [{
+		uid: "892c6578",
+		type: "item",
+		items: [{
+			item: "bibliocraft:fancyworkbench 1 6"
+		}]
+	}],
+	rewards: [{
+		uid: "cbc06fe5",
+		type: "item",
+		item: "minecraft:book",
+		count: 3
+	}]
+}

@@ -1,0 +1,30 @@
+{
+	x: -2.0d,
+	y: 0.0d,
+	shape: "square",
+	dependencies: [
+		"955c06b4"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "cac6ef3c",
+		type: "item",
+		title: "{gohd.b1439958.2a496235.title}",
+		items: [{
+			item: "microblockcbe:saw_stone"
+		},
+		{
+			item: "microblockcbe:saw_iron"
+		},
+		{
+			item: "microblockcbe:saw_diamond"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "375429e0",
+		type: "item",
+		item: "bibliocraft:framingsaw"
+	}]
+}

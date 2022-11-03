@@ -1,0 +1,20 @@
+{
+	x: 0.0d,
+	y: -4.0d,
+	dependencies: [
+		"c887d205"
+	],
+	tasks: [{
+		uid: "e7d5f6dd",
+		type: "item",
+		items: [{
+			item: "storagedrawers:controller"
+		}]
+	}],
+	rewards: [{
+		uid: "4622d821",
+		type: "item",
+		item: "storagedrawers:compdrawers",
+		count: 3
+	}]
+}

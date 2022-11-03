@@ -1,0 +1,14 @@
+{
+	x: 4.0d,
+	y: -1.0d,
+	dependencies: [
+		"b589158d"
+	],
+	tasks: [{
+		uid: "03190cb9",
+		type: "item",
+		items: [{
+			item: "tconstruct:tinker_tank_controller"
+		}]
+	}]
+}

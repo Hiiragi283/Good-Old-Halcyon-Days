@@ -1,0 +1,48 @@
+{
+	icon: "contenttweaker:nether_grout",
+	x: 0.0d,
+	y: 2.0d,
+	shape: "square",
+	dependencies: [
+		"955c06b4"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "14b533b7",
+		type: "item",
+		items: [{
+			item: "minecraft:soul_sand"
+		}],
+		count: 16L
+	},
+	{
+		uid: "eb9f415f",
+		type: "item",
+		items: [{
+			item: "railcraft:generic 1 7"
+		}],
+		count: 16L
+	},
+	{
+		uid: "49505705",
+		type: "item",
+		items: [{
+			item: "biomesoplenty:mudball"
+		}],
+		count: 16L
+	},
+	{
+		uid: "5865aea1",
+		type: "item",
+		items: [{
+			item: "contenttweaker:nether_grout"
+		}],
+		count: 32L
+	}],
+	rewards: [{
+		uid: "9da81bcc",
+		type: "item",
+		item: "contenttweaker:nether_grout",
+		count: 3
+	}]
+}

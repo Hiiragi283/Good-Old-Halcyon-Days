@@ -1,0 +1,21 @@
+{
+	x: -2.0d,
+	y: 4.0d,
+	dependencies: [
+		"3be95afe"
+	],
+	tasks: [{
+		uid: "ab7b5b07",
+		type: "item",
+		items: [{
+			item: "bibliocraft:biblioclipboard"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "b2ead2f5",
+		type: "item",
+		item: "bibliocraft:bell"
+	}]
+}
