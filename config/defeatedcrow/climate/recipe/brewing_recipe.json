@@ -40,7 +40,7 @@
 			"fluid": "dcs.stock"
 		},
 		"input": [
-			"mekanism:biofuel:0",
+			"thermalfoundation:fertilizer:1",
 			"dcs_climate:dcs_food_microbe_coliformes:0"
 		]
 	},
@@ -55,7 +55,7 @@
 			"fluid": "dcs.vegetable_juice"
 		},
 		"input": [
-			"mekanism:biofuel:0",
+			"thermalfoundation:fertilizer:1",
 			"dcs_climate:dcs_food_microbe_coliformes:0"
 		]
 	},
@@ -70,7 +70,7 @@
 			"fluid": "dcs.fermented_sugar"
 		},
 		"input": [
-			"mekanism:biofuel:0",
+			"thermalfoundation:fertilizer:1",
 			"dcs_climate:dcs_food_microbe_coliformes:0"
 		]
 	},
@@ -85,7 +85,7 @@
 			"fluid": "dcs.fermented_potato"
 		},
 		"input": [
-			"mekanism:biofuel:0",
+			"thermalfoundation:fertilizer:1",
 			"dcs_climate:dcs_food_microbe_coliformes:0"
 		]
 	},
