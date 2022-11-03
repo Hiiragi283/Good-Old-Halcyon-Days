@@ -10,16 +10,20 @@
   - fixed the lag when saving edit on FTB Quests
 
 - `scripts/HiiragiUtils.zs`
-  - Thanks to [grassUtils](https://github.com/friendlyhj/GrassUtils) by friendlyhj !
+  - Thanks to [grassUtils](https://github.com/friendlyhj/GrassUtils) by [friendlyhj](https://github.com/friendlyhj) !
 
 - `scripts/RussellUtils.zs`
   - Thanks to [MorphoDays](https://github.com/delta-nos/MorphoDays_old
-) by delta-nos !
+) by [delta-nos](https://github.com/delta-nos) !
 
 - `resources/botania/textures/*.png`
   - These textures are licensed under [Botania License](https://botaniamod.net/license.php)
-  - Thanks to [Botanita](https://github.com/Vazkii](https://github.com/VazkiiMods/Botania)) by Vazkii !
+  - Thanks to [Botanita](https://github.com/VazkiiMods/Botania) by [Vazkii](https://github.com/Vazkii) !
 
 - `resources/minecraft/textures/gui/*`
   - These textures are licensed under [Creative Commons — Attribution-NonCommercial-ShareAlike 4.0 International — CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
-  - Thanks to [Halcyon Days 3D](https://www.planetminecraft.com/texture-pack/162152-halcyon-days-resource-pack-32x/) by ikezou !
+  - Thanks to [Halcyon Days 3D](https://www.planetminecraft.com/texture-pack/162152-halcyon-days-resource-pack-32x/) by [ikezou](https://www.minecraftforum.net/members/ikezou) !
+
+- `resources/tconstruct/textures/blocks/grout_nether`
+  - These textures are licensed under [MIT License](https://tldrlegal.com/license/mit-license)
+  - Thanks to [Tinker's Construct](https://github.com/SlimeKnights/TinkersConstruct/tree/1.12) by [SlimeKnights](https://github.com/SlimeKnights) !

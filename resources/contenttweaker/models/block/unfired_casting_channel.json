@@ -1,10 +1,6 @@
 {
 	"credit1": "Original - Tineker's Construct",
 	"credit2": "Tweaked by Hiiraigi Russell Tsubasa",
-	"parent": "block/block",
-	"textures": {
-		"texture": "tconstruct:blocks/grout"
-	},
 	"elements": [
 		{
 			"name": "Base",
