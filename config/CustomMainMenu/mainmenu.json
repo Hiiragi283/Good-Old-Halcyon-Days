@@ -90,8 +90,7 @@
 	"labels": {
 		"mojang": {
 			"text": "Copyright Mojang AB. Do not distribute!",
-			"hoverText": "�nCopyright Mojang AB. Do not distribute!",
-			"posX": -197,
+			"posX": -176,
 			"posY": -10,
 			"color": -1,
 			"alignment": "bottom_right",
@@ -103,7 +102,7 @@
 		"fml": {
 			"text": "",
 			"posX": 2,
-			"posY": -40,
+			"posY": -46,
 			"color": -1,
 			"alignment": "bottom_left"
 		}
