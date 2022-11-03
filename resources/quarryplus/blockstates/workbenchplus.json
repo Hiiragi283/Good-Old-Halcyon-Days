@@ -3,7 +3,7 @@
   "defaults": {
     "model": "cube_all",
     "textures": {
-      "all": "artisanworktables:blocks/designer_top"
+      "all": "enderio:blocks/block_crafter_top"
     },
     "uvlock": true,
     "transform": "forge:default-block"
