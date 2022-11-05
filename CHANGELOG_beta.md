@@ -4,22 +4,42 @@
 
 - Mod Configuration
   - Add
+    - `ExpandedEquivalence-1.12.2-12.3.17`
+    - `Far_From_Home-1.12.2-6.1`
+      - More exciting terrain generation!
     - `ForgeMultipart-1.12.2-2.6.2.83-universal`
     - `FTBQuests-1202.9.0.15`
       - The problem with lag when saving edits has been resolved!!
       - Thanks to [Quarri6343](https://github.com/Quarri6343)!
+    - `HungerStrike-1.12-1.0.8`
+      - No more hunger! Directly regenerate your health when you eat
+    - `loliasm-5.6`
+      - Alternatives for `Foam Fix` and `Vanilla Fix`
+    - `OpenTerrainGenerator-1.12.2-v9.4`
+      - Required mod for `Far From Home`
   - Remove
     - `aiotbotania-0.7.1`
+    - `artisanintegrations-1.12.2-1.3.0`
+    - `artisanworktables-1.12.2-1.24.2`
+    - `athenaeum-1.12.2-1.19.5`
     - `BetterQuesting-3.5.329`
+    - `Chunk Pregenerator-V1.12-2.5.7`
+    - `foamfix-0.10.15-1.12.2`
+    - `Mekanism-1.12.2-9.8.3.390`
+    - `MekanismGenerators-1.12.2-9.8.3.390`
+    - `MekanismTools-1.12.2-9.8.3.390`
+    - `mekatweaker-1.12-1.2.0`
     - `multiblocked-0.7.3`
+    - `PickleTweaks-1.12.2-2.1.3`
     - `probe-0.1.24`
     - `questbook-3.1.1-1.12`
     - `StandardExpansion-3.4.173`
+    - `VanillaFix-1.0.10-150`
   - Update
     - `appliedenergistics2-rv6-stable-7-extended_life-v0.53.7b` -> `appliedenergistics2-rv6-stable-7-extended_life-v0.53.8b`
     - `CraftTweaker2-1.12-4.1.20.680` -> `CraftTweaker2-1.12-4.1.20.681`
     - `FastWorkbench-1.12.2-1.7.3` -> `FastWorkbench-1.12.2-1.7.4`
-    - `zenutils-1.12.0` -> `zenutils-1.12.1`
+    - `zenutils-1.12.0` -> `zenutils-1.12.2`
 
   - Issue fix
     - [#37](https://github.com/Hiiragi283/Good-Old-Halcyon-Days/issues/37)
@@ -27,6 +47,10 @@
     - [#39](https://github.com/Hiiragi283/Good-Old-Halcyon-Days/issues/39)
     - [#40](https://github.com/Hiiragi283/Good-Old-Halcyon-Days/issues/40)
     - [#41](https://github.com/Hiiragi283/Good-Old-Halcyon-Days/issues/41)
+
+- Changed features
+  - Rebuild all quests instead of Better Questing
+  - Format scripts
 
 ## RC-1
 

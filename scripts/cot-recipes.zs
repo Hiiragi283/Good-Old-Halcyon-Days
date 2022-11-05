@@ -33,6 +33,7 @@ print("Start loading cot-recipes.zs ...");
 	HiiragiUtils.addCraftingShaped(false, <contenttweaker:cube_magenta>, RecipePattern.init(["ABA", "ACA", "ABA"]).map({A:<dcs_climate:dcs_gem_blue:2>, B:<extrautils2:ingredients:5>, C:<contenttweaker:cube_magenta_inactive>}).ingredients, null, null);
 	HiiragiUtils.addCraftingShaped(false, <contenttweaker:cube_yellow>, RecipePattern.init(["AAA", "ABA", "AAA"]).map({A:<twilightforest:torchberries>, B:<contenttweaker:cube_yellow_inactive>}).ingredients, null, null);
 	HiiragiUtils.addCraftingShaped(false, <contenttweaker:dcs_color_ring2>, [[<ore:dustCrystal>], [<ore:dropBlue>], [<ore:ingotGold>]], null, null);
+	HiiragiUtils.addCraftingShaped(false, <contenttweaker:dust_shadestone>*8, RecipePattern.init(["AAA", "ABA", "AAA"]).map({A:<ore:dustGlowstone>, B:<ore:itemDarkMatter>}).ingredients, null, null);
 	HiiragiUtils.addCraftingShaped(false, <contenttweaker:dustblock_lead>, RecipePattern.init(["AAA", "AAA", "AAA"]).map({A:<ore:dustLead>}).ingredients, null, null);
 	HiiragiUtils.addCraftingShaped(false, <contenttweaker:ingot_stable>, [[<ore:ingotIron>], [<contenttweaker:division_sigil_perm>], [<ore:gemDiamond>]], null, null);
 	HiiragiUtils.addCraftingShaped(false, <contenttweaker:ingot_unstable>, [[<ore:ingotIron>], [HiiragiUtils.toolInput(<contenttweaker:division_sigil_temp>, 1)], [<ore:gemDiamond>]], null, null);

@@ -192,6 +192,8 @@ print("Start loading unification.zs ...");
 		"mia:mia/packed_paper/packed_paper_swap_2",
 		"mia:mia/packed_paper/packed_paper_swap_3",
 		"minecraft:torch",
+		"projecte:conversions/aeternalis_fuel_to_mobius_fuel",
+		"projecte:conversions/alchemical_coal_to_coal",
 		"projecte:conversions/diamond_to_emerald",
 		"projecte:conversions/diamond_to_gold",
 		"projecte:conversions/emerald_to_diamond",
@@ -199,6 +201,10 @@ print("Start loading unification.zs ...");
 		"projecte:conversions/gold_to_iron",
 		"projecte:conversions/iron_to_ender_pearl",
 		"projecte:conversions/iron_to_gold",
+		"projecte:conversions/mobius_fuel_to_alchemical_coal",
+		"projecte:item.pe_fuel_0",
+		"projecte:item.pe_fuel_1",
+		"projecte:item.pe_fuel_2",
 		"projecte:item.pe_matter_1_alt",
 		"projecte:item.pe_matter_1",
 		"railcraft:block_creosote",
@@ -223,10 +229,6 @@ print("Start loading unification.zs ...");
 	];
 	for i in removeCraftingName {
 		recipes.removeByRecipeName(i);
-	}
-	for i in 0 to 15 {
-		//recipes.removeByRecipeName("mekanism:balloon_" ~ i);
-		//recipes.removeByRecipeName("dcs_lib:balloon_" ~ i ~ "_dcs");
 	}
 	//追加
 		//HaCの色のしずくによる素材の変換
@@ -280,8 +282,8 @@ print("Start loading unification.zs ...");
 	HiiragiUtils.addCraftingShaped(true, <disenchanter:disenchantmenttable:0>, RecipePattern.init(["ABA", "CDC", "EEE"]).map({A:<botania:spellcloth>, B:<ore:book>, C:<ore:gemEmerald>, D:<ore:woolYellow>, E:<ore:obsidian>}).ingredients, null, null);
 	HiiragiUtils.addCraftingShaped(true, <inspirations:mulch:0>, RecipePattern.init([" A ", "ABA", " A "]).map({A:<ore:stickWood>, B:<ore:dustPlant>}).ingredients, null, null);
 	HiiragiUtils.addCraftingShaped(true, <storagedrawers:framingtable>, RecipePattern.init(["ABA", "CDC"]).map({A:<dcs_climate:dcs_squaretable_wood>, B:<tconstruct:tooltables>, C:<bibliocraft:framingboard>, D:<bibliocraft:framingsheet>}).ingredients, null, null);
-
 	HiiragiUtils.addCraftingShapeless(false, <storagedrawers:upgrade_creative>, [<storagedrawers:upgrade_storage:4>, <extendedcrafting:singularity_ultimate>.reuse()], null, null);
+	HiiragiUtils.recipeReplace(<minecraft:blaze_rod>, <dcs_climate:dcs_mold:0>, <bibliocraft:printingpress>);
 
 //かまどレシピの編集
 	//削除

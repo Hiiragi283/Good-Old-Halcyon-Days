@@ -3,17 +3,18 @@
 *.csv
 *.curseclient
 *.dat
-*.log
 *.jar
 *.lnk
+*.log
 *.zsrc
 
 .mixin.out
 asm
 backups
+caches
+config_1
 crafttweaker_dump
 crash-reports
-caches
 docs
 download
 generated
@@ -56,7 +57,7 @@ patchouli_data.json
 usercache.json
 usernamecache.json
 zs_export.json
-astralsorcery/gatewayFilter/worldFilter.dat
+
 config/AppliedEnergistics2/*.cfg
 !config/AppliedEnergistics2/AppliedEnergistics2.cfg
 config/artisanintegrations/module.botania.Tools-Generated.json
@@ -65,7 +66,7 @@ config/compactmachines3/recipes/*.txt
 config/enderio/recipes/*.pdf
 config/InvTweaks.cfg
 config/scavenge/*.txt
-config/tinker_ore_dict_melting_cache.dat
 config/thaumicjei_itemstack_aspects.json
+config/tinker_ore_dict_melting_cache.dat
 config/vanillafix/methods-stable_39.csvd
 journeymap/journeymap.log
