@@ -2,20 +2,60 @@
 # Custom Name
 gohd.custom.*.name
 
-gohd.custom.desire_driver.name=デザイアドライバー
+gohd.custom.defeated_crowbar.name=バールのようなカラス
+gohd.custom.welcome.name=§c§l§oGOHD§r§lにようこそ!
 
 # JEi Description
 gohd.jei.*.name
 
 gohd.jei.drop_soul.name=自殺か鬼哭を単体クラフトすることで得られます。
-gohd.jei.tinder.name=火口を着火するには，KILN以上の熱源を右クリックします。
+gohd.jei.tinder.name=火口を着火するには熱源を右クリックします。
+
+# Quests
+## GOHD: gohd.955c06b4.
+gohd.955c06b4.title=Good Old Halcyon Days!
+
+gohd.955c06b4.267a9acd.subtitle=Good Old Halcyon Days, 縮めて"GOHD"
+gohd.955c06b4.267a9acd.title=Welcome to ようこそGOHD!
+gohd.955c06b4.7717ddde.text.1=このpackは§oHeatAndClimate§rをベースに作られています。そのため攻略にはHaCに関する知識が必要になります。
+gohd.955c06b4.7717ddde.text.2=HaCを初めて遊ぶ方は下のwikiを読むことをおすすめします!
+gohd.955c06b4.7717ddde.text.3=https://defeatedcrow.jp/modwiki/HeatAndClimate
+gohd.955c06b4.7717ddde.title=気候と共に生きる
+
+## Tier 0: gohd.61daa441.
+gohd.61daa441.title=Tier 0
+
+gohd.61daa441.113612c5.title=Tinderburn
+gohd.61daa441.32ad9066.subtitle=仕様です。
+gohd.61daa441.32ad9066.title=あんたバカァ? いくらなんでもこれは安すぎるでしょ?
+gohd.61daa441.3d45df2d.title=GTNHよりもリアル
+gohd.61daa441.41178d2d.title=DutyじゃないけどHeavy
+gohd.61daa441.5c541bdc.title=いいから伐採だ!
+gohd.61daa441.96d3d03f.subtitle=§o私は失敗したことがない。たんに、うまくいかないだろう1万の方法を見つけただけだ。
+gohd.61daa441.e8c1dcb5.title=Garden of Grass
+gohd.61daa441.f4628ad4.subtitle=もし高校野球の女子マネージャーが薬剤師(Druggist)の『モーター(Mortar)』を読んだら
+gohd.61daa441.f4628ad4.title=もしドラ
+
+## TConstruct: gohd.f6f791f1.
+gohd.f6f791f1.title=Tconstruct
+
+gohd.f6f791f1.144c40a4.subtitle=§oBetter Than Wolves
+gohd.f6f791f1.144c40a4.title=鋳掛け屋さんの朝は早い
+gohd.f6f791f1.55bfd526.subtitle=§oチェンジ! Seared!
+gohd.f6f791f1.55bfd526.title=キャストオフ!
+gohd.f6f791f1.8b363fff.subtitle=§oチェンジ! Scorched!
+gohd.f6f791f1.d5403a57.title=なんかいい感じのテーブル
+gohd.f6f791f1.fd5707d9.title=お口の中がじゃりじゃりする～wwwwwwwww
+
+## Carpenter: gohd.b1439958.
+gohd.b1439958.title=大工
 
 # Tooltips
 gohd.tooltip.bedrock.name=§a採掘レベルが4以上のツルハシで右クリックすることで回収できる
 gohd.tooltip.cube_cyan.name=§b雨天時のみ作成可能
 gohd.tooltip.cube_magenta.name=§d夜間のみ作成可能
-gohd.tooltip.cube_yellow.name=§e黄昏の森でのみ作成可能
 gohd.tooltip.cube_spell_green.name=§c既存のブロックを上書きします
+gohd.tooltip.cube_yellow.name=§e黄昏の森でのみ作成可能
 gohd.tooltip.dcs_color_ring2.name=§b氷の加護
 gohd.tooltip.dustblock.name=§aコンベアベルト上のみでしか気候精錬できません!
 gohd.tooltip.hidden.name=§6JEIからは削除されました§rが§a存在します§r
@@ -29,31 +69,30 @@ gohd.tooltip.tcon_appear.name=§a任意のブロックとクラフトするこ�
 # Lang Key from other Mods
 
 ## Applied Energistics 2
-item.appliedenergistics2.material.engineering_processor_print.name=上級プロセッサアセンブリ
 item.appliedenergistics2.material.calculation_processor_print.name=発展プロセッサアセンブリ
+item.appliedenergistics2.material.engineering_processor_print.name=上級プロセッサアセンブリ
 item.appliedenergistics2.material.logic_processor_print.name=基本プロセッサアセンブリ
 
-## Better Questing
-item.bq_standard.loot_chest.name=らぎガチャ
-
 ## Ender IO
-item.item_basic_capacitor.activated.name=エナジェティックコンデンサ
-item.item_basic_capacitor.ender.name=ヴァイブラントコンデンサ
 enderio.activated.name=エナジェティックコンデンサ
 enderio.ender.name=ヴァイブラントコンデンサ
-
+item.item_basic_capacitor.activated.name=エナジェティックコンデンサ
+item.item_basic_capacitor.ender.name=ヴァイブラントコンデンサ
 
 ## Heat and Climate
-tile.dcs_metal_alloy_steel.name=錬鉄ブロック
-tile.dcs_heatingmetal_steel_heating.name=赤熱した鉄ブロック
-tile.dcs_heatingmetal_steel_cooling.name=冷却された鉄ブロック
-tile.dcs_heatingmetal_steel_fail.name=脆い錬鉄ブロック
+#tile.dcs_heatingmetal_steel_cooling.name=冷却された鉄ブロック
+#tile.dcs_heatingmetal_steel_fail.name=脆い錬鉄ブロック
+#tile.dcs_heatingmetal_steel_heating.name=赤熱した鉄ブロック
+#tile.dcs_metal_alloy_steel.name=錬鉄ブロック
 
 ## Railcraft
 tile.railcraft.ore.magic.name=ファイアストーン鉱石
 
 ## Thermal Foundation
 item.thermalfoundation.material.dustMana.name=元素を統べるマナの粉
+
+## Tinkers Complement
+tile.tcomplement.scorched_block.tooltip=§cこれはタイルエンティティです!\n§c装飾には向いていません!
 
 ## Tinkers Construct
 tile.tconstruct.seared.tooltip=§cこれはタイルエンティティです!\n§c装飾には向いていません!
