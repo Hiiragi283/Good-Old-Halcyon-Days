@@ -35,7 +35,7 @@ print("Start loading extrautils2.zs ...");
 	HiiragiUtils.addCraftingShaped(true, <extrautils2:compoundbow>, RecipePattern.init([" AB", "C B", " AB"]).map({A:<ore:ingotStable>, B: <dcs_climate:dcs_synthetic:0>, C:<ore:ingotBedrockium>}).ingredients, null, null);
 	//新規
 	HiiragiUtils.addCraftingShaped(false, <extrautils2:machine>.withTag({Type: "crafttweaker:assembler"}), RecipePattern.init(["ABA", "CDC", "ABA"]).map({A:<ore:gearEnergized>, B:<enderio:item_basic_capacitor:1>, C:<hap:conveyor>, D:<enderio:block_crafter>}).ingredients, null, null);
-	HiiragiUtils.addCraftingShaped(false, <extrautils2:machine>.withTag({Type: "crafttweaker:assembler"}), RecipePattern.init(["ABA", "CDC", "ABA"]).map({A:<ore:alloyAdvanced>, B:<ore:circuitAdvanced>, C:<hap:conveyor>, D:<mekanism:machineblock3:5>}).ingredients, null, null);
+	//HiiragiUtils.addCraftingShaped(false, <extrautils2:machine>.withTag({Type: "crafttweaker:assembler"}), RecipePattern.init(["ABA", "CDC", "ABA"]).map({A:<ore:alloyAdvanced>, B:<ore:circuitAdvanced>, C:<hap:conveyor>, D:<mekanism:machineblock3:5>}).ingredients, null, null);
 	HiiragiUtils.addCraftingShaped(false, <extrautils2:machine>.withTag({Type: "crafttweaker:assembler"}), RecipePattern.init(["ABA", "CDC", "ABA"]).map({A:<ore:gearSignalum>, B:<ore:plateSignalum>, C:<hap:conveyor>, D:<thermalexpansion:machine:11>}).ingredients, null, null);
 	HiiragiUtils.addCraftingShaped(false, <extrautils2:machine>.withTag({Type: "crafttweaker:apiary"}), RecipePattern.init(["AAA", "ABA", "CDC"]).map({A:<botania:livingwood:0>, B:<extrautils2:machine>, C:<biomesoplenty:filled_honeycomb>, D:<railcraft:equipment:2>}).ingredients, null, null);
 
@@ -66,14 +66,14 @@ print("Start loading extrautils2.zs ...");
 		[<buildinggadgets:buildingtool>, <extrautils2:itemcreativedestructionwand>]:  <buildinggadgets:exchangertool>,
 		[<buildinggadgets:buildingtool>, <thermalfoundation:diagram_redprint>]:  <buildinggadgets:copypastetool>,
 		//Ender IO
-		[<enderio:block_omni_reservoir>, <ore:runeWaterB>]: <enderio:block_reservoir>,
+		[<enderio:block_omni_reservoir>, <ore:runeWaterB>]: <enderio:block_reservoir>*2,
 		[<enderio:block_solar_panel:0>, <ore:ingotEnergeticAlloy>]: <enderio:block_solar_panel:1>,
 		[<enderio:block_solar_panel:1>, <ore:ingotPulsatingIron>]: <enderio:block_solar_panel:2>,
 		[<enderio:block_solar_panel:2>, <ore:ingotVibrantAlloy>]: <enderio:block_solar_panel:3>,
 		[<enderio:item_basic_capacitor:0>, <ore:ingotEnergeticAlloy>]: <enderio:item_basic_capacitor:1>,
 		[<enderio:item_basic_capacitor:1>, <ore:ingotVibrantAlloy>]: <enderio:item_basic_capacitor:2>,
 		[<enderio:item_basic_capacitor:2>, <dcs_climate:dcs_mechanical:5>]: jei.cap6x,
-		[<openblocks:tank>, <ore:itemChassiParts>]: <enderio:block_omni_reservoir>,
+		[<openblocks:tank>, <ore:itemChassiParts>]: <enderio:block_omni_reservoir>*2,
 		[<ore:blockMagnet>, <ore:itemVibrantCrystal>]: <enderio:item_magnet>,
 		[<ore:dustBedrock>, <ore:ingotCopper>]: <enderio:item_basic_capacitor:0>,
 		[<ore:dustBedrock>, <ore:ingotIron>]: <ore:gearIronInfinity>.firstItem,
@@ -100,20 +100,12 @@ print("Start loading extrautils2.zs ...");
 		[<theoneprobe:probe>, <enderio:item_yeta_wrench>]: <enderio:item_conduit_probe>,
 		//Lazy AE2
 		[<appliedenergistics2:material:6>, <threng:material:1>]: <threng:material:7>,
-		//Mekanism
-		[<ore:alloyAdvanced>, <botanicadds:rune_energy>]: <mekanism:electrolyticcore>,
-		[<ore:alloyAdvanced>, <ore:dustDiamond>]: <mekanism:anchorupgrade>,
-		[<ore:alloyAdvanced>, <ore:dustGold>]: <mekanism:energyupgrade>,
-		[<ore:alloyAdvanced>, <ore:dustIron>]: <mekanism:gasupgrade>,
-		[<ore:alloyAdvanced>, <ore:dustOsmium>]: <mekanism:speedupgrade>,
-		[<ore:alloyAdvanced>, <ore:dustSteel>]: <mekanism:mufflingupgrade>,
-		[<ore:alloyAdvanced>, <ore:dustTin>]: <mekanism:filterupgrade>,
 		//Thermal
 		[<ore:ingotElectrum>, <thermalfoundation:material:512>]: <thermalfoundation:material:640>,
-		[<ore:ingotRedstoneAlloy>, <ore:ingotElectrum>]: <thermalfoundation:material:515>,
-		[<ore:ingotRedstoneAlloy>, <ore:ingotGold>]: <thermalfoundation:material:513>,
-		[<ore:ingotRedstoneAlloy>, <ore:ingotIron>]: <thermalfoundation:material:512>,
-		[<ore:ingotRedstoneAlloy>, <ore:ingotSilver>]: <thermalfoundation:material:514>,
+		[<ore:ingotRedstoneAlloy>, <ore:ingotElectrum>]: <thermalfoundation:material:515>*2,
+		[<ore:ingotRedstoneAlloy>, <ore:ingotGold>]: <thermalfoundation:material:513>*2,
+		[<ore:ingotRedstoneAlloy>, <ore:ingotIron>]: <thermalfoundation:material:512>*2,
+		[<ore:ingotRedstoneAlloy>, <ore:ingotSilver>]: <thermalfoundation:material:514>*2,
 		[<ore:plateGold>, <thermalfoundation:material:515>]: <thermalexpansion:augment:128>,
 		[<ore:plateSilver>, <thermalfoundation:material:514>]: <thermalexpansion:augment:512>,
 		[<thermalfoundation:material:512>, <biomesoplenty:terrestrial_artifact>]: <thermalexpansion:augment:720>,
@@ -127,7 +119,7 @@ print("Start loading extrautils2.zs ...");
 		[<thermalfoundation:material:512>, <extrautils2:ironwood_sapling:0>]: <thermalexpansion:augment:323>,
 		[<thermalfoundation:material:512>, <hap:coke_oven>]: <thermalexpansion:augment:258>,
 		[<thermalfoundation:material:512>, <liquid:lava>]: <thermalexpansion:augment:130>,
-		[<thermalfoundation:material:512>, <mekanismgenerators:turbineblade>]: <thermalexpansion:augment:640>,
+		[<thermalfoundation:material:512>, <railcraft:turbine_disk>]: <thermalexpansion:augment:640>,
 		[<thermalfoundation:material:512>, <minecraft:brewing_stand>]: <thermalexpansion:augment:369>,
 		[<thermalfoundation:material:512>, <minecraft:comparator>]: <thermalexpansion:augment:515>,
 		[<thermalfoundation:material:512>, <ore:catalystBladeSUS>]: <thermalexpansion:augment:497>,

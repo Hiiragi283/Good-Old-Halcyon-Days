@@ -64,9 +64,10 @@ events.onPlayerDeathDrops(function(event as PlayerDeathDropsEvent) {
 	event.addItem(<contenttweaker:drop_soul>);
 });
 
-//除算のシジルの一時的な活性化レシピ
+//プレイヤーがブロックに干渉すると呼び出す
 events.onPlayerInteractBlock(function(event as PlayerInteractBlockEvent) {
 	if(!event.world.remote && !isNull(event.block) && !isNull(event.item)) {
+		//除算のシジルの一時的な活性化レシピ
 		if(event.block.definition.id == "minecraft:enchanting_table" && event.item.matches(<contenttweaker:division_sigil>)) {
 			event.cancel();
 			if(event.player.xp >= 30) {
@@ -75,16 +76,31 @@ events.onPlayerInteractBlock(function(event as PlayerInteractBlockEvent) {
 				event.player.give(<contenttweaker:division_sigil_temp>);
 			}
 		}
+		if(event.item.matches(<theoneprobe:creativeprobe>)) {
+			event.cancel();
+			val block = event.block;
+			val blockDef = block.definition;
+			event.player.sendMessage("=============================================");
+			event.player.sendMessage("Name:" ~ blockDef.displayName);
+			event.player.sendMessage("ID:" ~ blockDef.id);
+			event.player.sendMessage("Meta:" ~ block.meta);
+			event.player.sendMessage("Hardness:" ~ blockDef.hardness);
+			event.player.sendMessage("Resistance:" ~ blockDef.resistance);
+			event.player.sendMessage("Level:" ~ blockDef.harvestLevel);
+			event.player.sendMessage("Tool:" ~ blockDef.harvestTool);
+		}
 	}
 });
 
-//
+//プレイヤーがログインすると呼び出す
 events.onPlayerLoggedIn(function(event as PlayerLoggedInEvent) {
 	val player as IPlayer = event.player;
-	player.sendRichTextStatusMessage(ITextComponent.fromString("============================================="), false);
-	player.sendRichTextStatusMessage(ITextComponent.fromTranslation("ragicraft.text.welcome"), false);
-	player.sendRichTextStatusMessage(ITextComponent.fromString("============================================="), false);
-	server.commandManager.executeCommand(server, "projecte reloadEMC");
+	if(!player.world.isRemote()) {
+		player.sendRichTextStatusMessage(ITextComponent.fromString("§c============================================="), false);
+		player.sendRichTextStatusMessage(ITextComponent.fromTranslation("gohd.custom.welcome.name"), false);
+		player.sendRichTextStatusMessage(ITextComponent.fromString("§c============================================="), false);
+		server.commandManager.executeCommand(server, "projecte reloadEMC");
+	}
 });
 
 //プレイヤーに対して毎tickごとに呼び出す
@@ -100,10 +116,6 @@ events.onPlayerTick(function(event as PlayerTickEvent) {
 				//Bedrockium Ingot
 				if(itemMain.matches(<contenttweaker:ingot_bedrockium>) || itemMain.matches(<contenttweaker:block_bedrockium>)) {
 					player.addPotionEffect(<potion:minecraft:slowness>.makePotionEffect(120, 4));
-				}
-				//Rainbow Stone
-				if(itemMain.matches(<extrautils2:decorativesolid:8>)) {
-					player.addPotionEffect(<potion:minecraft:glowing>.makePotionEffect(120, 36));
 				}
 			}
 			//特定のアイテムを利き手とは逆に持っている際にイベントを起こす

@@ -23,8 +23,6 @@ print("Start loading oreDict.zs ...");
 	HiiragiUtils.tweakOreDict(<biomesoplenty:filled_honeycomb>, [<ore:dropHoney>], []);
 	HiiragiUtils.tweakOreDict(<dcs_climate:dcs_fooddust:7>, [<ore:dustWood>], []);
 
-	HiiragiUtils.tweakOreDict(<dcs_climate:dcs_ore_metal_alloy:2>, [<ore:all>], [<ore:blockWroughtIron>]);
-
 	HiiragiUtils.tweakOreDict(<botania:manaresource:2>, [], [<ore:gemManaDiamond>]);
 	HiiragiUtils.tweakOreDict(<botania:manaresource:9>, [], [<ore:gemDragonStone>]);
 	HiiragiUtils.tweakOreDict(<botania:manaresource:19>, [], [<ore:nuggetElvenElementium>]);

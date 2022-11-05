@@ -39,6 +39,7 @@ recipes.removeByMod("projectex");
 	HiiragiUtils.recipeReplace(<ore:obsidian>, <contenttweaker:block_shadestone>, <projecte:relay_mk1>);
 	HiiragiUtils.recipeReplace(<ore:obsidian>, <contenttweaker:block_shadestone>, <projecte:relay_mk2>);
 	HiiragiUtils.recipeReplace(<ore:obsidian>, <contenttweaker:block_shadestone>, <projecte:relay_mk3>);
+	HiiragiUtils.recipeReplace(<minecraft:diamond>, <projecte:item.pe_philosophers_stone>.reuse(), <projecte:alchemical_chest>);
 
 //EMCの編集
 	//EMCの読み込み

@@ -102,6 +102,8 @@ val mapRemove as bool[IItemStack] = {
 	<extendedcrafting:storage:7>: true,
 	//Extra Utilities 2
 	<extrautils2:itembuilderswand>: false,
+	<extrautils2:itembuilderswand>: false,
+	<extrautils2:itemdestructionwand>: false,
 	<extrautils2:itemdestructionwand>: false,
 	<extrautils2:machine>.withTag({Type: "extrautils2:crusher"}): false,
 	<extrautils2:machine>.withTag({Type: "extrautils2:enchanter"}): false,
@@ -109,6 +111,8 @@ val mapRemove as bool[IItemStack] = {
 	<extrautils2:unstableingots:0>: true,
 	<extrautils2:unstableingots:1>: true,
 	<extrautils2:unstableingots:2>: true,
+	//Forge Microblocks
+	<microblockcbe:stone_rod>: false,
 	//Inspirations
 	<inspirations:materials:8>: true,
 	//lazy AE2
@@ -117,48 +121,11 @@ val mapRemove as bool[IItemStack] = {
 	<threng:machine:2>: false,
 	<threng:machine:5>: false,
 	<threng:material:2>: false,
-	//Mechanics
-	<mechanics:heavy_mesh>: false,
-	//Mekanism
-	<mekanismgenerators:solarpanel>: false,
-	<mekanismtools:bronzeboots>: false,
-	<mekanismtools:bronzechestplate>: false,
-	<mekanismtools:bronzehelmet>: false,
-	<mekanismtools:bronzeleggings>: false,
-	<mekanismtools:bronzepaxel>: false,
-	<mekanismtools:diamondpaxel>: false,
-	<mekanismtools:goldpaxel>: false,
-	<mekanismtools:ironpaxel>: false,
-	<mekanismtools:lapislazuliaxe>: false,
-	<mekanismtools:lapislazuliboots>: false,
-	<mekanismtools:lapislazulichestplate>: false,
-	<mekanismtools:lapislazulihelmet>: false,
-	<mekanismtools:lapislazulihoe>: false,
-	<mekanismtools:lapislazulileggings>: false,
-	<mekanismtools:lapislazulipaxel>: false,
-	<mekanismtools:lapislazulipickaxe>: false,
-	<mekanismtools:lapislazulishovel>: false,
-	<mekanismtools:lapislazulisword>: false,
-	<mekanismtools:stonepaxel>: false,
-	<mekanismtools:woodpaxel>: false,
 	//Minecraft
-	<minecraft:stone_axe>: false,
-	<minecraft:stone_hoe>: false,
-	<minecraft:stone_pickaxe>: false,
-	<minecraft:stone_shovel>: false,
 	<minecraft:wooden_axe>: false,
 	<minecraft:wooden_hoe>: false,
 	<minecraft:wooden_pickaxe>: false,
 	<minecraft:wooden_shovel>: false,
-	//Pickle Tweaks
-	<pickletweaks:aluminum_paxel>: false,
-	<pickletweaks:constantan_paxel>: false,
-	<pickletweaks:copper_paxel>: false,
-	<pickletweaks:electrum_paxel>: false,
-	<pickletweaks:nickel_paxel>: false,
-	<pickletweaks:platinum_paxel>: false,
-	<pickletweaks:silver_paxel>: false,
-	<pickletweaks:tin_paxel>: false,
 	//ProjectE
 	//ProjectEX
 	<projectex:collector:*>: false,
@@ -181,11 +148,13 @@ val mapRemove as bool[IItemStack] = {
 	//Simple Storage Network
 	<storagenetwork:remote:0>: false,
 	//Tinkers Complement
-	<extrautils2:itembuilderswand>: false,
-	<extrautils2:itemdestructionwand>: false,
 	<tcomplement:alloy_tank>: false,
 	<tcomplement:melter:8>: false,
 	<tcomplement:melter>: false,
+	<tcomplement:steel_boots>: false,
+	<tcomplement:steel_chestplate>: false,
+	<tcomplement:steel_helmet>: false,
+	<tcomplement:steel_leggings>: false,
 };
 for i, j in mapRemove {
 	removeJEI(i, j);

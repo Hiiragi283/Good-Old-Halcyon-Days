@@ -74,7 +74,7 @@ print("Start loading cot-registry.zs ...");
 		block.register();
 	}
 	//色付きのブロックを登録する関数
-	function addBlockColored (id as string, material as BlockMaterial, hardness as float, resistance as float, tool as string, toolLevel as int, sound as SoundType, color as string) {
+	function addBlockColored (id as string, material as BlockMaterial, hardness as float, resistance as float, tool as string, toolLevel as int, sound as SoundType, color as string, isFull as bool) {
 		var block = VanillaFactory.createBlock(id, material);
 		block.setBlockHardness(hardness);
 		block.setBlockResistance(resistance);
@@ -87,54 +87,32 @@ print("Start loading cot-registry.zs ...");
 		block.itemColorSupplier = function(item, tintindex) {
 			return Color.fromHex(color);
 		};
-		block.register();
-	}
-	//粉末ブロックを登録する関数
-	function addDustBlock (id as string, material as BlockMaterial, hardness as float, resistance as float, tool as string, toolLevel as int, sound as SoundType) {
-		var block = VanillaFactory.createBlock(id, material);
-		block.setBlockHardness(hardness);
-		block.setBlockResistance(resistance);
-		block.setToolClass(tool);
-		block.setToolLevel(toolLevel);
-		block.setBlockSoundType(sound);
-		block.onUpdateTick = function(world, blockPos, blockState){
-			return true;
-		};
+		block.fullBlock = isFull;
 		block.register();
 	}
 	//魔法のキューブを登録する関数
-	function addCube (id as string, material as BlockMaterial, hardness as float, resistance as float, tool as string, toolLevel as int, sound as SoundType, isFull as bool) {
-		var cubeAct = VanillaFactory.createBlock(id, material);
-		cubeAct.setBlockHardness(hardness);
-		cubeAct.setBlockResistance(resistance);
-		cubeAct.setToolClass(tool);
-		cubeAct.setToolLevel(toolLevel);
-		cubeAct.setBlockSoundType(sound);
-		cubeAct.fullBlock = isFull;
+	function addCube (id as string, inactive as bool) {
+		var cubeAct = VanillaFactory.createBlock(id, <blockmaterial:rock>);
+		cubeAct.setBlockHardness(1.0);
+		cubeAct.setBlockResistance(15.0);
+		cubeAct.setToolClass("pickaxe");
+		cubeAct.setToolLevel(-1);
+		cubeAct.setBlockSoundType(<soundtype:stone>);
+		cubeAct.fullBlock = false;
 		cubeAct.axisAlignedBB = AxisAlignedBB.create(0.25, 0.25, 0.25, 0.75, 0.75, 0.75);
 		cubeAct.register();
-		var cubeInact = VanillaFactory.createBlock(id ~ "_inactive", material);
-		cubeInact.setBlockHardness(hardness);
-		cubeInact.setBlockResistance(resistance);
-		cubeInact.setToolClass(tool);
-		cubeInact.setToolLevel(toolLevel);
-		cubeInact.setBlockSoundType(sound);
-		cubeInact.fullBlock = isFull;
-		cubeInact.axisAlignedBB = AxisAlignedBB.create(0.25, 0.00, 0.25, 0.75, 0.50, 0.75);
-		cubeInact.register();
+		if(inactive) {
+			var cubeInact = VanillaFactory.createBlock(id ~ "_inactive", <blockmaterial:rock>);
+			cubeInact.setBlockHardness(1.0);
+			cubeInact.setBlockResistance(15.0);
+			cubeInact.setToolClass("pickaxe");
+			cubeInact.setToolLevel(-1);
+			cubeInact.setBlockSoundType(<soundtype:stone>);
+			cubeInact.fullBlock = false;
+			cubeInact.axisAlignedBB = AxisAlignedBB.create(0.25, 0.00, 0.25, 0.75, 0.50, 0.75);
+			cubeInact.register();
+		}
 	}
-	//不活性なキューブを登録する関数
-	/*function addCubeInactive (id as string, material as BlockMaterial, hardness as float, resistance as float, tool as string, toolLevel as int, sound as SoundType, isFull as bool) {
-		var cubeInact = VanillaFactory.createBlock(id, material);
-		cubeInact.setBlockHardness(hardness);
-		cubeInact.setBlockResistance(resistance);
-		cubeInact.setToolClass(tool);
-		cubeInact.setToolLevel(toolLevel);
-		cubeInact.setBlockSoundType(sound);
-		cubeInact.fullBlock = isFull;
-		cubeInact.axisAlignedBB = AxisAlignedBB.create(0.25, 0.00, 0.25, 0.75, 0.50, 0.75);
-		cubeInact.register();
-	}*/
 
 //アイテムの登録処理
 	//ただのアイテムの登録
@@ -166,7 +144,7 @@ print("Start loading cot-registry.zs ...");
 		"drop_soul": {"FFCCFF": "dcs_climate:items/food/drop_cream"},
 		"dust_shadestone": {"2D2D2D": "minecraft:items/sugar"},
 		"feather_black": {"181818": "minecraft:items/feather"},
-		"grout_ball": {"D0D1D6": "minecraft:items/snowball"},
+		//"grout_ball": {"D0D1D6": "minecraft:items/snowball"},
 	};
 	for i, j in mapItemColor {
 		for k, l in j {
@@ -214,6 +192,24 @@ print("Start loading cot-registry.zs ...");
 	return "Pass";
 	};
 	tomeAncient.register();
+	//デバッグ専用アイテムの登録
+		//CrT用
+		val book_syntax = mods.contenttweaker.VanillaFactory.createItem("book_syntax");
+		book_syntax.rarity = "epic";
+		book_syntax.itemRightClick = function(stack, world, player, hand) {
+			Commands.call("ct syntax", player, world);
+			Commands.call("ct reload", player, world);
+			return "Pass";
+		};
+		book_syntax.register();
+		//正面向く用
+		val book_facing = mods.contenttweaker.VanillaFactory.createItem("book_facing");
+		book_facing.rarity = "epic";
+		book_facing.itemRightClick = function(stack, world, player, hand) {
+			Commands.call("tp @p -335 64 -144 0 0", player, world);
+			return "Pass";
+		};
+		book_facing.register();
 
 //ブロックの登録
 	//機能をもたないブロック
@@ -222,64 +218,34 @@ print("Start loading cot-registry.zs ...");
 	addBlock("dummy_collector", <blockmaterial:rock>, 0.3, 0.3, "pickaxe", -1, <soundtype:stone>, true);
 	addBlock("dummy_link", <blockmaterial:rock>, 0.3, 0.3, "pickaxe", -1, <soundtype:stone>, true);
 	addBlock("dummy_relay", <blockmaterial:rock>, 0.3, 0.3, "pickaxe", -1, <soundtype:stone>, true);
+	addBlock("nether_grout", <blockmaterial:grass>, 3.0, 3.0, "shovel", -1, <soundtype:ground>, true);
 	addBlock("pumpkin_melon", <blockmaterial:wood>, 1.0, 1.0, "axe", -1, <soundtype:wood>, true); //Pumpkin Melon (@PumpkinMelon4) 氏に感謝!
-	addBlock("unfired_casting_basin", <blockmaterial:grass>, 3.0, 0.5, "shovel", -1, <soundtype:ground>, false);
-	addBlock("unfired_casting_channel", <blockmaterial:grass>, 3.0, 0.5, "shovel", -1, <soundtype:ground>, false);
-	addBlock("unfired_casting_table", <blockmaterial:grass>, 3.0, 0.5, "shovel", -1, <soundtype:ground>, false);
 
-	//粉末ブロックの登録
-	addBlockColored("dustblock_lead", <blockmaterial:rock>, 1.5, 15.0, "shovel", 0, <soundtype:stone>, "605E6A");
+	val mapSeared as string[] = [
+		"unfired_casting_basin",
+		"unfired_casting_channel",
+		"unfired_casting_table",
+		"unfired_scorched_basin",
+		"unfired_scorched_channel",
+		"unfired_scorched_table",
+	];
+	for i in mapSeared {
+		addBlock(i, <blockmaterial:grass>, 3.0, 0.5, "shovel", -1, <soundtype:ground>, false);
+	}
+
+	//色付きブロックの登録
+	addBlockColored("dustblock_lead", <blockmaterial:rock>, 1.5, 15.0, "shovel", 0, <soundtype:stone>, "605E6A", true);
 
 	//HaCのキューブを追加
-	addCube("cube_cyan", <blockmaterial:rock>, 1.0, 15.0, "pickaxe", -1, <soundtype:stone>, false);
-	addCube("cube_magenta", <blockmaterial:rock>, 1.0, 15.0, "pickaxe", -1, <soundtype:stone>, false);
-	addCube("cube_yellow", <blockmaterial:rock>, 1.0, 15.0, "pickaxe", -1, <soundtype:stone>, false);
-
-	var block = VanillaFactory.createBlock("cube_iridescent", <blockmaterial:glass>);
-	block.setBlockHardness(1.0);
-	block.setBlockResistance(15.0);
-	block.setToolClass("pickaxe");
-	block.setToolLevel(4);
-	block.setBlockSoundType(<soundtype:glass>);
-	block.fullBlock = false;
-	block.lightValue = 1;
-	block.translucent = true;
-	block.axisAlignedBB = AxisAlignedBB.create(0.25, 0.25, 0.25, 0.75, 0.75, 0.75);
-	block.register();
-
-//デバッグ専用アイテムの登録
-	val book_reloadEvents = mods.contenttweaker.VanillaFactory.createItem("book_reloadevents");
-	book_reloadEvents.rarity = "epic";
-	book_reloadEvents.itemRightClick = function(stack, world, player, hand) {
-		Commands.call("ct reload", player, world);
-		return "Pass";
+	val mapCube as bool[string] = {
+		"cube_cyan": true,
+		"cube_iridescent": false,
+		"cube_magenta": true,
+		"cube_yellow": true,
 	};
-	book_reloadEvents.register();
-
-	val book_syntax = mods.contenttweaker.VanillaFactory.createItem("book_syntax");
-	book_syntax.rarity = "epic";
-	book_syntax.itemRightClick = function(stack, world, player, hand) {
-		Commands.call("ct syntax", player, world);
-		Commands.call("ct reload", player, world);
-		return "Pass";
-	};
-	book_syntax.register();
-
-	val book_facing = mods.contenttweaker.VanillaFactory.createItem("book_facing");
-	book_facing.rarity = "epic";
-	book_facing.itemRightClick = function(stack, world, player, hand) {
-		Commands.call("tp @p -335 64 -144 180 0", player, world);
-		return "Pass";
-	};
-	book_facing.register();
-
-	/*val book_save = mods.contenttweaker.VanillaFactory.createItem("book_save");
-	book_save.rarity = "epic";
-	book_save.itemRightClick = function(stack, world, player, hand) {
-		Commands.call("bq_admin default save", player, world);
-		return "Pass";
-	};
-	book_save.register();*/
+	for i, j in mapCube {
+		addCube(i, j);
+	}
 
 //エンチャントの登録
 

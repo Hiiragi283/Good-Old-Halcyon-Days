@@ -32,7 +32,7 @@ print("Start loading unification.zs ...");
 //作業台レシピの編集
 	//削除
 	val removeCrafting as IItemStack[] = [
-		<appliedenergistics2:material:9>,
+		/*<appliedenergistics2:material:9>,
 		<compactmachines3:psd>,
 		<dcs_climate:dcs_device_shaft_l_steel>,
 		<dcs_climate:dcs_device_shaft_l_sus>,
@@ -51,18 +51,18 @@ print("Start loading unification.zs ...");
 		<dcs_climate:dcs_magic_card_m3:*>,
 		<dcs_climate:dcs_ore_gemblock:4>,
 		<enderio:block_omni_reservoir>,
-		<enderio:block_reservoir>,
+		<enderio:block_reservoir>,*/
 		<enderio:block_solar_panel:*>,
 		<enderio:item_basic_capacitor:*>,
-		<enderio:item_conduit_probe>,
-		<enderio:item_extract_speed_downgrade>,
+		//<enderio:item_conduit_probe>,
+		/*<enderio:item_extract_speed_downgrade>,
 		<enderio:item_extract_speed_upgrade>,
 		<enderio:item_inventory_charger_basic>,
 		<enderio:item_inventory_charger_simple>,
 		<enderio:item_inventory_charger_vibrant>,
-		<enderio:item_inventory_charger>,
+		<enderio:item_inventory_charger>,*/
 		<enderio:item_magnet>,
-		<enderio:item_material:11>,
+		/*<enderio:item_material:11>,
 		<enderio:item_material:12>,
 		<enderio:item_material:13>,
 		<enderio:item_material:14>,
@@ -81,24 +81,15 @@ print("Start loading unification.zs ...");
 		<hap:shaft_t_shaped_sus>,
 		<hap:shaft_x_shaped_steel>,
 		<hap:shaft_x_shaped_sus>,
-		<mechanics:heavy_mesh>,
-		<mekanism:anchorupgrade>,
-		<mekanism:basicblock:8>,
-		<mekanism:controlcircuit:*>,
-		<mekanism:energyupgrade>,
-		<mekanism:filterupgrade>,
-		<mekanism:gasupgrade>,
-		<mekanism:mufflingupgrade>,
-		<mekanism:speedupgrade>,
 		<tconstruct:casting:*>,
 		<tconstruct:channel>,
-		<tconstruct:faucet>,
+		<tconstruct:faucet>,*/
 		<thermalexpansion:augment:*>,
-		<thermalfoundation:material:512>,
+		/*<thermalfoundation:material:512>,
 		<thermalfoundation:material:513>,
 		<thermalfoundation:material:514>,
 		<thermalfoundation:material:515>,
-		<thermalfoundation:material:640>,
+		<thermalfoundation:material:640>,*/
 	];
 	for i in removeCrafting {
 		//HiiragiUtils.removeCrafting(i);
@@ -136,7 +127,7 @@ print("Start loading unification.zs ...");
 		"dcs_climate:main_build/dcs_desktop_accessories_8",
 		"dcs_climate:main_container/dcs_gem_blue_1",
 		"dcs_climate:main_container/dcs_ore_metal_alloy_2",
-		"dcs_climate:main_yagen/dcs_blaze_powder_0_2",
+		/*"dcs_climate:main_yagen/dcs_blaze_powder_0_2",
 		"dcs_climate:main_yagen/dcs_blaze_powder_0",
 		"dcs_climate:main_yagen/dcs_dye_15",
 		"dcs_climate:main_yagen/dcs_flint_0",
@@ -165,18 +156,26 @@ print("Start loading unification.zs ...");
 		"dcs_climate:main_yagen/dcs_oredust_7",
 		"dcs_climate:main_yagen/dcs_oredust_9",
 		"dcs_climate:main_yagen/dcs_oreitem_4",
-		"dcs_climate:main_yagen/dcs_string_0",
+		"dcs_climate:main_yagen/dcs_string_0",*/
 		"dcs_climate:main/dcs_planks_0",
 		"enderio:alloy_smelter_upgrade",
+		"enderio:conduit_probe",
 		"enderio:crafter_upgrade",
+		"enderio:electromagnet",
+		"enderio:gear_dark",
+		"enderio:gear_energized",
+		"enderio:gear_iron",
+		"enderio:gear_vibrant",
+		"enderio:pulsating_crystal",
 		"enderio:s_a_g_mill_upgrade",
 		"enderio:stirling_generator_upgrade",
+		"enderio:vibrant_crystal",
 		"enderio:wired_charger_upgrade",
 		"extendedcrafting:black_iron_ingot_to",
 		"extendedcrafting:black_iron_ingot",
 		"extendedcrafting:black_iron_slate",
-		//"extendedcrafting:compressor",
-		//"extendedcrafting:crafting_core",
+		"extendedcrafting:compressor",
+		"extendedcrafting:crafting_core",
 		"extrautils2:unstable_nugget",
 		"hap:shaft_bifurcated_steel",
 		"hap:shaft_bifurcated_sus",
@@ -188,33 +187,10 @@ print("Start loading unification.zs ...");
 		"hap:shaft_t_shaped_sus",
 		"hap:shaft_x_shaped_steel",
 		"hap:shaft_x_shaped_sus",
-		"mekanism:machineblock_5_alt_alt_alt_alt_alt_alt_alt_alt",
-		"mekanism:machineblock_5_alt_alt_alt_alt_alt_alt_alt",
-		"mekanism:machineblock_5_alt_alt_alt_alt_alt_alt",
-		"mekanism:machineblock_5_alt_alt_alt_alt_alt",
-		"mekanism:machineblock_5_alt_alt_alt_alt",
-		"mekanism:machineblock_5_alt_alt_alt",
-		"mekanism:machineblock_5_alt_alt",
-		"mekanism:machineblock_5_alt",
-		"mekanism:machineblock_5",
-		"mekanism:machineblock_6_alt_alt_alt_alt_alt_alt_alt_alt",
-		"mekanism:machineblock_6_alt_alt_alt_alt_alt_alt_alt",
-		"mekanism:machineblock_6_alt_alt_alt_alt_alt_alt",
-		"mekanism:machineblock_6_alt_alt_alt_alt_alt",
-		"mekanism:machineblock_6_alt_alt_alt_alt",
-		"mekanism:machineblock_6_alt_alt_alt",
-		"mekanism:machineblock_6_alt_alt",
-		"mekanism:machineblock_6_alt",
-		"mekanism:machineblock_6",
-		"mekanism:machineblock_7_alt_alt_alt_alt_alt_alt_alt_alt",
-		"mekanism:machineblock_7_alt_alt_alt_alt_alt_alt_alt",
-		"mekanism:machineblock_7_alt_alt_alt_alt_alt_alt",
-		"mekanism:machineblock_7_alt_alt_alt_alt_alt",
-		"mekanism:machineblock_7_alt_alt_alt_alt",
-		"mekanism:machineblock_7_alt_alt_alt",
-		"mekanism:machineblock_7_alt_alt",
-		"mekanism:machineblock_7_alt",
-		"mekanism:machineblock_7",
+		"mia:mia/packed_paper/packed_paper_swap_0",
+		"mia:mia/packed_paper/packed_paper_swap_1",
+		"mia:mia/packed_paper/packed_paper_swap_2",
+		"mia:mia/packed_paper/packed_paper_swap_3",
 		"minecraft:torch",
 		"projecte:conversions/diamond_to_emerald",
 		"projecte:conversions/diamond_to_gold",
@@ -231,6 +207,9 @@ print("Start loading unification.zs ...");
 		"railcraft:locomotive_steam_solid#0$1",
 		"railcraft:minecraft_torch$1",
 		"railcraft:minecraft_torch$2",
+		"tconstruct:smeltery/casting_basin",
+		"tconstruct:smeltery/casting_table",
+		"tconstruct:smeltery/channel",
 		"thermalexpansion:dynamo_1",
 		"thermalexpansion:dynamo_2",
 		"thermalexpansion:dynamo_3",
@@ -246,8 +225,8 @@ print("Start loading unification.zs ...");
 		recipes.removeByRecipeName(i);
 	}
 	for i in 0 to 15 {
-		recipes.removeByRecipeName("mekanism:balloon_" ~ i);
-		recipes.removeByRecipeName("dcs_lib:balloon_" ~ i ~ "_dcs");
+		//recipes.removeByRecipeName("mekanism:balloon_" ~ i);
+		//recipes.removeByRecipeName("dcs_lib:balloon_" ~ i ~ "_dcs");
 	}
 	//追加
 		//HaCの色のしずくによる素材の変換
@@ -280,20 +259,6 @@ print("Start loading unification.zs ...");
 		HiiragiUtils.addCraftingShaped(true, <dcs_climate:dcs_cont_fuel>, RecipePattern.init(["AAA", "AAA", "AAA"]).map({A:<dcs_climate:dcs_reagent:13>}).ingredients, null, null);
 		HiiragiUtils.addCraftingShaped(true, <railcraft:coke_block>, RecipePattern.init(["AAA", "AAA", "AAA"]).map({A:<railcraft:fuel_coke>}).ingredients, null, null);
 		HiiragiUtils.addCraftingShaped(true, <thermalfoundation:storage_resource:1>, RecipePattern.init(["AAA", "AAA", "AAA"]).map({A:<thermalfoundation:material:802>}).ingredients, null, null);
-		//解釈違いの新たなキューブ
-		HiiragiUtils.addCraftingShaped(false, <contenttweaker:cube_cyan>, RecipePattern.init(["AAA", "ABA", "AAA"]).map({A:<minecraft:ghast_tear>, B:<contenttweaker:cube_cyan_inactive>}).ingredients, null, null);
-		HiiragiUtils.addCraftingShaped(false, <contenttweaker:cube_magenta>, RecipePattern.init(["ABA", "ACA", "ABA"]).map({A:<dcs_climate:dcs_gem_blue:2>, B:<extrautils2:ingredients:5>, C:<contenttweaker:cube_magenta_inactive>}).ingredients, null, null);
-		HiiragiUtils.addCraftingShaped(false, <contenttweaker:cube_yellow>, RecipePattern.init(["AAA", "ABA", "AAA"]).map({A:<twilightforest:torchberries>, B:<contenttweaker:cube_yellow_inactive>}).ingredients, null, null);
-		HiiragiUtils.addCraftingShapeless(false, <contenttweaker:cube_cyan>, [<ore:blockElestial>, <ore:gemManaDiamond>, <ore:itemPulsatingPowder>], HiiragiUtils.rainCheck(<contenttweaker:cube_cyan_inactive>), null);
-		HiiragiUtils.addCraftingShapeless(false, <contenttweaker:cube_magenta>, [<ore:blockElestial>, <ore:gemDragonStone>, <ore:dustRefinedObsidian>], HiiragiUtils.nightCheck(<contenttweaker:cube_magenta_inactive>), null);
-		HiiragiUtils.addCraftingShapeless(false, <contenttweaker:cube_yellow>, [<ore:blockElestial>, <extrautils2:suncrystal:0>, <ore:dustLumium>],HiiragiUtils.dimCheck(7, <contenttweaker:cube_yellow_inactive>),null);
-		HiiragiUtils.addCraftingShaped(false, <contenttweaker:cube_iridescent>, [
-			[<ore:cubeMagenta>, <ore:cubeWhite>, <ore:cubeRed>],
-			[<ore:cubeBlue>, <minecraft:nether_star>, <ore:cubeYellow>],
-			[<ore:cubeCyan>, <ore:cubeBlack>, <ore:cubeGreen>],
-		], null, null);
-		//青の金のリングの置き換え
-		HiiragiUtils.addCraftingShaped(false, <contenttweaker:dcs_color_ring2>, [[<ore:dustCrystal>], [<ore:dropBlue>], [<ore:ingotGold>]], null, null);
 		///クモ糸の置換
 		val replaceString as IItemStack[] = [
 			<extrautils2:goldenlasso>,
@@ -312,12 +277,10 @@ print("Start loading unification.zs ...");
 
 	HiiragiUtils.addCraftingShaped(false, <buildinggadgets:buildingtool>, RecipePattern.init(["ABA", "ACA", "ADA"]).map({A:<ore:plateIron>, B:<extrautils2:itemcreativebuilderswand>, C:<thermalfoundation:material:640>, D:<thermalfoundation:material:512>}).ingredients, null, null);
 	HiiragiUtils.addCraftingShaped(false, <buildinggadgets:destructiontool>, RecipePattern.init(["ABA", "ACA", "ADA"]).map({A:<ore:plateSteel>, B:<extrautils2:itemcreativedestructionwand>, C:<thermalfoundation:material:640>, D:<thermalfoundation:material:512>}).ingredients, null, null);
-	HiiragiUtils.addCraftingShaped(true, <contenttweaker:ingot_bedrockium>, RecipePattern.init(["ABA", "BCB", "ABA"]).map({A:<ore:compressed3xCobblestone>, B:<ore:compressed4xCobblestone>, C:<ore:blockDiamond>}).ingredients, null, null);
-	HiiragiUtils.addCraftingShaped(true, <contenttweaker:pumpkin_melon>, RecipePattern.init(["AAA", "BAC", "AAA"]).map({A:<ore:listAllseeds>, B:<minecraft:pumpkin>, C:<minecraft:melon_block>}).ingredients, null, null);
 	HiiragiUtils.addCraftingShaped(true, <disenchanter:disenchantmenttable:0>, RecipePattern.init(["ABA", "CDC", "EEE"]).map({A:<botania:spellcloth>, B:<ore:book>, C:<ore:gemEmerald>, D:<ore:woolYellow>, E:<ore:obsidian>}).ingredients, null, null);
 	HiiragiUtils.addCraftingShaped(true, <inspirations:mulch:0>, RecipePattern.init([" A ", "ABA", " A "]).map({A:<ore:stickWood>, B:<ore:dustPlant>}).ingredients, null, null);
-	HiiragiUtils.addCraftingShaped(true, <storagedrawers:framingtable>, RecipePattern.init(["ABA", "C C"]).map({A:<ore:drawerTrim>, B:<minecraft:crafting_table>, C:<dcs_climate:dcs_squaretable_wood>}).ingredients, null, null);
-	HiiragiUtils.addCraftingShapeless(false, <contenttweaker:feather_black>, [<minecraft:feather>, <botania:dye:15>, <botania:dye:15>, <botania:dye:15>], null, null);
+	HiiragiUtils.addCraftingShaped(true, <storagedrawers:framingtable>, RecipePattern.init(["ABA", "CDC"]).map({A:<dcs_climate:dcs_squaretable_wood>, B:<tconstruct:tooltables>, C:<bibliocraft:framingboard>, D:<bibliocraft:framingsheet>}).ingredients, null, null);
+
 	HiiragiUtils.addCraftingShapeless(false, <storagedrawers:upgrade_creative>, [<storagedrawers:upgrade_storage:4>, <extendedcrafting:singularity_ultimate>.reuse()], null, null);
 
 //かまどレシピの編集
@@ -341,7 +304,7 @@ print("Start loading unification.zs ...");
 		<appliedenergistics2:material:24>: <appliedenergistics2:material:17>,
 		<contenttweaker:ingot_bedrockium>*9: <ore:compressed8xCobblestone>,
 		<dcs_climate:dcs_tinder:1>: <dcs_climate:dcs_tinder:0>,
-		<mechanics:heavy_block>: <extrautils2:compressedcobblestone:1>,
+		<tcomplement:materials:1>: <contenttweaker:nether_grout>,
 		<tconstruct:casting:1>: <contenttweaker:unfired_casting_basin>,
 		<tconstruct:casting>: <contenttweaker:unfired_casting_table>,
 		<tconstruct:channel>: <contenttweaker:unfired_casting_channel>,
@@ -381,18 +344,6 @@ for i, j in mapTooltip {
 		i.addTooltip(I18n.format("gohd.tooltip.dustblock.name"));
 	}
 
-//耐久値の調整
-	<mekanismtools:osmiumaxe>.maxDamage = <thermalfoundation:tool.axe_platinum>.maxDamage;
-	<mekanismtools:osmiumboots>.maxDamage = <thermalfoundation:armor.boots_platinum>.maxDamage;
-	<mekanismtools:osmiumchestplate>.maxDamage = <thermalfoundation:armor.plate_platinum>.maxDamage;
-	<mekanismtools:osmiumhelmet>.maxDamage = <thermalfoundation:armor.helmet_platinum>.maxDamage;
-	<mekanismtools:osmiumhoe>.maxDamage = <thermalfoundation:tool.hoe_platinum>.maxDamage;
-	<mekanismtools:osmiumleggings>.maxDamage = <thermalfoundation:armor.legs_platinum>.maxDamage;
-	<mekanismtools:osmiumpaxel>.maxDamage = <thermalfoundation:tool.pickaxe_platinum>.maxDamage * 1.5;
-	<mekanismtools:osmiumpickaxe>.maxDamage = <thermalfoundation:tool.pickaxe_platinum>.maxDamage;
-	<mekanismtools:osmiumshovel>.maxDamage = <thermalfoundation:tool.shovel_platinum>.maxDamage;
-	<mekanismtools:osmiumsword>.maxDamage = <thermalfoundation:tool.sword_platinum>.maxDamage;
-
 //スタック数の調整
 	<biomesoplenty:jar_filled:*>.maxStackSize = 64;
 	<biomesoplenty:terrestrial_artifact>.maxStackSize = 64;
@@ -400,9 +351,6 @@ for i, j in mapTooltip {
 	<minecraft:cake>.maxStackSize = 16;
 	<minecraft:knowledge_book>.maxStackSize = 64;
 	<minecraft:saddle>.maxStackSize = 16;
-
-//採掘レベルの調整
-	//<botania:platform:2>.definition.setHarvestLevel("axe", 4);
 
 //Workbench Plusレシピの編集
 WorkbenchPlus.addRecipe([
@@ -413,7 +361,7 @@ WorkbenchPlus.addRecipe([
 	<extendedcrafting:singularity_ultimate>,
 	<extrautils2:lawsword>,
 	<contenttweaker:cube_iridescent>*128,
-	<mekanism:basicblock2:4>.withTag({tier: 3})*8,
+	//<mekanism:basicblock2:4>.withTag({tier: 3})*8,
 	<openblocks:trophy>.withTag({entity_id: "minecraft:pig"}),
 	<openblocks:trophy>.withTag({entity_id: "minecraft:creeper"}),
 	<projecte:item.pe_philosophers_stone>,

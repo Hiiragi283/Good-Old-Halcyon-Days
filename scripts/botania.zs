@@ -160,7 +160,7 @@ print("Start loading botania.zs ...");
 		<ore:ingotArdite>,
 		<ore:ingotEnergeticAlloy>,
 		//Yellow
-		<ore:ingotRefinedGlowstone>,
+		<ore:ingotLumium>,
 		<ore:ingotGold>,
 		<ore:ingotBrass>,
 		//Green
@@ -168,14 +168,15 @@ print("Start loading botania.zs ...");
 		<ore:ingotTerrasteel>,
 		<ore:ingotEnderium>,
 		//Blue
-		<ore:ingotOsmium>,
 		<ore:ingotManasteel>,
 		<ore:ingotCobalt>,
 		<ore:ingotBismuth>,
 		//Purple
 		<ore:ingotManyullyn>,
-		<ore:ingotRefinedObsidian>,
-		<ore:ingotFluixSteel>
+		<ore:ingotBSCCO>,
+		<ore:ingotFluixSteel>,
+		//Clear
+		<ore:ingotUnstable>,
 	], 1000000);
 	mods.botania.RuneAltar.addRecipe(<ore:ingotElvenElementium>.firstItem,[
 		<ore:gemSchorl>,

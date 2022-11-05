@@ -40,6 +40,7 @@ print("Start loading dcs_climate.zs ...");
 
 	//新規
 	HiiragiUtils.addCraftingShaped(false, <dcs_climate:dcs_device_creative_box>, RecipePattern.init(["ABA", "ACA", "DDD"]).map({A:<dcs_climate:dcs_mechanical:5>, B:<dcs_climate:dcs_magic_card_m>, C:<extendedcrafting:singularity_ultimate>.reuse(), D:<ore:ingotBedrockium>}).ingredients, null, null);
+	HiiragiUtils.addCraftingShaped(false, <dcs_climate:dcs_scythe_stone>, RecipePattern.init([" A ", "  A", "BBA"]).map({A:<ore:itemFlint>, B:<ore:stickWood>}).ingredients, null, null);
 
 //このscriptの読み込みの完了をログに出力
 print("dcs_climate.zs loaded!");

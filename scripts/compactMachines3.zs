@@ -24,7 +24,6 @@ print("Start loading compactMachines3.zs ...");
 	HiiragiUtils.addCraftingShaped(true, <compactmachines3:fieldprojector>*4, RecipePattern.init([" A ", " B ", "CCC"]).map({A:<compactmachines3:psd>.reuse(), B:<appliedenergistics2:material:47>, C:<appliedenergistics2:smooth_sky_stone_block>}).ingredients, null, null);
 	//新規
 		//Compact Machineのコピーレシピ
-		HiiragiUtils.addCraftingShapeless(false, <contenttweaker:quantum_entangler>, [<compactmachines3:psd>, <minecraft:nether_star>], null, null);
 		for i in 0 to 6 {
 			var machine = <compactmachines3:machine>.definition.makeStack(i);
 			HiiragiUtils.addCraftingShapeless(false, machine*2, [machine.marked("move"), <contenttweaker:quantum_entangler>.reuse(), machine], HiiragiUtils.moveNBT(machine), null);

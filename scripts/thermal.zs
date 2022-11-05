@@ -59,7 +59,7 @@ mods.thermalexpansion.Enchanter.addRecipe(<extendedcrafting:material>, <botania:
 
 //Centrifugal Seperator
 	mods.thermalexpansion.Centrifuge.addRecipe([
-		<mekanism:dust:2>,
+		//<mekanism:dust:2>,
 		<thermalfoundation:material:70>,
 		<thermalfoundation:material:71>,
 		<thermalfoundation:material:770>

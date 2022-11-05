@@ -21,7 +21,7 @@ print("Start loading openBlocks.zs ...");
 
 //作業台レシピの編集
 	//上書き
-	HiiragiUtils.addCraftingShaped(true, <openblocks:auto_enchantment_table>, RecipePattern.init(["ABA", "CDC", "EEE"]).map({A:<ore:circuitBasic>, B:<ore:book>, C:<ore:gemDiamond>, D:<ore:woolBlue>, E:<ore:obsidian>}).ingredients, null, null);
+	//HiiragiUtils.addCraftingShaped(true, <openblocks:auto_enchantment_table>, RecipePattern.init(["ABA", "CDC", "EEE"]).map({A:<ore:gemRedstone>, B:<ore:book>, C:<ore:gemDiamond>, D:<ore:woolBlue>, E:<ore:obsidian>}).ingredients, null, null);
 	//新規
 
 //このscriptの読み込みの完了をログに出力

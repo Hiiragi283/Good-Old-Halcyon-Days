@@ -23,7 +23,7 @@ print("Start loading extendedcrafting.zs ...");
 
 //作業台レシピの編集
 	//上書き
-	HiiragiUtils.addCraftingShaped(true, <extendedcrafting:material:7>, RecipePattern.init(["ABA", "BCB", "ABA"]).map({A:<ore:ingotRefinedGlowstone>, B:<enderio:block_holier_fog>, C:<ore:itemGrindingBallLumium>}).ingredients, null, null);
+	HiiragiUtils.addCraftingShaped(true, <extendedcrafting:material:7>, RecipePattern.init(["ABA", "BCB", "ABA"]).map({A:<ore:dustMica>, B:<enderio:block_holier_fog>, C:<ore:itemGrindingBallLumium>}).ingredients, null, null);
 	HiiragiUtils.addCraftingShaped(true, <extendedcrafting:ender_alternator>, RecipePattern.init([" A ", " B ", "BCB"]).map({A:<ore:pearlEnderEye>, B:<extrautils2:decorativesolid:3>, C:<ore:blockBedrockium>}).ingredients, null, null);
 	HiiragiUtils.addCraftingShaped(true, <extendedcrafting:ender_crafter>, RecipePattern.init(["ABA", "CDC", "CCC"]).map({A:<ore:pearlEnderEye>, B:<ore:workbench>, C:<extrautils2:decorativesolid:3>, D:<ore:blockBedrockium>}).ingredients, null, null);
 	//新規
@@ -37,7 +37,7 @@ mods.extendedcrafting.CombinationCrafting.addRecipe(<contenttweaker:division_sig
 	for i in 0 to 14 {
 		mapTerrarium += <biomesoplenty:terrarium>.definition.makeStack(i);
 	}
-	mods.extendedcrafting.CombinationCrafting.addRecipe(<extrautils2:snowglobe:1>, 128000, <extrautils2:snowglobe>, mapTerrarium);
+	//mods.extendedcrafting.CombinationCrafting.addRecipe(<extrautils2:snowglobe:1>, 128000, <extrautils2:snowglobe>, mapTerrarium);
 	//Rainbow Oak Sapling
 	var saplingTwilight as IIngredient[] = [];
 	for i in 0 to 9 {
