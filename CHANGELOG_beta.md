@@ -4,7 +4,6 @@
 
 - Mod Configuration
   - Add
-    - `ExpandedEquivalence-1.12.2-12.3.17`
     - `Far_From_Home-1.12.2-6.1`
       - More exciting terrain generation!
     - `ForgeMultipart-1.12.2-2.6.2.83-universal`
