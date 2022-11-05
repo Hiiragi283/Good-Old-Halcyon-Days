@@ -11,7 +11,18 @@
 		uid: "5669a0d3",
 		type: "item",
 		items: [{
-			item: "dcs_climate:dcs_ingot 1 4"
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any ingotBrass"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "ingotBrass"
+				}
+			}
 		}]
 	}],
 	rewards: [{

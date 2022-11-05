@@ -1,5 +1,5 @@
 {
-	icon: "thermalfoundation:material 1 163",
+	icon: "dcs_climate:dcs_ingot 1 9",
 	x: 12.0d,
 	y: -2.0d,
 	shape: "square",
@@ -11,7 +11,18 @@
 		uid: "b4c0e52e",
 		type: "item",
 		items: [{
-			item: "thermalfoundation:material 1 163"
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any ingotBronze"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "ingotBronze"
+				}
+			}
 		}]
 	}],
 	rewards: [{

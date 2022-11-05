@@ -10,5 +10,15 @@
 		items: [{
 			item: "storagedrawers:drawer_key"
 		}]
+	}],
+	rewards: [{
+		uid: "80c5bcb9",
+		type: "item",
+		item: {
+			id: "openblocks:trophy",
+			tag: {
+				entity_id: "minecraft:donkey"
+			}
+		}
 	}]
 }
