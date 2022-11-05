@@ -1,5 +1,5 @@
 #Splash screen properties
-#Sun May 01 15:46:11 JST 2022
+#Sat Oct 29 11:40:28 JST 2022
 background=0xFFFFFF
 memoryGood=0x78CB34
 font=0x0
@@ -10,8 +10,8 @@ rotate=false
 memoryWarn=0xE6E84A
 showMemory=true
 enabled=true
-bar=0xCB3D35
+bar=0x78CB34
 resourcePackPath=resources
 logoOffset=0
-forgeTexture=fml\:textures/gui/forge.png
+forgeTexture=fml\:textures/gui/icon.png
 fontTexture=textures/font/ascii.png

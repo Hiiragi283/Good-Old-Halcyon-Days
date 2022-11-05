@@ -42,6 +42,7 @@
 			<output name="appliedenergistics2:material:25"/>
 		</alloying>
 	</recipe>
+	<!--disabled>
 	<recipe name="Alloy: Evil Infused Ingot" required="true">
 		<alloying energy="120000" exp="0">
 			<input name="ingotEndSteel"/>
@@ -50,6 +51,7 @@
 			<output name="extrautils2:ingredients:17"/>
 		</alloying>
 	</recipe>
+	<disabled-->
 	<recipe name="Alloy: End Steel Ingot" required="true">
 		<alloying energy="20000" exp="0.5">
 			<input name="minecraft:end_stone"/>
