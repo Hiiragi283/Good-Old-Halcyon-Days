@@ -1,18 +1,6 @@
 {
 	"dimensions": [
 		{
-			"dim": 0,
-			"override": true,
-			"dimensiontype": {
-				"id": 0,
-				"name": "overworld",
-				"suffix": "dim_0",
-				"keeploaded": false,
-				"worldprovider": "WorldProviderSurfaceJED"
-			},
-			"worldinfo": {}
-		},
-		{
 			"dim": 255,
 			"dimensiontype": {
 				"id": 255,

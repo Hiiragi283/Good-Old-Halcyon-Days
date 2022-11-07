@@ -17,9 +17,9 @@ gohd.955c06b4.title=Good Old Halcyon Days!
 
 gohd.955c06b4.267a9acd.subtitle=Good Old Halcyon Days, in short "GOHD"
 gohd.955c06b4.267a9acd.title=Welcome to GOHD!
+gohd.955c06b4.7717ddde.f60cf47b.title=§6Official HaC wiki
 gohd.955c06b4.7717ddde.text.1=this pack is based on §oHeatAndClimate§r, so you need the knowledge for this mod
-gohd.955c06b4.7717ddde.text.2=If you don't, I recommend you to read this wiki!
-gohd.955c06b4.7717ddde.text.3=https://defeatedcrow.jp/modwiki/HeatAndClimate_EN
+gohd.955c06b4.7717ddde.text.2=If you don't, I recommend you to read the wiki from link shown by right-clicking Icon!
 gohd.955c06b4.7717ddde.title=Living with climates
 
 ## Tier 0: gohd.61daa441.
@@ -62,6 +62,7 @@ gohd.tooltip.cube_yellow.name=§eOnly crafted in Twilight Forest
 gohd.tooltip.dcs_color_ring2.name=§bBlessing of Flosts
 gohd.tooltip.dustblock.name=§aOnly smelted by using Conveyor Belt
 gohd.tooltip.hidden.name=§6Hide from JEI§r but §aavailable§r
+gohd.tooltip.icon_hac.name=§aRight-click to show the link for official HaC wiki
 gohd.tooltip.identify_microbe.name=§aRight-click to identify!
 gohd.tooltip.infinity_booster_card.name=§6Dropped from Wither (30%) or Ender Dragon (100%)
 gohd.tooltip.ingot_rainbow.name=§dWhen §cyou §6holding §eme §ain §2offhand, §bI'll §1give §9you §5a §dD§cR§6E§eA§aM§2I§bN§1G §fpower!
@@ -83,10 +84,6 @@ item.item_basic_capacitor.activated.name=Energetic Capacitor
 item.item_basic_capacitor.ender.name=Vibrant Capacitor
 
 ## Heat and Climate
-#tile.dcs_heatingmetal_steel_cooling.name=Cooled Iron Block
-#tile.dcs_heatingmetal_steel_fail.name=Brittle Wrought Iron Block
-#tile.dcs_heatingmetal_steel_heating.name=Hot Iron Block
-#tile.dcs_metal_alloy_steel.name=Wrought Iron Block
 
 ## Railcraft
 tile.railcraft.ore.magic.name=Firestone Ore

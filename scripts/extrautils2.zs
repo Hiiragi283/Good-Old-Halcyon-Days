@@ -4,6 +4,7 @@
 # 情報 : Scripts for Extra Utilities 2
 #====================================================================
 
+#norun
 #priority 0
 
 //crafttweakerからclassをimport

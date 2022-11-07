@@ -2,9 +2,9 @@
 	"credit": "Tweaked by Hiiraigi Russell Tsubasa",
 	"textures": {
 		"1": "extrautils2:quantum_quarry",
-		"2": "extrautils2:ender_pearl_construct",
+		"2": "extendedcrafting:table_ultimate_top",
 		"3": "extendedcrafting:blocks/ender_alternator",
-		"particle": "extrautils2:quantum_quarry"
+		"particle": "extendedcrafting:quantum_quarry"
 	},
 	"elements": [
 		{

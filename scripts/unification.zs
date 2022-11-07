@@ -32,67 +32,13 @@ print("Start loading unification.zs ...");
 //作業台レシピの編集
 	//削除
 	val removeCrafting as IItemStack[] = [
-		/*<appliedenergistics2:material:9>,
-		<compactmachines3:psd>,
-		<dcs_climate:dcs_device_shaft_l_steel>,
-		<dcs_climate:dcs_device_shaft_l_sus>,
-		<dcs_climate:dcs_device_shaft_l>,
-		<dcs_climate:dcs_device_shaft_switch_steel>,
-		<dcs_climate:dcs_device_shaft_switch>,
-		<dcs_climate:dcs_device_shaft_ta_steel>,
-		<dcs_climate:dcs_device_shaft_ta_sus>,
-		<dcs_climate:dcs_device_shaft_ta>,
-		<dcs_climate:dcs_device_shaft_tb_steel>,
-		<dcs_climate:dcs_device_shaft_tb_sus>,
-		<dcs_climate:dcs_device_shaft_tb>,
-		<dcs_climate:dcs_device_shaft_x_steel>,
-		<dcs_climate:dcs_device_shaft_x_sus>,
-		<dcs_climate:dcs_device_shaft_x>,
-		<dcs_climate:dcs_magic_card_m3:*>,
-		<dcs_climate:dcs_ore_gemblock:4>,
-		<enderio:block_omni_reservoir>,
-		<enderio:block_reservoir>,*/
 		<enderio:block_solar_panel:*>,
 		<enderio:item_basic_capacitor:*>,
-		//<enderio:item_conduit_probe>,
-		/*<enderio:item_extract_speed_downgrade>,
-		<enderio:item_extract_speed_upgrade>,
-		<enderio:item_inventory_charger_basic>,
-		<enderio:item_inventory_charger_simple>,
-		<enderio:item_inventory_charger_vibrant>,
-		<enderio:item_inventory_charger>,*/
 		<enderio:item_magnet>,
-		/*<enderio:item_material:11>,
-		<enderio:item_material:12>,
-		<enderio:item_material:13>,
-		<enderio:item_material:14>,
-		<enderio:item_material:15>,
-		<enderio:item_material:60>,
-		<enderio:item_material:65>,
-		<enderio:item_material:71>,
-		<enderio:item_material:73>,
-		<hap:shaft_bifurcated_steel>,
-		<hap:shaft_bifurcated_sus>,
-		<hap:shaft_l_shaped_steel>,
-		<hap:shaft_l_shaped_sus>,
-		<hap:shaft_perpendicular_steel>,
-		<hap:shaft_perpendicular_sus>,
-		<hap:shaft_t_shaped_steel>,
-		<hap:shaft_t_shaped_sus>,
-		<hap:shaft_x_shaped_steel>,
-		<hap:shaft_x_shaped_sus>,
-		<tconstruct:casting:*>,
-		<tconstruct:channel>,
-		<tconstruct:faucet>,*/
 		<thermalexpansion:augment:*>,
-		/*<thermalfoundation:material:512>,
-		<thermalfoundation:material:513>,
-		<thermalfoundation:material:514>,
-		<thermalfoundation:material:515>,
-		<thermalfoundation:material:640>,*/
 	];
 	for i in removeCrafting {
-		//HiiragiUtils.removeCrafting(i);
+		HiiragiUtils.removeCrafting(i);
 	}
 	val removeCraftingName as string[] = [
 		"appliedenergistics2:misc/fluixpearl",
@@ -127,36 +73,6 @@ print("Start loading unification.zs ...");
 		"dcs_climate:main_build/dcs_desktop_accessories_8",
 		"dcs_climate:main_container/dcs_gem_blue_1",
 		"dcs_climate:main_container/dcs_ore_metal_alloy_2",
-		/*"dcs_climate:main_yagen/dcs_blaze_powder_0_2",
-		"dcs_climate:main_yagen/dcs_blaze_powder_0",
-		"dcs_climate:main_yagen/dcs_dye_15",
-		"dcs_climate:main_yagen/dcs_flint_0",
-		"dcs_climate:main_yagen/dcs_food_drop_oil_0",
-		"dcs_climate:main_yagen/dcs_food_materials_1_2",
-		"dcs_climate:main_yagen/dcs_food_materials_1",
-		"dcs_climate:main_yagen/dcs_food_materials_2",
-		"dcs_climate:main_yagen/dcs_gem_green_3",
-		"dcs_climate:main_yagen/dcs_gem_layer_0",
-		"dcs_climate:main_yagen/dcs_gem_layer_1",
-		"dcs_climate:main_yagen/dcs_gem_layer_2",
-		"dcs_climate:main_yagen/dcs_gem_layer_3",
-		"dcs_climate:main_yagen/dcs_gem_layer_4",
-		"dcs_climate:main_yagen/dcs_miscdust_1_2",
-		"dcs_climate:main_yagen/dcs_miscdust_1",
-		"dcs_climate:main_yagen/dcs_miscdust_11",
-		"dcs_climate:main_yagen/dcs_miscdust_12",
-		"dcs_climate:main_yagen/dcs_miscdust_2",
-		"dcs_climate:main_yagen/dcs_miscdust_6",
-		"dcs_climate:main_yagen/dcs_miscdust_8",
-		"dcs_climate:main_yagen/dcs_miscdust_9_2",
-		"dcs_climate:main_yagen/dcs_miscdust_9",
-		"dcs_climate:main_yagen/dcs_oredust_12_2",
-		"dcs_climate:main_yagen/dcs_oredust_12",
-		"dcs_climate:main_yagen/dcs_oredust_15",
-		"dcs_climate:main_yagen/dcs_oredust_7",
-		"dcs_climate:main_yagen/dcs_oredust_9",
-		"dcs_climate:main_yagen/dcs_oreitem_4",
-		"dcs_climate:main_yagen/dcs_string_0",*/
 		"dcs_climate:main/dcs_planks_0",
 		"enderio:alloy_smelter_upgrade",
 		"enderio:conduit_probe",
@@ -263,7 +179,7 @@ print("Start loading unification.zs ...");
 		HiiragiUtils.addCraftingShaped(true, <thermalfoundation:storage_resource:1>, RecipePattern.init(["AAA", "AAA", "AAA"]).map({A:<thermalfoundation:material:802>}).ingredients, null, null);
 		///クモ糸の置換
 		val replaceString as IItemStack[] = [
-			<extrautils2:goldenlasso>,
+			//<extrautils2:goldenlasso>,
 			<minecraft:book>,
 			<tconstruct:materials:15>,
 			<tconstruct:slimesling:0>,
@@ -277,8 +193,8 @@ print("Start loading unification.zs ...");
 			HiiragiUtils.recipeReplace(<minecraft:string>, <ore:string>, i);
 		}
 
-	HiiragiUtils.addCraftingShaped(false, <buildinggadgets:buildingtool>, RecipePattern.init(["ABA", "ACA", "ADA"]).map({A:<ore:plateIron>, B:<extrautils2:itemcreativebuilderswand>, C:<thermalfoundation:material:640>, D:<thermalfoundation:material:512>}).ingredients, null, null);
-	HiiragiUtils.addCraftingShaped(false, <buildinggadgets:destructiontool>, RecipePattern.init(["ABA", "ACA", "ADA"]).map({A:<ore:plateSteel>, B:<extrautils2:itemcreativedestructionwand>, C:<thermalfoundation:material:640>, D:<thermalfoundation:material:512>}).ingredients, null, null);
+	//HiiragiUtils.addCraftingShaped(false, <buildinggadgets:buildingtool>, RecipePattern.init(["ABA", "ACA", "ADA"]).map({A:<ore:plateIron>, B:<extrautils2:itemcreativebuilderswand>, C:<thermalfoundation:material:640>, D:<thermalfoundation:material:512>}).ingredients, null, null);
+	//HiiragiUtils.addCraftingShaped(false, <buildinggadgets:destructiontool>, RecipePattern.init(["ABA", "ACA", "ADA"]).map({A:<ore:plateSteel>, B:<extrautils2:itemcreativedestructionwand>, C:<thermalfoundation:material:640>, D:<thermalfoundation:material:512>}).ingredients, null, null);
 	HiiragiUtils.addCraftingShaped(true, <disenchanter:disenchantmenttable:0>, RecipePattern.init(["ABA", "CDC", "EEE"]).map({A:<botania:spellcloth>, B:<ore:book>, C:<ore:gemEmerald>, D:<ore:woolYellow>, E:<ore:obsidian>}).ingredients, null, null);
 	HiiragiUtils.addCraftingShaped(true, <inspirations:mulch:0>, RecipePattern.init([" A ", "ABA", " A "]).map({A:<ore:stickWood>, B:<ore:dustPlant>}).ingredients, null, null);
 	HiiragiUtils.addCraftingShaped(true, <storagedrawers:framingtable>, RecipePattern.init(["ABA", "CDC"]).map({A:<dcs_climate:dcs_squaretable_wood>, B:<tconstruct:tooltables>, C:<bibliocraft:framingboard>, D:<bibliocraft:framingsheet>}).ingredients, null, null);
@@ -336,6 +252,7 @@ val mapTooltip as string[IItemStack] = {
 	<tconstruct:toolforge:0>: "gohd.tooltip.tcon_appear.name",
 	<tconstruct:tooltables:1>: "gohd.tooltip.tcon_appear.name",
 	<tconstruct:tooltables:2>: "gohd.tooltip.tcon_appear.name",
+	<dcs_climate:dcs_icons>: "gohd.tooltip.icon_hac.name",
 };
 for i, j in mapTooltip {
 	i.addTooltip(I18n.format(j));
@@ -361,7 +278,7 @@ WorkbenchPlus.addRecipe([
 	<biomesoplenty:terrestrial_artifact>*128,
 	<botania:gaiahead>*3,
 	<extendedcrafting:singularity_ultimate>,
-	<extrautils2:lawsword>,
+	//<extrautils2:lawsword>,
 	<contenttweaker:cube_iridescent>*128,
 	//<mekanism:basicblock2:4>.withTag({tier: 3})*8,
 	<openblocks:trophy>.withTag({entity_id: "minecraft:pig"}),

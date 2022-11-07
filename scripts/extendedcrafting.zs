@@ -24,8 +24,8 @@ print("Start loading extendedcrafting.zs ...");
 //作業台レシピの編集
 	//上書き
 	HiiragiUtils.addCraftingShaped(true, <extendedcrafting:material:7>, RecipePattern.init(["ABA", "BCB", "ABA"]).map({A:<ore:dustMica>, B:<enderio:block_holier_fog>, C:<ore:itemGrindingBallLumium>}).ingredients, null, null);
-	HiiragiUtils.addCraftingShaped(true, <extendedcrafting:ender_alternator>, RecipePattern.init([" A ", " B ", "BCB"]).map({A:<ore:pearlEnderEye>, B:<extrautils2:decorativesolid:3>, C:<ore:blockBedrockium>}).ingredients, null, null);
-	HiiragiUtils.addCraftingShaped(true, <extendedcrafting:ender_crafter>, RecipePattern.init(["ABA", "CDC", "CCC"]).map({A:<ore:pearlEnderEye>, B:<ore:workbench>, C:<extrautils2:decorativesolid:3>, D:<ore:blockBedrockium>}).ingredients, null, null);
+	//HiiragiUtils.addCraftingShaped(true, <extendedcrafting:ender_alternator>, RecipePattern.init([" A ", " B ", "BCB"]).map({A:<ore:pearlEnderEye>, B:<extrautils2:decorativesolid:3>, C:<ore:blockBedrockium>}).ingredients, null, null);
+	//HiiragiUtils.addCraftingShaped(true, <extendedcrafting:ender_crafter>, RecipePattern.init(["ABA", "CDC", "CCC"]).map({A:<ore:pearlEnderEye>, B:<ore:workbench>, C:<extrautils2:decorativesolid:3>, D:<ore:blockBedrockium>}).ingredients, null, null);
 	//新規
 	//置換
 	HiiragiUtils.recipeReplace(<ore:blockGlass>, <dcs_climate:dcs_synthetic:2>, <extendedcrafting:frame>);

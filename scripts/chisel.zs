@@ -57,54 +57,16 @@ print("Start loading chisel.zs ...");
 	val bedrock as IItemStack[] = [
 		<dcs_climate:dcs_build_bricks:3>,
 		<dcs_climate:dcs_ore_gemblock:12>,
-		<extrautils2:decorativebedrock:0>,
-		<extrautils2:decorativebedrock:1>,
-		<extrautils2:decorativebedrock:2>,
+		//<extrautils2:decorativebedrock:0>,
+		//<extrautils2:decorativebedrock:1>,
+		//<extrautils2:decorativebedrock:2>,
 		<minecraft:bedrock>,
 	];
 	for i in bedrock {
 		HiiragiUtils.removeCrafting(i);
 		mods.chisel.Carving.addVariation("bedrock", i);
 	}
-/*
-//Biblio Craft
-	//Fancy lantern (Gold)
-	mods.chisel.Carving.addGroup("biblio_fancy_lantern_gold");
-	for i in 0 to 16 {
-		HiiragiUtils.removeCrafting(<bibliocraft:lanterngold>.definition.makeStack(i));
-		mods.chisel.Carving.addVariation("biblio_fancy_lantern_gold", <bibliocraft:lanterngold>.definition.makeStack(i));
-	}
-	//Fancy lantern (Iron)
-	mods.chisel.Carving.addGroup("biblio_fancy_lantern_iron");
-	for i in 0 to 16 {
-		HiiragiUtils.removeCrafting(<bibliocraft:lanterniron>.definition.makeStack(i));
-		mods.chisel.Carving.addVariation("biblio_fancy_lantern_iron", <bibliocraft:lanterniron>.definition.makeStack(i));
-	}
-	//Fancy Lamp (Gold)
-	mods.chisel.Carving.addGroup("biblio_fancy_lamp_gold");
-	for i in 0 to 16 {
-		HiiragiUtils.removeCrafting(<bibliocraft:lampgold>.definition.makeStack(i));
-		mods.chisel.Carving.addVariation("biblio_fancy_lamp_gold", <bibliocraft:lampgold>.definition.makeStack(i));
-	}
-	//Fancy Lamp (Iron)
-	mods.chisel.Carving.addGroup("biblio_fancy_lamp_iron");
-	for i in 0 to 16 {
-		HiiragiUtils.removeCrafting(<bibliocraft:lampiron>.definition.makeStack(i));
-		mods.chisel.Carving.addVariation("biblio_fancy_lamp_iron", <bibliocraft:lampiron>.definition.makeStack(i));
-	}
-	//Typewriter (Gold)
-	mods.chisel.Carving.addGroup("biblio_typewriter");
-	for i in 0 to 16 {
-		HiiragiUtils.removeCrafting(<bibliocraft:typewriter>.definition.makeStack(i));
-		mods.chisel.Carving.addVariation("biblio_typewriter", <bibliocraft:typewriter>.definition.makeStack(i));
-	}
-	//Sword Pedestal
-	mods.chisel.Carving.addGroup("biblio_sword_pedestal");
-	for i in 0 to 16 {
-		HiiragiUtils.removeCrafting(<bibliocraft:swordpedestal>.definition.makeStack(i));
-		mods.chisel.Carving.addVariation("biblio_sword_pedestal", <bibliocraft:swordpedestal>.definition.makeStack(i));
-	}
-*/
+
 //Botania
 	//Azulejo
 	mods.chisel.Carving.addGroup("botania_azulejo");
@@ -175,7 +137,7 @@ print("Start loading chisel.zs ...");
 
 //Extra Utilities 2
 	//Stone
-	for i in 0 to 6 {
+	/*for i in 0 to 6 {
 		if (i !=3 && i != 4) {
 			var stoneBrick as IItemStack = <extrautils2:decorativesolid>.definition.makeStack(i);
 			mods.chisel.Carving.addVariation("stonebrick", stoneBrick);
@@ -188,7 +150,7 @@ print("Start loading chisel.zs ...");
 		var thickenedGlass  as IItemStack = <extrautils2:decorativeglass>.definition.makeStack(i);
 		mods.chisel.Carving.addVariation("extrautils2_thickened_glass", thickenedGlass);
 		HiiragiUtils.removeCrafting(thickenedGlass);
-	}
+	}*/
 
 //HaC
 	//Desktop Accessories
@@ -225,7 +187,6 @@ print("Start loading chisel.zs ...");
 	mods.chisel.Carving.addVariation("dcs_shaft_sus", <dcs_climate:dcs_device_shaft_ta_sus>);
 	mods.chisel.Carving.addVariation("dcs_shaft_sus", <dcs_climate:dcs_device_shaft_tb_sus>);
 	mods.chisel.Carving.addVariation("dcs_shaft_sus", <dcs_climate:dcs_device_shaft_x_sus>);
-	//mods.chisel.Carving.addVariation("dcs_shaft_sus", <dcs_climate:dcs_device_shaft_switch_sus>);
 	//Steel Shaft (Lossless)
 	mods.chisel.Carving.addGroup("hap_shaft_steel_lossless");
 	mods.chisel.Carving.addVariation("hap_shaft_steel_lossless", <hap:shaft_straight_steel>);
@@ -245,12 +206,12 @@ print("Start loading chisel.zs ...");
 
 //Railcraft
 	//Abyssal
-	mods.chisel.Carving.addGroup("railcraft_abyssal_stone");
+	/*mods.chisel.Carving.addGroup("railcraft_abyssal_stone");
 	mods.chisel.Carving.addVariation("railcraft_abyssal_stone", <railcraft:abyssal_stone>);
 	for i in 0 to 6 {
 		HiiragiUtils.removeCrafting(<railcraft:abyssal>.definition.makeStack(i));
 		mods.chisel.Carving.addVariation("railcraft_abyssal_stone", <railcraft:abyssal>.definition.makeStack(i));
-	}
+	}*/
 	//Bleached Bone
 	mods.chisel.Carving.addGroup("railcraft_bleachedbone_stone");
 	for i in 0 to 6 {
@@ -276,7 +237,7 @@ print("Start loading chisel.zs ...");
 		mods.chisel.Carving.addVariation("railcraft_infernal_stone", <railcraft:infernal>.definition.makeStack(i));
 	}
 	//Jaded
-	mods.chisel.Carving.addGroup("railcraft_jaded_stone");
+	/*mods.chisel.Carving.addGroup("railcraft_jaded_stone");
 	mods.chisel.Carving.addVariation("railcraft_jaded_stone", <railcraft:jaded_stone>);
 	for i in 0 to 6 {
 		HiiragiUtils.removeCrafting(<railcraft:jaded>.definition.makeStack(i));
@@ -288,7 +249,7 @@ print("Start loading chisel.zs ...");
 	for i in 0 to 6 {
 		HiiragiUtils.removeCrafting(<railcraft:quarried>.definition.makeStack(i));
 		mods.chisel.Carving.addVariation("railcraft_quarried_stone", <railcraft:quarried>.definition.makeStack(i));
-	}
+	}*/
 	//Sandy
 	mods.chisel.Carving.addGroup("railcraft_sandy_stone");
 	for i in 0 to 6 {

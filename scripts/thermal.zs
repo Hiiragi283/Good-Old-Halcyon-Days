@@ -79,13 +79,13 @@ mods.thermalexpansion.Enchanter.addRecipe(<extendedcrafting:material>, <botania:
 	mods.thermalexpansion.Transposer.addFillRecipe(<appliedenergistics2:material:9>, <appliedenergistics2:crystal_seed:1200>.withTag({progress: 1200}), <liquid:dcs.chorus_liquor>*1000, 8000);
 	mods.thermalexpansion.Transposer.addFillRecipe(<biomesoplenty:jar_filled:0>, <biomesoplenty:jar_empty>, <liquid:honey>*1000, 400);
 	//mods.thermalexpansion.Transposer.addFillRecipe(<contenttweaker:dust_shadestone>, <minecraft:glowstone_dust>, <liquid:obsidian>*72, 8000);
-	mods.thermalexpansion.Transposer.addFillRecipe(<extrautils2:decorativesolidwood:1>, <minecraft:bookshelf>, <liquid:experience>*500, 1600);
+	/*mods.thermalexpansion.Transposer.addFillRecipe(<extrautils2:decorativesolidwood:1>, <minecraft:bookshelf>, <liquid:experience>*500, 1600);
 	mods.thermalexpansion.Transposer.addFillRecipe(<extrautils2:decorativesolidwood:1>, <minecraft:bookshelf>, <liquid:xpjuice>*500, 1600);
 	mods.thermalexpansion.Transposer.addFillRecipe(<extrautils2:ingredients:12>, <minecraft:gold_ingot>, <liquid:experience>*500, 1600);
 	mods.thermalexpansion.Transposer.addFillRecipe(<extrautils2:ingredients:12>, <minecraft:gold_ingot>, <liquid:xpjuice>*500, 1600);
 	mods.thermalexpansion.Transposer.addFillRecipe(<extrautils2:magicapple>, <minecraft:apple>, <liquid:experience>*500, 1600);
 	mods.thermalexpansion.Transposer.addFillRecipe(<extrautils2:magicapple>, <minecraft:apple>, <liquid:xpjuice>*500, 1600);
-	mods.thermalexpansion.Transposer.addFillRecipe(<extrautils2:suncrystal:0>, <extrautils2:suncrystal:250>, <liquid:liquid_sunshine>*1000, 8000);
+	mods.thermalexpansion.Transposer.addFillRecipe(<extrautils2:suncrystal:0>, <extrautils2:suncrystal:250>, <liquid:liquid_sunshine>*1000, 8000);*/
 	mods.thermalexpansion.Transposer.addFillRecipe(<railcraft:creosote_block>, <minecraft:log:*>, <liquid:creosote>*500, 400);
 	mods.thermalexpansion.Transposer.addFillRecipe(<railcraft:tie:0>, <minecraft:wooden_slab:*>, <liquid:creosote>*250, 400);
 	mods.thermalexpansion.Transposer.addFillRecipe(<threng:material:5>, <appliedenergistics2:crystal_seed:1200>.withTag({progress: 1200}), <liquid:ender>*1000, 4000);

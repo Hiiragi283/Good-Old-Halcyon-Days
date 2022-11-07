@@ -1,5 +1,31 @@
 # Changelog
 
+## RC-3
+
+- Mod Configuration
+  - Add
+    - `Artifacts-1.12.2-1.2.3`
+      - Add unique baubles!
+    - `BetterBuildersWands-1.12.2-0.13.2.271+5997513`
+    - `CapabilityProxy-1.12.2-2.1.3`
+      - Just Extended Interfaces
+    - `ClickMachine-1.12.2-1.2.0`
+      - Alternative for Mechanical User@`Extra Utilities 2`
+    - `CyclopsCore-1.12.2-1.6.7`
+    - `MmmMmmMmmMmm-1.12-1.14`
+    - `MobGrindingUtils-0.3.13`
+      - Alternative for `Extra Utilities 2`
+    - `SnowRealMagic-1.12.2-0.6.1`
+      - More realistic snow logic
+    - `supermartijn642corelib-1.0.19-forge-mc1.12`
+    - `trashcans-1.0.15-forge-mc1.12`
+      - Alternative for `Extra Utilities 2`
+  - Remove
+    - `extrautils2-1.12-1.9.9.jar`
+      - Cause freeze bug when changing the page of creative inventory
+    - `tmel-1.12.2-1.4.0.0.jar`
+    - `UnlimitedChiselWorks-0.3.5.jar`
+
 ## RC-2
 
 - Mod Configuration

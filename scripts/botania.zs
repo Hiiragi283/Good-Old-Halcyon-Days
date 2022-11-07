@@ -133,7 +133,7 @@ print("Start loading botania.zs ...");
 	}
 
 	PureDaisy.addRecipe(<dcs_climate:dcs_ore_gemblock:6>, <botania:livingrock>);
-	PureDaisy.addRecipe(<extrautils2:compresseddirt:3>, <biomesoplenty:grass:5>);
+	//PureDaisy.addRecipe(<extrautils2:compresseddirt:3>, <biomesoplenty:grass:5>);
 	PureDaisy.addRecipe(<twilightforest:root:0>, <twilightforest:root:1>);
 	PureDaisy.addRecipe(<twilightforest:twilight_sapling:9>, <biomesoplenty:sapling_1>);
 	for i in 0 to 4 {
@@ -142,7 +142,7 @@ print("Start loading botania.zs ...");
 	}
 
 //Runic Altarによる加工
-	mods.botania.RuneAltar.addRecipe(<extrautils2:simpledecorative:2>,[
+	/*mods.botania.RuneAltar.addRecipe(<extrautils2:simpledecorative:2>,[
 		<ore:runeLustB>,
 		<ore:runeGluttonyB>,
 		<ore:runeGreedB>,
@@ -153,7 +153,7 @@ print("Start loading botania.zs ...");
 		<ore:blockEndSteel>,
 		<minecraft:skull:1>,
 		<ore:eternalLifeEssence>,
-	], 250000);
+	], 250000);*/
 	mods.botania.RuneAltar.addRecipe(<extendedcrafting:material:32>,[
 		//Red
 		<ore:ingotRedstoneAlloy>,
@@ -226,13 +226,13 @@ print("Start loading botania.zs ...");
 	mods.botania.RuneAltar.addRecipe(<contenttweaker:rune_air>, HiiragiUtils.listDisc, 200000);
 
 //Terrestrial Agglomeratioによる加工
-	val agglo_earth_polluting = AgglomerationMultiblock.create()
+	/*val agglo_earth_polluting = AgglomerationMultiblock.create()
 		.center(<twilightforest:miniature_structure:0>)
 		.centerReplace(<minecraft:tnt:1>)
 		.corner(<biomesoplenty:grass:5>)
 		.cornerReplace(<extrautils2:cursedearth>)
 		.edge(<minecraft:diamond_block>)
-		.edgeReplace(<minecraft:coal_block>);
+		.edgeReplace(<minecraft:coal_block>);*/
 	val agglo_elven = AgglomerationMultiblock.create()
 		.center(<botanicadds:dreamrock>)
 		.corner(<botanicadds:dreamrock>)

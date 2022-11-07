@@ -124,17 +124,10 @@ print("Start loading cot-registry.zs ...");
 		"ephemerald",
 		"gem_carbon",
 		"ingot_bedrockium",
-		"ingot_rainbow",
 		"ingot_stable",
 		"ingot_unstable",
 		"ragi_ticket",
 		"reagent_halogen",
-		"symbol_cross",
-		"symbol_nocraft",
-		"symbol_tick",
-		//"dust_shadestone",
-		//"glyph_divide",
-		//"item_fire",
 	];
 	for i in mapItems {
 		addItem(i);

@@ -17,9 +17,9 @@ gohd.955c06b4.title=Good Old Halcyon Days!
 
 gohd.955c06b4.267a9acd.subtitle=Good Old Halcyon Days, 縮めて"GOHD"
 gohd.955c06b4.267a9acd.title=Welcome to ようこそGOHD!
+//gohd.955c06b4.7717ddde.f60cf47b.title=§6Official HaC wiki
 gohd.955c06b4.7717ddde.text.1=このpackは§oHeatAndClimate§rをベースに作られています。そのため攻略にはHaCに関する知識が必要になります。
-gohd.955c06b4.7717ddde.text.2=HaCを初めて遊ぶ方は下のwikiを読むことをおすすめします!
-gohd.955c06b4.7717ddde.text.3=https://defeatedcrow.jp/modwiki/HeatAndClimate
+gohd.955c06b4.7717ddde.text.2=HaCを初めて遊ぶ方はIconをクリックして表示されるリンクからwikiを読むことをおすすめします!
 gohd.955c06b4.7717ddde.title=気候と共に生きる
 
 ## Tier 0: gohd.61daa441.
@@ -59,6 +59,7 @@ gohd.tooltip.cube_yellow.name=§e黄昏の森でのみ作成可能
 gohd.tooltip.dcs_color_ring2.name=§b氷の加護
 gohd.tooltip.dustblock.name=§aコンベアベルト上のみでしか気候精錬できません!
 gohd.tooltip.hidden.name=§6JEIからは削除されました§rが§a存在します§r
+gohd.tooltip.icon_hac.name=§a右クリックで公式wikiのリンクを表示
 gohd.tooltip.identify_microbe.name=§aRight-click to identify!
 gohd.tooltip.infinity_booster_card.name=§6ドロップはウィザー(30%)またはエンダードラゴン(100%)から
 gohd.tooltip.ingot_rainbow.name=§d私§cを§6オフハンド§eに§a持て§2ば，§b私は§1あなたに§9ま§5る§dで§c夢§6の§eよ§aう§2な§b力を§1与える§fでしょう!
@@ -80,10 +81,6 @@ item.item_basic_capacitor.activated.name=エナジェティックコンデンサ
 item.item_basic_capacitor.ender.name=ヴァイブラントコンデンサ
 
 ## Heat and Climate
-#tile.dcs_heatingmetal_steel_cooling.name=冷却された鉄ブロック
-#tile.dcs_heatingmetal_steel_fail.name=脆い錬鉄ブロック
-#tile.dcs_heatingmetal_steel_heating.name=赤熱した鉄ブロック
-#tile.dcs_metal_alloy_steel.name=錬鉄ブロック
 
 ## Railcraft
 tile.railcraft.ore.magic.name=ファイアストーン鉱石

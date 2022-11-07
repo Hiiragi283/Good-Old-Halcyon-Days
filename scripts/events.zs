@@ -76,6 +76,17 @@ events.onPlayerInteractBlock(function(event as PlayerInteractBlockEvent) {
 				event.player.give(<contenttweaker:division_sigil_temp>);
 			}
 		}
+		//HaCのwikiを開く
+		if(event.item.matches(<dcs_climate:dcs_icons>)) {
+			//ja_Jpの場合
+			if(client.language == "ja_jp") {
+				server.commandManager.executeCommand(server, "tellraw @a {\"translate\":\"gohd.955c06b4.7717ddde.f60cf47b.title\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://defeatedcrow.jp/modwiki/HeatAndClimate\"}}");
+			} //それ以外の場合はen_USで固定
+			else {
+				server.commandManager.executeCommand(server, "tellraw @a {\"translate\":\"gohd.955c06b4.7717ddde.f60cf47b.title\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://defeatedcrow.jp/modwiki/HeatAndClimate_EN\"}}");
+			}
+		}
+		//デバッグ用
 		if(event.item.matches(<theoneprobe:creativeprobe>)) {
 			event.cancel();
 			val block = event.block;
@@ -100,6 +111,7 @@ events.onPlayerLoggedIn(function(event as PlayerLoggedInEvent) {
 		player.sendRichTextStatusMessage(ITextComponent.fromTranslation("gohd.custom.welcome.name"), false);
 		player.sendRichTextStatusMessage(ITextComponent.fromString("§c============================================="), false);
 		server.commandManager.executeCommand(server, "projecte reloadEMC");
+		server.commandManager.executeCommand(server, "gamerule doMobGriefing false");
 	}
 });
 

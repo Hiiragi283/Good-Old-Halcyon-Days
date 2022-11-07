@@ -101,7 +101,7 @@ val mapRemove as bool[IItemStack] = {
 	<extendedcrafting:storage:5>: true,
 	<extendedcrafting:storage:7>: true,
 	//Extra Utilities 2
-	<extrautils2:itembuilderswand>: false,
+	/*<extrautils2:itembuilderswand>: false,
 	<extrautils2:itembuilderswand>: false,
 	<extrautils2:itemdestructionwand>: false,
 	<extrautils2:itemdestructionwand>: false,
@@ -110,7 +110,7 @@ val mapRemove as bool[IItemStack] = {
 	<extrautils2:machine>.withTag({Type: "extrautils2:furnace"}): false,
 	<extrautils2:unstableingots:0>: true,
 	<extrautils2:unstableingots:1>: true,
-	<extrautils2:unstableingots:2>: true,
+	<extrautils2:unstableingots:2>: true,*/
 	//Forge Microblocks
 	<microblockcbe:stone_rod>: false,
 	//Inspirations

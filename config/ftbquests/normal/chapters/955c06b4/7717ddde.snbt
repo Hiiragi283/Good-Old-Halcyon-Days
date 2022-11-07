@@ -5,8 +5,7 @@
 	y: 2.0d,
 	text: [
 		"{gohd.955c06b4.7717ddde.text.1}",
-		"{gohd.955c06b4.7717ddde.text.2}",
-		"{gohd.955c06b4.7717ddde.text.3}"
+		"{gohd.955c06b4.7717ddde.text.2}"
 	],
 	dependencies: [
 		"267a9acd"
@@ -27,5 +26,12 @@
 				}
 			}
 		}
+	},
+	{
+		uid: "f60cf47b",
+		type: "item",
+		title: "{gohd.955c06b4.7717ddde.f60cf47b.title}",
+		item: "dcs_climate:dcs_icons",
+		count: 64
 	}]
 }

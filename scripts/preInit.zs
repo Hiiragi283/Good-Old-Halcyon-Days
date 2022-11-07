@@ -4,6 +4,7 @@
 # 情報 : Scripts loaded in preInit
 #====================================================================
 
+#norun
 #loader preinit
 #priority 0
 
