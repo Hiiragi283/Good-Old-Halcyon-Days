@@ -9,12 +9,8 @@
 - Thanks to [Quarri6343](https://github.com/Quarri6343)!
   - fixed the lag when saving edit on FTB Quests
 
-- `scripts/HiiragiUtils.zs`
+- `scripts/grassUtils/*`
   - Thanks to [grassUtils](https://github.com/friendlyhj/GrassUtils) by [friendlyhj](https://github.com/friendlyhj) !
-
-- `scripts/RussellUtils.zs`
-  - Thanks to [MorphoDays](https://github.com/delta-nos/MorphoDays_old
-) by [delta-nos](https://github.com/delta-nos) !
 
 - `resources/botania/textures/*.png`
   - These textures are licensed under [Botania License](https://botaniamod.net/license.php)

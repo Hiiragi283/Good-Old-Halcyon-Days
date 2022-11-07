@@ -9,12 +9,8 @@
 - [くぁーりぃ](https://github.com/Quarri6343)氏に感謝!
   - FTB Questsを編集する際のラグを防止してくださった
 
-- `scripts/HiiragiUtils.zs`
+- `scripts/grassUtils/*`
   - [grassUtils](https://github.com/friendlyhj/GrassUtils) by [friendlyhj](https://github.com/friendlyhj) に感謝！
-
-- `scripts/RussellUtils.zs`
-  - [MorphoDays](https://github.com/delta-nos/MorphoDays_old
-) by [delta-nos](https://github.com/delta-nos)に感謝！
 
 - `resources/botania/textures/*.png`
   - これらのテクスチャは[Botania License](https://botaniamod.net/license.php)の下で使用しています
