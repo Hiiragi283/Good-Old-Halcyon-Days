@@ -1,30 +1,27 @@
 #====================================================================
-# ファイル名 : _TEMPLATE.zs
-# 作成者 : Hiiragi Russell Tsubasa: https://github.com/Hiiragi283
-# 情報 : このファイルについて書く
+# Name   : _Template.zs
+# Author : Hiiragi R. Tsubasa: https://github.com/Hiiragi283
+# Info   : Template for script files
 #====================================================================
 
 #priority 0
 
-//crafttweakerからclassをimport
+//Classのimport
+import crafttweaker.data.IData;
 import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
+import crafttweaker.liquid.ILiquidStack;
 import crafttweaker.oredict.IOreDictEntry;
-
-//各種modからclassをimport
+import crafttweaker.recipes.IRecipeAction;
+import crafttweaker.recipes.IRecipeFunction;
 import mods.ctintegration.util.RecipePattern;
+import mods.zenutils.HexHelper;
 import mods.zenutils.I18n;
-
-//scriptのimport
+import scripts.grassUtils.RecipeUtils;
 import scripts.HiiragiUtils;
 
-//このscriptの読み込みの開始をログに出力
-print("Start loading _TEMPLATE.zs ...");
+//読み込みの開始をログに出力
+print("Start loading _Template.zs ...");
 
-//作業台レシピの編集
-	//削除
-	//新規
-	//置換
-
-//このscriptの読み込みの完了をログに出力
-print("_TEMPLATE.zs loaded!");
+//読み込みの完了をログに出力
+print("_Template.zs loaded!");
