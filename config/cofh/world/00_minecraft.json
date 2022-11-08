@@ -15,9 +15,10 @@
 			"retrogen": false,
 			"biome": "all",
 			"dimension": {
-				"restriction": "whitelist",
+				"restriction": "blacklist",
 				"value": [
-					0
+					-1,
+					1
 				]
 			}
 		},
@@ -35,9 +36,10 @@
 			"retrogen": false,
 			"biome": "all",
 			"dimension": {
-				"restriction": "whitelist",
+				"restriction": "blacklist",
 				"value": [
-					0
+					-1,
+					1
 				]
 			}
 		},
@@ -60,9 +62,10 @@
 			"retrogen": false,
 			"biome": "all",
 			"dimension": {
-				"restriction": "whitelist",
+				"restriction": "blacklist",
 				"value": [
-					0
+					-1,
+					1
 				]
 			}
 		},
@@ -85,9 +88,10 @@
 			"retrogen": false,
 			"biome": "all",
 			"dimension": {
-				"restriction": "whitelist",
+				"restriction": "blacklist",
 				"value": [
-					0
+					-1,
+					1
 				]
 			}
 		},
@@ -110,9 +114,10 @@
 			"retrogen": false,
 			"biome": "all",
 			"dimension": {
-				"restriction": "whitelist",
+				"restriction": "blacklist",
 				"value": [
-					0
+					-1,
+					1
 				]
 			}
 		},
@@ -130,11 +135,10 @@
 			"retrogen": false,
 			"biome": "all",
 			"dimension": {
-				"restriction": "whitelist",
+				"restriction": "blacklist",
 				"value": [
-					0,
-					7,
-					2011
+					-1,
+					1
 				]
 			}
 		},
@@ -215,11 +219,10 @@
 			"retrogen": false,
 			"biome": "all",
 			"dimension": {
-				"restriction": "whitelist",
+				"restriction": "blacklist",
 				"value": [
-					0,
-					7,
-					2011
+					-1,
+					1
 				]
 			}
 		},

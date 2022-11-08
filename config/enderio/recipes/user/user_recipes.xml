@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <enderio:recipes xmlns:enderio="http://enderio.com/recipes" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://enderio.com/recipes recipes.xsd ">
 
-<!--Remove Recipes-->
+<!--Remove Crafting Recipes-->
 	<recipe name="Compatibility: Glass Pane" disabled="true"></recipe>
 	<recipe name="Tweak: Stick from Wood" disabled="true"></recipe>
 	<recipe name="Tweak: Chest from Wood" disabled="true"></recipe>
@@ -12,106 +12,4 @@
 	<recipe name="Gear, better save than sorry" disabled="true"></recipe>
 	<recipe name="Gear, Stone" disabled="true"></recipe>
 	<recipe name="Gear, Stone, Upgrade" disabled="true"></recipe>
-
-	<recipe name="Alloy: End Steel" disabled="true"></recipe>
-	<recipe name="Alloy: Manyullyn" disabled="true"></recipe>
-
-<!--Add Recipes-->
-	<!--Alloy Smelter-->
-	<recipe name="Alloy: Calculation Processor" required="true">
-		<alloying energy="10000" exp="0">
-			<input name="appliedenergistics2:material:16"/>
-			<input name="dustRedstone"/>
-			<input name="appliedenergistics2:material:20"/>
-			<output name="appliedenergistics2:material:23"/>
-		</alloying>
-	</recipe>
-	<recipe name="Alloy: Engineering Processor" required="true">
-		<alloying energy="10000" exp="0">
-			<input name="appliedenergistics2:material:17"/>
-			<input name="dustRedstone"/>
-			<input name="appliedenergistics2:material:20"/>
-			<output name="appliedenergistics2:material:24"/>
-		</alloying>
-	</recipe>
-	<recipe name="Alloy: Logic Processor" required="true">
-		<alloying energy="10000" exp="0">
-			<input name="appliedenergistics2:material:18"/>
-			<input name="dustRedstone"/>
-			<input name="appliedenergistics2:material:20"/>
-			<output name="appliedenergistics2:material:25"/>
-		</alloying>
-	</recipe>
-	<!--disabled>
-	<recipe name="Alloy: Evil Infused Ingot" required="true">
-		<alloying energy="120000" exp="0">
-			<input name="ingotEndSteel"/>
-			<input name="dropofevil"/>
-			<input name="botanicadds:gaia_shard"/>
-			<output name="extrautils2:ingredients:17"/>
-		</alloying>
-	</recipe>
-	<disabled-->
-	<recipe name="Alloy: End Steel Ingot" required="true">
-		<alloying energy="20000" exp="0.5">
-			<input name="minecraft:end_stone"/>
-			<input name="ingotDarkSteel"/>
-			<input name="ingotTitanium"/>
-			<output name="ingotEndSteel"/>
-		</alloying>
-	</recipe>
-	<recipe name="Alloy: Fluix Steel Ingot" required="true">
-		<alloying energy="20000" exp="0.5">
-			<input name="threng:material:1"/>
-			<input name="ingotElectricalSteel"/>
-			<input name="itemSilicon"/>
-			<output name="ingotFluixSteel"/>
-		</alloying>
-	</recipe>
-	<recipe name="Alloy: Manyullyn Ingot" required="true">
-		<alloying energy="10000" exp="0.25">
-			<input name="ingotCobalt"/>
-			<input name="ingotArdite"/>
-			<output name="ingotManyullyn" amount="2"/>
-		</alloying>
-	</recipe>
-	<recipe name="Alloy: Sky Stone 0" required="true">
-		<alloying energy="10000" exp="0.25">
-			<input name="obsidian" amount="4"/>
-			<input name="gemMoonstone"/>
-			<output name="blockSkyStone" amount="4"/>
-		</alloying>
-	</recipe>
-	<recipe name="Alloy: Sky Stone 1" required="true">
-		<alloying energy="10000" exp="0.25">
-			<input name="obsidian" amount="8"/>
-			<input name="gemCelestite"/>
-			<output name="blockSkyStone" amount="8"/>
-		</alloying>
-	</recipe>
-	<recipe name="Alloy: Sky Stone 2" required="true">
-		<alloying energy="10000" exp="0.25">
-			<input name="obsidian" amount="16"/>
-			<input name="gemTausonite"/>
-			<output name="blockSkyStone" amount="16"/>
-		</alloying>
-	</recipe>
-
-	<!--Enchanter-->
-	<!--<recipe name="Enchanter: contenttweaker:desire_drive" required="true">
-		<enchanting>
-			<input name="contenttweaker:drop_soul" amount="3"/>
-			<enchantment name="contenttweaker:desire_drive" costMultiplier="1"/>
-		</enchanting>
-	</recipe>-->
-
-	<!--Soul Binder-->
-	<!--<recipe name="Soul Binder: Crow's Drill" required="true">
-		<soulbinding energy="128000" levels="30">
-			<input name="item:thermalfoundation:material:656" />
-			<soul name="dcs_climate:dcs.magic.dcs_crowdoll" />
-			<output name="item:dcs_climate:dcs_creative_drill" />
-		</soulbinding>
-	</recipe>-->
-
 </enderio:recipes>

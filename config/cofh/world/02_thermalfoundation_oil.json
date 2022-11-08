@@ -33,13 +33,7 @@
 					}
 				]
 			},
-			"dimension": {
-				"restriction": "whitelist",
-				"value": [
-					0,
-					7
-				]
-			}
+			"dimension": "all"
 		},
 		"oil_shale_clathrate": {
 			"enabled": "true",
@@ -92,13 +86,7 @@
 					}
 				]
 			},
-			"dimension": {
-				"restriction": "whitelist",
-				"value": [
-					0,
-					7
-				]
-			}
+			"dimension": "all"
 		},
 		"oil_sand": {
 			"enabled": "true",
@@ -143,10 +131,10 @@
 				]
 			},
 			"dimension": {
-				"restriction": "whitelist",
+				"restriction": "blacklist",
 				"value": [
-					0,
-					7
+					-1,
+					1
 				]
 			}
 		},
@@ -185,10 +173,10 @@
 			"retrogen": "true",
 			"biome": "all",
 			"dimension": {
-				"restriction": "whitelist",
+				"restriction": "blacklist",
 				"value": [
-					0,
-					7
+					-1,
+					1
 				]
 			}
 		}

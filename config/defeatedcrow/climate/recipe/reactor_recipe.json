@@ -1,170 +1,54 @@
 {
-	"SampleRecipeID1 (Any string.)": {
-		"recipe_type": "ADD",
-		"output_primary": {
-			"item": "samplemod:sample_output:metadata (removable)"
-		},
-		"output_secondary": {
-			"item": "samplemod:sample_secondary:0 (removable)",
-			"chance": 0.5
-		},
-		"output_fluid_primary": {
-			"amount": 1000,
-			"fluid": "sample_fluid_output (removable)"
-		},
-		"output_fluid_secondary": {
-			"amount": 100,
-			"fluid": "sample_fluid_output_secondary (removable)"
-		},
-		"climate_temperature": "KILN (If this is removed, it will be forced to NORMAL.)",
-		"input_fluid_primary": {
-			"amount": 1000,
-			"fluid": "sample_fluid_input (removable)"
-		},
-		"input_fluid_secondary": {
-			"amount": 500,
-			"fluid": "sample_fluid_input_secondary (removable)"
-		},
-		"catalyst": {
-			"item": "samplemod:sample_catalyst:0"
-		},
-		"input": [
-			"samplemod:sample_output:0",
-			"ore_dict name is acceptable as input.",
-			"Up to 6 inputs can be added."
-		],
-		"comment": "At a minimum, either an item or a fluid is required for input."
-	},
-	"SampleRecipeID2": {
-		"recipe_type": "REMOVE",
-		"input": {
-			"item": "samplemod:remove_input:0 (removable)"
-		},
-		"input_fluid_primary": {
-			"amount": 1000,
-			"fluid": "sample_fluid_input (removable)"
-		},
-		"input_fluid_secondary": {
-			"amount": 200,
-			"fluid": "sample_fluid_input_secondary (removable)"
-		},
-		"climate_temperature": "KILN (If this is removed, it will be forced to NORMAL.)",
-		"comment": "At a minimum, either an item or a fluid is required for input."
-	},
-	"add_certus_quartz": {
-		"recipe_type": "ADD",
-		"output_primary": {
-			"item": "appliedenergistics2:material:0"
-		},
-		"output_secondary": {
-			"item": "appliedenergistics2:material:0",
-			"chance": 0.5
-		},
-		"climate_temperature": "SMELTING",
-		"input_fluid_primary": {
-			"amount": 1000,
-			"fluid": "dcs.tonic_water"
-		},
-		"catalyst": {
-			"item": "botania:quartz:1"
-		},
-		"input": [
-			"dustNetherQuartz"
-		]
-	},
-	"add_gemDiamond": {
-		"recipe_type": "ADD",
-		"output_primary": {
-			"item": "minecraft:diamond:0"
-		},
-		"output_secondary": {
-			"item": "thermalfoundation:material:16",
-			"chance": 0.1
-		},
-		"climate_temperature": "UHT",
-		"catalyst": {
-			"item": "minecraft:diamond:0"
-		},
-		"input": [
-			"contenttweaker:gem_carbon:0"
-		]
-	},
-	"add_manaDust": {
-		"recipe_type": "ADD",
-		"output_primary": {
-			"item": "thermalfoundation:material:1028"
-		},
-		"output_secondary": {
-			"item": "botania:manaresource:23",
-			"chance": 0.5
-		},
-		"climate_temperature": "NORMAL",
-		"input_fluid_primary": {
-			"amount": 1000,
-			"fluid": "dcs.hotspring"
-		},
-		"catalyst": {
-			"item": "botania:alchemycatalyst:0"
-		},
-		"input": [
-			"dustPyrotheum",
-			"dustCryotheum",
-			"dustAerotheum",
-			"dustPetrotheum"
-		]
-	},
-	"add_cubeCyan": {
-		"recipe_type": "ADD",
-		"output_primary": {
-			"item": "contenttweaker:cube_cyan:0"
-		},
-		"climate_temperature": "FROSTBITE",
-		"input_fluid_primary": {
-			"amount": 1000,
-			"fluid": "cloud_seed"
-		},
-		"catalyst": {
-			"item": "contenttweaker:cube_iridescent"
-		},
-		"input": [
-			"cubeGreen",
-			"cubeBlue"
-		]
-	},
-	"add_cubeMagenta": {
-		"recipe_type": "ADD",
-		"output_primary": {
-			"item": "contenttweaker:cube_magenta:0"
-		},
-		"climate_temperature": "SMELTING",
-		"input_fluid_primary": {
-			"amount": 1000,
-			"fluid": "dcs.chorus_liquor"
-		},
-		"catalyst": {
-			"item": "contenttweaker:cube_iridescent"
-		},
-		"input": [
-			"cubeBlue",
-			"cubeRed"
-		]
-	},
-	"add_cubeYellow": {
-		"recipe_type": "ADD",
-		"output_primary": {
-			"item": "contenttweaker:cube_yellow:0"
-		},
-		"climate_temperature": "HOT",
-		"input_fluid_primary": {
-			"amount": 1000,
-			"fluid": "liquid_sunshine"
-		},
-		"catalyst": {
-			"item": "contenttweaker:cube_iridescent"
-		},
-		"input": [
-			"cubeRed",
-			"cubeGreen"
-		]
-	}
+    "SampleRecipeID1 (Any string.)": {
+        "recipe_type": "ADD",
+        "output_primary": {
+            "item": "samplemod:sample_output:metadata (removable)"
+        },
+        "output_secondary": {
+            "item": "samplemod:sample_secondary:0 (removable)",
+            "chance": 0.5
+        },
+        "output_fluid_primary": {
+            "amount": 1000,
+            "fluid": "sample_fluid_output (removable)"
+        },
+        "output_fluid_secondary": {
+            "amount": 100,
+            "fluid": "sample_fluid_output_secondary (removable)"
+        },
+        "climate_temperature": "KILN (If this is removed, it will be forced to NORMAL.)",
+        "input_fluid_primary": {
+            "amount": 1000,
+            "fluid": "sample_fluid_input (removable)"
+        },
+        "input_fluid_secondary": {
+            "amount": 500,
+            "fluid": "sample_fluid_input_secondary (removable)"
+        },
+        "catalyst": {
+            "item": "samplemod:sample_catalyst:0"
+        },
+        "input": [
+            "samplemod:sample_output:0",
+            "ore_dict name is acceptable as input.",
+            "Up to 6 inputs can be added."
+        ],
+        "comment": "At a minimum, either an item or a fluid is required for input."
+    },
+    "SampleRecipeID2": {
+        "recipe_type": "REMOVE",
+        "input": {
+            "item": "samplemod:remove_input:0 (removable)"
+        },
+        "input_fluid_primary": {
+            "amount": 1000,
+            "fluid": "sample_fluid_input (removable)"
+        },
+        "input_fluid_secondary": {
+            "amount": 200,
+            "fluid": "sample_fluid_input_secondary (removable)"
+        },
+        "climate_temperature": "KILN (If this is removed, it will be forced to NORMAL.)",
+        "comment": "At a minimum, either an item or a fluid is required for input."
+    }
 }
