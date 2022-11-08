@@ -1,8 +1,0 @@
-{
-	"parent": "minecraft:block/orientable",
-	"textures": {
-			"top": "minecraft:blocks/melon_top",
-			"front": "contenttweaker:blocks/pumpkin_melon",
-			"side": "minecraft:blocks/melon_side"
-	}
-}

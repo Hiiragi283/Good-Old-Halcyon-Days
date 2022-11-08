@@ -1,7 +1,0 @@
-{
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "projecte:blocks/fuels_0",
-		"layer1": "contenttweaker:items/glyph_divide_overlay"
-  }
-}

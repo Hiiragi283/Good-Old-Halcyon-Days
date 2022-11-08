@@ -1,7 +1,0 @@
-{
-    "parent": "item/generated",
-    "textures": {
-        "layer0": "appliedenergistics2:items/material_engineering_processor",
-				"layer1": "contenttweaker:items/silicon_overlay"
-    }
-}
