@@ -1,0 +1,20 @@
+{
+	"forge_marker": 1,
+	"defaults": {
+		"textures": {
+      "texture": "tconstruct:blocks/grout",
+      "particle": "tconstruct:blocks/grout"
+    },
+		"model": "contenttweaker:unfired_casting_table",
+		"uvlock": true,
+		"transform": "forge:default-block"
+	},
+	"variants": {
+		"normal": [
+			{}
+		],
+		"inventory": [
+			{}
+		]
+	}
+}
