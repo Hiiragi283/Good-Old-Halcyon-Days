@@ -1,7 +1,7 @@
 #====================================================================
-# Name   : HiiragiUtils.zs
+# Name   : debug.zs
 # Author : Hiiragi R. Tsubasa: https://github.com/Hiiragi283
-# Info   : Utilities for this pack
+# Info   : Register debug items
 #====================================================================
 
 #loader contenttweaker
@@ -33,7 +33,10 @@ print("Start loading debug.zs ...");
 	val book_facing = mods.contenttweaker.VanillaFactory.createItem("book_facing");
 	book_facing.rarity = "epic";
 	book_facing.itemRightClick = function(stack, world, player, hand) {
-		Commands.call("tp @p ~-0.5 ~ ~-0.5 0 0", player, world);
+		val spawnX = world.getWorldInfo().spawnX;
+		val spawnY = world.getWorldInfo().spawnY;
+		val spawnZ = world.getWorldInfo().spawnZ;
+		Commands.call("tp @p " ~ spawnX ~ " 128 " ~ spawnZ ~ " 0 0", player, world);
 		return "Pass";
 	};
 	book_facing.register();

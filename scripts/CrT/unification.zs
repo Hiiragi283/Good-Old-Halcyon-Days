@@ -26,7 +26,34 @@ print("Start loading unification.zs ...");
 //Crafting Recipes
 	//Remove by recipe name
 	val mapRemoveByName as string[] = [
+		"appliedenergistics2:decorative/certus_quartz_pillar",
+		"appliedenergistics2:decorative/chiseled_quartz_block",
+		"biomesoplenty:chiseled_white_sandstone",
 		"biomesoplenty:sapphire",
+		"biomesoplenty:smooth_white_sandstone",
+		"botania:custombrick_0_alt",
+		"botania:dreamwood_3",
+		"botania:dreamwood_4",
+		"botania:livingrock_1",
+		"botania:livingrock_3",
+		"botania:livingrock_4",
+		"botania:livingwood_3",
+		"botania:livingwood_4",
+		"botania:quartztypeblaze_1",
+		"botania:quartztypeblaze_2",
+		"botania:quartztypedark_1",
+		"botania:quartztypedark_2",
+		"botania:quartztypeelf_1",
+		"botania:quartztypeelf_2",
+		"botania:quartztypelavender_1",
+		"botania:quartztypelavender_2",
+		"botania:quartztypemana_1",
+		"botania:quartztypemana_2",
+		"botania:quartztypered_1",
+		"botania:quartztypered_2",
+		"botania:quartztypesunny_1",
+		"botania:quartztypesunny_2",
+		"dcs_climate:main_build/dcs_desktop_accessories_0_2",
 		"dcs_climate:main_container/dcs_gem_blue_1",
 		"dcs_climate:main_yagen/dcs_gem_layer_4",
 		"dcs_climate:main/dcs_planks_0",
@@ -40,12 +67,16 @@ print("Start loading unification.zs ...");
 		"mia:mia/packed_paper/packed_paper_swap_1",
 		"mia:mia/packed_paper/packed_paper_swap_2",
 		"mia:mia/packed_paper/packed_paper_swap_3",
-		"railcraft:coke_oven_red$2",
-		"tcomplement:steelworks/charcoal",
-		"tcomplement:steelworks/steel_block",
-		"tcomplement:steelworks/steel_ingot_from_block",
-		"tcomplement:steelworks/steel_ingot_from_nugget",
-		"tcomplement:steelworks/steel_nugget",
+		"minecraft:chiseled_quartz_block",
+		"minecraft:chiseled_red_sandstone",
+		"minecraft:chiseled_sandstone",
+		"minecraft:chiseled_stonebrick",
+		"minecraft:granite_polished",
+		"minecraft:pillar_quartz_block",
+		"minecraft:purpur_pillar",
+		"minecraft:smooth_red_sandstone",
+		"minecraft:smooth_sandstone",
+		"railcraft:cone_oven_red$2",
 		"thermalfoundation:material_100",
 		"thermalfoundation:material_99",
 		"thermalfoundation:storage_alloy",
@@ -54,30 +85,89 @@ print("Start loading unification.zs ...");
 	for i in mapRemoveByName {
 		recipes.removeByRecipeName(i);
 	}
-		//Railcraftの金属素材
-		for i in 0 to 10 {
-			val nameRailcraftBlock as string = "railcraft:metal#" ~ i ~ "$1";
-			val nameRailcraftIngot1 as string = "railcraft:ingot#" ~ i ~ "$1";
-			val nameRailcraftIngot2 as string = "railcraft:ingot#" ~ i ~ "$2";
-			val nameRailcraftNugget as string = "railcraft:nugget#" ~ i ~ "$1";
-			recipes.removeByRecipeName(nameRailcraftBlock);
-			recipes.removeByRecipeName(nameRailcraftIngot1);
-			recipes.removeByRecipeName(nameRailcraftIngot2);
-			recipes.removeByRecipeName(nameRailcraftNugget);
+		//Botania
+		for i in 1 to 15 {
+			recipes.removeByRecipeName("botania:custombrick_" ~ i);
 		}
-		//Thermal Foundationの金属素材
+		//Heat And Climate
 		for i in 1 to 9 {
-			val nameTFBlock as string = "thermalfoundation:storage_" ~ i;
-			val nameTFBlockAlloy as string = "thermalfoundation:storage_alloy_" ~ i;
-			recipes.removeByRecipeName(nameTFBlock);
-			recipes.removeByRecipeName(nameTFBlockAlloy);
+			recipes.removeByRecipeName("dcs_climate:main_build/dcs_desktop_accessories_" ~ i);
+		}
+		//Ender IO
+		val removeEnder as IItemStack[] = [
+			//<enderio:block_self_resetting_lever5>,
+			<enderio:block_self_resetting_lever10>,
+			<enderio:block_self_resetting_lever30>,
+			<enderio:block_self_resetting_lever60>,
+			<enderio:block_self_resetting_lever300>,
+			<enderio:block_self_resetting_lever5i>,
+			<enderio:block_self_resetting_lever10i>,
+			<enderio:block_self_resetting_lever30i>,
+			<enderio:block_self_resetting_lever60i>,
+			<enderio:block_self_resetting_lever300i>,
+			<enderio:block_decoration1:*>,
+			<enderio:block_decoration2:*>,
+			<enderio:block_decoration3:*>,
+			<enderio:item_redstone_not_filter>,
+			<enderio:item_redstone_or_filter>,
+			<enderio:item_redstone_and_filter>,
+			<enderio:item_redstone_nor_filter>,
+			<enderio:item_redstone_nand_filter>,
+			<enderio:item_redstone_xor_filter>,
+			<enderio:item_redstone_xnor_filter>,
+			<enderio:item_redstone_toggle_filter>,
+			<enderio:item_redstone_counting_filter>,
+			<enderio:item_redstone_sensor_filter>,
+			<enderio:item_redstone_timer_filter>,
+		];
+		for i in removeEnder {
+			recipes.remove(i);
+		}
+		//Railcraft
+		for i in 0 to 10 {
+			recipes.removeByRecipeName("railcraft:metal#" ~ i ~ "$1");
+			recipes.removeByRecipeName("railcraft:ingot#" ~ i ~ "$1");
+			recipes.removeByRecipeName("railcraft:ingot#" ~ i ~ "$2");
+			recipes.removeByRecipeName("railcraft:nugget#" ~ i ~ "$1");
+		}
+		val mapRCDecoration as string[] = [
+			"andesite",
+			"badlands",
+			"bleachedbone",
+			"bloodstained",
+			"diorite",
+			"frostbound",
+			"granite",
+			"infernal",
+			"jaded",
+			"nether",
+			"pearlized",
+			"red_nether",
+			"sandy",
+		];
+		val mapRCMeta as string[] = [
+			"#0$1",
+			"#1$1",
+			"#3$1",
+			"#4$1",
+		];
+		for i in mapRCDecoration {
+			for j in mapRCMeta {
+				recipes.removeByRecipeName("railcraft:" ~ i ~ j);
+			}
+		}
+		//Thermal Foundation
+		for i in 1 to 9 {
+			recipes.removeByRecipeName("thermalfoundation:storage_" ~ i);
+			recipes.removeByRecipeName("thermalfoundation:storage_alloy_" ~ i);
 		}
 		for i in 8 to 82 {
 			recipes.removeByRecipeName("thermalfoundation:material_" ~ i);
 		}
-	//Tweak existing or new recipes
+	//既存のレシピの編集および新規レシピの登録
 		//Biomes O Plenty
 		RecipeUtils.recipeTweak(false, <biomesoplenty:gem:6>*9, [[<biomesoplenty:gem_block:6>]]);
+		//Content Tweaker
 		//Heat And Climate
 		HiiragiUtils.recipeReplace(<ore:fuelCoke>, <dcs_climate:dcs_reagent:13>, <dcs_climate:dcs_cont_fuel>);
 		HiiragiUtils.recipeReplace(<ore:plankWood>, <ore:slabWood>, <dcs_climate:dcs_device_lowchest_wood>);
