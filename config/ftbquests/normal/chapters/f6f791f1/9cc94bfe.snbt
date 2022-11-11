@@ -9,14 +9,14 @@
 		uid: "54b1c97f",
 		type: "item",
 		items: [{
-			item: "tcomplement:materials 1 1"
+			item: "minecraft:netherrack"
 		}],
-		count: 32L
+		count: 64L
 	}],
 	rewards: [{
-		uid: "26579911",
+		uid: "543d3e75",
 		type: "item",
-		item: "tcomplement:materials 1 1",
-		count: 32
+		item: "minecraft:netherrack",
+		count: 64
 	}]
 }

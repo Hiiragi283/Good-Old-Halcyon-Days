@@ -1,9 +1,12 @@
 {
 	x: 6.0d,
-	y: 0.0d,
+	y: 2.0d,
 	shape: "square",
 	dependencies: [
-		"96d3d03f"
+		"40291162",
+		"96d3d03f",
+		"944defd1",
+		"d5813437"
 	],
 	size: 2.0d,
 	tasks: [{

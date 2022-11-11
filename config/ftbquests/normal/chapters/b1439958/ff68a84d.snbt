@@ -13,15 +13,13 @@
 		count: 8L
 	}],
 	rewards: [{
-		uid: "d4773779",
+		uid: "b8768ab5",
 		type: "item",
-		item: "storagedrawers:upgrade_void",
-		count: 4
+		item: "storagedrawers:drawer_key"
 	},
 	{
-		uid: "0411ba21",
+		uid: "af486e39",
 		type: "item",
-		item: "storagedrawers:upgrade_creative",
-		count: 4
+		item: "storagedrawers:quantify_key"
 	}]
 }

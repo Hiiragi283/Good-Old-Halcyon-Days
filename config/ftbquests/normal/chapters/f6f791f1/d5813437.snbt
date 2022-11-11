@@ -8,12 +8,14 @@
 		uid: "46bdaa16",
 		type: "item",
 		items: [{
-			item: "tcomplement:high_oven_io"
-		}]
+			item: "minecraft:soul_sand"
+		}],
+		count: 16L
 	}],
 	rewards: [{
-		uid: "e3d6342a",
+		uid: "84d5c99d",
 		type: "item",
-		item: "tcomplement:high_oven_io"
+		item: "minecraft:soul_sand",
+		count: 16
 	}]
 }

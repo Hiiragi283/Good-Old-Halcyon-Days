@@ -8,7 +8,14 @@
 		uid: "8ee7c9c3",
 		type: "item",
 		items: [{
-			item: "tcomplement:high_oven_io 1 1"
-		}]
+			item: "minecraft:nether_brick"
+		}],
+		count: 16L
+	}],
+	rewards: [{
+		uid: "cf63534c",
+		type: "item",
+		item: "minecraft:nether_brick",
+		count: 16
 	}]
 }

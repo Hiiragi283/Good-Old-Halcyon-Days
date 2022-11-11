@@ -21,5 +21,11 @@
 		items: [{
 			item: "dcs_climate:dcs_ore_heatingmetal 1 2"
 		}]
+	}],
+	rewards: [{
+		uid: "b3ae9541",
+		type: "item",
+		item: "dcs_climate:dcs_ore_dustblock 1 5",
+		count: 3
 	}]
 }

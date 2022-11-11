@@ -4,7 +4,7 @@
 	y: 0.0d,
 	shape: "square",
 	dependencies: [
-		"e0c9fd96",
+		"7df3f4fb",
 		"d7e37634"
 	],
 	dependency_requirement: "one_completed",

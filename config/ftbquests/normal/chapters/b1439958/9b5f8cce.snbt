@@ -1,36 +1,23 @@
 {
-	title: "{item.chisel.chisel_iron.name}",
+	title: "{gohd.b1439958.9b5f8cce.title}",
+	icon: "dcs_climate:dcs_desktop_accessories",
 	x: 2.0d,
 	y: 0.0d,
 	shape: "square",
+	text: [
+		"{gohd.b1439958.9b5f8cce.text.1}"
+	],
 	dependencies: [
 		"955c06b4"
 	],
 	size: 2.0d,
 	tasks: [{
-		uid: "94782103",
-		type: "item",
-		items: [{
-			item: "chisel:chisel_iron"
-		},
-		{
-			id: "chisel:chisel_diamond",
-			tag: {
-				chiseldata: {}
-			}
-		},
-		{
-			id: "chisel:chisel_hitech",
-			tag: {
-				chiseldata: {}
-			}
-		}],
-		ignore_damage: true,
-		ignore_nbt: 1b
+		uid: "5ae14434",
+		type: "checkmark"
 	}],
 	rewards: [{
-		uid: "9ecae6ee",
+		uid: "35019dac",
 		type: "item",
-		item: "chisel:auto_chisel"
+		item: "dcs_climate:dcs_desktop_accessories"
 	}]
 }
