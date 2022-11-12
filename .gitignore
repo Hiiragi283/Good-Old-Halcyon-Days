@@ -14,6 +14,7 @@ backups
 caches
 config_0
 config_1
+config_old
 crafttweaker_dump
 crash-reports
 docs
@@ -26,9 +27,11 @@ local
 logs
 mods
 profileImage
+resources_old
 resourcepacks
 saves
 screenshots
+scripts_old
 server-resource-packs
 shaderpacks
 texturepacks
@@ -38,7 +41,9 @@ config/acronym/saved
 config/biomesoplenty/biomes/defaults
 config/BiomeTweaker/output
 config/enderio/recipes/examples
-config/jei
+#config/jei
+config/quarryplus/defaultrecipes
+
 config/tellme
 dumps
 
@@ -46,7 +51,6 @@ dumps
 
 BotaniaVars.dat
 hei_bookmarks.ini
-icon_old.png
 minecraftinstance.json
 options.txt
 optionsof.txt
@@ -56,9 +60,8 @@ usercache.json
 usernamecache.json
 zs_export.json
 
-config/AppliedEnergistics2/
-!config/AppliedEnergistics2/AppliedEnergistics2.cfg
+#config/AppliedEnergistics2/
 config/compactmachines3/recipes/*.txt
 config/enderio/recipes/*.pdf
-config/InvTweaks.cfg
 config/tinker_ore_dict_melting_cache.dat
+scripts/grassUtils/grassUtils.zip

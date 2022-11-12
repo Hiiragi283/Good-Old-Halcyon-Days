@@ -1,6 +1,8 @@
 # Changelog
 
-## RC-3
+## v0.8.0
+
+### `Sfti - sorry for the inconvenience!`
 
 - Mod Configuration
   - Add
@@ -12,19 +14,35 @@
     - `ClickMachine-1.12.2-1.2.0`
       - Alternative for Mechanical User@`Extra Utilities 2`
     - `CyclopsCore-1.12.2-1.6.7`
+    - `bogosorter-1.1.1`
+      - Alternative for `Inventory Tweaks`
     - `MmmMmmMmmMmm-1.12-1.14`
     - `MobGrindingUtils-0.3.13`
       - Alternative for `Extra Utilities 2`
+    - `MouseTweaks-3.1.2-mc1.12.2`
+      - Alternative for `Item Sroller`
     - `SnowRealMagic-1.12.2-0.6.1`
       - More realistic snow logic
     - `supermartijn642corelib-1.0.19-forge-mc1.12`
     - `trashcans-1.0.15-forge-mc1.12`
       - Alternative for `Extra Utilities 2`
+    - `zenscroll-1.4.0`
+      - Alternative for `Chisel`
   - Remove
-    - `extrautils2-1.12-1.9.9.jar`
-      - Cause freeze bug when changing the page of creative inventory
-    - `tmel-1.12.2-1.4.0.0.jar`
-    - `UnlimitedChiselWorks-0.3.5.jar`
+    - `Chisel-MC1.12.2-1.0.2.45`
+    - `extrautils2-1.12-1.9.9`
+    - `InventoryTweaks-1.63`
+    - `itemscroller-1.12.2-0.12.0`
+    - `ProjectE-1.12.2-PE1.4.1`
+    - `ProjectEX-1.2.0.40`
+    - `TinkersComplement-1.12.2-0.4.3`
+    - `tmel-1.12.2-1.4.0.0`
+    - `UniDict-1.12.2-3.0.10`
+    - `UnlimitedChiselWorks-0.3.5`
+    - `WanionLib-1.12.2-2.9`
+
+- **RESET ALL FILES!!**
+- Remove annoying lava spot from Nether
 
 ## RC-2
 
