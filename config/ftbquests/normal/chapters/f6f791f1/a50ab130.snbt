@@ -1,4 +1,5 @@
 {
+	icon: "minecraft:obsidian",
 	x: 0.0d,
 	y: 2.0d,
 	shape: "square",
@@ -7,12 +8,9 @@
 	],
 	size: 2.0d,
 	tasks: [{
-		uid: "f42b8db4",
-		type: "item",
-		items: [{
-			item: "minecraft:obsidian"
-		}],
-		count: 10L
+		uid: "94fad6f3",
+		type: "dimension",
+		dim: -1
 	}],
 	rewards: [{
 		uid: "bc300e57",
