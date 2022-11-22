@@ -30,6 +30,6 @@
 	rewards: [{
 		uid: "df82cf43",
 		type: "item",
-		item: "contenttweaker:ragi_ticket"
+		item: "gohd_tweaks:ragi_ticket"
 	}]
 }

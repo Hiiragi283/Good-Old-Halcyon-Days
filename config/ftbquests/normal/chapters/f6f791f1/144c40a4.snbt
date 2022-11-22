@@ -10,21 +10,21 @@
 		uid: "5ebd0955",
 		type: "item",
 		items: [{
-			item: "contenttweaker:unfired_casting_table"
+			item: "gohd_tweaks:grout_formed"
 		}]
 	},
 	{
 		uid: "c0a12932",
 		type: "item",
 		items: [{
-			item: "contenttweaker:unfired_casting_basin"
+			item: "gohd_tweaks:grout_formed 1 1"
 		}]
 	},
 	{
 		uid: "68b0346e",
 		type: "item",
 		items: [{
-			item: "contenttweaker:unfired_casting_channel"
+			item: "gohd_tweaks:grout_formed 1 2"
 		}]
 	}]
 }
