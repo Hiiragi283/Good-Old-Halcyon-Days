@@ -140,7 +140,7 @@ print("Start loading zenScroll.zs ...");
 	ZenScroll.add(<railcraft:sandy:*>);
 	ZenScroll.add(<tconstruct:brownstone:*>);
 	ZenScroll.add(<tconstruct:seared:*>);
-	ZenScroll.add(<tconstruct:soil:0>, <contenttweaker:unfired_casting_basin>, <contenttweaker:unfired_casting_channel>, <contenttweaker:unfired_casting_table>);
+	ZenScroll.add(<tconstruct:soil:0>, <gohd_tweaks:grout_formed:*>);
 	ZenScroll.add(<twilightforest:castle_brick:*>, <twilightforest:castle_pillar:*>);
 	ZenScroll.add(<twilightforest:deadrock:*>);
 	ZenScroll.add(<twilightforest:maze_stone:*>);

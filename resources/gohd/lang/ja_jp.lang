@@ -76,6 +76,62 @@ item.appliedenergistics2.material.calculation_processor_print.name=発展プロ�
 item.appliedenergistics2.material.engineering_processor_print.name=上級プロセッサアセンブリ
 item.appliedenergistics2.material.logic_processor_print.name=基本プロセッサアセンブリ
 
+## Content Tweaker (TEMP)
+### Items
+item.contenttweaker.assembly_parallel.name=並列プロセッサアセンブリ
+item.contenttweaker.assembly_speculative.name=思考プロセッサアセンブリ
+item.contenttweaker.book_facing.name=柊さんの愛読書 (完璧な真正面を向きたい時ってあるよね？)
+item.contenttweaker.book_syntax.name=柊さんの愛読書 (文法チェック)
+item.contenttweaker.dcs_color_ring2.name=青の金のリング
+item.contenttweaker.division_sigil_perm.name=疑似反転のシジル
+item.contenttweaker.division_sigil_temp.name=活性済み除算のシジル
+item.contenttweaker.division_sigil.name=除算のシジル
+item.contenttweaker.drop_soul.name=魂のかけら
+item.contenttweaker.dust_shadestone.name=シェードストーンダスト
+item.contenttweaker.elven_pearl.name=エルブンパール
+item.contenttweaker.ephemerald.name=エフェメラルド
+item.contenttweaker.feather_black.name=黒塗りの羽
+item.contenttweaker.gem_carbon.name=圧縮した炭素
+item.contenttweaker.grout_ball.name=グラウト玉
+item.contenttweaker.ingot_bedrockium.name=ベッドロッキウムインゴット
+item.contenttweaker.ingot_rainbow.name=虹インゴット
+item.contenttweaker.ingot_stable.name=可視インゴット
+item.contenttweaker.ingot_unstable.name=不可視インゴット
+item.contenttweaker.item_fire.name=火
+item.contenttweaker.quantum_entangler.name=量子もつれデバイス
+item.contenttweaker.ragi_ticket.name=§cらぎチケット
+item.contenttweaker.reagent_halogen.name=Halogen
+item.contenttweaker.rune_air.name=風の香辛料
+item.contenttweaker.rune_earth.name=大地の恵み
+item.contenttweaker.rune_fire.name=火の子供
+item.contenttweaker.rune_water.name=水の末裔
+item.contenttweaker.symbol_cross.name=シンボル (Out)
+item.contenttweaker.symbol_nocraft.name=シンボル (No)
+item.contenttweaker.symbol_tick.name=シンボル (Check)
+
+### Blocks
+tile.contenttweaker.block_bedrockium.name=ベッドロッキウムブロック
+tile.contenttweaker.block_shadestone.name=シェードストーン
+tile.contenttweaker.cube_cyan_inactive.name=不活性なシアンキューブ
+tile.contenttweaker.cube_cyan.name=シアン色の活性化キューブ
+tile.contenttweaker.cube_iridescent.name=七色のキューブ
+tile.contenttweaker.cube_magenta_inactive.name=不活性なマゼンタキューブ
+tile.contenttweaker.cube_magenta.name=マゼンタ色の活性化キューブ
+tile.contenttweaker.cube_yellow_inactive.name=不活性な黄キューブ
+tile.contenttweaker.cube_yellow.name=黄色の活性化キューブ
+tile.contenttweaker.dummy_collector.name=EMCコレクター MK3 (模造品)
+tile.contenttweaker.dummy_link.name=基本EMCリンク (模造品)
+tile.contenttweaker.dummy_relay.name=反物質炉 MK3 (模造品)
+tile.contenttweaker.dustblock_lead.name=鉛の粉末ブロック
+tile.contenttweaker.nether_grout.name=ネザーモルタル
+tile.contenttweaker.pumpkin_melon.name=カボチャメロン
+tile.contenttweaker.unfired_casting_basin.name=未焼成の鋳造鉢
+tile.contenttweaker.unfired_casting_channel.name=未焼成の鋳造樋
+tile.contenttweaker.unfired_casting_table.name=未焼成の鋳造台
+tile.contenttweaker.unfired_scorched_basin.name=未焼成の焦げた鋳造鉢
+tile.contenttweaker.unfired_scorched_channel.name=未焼成の焦げた鋳造樋
+tile.contenttweaker.unfired_scorched_table.name=未焼成の焦げた鋳造台
+
 ## Ender IO
 enderio.activated.name=エナジェティックコンデンサ
 enderio.ender.name=ヴァイブラントコンデンサ
