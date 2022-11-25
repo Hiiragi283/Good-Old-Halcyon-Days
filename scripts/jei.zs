@@ -4,7 +4,7 @@
 # Info   : Scripts for JEI
 #====================================================================
 
-#priority 98
+#priority 90
 
 //Classのimport
 import crafttweaker.data.IData;
@@ -172,9 +172,9 @@ print("Start loading jei.zs ...");
 		<tconstruct:slime_congealed:5>,
 		<tconstruct:slime:5>,
 		<tconstruct:slimesling:5>,
-		<tconstruct:toolforge>.withTag({textureBlock: {id: "dcs_climate:dcs_ore_heatingmetal", Count: 1 as byte, Damage: 2 as short}}),
-		<tconstruct:tooltables:1>.withTag({textureBlock: {id: "twilightforest:twilight_oak_planks", Count: 1 as byte, Damage: 0 as short}}),
-		<tconstruct:tooltables:2>.withTag({textureBlock: {id: "twilightforest:twilight_log", Count: 1 as byte, Damage: 0 as short}}),
+		TablePart,
+		TableStencil,
+		ToolForge,
 	];
 	for i in mapAdd {
 		mods.jei.JEI.addItem(i);
@@ -186,7 +186,9 @@ print("Start loading jei.zs ...");
 		mods.jei.JEI.addDescription(items, desc);
 	}
 	//処理
-	val mapDesc as string[][IItemStack[]] = {};
+	val mapDesc as string[][IItemStack[]] = {
+		[<dcs_climate:dcs_tinder>, <dcs_climate:dcs_tinder:1>]: ["gohd.jei.tinder.name"],
+	};
 	for i, j in mapDesc {
 		addDesc(i, j);
 	}

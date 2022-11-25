@@ -22,7 +22,7 @@ print("Start loading HiiragiUtils.zs ...");
 
 //定数の定義
 	//染料
-	static dyeList as IOreDictEntry[] = [
+	static listDye as IOreDictEntry[] = [
 		<ore:dyeBlack>,
 		<ore:dyeRed>,
 		<ore:dyeGreen>,
@@ -61,6 +61,13 @@ print("Start loading HiiragiUtils.zs ...");
 		}
 
 //関数の定義
+	//クラフトレシピを追加する関数
+	function addShaped (output as IItemStack, input as IIngredient[][], recipeFunction as IRecipeFunction, recipeAction as IRecipeAction) {
+		recipes.addShaped(output, input, recipeFunction, recipeAction);
+	}
+	function addShapeless (output as IItemStack, input as IIngredient[], recipeFunction as IRecipeFunction, recipeAction as IRecipeAction) {
+		recipes.addShapeless(output, input, recipeFunction, recipeAction);
+	}
 	//代入したアイテムに翻訳キーを対応させる関数
 	function addLocname(item as IItemStack, key as string) as IItemStack {
 		return item.withTag({display:{LocName: key}});

@@ -23,15 +23,6 @@ import scripts.HiiragiUtils;
 //読み込みの開始をログに出力
 print("Start loading craftingFunc.zs ...");
 
-//Variable
-val chestMimic as IItemStack = <minecraft:chest>.withTag({BlockEntityTag: {LootTable: "artifacts:mimic_underground"}, display: {LocName: "gohd.custom.safety_mimic.name"}});
-
-//Artifacts
-	HiiragiUtils.addShapeless(chestMimic, [<*>, <minecraft:trapped_chest>, <gohd_tweaks:ragi_ticket>], function(out, ins, cInfo) {
-		if(ins.artifact.definition.owner == "artifacts") return out;
-		return null;
-	}, null);
-
 //Tinker's Construct
 	val mapTcon as IItemStack[] = [
 		<tconstruct:rack:0>,
@@ -45,6 +36,7 @@ val chestMimic as IItemStack = <minecraft:chest>.withTag({BlockEntityTag: {LootT
 			var id as string = ins.texture.definition.id;
 			var meta as int = ins.texture.metadata;
 			return i.withTag({textureBlock: {id: id, Count: 1 as byte, Damage: meta as short}});
+		i.addTooltip(I18n.format("gohd.tooltip.tcon_appear.name"));
 		}, null);
 	}
 

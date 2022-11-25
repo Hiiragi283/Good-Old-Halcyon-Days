@@ -106,6 +106,7 @@ print("Start loading zenScroll.zs ...");
 	ZenScroll.add(<ore:ingotBrass>);
 	ZenScroll.add(<ore:ingotBronze>);
 	ZenScroll.add(<ore:ingotCopper>);
+	ZenScroll.add(<ore:ingotInvar>);
 	ZenScroll.add(<ore:ingotLead>);
 	ZenScroll.add(<ore:ingotNickel>);
 	ZenScroll.add(<ore:ingotSilver>);

@@ -4,7 +4,7 @@
 # Info   : Unification for many features
 #====================================================================
 
-#priority 99
+#priority 98
 
 //Classのimport
 import crafttweaker.data.IData;
@@ -23,8 +23,17 @@ import scripts.HiiragiUtils;
 //読み込みの開始をログに出力
 print("Start loading unification.zs ...");
 
+//Global
+global ChestMimic as IItemStack = <minecraft:chest>.withTag({BlockEntityTag: {LootTable: "artifacts:mimic_underground"}, display: {LocName: "gohd.custom.safety_mimic.name"}});
+global TableStencil as IItemStack = <tconstruct:tooltables:1>.withTag({textureBlock: {id: "twilightforest:twilight_oak_planks", Count: 1 as byte, Damage: 0 as short}});
+global TablePart as IItemStack = <tconstruct:tooltables:2>.withTag({textureBlock: {id: "twilightforest:twilight_log", Count: 1 as byte, Damage: 0 as short}});
+global ToolForge as IItemStack = <tconstruct:toolforge>.withTag({textureBlock: {id: "dcs_climate:dcs_ore_heatingmetal", Count: 1 as byte, Damage: 2 as short}});
+
+global ToolKnife as IIngredient = HiiragiUtils.toolInput(<appliedenergistics2:certus_quartz_cutting_knife>, 1)|HiiragiUtils.toolInput(<appliedenergistics2:nether_quartz_cutting_knife>, 1);
+global ToolSaw as IIngredient = HiiragiUtils.toolInput(<microblockcbe:saw_stone>, 1)|HiiragiUtils.toolInput(<microblockcbe:saw_iron>, 1)|HiiragiUtils.toolInput(<microblockcbe:saw_diamond>, 1);
+
 //Crafting Recipes
-	//Remove by recipe name
+	//レシピ名による削除
 	val mapRemoveByName as string[] = [
 		"appliedenergistics2:decorative/certus_quartz_pillar",
 		"appliedenergistics2:decorative/chiseled_quartz_block",
@@ -77,6 +86,10 @@ print("Start loading unification.zs ...");
 		"minecraft:smooth_red_sandstone",
 		"minecraft:smooth_sandstone",
 		"railcraft:cone_oven_red$2",
+		"tconstruct:smeltery/casting_basin",
+		"tconstruct:smeltery/casting_table",
+		"tconstruct:smeltery/channel",
+		"tconstruct:smeltery/smeltery_controller",
 		"thermalfoundation:material_100",
 		"thermalfoundation:material_99",
 		"thermalfoundation:storage_alloy",
@@ -165,9 +178,17 @@ print("Start loading unification.zs ...");
 			recipes.removeByRecipeName("thermalfoundation:material_" ~ i);
 		}
 	//既存のレシピの編集および新規レシピの登録
+		//Applied Energistics
+		//Artifacts
+		HiiragiUtils.addShapeless(ChestMimic, [<ore:itemArtifact>, <minecraft:trapped_chest>, <gohd_tweaks:ragi_ticket>], null, null);
 		//Biomes O Plenty
 		RecipeUtils.recipeTweak(false, <biomesoplenty:gem:6>*9, [[<biomesoplenty:gem_block:6>]]);
-		//Content Tweaker
+		//GOHD Tweaks
+		RecipeUtils.recipeTweak(true, <gohd_tweaks:parts_assembly:0>, RecipePattern.init([" A ", "BCB", " D "]).map({A:ToolKnife, B:<ore:dustRedstone>, C:<ore:crystalPureCertusQuartz>, D:<ore:itemSilicon>}).ingredients);
+		RecipeUtils.recipeTweak(true, <gohd_tweaks:parts_assembly:1>, RecipePattern.init([" A ", "BCB", " D "]).map({A:ToolKnife, B:<ore:dustRedstone>, C:<ore:gemDiamond>, D:<ore:itemSilicon>}).ingredients);
+		RecipeUtils.recipeTweak(true, <gohd_tweaks:parts_assembly:2>, RecipePattern.init([" A ", "BCB", " D "]).map({A:ToolKnife, B:<ore:dustRedstone>, C:<ore:ingotGold>, D:<ore:itemSilicon>}).ingredients);
+		RecipeUtils.recipeTweak(true, <gohd_tweaks:parts_assembly:3>, RecipePattern.init([" A ", "BCB", " D "]).map({A:ToolKnife, B:<ore:dustRedstone>, C:<threng:material:5>, D:<ore:itemSilicon>}).ingredients);
+		RecipeUtils.recipeTweak(true, <gohd_tweaks:parts_assembly:4>, RecipePattern.init([" A ", "BCB", " D "]).map({A:ToolKnife, B:<ore:dustRedstone>, C:<threng:material:13>, D:<ore:itemSilicon>}).ingredients);
 		//Heat And Climate
 		HiiragiUtils.recipeReplace(<ore:fuelCoke>, <dcs_climate:dcs_reagent:13>, <dcs_climate:dcs_cont_fuel>);
 		HiiragiUtils.recipeReplace(<ore:plankWood>, <ore:slabWood>, <dcs_climate:dcs_device_lowchest_wood>);
@@ -178,16 +199,63 @@ print("Start loading unification.zs ...");
 		HiiragiUtils.recipeReplace(<ore:plankWood>, <minecraft:planks>, <minecraft:trapdoor>);
 		HiiragiUtils.recipeReplace(<ore:plankWood>, <minecraft:planks>, <minecraft:wooden_pressure_plate>);
 		RecipeUtils.recipeTweak(true, <minecraft:slime>, RecipeUtils.createFull3(<minecraft:slime_ball>));
+		RecipeUtils.recipeTweak(true, <minecraft:furnace>, RecipeUtils.createSurround(<dcs_climate:dcs_tinder:1>, <ore:cobblestone>));
 		//Thermal Foundation
 		HiiragiUtils.recipeReplace(<ore:fuelCoke>, <thermalfoundation:material:802>, <thermalfoundation:storage_resource:1>);
+		for i in 0 to 16 {
+			HiiragiUtils.recipeReplace(<minecraft:dye>.definition.makeStack(i), HiiragiUtils.listDye[i], <thermalfoundation:rockwool>.definition.makeStack(i));
+		}
 		//Tinker's Construct
 		RecipeUtils.recipeTweak(true, <tconstruct:slime_boots:5>, RecipePattern.init(["A A", "B B"]).map({A:<tconstruct:edible:5>, B:<tconstruct:slime_congealed:5>}).ingredients);
 		RecipeUtils.recipeTweak(true, <tconstruct:slime_congealed:5>, RecipePattern.init(["AA", "AA"]).map({A:<tconstruct:edible:5>}).ingredients);
 		RecipeUtils.recipeTweak(true, <tconstruct:slime:5>, RecipePattern.init(["AAA", "AAA", "AAA"]).map({A:<tconstruct:edible:5>}).ingredients);
 		RecipeUtils.recipeTweak(true, <tconstruct:slimesling:5>, RecipePattern.init(["ABA", "C C", " C "]).map({A:<minecraft:string>, B:<tconstruct:slime_congealed:5>, C:<tconstruct:edible:5>}).ingredients);
-		RecipeUtils.recipeTweak(true, <tconstruct:toolforge>.withTag({textureBlock: {id: "dcs_climate:dcs_ore_heatingmetal", Count: 1 as byte, Damage: 2 as short}}), RecipePattern.init(["AAA", "BCB", "B B"]).map({A:<ore:blockSeared>, B:<dcs_climate:dcs_ore_heatingmetal:2>, C:<tconstruct:tooltables:3>}).ingredients);
-		RecipeUtils.recipeTweak(true, <tconstruct:tooltables:1>.withTag({textureBlock: {id: "twilightforest:twilight_oak_planks", Count: 1 as byte, Damage: 0 as short}}), RecipePattern.init(["A", "B"]).map({A:<tconstruct:pattern>, B:<twilightforest:twilight_oak_planks>}).ingredients);
-		RecipeUtils.recipeTweak(true, <tconstruct:tooltables:2>.withTag({textureBlock: {id: "twilightforest:twilight_log", Count: 1 as byte, Damage: 0 as short}}), RecipePattern.init(["A", "B"]).map({A:<tconstruct:pattern>, B:<twilightforest:twilight_log>}).ingredients);
+		RecipeUtils.recipeTweak(true, TablePart, RecipePattern.init(["A", "B"]).map({A:<tconstruct:pattern>, B:<twilightforest:twilight_log>}).ingredients);
+		RecipeUtils.recipeTweak(true, TableStencil, RecipePattern.init(["A", "B"]).map({A:<tconstruct:pattern>, B:<twilightforest:twilight_oak_planks>}).ingredients);
+		RecipeUtils.recipeTweak(true, ToolForge, RecipePattern.init(["AAA", "BCB", "B B"]).map({A:<ore:blockSeared>, B:<dcs_climate:dcs_ore_heatingmetal:2>, C:<tconstruct:tooltables:3>}).ingredients);
+		RecipeUtils.recipeTweak(false, <tconstruct:faucet>*2, [[<tconstruct:channel>, ToolSaw]]);
+		HiiragiUtils.addShaped(<tconstruct:smeltery_controller>, RecipePattern.init(["ABA", "ACA", "ADA"]).map({A:<tconstruct:materials:0>, B:<tconstruct:seared_furnace_controller>, C:<tconstruct:tinker_tank_controller>, D:<dcs_climate:dcs_device_chamber>}).ingredients, null, null);
+
+//Furnace Recipes
+	//Remove
+	val mapFurnaceRemove as IItemStack[] = [
+		<thermalfoundation:material:130>,
+		<thermalfoundation:material:132>,
+		<thermalfoundation:material:133>,
+		<thermalfoundation:material:134>,
+		<thermalfoundation:material:135>,
+		<thermalfoundation:material:136>,
+		<thermalfoundation:material:160>,
+		<thermalfoundation:material:161>,
+		<thermalfoundation:material:162>,
+		<thermalfoundation:material:163>,
+		<thermalfoundation:material:164>,
+	];
+	for i in mapFurnaceRemove {
+		furnace.remove(i);
+	}
+	//Addition
+	val mapAddFurnace as IIngredient[IItemStack] = {
+		<tconstruct:casting:0>: <gohd_tweaks:grout_formed:0>,
+		<tconstruct:casting:1>: <gohd_tweaks:grout_formed:1>,
+		<tconstruct:channel>: <gohd_tweaks:grout_formed:2>,
+		<appliedenergistics2:material:23>: <gohd_tweaks:parts_assembly:0>,
+		<appliedenergistics2:material:24>: <gohd_tweaks:parts_assembly:1>,
+		<appliedenergistics2:material:22>: <gohd_tweaks:parts_assembly:2>,
+		<threng:material:6>: <gohd_tweaks:parts_assembly:3>,
+		<threng:material:13>: <gohd_tweaks:parts_assembly:4>,
+	};
+	for output, input in mapAddFurnace {
+		furnace.addRecipe(output, input);
+	}
+
+//Tooltip
+	val mapTooltip as string[IItemStack] = {
+		<minecraft:chest>.withTag({BlockEntityTag: {LootTable: "artifacts:mimic_underground"}, display: {LocName: "gohd.custom.safety_mimic.name"}}): "gohd.tooltip.safety_mimic.name",
+	};
+for i, j in mapTooltip {
+	i.addTooltip(I18n.format(j));
+}
 
 //読み込みの完了をログに出力
 print("unification.zs loaded!");
