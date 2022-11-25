@@ -2,11 +2,9 @@
 	icon: "dcs_climate:dcs_ore_metal_alloy 1 2",
 	x: 6.0d,
 	y: 0.0d,
-	shape: "square",
 	dependencies: [
 		"96d3d03f"
 	],
-	size: 2.0d,
 	tasks: [{
 		uid: "4dd6cb37",
 		type: "item",
@@ -27,5 +25,11 @@
 		items: [{
 			item: "dcs_climate:dcs_ore_metal_alloy 1 2"
 		}]
+	}],
+	rewards: [{
+		uid: "2b4ec186",
+		type: "item",
+		item: "dcs_climate:dcs_ore_heatingmetal",
+		count: 3
 	}]
 }

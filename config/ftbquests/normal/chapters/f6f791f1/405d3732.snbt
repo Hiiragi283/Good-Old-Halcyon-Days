@@ -18,5 +18,19 @@
 				}
 			}
 		}]
+	}],
+	rewards: [{
+		uid: "61ebad32",
+		type: "item",
+		item: {
+			id: "tconstruct:toolforge",
+			tag: {
+				textureBlock: {
+					id: "tconstruct:toolforge",
+					Count: 1b,
+					Damage: 0s
+				}
+			}
+		}
 	}]
 }

@@ -1,5 +1,35 @@
 # Changelog
 
+## v0.8.1
+
+- Mod Configuration
+  - Add
+    - `GOHD_Tweaks-v0.2.1`
+      - The first mod I made!
+    - `HungerStrike-1.12-1.0.8`
+  - Remove
+    - `base-1.12.2-3.14.0`
+    - `ContentTweaker-1.12.2-4.10.0`
+      - Replaced with `GOHD Tweaks`
+    - `Far_From_Home-1.12.2-6.1`
+    - `OpenTerrainGenerator-1.12.2-v9.4`
+  - Update
+    - `!mixinbooter-5.0` -> `!mixinbooter-7.0`
+    - `appliedenergistics2-rv6-stable-7-extended_life-v0.53.8b` -> `appliedenergistics2-rv6-stable-7-extended_life-v0.54.13`
+    - `bogosorter-1.1.1` -> `bogosorter-1.2.1`
+    - `CraftTweaker2-1.12-4.1.20.681` -> `CraftTweaker2-1.12-4.1.20.682`
+    - `EnchantmentDescriptions-1.12.2-1.1.15` -> `EnchantmentDescriptions-1.12.2-1.1.20`
+    - `HadEnoughItems_1.12.2-4.24.0` -> `HadEnoughItems_1.12.2-4.24.1`
+    - `NotEnoughEnergistics-1.12.2-1.2.4` -> `NotEnoughEnergistics-1.12.2-1.2.5`
+    - `zenutils-1.12.2` -> `zenutils-1.12.3`
+
+- Changes
+  - Add new recipe
+    - Change the appearance for some TCon blocks
+    - Reset the type of artifacts with Ragi Ticket
+  - Fix the issue some recipes isn't changed
+  - Replaced Content Tweaker with GOHD Tweaks
+
 ## v0.8.0
 
 ### `Sfti - sorry for the inconvenience!`

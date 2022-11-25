@@ -1,6 +1,6 @@
 {
 	icon: "dcs_climate:dcs_ingot 1 5",
-	x: 10.0d,
+	x: 8.0d,
 	y: 0.0d,
 	shape: "square",
 	dependencies: [
