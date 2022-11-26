@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.8.2
+
+- **HOTFIX**
+  - Fix the issue that GOHD Tweaks can't be downloaded correctly
+
 ## v0.8.1
 
 - Mod Configuration
