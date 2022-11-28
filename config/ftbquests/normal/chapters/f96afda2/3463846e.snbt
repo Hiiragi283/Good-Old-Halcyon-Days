@@ -1,0 +1,49 @@
+{
+	x: 10.0d,
+	y: 2.0d,
+	dependencies: [
+		"155e50c2"
+	],
+	tasks: [{
+		uid: "bd90014b",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_device_ibc"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "41fde0c6",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_device_hopper_fluid"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "534c6925",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_device_faucet"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "b249c05d",
+		type: "item",
+		item: "dcs_climate:dcs_device_ibc",
+		count: 3
+	},
+	{
+		uid: "89f300ec",
+		type: "item",
+		item: "dcs_climate:dcs_device_hopper_fluid",
+		count: 3
+	},
+	{
+		uid: "6b098913",
+		type: "item",
+		item: "dcs_climate:dcs_device_faucet",
+		count: 3
+	}]
+}

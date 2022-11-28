@@ -20,14 +20,36 @@
 		uid: "ce43123c",
 		type: "item",
 		items: [{
-			item: "dcs_climate:dcs_oreitem 1 3"
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any oreIron"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "oreIron"
+				}
+			}
 		}]
 	},
 	{
 		uid: "3d868f45",
 		type: "item",
 		items: [{
-			item: "dcs_climate:dcs_oredust 1 5"
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any dustIron"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "dustIron"
+				}
+			}
 		}]
 	}]
 }

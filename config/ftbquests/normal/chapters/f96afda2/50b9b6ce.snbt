@@ -1,0 +1,41 @@
+{
+	x: 10.0d,
+	y: -2.0d,
+	dependencies: [
+		"155e50c2"
+	],
+	tasks: [{
+		uid: "46c18bb8",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_device_tea_pot"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "02923ccb",
+		type: "item",
+		item: "dcs_climate:dcs_food_pack 1 3",
+		count: 16
+	},
+	{
+		uid: "103db06f",
+		type: "item",
+		item: "biomesoplenty:filled_honeycomb",
+		count: 16
+	},
+	{
+		uid: "ef1826da",
+		type: "item",
+		item: {
+			id: "dcs_climate:dcs_food_teacup",
+			tag: {
+				Fluid: {
+					FluidName: "pyrotheum",
+					Amount: 200
+				}
+			}
+		},
+		count: 5
+	}]
+}

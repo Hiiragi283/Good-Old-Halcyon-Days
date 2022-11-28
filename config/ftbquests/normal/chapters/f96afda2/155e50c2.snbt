@@ -1,23 +1,24 @@
 {
-	x: 12.0d,
-	y: 2.0d,
+	x: 8.0d,
+	y: 0.0d,
 	shape: "square",
 	dependencies: [
-		"96d3d03f",
-		"955c06b4"
+		"955c06b4",
+		"8b7f7c7d"
 	],
 	dependency_requirement: "one_completed",
 	size: 2.0d,
 	tasks: [{
-		uid: "d820760c",
+		uid: "b96a69e8",
 		type: "item",
 		items: [{
-			item: "minecraft:iron_ingot"
+			item: "dcs_climate:dcs_ingot 1 6"
 		}]
 	}],
 	rewards: [{
-		uid: "8248a7a4",
+		uid: "9b820c49",
 		type: "item",
-		item: "gohd_tweaks:ragi_ticket"
+		item: "gohd_tweaks:ragi_ticket",
+		count: 2
 	}]
 }

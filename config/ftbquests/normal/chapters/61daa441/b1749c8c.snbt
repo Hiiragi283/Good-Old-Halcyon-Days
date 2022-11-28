@@ -1,0 +1,34 @@
+{
+	x: 14.0d,
+	y: 0.0d,
+	dependencies: [
+		"59e08f74"
+	],
+	tasks: [{
+		uid: "e5130cd5",
+		type: "item",
+		title: "{gohd.61daa441.b1749c8c.title}",
+		items: [{
+			item: "dcs_climate:dcs_axe_brass"
+		},
+		{
+			item: "dcs_climate:dcs_pickaxe_brass"
+		},
+		{
+			item: "dcs_climate:dcs_spade_brass"
+		},
+		{
+			item: "dcs_climate:dcs_sword_brass"
+		},
+		{
+			item: "dcs_climate:dcs_scythe_brass"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "b72752a6",
+		type: "item",
+		item: "dcs_climate:dcs_wrench"
+	}]
+}

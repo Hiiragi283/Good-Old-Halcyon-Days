@@ -3,7 +3,7 @@ gohd.custom.*.name
 
 gohd.custom.defeated_crowbar.name=バールのようなカラス
 gohd.custom.safety_mimic.name=§bあんぜんミミック
-gohd.custom.welcome.name=§c§l§oGOHD§r§lにようこそ!
+//gohd.custom.welcome.name=§c§l§oGOHD§r§lにようこそ!
 
 # JEi Description
 gohd.jei.*.name
@@ -31,6 +31,8 @@ gohd.61daa441.3d45df2d.title=GTNHよりもリアル
 gohd.61daa441.41178d2d.title=DutyじゃないけどHeavy
 gohd.61daa441.5c541bdc.title=いいから伐採だ!
 gohd.61daa441.96d3d03f.subtitle=§o私は失敗したことがない。たんに、うまくいかないだろう1万の方法を見つけただけだ。
+gohd.61daa441.b1749c8c.title=Brass製の道具
+gohd.61daa441.d2170bea.title=Bronze製の道具
 gohd.61daa441.e8c1dcb5.title=Garden of Grass
 gohd.61daa441.f4628ad4.subtitle=もし高校野球の女子マネージャーが薬剤師(Druggist)の『モーター(Mortar)』を読んだら
 gohd.61daa441.f4628ad4.title=もしドラ
@@ -53,6 +55,11 @@ gohd.b1439958.422f8eb8.title=ビブリア古書堂の事件手帖
 gohd.b1439958.9b5f8cce.text.1=ブロックやアイテムのモデルを変更するには, それを手にもって§lAlt§rを押しスクロールする必要があります。
 gohd.b1439958.9b5f8cce.title=リボル-ブオン!
 
+## Tier 1: gohd.f96afda2.
+gohd.f96afda2.title=Tier 1
+
+gohd.f96afda2.7587a025.title=Nickelsilver Tools
+
 # Tooltips
 gohd.tooltip.bedrock.name=§a採掘レベルが4以上のツルハシで右クリックすることで回収できる
 gohd.tooltip.cube_cyan.name=§b雨天時のみ作成可能
@@ -69,6 +76,7 @@ gohd.tooltip.ingot_rainbow.name=§d私§cを§6オフハンド§eに§a持て§2
 gohd.tooltip.quantum_entangler.name=§a量子もつれデバイスを使うことでCompact Machineのデータをコピーできます!
 gohd.tooltip.removed.name=§cレシピは削除されました!§r
 gohd.tooltip.tcon_appear.name=§a任意のブロックとクラフトすることで見た目を変えられます!
+gohd.tooltip.safety_mimic.name=§aなにがでるかはおたのしみ!
 
 # Lang Key from other Mods
 

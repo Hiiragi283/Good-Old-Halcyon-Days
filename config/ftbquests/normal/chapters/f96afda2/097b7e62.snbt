@@ -1,0 +1,18 @@
+{
+	icon: "bibliocraft:clipboard",
+	x: 0.0d,
+	y: 0.0d,
+	shape: "square",
+	dependencies: [
+		"59e08f74",
+		"992c5a06",
+		"34ee3a1c"
+	],
+	dependency_requirement: "one_completed",
+	size: 2.0d,
+	tasks: [{
+		uid: "5487c4b1",
+		type: "checkmark",
+		title: "{gohd.f96afda2.title}"
+	}]
+}

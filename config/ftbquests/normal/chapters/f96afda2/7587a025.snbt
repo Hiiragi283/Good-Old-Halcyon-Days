@@ -1,0 +1,36 @@
+{
+	x: 8.0d,
+	y: -2.0d,
+	dependencies: [
+		"155e50c2"
+	],
+	tasks: [{
+		uid: "06d1d32c",
+		type: "item",
+		title: "{gohd.f96afda2.7587a025.title}",
+		items: [{
+			item: "dcs_climate:dcs_axe_nickelsilver"
+		},
+		{
+			item: "dcs_climate:dcs_pickaxe_nickelsilver"
+		},
+		{
+			item: "dcs_climate:dcs_spade_nickelsilver"
+		},
+		{
+			item: "dcs_climate:dcs_sword_nickelsilver"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "d9e66012",
+		type: "item",
+		item: {
+			id: "tconstruct:sword_blade",
+			tag: {
+				Material: "nickelsilver"
+			}
+		}
+	}]
+}

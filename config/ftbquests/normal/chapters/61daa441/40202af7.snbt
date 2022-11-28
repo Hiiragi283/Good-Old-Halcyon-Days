@@ -20,14 +20,36 @@
 		uid: "1345c852",
 		type: "item",
 		items: [{
-			item: "dcs_climate:dcs_oreitem 1 4"
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any oreMagnetite"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "oreMagnetite"
+				}
+			}
 		}]
 	},
 	{
 		uid: "7d6dc0ab",
 		type: "item",
 		items: [{
-			item: "dcs_climate:dcs_oredust 1 7"
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any dustMagnetite"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "dustMagnetite"
+				}
+			}
 		}]
 	}]
 }

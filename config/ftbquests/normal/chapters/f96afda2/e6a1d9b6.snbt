@@ -1,0 +1,22 @@
+{
+	x: 2.0d,
+	y: 0.0d,
+	dependencies: [
+		"097b7e62"
+	],
+	dependency_requirement: "one_completed",
+	tasks: [{
+		uid: "c6becea9",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_device_shaft_s"
+		}],
+		count: 8L
+	}],
+	rewards: [{
+		uid: "abe204f1",
+		type: "item",
+		item: "dcs_climate:dcs_device_shaft_s",
+		count: 24
+	}]
+}

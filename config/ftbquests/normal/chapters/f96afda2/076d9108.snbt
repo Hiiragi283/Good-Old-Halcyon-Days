@@ -1,0 +1,19 @@
+{
+	x: 11.0d,
+	y: 1.0d,
+	dependencies: [
+		"28f84e98"
+	],
+	tasks: [{
+		uid: "e7dee1f6",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_device_watermill"
+		}]
+	}],
+	rewards: [{
+		uid: "3279c030",
+		type: "item",
+		item: "dcs_climate:dcs_device_water_pump"
+	}]
+}

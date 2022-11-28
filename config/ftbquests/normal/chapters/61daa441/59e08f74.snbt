@@ -4,8 +4,10 @@
 	y: 0.0d,
 	shape: "square",
 	dependencies: [
-		"d362ac76"
+		"d362ac76",
+		"955c06b4"
 	],
+	dependency_requirement: "one_completed",
 	size: 2.0d,
 	tasks: [{
 		uid: "5669a0d3",

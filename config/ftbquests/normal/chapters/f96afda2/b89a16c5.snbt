@@ -1,0 +1,20 @@
+{
+	x: 5.0d,
+	y: -1.0d,
+	dependencies: [
+		"34ee3a1c"
+	],
+	tasks: [{
+		uid: "86bc3ddc",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_device_bellow"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "c133a7a9",
+		type: "item",
+		item: "dcs_climate:dcs_device_handcrank"
+	}]
+}

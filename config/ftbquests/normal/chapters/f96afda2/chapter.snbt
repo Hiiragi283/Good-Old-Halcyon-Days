@@ -1,0 +1,7 @@
+{
+	title: "{gohd.f96afda2.title}",
+	icon: "dcs_climate:dcs_device_chamber",
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: ""
+}

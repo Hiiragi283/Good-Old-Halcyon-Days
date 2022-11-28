@@ -4,7 +4,7 @@ gohd.custom.*.name
 
 gohd.custom.defeated_crowbar.name=Defeated-Crowbar
 gohd.custom.safety_mimic.name=§bSafety Mimic
-gohd.custom.welcome.name=§o§lWelcome to §c§o§lGOHD§r§c§l!
+//gohd.custom.welcome.name=§o§lWelcome to §c§o§lGOHD§r§c§l!
 
 # JEi Description
 gohd.jei.*.name
@@ -33,6 +33,8 @@ gohd.61daa441.3d45df2d.title=Realistic than GTNH
 gohd.61daa441.41178d2d.title=Not duty but heavy
 gohd.61daa441.5c541bdc.title=The first step you have to do
 gohd.61daa441.96d3d03f.subtitle=§oI have not failed. I've just found 10,000 ways that won't work.
+gohd.61daa441.b1749c8c.title=Brass Tools
+gohd.61daa441.d2170bea.title=Bronze Tools
 gohd.61daa441.e8c1dcb5.title=Garden of Grass
 gohd.61daa441.f4628ad4.subtitle=What If the Female Manager of a High School Baseball Team Read Druggist's "Mortar"?
 gohd.61daa441.f4628ad4.title=Moshidora
@@ -54,6 +56,11 @@ gohd.b1439958.2a496235.title=Mighty Saw
 gohd.b1439958.422f8eb8.title=Biblio Glasses
 gohd.b1439958.9b5f8cce.text.1=To change models of blocks or items, you need to hold it and press §lAlt§r then scroll.
 gohd.b1439958.9b5f8cce.title=Revolve-On!
+
+## Tier 1: gohd.f96afda2.
+gohd.f96afda2.title=Tier 1
+
+gohd.f96afda2.7587a025.title=Nickelsilver Tools
 
 # Tooltips
 gohd.tooltip.bedrock.name=§aHarvested by right-clicking on a pickaxe with Mining level 4 or higher

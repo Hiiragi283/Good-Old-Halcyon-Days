@@ -20,14 +20,36 @@
 		uid: "2932af42",
 		type: "item",
 		items: [{
-			item: "dcs_climate:dcs_oreitem 1 2"
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any oreZinc"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "oreZinc"
+				}
+			}
 		}]
 	},
 	{
 		uid: "ad7101de",
 		type: "item",
 		items: [{
-			item: "dcs_climate:dcs_oredust 1 1"
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any dustZinc"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "dustZinc"
+				}
+			}
 		}]
 	}],
 	rewards: [{

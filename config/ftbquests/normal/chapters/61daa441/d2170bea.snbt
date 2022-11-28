@@ -1,0 +1,34 @@
+{
+	x: 14.0d,
+	y: -2.0d,
+	dependencies: [
+		"992c5a06"
+	],
+	tasks: [{
+		uid: "a34730a8",
+		type: "item",
+		title: "{gohd.61daa441.d2170bea.title}",
+		items: [{
+			item: "thermalfoundation:tool.sickle_bronze"
+		},
+		{
+			item: "thermalfoundation:tool.hammer_bronze"
+		},
+		{
+			item: "thermalfoundation:tool.excavator_bronze"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "6a5d785e",
+		type: "item",
+		item: {
+			id: "tconstruct:tool_rod",
+			tag: {
+				Material: "bronze"
+			}
+		},
+		count: 3
+	}]
+}

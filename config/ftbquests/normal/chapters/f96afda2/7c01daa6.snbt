@@ -1,0 +1,20 @@
+{
+	x: 5.0d,
+	y: 1.0d,
+	dependencies: [
+		"6add8926"
+	],
+	tasks: [{
+		uid: "fc1f13af",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_device_fan"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "6f6ee39b",
+		type: "item",
+		item: "twilightforest:peacock_fan"
+	}]
+}

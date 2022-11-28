@@ -1,0 +1,21 @@
+{
+	x: 11.0d,
+	y: -1.0d,
+	dependencies: [
+		"28f84e98"
+	],
+	tasks: [{
+		uid: "fa780b0b",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_device_stonemill"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "a0b78cbf",
+		type: "item",
+		item: "dcs_climate:dcs_device_gearbox",
+		count: 4
+	}]
+}
