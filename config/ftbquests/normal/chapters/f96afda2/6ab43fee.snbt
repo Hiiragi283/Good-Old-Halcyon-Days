@@ -1,0 +1,30 @@
+{
+	title: "{tile.dcs_ore_stone_new_9.name}",
+	icon: "dcs_climate:dcs_oreitem 1 14",
+	x: 9.0d,
+	y: 1.0d,
+	dependencies: [
+		"2a30adee"
+	],
+	tasks: [{
+		uid: "b589218d",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_ore_stone_new 1 9"
+		}]
+	},
+	{
+		uid: "6e2f5c47",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_oreitem 1 14"
+		}]
+	},
+	{
+		uid: "c9fb9665",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_oredust 1 15"
+		}]
+	}]
+}

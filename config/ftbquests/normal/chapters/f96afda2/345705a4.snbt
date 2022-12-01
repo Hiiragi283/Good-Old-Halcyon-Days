@@ -1,0 +1,22 @@
+{
+	x: 7.0d,
+	y: -3.0d,
+	dependencies: [
+		"7c01daa6",
+		"b808b05f"
+	],
+	dependency_requirement: "one_completed",
+	tasks: [{
+		uid: "0b6ac756",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_device_heat_exchanger"
+		}]
+	}],
+	rewards: [{
+		uid: "ae5d2383",
+		type: "item",
+		item: "dcs_climate:dcs_device_heat_exchanger",
+		count: 3
+	}]
+}

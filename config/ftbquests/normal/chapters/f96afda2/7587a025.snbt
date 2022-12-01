@@ -1,6 +1,6 @@
 {
-	x: 8.0d,
-	y: -2.0d,
+	x: 4.0d,
+	y: 4.0d,
 	dependencies: [
 		"155e50c2"
 	],
@@ -27,7 +27,7 @@
 		uid: "d9e66012",
 		type: "item",
 		item: {
-			id: "tconstruct:sword_blade",
+			id: "tconstruct:large_plate",
 			tag: {
 				Material: "nickelsilver"
 			}

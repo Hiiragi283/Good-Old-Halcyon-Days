@@ -24,11 +24,10 @@
 		uid: "6a5d785e",
 		type: "item",
 		item: {
-			id: "tconstruct:tool_rod",
+			id: "tconstruct:large_plate",
 			tag: {
 				Material: "bronze"
 			}
-		},
-		count: 3
+		}
 	}]
 }

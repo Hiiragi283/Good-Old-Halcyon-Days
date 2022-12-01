@@ -62,6 +62,6 @@
 	rewards: [{
 		uid: "1ce3e4b9",
 		type: "item",
-		item: "extendedcrafting:handheld_table"
+		item: "botania:craftinghalo"
 	}]
 }

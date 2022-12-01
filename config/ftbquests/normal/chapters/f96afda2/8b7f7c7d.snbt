@@ -1,9 +1,9 @@
 {
 	icon: "dcs_climate:dcs_ore_metal_alloy 1 3",
-	x: 8.0d,
+	x: 2.0d,
 	y: 2.0d,
 	dependencies: [
-		"2cd53716"
+		"097b7e62"
 	],
 	tasks: [{
 		uid: "999647cd",

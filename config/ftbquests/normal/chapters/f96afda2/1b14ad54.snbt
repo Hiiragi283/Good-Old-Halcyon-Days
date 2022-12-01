@@ -1,0 +1,38 @@
+{
+	icon: "dcs_climate:dcs_mechanical",
+	x: 13.0d,
+	y: -1.0d,
+	shape: "square",
+	dependencies: [
+		"3e4e26c7",
+		"0e6e6dc9"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "e86c7061",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_spindle 1 4"
+		}]
+	},
+	{
+		uid: "22c5503d",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_mechanical"
+		}]
+	},
+	{
+		uid: "9a85f711",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_mechanical 1 1"
+		}]
+	}],
+	rewards: [{
+		uid: "e3477c6e",
+		type: "item",
+		item: "gohd_tweaks:ragi_ticket",
+		count: 3
+	}]
+}
