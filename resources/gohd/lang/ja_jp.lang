@@ -31,8 +31,8 @@ gohd.61daa441.3d45df2d.title=GTNHよりもリアル
 gohd.61daa441.41178d2d.title=DutyじゃないけどHeavy
 gohd.61daa441.5c541bdc.title=いいから伐採だ!
 gohd.61daa441.96d3d03f.subtitle=§o私は失敗したことがない。たんに、うまくいかないだろう1万の方法を見つけただけだ。
-gohd.61daa441.b1749c8c.title=Brass製の道具
-gohd.61daa441.d2170bea.title=Bronze製の道具
+gohd.61daa441.b1749c8c.title=真鍮製の道具
+gohd.61daa441.d2170bea.title=青銅製の道具
 gohd.61daa441.e8c1dcb5.title=Garden of Grass
 gohd.61daa441.f4628ad4.subtitle=もし高校野球の女子マネージャーが薬剤師(Druggist)の『モーター(Mortar)』を読んだら
 gohd.61daa441.f4628ad4.title=もしドラ
@@ -58,7 +58,11 @@ gohd.b1439958.9b5f8cce.title=リボル-ブオン!
 ## Tier 1: gohd.f96afda2.
 gohd.f96afda2.title=Tier 1
 
-gohd.f96afda2.7587a025.title=Nickelsilver Tools
+gohd.f96afda2.2cd53716.title=§cSMELTING§rティアの精錬
+gohd.f96afda2.3463846e.title=HaC式液体管理設備
+gohd.f96afda2.7587a025.title=洋白製の道具
+gohd.f96afda2.7c01daa6.title=モーターファンのファンなんです!
+gohd.f96afda2.b89a16c5.title=ふいごの下を不意に見る
 
 # Tooltips
 gohd.tooltip.bedrock.name=§a採掘レベルが4以上のツルハシで右クリックすることで回収できる
