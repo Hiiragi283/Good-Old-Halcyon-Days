@@ -1,32 +1,7 @@
 {
-	"sampleModID:sampleBlockName:0": {
-		"airflow": "NORMAL (If you set TIGHT, it will be ignored.)",
-		"temperature": "HOT (If you set NORMAL, it will be ignored.)",
-		"humidity": "WET (If you set NORMAL, it will be ignored.)"
-	},
-	"dcs_climate:dcs_ore_heatingmetal:0": {
-		"airflow": "TIGHT",
-		"temperature": "SMELTING",
-		"humidity": "NORMAL"
-	},
-	"dcs_climate:dcs_ore_heatingmetal:3": {
-		"airflow": "TIGHT",
-		"temperature": "UHT",
-		"humidity": "NORMAL"
-	},
-	"dcs_climate:dcs_ore_heatingmetal:6": {
-		"airflow": "TIGHT",
-		"temperature": "UHT",
-		"humidity": "NORMAL"
-	},
-	"dcs_climate:dcs_ore_heatingmetal:9": {
-		"airflow": "TIGHT",
-		"temperature": "UHT",
-		"humidity": "NORMAL"
-	},
-	"dcs_climate:dcs_ore_heatingmetal:12": {
-		"airflow": "TIGHT",
-		"temperature": "UHT",
-		"humidity": "NORMAL"
-	}
+ "sampleModID:sampleBlockName:0": {
+  "airflow": "NORMAL (If you set TIGHT, it will be ignored.)",
+  "temperature": "HOT (If you set NORMAL, it will be ignored.)",
+  "humidity": "WET (If you set NORMAL, it will be ignored.)"
+ }
 }
