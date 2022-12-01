@@ -67,10 +67,10 @@ global ToolSaw as IIngredient = HiiragiUtils.toolInput(<microblockcbe:saw_stone>
 		"dcs_climate:main_yagen/dcs_gem_layer_4",
 		"dcs_climate:main/dcs_planks_0",
 		"enderio:ender_dust",
-		"extendedcrafting:diamond_nugget_from",
+		/*"extendedcrafting:diamond_nugget_from",
 		"extendedcrafting:diamond_nugget_to",
 		"extendedcrafting:emerald_nugget_from",
-		"extendedcrafting:emerald_nugget_to",
+		"extendedcrafting:emerald_nugget_to",*/
 		"mia:biomesoplenty/bamboo_thatching",
 		"mia:mia/packed_paper/packed_paper_swap_0",
 		"mia:mia/packed_paper/packed_paper_swap_1",
@@ -184,11 +184,20 @@ global ToolSaw as IIngredient = HiiragiUtils.toolInput(<microblockcbe:saw_stone>
 		//Biomes O Plenty
 		RecipeUtils.recipeTweak(false, <biomesoplenty:gem:6>*9, [[<biomesoplenty:gem_block:6>]]);
 		//GOHD Tweaks
-		RecipeUtils.recipeTweak(true, <gohd_tweaks:parts_assembly:0>, RecipePattern.init([" A ", "BCB", " D "]).map({A:ToolKnife, B:<ore:dustRedstone>, C:<ore:crystalPureCertusQuartz>, D:<ore:itemSilicon>}).ingredients);
-		RecipeUtils.recipeTweak(true, <gohd_tweaks:parts_assembly:1>, RecipePattern.init([" A ", "BCB", " D "]).map({A:ToolKnife, B:<ore:dustRedstone>, C:<ore:gemDiamond>, D:<ore:itemSilicon>}).ingredients);
-		RecipeUtils.recipeTweak(true, <gohd_tweaks:parts_assembly:2>, RecipePattern.init([" A ", "BCB", " D "]).map({A:ToolKnife, B:<ore:dustRedstone>, C:<ore:ingotGold>, D:<ore:itemSilicon>}).ingredients);
-		RecipeUtils.recipeTweak(true, <gohd_tweaks:parts_assembly:3>, RecipePattern.init([" A ", "BCB", " D "]).map({A:ToolKnife, B:<ore:dustRedstone>, C:<threng:material:5>, D:<ore:itemSilicon>}).ingredients);
-		RecipeUtils.recipeTweak(true, <gohd_tweaks:parts_assembly:4>, RecipePattern.init([" A ", "BCB", " D "]).map({A:ToolKnife, B:<ore:dustRedstone>, C:<threng:material:13>, D:<ore:itemSilicon>}).ingredients);
+		HiiragiUtils.addShaped(<gohd_tweaks:dustblock:0>, RecipeUtils.createFull3(<ore:dustPlatinum>), null, null);
+		HiiragiUtils.addShaped(<gohd_tweaks:dustblock:1>, RecipeUtils.createFull3(<ore:dustIridium>), null, null);
+		HiiragiUtils.addShaped(<gohd_tweaks:dustblock:2>, RecipeUtils.createFull3(<ore:dustMithril>), null, null);
+		HiiragiUtils.addShaped(<gohd_tweaks:dustblock:3>, RecipeUtils.createFull3(<ore:dustElectrum>), null, null);
+		HiiragiUtils.addShaped(<gohd_tweaks:dustblock:3>, RecipePattern.init(["AAA", "AAB", "BBB"]).map({A:<ore:dustGold>, B:<ore:dustSilver>}).ingredients, null, null);
+		HiiragiUtils.addShaped(<gohd_tweaks:dustblock:4>, RecipeUtils.createFull3(<ore:dustInvar>), null, null);
+		HiiragiUtils.addShaped(<gohd_tweaks:dustblock:4>, RecipePattern.init(["AAA", "AAA", "BBB"]).map({A:<ore:dustIron>, B:<ore:dustNickel>}).ingredients, null, null);
+		HiiragiUtils.addShaped(<gohd_tweaks:dustblock:5>, RecipeUtils.createFull3(<ore:dustConstantan>), null, null);
+		HiiragiUtils.addShaped(<gohd_tweaks:dustblock:5>, RecipePattern.init(["AAA", "AAB", "BBB"]).map({A:<ore:dustCopper>, B:<ore:dustNickel>}).ingredients, null, null);
+		HiiragiUtils.addShaped(<gohd_tweaks:parts_assembly:0>, RecipePattern.init([" A ", "BCB", " D "]).map({A:ToolKnife, B:<ore:dustRedstone>, C:<ore:crystalPureCertusQuartz>, D:<ore:itemSilicon>}).ingredients, null, null);
+		HiiragiUtils.addShaped(<gohd_tweaks:parts_assembly:1>, RecipePattern.init([" A ", "BCB", " D "]).map({A:ToolKnife, B:<ore:dustRedstone>, C:<ore:gemDiamond>, D:<ore:itemSilicon>}).ingredients, null, null);
+		HiiragiUtils.addShaped(<gohd_tweaks:parts_assembly:2>, RecipePattern.init([" A ", "BCB", " D "]).map({A:ToolKnife, B:<ore:dustRedstone>, C:<ore:ingotGold>, D:<ore:itemSilicon>}).ingredients, null, null);
+		HiiragiUtils.addShaped(<gohd_tweaks:parts_assembly:3>, RecipePattern.init([" A ", "BCB", " D "]).map({A:ToolKnife, B:<ore:dustRedstone>, C:<threng:material:5>, D:<ore:itemSilicon>}).ingredients, null, null);
+		HiiragiUtils.addShaped(<gohd_tweaks:parts_assembly:4>, RecipePattern.init([" A ", "BCB", " D "]).map({A:ToolKnife, B:<ore:dustRedstone>, C:<threng:material:13>, D:<ore:itemSilicon>}).ingredients, null, null);
 		//Heat And Climate
 		HiiragiUtils.recipeReplace(<ore:fuelCoke>, <dcs_climate:dcs_reagent:13>, <dcs_climate:dcs_cont_fuel>);
 		HiiragiUtils.recipeReplace(<ore:plankWood>, <ore:slabWood>, <dcs_climate:dcs_device_lowchest_wood>);
@@ -219,6 +228,7 @@ global ToolSaw as IIngredient = HiiragiUtils.toolInput(<microblockcbe:saw_stone>
 //Furnace Recipes
 	//Remove
 	val mapFurnaceRemove as IItemStack[] = [
+		<minecraft:coal:1>,
 		<thermalfoundation:material:130>,
 		<thermalfoundation:material:132>,
 		<thermalfoundation:material:133>,
@@ -236,9 +246,9 @@ global ToolSaw as IIngredient = HiiragiUtils.toolInput(<microblockcbe:saw_stone>
 	}
 	//Addition
 	val mapAddFurnace as IIngredient[IItemStack] = {
-		<tconstruct:casting:0>: <gohd_tweaks:grout_formed:0>,
-		<tconstruct:casting:1>: <gohd_tweaks:grout_formed:1>,
-		<tconstruct:channel>: <gohd_tweaks:grout_formed:2>,
+		//<tconstruct:casting:0>: <gohd_tweaks:grout_formed:0>,
+		//<tconstruct:casting:1>: <gohd_tweaks:grout_formed:1>,
+		//<tconstruct:channel>: <gohd_tweaks:grout_formed:2>,
 		<appliedenergistics2:material:23>: <gohd_tweaks:parts_assembly:0>,
 		<appliedenergistics2:material:24>: <gohd_tweaks:parts_assembly:1>,
 		<appliedenergistics2:material:22>: <gohd_tweaks:parts_assembly:2>,

@@ -150,6 +150,11 @@ print("Start loading zenScroll.zs ...");
 	ZenScroll.add(<twilightforest:terrorcotta_circle>, <twilightforest:terrorcotta_diagonal>);
 	ZenScroll.add(<twilightforest:tower_wood:*>);
 	ZenScroll.add(<twilightforest:underbrick:*>);
+	//Metamorphic Stones
+	for i in 0 to 7 {
+		ZenScroll.add(<botania:biomestonea>.definition.makeStack(i), <botania:biomestoneb>.definition.makeStack(i), <botania:biomestoneb>.definition.makeStack(i+8));
+	}
+
 
 //読み込みの完了をログに出力
 print("zenScroll.zs loaded!");
