@@ -1,8 +1,12 @@
 {
+	title: "{gohd.7c2b7e61.title}",
 	icon: "twilightforest:miniature_structure",
 	x: 0.0d,
 	y: 0.0d,
 	shape: "square",
+	dependencies: [
+		"955c06b4"
+	],
 	size: 2.0d,
 	tasks: [{
 		uid: "e626b39c",
@@ -11,12 +15,118 @@
 		dim: 7
 	}],
 	rewards: [{
-		uid: "c39ab8a2",
+		uid: "07473984",
 		type: "item",
 		item: {
-			id: "patchouli:guide_book",
+			id: "tconstruct:lumberaxe",
 			tag: {
-				"patchouli:book": "twilightforest:guide"
+				TinkerData: {
+					Materials: [
+						"titanium_alloy",
+						"knightmetal",
+						"knightmetal",
+						"stainless_steel"
+					],
+					Modifiers: [
+						"haste",
+						"creative",
+						"emerald",
+						"diamond",
+						"soulbound",
+						"harvestwidth",
+						"harvestheight",
+						"enderpickup"
+					],
+					UsedModifiers: 8
+				},
+				Stats: {
+					Durability: 11594,
+					HarvestLevel: 4,
+					Attack: 9.0f,
+					MiningSpeed: 23.553331f,
+					AttackSpeedMultiplier: 1.1f,
+					FreeModifiers: 0
+				},
+				StatsOriginal: {
+					Durability: 7396,
+					HarvestLevel: 4,
+					Attack: 8.0f,
+					MiningSpeed: 7.0f,
+					AttackSpeedMultiplier: 1.0f,
+					FreeModifiers: 3
+				},
+				Special: {
+					Categories: [
+						"tool",
+						"aoe",
+						"harvest"
+					]
+				},
+				Modifiers: [{
+					identifier: "lightweight",
+					color: -1648967,
+					level: 1
+				},
+				{
+					identifier: "twilit",
+					color: -3873106,
+					level: 1
+				},
+				{
+					identifier: "stalwart",
+					color: -3873106,
+					level: 1
+				},
+				{
+					identifier: "heavy",
+					color: -2235925,
+					level: 1
+				},
+				{
+					identifier: "dense",
+					color: -2235925,
+					level: 1
+				},
+				{
+					identifier: "haste",
+					color: 9502720,
+					level: 3,
+					current: 150,
+					max: 150,
+					extraInfo: "149 / 150"
+				},
+				{
+					identifier: "creative",
+					color: 0,
+					level: 5
+				},
+				{
+					identifier: "emerald",
+					color: 4322180
+				},
+				{
+					identifier: "diamond",
+					color: 9237730
+				},
+				{
+					identifier: "soulbound",
+					color: 16120748
+				},
+				{
+					identifier: "enderpickup",
+					color: -1892889167,
+					level: 1,
+					current: 1,
+					max: 1
+				}],
+				Traits: [
+					"lightweight",
+					"twilit",
+					"stalwart",
+					"heavy",
+					"dense",
+					"enderpickup"
+				]
 			}
 		}
 	}]

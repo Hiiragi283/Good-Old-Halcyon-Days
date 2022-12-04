@@ -1,9 +1,11 @@
 {
+	title: "{gohd.f96afda2.1b14ad54.title}",
 	icon: "dcs_climate:dcs_mechanical",
 	x: 13.0d,
 	y: -1.0d,
 	shape: "square",
 	dependencies: [
+		"605aef22",
 		"3e4e26c7",
 		"0e6e6dc9"
 	],

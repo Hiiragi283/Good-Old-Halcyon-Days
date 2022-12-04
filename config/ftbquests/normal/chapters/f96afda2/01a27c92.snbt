@@ -23,6 +23,7 @@
 	rewards: [{
 		uid: "2e36f927",
 		type: "item",
-		item: "dcs_climate:dcs_gem_white 1 2"
+		item: "dcs_climate:dcs_gem_white 1 2",
+		count: 2
 	}]
 }

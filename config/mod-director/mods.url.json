@@ -1,3 +1,10 @@
 {
-	"url": "https://github.com/Hiiragi283/GOHD-Tweaks/releases/download/v0.2.1/GOHD_Tweaks-v0.2.1.jar"
+	"url": "https://github.com/Hiiragi283/GOHD-Tweaks/releases/download/v0.3.0/GOHD_Tweaks-v0.3.0.jar",
+	"installationPolicy": {
+		"continueOnFailedDownload": false,
+		"optionalKey": "$",
+		"selectedByDefault": true,
+		"name": "Latest GOHD Tweaks",
+		"description": "Please remove older one before updating this pack!"
+	}
 }
