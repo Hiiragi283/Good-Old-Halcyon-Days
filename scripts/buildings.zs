@@ -48,6 +48,7 @@ print("Start loading buildings.zs ...");
 		<appliedenergistics2:quartz_slab>: <appliedenergistics2:quartz_block>,
 		<appliedenergistics2:chiseled_quartz_slab>: <appliedenergistics2:chiseled_quartz_block>,
 		<appliedenergistics2:quartz_pillar_slab>: <appliedenergistics2:quartz_pillar>,
+		<astralsorcery:blockmarbleslab>: <astralsorcery:blockmarble:1>,
 		<biomesoplenty:other_slab>: <biomesoplenty:mud_brick_block>,
 		<biomesoplenty:other_slab:1>: <biomesoplenty:white_sandstone>,
 		<biomesoplenty:wood_slab_0:0>: <biomesoplenty:planks_0:0>,
@@ -190,63 +191,6 @@ print("Start loading buildings.zs ...");
 		HiiragiUtils.addShapeless(full, [slab, slab], null, null);
 		}
 
-//重複したレシピの削除
-	/*val removeChiseled as IItemStack[IItemStack] = {
-		<minecraft:sandstone:1>: <minecraft:sandstone:0>,
-		<minecraft:stonebrick:3>: <minecraft:stonebrick:0>,
-		<minecraft:quartz_block:1>: <minecraft:quartz_block:0>,
-		<minecraft:red_sandstone:1>: <minecraft:red_sandstone:0>,
-		<appliedenergistics2:chiseled_quartz_block>: <appliedenergistics2:quartz_block>,
-		<biomesoplenty:white_sandstone:1>: <biomesoplenty:white_sandstone:0>,
-		<botania:livingrock:4>: <botania:livingrock:0>,
-		<botania:quartztypedark:1>: <botania:quartztypedark:0>,
-		<botania:quartztypemana:1>: <botania:quartztypemana:0>,
-		<botania:quartztypeblaze:1>: <botania:quartztypeblaze:0>,
-		<botania:quartztypelavender:1>: <botania:quartztypelavender:0>,
-		<botania:quartztypered:1>: <botania:quartztypered:0>,
-		<botania:quartztypeelf:1>: <botania:quartztypeelf:0>,
-		<botania:quartztypesunny:1>: <botania:quartztypesunny:0>,
-		<botania:biomestoneb:8>: <botania:biomestonea:0>,
-		<botania:biomestoneb:9>: <botania:biomestonea:1>,
-		<botania:biomestoneb:10>: <botania:biomestonea:2>,
-		<botania:biomestoneb:11>: <botania:biomestonea:3>,
-		<botania:biomestoneb:12>: <botania:biomestonea:4>,
-		<botania:biomestoneb:13>: <botania:biomestonea:5>,
-		<botania:biomestoneb:14>: <botania:biomestonea:6>,
-		<botania:biomestoneb:15>: <botania:biomestonea:7>,
-		//<railcraft:abyssal:3>: <railcraft:abyssal:0>,
-		<railcraft:badlands:3>: <railcraft:badlands:0>,
-		<railcraft:bleachedbone:3>: <railcraft:bleachedbone:0>,
-		<railcraft:bloodstained:3>: <railcraft:bloodstained:0>,
-		<railcraft:frostbound:3>: <railcraft:frostbound:0>,
-		<railcraft:infernal:3>: <railcraft:infernal:0>,
-		<railcraft:pearlized:3>: <railcraft:pearlized:0>,
-		//<railcraft:quarried:3>: <railcraft:quarried:0>,
-		<railcraft:sandy:3>: <railcraft:sandy:0>,
-	};
-	for chiseled, full in removeChiseled {
-		HiiragiUtils.addShaped(chiseled, [[full, HiiragiUtils.toolInput(<chisel:chisel_iron>, 1)|HiiragiUtils.toolInput(<chisel:chisel_diamond>, 1)|HiiragiUtils.toolInput(<chisel:chisel_hitech>, 1)]], null, null);
-		HiiragiUtils.addShapeless(full, [chiseled], null, null);
-	}*/
-
-	/*val removePillar as IItemStack[IItemStack] = {
-		<minecraft:quartz_block:2>: <minecraft:quartz_block:0>,
-		<minecraft:purpur_pillar>: <minecraft:purpur_block>,
-		<appliedenergistics2:quartz_pillar>: <appliedenergistics2:quartz_block>,
-		<botania:quartztypedark:2>: <botania:quartztypedark:0>,
-		<botania:quartztypemana:2>: <botania:quartztypemana:0>,
-		<botania:quartztypeblaze:2>: <botania:quartztypeblaze:0>,
-		<botania:quartztypelavender:2>: <botania:quartztypelavender:0>,
-		<botania:quartztypered:2>: <botania:quartztypered:0>,
-		<botania:quartztypeelf:2>: <botania:quartztypeelf:0>,
-		<botania:quartztypesunny:2>: <botania:quartztypesunny:0>,
-		<twilightforest:aurora_pillar>: <twilightforest:aurora_block>,
-	};
-	for pillar, full in removePillar {
-		HiiragiUtils.addShaped(pillar, [[HiiragiUtils.toolInput(<chisel:chisel_iron>, 1)|HiiragiUtils.toolInput(<chisel:chisel_diamond>, 1)|HiiragiUtils.toolInput(<chisel:chisel_hitech>, 1)], [full]], null, null);
-		HiiragiUtils.addShapeless(full, [pillar], null, null);
-	}*/
-
 //Stairのレシピを抜本的に改変
 	val mapStair as IItemStack[IItemStack] = {
 		//<minecraft:stone_slab:0>: <minecraft:stone:0>,
@@ -272,6 +216,7 @@ print("Start loading buildings.zs ...");
 		<appliedenergistics2:quartz_stairs>: <appliedenergistics2:quartz_block>,
 		<appliedenergistics2:chiseled_quartz_stairs>: <appliedenergistics2:chiseled_quartz_block>,
 		<appliedenergistics2:quartz_pillar_stairs>: <appliedenergistics2:quartz_pillar>,
+		<astralsorcery:blockmarblestairs>: <astralsorcery:blockmarble:1>,
 		<biomesoplenty:mud_brick_stairs>: <biomesoplenty:mud_brick_block>,
 		<biomesoplenty:white_sandstone_stairs>: <biomesoplenty:white_sandstone>,
 		<biomesoplenty:sacred_oak_stairs>: <biomesoplenty:planks_0:0>,

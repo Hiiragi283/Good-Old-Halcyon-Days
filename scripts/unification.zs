@@ -33,10 +33,26 @@ global ToolKnife as IIngredient = HiiragiUtils.toolInput(<appliedenergistics2:ce
 global ToolSaw as IIngredient = HiiragiUtils.toolInput(<microblockcbe:saw_stone>, 1)|HiiragiUtils.toolInput(<microblockcbe:saw_iron>, 1)|HiiragiUtils.toolInput(<microblockcbe:saw_diamond>, 1);
 
 //Crafting Recipes
+	//アイテムに紐づいたすべてのレシピを削除
+	val mapRemoveCrafting as IItemStack[] = [
+		<astralsorcery:blockmarble:*>,
+	];
+	for i in mapRemoveCrafting {
+		recipes.remove(i);
+	}
 	//レシピ名による削除
 	val mapRemoveByName as string[] = [
 		"appliedenergistics2:decorative/certus_quartz_pillar",
 		"appliedenergistics2:decorative/chiseled_quartz_block",
+		"astralsorcery:shaped/black_marble_arch",
+		"astralsorcery:shaped/black_marble_bricks",
+		"astralsorcery:shaped/black_marble_chiseled",
+		"astralsorcery:shaped/black_marble_engraved",
+		"astralsorcery:shaped/black_marble_pillar",
+		"astralsorcery:shaped/black_marble_runed",
+		"astralsorcery:shaped/infused_wood_arch",
+		"astralsorcery:shaped/infused_wood_column",
+		"astralsorcery:shaped/infused_wood_engraved",
 		"biomesoplenty:chiseled_white_sandstone",
 		"biomesoplenty:sapphire",
 		"biomesoplenty:smooth_white_sandstone",
@@ -67,10 +83,6 @@ global ToolSaw as IIngredient = HiiragiUtils.toolInput(<microblockcbe:saw_stone>
 		"dcs_climate:main_yagen/dcs_gem_layer_4",
 		"dcs_climate:main/dcs_planks_0",
 		"enderio:ender_dust",
-		/*"extendedcrafting:diamond_nugget_from",
-		"extendedcrafting:diamond_nugget_to",
-		"extendedcrafting:emerald_nugget_from",
-		"extendedcrafting:emerald_nugget_to",*/
 		"mia:biomesoplenty/bamboo_thatching",
 		"mia:mia/packed_paper/packed_paper_swap_0",
 		"mia:mia/packed_paper/packed_paper_swap_1",
@@ -211,6 +223,7 @@ global ToolSaw as IIngredient = HiiragiUtils.toolInput(<microblockcbe:saw_stone>
 		RecipeUtils.recipeTweak(true, <minecraft:furnace>, RecipeUtils.createSurround(<dcs_climate:dcs_tinder:1>, <ore:cobblestone>));
 		//Thermal Foundation
 		HiiragiUtils.recipeReplace(<ore:fuelCoke>, <thermalfoundation:material:802>, <thermalfoundation:storage_resource:1>);
+		HiiragiUtils.recipeReplace(<thermalfoundation:material:864>, <ore:gemSlag>|<ore:dustSlag>, <thermalfoundation:fertilizer:0>);
 		for i in 0 to 16 {
 			HiiragiUtils.recipeReplace(<minecraft:dye>.definition.makeStack(i), HiiragiUtils.listDye[i], <thermalfoundation:rockwool>.definition.makeStack(i));
 		}

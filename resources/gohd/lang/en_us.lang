@@ -23,8 +23,8 @@ gohd.955c06b4.7717ddde.text.1=this pack is based on §oHeatAndClimate§r, so you
 gohd.955c06b4.7717ddde.text.2=If you don't, I recommend you to read the wiki from link shown by right-clicking Icon!
 gohd.955c06b4.7717ddde.title=Living with climates
 
-## Tier 0: gohd.61daa441.
-gohd.61daa441.title=Tier 0
+## Departure: gohd.61daa441.
+gohd.61daa441.title=Departure
 
 gohd.61daa441.113612c5.title=Tinderburn
 gohd.61daa441.32ad9066.subtitle=It's specification.
@@ -39,6 +39,29 @@ gohd.61daa441.e8c1dcb5.title=Garden of Grass
 gohd.61daa441.f4628ad4.subtitle=What If the Female Manager of a High School Baseball Team Read Druggist's "Mortar"?
 gohd.61daa441.f4628ad4.title=Moshidora
 
+## Carpenter: gohd.b1439958.
+gohd.b1439958.title=Carpenter
+
+gohd.b1439958.2a496235.title=Mighty Saw
+gohd.b1439958.422f8eb8.title=Biblio Glasses
+gohd.b1439958.9b5f8cce.text.1=To change models of blocks or items, you need to hold it and press §lAlt§r then scroll.
+gohd.b1439958.9b5f8cce.title=Revolve-On!
+
+## Magia Silva: gohd.7c2b7e61.
+gohd.7c2b7e61.title=Magia Silvas
+
+gohd.7c2b7e61.b0fadcfd.text.1=Right-click Roots (Block) with Ball of Moss to convert it into Liveroots (Block), and harvest to get Liveroot.
+
+## Metallurgy: gohd.f96afda2.
+gohd.f96afda2.title=Metallurgy
+
+gohd.f96afda2.1b14ad54.title=Tier 3 Parts
+gohd.f96afda2.28f84e98.title=Tier 2 Parts
+gohd.f96afda2.2cd53716.title=§cSMELTING§r tier smelting
+gohd.f96afda2.7587a025.title=Nickelsilver Tools
+gohd.f96afda2.7c01daa6.title=Have a fun with a fan!
+gohd.f96afda2.b89a16c5.title=Below the Bellow
+
 ## TConstruct: gohd.f6f791f1.
 gohd.f6f791f1.title=Tconstruct
 
@@ -48,22 +71,6 @@ gohd.f6f791f1.55bfd526.subtitle=§oChange! Seared!
 gohd.f6f791f1.55bfd526.title=Cast Off!
 gohd.f6f791f1.d5403a57.title=Somehow Good Designed Tables
 gohd.f6f791f1.fd5707d9.title=My mouth is gravelly-gravelly lol
-
-## Carpenter: gohd.b1439958.
-gohd.b1439958.title=Carpenter
-
-gohd.b1439958.2a496235.title=Mighty Saw
-gohd.b1439958.422f8eb8.title=Biblio Glasses
-gohd.b1439958.9b5f8cce.text.1=To change models of blocks or items, you need to hold it and press §lAlt§r then scroll.
-gohd.b1439958.9b5f8cce.title=Revolve-On!
-
-## Tier 1: gohd.f96afda2.
-gohd.f96afda2.title=Tier 1
-
-gohd.f96afda2.2cd53716.title=§cSMELTING§r tier smelting
-gohd.f96afda2.7587a025.title=Nickelsilver Tools
-gohd.f96afda2.7c01daa6.title=Have a fun with a fan!
-gohd.f96afda2.b89a16c5.title=Below the Bellow
 
 # Tooltips
 gohd.tooltip.bedrock.name=§aHarvested by right-clicking on a pickaxe with Mining level 4 or higher

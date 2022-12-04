@@ -54,6 +54,12 @@ print("Start loading jei.zs ...");
 	//処理
 	val mapRemove as bool[IItemStack] = {
 		<appliedenergistics2:material:40>: true,
+		<enderio:block_simple_alloy_smelter>: false,
+		<enderio:block_simple_crafter>: false,
+		<enderio:block_simple_furnace>: false,
+		<enderio:block_simple_sag_mill>: false,
+		<enderio:block_simple_stirling_generator>: false,
+		<enderio:block_simple_wired_charger>: false,
 		<dcs_climate:dcs_bed_futon>: false,
 		<dcs_climate:dcs_bed_hammock>: false,
 		<dcs_climate:dcs_bed_rattan>: false,
@@ -104,7 +110,7 @@ print("Start loading jei.zs ...");
 			//Clay Castの無効化
 			val castClay as IItemStack = <tconstruct:clay_cast>.withTag({PartType: "tconstruct" ~ i});
 			removeJEI(castClay, false);
-			mods.tconstruct.Casting.removeTableRecipe(castClay);
+			//mods.tconstruct.Casting.removeTableRecipe(castClay);
 		}
 		//不要なStencil TableをJEIから削除
 		val removeStencil as short[][string] = {
@@ -163,7 +169,6 @@ print("Start loading jei.zs ...");
 			}
 		}
 
-
 //JEIへ新規登録
 	//処理
 	val mapAdd as IItemStack[] = [
@@ -192,6 +197,20 @@ print("Start loading jei.zs ...");
 	for i, j in mapDesc {
 		addDesc(i, j);
 	}
+
+//カテゴリーの削除
+val mapCategory as string[] = [
+	"thermaldynamics.covers",
+	"jeresources.plant",
+	"jeresources.worldgen",
+	"threng.agg",
+	"threng.purify",
+	"threng.etch",
+	"threng.energize",
+];
+for i in mapCategory {
+	//mods.jei.JEI.hideCategory(i);
+}
 
 //読み込みの完了をログに出力
 print("jei.zs loaded!");

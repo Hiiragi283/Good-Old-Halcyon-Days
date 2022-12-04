@@ -24,6 +24,10 @@ import scripts.HiiragiUtils;
 print("Start loading oreDict.zs ...");
 
 //鉱石辞書の編集
+HiiragiUtils.tweakOreDict(<astraladditions:block_starmetal>, [], [<ore:blockAstralStarmetal>]);
+HiiragiUtils.tweakOreDict(<astralsorcery:blockcustomore>, [], [<ore:oreRockCrystal>]);
+HiiragiUtils.tweakOreDict(<thermalfoundation:material:864>, [], [<ore:gemSlag>]);
+
 for i in loadedMods["artifacts"].items {
 	HiiragiUtils.tweakOreDict(i, [], [<ore:itemArtifact>]);
 }

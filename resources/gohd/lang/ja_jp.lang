@@ -21,8 +21,8 @@ gohd.955c06b4.7717ddde.text.1=このpackは§oHeatAndClimate§rをベースに�
 gohd.955c06b4.7717ddde.text.2=HaCを初めて遊ぶ方はIconをクリックして表示されるリンクからwikiを読むことをおすすめします!
 gohd.955c06b4.7717ddde.title=気候と共に生きる
 
-## Tier 0: gohd.61daa441.
-gohd.61daa441.title=Tier 0
+## Departure: gohd.61daa441.
+gohd.61daa441.title=旅立ち
 
 gohd.61daa441.113612c5.title=Tinderburn
 gohd.61daa441.32ad9066.subtitle=仕様です。
@@ -37,16 +37,6 @@ gohd.61daa441.e8c1dcb5.title=Garden of Grass
 gohd.61daa441.f4628ad4.subtitle=もし高校野球の女子マネージャーが薬剤師(Druggist)の『モーター(Mortar)』を読んだら
 gohd.61daa441.f4628ad4.title=もしドラ
 
-## TConstruct: gohd.f6f791f1.
-gohd.f6f791f1.title=Tconstruct
-
-gohd.f6f791f1.144c40a4.subtitle=§oBetter Than Wolves
-gohd.f6f791f1.144c40a4.title=鋳掛け屋さんの朝は早い
-gohd.f6f791f1.55bfd526.subtitle=§oチェンジ! Seared!
-gohd.f6f791f1.55bfd526.title=キャストオフ!
-gohd.f6f791f1.d5403a57.title=なんかいい感じのテーブル
-gohd.f6f791f1.fd5707d9.title=お口の中がじゃりじゃりする～wwwwwwwww
-
 ## Carpenter: gohd.b1439958.
 gohd.b1439958.title=大工
 
@@ -55,14 +45,31 @@ gohd.b1439958.422f8eb8.title=ビブリア古書堂の事件手帖
 gohd.b1439958.9b5f8cce.text.1=ブロックやアイテムのモデルを変更するには, それを手にもって§lAlt§rを押しスクロールする必要があります。
 gohd.b1439958.9b5f8cce.title=リボル-ブオン!
 
-## Tier 1: gohd.f96afda2.
-gohd.f96afda2.title=Tier 1
+## Magia Silva: gohd.7c2b7e61.
+gohd.7c2b7e61.title=魔幻森林
 
+gohd.7c2b7e61.b0fadcfd.text.1=根ブロックを苔玉で右クリックすると根ブロック(苔)に変化します。そしてこれを伐採すると生きている根が手に入ります。
+
+## Metallurgy: gohd.f96afda2.
+gohd.f96afda2.title=冶金
+
+gohd.f96afda2.1b14ad54.title=Tier 3 マシンパーツ
+gohd.f96afda2.28f84e98.title=Tier 2 マシンパーツ
 gohd.f96afda2.2cd53716.title=§cSMELTING§rティアの精錬
 gohd.f96afda2.3463846e.title=HaC式液体管理設備
 gohd.f96afda2.7587a025.title=洋白製の道具
 gohd.f96afda2.7c01daa6.title=モーターファンのファンなんです!
 gohd.f96afda2.b89a16c5.title=ふいごの下を不意に見る
+
+## TConstruct: gohd.f6f791f1.
+gohd.f6f791f1.title=鋳造
+
+gohd.f6f791f1.144c40a4.subtitle=§oBetter Than Wolves
+gohd.f6f791f1.144c40a4.title=鋳掛け屋さんの朝は早い
+gohd.f6f791f1.55bfd526.subtitle=§oチェンジ! Seared!
+gohd.f6f791f1.55bfd526.title=キャストオフ!
+gohd.f6f791f1.d5403a57.title=なんかいい感じのテーブル
+gohd.f6f791f1.fd5707d9.title=お口の中がじゃりじゃりする～wwwwwwwww
 
 # Tooltips
 gohd.tooltip.bedrock.name=§a採掘レベルが4以上のツルハシで右クリックすることで回収できる

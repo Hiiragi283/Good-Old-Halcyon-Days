@@ -27,6 +27,8 @@ print("Start loading zenScroll.zs ...");
 
 //ScrollのGroupの登録
 	ZenScroll.add(<appliedenergistics2:quartz_block>, <appliedenergistics2:quartz_pillar>, <appliedenergistics2:chiseled_quartz_block>);
+	ZenScroll.add(<astralsorcery:blockblackmarble:*>);
+	ZenScroll.add(<astralsorcery:blockinfusedwood:1>, <astralsorcery:blockinfusedwood:2>, <astralsorcery:blockinfusedwood:3>, <astralsorcery:blockinfusedwood:4>);
 	ZenScroll.add(<biomesoplenty:white_sandstone:*>);
 	ZenScroll.add(<botania:custombrick:*>);
 	ZenScroll.add(<botania:dreamwood:1>, <botania:dreamwood:2>, <botania:dreamwood:3>, <botania:dreamwood:4>);
@@ -97,6 +99,7 @@ print("Start loading zenScroll.zs ...");
 	ZenScroll.add(<ore:gearStone>);
 	ZenScroll.add(<ore:gearWood>);
 	ZenScroll.add(<ore:gemAmethyst>);
+	ZenScroll.add(<ore:gemAquamarine>);
 	ZenScroll.add(<ore:gemMalachite>);
 	ZenScroll.add(<ore:gemPeridot>);
 	ZenScroll.add(<ore:gemRuby>);
@@ -129,6 +132,7 @@ print("Start loading zenScroll.zs ...");
 	ZenScroll.add(<ore:plateSilver>);
 	ZenScroll.add(<ore:plateSteel>);
 	ZenScroll.add(<ore:plateTin>);
+	ZenScroll.add(<ore:stoneMarble>, <dcs_climate:dcs_ore_gemblock:6>, <dcs_climate:dcs_build_bricks:1>);
 	ZenScroll.add(<railcraft:badlands:*>);
 	ZenScroll.add(<railcraft:bleachedbone:*>);
 	ZenScroll.add(<railcraft:bloodstained:*>);
