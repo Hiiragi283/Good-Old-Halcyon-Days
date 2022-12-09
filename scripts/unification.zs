@@ -59,6 +59,7 @@ global ToolSaw as IIngredient = HiiragiUtils.toolInput(<microblockcbe:saw_stone>
 		"botania:custombrick_0_alt",
 		"botania:dreamwood_3",
 		"botania:dreamwood_4",
+		"botania:fertilizer_dye",
 		"botania:livingrock_1",
 		"botania:livingrock_3",
 		"botania:livingrock_4",
@@ -83,6 +84,7 @@ global ToolSaw as IIngredient = HiiragiUtils.toolInput(<microblockcbe:saw_stone>
 		"dcs_climate:main_yagen/dcs_gem_layer_4",
 		"dcs_climate:main/dcs_planks_0",
 		"enderio:ender_dust",
+		"inspirations:building/mulch/plain",
 		"mia:biomesoplenty/bamboo_thatching",
 		"mia:mia/packed_paper/packed_paper_swap_0",
 		"mia:mia/packed_paper/packed_paper_swap_1",
@@ -92,15 +94,22 @@ global ToolSaw as IIngredient = HiiragiUtils.toolInput(<microblockcbe:saw_stone>
 		"minecraft:chiseled_red_sandstone",
 		"minecraft:chiseled_sandstone",
 		"minecraft:chiseled_stonebrick",
+		"minecraft:furnace",
 		"minecraft:granite_polished",
 		"minecraft:pillar_quartz_block",
 		"minecraft:purpur_pillar",
+		"minecraft:slime",
 		"minecraft:smooth_red_sandstone",
 		"minecraft:smooth_sandstone",
 		"railcraft:cone_oven_red$2",
+		"tconstruct:common/slime/pink/congealed",
+		"tconstruct:common/slime/pink/slimeblock",
+		"tconstruct:gadgets/slimeboots/fallback",
+		"tconstruct:gadgets/slimesling/fallback",
 		"tconstruct:smeltery/casting_basin",
 		"tconstruct:smeltery/casting_table",
 		"tconstruct:smeltery/channel",
+		"tconstruct:smeltery/faucet",
 		"tconstruct:smeltery/smeltery_controller",
 		"thermalfoundation:material_100",
 		"thermalfoundation:material_99",
@@ -194,49 +203,34 @@ global ToolSaw as IIngredient = HiiragiUtils.toolInput(<microblockcbe:saw_stone>
 		//Artifacts
 		HiiragiUtils.addShapeless(ChestMimic, [<ore:itemArtifact>, <minecraft:trapped_chest>, <gohd_tweaks:ragi_ticket>], null, null);
 		//Biomes O Plenty
-		RecipeUtils.recipeTweak(false, <biomesoplenty:gem:6>*9, [[<biomesoplenty:gem_block:6>]]);
-		//GOHD Tweaks
-		HiiragiUtils.addShaped(<gohd_tweaks:dustblock:0>, RecipeUtils.createFull3(<ore:dustPlatinum>), null, null);
-		HiiragiUtils.addShaped(<gohd_tweaks:dustblock:1>, RecipeUtils.createFull3(<ore:dustIridium>), null, null);
-		HiiragiUtils.addShaped(<gohd_tweaks:dustblock:2>, RecipeUtils.createFull3(<ore:dustMithril>), null, null);
-		HiiragiUtils.addShaped(<gohd_tweaks:dustblock:3>, RecipeUtils.createFull3(<ore:dustElectrum>), null, null);
-		HiiragiUtils.addShaped(<gohd_tweaks:dustblock:3>, RecipePattern.init(["AAA", "AAB", "BBB"]).map({A:<ore:dustGold>, B:<ore:dustSilver>}).ingredients, null, null);
-		HiiragiUtils.addShaped(<gohd_tweaks:dustblock:4>, RecipeUtils.createFull3(<ore:dustInvar>), null, null);
-		HiiragiUtils.addShaped(<gohd_tweaks:dustblock:4>, RecipePattern.init(["AAA", "AAA", "BBB"]).map({A:<ore:dustIron>, B:<ore:dustNickel>}).ingredients, null, null);
-		HiiragiUtils.addShaped(<gohd_tweaks:dustblock:5>, RecipeUtils.createFull3(<ore:dustConstantan>), null, null);
-		HiiragiUtils.addShaped(<gohd_tweaks:dustblock:5>, RecipePattern.init(["AAA", "AAB", "BBB"]).map({A:<ore:dustCopper>, B:<ore:dustNickel>}).ingredients, null, null);
-		HiiragiUtils.addShaped(<gohd_tweaks:parts_assembly:0>, RecipePattern.init([" A ", "BCB", " D "]).map({A:ToolKnife, B:<ore:dustRedstone>, C:<ore:crystalPureCertusQuartz>, D:<ore:itemSilicon>}).ingredients, null, null);
-		HiiragiUtils.addShaped(<gohd_tweaks:parts_assembly:1>, RecipePattern.init([" A ", "BCB", " D "]).map({A:ToolKnife, B:<ore:dustRedstone>, C:<ore:gemDiamond>, D:<ore:itemSilicon>}).ingredients, null, null);
-		HiiragiUtils.addShaped(<gohd_tweaks:parts_assembly:2>, RecipePattern.init([" A ", "BCB", " D "]).map({A:ToolKnife, B:<ore:dustRedstone>, C:<ore:ingotGold>, D:<ore:itemSilicon>}).ingredients, null, null);
-		HiiragiUtils.addShaped(<gohd_tweaks:parts_assembly:3>, RecipePattern.init([" A ", "BCB", " D "]).map({A:ToolKnife, B:<ore:dustRedstone>, C:<threng:material:5>, D:<ore:itemSilicon>}).ingredients, null, null);
-		HiiragiUtils.addShaped(<gohd_tweaks:parts_assembly:4>, RecipePattern.init([" A ", "BCB", " D "]).map({A:ToolKnife, B:<ore:dustRedstone>, C:<threng:material:13>, D:<ore:itemSilicon>}).ingredients, null, null);
+		//Botania
+		HiiragiUtils.addShapeless(<botania:fertilizer>, [<minecraft:dye:15>, <minecraft:dye:15>, <minecraft:dye:15>, <twilightforest:liveroot>], null, null);
 		//Heat And Climate
 		HiiragiUtils.recipeReplace(<ore:fuelCoke>, <dcs_climate:dcs_reagent:13>, <dcs_climate:dcs_cont_fuel>);
 		HiiragiUtils.recipeReplace(<ore:plankWood>, <ore:slabWood>, <dcs_climate:dcs_device_lowchest_wood>);
-		RecipeUtils.recipeTweak(false, <dcs_climate:dcs_gem_blue:1>*4, [[<dcs_climate:dcs_ore_gemblock:4>]]);
 		//Inspirations
-		RecipeUtils.recipeTweak(true, <inspirations:mulch:0>*2, RecipeUtils.createCross(null, <ore:stickWood>));
+		HiiragiUtils.addShaped(<inspirations:mulch:0>*2, RecipeUtils.createCross(null, <ore:stickWood>), null, null);
 		//Minecraft
+		//Thermal Foundation
+		HiiragiUtils.addShaped(<minecraft:furnace>, RecipeUtils.createSurround(<dcs_climate:dcs_tinder:1>, <ore:cobblestone>), null, null);
+		HiiragiUtils.addShaped(<minecraft:slime>, RecipeUtils.createFull3(<minecraft:slime_ball>), null, null);
+		HiiragiUtils.recipeReplace(<ore:fuelCoke>, <thermalfoundation:material:802>, <thermalfoundation:storage_resource:1>);
 		HiiragiUtils.recipeReplace(<ore:plankWood>, <minecraft:planks>, <minecraft:trapdoor>);
 		HiiragiUtils.recipeReplace(<ore:plankWood>, <minecraft:planks>, <minecraft:wooden_pressure_plate>);
-		RecipeUtils.recipeTweak(true, <minecraft:slime>, RecipeUtils.createFull3(<minecraft:slime_ball>));
-		RecipeUtils.recipeTweak(true, <minecraft:furnace>, RecipeUtils.createSurround(<dcs_climate:dcs_tinder:1>, <ore:cobblestone>));
-		//Thermal Foundation
-		HiiragiUtils.recipeReplace(<ore:fuelCoke>, <thermalfoundation:material:802>, <thermalfoundation:storage_resource:1>);
 		HiiragiUtils.recipeReplace(<thermalfoundation:material:864>, <ore:gemSlag>|<ore:dustSlag>, <thermalfoundation:fertilizer:0>);
 		for i in 0 to 16 {
 			HiiragiUtils.recipeReplace(<minecraft:dye>.definition.makeStack(i), HiiragiUtils.listDye[i], <thermalfoundation:rockwool>.definition.makeStack(i));
 		}
 		//Tinker's Construct
-		RecipeUtils.recipeTweak(true, <tconstruct:slime_boots:5>, RecipePattern.init(["A A", "B B"]).map({A:<tconstruct:edible:5>, B:<tconstruct:slime_congealed:5>}).ingredients);
-		RecipeUtils.recipeTweak(true, <tconstruct:slime_congealed:5>, RecipePattern.init(["AA", "AA"]).map({A:<tconstruct:edible:5>}).ingredients);
-		RecipeUtils.recipeTweak(true, <tconstruct:slime:5>, RecipePattern.init(["AAA", "AAA", "AAA"]).map({A:<tconstruct:edible:5>}).ingredients);
-		RecipeUtils.recipeTweak(true, <tconstruct:slimesling:5>, RecipePattern.init(["ABA", "C C", " C "]).map({A:<minecraft:string>, B:<tconstruct:slime_congealed:5>, C:<tconstruct:edible:5>}).ingredients);
-		RecipeUtils.recipeTweak(true, TablePart, RecipePattern.init(["A", "B"]).map({A:<tconstruct:pattern>, B:<twilightforest:twilight_log>}).ingredients);
-		RecipeUtils.recipeTweak(true, TableStencil, RecipePattern.init(["A", "B"]).map({A:<tconstruct:pattern>, B:<twilightforest:twilight_oak_planks>}).ingredients);
-		RecipeUtils.recipeTweak(true, ToolForge, RecipePattern.init(["AAA", "BCB", "B B"]).map({A:<ore:blockSeared>, B:<dcs_climate:dcs_ore_heatingmetal:2>, C:<tconstruct:tooltables:3>}).ingredients);
-		RecipeUtils.recipeTweak(false, <tconstruct:faucet>*2, [[<tconstruct:channel>, ToolSaw]]);
+		HiiragiUtils.addShaped(<tconstruct:slime_boots:5>, RecipePattern.init(["A A", "B B"]).map({A:<tconstruct:edible:5>, B:<tconstruct:slime_congealed:5>}).ingredients, null, null);
+		HiiragiUtils.addShaped(<tconstruct:slime_congealed:5>, RecipeUtils.createFull2(<tconstruct:edible:5>), null, null);
+		HiiragiUtils.addShaped(<tconstruct:slime:5>, RecipeUtils.createFull3(<tconstruct:edible:5>), null, null);
+		HiiragiUtils.addShaped(<tconstruct:slimesling:5>, RecipePattern.init(["ABA", "C C", " C "]).map({A:<minecraft:string>, B:<tconstruct:slime_congealed:5>, C:<tconstruct:edible:5>}).ingredients, null, null);
 		HiiragiUtils.addShaped(<tconstruct:smeltery_controller>, RecipePattern.init(["ABA", "ACA", "ADA"]).map({A:<tconstruct:materials:0>, B:<tconstruct:seared_furnace_controller>, C:<tconstruct:tinker_tank_controller>, D:<dcs_climate:dcs_device_chamber>}).ingredients, null, null);
+		HiiragiUtils.addShaped(TablePart, RecipePattern.init(["A", "B"]).map({A:<tconstruct:pattern>, B:<twilightforest:twilight_log>}).ingredients, null, null);
+		HiiragiUtils.addShaped(TableStencil, RecipePattern.init(["A", "B"]).map({A:<tconstruct:pattern>, B:<twilightforest:twilight_oak_planks>}).ingredients, null, null);
+		HiiragiUtils.addShaped(ToolForge, RecipePattern.init(["AAA", "BCB", "B B"]).map({A:<ore:blockSeared>, B:<dcs_climate:dcs_ore_heatingmetal:2>, C:<tconstruct:tooltables:3>}).ingredients, null, null);
+		HiiragiUtils.addShapeless(<tconstruct:faucet>*2, [<tconstruct:channel>, ToolSaw], null, null);
 
 //Furnace Recipes
 	//Remove
