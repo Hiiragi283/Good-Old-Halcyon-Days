@@ -1,0 +1,32 @@
+{
+	title: "{itemGroup.botania}",
+	x: 4.0d,
+	y: 1.0d,
+	shape: "square",
+	dependencies: [
+		"6147e33b"
+	],
+	tasks: [{
+		uid: "382cd6f0",
+		type: "item",
+		items: [{
+			id: "botania:lexicon",
+			tag: {}
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "a6da2929",
+		type: "item",
+		item: {
+			id: "botania:twigwand",
+			tag: {
+				color1: 14,
+				color2: 0,
+				boundTileX: 0,
+				boundTileY: -1,
+				boundTileZ: 0
+			}
+		}
+	}]
+}

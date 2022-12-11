@@ -1,0 +1,29 @@
+{
+	x: 0.0d,
+	y: 2.0d,
+	dependencies: [
+		"1ff125f8"
+	],
+	tasks: [{
+		uid: "4c9fe607",
+		type: "kill",
+		icon: "minecraft:chest",
+		entity: "artifacts:mimic",
+		value: 1L
+	}],
+	rewards: [{
+		uid: "9a4c2685",
+		type: "item",
+		item: {
+			id: "minecraft:chest",
+			tag: {
+				BlockEntityTag: {
+					LootTable: "artifacts:mimic_underground"
+				},
+				display: {
+					LocName: "gohd.custom.safety_mimic.name"
+				}
+			}
+		}
+	}]
+}

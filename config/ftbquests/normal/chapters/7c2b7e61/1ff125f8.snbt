@@ -1,0 +1,26 @@
+{
+	title: "{gohd.7c2b7e61.title}",
+	icon: "twilightforest:miniature_structure",
+	x: 0.0d,
+	y: 0.0d,
+	shape: "square",
+	dependencies: [
+		"955c06b4"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "ca197659",
+		type: "dimension",
+		dim: 7
+	}],
+	rewards: [{
+		uid: "56bcd07c",
+		type: "item",
+		item: {
+			id: "patchouli:guide_book",
+			tag: {
+				"patchouli:book": "twilightforest:guide"
+			}
+		}
+	}]
+}

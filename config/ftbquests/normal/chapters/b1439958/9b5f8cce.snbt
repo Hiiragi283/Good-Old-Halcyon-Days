@@ -1,16 +1,14 @@
 {
 	title: "{gohd.b1439958.9b5f8cce.title}",
 	icon: "dcs_climate:dcs_desktop_accessories",
-	x: 2.0d,
-	y: 0.0d,
-	shape: "square",
+	x: 0.0d,
+	y: -2.0d,
 	text: [
 		"{gohd.b1439958.9b5f8cce.text.1}"
 	],
 	dependencies: [
-		"955c06b4"
+		"72296a0f"
 	],
-	size: 2.0d,
 	tasks: [{
 		uid: "5ae14434",
 		type: "checkmark"

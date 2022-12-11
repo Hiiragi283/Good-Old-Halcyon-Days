@@ -1,6 +1,6 @@
 {
 	x: 2.0d,
-	y: -2.0d,
+	y: 4.0d,
 	dependencies: [
 		"c887d205"
 	],
@@ -12,9 +12,8 @@
 		}]
 	}],
 	rewards: [{
-		uid: "4622d821",
+		uid: "88cec354",
 		type: "item",
-		item: "storagedrawers:compdrawers",
-		count: 3
+		item: "framedcompactdrawers:framed_drawer_controller"
 	}]
 }

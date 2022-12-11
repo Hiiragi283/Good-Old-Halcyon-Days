@@ -1,0 +1,19 @@
+{
+	x: 0.5d,
+	y: 3.5d,
+	dependencies: [
+		"c887d205"
+	],
+	tasks: [{
+		uid: "c4fd373b",
+		type: "item",
+		items: [{
+			item: "storagedrawers:compdrawers"
+		}]
+	}],
+	rewards: [{
+		uid: "ab638ae7",
+		type: "item",
+		item: "framedcompactdrawers:framed_compact_drawer"
+	}]
+}

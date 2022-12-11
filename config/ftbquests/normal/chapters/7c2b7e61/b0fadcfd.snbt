@@ -1,12 +1,12 @@
 {
 	icon: "botania:fertilizer",
-	x: 2.0d,
-	y: 0.0d,
+	x: 6.0d,
+	y: 1.0d,
 	text: [
 		"{gohd.7c2b7e61.b0fadcfd.text.1}"
 	],
 	dependencies: [
-		"1ff125f8"
+		"57e412b1"
 	],
 	tasks: [{
 		uid: "e80ecc6b",

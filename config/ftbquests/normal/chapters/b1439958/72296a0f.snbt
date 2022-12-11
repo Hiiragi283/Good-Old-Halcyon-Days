@@ -1,0 +1,15 @@
+{
+	title: "{gohd.b1439958.title}",
+	icon: "minecraft:brick_block",
+	x: 0.0d,
+	y: 0.0d,
+	shape: "square",
+	dependencies: [
+		"955c06b4"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "8cf4df6f",
+		type: "checkmark"
+	}]
+}

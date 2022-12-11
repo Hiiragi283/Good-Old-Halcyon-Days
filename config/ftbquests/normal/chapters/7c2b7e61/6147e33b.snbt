@@ -1,0 +1,14 @@
+{
+	x: 2.0d,
+	y: 1.0d,
+	dependencies: [
+		"1ff125f8"
+	],
+	tasks: [{
+		uid: "d6207a0a",
+		type: "item",
+		items: [{
+			item: "twilightforest:magic_map_focus"
+		}]
+	}]
+}

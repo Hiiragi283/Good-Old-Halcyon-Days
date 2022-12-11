@@ -1,0 +1,24 @@
+{
+	x: -2.0d,
+	y: -2.0d,
+	text: [
+		"{gohd.b1439958.02d638fd.text.1}"
+	],
+	dependencies: [
+		"72296a0f"
+	],
+	tasks: [{
+		uid: "b5369417",
+		type: "item",
+		items: [{
+			item: "gohd_tweaks:sandpaper"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "ff0ed3d8",
+		type: "item",
+		item: "gohd_tweaks:sandpaper_diamond"
+	}]
+}

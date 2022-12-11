@@ -1,6 +1,6 @@
 {
-	x: -2.0d,
-	y: -2.0d,
+	x: 4.0d,
+	y: 2.0d,
 	dependencies: [
 		"c887d205"
 	],
@@ -13,13 +13,9 @@
 		count: 8L
 	}],
 	rewards: [{
-		uid: "b8768ab5",
+		uid: "1fae0f87",
 		type: "item",
-		item: "storagedrawers:drawer_key"
-	},
-	{
-		uid: "af486e39",
-		type: "item",
-		item: "storagedrawers:quantify_key"
+		item: "storagedrawers:upgrade_void",
+		count: 4
 	}]
 }

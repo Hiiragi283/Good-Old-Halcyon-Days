@@ -1,0 +1,89 @@
+{
+	title: "{gui.journal.bm.constellations.name}",
+	x: 4.0d,
+	y: -1.0d,
+	dependencies: [
+		"6147e33b",
+		"96ff1635"
+	],
+	tasks: [{
+		uid: "3e7e32ab",
+		type: "item",
+		title: "{astralsorcery.constellation.aevitas}",
+		items: [{
+			id: "astralsorcery:itemconstellationpaper",
+			tag: {
+				astralsorcery: {
+					constellationName: "astralsorcery.constellation.aevitas"
+				}
+			}
+		}]
+	},
+	{
+		uid: "8660aa87",
+		type: "item",
+		title: "{astralsorcery.constellation.armara}",
+		items: [{
+			id: "astralsorcery:itemconstellationpaper",
+			tag: {
+				astralsorcery: {
+					constellationName: "astralsorcery.constellation.armara"
+				}
+			}
+		}]
+	},
+	{
+		uid: "f2fe0f64",
+		type: "item",
+		title: "{astralsorcery.constellation.discidia}",
+		items: [{
+			id: "astralsorcery:itemconstellationpaper",
+			tag: {
+				astralsorcery: {
+					constellationName: "astralsorcery.constellation.discidia"
+				}
+			}
+		}]
+	},
+	{
+		uid: "a72e0e61",
+		type: "item",
+		title: "{astralsorcery.constellation.evorsio}",
+		items: [{
+			id: "astralsorcery:itemconstellationpaper",
+			tag: {
+				astralsorcery: {
+					constellationName: "astralsorcery.constellation.evorsio"
+				}
+			}
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "caeb1236",
+		type: "item",
+		title: "{astralsorcery.constellation.vicio}",
+		items: [{
+			id: "astralsorcery:itemconstellationpaper",
+			tag: {
+				astralsorcery: {
+					constellationName: "astralsorcery.constellation.vicio"
+				}
+			}
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "94e01214",
+		type: "item",
+		title: "{astralsorcery.constellation.lucerna}",
+		item: {
+			id: "astralsorcery:itemconstellationpaper",
+			tag: {
+				astralsorcery: {
+					constellationName: "astralsorcery.constellation.lucerna"
+				}
+			}
+		}
+	}]
+}

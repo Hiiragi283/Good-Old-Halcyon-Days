@@ -1,0 +1,27 @@
+{
+	title: "{itemGroup.astralsorcery}",
+	x: 2.0d,
+	y: -1.0d,
+	shape: "square",
+	dependencies: [
+		"1ff125f8"
+	],
+	tasks: [{
+		uid: "e7a74e48",
+		type: "item",
+		items: [{
+			item: "astralsorcery:blockaltar"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "7e5a40aa",
+		type: "item",
+		item: {
+			id: "astralsorcery:itemwand",
+			tag: {
+				astralsorcery: {}
+			}
+		}
+	}]
+}
