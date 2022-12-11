@@ -39,7 +39,7 @@ print("Start loading gohd_tweaks.zs ...");
 	HiiragiUtils.addShaped(<gohd_tweaks:parts_assembly:3>, RecipePattern.init([" A ", "BCB", " D "]).map({A:ToolKnife, B:<ore:dustRedstone>, C:<threng:material:5>, D:<ore:itemSilicon>}).ingredients, null, null);
 	HiiragiUtils.addShaped(<gohd_tweaks:parts_assembly:4>, RecipePattern.init([" A ", "BCB", " D "]).map({A:ToolKnife, B:<ore:dustRedstone>, C:<threng:material:13>, D:<ore:itemSilicon>}).ingredients, null, null);
 	HiiragiUtils.addShaped(<gohd_tweaks:sandpaper>, RecipePattern.init([" A ", "ABA", " A "]).map({A:<ore:dustGarnet>, B:<ore:paper>}).ingredients, null, null);
-	HiiragiUtils.addShapeless(<gohd_tweaks:sandpaper>, [<ore:gemDiamond>, <gohd_tweaks:sandpaper>], null, null);
+	HiiragiUtils.addShapeless(<gohd_tweaks:sandpaper_diamond>, [<ore:gemDiamond>, <gohd_tweaks:sandpaper>], null, null);
 
 //読み込みの完了をログに出力
 print("gohd_tweaks.zs loaded!");

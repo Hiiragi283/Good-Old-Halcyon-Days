@@ -24,9 +24,27 @@ import scripts.HiiragiUtils;
 print("Start loading oreDict.zs ...");
 
 //鉱石辞書の編集
+
+HiiragiUtils.tweakOreDict(<biomesoplenty:filled_honeycomb>, [<ore:dropHoney>], []);
+HiiragiUtils.tweakOreDict(<dcs_climate:dcs_ore_gemblock:4>, [<ore:blockSapphire>], []);
+
 HiiragiUtils.tweakOreDict(<astraladditions:block_starmetal>, [], [<ore:blockAstralStarmetal>]);
 HiiragiUtils.tweakOreDict(<astralsorcery:blockcustomore>, [], [<ore:oreRockCrystal>]);
+HiiragiUtils.tweakOreDict(<botania:manaresource:19>, [], [<ore:nuggetElvenElementium>]);
+HiiragiUtils.tweakOreDict(<botania:manaresource:2>, [], [<ore:gemManaDiamond>]);
+HiiragiUtils.tweakOreDict(<botania:manaresource:22>, [], [<ore:itemCloth>]);
+HiiragiUtils.tweakOreDict(<botania:manaresource:9>, [], [<ore:gemDragonStone>]);
+HiiragiUtils.tweakOreDict(<botania:storage:0>, [], [<ore:blockManasteel>]);
+HiiragiUtils.tweakOreDict(<botania:storage:1>, [], [<ore:blockTerrasteel>]);
+HiiragiUtils.tweakOreDict(<botania:storage:2>, [], [<ore:blockElvenElementium>]);
+HiiragiUtils.tweakOreDict(<botania:storage:3>, [], [<ore:blockManaDiamond>]);
+HiiragiUtils.tweakOreDict(<botania:storage:4>, [], [<ore:blockDragonstone>]);
+//HiiragiUtils.tweakOreDict(<dcs_climate:dcs_ore_gemblock:10>, [], [<ore:blockPeridot>]);
+HiiragiUtils.tweakOreDict(<thermalfoundation:material:832>, [], [<ore:dropRosin>]);
+HiiragiUtils.tweakOreDict(<thermalfoundation:material:833>, [], [<ore:dropCoaltar>]);
 HiiragiUtils.tweakOreDict(<thermalfoundation:material:864>, [], [<ore:gemSlag>]);
+HiiragiUtils.tweakOreDict(<thermalfoundation:storage_resource:1>, [], [<ore:blockCoke>]);
+HiiragiUtils.tweakOreDict(<twilightforest:block_storage:0>, [], [<ore:blockIronwood>]);
 
 for i in loadedMods["artifacts"].items {
 	HiiragiUtils.tweakOreDict(i, [], [<ore:itemArtifact>]);

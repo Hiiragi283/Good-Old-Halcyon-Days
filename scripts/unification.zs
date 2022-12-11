@@ -60,6 +60,7 @@ global ToolSaw as IIngredient = HiiragiUtils.toolInput(<microblockcbe:saw_stone>
 		"botania:dreamwood_3",
 		"botania:dreamwood_4",
 		"botania:fertilizer_dye",
+		"botania:lexicon",
 		"botania:livingrock_1",
 		"botania:livingrock_3",
 		"botania:livingrock_4",
@@ -202,9 +203,12 @@ global ToolSaw as IIngredient = HiiragiUtils.toolInput(<microblockcbe:saw_stone>
 		//Applied Energistics
 		//Artifacts
 		HiiragiUtils.addShapeless(ChestMimic, [<ore:itemArtifact>, <minecraft:trapped_chest>, <gohd_tweaks:ragi_ticket>], null, null);
+		//Astral Sorcery
+		HiiragiUtils.addShaped(<astralsorcery:blockaltar:0>, RecipePattern.init(["ABA", "ACA", "A A"]).map({A:<ore:blockMarble>, B:<astralsorcery:blockblackmarble:*>, C:<ore:workbench>}).ingredients, null, null);
 		//Biomes O Plenty
 		//Botania
 		HiiragiUtils.addShapeless(<botania:fertilizer>, [<minecraft:dye:15>, <minecraft:dye:15>, <minecraft:dye:15>, <twilightforest:liveroot>], null, null);
+		HiiragiUtils.addShapeless(<botania:lexicon>, [<twilightforest:magic_map_focus>, <minecraft:book>], null, null);
 		//Heat And Climate
 		HiiragiUtils.recipeReplace(<ore:fuelCoke>, <dcs_climate:dcs_reagent:13>, <dcs_climate:dcs_cont_fuel>);
 		HiiragiUtils.recipeReplace(<ore:plankWood>, <ore:slabWood>, <dcs_climate:dcs_device_lowchest_wood>);
