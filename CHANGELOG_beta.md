@@ -1,5 +1,48 @@
 # Changelog
 
+## v0.9.0
+
+- Mod Configuration
+  - Add
+    - `astraladditions-1.12.2-1.0.20`
+    - `astralsorcery-1.12.2-1.10.27`
+    - `UniversalTweaks-1.12.2-1.0.0`
+      - Conbine several tweaks mods into one...!
+  - Remove
+    - `AIImprovements-1.12-0.0.1b3`
+    - `BotanicAdditions-1.12.2-12.2.6`
+    - `ExtendedCrafting-Nomifactory-Edition-1.7.0`
+    - `FastLeafDecay-v14`
+    - `HammerLib-1.12.2-2.0.6.32`
+    - `inworldcrafting-1.12.2-1.2.0-universal`
+    - `jetif-1.12.2-1.5.2`
+    - `justenoughdimensions-1.12.2-1.6.0-dev.20211009.214847`
+    - `modtweaker-4.0.20.11`
+    - `morechids-1.3.0`
+    - `railcraft-tweaker-0.2.0`
+    - `Requious Frakto-0.12`
+    - `SimpleStorageNetwork-1.12.2-1.8.3`
+    - `SnowRealMagic-1.12.2-0.6.1`
+    - `supermartijn642corelib-1.0.19-forge-mc1.12`
+    - `trashcans-1.0.15-forge-mc1.12`
+    - `WorldGen-Block-Replacer-2.3.3+1.12.2`
+  - Update
+    - `appliedenergistics2-rv6-stable-7-extended_life-v0.54.13` -> `appliedenergistics2-rv6-stable-7-extended_life-v0.54.16`
+    - `GOHD_Tweaks-v0.2.1` -> `GOHD_Tweaks-v0.4.0`
+    - `HadEnoughItems_1.12.2-4.24.1` -> `HadEnoughItems_1.12.2-4.24.2`
+    - `NotEnoughEnergistics-1.12.2-1.2.5` -> `NotEnoughEnergistics-1.12.2-2.0.1`
+
+- Changes
+  - Update Quests
+    - Add new Quest Tabs
+      - Magica Silva
+      - Metallurgy
+  - Update Scripts
+    - Add more ZenScroll groups
+    - Add new ore dictionaries
+    - Refine Astral altar reicpes
+    - Unify ALL crafting recipes of slabs and stairs
+
 ## v0.8.2
 
 - **HOTFIX**
