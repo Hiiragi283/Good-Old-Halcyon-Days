@@ -8,6 +8,7 @@
 *.log
 *.zsrc
 
+.idea
 .mixin.out
 asm
 backups
