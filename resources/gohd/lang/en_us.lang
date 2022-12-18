@@ -1,13 +1,13 @@
 
 # Custom Name
-gohd.custom.*.name
+gohd.custom.*.name=
 
 gohd.custom.defeated_crowbar.name=Defeated-Crowbar
 gohd.custom.safety_mimic.name=§bSafety Mimic
 //gohd.custom.welcome.name=§o§lWelcome to §c§o§lGOHD§r§c§l!
 
 # JEi Description
-gohd.jei.*.name
+gohd.jei.*.name=
 
 gohd.jei.drop_soul.name=Obtained by suicide, or crafted with Kikoku.
 gohd.jei.tinder.name=To ignite the Tinder, you must right-click on a heat source.
@@ -22,6 +22,9 @@ gohd.955c06b4.7717ddde.f60cf47b.title=§6Official HaC wiki
 gohd.955c06b4.7717ddde.text.1=this pack is based on §oHeatAndClimate§r, so you need the knowledge for this mod
 gohd.955c06b4.7717ddde.text.2=If you don't, I recommend you to read the wiki from link shown by right-clicking Icon!
 gohd.955c06b4.7717ddde.title=Living with climates
+gohd.955c06b4.ace432c7.text.1=In this pack, the items that have the same name and ore dictionaries is not unified.
+gohd.955c06b4.ace432c7.text.2=So I'll give you Lexical Transmuter, which allows you to convert items through ore dictionaries.
+gohd.955c06b4.ace432c7.title=Non-Unidict
 
 ## Departure: gohd.61daa441.
 gohd.61daa441.title=Departure
@@ -72,6 +75,9 @@ gohd.f6f791f1.55bfd526.subtitle=§oChange! Seared!
 gohd.f6f791f1.55bfd526.title=Cast Off!
 gohd.f6f791f1.d5403a57.title=Somehow Good Designed Tables
 gohd.f6f791f1.fd5707d9.title=My mouth is gravelly-gravelly lol
+
+## Chemistry: gohd.13c7722d.
+gohd.13c7722d.title=Chemistry
 
 # Tooltips
 gohd.tooltip.bedrock.name=§aHarvested by right-clicking on a pickaxe with Mining level 4 or higher

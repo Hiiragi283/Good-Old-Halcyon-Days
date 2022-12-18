@@ -1,12 +1,12 @@
 # Custom Name
-gohd.custom.*.name
+gohd.custom.*.name=
 
 gohd.custom.defeated_crowbar.name=バールのようなカラス
 gohd.custom.safety_mimic.name=§bあんぜんミミック
 //gohd.custom.welcome.name=§c§l§oGOHD§r§lにようこそ!
 
 # JEi Description
-gohd.jei.*.name
+gohd.jei.*.name=
 
 gohd.jei.drop_soul.name=自殺か鬼哭を単体クラフトすることで得られます。
 gohd.jei.tinder.name=火口を着火するには熱源を右クリックします。
@@ -20,6 +20,9 @@ gohd.955c06b4.267a9acd.title=Welcome to ようこそGOHD!
 gohd.955c06b4.7717ddde.text.1=このpackは§oHeatAndClimate§rをベースに作られています。そのため攻略にはHaCに関する知識が必要になります。
 gohd.955c06b4.7717ddde.text.2=HaCを初めて遊ぶ方はIconをクリックして表示されるリンクからwikiを読むことをおすすめします!
 gohd.955c06b4.7717ddde.title=気候と共に生きる
+gohd.955c06b4.ace432c7.text.1=このパックでは, 同じ鉱石辞書を持つアイテムは統一されていません。
+gohd.955c06b4.ace432c7.text.2=そこで, 鉱石辞書を通じてアイテムを変換できる「辞書等価交換器」をプレゼントします。
+gohd.955c06b4.ace432c7.title=Unidict, ないよ。
 
 ## Departure: gohd.61daa441.
 gohd.61daa441.title=旅立ち
@@ -30,7 +33,7 @@ gohd.61daa441.32ad9066.title=あんたバカァ? いくらなんでもこれは�
 gohd.61daa441.3d45df2d.title=GTNHよりもリアル
 gohd.61daa441.41178d2d.title=DutyじゃないけどHeavy
 gohd.61daa441.5c541bdc.title=いいから伐採だ!
-gohd.61daa441.96d3d03f.subtitle=§o私は失敗したことがない。たんに、うまくいかないだろう1万の方法を見つけただけだ。
+gohd.61daa441.96d3d03f.subtitle=§o私は失敗したことがない。たんに, うまくいかないだろう1万の方法を見つけただけだ。
 gohd.61daa441.b1749c8c.title=真鍮製の道具
 gohd.61daa441.d2170bea.title=青銅製の道具
 gohd.61daa441.e8c1dcb5.title=Garden of Grass
@@ -71,6 +74,9 @@ gohd.f6f791f1.55bfd526.subtitle=§oチェンジ! Seared!
 gohd.f6f791f1.55bfd526.title=キャストオフ!
 gohd.f6f791f1.d5403a57.title=なんかいい感じのテーブル
 gohd.f6f791f1.fd5707d9.title=お口の中がじゃりじゃりする～wwwwwwwww
+
+## Chemistry: gohd.13c7722d.
+gohd.13c7722d.title=化学
 
 # Tooltips
 gohd.tooltip.bedrock.name=§a採掘レベルが4以上のツルハシで右クリックすることで回収できる
