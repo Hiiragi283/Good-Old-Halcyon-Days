@@ -70,7 +70,7 @@ print("Start loading jei.zs ...");
 		<dcs_climate:dcs_door_marble>: false,
 		<dcs_climate:dcs_door_steel>: false,
 		<dcs_climate:dcs_gem:*>: true,
-		<microblockcbe:stone_rod>: true,
+		//<microblockcbe:stone_rod>: true,
 		<tconstruct:stone_stick>: true,
 	};
 	for i, j in mapRemove {

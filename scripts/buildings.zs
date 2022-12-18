@@ -187,7 +187,7 @@ print("Start loading buildings.zs ...");
 	};
 	for slab, full in mapSlabs {
 		recipes.remove(slab);
-		HiiragiUtils.addShaped(slab*2, [[full, ToolSaw]], null, null);
+		HiiragiUtils.addShaped(slab*2, [[full, <bibliocraft:framingsaw>]], null, null);
 		HiiragiUtils.addShapeless(full, [slab, slab], null, null);
 		}
 
@@ -349,7 +349,7 @@ print("Start loading buildings.zs ...");
 	};
 	for stair, full in mapStair {
 		recipes.remove(stair);
-		HiiragiUtils.addShaped(stair*4, [[full, ToolSaw], [full, full]], null, null);
+		HiiragiUtils.addShaped(stair*4, [[full, <bibliocraft:framingsaw>], [full, full]], null, null);
 		HiiragiUtils.addShapeless(full*3, [stair, stair, stair, stair], null, null);
 	}
 
@@ -367,7 +367,7 @@ print("Start loading buildings.zs ...");
 
 	for stair, full in mapStairTwilight {
 		recipes.remove(stair);
-		HiiragiUtils.addShaped(stair*4, [[full, ToolSaw], [full, full]], null, null);
+		HiiragiUtils.addShaped(stair*4, [[full, <bibliocraft:framingsaw>], [full, full]], null, null);
 	}
 
 

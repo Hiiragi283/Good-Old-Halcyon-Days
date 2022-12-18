@@ -30,7 +30,7 @@ global TablePart as IItemStack = <tconstruct:tooltables:2>.withTag({textureBlock
 global ToolForge as IItemStack = <tconstruct:toolforge>.withTag({textureBlock: {id: "dcs_climate:dcs_ore_heatingmetal", Count: 1 as byte, Damage: 2 as short}});
 
 global ToolKnife as IIngredient = HiiragiUtils.toolInput(<appliedenergistics2:certus_quartz_cutting_knife>, 1)|HiiragiUtils.toolInput(<appliedenergistics2:nether_quartz_cutting_knife>, 1);
-global ToolSaw as IIngredient = HiiragiUtils.toolInput(<microblockcbe:saw_stone>, 1)|HiiragiUtils.toolInput(<microblockcbe:saw_iron>, 1)|HiiragiUtils.toolInput(<microblockcbe:saw_diamond>, 1);
+//global ToolSaw as IIngredient = HiiragiUtils.toolInput(<microblockcbe:saw_stone>, 1)|HiiragiUtils.toolInput(<microblockcbe:saw_iron>, 1)|HiiragiUtils.toolInput(<microblockcbe:saw_diamond>, 1);
 
 //Crafting Recipes
 	//アイテムに紐づいたすべてのレシピを削除
@@ -196,7 +196,7 @@ global ToolSaw as IIngredient = HiiragiUtils.toolInput(<microblockcbe:saw_stone>
 			recipes.removeByRecipeName("thermalfoundation:storage_" ~ i);
 			recipes.removeByRecipeName("thermalfoundation:storage_alloy_" ~ i);
 		}
-		for i in 8 to 82 {
+		for i in 8 to 80 {
 			recipes.removeByRecipeName("thermalfoundation:material_" ~ i);
 		}
 	//既存のレシピの編集および新規レシピの登録
@@ -234,7 +234,7 @@ global ToolSaw as IIngredient = HiiragiUtils.toolInput(<microblockcbe:saw_stone>
 		HiiragiUtils.addShaped(TablePart, RecipePattern.init(["A", "B"]).map({A:<tconstruct:pattern>, B:<twilightforest:twilight_log>}).ingredients, null, null);
 		HiiragiUtils.addShaped(TableStencil, RecipePattern.init(["A", "B"]).map({A:<tconstruct:pattern>, B:<twilightforest:twilight_oak_planks>}).ingredients, null, null);
 		HiiragiUtils.addShaped(ToolForge, RecipePattern.init(["AAA", "BCB", "B B"]).map({A:<ore:blockSeared>, B:<dcs_climate:dcs_ore_heatingmetal:2>, C:<tconstruct:tooltables:3>}).ingredients, null, null);
-		HiiragiUtils.addShapeless(<tconstruct:faucet>*2, [<tconstruct:channel>, ToolSaw], null, null);
+		HiiragiUtils.addShapeless(<tconstruct:faucet>*2, [<tconstruct:channel>, <bibliocraft:framingsaw>], null, null);
 
 //Furnace Recipes
 	//Remove
