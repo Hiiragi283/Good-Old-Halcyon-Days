@@ -30,7 +30,6 @@ global TablePart as IItemStack = <tconstruct:tooltables:2>.withTag({textureBlock
 global ToolForge as IItemStack = <tconstruct:toolforge>.withTag({textureBlock: {id: "dcs_climate:dcs_ore_heatingmetal", Count: 1 as byte, Damage: 2 as short}});
 
 global ToolKnife as IIngredient = HiiragiUtils.toolInput(<appliedenergistics2:certus_quartz_cutting_knife>, 1)|HiiragiUtils.toolInput(<appliedenergistics2:nether_quartz_cutting_knife>, 1);
-//global ToolSaw as IIngredient = HiiragiUtils.toolInput(<microblockcbe:saw_stone>, 1)|HiiragiUtils.toolInput(<microblockcbe:saw_iron>, 1)|HiiragiUtils.toolInput(<microblockcbe:saw_diamond>, 1);
 
 //Crafting Recipes
 	//アイテムに紐づいたすべてのレシピを削除
@@ -40,165 +39,36 @@ global ToolKnife as IIngredient = HiiragiUtils.toolInput(<appliedenergistics2:ce
 	for i in mapRemoveCrafting {
 		recipes.remove(i);
 	}
-	//レシピ名による削除
-	val mapRemoveByName as string[] = [
-		"appliedenergistics2:decorative/certus_quartz_pillar",
-		"appliedenergistics2:decorative/chiseled_quartz_block",
-		"astralsorcery:shaped/black_marble_arch",
-		"astralsorcery:shaped/black_marble_bricks",
-		"astralsorcery:shaped/black_marble_chiseled",
-		"astralsorcery:shaped/black_marble_engraved",
-		"astralsorcery:shaped/black_marble_pillar",
-		"astralsorcery:shaped/black_marble_runed",
-		"astralsorcery:shaped/infused_wood_arch",
-		"astralsorcery:shaped/infused_wood_column",
-		"astralsorcery:shaped/infused_wood_engraved",
-		"biomesoplenty:chiseled_white_sandstone",
-		"biomesoplenty:sapphire",
-		"biomesoplenty:smooth_white_sandstone",
-		"botania:custombrick_0_alt",
-		"botania:dreamwood_3",
-		"botania:dreamwood_4",
-		"botania:fertilizer_dye",
-		"botania:lexicon",
-		"botania:livingrock_1",
-		"botania:livingrock_3",
-		"botania:livingrock_4",
-		"botania:livingwood_3",
-		"botania:livingwood_4",
-		"botania:quartztypeblaze_1",
-		"botania:quartztypeblaze_2",
-		"botania:quartztypedark_1",
-		"botania:quartztypedark_2",
-		"botania:quartztypeelf_1",
-		"botania:quartztypeelf_2",
-		"botania:quartztypelavender_1",
-		"botania:quartztypelavender_2",
-		"botania:quartztypemana_1",
-		"botania:quartztypemana_2",
-		"botania:quartztypered_1",
-		"botania:quartztypered_2",
-		"botania:quartztypesunny_1",
-		"botania:quartztypesunny_2",
-		"dcs_climate:main_build/dcs_desktop_accessories_0_2",
-		"dcs_climate:main_container/dcs_gem_blue_1",
-		"dcs_climate:main_yagen/dcs_gem_layer_4",
-		"dcs_climate:main/dcs_planks_0",
-		"enderio:ender_dust",
-		"inspirations:building/mulch/plain",
-		"mia:biomesoplenty/bamboo_thatching",
-		"mia:mia/packed_paper/packed_paper_swap_0",
-		"mia:mia/packed_paper/packed_paper_swap_1",
-		"mia:mia/packed_paper/packed_paper_swap_2",
-		"mia:mia/packed_paper/packed_paper_swap_3",
-		"minecraft:chiseled_quartz_block",
-		"minecraft:chiseled_red_sandstone",
-		"minecraft:chiseled_sandstone",
-		"minecraft:chiseled_stonebrick",
-		"minecraft:furnace",
-		"minecraft:granite_polished",
-		"minecraft:pillar_quartz_block",
-		"minecraft:purpur_pillar",
-		"minecraft:slime",
-		"minecraft:smooth_red_sandstone",
-		"minecraft:smooth_sandstone",
-		"railcraft:cone_oven_red$2",
-		"tconstruct:common/slime/pink/congealed",
-		"tconstruct:common/slime/pink/slimeblock",
-		"tconstruct:gadgets/slimeboots/fallback",
-		"tconstruct:gadgets/slimesling/fallback",
-		"tconstruct:smeltery/casting_basin",
-		"tconstruct:smeltery/casting_table",
-		"tconstruct:smeltery/channel",
-		"tconstruct:smeltery/faucet",
-		"tconstruct:smeltery/smeltery_controller",
-		"thermalfoundation:material_100",
-		"thermalfoundation:material_99",
-		"thermalfoundation:storage_alloy",
-		"thermalfoundation:storage",
+	//Ender IO
+	val removeEnder as IItemStack[] = [
+		//<enderio:block_self_resetting_lever5>,
+		<enderio:block_self_resetting_lever10>,
+		<enderio:block_self_resetting_lever30>,
+		<enderio:block_self_resetting_lever60>,
+		<enderio:block_self_resetting_lever300>,
+		<enderio:block_self_resetting_lever5i>,
+		<enderio:block_self_resetting_lever10i>,
+		<enderio:block_self_resetting_lever30i>,
+		<enderio:block_self_resetting_lever60i>,
+		<enderio:block_self_resetting_lever300i>,
+		<enderio:block_decoration1:*>,
+		<enderio:block_decoration2:*>,
+		<enderio:block_decoration3:*>,
+		<enderio:item_redstone_not_filter>,
+		<enderio:item_redstone_or_filter>,
+		<enderio:item_redstone_and_filter>,
+		<enderio:item_redstone_nor_filter>,
+		<enderio:item_redstone_nand_filter>,
+		<enderio:item_redstone_xor_filter>,
+		<enderio:item_redstone_xnor_filter>,
+		<enderio:item_redstone_toggle_filter>,
+		<enderio:item_redstone_counting_filter>,
+		<enderio:item_redstone_sensor_filter>,
+		<enderio:item_redstone_timer_filter>,
 	];
-	for i in mapRemoveByName {
-		recipes.removeByRecipeName(i);
+	for i in removeEnder {
+		recipes.remove(i);
 	}
-		//Botania
-		for i in 1 to 15 {
-			recipes.removeByRecipeName("botania:custombrick_" ~ i);
-		}
-		//Heat And Climate
-		for i in 1 to 9 {
-			recipes.removeByRecipeName("dcs_climate:main_build/dcs_desktop_accessories_" ~ i);
-		}
-		//Ender IO
-		val removeEnder as IItemStack[] = [
-			//<enderio:block_self_resetting_lever5>,
-			<enderio:block_self_resetting_lever10>,
-			<enderio:block_self_resetting_lever30>,
-			<enderio:block_self_resetting_lever60>,
-			<enderio:block_self_resetting_lever300>,
-			<enderio:block_self_resetting_lever5i>,
-			<enderio:block_self_resetting_lever10i>,
-			<enderio:block_self_resetting_lever30i>,
-			<enderio:block_self_resetting_lever60i>,
-			<enderio:block_self_resetting_lever300i>,
-			<enderio:block_decoration1:*>,
-			<enderio:block_decoration2:*>,
-			<enderio:block_decoration3:*>,
-			<enderio:item_redstone_not_filter>,
-			<enderio:item_redstone_or_filter>,
-			<enderio:item_redstone_and_filter>,
-			<enderio:item_redstone_nor_filter>,
-			<enderio:item_redstone_nand_filter>,
-			<enderio:item_redstone_xor_filter>,
-			<enderio:item_redstone_xnor_filter>,
-			<enderio:item_redstone_toggle_filter>,
-			<enderio:item_redstone_counting_filter>,
-			<enderio:item_redstone_sensor_filter>,
-			<enderio:item_redstone_timer_filter>,
-		];
-		for i in removeEnder {
-			recipes.remove(i);
-		}
-		//Railcraft
-		for i in 0 to 10 {
-			recipes.removeByRecipeName("railcraft:metal#" ~ i ~ "$1");
-			recipes.removeByRecipeName("railcraft:ingot#" ~ i ~ "$1");
-			recipes.removeByRecipeName("railcraft:ingot#" ~ i ~ "$2");
-			recipes.removeByRecipeName("railcraft:nugget#" ~ i ~ "$1");
-		}
-		val mapRCDecoration as string[] = [
-			"andesite",
-			"badlands",
-			"bleachedbone",
-			"bloodstained",
-			"diorite",
-			"frostbound",
-			"granite",
-			"infernal",
-			"jaded",
-			"nether",
-			"pearlized",
-			"red_nether",
-			"sandy",
-		];
-		val mapRCMeta as string[] = [
-			"#0$1",
-			"#1$1",
-			"#3$1",
-			"#4$1",
-		];
-		for i in mapRCDecoration {
-			for j in mapRCMeta {
-				recipes.removeByRecipeName("railcraft:" ~ i ~ j);
-			}
-		}
-		//Thermal Foundation
-		for i in 1 to 9 {
-			recipes.removeByRecipeName("thermalfoundation:storage_" ~ i);
-			recipes.removeByRecipeName("thermalfoundation:storage_alloy_" ~ i);
-		}
-		for i in 8 to 80 {
-			recipes.removeByRecipeName("thermalfoundation:material_" ~ i);
-		}
 	//既存のレシピの編集および新規レシピの登録
 		//Applied Energistics
 		//Artifacts
@@ -239,6 +109,7 @@ global ToolKnife as IIngredient = HiiragiUtils.toolInput(<appliedenergistics2:ce
 //Furnace Recipes
 	//Remove
 	val mapFurnaceRemove as IItemStack[] = [
+		<appliedenergistics2:smooth_sky_stone_block>,
 		<minecraft:coal:1>,
 		<thermalfoundation:material:130>,
 		<thermalfoundation:material:132>,
@@ -257,10 +128,8 @@ global ToolKnife as IIngredient = HiiragiUtils.toolInput(<appliedenergistics2:ce
 	}
 	//Addition
 	val mapAddFurnace as IIngredient[IItemStack] = {
-		//<tconstruct:casting:0>: <gohd_tweaks:grout_formed:0>,
-		//<tconstruct:casting:1>: <gohd_tweaks:grout_formed:1>,
-		//<tconstruct:channel>: <gohd_tweaks:grout_formed:2>,
-		<appliedenergistics2:material:23>: <gohd_tweaks:parts_assembly:0>,
+		<appliedenergistics2:material:23>:
+		<gohd_tweaks:parts_assembly:0>,
 		<appliedenergistics2:material:24>: <gohd_tweaks:parts_assembly:1>,
 		<appliedenergistics2:material:22>: <gohd_tweaks:parts_assembly:2>,
 		<threng:material:6>: <gohd_tweaks:parts_assembly:3>,
