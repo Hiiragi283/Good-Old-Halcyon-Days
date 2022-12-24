@@ -1,6 +1,6 @@
 {
 	title: "{gohd.b1439958.title}",
-	icon: "microblockcbe:saw_stone",
+	icon: "minecraft:brick",
 	always_invisible: false,
 	group: 1641718849,
 	default_quest_shape: ""

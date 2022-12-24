@@ -1,0 +1,27 @@
+{
+	x: 10.0d,
+	y: 2.0d,
+	shape: "hexagon",
+	dependencies: [
+		"10524cef"
+	],
+	tasks: [{
+		uid: "18c58b30",
+		type: "item",
+		items: [{
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "refined_fuel",
+				Amount: 1000
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "cece96a5",
+		type: "item",
+		item: "gohd_tweaks:ragi_ticket",
+		count: 3
+	}]
+}

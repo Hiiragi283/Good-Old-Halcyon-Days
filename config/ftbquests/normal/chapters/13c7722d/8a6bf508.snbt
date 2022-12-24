@@ -1,0 +1,30 @@
+{
+	x: 6.0d,
+	y: -2.0d,
+	shape: "square",
+	hide_dependency_lines: true,
+	dependencies: [
+		"3e09bfba"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "bcb18b13",
+		type: "item",
+		icon: "dcs_climate:dcs_food_pack 1 15",
+		items: [{
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "dcs.sulfuric_acid",
+				Amount: 1000
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "fb76a5b6",
+		type: "item",
+		item: "gohd_tweaks:ragi_ticket",
+		count: 2
+	}]
+}

@@ -1,0 +1,20 @@
+{
+	x: 12.0d,
+	y: 4.0d,
+	dependencies: [
+		"b83b45ed"
+	],
+	tasks: [{
+		uid: "572e2d9e",
+		type: "item",
+		items: [{
+			item: "thermalfoundation:material 1 819"
+		}]
+	}],
+	rewards: [{
+		uid: "007fb2ac",
+		type: "item",
+		item: "gohd_tweaks:ragi_ticket",
+		count: 3
+	}]
+}

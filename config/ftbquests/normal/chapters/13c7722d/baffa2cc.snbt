@@ -1,0 +1,20 @@
+{
+	x: 5.0d,
+	y: -5.0d,
+	shape: "hexagon",
+	dependencies: [
+		"36ad246a"
+	],
+	tasks: [{
+		uid: "5e1f55bc",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_reagent 1 8"
+		}]
+	}],
+	rewards: [{
+		uid: "0b3cfcfa",
+		type: "item",
+		item: "dcs_climate:dcs_musket"
+	}]
+}

@@ -18,6 +18,9 @@ gohd.955c06b4.title=Good Old Halcyon Days!
 
 gohd.955c06b4.267a9acd.subtitle=Good Old Halcyon Days, in short "GOHD"
 gohd.955c06b4.267a9acd.title=Welcome to GOHD!
+gohd.955c06b4.33d4c95d.text.1=Now we have new dust blocks for Thermal Series and Ender IO.
+gohd.955c06b4.33d4c95d.text.2=Some of them help you make alloys more easily...?
+gohd.955c06b4.33d4c95d.title=More Dust Blocks!
 gohd.955c06b4.7717ddde.f60cf47b.title=§6Official HaC wiki
 gohd.955c06b4.7717ddde.text.1=this pack is based on §oHeatAndClimate§r, so you need the knowledge for this mod
 gohd.955c06b4.7717ddde.text.2=If you don't, I recommend you to read the wiki from link shown by right-clicking Icon!
@@ -78,6 +81,8 @@ gohd.f6f791f1.fd5707d9.title=My mouth is gravelly-gravelly lol
 
 ## Chemistry: gohd.13c7722d.
 gohd.13c7722d.title=Chemistry
+
+gohd.13c7722d.36ad246a.title=We are Nitro!
 
 # Tooltips
 gohd.tooltip.bedrock.name=§aHarvested by right-clicking on a pickaxe with Mining level 4 or higher

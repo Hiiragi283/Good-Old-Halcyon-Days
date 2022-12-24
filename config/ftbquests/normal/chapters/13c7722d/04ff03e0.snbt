@@ -1,24 +1,24 @@
 {
-	x: 6.0d,
-	y: -2.0d,
+	x: -4.0d,
+	y: 0.0d,
 	shape: "hexagon",
 	dependencies: [
-		"55bfd526",
-		"7e1b2799",
-		"e9401292"
+		"4df3a213",
+		"bc2adfe3"
 	],
 	size: 2.0d,
 	tasks: [{
-		uid: "bca7d5cd",
+		uid: "d24c7014",
 		type: "item",
 		items: [{
-			item: "tconstruct:smeltery_controller"
-		}]
+			item: "dcs_climate:dcs_magnetic_hover"
+		}],
+		ignore_nbt: 1b
 	}],
 	rewards: [{
-		uid: "80016fcd",
+		uid: "13f13153",
 		type: "item",
 		item: "gohd_tweaks:ragi_ticket",
-		count: 2
+		count: 4
 	}]
 }

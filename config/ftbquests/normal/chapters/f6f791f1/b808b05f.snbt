@@ -2,7 +2,7 @@
 	icon: "dcs_climate:dcs_ingot 1 5",
 	x: 8.0d,
 	y: 0.0d,
-	shape: "square",
+	shape: "hexagon",
 	dependencies: [
 		"7df3f4fb",
 		"d7e37634"
@@ -30,6 +30,7 @@
 	rewards: [{
 		uid: "df82cf43",
 		type: "item",
-		item: "gohd_tweaks:ragi_ticket"
+		item: "gohd_tweaks:ragi_ticket",
+		count: 2
 	}]
 }

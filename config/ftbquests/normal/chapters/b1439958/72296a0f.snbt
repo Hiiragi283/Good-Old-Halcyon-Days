@@ -1,6 +1,6 @@
 {
 	title: "{gohd.b1439958.title}",
-	icon: "minecraft:brick_block",
+	icon: "minecraft:brick",
 	x: 0.0d,
 	y: 0.0d,
 	shape: "square",

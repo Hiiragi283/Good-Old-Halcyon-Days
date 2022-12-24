@@ -1,0 +1,22 @@
+{
+	title: "{gohd.955c06b4.33d4c95d.title}",
+	icon: "dcs_climate:dcs_ore_dustblock 1 5",
+	x: -0.5d,
+	y: 1.5d,
+	text: [
+		"{gohd.955c06b4.33d4c95d.text.1}",
+		"{gohd.955c06b4.33d4c95d.text.2}"
+	],
+	dependencies: [
+		"7717ddde"
+	],
+	tasks: [{
+		uid: "706efd40",
+		type: "checkmark"
+	}],
+	rewards: [{
+		uid: "4a457409",
+		type: "item",
+		item: "gohd_tweaks:dustblock 1 11"
+	}]
+}

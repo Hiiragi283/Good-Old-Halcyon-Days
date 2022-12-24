@@ -1,0 +1,21 @@
+{
+	x: 4.0d,
+	y: 6.0d,
+	shape: "hexagon",
+	dependencies: [
+		"53b6bcde"
+	],
+	tasks: [{
+		uid: "ecca7eea",
+		type: "item",
+		items: [{
+			item: "thermalfoundation:fertilizer 1 2"
+		}]
+	}],
+	rewards: [{
+		uid: "92844d9b",
+		type: "item",
+		item: "gohd_tweaks:ragi_ticket",
+		count: 3
+	}]
+}

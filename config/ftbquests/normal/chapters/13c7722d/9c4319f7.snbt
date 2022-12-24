@@ -1,0 +1,21 @@
+{
+	x: -1.0d,
+	y: 7.0d,
+	shape: "hexagon",
+	dependencies: [
+		"5635dda7"
+	],
+	tasks: [{
+		uid: "d13e927d",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_reagent 1 9"
+		}]
+	}],
+	rewards: [{
+		uid: "3284bd7c",
+		type: "item",
+		item: "gohd_tweaks:ragi_ticket",
+		count: 3
+	}]
+}

@@ -1,0 +1,14 @@
+{
+	x: -2.0d,
+	y: -2.0d,
+	dependencies: [
+		"ace6e7a2"
+	],
+	tasks: [{
+		uid: "e5b76326",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_device_freezer"
+		}]
+	}]
+}

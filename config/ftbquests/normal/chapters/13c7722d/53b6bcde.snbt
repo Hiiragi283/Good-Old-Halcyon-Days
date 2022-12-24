@@ -1,0 +1,16 @@
+{
+	x: 4.0d,
+	y: 4.0d,
+	dependencies: [
+		"900645fa",
+		"c75efa8b"
+	],
+	dependency_requirement: "one_completed",
+	tasks: [{
+		uid: "f1eb325d",
+		type: "item",
+		items: [{
+			item: "thermalfoundation:fertilizer 1 1"
+		}]
+	}]
+}

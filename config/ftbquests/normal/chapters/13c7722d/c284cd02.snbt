@@ -1,0 +1,16 @@
+{
+	x: -1.0d,
+	y: 5.0d,
+	shape: "square",
+	dependencies: [
+		"2cd53716"
+	],
+	tasks: [{
+		uid: "086b977a",
+		type: "item",
+		items: [{
+			item: "hap:coke_oven"
+		}],
+		ignore_nbt: 1b
+	}]
+}

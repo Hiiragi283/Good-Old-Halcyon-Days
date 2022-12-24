@@ -1,0 +1,24 @@
+{
+	x: 0.0d,
+	y: 0.0d,
+	shape: "square",
+	dependencies: [
+		"1b14ad54"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "0b78777a",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_device_reactor"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "ceef6aab",
+		type: "item",
+		item: "dcs_climate:dcs_device_reactor",
+		count: 7
+	}]
+}

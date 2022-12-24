@@ -1,0 +1,21 @@
+{
+	x: 2.0d,
+	y: -2.0d,
+	dependencies: [
+		"0af53793"
+	],
+	tasks: [{
+		uid: "062c54c2",
+		type: "item",
+		icon: "dcs_climate:dcs_food_pack 1 20",
+		items: [{
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "dcs.ammonia",
+				Amount: 1000
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

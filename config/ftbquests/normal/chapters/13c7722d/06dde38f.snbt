@@ -1,0 +1,26 @@
+{
+	x: 9.0d,
+	y: 5.0d,
+	dependencies: [
+		"f77fb978"
+	],
+	tasks: [{
+		uid: "51cf21a4",
+		type: "item",
+		items: [{
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "tree_oil",
+				Amount: 1000
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "4cf920bf",
+		type: "item",
+		item: "gohd_tweaks:ragi_ticket",
+		count: 3
+	}]
+}

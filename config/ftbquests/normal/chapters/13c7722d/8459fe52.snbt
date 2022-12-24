@@ -1,0 +1,27 @@
+{
+	x: 0.0d,
+	y: -3.0d,
+	shape: "hexagon",
+	dependencies: [
+		"3e09bfba"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "88fb01a5",
+		type: "item",
+		items: [{
+			item: "hap:reactor_advanced"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "45238778",
+		type: "item",
+		item: "hap:reactor_storage"
+	},
+	{
+		uid: "690469f9",
+		type: "item",
+		item: "hap:reactor_fluid_port"
+	}]
+}

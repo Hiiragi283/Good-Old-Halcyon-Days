@@ -10,5 +10,11 @@
 		items: [{
 			item: "twilightforest:magic_map_focus"
 		}]
+	}],
+	rewards: [{
+		uid: "08f52817",
+		type: "item",
+		item: "twilightforest:raven_feather",
+		count: 5
 	}]
 }

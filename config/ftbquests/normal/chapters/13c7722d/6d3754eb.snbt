@@ -1,0 +1,22 @@
+{
+	x: 2.0d,
+	y: -4.0d,
+	shape: "hexagon",
+	dependencies: [
+		"ace6e7a2",
+		"66f8c0b9"
+	],
+	tasks: [{
+		uid: "020dce06",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_reagent 1 4"
+		}]
+	}],
+	rewards: [{
+		uid: "3ed62989",
+		type: "item",
+		item: "dcs_climate:dcs_dynamite 1 1",
+		count: 9
+	}]
+}

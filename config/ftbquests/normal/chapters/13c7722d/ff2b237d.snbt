@@ -1,0 +1,37 @@
+{
+	x: 8.0d,
+	y: 8.0d,
+	shape: "square",
+	dependencies: [
+		"955c06b4"
+	],
+	tasks: [{
+		uid: "e530e304",
+		type: "item",
+		items: [{
+			id: "thermalexpansion:machine",
+			Damage: 2s,
+			tag: {
+				Facing: 3b,
+				SideCache: [B;
+					3b,
+					1b,
+					2b,
+					2b,
+					2b,
+					2b
+				],
+				RSControl: 0b,
+				Energy: 0,
+				Level: 0b
+			}
+		}],
+		ignore_nbt: 1b,
+		only_from_crafting: false
+	}],
+	rewards: [{
+		uid: "6a3c4e30",
+		type: "item",
+		item: "thermalexpansion:augment 1 288"
+	}]
+}

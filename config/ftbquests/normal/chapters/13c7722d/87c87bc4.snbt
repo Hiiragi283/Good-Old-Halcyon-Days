@@ -1,0 +1,15 @@
+{
+	x: 10.0d,
+	y: 0.0d,
+	shape: "square",
+	dependencies: [
+		"955c06b4"
+	],
+	tasks: [{
+		uid: "e8df462d",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_miscdust 1 9"
+		}]
+	}]
+}

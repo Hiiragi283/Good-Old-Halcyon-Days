@@ -1,0 +1,20 @@
+{
+	x: 10.0d,
+	y: 8.0d,
+	dependencies: [
+		"f8406ea0"
+	],
+	tasks: [{
+		uid: "f69d39fc",
+		type: "item",
+		items: [{
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "biocrude",
+				Amount: 1000
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

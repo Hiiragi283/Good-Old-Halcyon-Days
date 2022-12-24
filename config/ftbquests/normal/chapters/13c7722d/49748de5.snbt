@@ -1,0 +1,21 @@
+{
+	x: 0.0d,
+	y: 4.0d,
+	shape: "hexagon",
+	dependencies: [
+		"e58ff6bc"
+	],
+	tasks: [{
+		uid: "367eb0d4",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_reagent 1 14"
+		}]
+	}],
+	rewards: [{
+		uid: "47f3d4ef",
+		type: "item",
+		item: "minecraft:tnt",
+		count: 8
+	}]
+}

@@ -1,22 +1,20 @@
 {
-	x: 6.0d,
-	y: -2.0d,
+	x: -4.0d,
+	y: -4.0d,
 	shape: "hexagon",
 	dependencies: [
-		"55bfd526",
-		"7e1b2799",
-		"e9401292"
+		"0af53793",
+		"d7566724"
 	],
-	size: 2.0d,
 	tasks: [{
-		uid: "bca7d5cd",
+		uid: "090bf509",
 		type: "item",
 		items: [{
-			item: "tconstruct:smeltery_controller"
+			item: "dcs_climate:dcs_food_dairy 1 4"
 		}]
 	}],
 	rewards: [{
-		uid: "80016fcd",
+		uid: "dd95678d",
 		type: "item",
 		item: "gohd_tweaks:ragi_ticket",
 		count: 2

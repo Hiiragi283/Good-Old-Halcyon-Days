@@ -1,0 +1,25 @@
+{
+	x: -2.0d,
+	y: 4.0d,
+	dependencies: [
+		"c284cd02"
+	],
+	tasks: [{
+		uid: "50d14044",
+		type: "item",
+		items: [{
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any dropCoaltar"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "dropCoaltar"
+				}
+			}
+		}]
+	}]
+}

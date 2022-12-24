@@ -1,0 +1,29 @@
+{
+	title: "{gohd.13c7722d.36ad246a.title}",
+	x: 4.0d,
+	y: -4.0d,
+	dependencies: [
+		"66f8c0b9",
+		"8a6bf508"
+	],
+	tasks: [{
+		uid: "ddc08d7a",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_reagent 1 5"
+		}]
+	},
+	{
+		uid: "2ef4329b",
+		type: "item",
+		items: [{
+			item: "dcs_climate:dcs_reagent 1 6"
+		}]
+	}],
+	rewards: [{
+		uid: "12621aab",
+		type: "item",
+		item: "dcs_climate:dcs_dynamite",
+		count: 9
+	}]
+}

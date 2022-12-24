@@ -1,0 +1,38 @@
+{
+	title: "{gohd.955c06b4.ace432c7.title}",
+	icon: "thermalfoundation:tome_lexicon",
+	x: 1.5d,
+	y: 0.0d,
+	text: [
+		"{gohd.955c06b4.ace432c7.text.1}",
+		"{gohd.955c06b4.ace432c7.text.2}"
+	],
+	dependencies: [
+		"267a9acd"
+	],
+	tasks: [{
+		uid: "bff61866",
+		type: "checkmark"
+	}],
+	rewards: [{
+		uid: "df88fc8b",
+		type: "item",
+		item: {
+			id: "thermalexpansion:device",
+			Damage: 7s,
+			tag: {
+				Facing: 3b,
+				SideCache: [B;
+					2b,
+					1b,
+					1b,
+					1b,
+					1b,
+					1b
+				],
+				RSControl: 0b,
+				Energy: 0
+			}
+		}
+	}]
+}

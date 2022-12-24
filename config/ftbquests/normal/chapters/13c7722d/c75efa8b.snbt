@@ -1,0 +1,22 @@
+{
+	x: 6.0d,
+	y: 6.0d,
+	dependencies: [
+		"ff2b237d",
+		"808173da"
+	],
+	dependency_requirement: "one_completed",
+	tasks: [{
+		uid: "b804141e",
+		type: "item",
+		items: [{
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "sap",
+				Amount: 1000
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

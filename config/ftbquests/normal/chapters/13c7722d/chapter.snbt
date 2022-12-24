@@ -1,0 +1,7 @@
+{
+	title: "{gohd.13c7722d.title}",
+	icon: "hap:reactor_advanced",
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: ""
+}

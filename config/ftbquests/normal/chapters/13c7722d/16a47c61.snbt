@@ -1,0 +1,29 @@
+{
+	x: 8.0d,
+	y: 4.0d,
+	shape: "square",
+	dependencies: [
+		"955c06b4"
+	],
+	tasks: [{
+		uid: "931b916d",
+		type: "item",
+		items: [{
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "crude_oil",
+				Amount: 1000
+			}
+		},
+		{
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "coal",
+				Amount: 1000
+			}
+		}],
+		consume_items: false,
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

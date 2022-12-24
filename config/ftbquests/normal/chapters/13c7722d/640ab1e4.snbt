@@ -1,24 +1,23 @@
 {
-	x: 6.0d,
-	y: -2.0d,
+	x: -3.0d,
+	y: 2.0d,
 	shape: "hexagon",
 	dependencies: [
-		"55bfd526",
-		"7e1b2799",
-		"e9401292"
+		"4c42ebdd"
 	],
 	size: 2.0d,
 	tasks: [{
-		uid: "bca7d5cd",
+		uid: "040f7a54",
 		type: "item",
 		items: [{
-			item: "tconstruct:smeltery_controller"
-		}]
+			item: "dcs_climate:dcs_motor_scooter 1 2"
+		}],
+		ignore_nbt: 1b
 	}],
 	rewards: [{
-		uid: "80016fcd",
+		uid: "3a167863",
 		type: "item",
 		item: "gohd_tweaks:ragi_ticket",
-		count: 2
+		count: 4
 	}]
 }
