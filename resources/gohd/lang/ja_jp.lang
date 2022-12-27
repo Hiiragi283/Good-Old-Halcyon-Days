@@ -2,7 +2,6 @@
 gohd.custom.*.name=
 
 gohd.custom.defeated_crowbar.name=バールのようなカラス
-gohd.custom.safety_mimic.name=§bあんぜんミミック
 //gohd.custom.welcome.name=§c§l§oGOHD§r§lにようこそ!
 
 # JEi Description
@@ -97,7 +96,6 @@ gohd.tooltip.ingot_rainbow.name=§d私§cを§6オフハンド§eに§a持て§2
 gohd.tooltip.quantum_entangler.name=§a量子もつれデバイスを使うことでCompact Machineのデータをコピーできます!
 gohd.tooltip.removed.name=§cレシピは削除されました!§r
 gohd.tooltip.tcon_appear.name=§a任意のブロックとクラフトすることで見た目を変えられます!
-gohd.tooltip.safety_mimic.name=§aなにがでるかはおたのしみ!
 
 # Lang Key from other Mods
 

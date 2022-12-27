@@ -12,7 +12,7 @@
 		value: 1L
 	}],
 	rewards: [{
-		uid: "9a4c2685",
+		uid: "cf2d4ae8",
 		type: "item",
 		item: {
 			id: "minecraft:chest",
@@ -21,7 +21,7 @@
 					LootTable: "artifacts:mimic_underground"
 				},
 				display: {
-					LocName: "gohd.custom.safety_mimic.name"
+					LocName: "item.safety_mimic.name"
 				}
 			}
 		}

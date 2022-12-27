@@ -3,7 +3,6 @@
 gohd.custom.*.name=
 
 gohd.custom.defeated_crowbar.name=Defeated-Crowbar
-gohd.custom.safety_mimic.name=§bSafety Mimic
 //gohd.custom.welcome.name=§o§lWelcome to §c§o§lGOHD§r§c§l!
 
 # JEi Description
@@ -100,7 +99,6 @@ gohd.tooltip.ingot_rainbow.name=§dWhen §cyou §6holding §eme §ain §2offhand
 gohd.tooltip.quantum_entangler.name=§aQuanutum Entangler allows you to copy data of compact machines!
 gohd.tooltip.removed.name=§cRecipe Removed!§r
 gohd.tooltip.tcon_appear.name=§aNow you can change the appearance of me into what you like!
-gohd.tooltip.safety_mimic.name=§aWhat you get is up to you!
 
 # Lang Key from other Mods
 
